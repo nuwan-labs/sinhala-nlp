@@ -1,0 +1,1696 @@
+{
+  "version": 1,
+  "source_pages": [
+    151,
+    200
+  ],
+  "total_pages": 50,
+  "total_row_pairs": 1414,
+  "min_hits": 1,
+  "note": "Each entry maps a pdf string (broken IskoolaPota encoding) to the correct Unicode string found in GCV OCR output. Apply longest-match-first string replacement before tokenisation.",
+  "corrections": [
+    {
+      "pdf": "ව",
+      "correct": "",
+      "count": 10,
+      "category": "spurious-VA (pre-vowel artefact, no OCR counterpart)",
+      "pdf_codepoints": [
+        "U+0DC0"
+      ],
+      "ocr_codepoints": [],
+      "examples": [
+        "අනුපොන වයෝගය පරිදි.",
+        "37. වයෝග නොමය භූනිේබාදි චූර්ණය",
+        "වයෝගය බිං ව ොවහොඹ"
+      ]
+    },
+    {
+      "pdf": "ො",
+      "correct": "ා",
+      "count": 9,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0DDC"
+      ],
+      "ocr_codepoints": [
+        "U+0DCF"
+      ],
+      "examples": [
+        "කුරුඳු වපොතු භොග 2 යි",
+        "නොමල්වර්ණු භොග 3 යි",
+        "ගම්මිරිස් භොග 4 යි"
+      ]
+    },
+    {
+      "pdf": "",
+      "correct": " ",
+      "count": 5,
+      "category": "missing-in-PDF: character lost entirely",
+      "pdf_codepoints": [],
+      "ocr_codepoints": [
+        "U+0020"
+      ],
+      "examples": [
+        "සමභොගව ගත යුතු වේ.",
+        "වයෝගය චීන අල පලං 2 යි. (ග්‍රෑම් 120)",
+        "බල වඩයි."
+      ]
+    },
+    {
+      "pdf": "අ",
+      "correct": "ග",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0D85"
+      ],
+      "ocr_codepoints": [
+        "U+0D9C"
+      ],
+      "examples": [
+        "අනුපොන වයෝගය පරිදි."
+      ]
+    },
+    {
+      "pdf": "ුපො",
+      "correct": "්",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0DD4",
+        "U+0DB4",
+        "U+0DDC"
+      ],
+      "ocr_codepoints": [
+        "U+0DCA"
+      ],
+      "examples": [
+        "අනුපොන වයෝගය පරිදි."
+      ]
+    },
+    {
+      "pdf": "",
+      "correct": "ේ",
+      "count": 1,
+      "category": "missing-in-PDF: character lost entirely",
+      "pdf_codepoints": [],
+      "ocr_codepoints": [
+        "U+0DDA"
+      ],
+      "examples": [
+        "අනුපොන වයෝගය පරිදි."
+      ]
+    },
+    {
+      "pdf": "ෝගය",
+      "correct": "ි",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0DDD",
+        "U+0D9C",
+        "U+0DBA"
+      ],
+      "ocr_codepoints": [
+        "U+0DD2"
+      ],
+      "examples": [
+        "අනුපොන වයෝගය පරිදි."
+      ]
+    },
+    {
+      "pdf": "පරිදි",
+      "correct": "",
+      "count": 1,
+      "category": "extra-in-PDF: spurious character in PDF",
+      "pdf_codepoints": [
+        "U+0DB4",
+        "U+0DBB",
+        "U+0DD2",
+        "U+0DAF",
+        "U+0DD2"
+      ],
+      "ocr_codepoints": [],
+      "examples": [
+        "අනුපොන වයෝගය පරිදි."
+      ]
+    },
+    {
+      "pdf": "ක",
+      "correct": "II . ශ",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0D9A"
+      ],
+      "ocr_codepoints": [
+        "U+0049",
+        "U+0049",
+        "U+0020",
+        "U+002E",
+        "U+0020",
+        "U+0DC1"
+      ],
+      "examples": [
+        "කුරුඳු වපොතු භොග 2 යි"
+      ]
+    },
+    {
+      "pdf": "",
+      "correct": "ද්ධ ",
+      "count": 1,
+      "category": "missing-in-PDF: character lost entirely",
+      "pdf_codepoints": [],
+      "ocr_codepoints": [
+        "U+0DAF",
+        "U+0DCA",
+        "U+0DB0",
+        "U+0020"
+      ],
+      "examples": [
+        "කුරුඳු වපොතු භොග 2 යි"
+      ]
+    },
+    {
+      "pdf": "ුඳු වපොතු",
+      "correct": "ස",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0DD4",
+        "U+0DB3",
+        "U+0DD4",
+        "U+0020",
+        "U+0DC0",
+        "U+0DB4",
+        "U+0DDC",
+        "U+0DAD",
+        "U+0DD4"
+      ],
+      "ocr_codepoints": [
+        "U+0DC3"
+      ],
+      "examples": [
+        "කුරුඳු වපොතු භොග 2 යි"
+      ]
+    },
+    {
+      "pdf": "2",
+      "correct": "1",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0032"
+      ],
+      "ocr_codepoints": [
+        "U+0031"
+      ],
+      "examples": [
+        "කුරුඳු වපොතු භොග 2 යි"
+      ]
+    },
+    {
+      "pdf": "",
+      "correct": "ශුද්ධ ග",
+      "count": 1,
+      "category": "missing-in-PDF: character lost entirely",
+      "pdf_codepoints": [],
+      "ocr_codepoints": [
+        "U+0DC1",
+        "U+0DD4",
+        "U+0DAF",
+        "U+0DCA",
+        "U+0DB0",
+        "U+0020",
+        "U+0D9C"
+      ],
+      "examples": [
+        "නොමල්වර්ණු භොග 3 යි"
+      ]
+    },
+    {
+      "pdf": "ොමල",
+      "correct": "",
+      "count": 1,
+      "category": "extra-in-PDF: spurious character in PDF",
+      "pdf_codepoints": [
+        "U+0DDC",
+        "U+0DB8",
+        "U+0DBD"
+      ],
+      "ocr_codepoints": [],
+      "examples": [
+        "නොමල්වර්ණු භොග 3 යි"
+      ]
+    },
+    {
+      "pdf": "වර්ණු",
+      "correct": "ධක",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0DC0",
+        "U+0DBB",
+        "U+0DCA",
+        "U+0DAB",
+        "U+0DD4"
+      ],
+      "ocr_codepoints": [
+        "U+0DB0",
+        "U+0D9A"
+      ],
+      "examples": [
+        "නොමල්වර්ණු භොග 3 යි"
+      ]
+    },
+    {
+      "pdf": "3",
+      "correct": "2",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0033"
+      ],
+      "ocr_codepoints": [
+        "U+0032"
+      ],
+      "examples": [
+        "නොමල්වර්ණු භොග 3 යි"
+      ]
+    },
+    {
+      "pdf": "ගම",
+      "correct": "ශුද",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0D9C",
+        "U+0DB8"
+      ],
+      "ocr_codepoints": [
+        "U+0DC1",
+        "U+0DD4",
+        "U+0DAF"
+      ],
+      "examples": [
+        "ගම්මිරිස් භොග 4 යි"
+      ]
+    },
+    {
+      "pdf": "මිරි",
+      "correct": "ධ ",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0DB8",
+        "U+0DD2",
+        "U+0DBB",
+        "U+0DD2"
+      ],
+      "ocr_codepoints": [
+        "U+0DB0",
+        "U+0020"
+      ],
+      "examples": [
+        "ගම්මිරිස් භොග 4 යි"
+      ]
+    },
+    {
+      "pdf": "",
+      "correct": "වර්ණ",
+      "count": 1,
+      "category": "missing-in-PDF: character lost entirely",
+      "pdf_codepoints": [],
+      "ocr_codepoints": [
+        "U+0DC0",
+        "U+0DBB",
+        "U+0DCA",
+        "U+0DAB"
+      ],
+      "examples": [
+        "ගම්මිරිස් භොග 4 යි"
+      ]
+    },
+    {
+      "pdf": "",
+      "correct": "1/",
+      "count": 1,
+      "category": "missing-in-PDF: character lost entirely",
+      "pdf_codepoints": [],
+      "ocr_codepoints": [
+        "U+0031",
+        "U+002F"
+      ],
+      "examples": [
+        "ගම්මිරිස් භොග 4 යි"
+      ]
+    },
+    {
+      "pdf": "ය",
+      "correct": " කඩින් හ",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0DBA"
+      ],
+      "ocr_codepoints": [
+        "U+0020",
+        "U+0D9A",
+        "U+0DA9",
+        "U+0DD2",
+        "U+0DB1",
+        "U+0DCA",
+        "U+0020",
+        "U+0DC4"
+      ],
+      "examples": [
+        "සියල්ල සමභොගව ගත යුතු යි."
+      ]
+    },
+    {
+      "pdf": "්ල සමභොගව",
+      "correct": "ා",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0DCA",
+        "U+0DBD",
+        "U+0020",
+        "U+0DC3",
+        "U+0DB8",
+        "U+0DB7",
+        "U+0DDC",
+        "U+0D9C",
+        "U+0DC0"
+      ],
+      "ocr_codepoints": [
+        "U+0DCF"
+      ],
+      "examples": [
+        "සියල්ල සමභොගව ගත යුතු යි."
+      ]
+    },
+    {
+      "pdf": "ි",
+      "correct": " ",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0DD2"
+      ],
+      "ocr_codepoints": [
+        "U+0020"
+      ],
+      "examples": [
+        "සියල්ල සමභොගව ගත යුතු යි."
+      ]
+    },
+    {
+      "pdf": "සමභොග",
+      "correct": "අ",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0DC3",
+        "U+0DB8",
+        "U+0DB7",
+        "U+0DDC",
+        "U+0D9C"
+      ],
+      "ocr_codepoints": [
+        "U+0D85"
+      ],
+      "examples": [
+        "සමභොගව ගත යුතු වේ."
+      ]
+    },
+    {
+      "pdf": "37",
+      "correct": "2 ",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0033",
+        "U+0037"
+      ],
+      "ocr_codepoints": [
+        "U+0032",
+        "U+0020"
+      ],
+      "examples": [
+        "37. වයෝග නොමය භූනිේබාදි චූර්ණය"
+      ]
+    },
+    {
+      "pdf": "ිේබ",
+      "correct": "ුප",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0DD2",
+        "U+0DDA",
+        "U+0DB6"
+      ],
+      "ocr_codepoints": [
+        "U+0DD4",
+        "U+0DB4"
+      ],
+      "examples": [
+        "37. වයෝග නොමය භූනිේබාදි චූර්ණය"
+      ]
+    },
+    {
+      "pdf": "දි චූර්ණ",
+      "correct": "න",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0DAF",
+        "U+0DD2",
+        "U+0020",
+        "U+0DA0",
+        "U+0DD6",
+        "U+0DBB",
+        "U+0DCA",
+        "U+0DAB"
+      ],
+      "ocr_codepoints": [
+        "U+0DB1"
+      ],
+      "examples": [
+        "37. වයෝග නොමය භූනිේබාදි චූර්ණය"
+      ]
+    },
+    {
+      "pdf": "බිං ව ",
+      "correct": "ක",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0DB6",
+        "U+0DD2",
+        "U+0D82",
+        "U+0020",
+        "U+0DC0",
+        "U+0020"
+      ],
+      "ocr_codepoints": [
+        "U+0D9A"
+      ],
+      "examples": [
+        "වයෝගය බිං ව ොවහොඹ"
+      ]
+    },
+    {
+      "pdf": "",
+      "correct": " පොතු",
+      "count": 1,
+      "category": "missing-in-PDF: character lost entirely",
+      "pdf_codepoints": [],
+      "ocr_codepoints": [
+        "U+0020",
+        "U+0DB4",
+        "U+0DDC",
+        "U+0DAD",
+        "U+0DD4"
+      ],
+      "examples": [
+        "වයෝගය බිං ව ොවහොඹ"
+      ]
+    },
+    {
+      "pdf": "අන",
+      "correct": "ක",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0D85",
+        "U+0DB1"
+      ],
+      "ocr_codepoints": [
+        "U+0D9A"
+      ],
+      "examples": [
+        "අනුපොන ගිවතල්, මී පැණි, එලකිරි සමග ය"
+      ]
+    },
+    {
+      "pdf": "ො",
+      "correct": "්පමේ",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0DDC"
+      ],
+      "ocr_codepoints": [
+        "U+0DCA",
+        "U+0DB4",
+        "U+0DB8",
+        "U+0DDA"
+      ],
+      "examples": [
+        "අනුපොන ගිවතල්, මී පැණි, එලකිරි සමග ය"
+      ]
+    },
+    {
+      "pdf": "",
+      "correct": "ිය",
+      "count": 1,
+      "category": "missing-in-PDF: character lost entirely",
+      "pdf_codepoints": [],
+      "ocr_codepoints": [
+        "U+0DD2",
+        "U+0DBA"
+      ],
+      "examples": [
+        "අනුපොන ගිවතල්, මී පැණි, එලකිරි සමග ය"
+      ]
+    },
+    {
+      "pdf": "ගිවත",
+      "correct": "දළු ඇඹු",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0D9C",
+        "U+0DD2",
+        "U+0DC0",
+        "U+0DAD"
+      ],
+      "ocr_codepoints": [
+        "U+0DAF",
+        "U+0DC5",
+        "U+0DD4",
+        "U+0020",
+        "U+0D87",
+        "U+0DB9",
+        "U+0DD4"
+      ],
+      "examples": [
+        "අනුපොන ගිවතල්, මී පැණි, එලකිරි සමග ය"
+      ]
+    },
+    {
+      "pdf": ", ",
+      "correct": "දොඩ",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+002C",
+        "U+0020"
+      ],
+      "ocr_codepoints": [
+        "U+0DAF",
+        "U+0DDC",
+        "U+0DA9"
+      ],
+      "examples": [
+        "අනුපොන ගිවතල්, මී පැණි, එලකිරි සමග ය"
+      ]
+    },
+    {
+      "pdf": "ී",
+      "correct": "්",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0DD3"
+      ],
+      "ocr_codepoints": [
+        "U+0DCA"
+      ],
+      "examples": [
+        "අනුපොන ගිවතල්, මී පැණි, එලකිරි සමග ය"
+      ]
+    },
+    {
+      "pdf": "ණි, එලක",
+      "correct": "ඟ",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0DAB",
+        "U+0DD2",
+        "U+002C",
+        "U+0020",
+        "U+0D91",
+        "U+0DBD",
+        "U+0D9A"
+      ],
+      "ocr_codepoints": [
+        "U+0D9F"
+      ],
+      "examples": [
+        "අනුපොන ගිවතල්, මී පැණි, එලකිරි සමග ය"
+      ]
+    },
+    {
+      "pdf": " සමග ය",
+      "correct": "",
+      "count": 1,
+      "category": "extra-in-PDF: spurious character in PDF",
+      "pdf_codepoints": [
+        "U+0020",
+        "U+0DC3",
+        "U+0DB8",
+        "U+0D9C",
+        "U+0020",
+        "U+0DBA"
+      ],
+      "ocr_codepoints": [],
+      "examples": [
+        "අනුපොන ගිවතල්, මී පැණි, එලකිරි සමග ය"
+      ]
+    },
+    {
+      "pdf": "49",
+      "correct": "2 ",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0034",
+        "U+0039"
+      ],
+      "ocr_codepoints": [
+        "U+0032",
+        "U+0020"
+      ],
+      "examples": [
+        "49. වයෝග නොමය වෘහද්ගංගාධර චූර්ණය"
+      ]
+    },
+    {
+      "pdf": "වෘහ",
+      "correct": ": - චන්",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0DC0",
+        "U+0DD8",
+        "U+0DC4"
+      ],
+      "ocr_codepoints": [
+        "U+003A",
+        "U+0020",
+        "U+002D",
+        "U+0020",
+        "U+0DA0",
+        "U+0DB1",
+        "U+0DCA"
+      ],
+      "examples": [
+        "49. වයෝග නොමය වෘහද්ගංගාධර චූර්ණය"
+      ]
+    },
+    {
+      "pdf": "ගංගාධ",
+      "correct": "‍",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0D9C",
+        "U+0D82",
+        "U+0D9C",
+        "U+0DCF",
+        "U+0DB0"
+      ],
+      "ocr_codepoints": [
+        "U+200D"
+      ],
+      "examples": [
+        "49. වයෝග නොමය වෘහද්ගංගාධර චූර්ණය"
+      ]
+    },
+    {
+      "pdf": "චූර",
+      "correct": "කල",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0DA0",
+        "U+0DD6",
+        "U+0DBB"
+      ],
+      "ocr_codepoints": [
+        "U+0D9A",
+        "U+0DBD"
+      ],
+      "examples": [
+        "49. වයෝග නොමය වෘහද්ගංගාධර චූර්ණය"
+      ]
+    },
+    {
+      "pdf": "ණ",
+      "correct": "ක",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0DAB"
+      ],
+      "ocr_codepoints": [
+        "U+0D9A"
+      ],
+      "examples": [
+        "49. වයෝග නොමය වෘහද්ගංගාධර චූර්ණය"
+      ]
+    },
+    {
+      "pdf": "ව",
+      "correct": "කලා",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0DC0"
+      ],
+      "ocr_codepoints": [
+        "U+0D9A",
+        "U+0DBD",
+        "U+0DCF"
+      ],
+      "examples": [
+        "වඳුරු මෑ ඇට"
+      ]
+    },
+    {
+      "pdf": "",
+      "correct": "අල වැල්",
+      "count": 1,
+      "category": "missing-in-PDF: character lost entirely",
+      "pdf_codepoints": [],
+      "ocr_codepoints": [
+        "U+0D85",
+        "U+0DBD",
+        "U+0020",
+        "U+0DC0",
+        "U+0DD0",
+        "U+0DBD",
+        "U+0DCA"
+      ],
+      "examples": [
+        "වඳුරු මෑ ඇට"
+      ]
+    },
+    {
+      "pdf": "ෑ ඇට",
+      "correct": "ී",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0DD1",
+        "U+0020",
+        "U+0D87",
+        "U+0DA7"
+      ],
+      "ocr_codepoints": [
+        "U+0DD3"
+      ],
+      "examples": [
+        "වඳුරු මෑ ඇට"
+      ]
+    },
+    {
+      "pdf": "චීන",
+      "correct": "100",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0DA0",
+        "U+0DD3",
+        "U+0DB1"
+      ],
+      "ocr_codepoints": [
+        "U+0031",
+        "U+0030",
+        "U+0030"
+      ],
+      "examples": [
+        "වයෝගය චීන අල පලං 2 යි. (ග්‍රෑම් 120)"
+      ]
+    },
+    {
+      "pdf": "අල ප",
+      "correct": "ක",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0D85",
+        "U+0DBD",
+        "U+0020",
+        "U+0DB4"
+      ],
+      "ocr_codepoints": [
+        "U+0D9A"
+      ],
+      "examples": [
+        "වයෝගය චීන අල පලං 2 යි. (ග්‍රෑම් 120)"
+      ]
+    },
+    {
+      "pdf": "2",
+      "correct": "යි 400 .",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0032"
+      ],
+      "ocr_codepoints": [
+        "U+0DBA",
+        "U+0DD2",
+        "U+0020",
+        "U+0034",
+        "U+0030",
+        "U+0030",
+        "U+0020",
+        "U+002E"
+      ],
+      "examples": [
+        "වයෝගය චීන අල පලං 2 යි. (ග්‍රෑම් 120)"
+      ]
+    },
+    {
+      "pdf": "",
+      "correct": " ( ",
+      "count": 1,
+      "category": "missing-in-PDF: character lost entirely",
+      "pdf_codepoints": [],
+      "ocr_codepoints": [
+        "U+0020",
+        "U+0028",
+        "U+0020"
+      ],
+      "examples": [
+        "වයෝගය චීන අල පලං 2 යි. (ග්‍රෑම් 120)"
+      ]
+    },
+    {
+      "pdf": "ම",
+      "correct": " ග",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0DB8"
+      ],
+      "ocr_codepoints": [
+        "U+0020",
+        "U+0D9C"
+      ],
+      "examples": [
+        "වයෝගය චීන අල පලං 2 යි. (ග්‍රෑම් 120)"
+      ]
+    },
+    {
+      "pdf": "",
+      "correct": "‍රෑ",
+      "count": 1,
+      "category": "missing-in-PDF: character lost entirely",
+      "pdf_codepoints": [],
+      "ocr_codepoints": [
+        "U+200D",
+        "U+0DBB",
+        "U+0DD1"
+      ],
+      "examples": [
+        "වයෝගය චීන අල පලං 2 යි. (ග්‍රෑම් 120)"
+      ]
+    },
+    {
+      "pdf": "1",
+      "correct": ": : 500 ",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0031"
+      ],
+      "ocr_codepoints": [
+        "U+003A",
+        "U+0020",
+        "U+003A",
+        "U+0020",
+        "U+0035",
+        "U+0030",
+        "U+0030",
+        "U+0020"
+      ],
+      "examples": [
+        "වයෝගය චීන අල පලං 2 යි. (ග්‍රෑම් 120)"
+      ]
+    },
+    {
+      "pdf": "",
+      "correct": " . )",
+      "count": 1,
+      "category": "missing-in-PDF: character lost entirely",
+      "pdf_codepoints": [],
+      "ocr_codepoints": [
+        "U+0020",
+        "U+002E",
+        "U+0020",
+        "U+0029"
+      ],
+      "examples": [
+        "වයෝගය චීන අල පලං 2 යි. (ග්‍රෑම් 120)"
+      ]
+    },
+    {
+      "pdf": "බල වඩ",
+      "correct": "නස",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0DB6",
+        "U+0DBD",
+        "U+0020",
+        "U+0DC0",
+        "U+0DA9"
+      ],
+      "ocr_codepoints": [
+        "U+0DB1",
+        "U+0DC3"
+      ],
+      "examples": [
+        "බල වඩයි."
+      ]
+    },
+    {
+      "pdf": "4",
+      "correct": "7 ",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0034"
+      ],
+      "ocr_codepoints": [
+        "U+0037",
+        "U+0020"
+      ],
+      "examples": [
+        "14. වයෝග නොමය සප්තාමෘත වලෞහය"
+      ]
+    },
+    {
+      "pdf": "සප්ත",
+      "correct": "උණගොබ කෂ",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0DC3",
+        "U+0DB4",
+        "U+0DCA",
+        "U+0DAD"
+      ],
+      "ocr_codepoints": [
+        "U+0D8B",
+        "U+0DAB",
+        "U+0D9C",
+        "U+0DDC",
+        "U+0DB6",
+        "U+0020",
+        "U+0D9A",
+        "U+0DC2"
+      ],
+      "examples": [
+        "14. වයෝග නොමය සප්තාමෘත වලෞහය"
+      ]
+    },
+    {
+      "pdf": "මෘත වලෞහ",
+      "correct": "",
+      "count": 1,
+      "category": "extra-in-PDF: spurious character in PDF",
+      "pdf_codepoints": [
+        "U+0DB8",
+        "U+0DD8",
+        "U+0DAD",
+        "U+0020",
+        "U+0DC0",
+        "U+0DBD",
+        "U+0DDE",
+        "U+0DC4"
+      ],
+      "ocr_codepoints": [],
+      "examples": [
+        "14. වයෝග නොමය සප්තාමෘත වලෞහය"
+      ]
+    },
+    {
+      "pdf": "1",
+      "correct": "39 ",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0031"
+      ],
+      "ocr_codepoints": [
+        "U+0033",
+        "U+0039",
+        "U+0020"
+      ],
+      "examples": [
+        "1. වයෝග නොමය අතීසාර වී. (I)"
+      ]
+    },
+    {
+      "pdf": "අතීස",
+      "correct": "කටජ",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0D85",
+        "U+0DAD",
+        "U+0DD3",
+        "U+0DC3"
+      ],
+      "ocr_codepoints": [
+        "U+0D9A",
+        "U+0DA7",
+        "U+0DA2"
+      ],
+      "examples": [
+        "1. වයෝග නොමය අතීසාර වී. (I)"
+      ]
+    },
+    {
+      "pdf": "ර",
+      "correct": "දි",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0DBB"
+      ],
+      "ocr_codepoints": [
+        "U+0DAF",
+        "U+0DD2"
+      ],
+      "examples": [
+        "1. වයෝග නොමය අතීසාර වී. (I)"
+      ]
+    },
+    {
+      "pdf": "",
+      "correct": "ක්",
+      "count": 1,
+      "category": "missing-in-PDF: character lost entirely",
+      "pdf_codepoints": [],
+      "ocr_codepoints": [
+        "U+0D9A",
+        "U+0DCA"
+      ],
+      "examples": [
+        "1. වයෝග නොමය අතීසාර වී. (I)"
+      ]
+    },
+    {
+      "pdf": "ී. (I)",
+      "correct": "ාථය",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0DD3",
+        "U+002E",
+        "U+0020",
+        "U+0028",
+        "U+0049",
+        "U+0029"
+      ],
+      "ocr_codepoints": [
+        "U+0DCF",
+        "U+0DAE",
+        "U+0DBA"
+      ],
+      "examples": [
+        "1. වයෝග නොමය අතීසාර වී. (I)"
+      ]
+    },
+    {
+      "pdf": "",
+      "correct": "4",
+      "count": 1,
+      "category": "missing-in-PDF: character lost entirely",
+      "pdf_codepoints": [],
+      "ocr_codepoints": [
+        "U+0034"
+      ],
+      "examples": [
+        "5. වයෝග නොමය කිංශුක විය"
+      ]
+    },
+    {
+      "pdf": "ිංශුක වි",
+      "correct": "ෂා",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0DD2",
+        "U+0D82",
+        "U+0DC1",
+        "U+0DD4",
+        "U+0D9A",
+        "U+0020",
+        "U+0DC0",
+        "U+0DD2"
+      ],
+      "ocr_codepoints": [
+        "U+0DC2",
+        "U+0DCF"
+      ],
+      "examples": [
+        "5. වයෝග නොමය කිංශුක විය"
+      ]
+    },
+    {
+      "pdf": "9",
+      "correct": "55 ",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0039"
+      ],
+      "ocr_codepoints": [
+        "U+0035",
+        "U+0035",
+        "U+0020"
+      ],
+      "examples": [
+        "9. වයෝග නොමය දළුපණු ගුිය."
+      ]
+    },
+    {
+      "pdf": "",
+      "correct": "ත්‍රිඵලා",
+      "count": 1,
+      "category": "missing-in-PDF: character lost entirely",
+      "pdf_codepoints": [],
+      "ocr_codepoints": [
+        "U+0DAD",
+        "U+0DCA",
+        "U+200D",
+        "U+0DBB",
+        "U+0DD2",
+        "U+0DB5",
+        "U+0DBD",
+        "U+0DCF"
+      ],
+      "examples": [
+        "9. වයෝග නොමය දළුපණු ගුිය."
+      ]
+    },
+    {
+      "pdf": "ළුපණු",
+      "correct": "ි",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0DC5",
+        "U+0DD4",
+        "U+0DB4",
+        "U+0DAB",
+        "U+0DD4"
+      ],
+      "ocr_codepoints": [
+        "U+0DD2"
+      ],
+      "examples": [
+        "9. වයෝග නොමය දළුපණු ගුිය."
+      ]
+    },
+    {
+      "pdf": "ගුි",
+      "correct": "ක්වාථ",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0D9C",
+        "U+0DD4",
+        "U+0DD2"
+      ],
+      "ocr_codepoints": [
+        "U+0D9A",
+        "U+0DCA",
+        "U+0DC0",
+        "U+0DCF",
+        "U+0DAE"
+      ],
+      "examples": [
+        "9. වයෝග නොමය දළුපණු ගුිය."
+      ]
+    },
+    {
+      "pdf": "ස",
+      "correct": "බෙලි ත",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0DC3"
+      ],
+      "ocr_codepoints": [
+        "U+0DB6",
+        "U+0DD9",
+        "U+0DBD",
+        "U+0DD2",
+        "U+0020",
+        "U+0DAD"
+      ],
+      "examples": [
+        "වයෝගය සොදිලිංගම් බුළු සුවඳව ොේටන්"
+      ]
+    },
+    {
+      "pdf": "ද",
+      "correct": "ට",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0DAF"
+      ],
+      "ocr_codepoints": [
+        "U+0DA7"
+      ],
+      "examples": [
+        "වයෝගය සොදිලිංගම් බුළු සුවඳව ොේටන්"
+      ]
+    },
+    {
+      "pdf": "ිංග",
+      "correct": "",
+      "count": 1,
+      "category": "extra-in-PDF: spurious character in PDF",
+      "pdf_codepoints": [
+        "U+0DD2",
+        "U+0D82",
+        "U+0D9C"
+      ],
+      "ocr_codepoints": [],
+      "examples": [
+        "වයෝගය සොදිලිංගම් බුළු සුවඳව ොේටන්"
+      ]
+    },
+    {
+      "pdf": "",
+      "correct": "ුල",
+      "count": 1,
+      "category": "missing-in-PDF: character lost entirely",
+      "pdf_codepoints": [],
+      "ocr_codepoints": [
+        "U+0DD4",
+        "U+0DBD"
+      ],
+      "examples": [
+        "වයෝගය සොදිලිංගම් බුළු සුවඳව ොේටන්"
+      ]
+    },
+    {
+      "pdf": "බ",
+      "correct": "ම",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0DB6"
+      ],
+      "ocr_codepoints": [
+        "U+0DB8"
+      ],
+      "examples": [
+        "වයෝගය සොදිලිංගම් බුළු සුවඳව ොේටන්"
+      ]
+    },
+    {
+      "pdf": "ළු",
+      "correct": "ල්",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0DC5",
+        "U+0DD4"
+      ],
+      "ocr_codepoints": [
+        "U+0DBD",
+        "U+0DCA"
+      ],
+      "examples": [
+        "වයෝගය සොදිලිංගම් බුළු සුවඳව ොේටන්"
+      ]
+    },
+    {
+      "pdf": "",
+      "correct": "අ",
+      "count": 1,
+      "category": "missing-in-PDF: character lost entirely",
+      "pdf_codepoints": [],
+      "ocr_codepoints": [
+        "U+0D85"
+      ],
+      "examples": [
+        "වයෝගය සොදිලිංගම් බුළු සුවඳව ොේටන්"
+      ]
+    },
+    {
+      "pdf": "ු",
+      "correct": "්",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0DD4"
+      ],
+      "ocr_codepoints": [
+        "U+0DCA"
+      ],
+      "examples": [
+        "වයෝගය සොදිලිංගම් බුළු සුවඳව ොේටන්"
+      ]
+    },
+    {
+      "pdf": "ඳව ොේට",
+      "correct": "ැ",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0DB3",
+        "U+0DC0",
+        "U+0020",
+        "U+0DDC",
+        "U+0DDA",
+        "U+0DA7"
+      ],
+      "ocr_codepoints": [
+        "U+0DD0"
+      ],
+      "examples": [
+        "වයෝගය සොදිලිංගම් බුළු සුවඳව ොේටන්"
+      ]
+    },
+    {
+      "pdf": "ජටොමොං",
+      "correct": "",
+      "count": 1,
+      "category": "extra-in-PDF: spurious character in PDF",
+      "pdf_codepoints": [
+        "U+0DA2",
+        "U+0DA7",
+        "U+0DDC",
+        "U+0DB8",
+        "U+0DDC",
+        "U+0D82"
+      ],
+      "ocr_codepoints": [],
+      "examples": [
+        "ජටොමොංස කුඹුරු ඇට මද නි මුල්"
+      ]
+    },
+    {
+      "pdf": " ",
+      "correct": "ිරිතේක්",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0020"
+      ],
+      "ocr_codepoints": [
+        "U+0DD2",
+        "U+0DBB",
+        "U+0DD2",
+        "U+0DAD",
+        "U+0DDA",
+        "U+0D9A",
+        "U+0DCA"
+      ],
+      "examples": [
+        "ජටොමොංස කුඹුරු ඇට මද නි මුල්"
+      ]
+    },
+    {
+      "pdf": "ඹුරු",
+      "correct": "",
+      "count": 1,
+      "category": "extra-in-PDF: spurious character in PDF",
+      "pdf_codepoints": [
+        "U+0DB9",
+        "U+0DD4",
+        "U+0DBB",
+        "U+0DD4"
+      ],
+      "ocr_codepoints": [],
+      "examples": [
+        "ජටොමොංස කුඹුරු ඇට මද නි මුල්"
+      ]
+    },
+    {
+      "pdf": "ඇට මද න",
+      "correct": "තිප්පිල",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0D87",
+        "U+0DA7",
+        "U+0020",
+        "U+0DB8",
+        "U+0DAF",
+        "U+0020",
+        "U+0DB1"
+      ],
+      "ocr_codepoints": [
+        "U+0DAD",
+        "U+0DD2",
+        "U+0DB4",
+        "U+0DCA",
+        "U+0DB4",
+        "U+0DD2",
+        "U+0DBD"
+      ],
+      "examples": [
+        "ජටොමොංස කුඹුරු ඇට මද නි මුල්"
+      ]
+    },
+    {
+      "pdf": "",
+      "correct": "බැ",
+      "count": 1,
+      "category": "missing-in-PDF: character lost entirely",
+      "pdf_codepoints": [],
+      "ocr_codepoints": [
+        "U+0DB6",
+        "U+0DD0"
+      ],
+      "examples": [
+        "වේලො මුල් රොබු සුදුපොෂොණම්"
+      ]
+    },
+    {
+      "pdf": "ේ",
+      "correct": "ි",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0DDA"
+      ],
+      "ocr_codepoints": [
+        "U+0DD2"
+      ],
+      "examples": [
+        "වේලො මුල් රොබු සුදුපොෂොණම්"
+      ]
+    },
+    {
+      "pdf": "ො",
+      "correct": "",
+      "count": 1,
+      "category": "extra-in-PDF: spurious character in PDF",
+      "pdf_codepoints": [
+        "U+0DDC"
+      ],
+      "ocr_codepoints": [],
+      "examples": [
+        "වේලො මුල් රොබු සුදුපොෂොණම්"
+      ]
+    },
+    {
+      "pdf": "ොබු ",
+      "correct": "",
+      "count": 1,
+      "category": "extra-in-PDF: spurious character in PDF",
+      "pdf_codepoints": [
+        "U+0DDC",
+        "U+0DB6",
+        "U+0DD4",
+        "U+0020"
+      ],
+      "ocr_codepoints": [],
+      "examples": [
+        "වේලො මුල් රොබු සුදුපොෂොණම්"
+      ]
+    },
+    {
+      "pdf": "ගම්ම",
+      "correct": "ස",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0D9C",
+        "U+0DB8",
+        "U+0DCA",
+        "U+0DB8"
+      ],
+      "ocr_codepoints": [
+        "U+0DC3"
+      ],
+      "examples": [
+        "ගම්මිරිස් වද හ නි දළු"
+      ]
+    },
+    {
+      "pdf": "ස",
+      "correct": "තේක",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0DC3"
+      ],
+      "ocr_codepoints": [
+        "U+0DAD",
+        "U+0DDA",
+        "U+0D9A"
+      ],
+      "examples": [
+        "ගම්මිරිස් වද හ නි දළු"
+      ]
+    },
+    {
+      "pdf": "",
+      "correct": "කු",
+      "count": 1,
+      "category": "missing-in-PDF: character lost entirely",
+      "pdf_codepoints": [],
+      "ocr_codepoints": [
+        "U+0D9A",
+        "U+0DD4"
+      ],
+      "examples": [
+        "ගම්මිරිස් වද හ නි දළු"
+      ]
+    },
+    {
+      "pdf": "වද",
+      "correct": "(",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0DC0",
+        "U+0DAF"
+      ],
+      "ocr_codepoints": [
+        "U+0028"
+      ],
+      "examples": [
+        "ගම්මිරිස් වද හ නි දළු"
+      ]
+    },
+    {
+      "pdf": "හ",
+      "correct": "භාර්ගී",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0DC4"
+      ],
+      "ocr_codepoints": [
+        "U+0DB7",
+        "U+0DCF",
+        "U+0DBB",
+        "U+0DCA",
+        "U+0D9C",
+        "U+0DD3"
+      ],
+      "examples": [
+        "ගම්මිරිස් වද හ නි දළු"
+      ]
+    },
+    {
+      "pdf": "නි",
+      "correct": ")",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0DB1",
+        "U+0DD2"
+      ],
+      "ocr_codepoints": [
+        "U+0029"
+      ],
+      "examples": [
+        "ගම්මිරිස් වද හ නි දළු"
+      ]
+    },
+    {
+      "pdf": "ද",
+      "correct": "අර",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0DAF"
+      ],
+      "ocr_codepoints": [
+        "U+0D85",
+        "U+0DBB"
+      ],
+      "examples": [
+        "ගම්මිරිස් වද හ නි දළු"
+      ]
+    },
+    {
+      "pdf": "",
+      "correct": "උපද්‍ර",
+      "count": 1,
+      "category": "missing-in-PDF: character lost entirely",
+      "pdf_codepoints": [],
+      "ocr_codepoints": [
+        "U+0D8B",
+        "U+0DB4",
+        "U+0DAF",
+        "U+0DCA",
+        "U+200D",
+        "U+0DBB"
+      ],
+      "examples": [
+        "වදදුරු වැල්මදට"
+      ]
+    },
+    {
+      "pdf": "ද",
+      "correct": " ",
+      "count": 1,
+      "category": "substitution",
+      "pdf_codepoints": [
+        "U+0DAF"
+      ],
+      "ocr_codepoints": [
+        "U+0020"
+      ],
+      "examples": [
+        "වදදුරු වැල්මදට"
+      ]
+    },
+    {
+      "pdf": "වැල්මදට",
+      "correct": "කෙරේ",
+      "count": 1,
+      "category": "VA-containing sequence, pre-vowel involved",
+      "pdf_codepoints": [
+        "U+0DC0",
+        "U+0DD0",
+        "U+0DBD",
+        "U+0DCA",
+        "U+0DB8",
+        "U+0DAF",
+        "U+0DA7"
+      ],
+      "ocr_codepoints": [
+        "U+0D9A",
+        "U+0DD9",
+        "U+0DBB",
+        "U+0DDA"
+      ],
+      "examples": [
+        "වදදුරු වැල්මදට"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,719 @@
+A spot-check of formula names reveals NFC/NFD length mismatches in at least 2 of 10 sampled strings (e.g., "කොහොඹ , රඹුක් අනුපානය" is NFC=21 chars but NFD=23). This is a known hazard with Sinhala Unicode: the al-lakuna (්) and dependent vowel signs have multiple valid decompositions. If this data is ingested into a transformer tokenizer (e.g., a SentencePiece model), inconsistent normalization will cause the same word to tokenize differently across instances, fragmenting vocabulary and degrading embedding quality. All strings should be NFC-normalized as a mandatory pre-processing step.
+
+
+This is a rich and technically interesting dataset. Let me give you a thorough discrimination from an NLP perspective.Here is my full discrimination as a senior NLP scientist:
+
+---
+
+## Senior NLP Scientist's Discrimination Report
+**File:** `151-to-200_structured.json` | **Domain:** Traditional Sri Lankan (Sinhala-medium) Ayurvedic Medicine | **Language:** Sinhala (සිංහල script)
+
+---
+
+### 1. What This Data Is
+
+This is a structured digitization of pages 172–200 from what appears to be a traditional Sri Lankan *vaidya* (physician's) formulary — a compendium of herbal formulas (*yogaya*), their ingredients, preparation methods, indications, and adjuvants. The batch contains **117 entries** with **entry serial numbers 1–83** — confirming the batch label ("151–200") refers to **source page numbers, not formula numbers**. This is an important disambiguation for any downstream indexing or retrieval system.
+
+---
+
+### 2. Schema Evaluation
+
+| Field | Sinhala Name | Fill Rate | Assessment |
+|---|---|---|---|
+| Entry number | `අංකය` | 99% | Good; 1 null (page-carry fragment) |
+| Formula name | `යෝග නාමය` | 99% | Good |
+| Ingredients | `යෝගය` | 99% | Structurally **problematic** (see §3) |
+| Preparation method | `සංස්කරණය` | **21%** | Severely under-extracted |
+| Clinical indication | `ප්‍රයෝG` | 94% | Good; 6 missing |
+| Adjuvant/vehicle | `අනුපාන` | 74% | Moderate; expected gaps |
+| Dosage | `මාත්‍රාව` | **10%** | Almost entirely absent |
+| Notes | `සටහන` | ~0% | Collapsed into continuation noise |
+| Source page | `source_page` | 100% | Reliable provenance anchor |
+
+---
+
+### 3. Critical Structural Problems
+
+**A. Instruction Bleed-in to the Ingredient List (`යෝගය`)**
+
+The most serious structural defect. The `ද්‍රව්‍යය` ("ingredient") field is being used as a catch-all dump for adjacent text, producing 7 confirmed cases where preparation instructions are serialized as ingredient objects:
+
+- Entry #1: *"සීතාරාම ගුලි හෝ සුරන්විදුර ගුලි සමග දෙන්නේ ය"* — this is a dispensing instruction, not an ingredient
+- Entry #3: *"කොටා වණ්ඩුවෙන් තම්බා මිරිකා , පෙරා..."* — decoction procedure (pound → simmer → press → strain) embedded in the ingredient list
+- Entry #11: *"අනුපාන සංස්කරණ විධියෙනි"* — a cross-reference embedded as an ingredient token
+
+This is likely an **OCR/parsing artefact** where the source text's column boundaries weren't cleanly detected. For any downstream NER or ingredient-extraction model, this is training-set poison.
+
+**B. Quantity Sub-Field (`ප්‍රමාණය`) — Severely Inconsistent**
+
+Only **8 entries** out of 117 have ingredients with explicit quantity values, yet those 8 entries account for **117 individual quantified ingredient records**. The majority of entries carry no quantities at all. This inconsistency is not domain-native — traditional formulas often specify "equal parts" (*සමව*) — it reflects **incomplete OCR/extraction** from a source that almost certainly had tabular quantity columns.
+
+**C. Preparation Method (`සංස්කරණය`) Collapse**
+
+At 21% fill rate, this field is critically hollow. Two patterns explain this:
+
+1. Many entries use a **by-reference formula**: *"දළු අනුපාන සංස්කරණ ක්‍රමය අනුව ය"* ("follow the standard leaf-decoction method") — valid cross-reference but makes the field unresolvable without the canonical reference text.
+2. The preparation text has bled into `ප්‍රයෝGය` (2 confirmed cases) or `යෝGය` ingredient lists (7 cases).
+
+**D. Dosage (`මාත්‍රාව`) — Clustered, Not Absent**
+
+What looks like a systemic absence (10% fill) is actually **section-local completeness**. The 12 filled dosage entries are densely clustered on pages 176–182, which covers *gulika* (pill) formulations with precise measurements (e.g., *"250 mg, 1–2 pills"*). The later decoction sections genuinely omit dosage (as patient titration is implied). An NLP pipeline must **not** impute null dosage as missing data uniformly — the semantic of absence differs by sub-type.
+
+---
+
+### 4. Pagination Artifact Contamination
+
+**27 of 117 entries (23%)** carry the string `"(continued from previous page)"` in `සටහන`. This is a **digitization watermark**, not a clinical note. One entry (`අංකය: null`) is a page-carry fragment with no formula number, no name, and no ingredients — a structural orphan that must be handled at the parsing stage. Any model trained on `සටහන` as a feature will find it meaningless without stripping these artefacts.
+
+---
+
+### 5. Unicode Normalization Risk
+
+A spot-check of formula names reveals **NFC/NFD length mismatches** in at least 2 of 10 sampled strings (e.g., *"කොහොඹ , රඹුක් අනුපානය"* is NFC=21 chars but NFD=23). This is a known hazard with Sinhala Unicode: the *al-lakuna* (්) and *dependent vowel signs* have multiple valid decompositions. If this data is ingested into a transformer tokenizer (e.g., a SentencePiece model), **inconsistent normalization will cause the same word to tokenize differently across instances**, fragmenting vocabulary and degrading embedding quality. All strings should be NFC-normalized as a mandatory pre-processing step.
+
+---
+
+### 6. Semantic / NLP-Domain Issues
+
+**Terminology density.** This corpus is dense with **Sanskrit loanwords transliterated into Sinhala script** (e.g., *ශ්‍රේෂ්ඨ, ජ්වර, ක්ෂණික, කල්කය, ක්වාථය*). A standard Sinhala tokenizer will mishandle these — they require a **domain-specific vocabulary** or a character-level subword model (BPE/Unigram trained on Ayurvedic Sinhala text).
+
+**Outlier formula complexity.** Entry #11 (*සසෝදරා කල්කය*, page 181) has **35 ingredients** — a 3.5× outlier over the dataset mean of ~9.8. Any length-based model, attention mechanism, or slot-filling parser must be validated against this tail.
+
+**Cross-entry coreference.** Terms like *"බුද්ධරාජ කල්කය"* appear both as standalone formula entries (#8, #9) **and** as ingredient/adjuvant references within other entries. This creates an **implicit knowledge graph** that is not represented in the flat JSON structure. A proper NLP pipeline needs entity linking, not just extraction.
+
+---
+
+### 7. Recommendations
+
+| Priority | Action |
+|---|---|
+| **P0** | NFC-normalize all string fields before any tokenization |
+| **P0** | Strip `"(continued from previous page)"` from `සටහන`; flag and merge orphan null-numbered entries |
+| **P1** | Build a classifier to detect and re-route instruction bleed-in from `යෝGය` → `සංස්කරණය` |
+| **P1** | Treat `මාත්‍රාව` null as **type-dependent missing** (decoction vs. pill), not uniform missingness |
+| **P2** | Resolve `සංස්කරණය` cross-references to their canonical preparation methods |
+| **P2** | Construct an entity-linking layer for ingredient/formula co-reference across entries |
+| **P3** | Train a domain-adapted SentencePiece tokenizer on Sinhala Ayurvedic text; do not rely on generic Sinhala tokenizers |
+
+---
+
+**Bottom line:** This is a genuinely valuable, rare-language, specialized-domain dataset — Sinhala Ayurvedic corpora of this size are uncommon in NLP. However, it is currently **not model-ready**. The structural contamination (instruction bleed-in, field collapse, pagination noise) and Unicode inconsistency must be resolved before use in any extraction, classification, or retrieval task. The data's underlying schema is semantically well-designed; the fidelity of the OCR/parsing pipeline that produced it is the limiting factor.
+
+
+Now I have everything I need. Let me write the full critique.
+
+---
+
+## NLP Usability Critique — Sinhala Ayurvedic Corpus (707 entries, pages 172–443)
+
+This is a genuine critique, not a checklist. The problems are organized by the NLP pipeline stage they break.
+
+---
+
+### 1. The schema cannot be trusted as a type system
+
+The most damaging property of this dataset for any NLP use is that **field boundaries are not semantically enforced**. You cannot treat each field as a reliable slot for a distinct information type:
+
+- `ද්‍රව්‍යය` ("ingredient") is supposed to be an atomic herb name. In practice it holds: atomic ingredient names, comma-separated multi-ingredient strings, preparation instructions, dosage proportions, cross-reference pointers, pure bracket fragments (`(`×242, `:`×61), and editorial notes — all in the same field with no type discriminator.
+- `ප්‍රYOG` ("indication") averages 2.1 sentences but reaches 25 (max 2,104 chars). It simultaneously encodes disease classification, symptom clusters, patient category (infant/adult/postnatal), dosage timing, and contraindications — with no sub-fields. Ten entries also embed preparation instructions inside it.
+- `අනුපාන` ("adjuvant") has 58 of 357 filled entries that are multi-sentence, mixing vehicle instructions, co-formulation references, and warnings into one string.
+- `සංස්කරණය` ("preparation") contains 37 unresolved cross-references (`"follow the standard decoction method"`) — valid in a printed formulary where the method is defined earlier on paper, but **dead data** for any NLP system that cannot resolve the pointer.
+
+The consequence is that no field can be safely used as a supervised label or extraction target without per-entry manual triage first.
+
+---
+
+### 2. Ingredient atomicity is broken at scale
+
+Out of 11,007 ingredient tokens, **1,559 (14.2%) are structurally corrupt**:
+
+| Problem type | Count |
+|---|---|
+| Pure punctuation / numeric only | 351 |
+| ≤2 character strings | 394 |
+| Contains parenthesis (quantity column leak) | 745 |
+| >60 characters (instruction bleed-in) | 69 |
+
+The `(` token alone (242 occurrences) is the single most frequent "ingredient" in the corpus — more common than `තිප්පිලි` (long pepper, 192×) which is the most pharmacologically ubiquitous ingredient in South Asian medicine. Any ingredient-frequency analysis, ingredient embedding, or NER model trained on this will have a punctuation fragment as its anchor term.
+
+The parenthesis contamination (`( ග්‍රෑ :`, `( II )`, `( )`...) is a quantity-column parsing failure. The source document almost certainly had a tabular layout with ingredient names in one column and quantities in a second. The parser collapsed both into the `ද්‍රව්‍යය` field. This is not recoverable without re-OCR or manual alignment.
+
+Additionally, `ඉඟුරු` and `අමු ඉඟුරු` (ginger vs. fresh ginger) are treated as fully separate entities across the vocabulary. The string `ඉරිවේරිය (ප්‍රතිනිධි)` — meaning "vetiver root (substitute)" — embeds a substitution annotation inside the ingredient name with no structured field separation. There is no way to distinguish primary ingredient from substitute, or ingredient from preparation qualifier, without a rule system built specifically for this corpus.
+
+---
+
+### 3. The dosage field is a mixed-type field with two incompatible unit systems
+
+342 entries have dosage data. Of those:
+
+- 191 use metric units (`ග්‍රෑ`, `mg`)
+- 47 use traditional seed-weight units (`මංචාඩිය`, `රක්තිකා`, `ඔළිඳ ඇට`, `වී ඇට`)
+- **40 entries use both systems in the same string**, e.g.: *"(mg: 250) one manchadi-sized pill, 1–2 doses, for children half an olive-seed measure..."*
+
+This means a dosage extraction model trained across the full dataset would be supervised on three incompatible output formats simultaneously, with no field flag to differentiate them. You cannot normalize these without a seed-weight-to-metric conversion table and entity recognition for traditional unit names — neither of which exists in standard Sinhala NLP tooling.
+
+---
+
+### 4. The preparation field has a train/test contamination risk from batch-position correlation
+
+The preparation field fill rate goes: 21% → 28% → 93% → 90% → 88% → 86% across batches. This is not random missingness — it reflects a section-type transition in the source book (early sections are decoction-by-reference; later sections are explicitly specified compound preparations). If you split train/test naively by entry index or batch, **your model will learn batch position as a proxy for whether the preparation field exists**, not anything linguistically meaningful. Any downstream model for preparation-type classification or preparation-text generation will be invalidated by this.
+
+---
+
+### 5. Formula name disambiguation is structurally incomplete
+
+46 groups of formulas share the same first 10 characters (same root name, different variants). The disambiguation signal is: Roman numeral suffixes `(I)`, `(II)`, `(III)`, Arabic numerals `(1)`, `(2)`, and in one case literally `( )` — an empty parenthesis, which is a parsing artifact with no recoverable meaning. The three entries for `බුද්ධරාජ කල්කය (I/II/III)` are separate records with no explicit foreign-key field linking them as variants. Any retrieval system or knowledge graph built from this will need either string similarity or manual curation to establish variant relationships — the data provides neither.
+
+---
+
+### 6. Unicode normalization failure is at the scale of a real problem
+
+24% of formula names (176 of 707) fail NFC/NFD equivalence. The ZWJ character (U+200D) appears in two of the JSON field keys themselves (`ප්‍රYOG`, `මාත්‍රාව`). This means:
+
+- A naive JSON parser that does string comparison on field names will silently fail to access these fields if the deserializer normalizes strings differently than the serializer did.
+- The same ingredient written in two different parts of the corpus may tokenize into different subword sequences under SentencePiece or BPE, producing different embedding vectors for the same herb.
+- Any vocabulary de-duplication step that does not first NFC-normalize will over-count types and under-count frequency.
+
+This is fixable (`unicodedata.normalize("NFC", s)` on every string before any further processing), but it must be applied globally and consistently — including on field key names, not just values.
+
+---
+
+### 7. Sinhala-specific language problems compound everything above
+
+There are no large pretrained transformer models with strong Sinhala Ayurvedic domain coverage. The practical options (SinBERT and similar) were trained on modern web Sinhala. This corpus uses archaic orthographic conventions, Sanskrit loanwords written in Sinhala script (ශ්‍රේෂ්ඨ, ජ්වර, ක්ෂය, ශ්වාස, etc.), and domain terminology that does not appear in any modern Sinhala web corpus. The result is severe out-of-vocabulary fragmentation: a BPE tokenizer trained on general Sinhala will decompose `ශ්‍රේෂ්ඨ` ("superior/excellent") into character-level fragments, losing all semantic signal.
+
+The `.` character is used in this corpus as a sentence terminator, an abbreviation marker, a decimal point within metric measurements, and a trailing full-stop after formula name Roman numerals — four distinct functions with no disambiguation. Any sentence segmenter that relies on `.` will produce wrong boundaries.
+
+---
+
+### 8. The completeness distribution hides a structured tail
+
+86% of entries have ≥5 of 7 fields filled — which sounds acceptable. But the 17 sparse entries (≤3/7) are not randomly distributed. They concentrate in the first two batches and are structurally linked to the continuation-page fragment pattern. These entries are not recoverable from this file alone; they require the preceding page's content. Training on them as-is introduces truncated examples with no label signal.
+
+---
+
+### Summary verdict
+
+| NLP task | Usability | Blocking issue |
+|---|---|---|
+| Ingredient NER | Poor | 14% of ingredient tokens are artifacts; no atomicity guarantee |
+| Indication classification | Moderate | Field is multi-label, multi-sentence, no sub-field structure |
+| Preparation IE / seq2seq | Poor | 37 unresolved cross-refs; batch-position correlation |
+| Dosage normalization | Very poor | Three incompatible unit systems, no type flag |
+| Formula retrieval | Moderate | NFC mismatch; variant linking absent |
+| Knowledge graph construction | Poor | No global ID; no FK for variants; no synonym field |
+| Language modelling (Sinhala Ayurvedic) | Moderate | Rich domain text, but Unicode normalization required first |
+
+The data's underlying source is genuinely valuable — a structured Sinhala Ayurvedic formulary of this size is rare. But in its current form it is **not directly usable for supervised NLP without a cleaning pipeline** that addresses Unicode normalization, ingredient atomicity, field-type discrimination, and dosage unit unification. None of those steps are trivial in Sinhala.
+
+
+This is the right question to ask before writing any more code. Let me map every resolver this programme actually needs, what it depends on, and how hard each one is.
+
+---
+
+### The dependency stack first
+
+Nothing here is independent. Build in the wrong order and each resolver breaks the ones above it.
+
+```
+Verse understanding
+        ↑
+Prose slot-filling
+        ↑
+Schema alignment (structure ↔ prose)
+        ↑
+Semantic role recognition
+        ↑
+Ingredient normalisation      ←── Botanical lexicon
+        ↑
+Tokenisation / segmentation
+        ↑
+Unicode normalisation         ←── Already done
+```
+
+You cannot skip levels. Every project that has tried has regretted it.
+
+---
+
+### Resolver 1 — Tokeniser / Morphological Segmenter
+
+**What it does:** Splits Sinhala text into meaningful units — not just whitespace tokens, because Sinhala agglutinates suffixes onto stems in ways that carry grammatical meaning critical for slot detection.
+
+`කොටාගෙන` needs to split into `කොටා` + `ගෙන` (having pounded + and). If it doesn't, your preparation verb detector misses it entirely.
+
+**What exists:** Basic Sinhala tokenisers exist. They work on modern web Sinhala. They fail on classical register in two specific ways — they don't handle archaic morphological endings, and they don't handle the sandhi that occurs at word boundaries in manuscript-derived text.
+
+**What needs building:**
+- A morphological analyser for classical Sinhala verbal forms — specifically the converb forms (`කොටා`, `තම්බා`, `මිරිකා`) which are the backbone of preparation method encoding
+- A sandhi splitter for the most common Sinhala sandhi rules as they appear in this domain — you don't need a complete Sanskrit-style sandhi resolver, just the patterns that occur in your actual text
+
+**Inputs needed:** The pharmacopoeia itself is your training signal. The preparation field gives you converb chains in natural context. Start there.
+
+**Difficulty:** Medium. Tractable within this corpus without external resources.
+
+---
+
+### Resolver 2 — Script Normaliser (beyond NFC)
+
+**What it does:** Handles variation *above* the Unicode level — different orthographic conventions for the same word across manuscripts and printed editions.
+
+This is separate from NFC normalisation. The issue is that classical Sinhala has multiple valid orthographic traditions for the same word. `ඉඟුරු` and `ඉඟුරු` might both be valid renderings of the same herb with slightly different vowel length conventions depending on which manuscript tradition the scribe followed.
+
+**What needs building:**
+- An orthographic variant table specific to this domain — essentially a spelling normalisation dictionary
+- Rules for classical vowel length variation and their modern equivalents
+- Handling of deprecated Sinhala characters that appear in older typeset editions but not in modern Unicode usage
+
+**Inputs needed:** This requires a domain expert — a scholar who can read both classical and modern Sinhala orthography and flag variant spellings of the same term across the corpus.
+
+**Difficulty:** Low technically, high in terms of knowledge required. Cannot be done computationally without human input.
+
+---
+
+### Resolver 3 — Botanical Entity Normaliser
+
+**What it does:** Maps every surface form of a herb name in the corpus to a single canonical identifier — ideally to a botanical Latin binomial or a pharmacopoeia-standard Sinhala name.
+
+This is the single most important resolver for everything above it in the stack. Without it, `ඉඟුරු`, `අමු ඉඟුරු`, `ශෘංගවේරය`, `ඉඟිනි ඇට`, and `ශුණ්ඨි` are five separate vocabulary items. They are parts of the same plant — *Zingiber officinale* — at different stages of processing (fresh root, dried root, seed).
+
+**What needs building:**
+
+A three-layer entity map:
+
+```
+Surface form (in this corpus)
+        ↓
+Standard Sinhala name (pharmacopoeia canonical)
+        ↓
+Botanical Latin binomial + plant part
+```
+
+The middle layer matters enormously. Different manuscripts use Sanskrit names, Sinhala vernacular names, regional dialect names, and sometimes descriptive epithets for the same plant. All three layers need to be present because different downstream users need different resolutions — a pharmacologist needs the Latin binomial, a practitioner needs the Sinhala canonical, a linguist needs the surface form.
+
+**What exists:** The *Āyurvēda Pharmacopoeia of Sri Lanka* published by the Department of Āyurvēda contains canonical Sinhala-Latin mappings. This is your primary reference. It is a physical book. Someone needs to digitise the relevant sections.
+
+**Inputs needed:** The pharmacopoeia book, a botanist or Ayurvedic pharmacologist, and time. This is 2–3 months of careful work for one person who knows the domain.
+
+**Difficulty:** High in terms of labour and expertise. Not computationally complex once the reference exists — it's fundamentally a dictionary lookup with fuzzy matching for surface form variation.
+
+---
+
+### Resolver 4 — Condition / Indication Normaliser
+
+**What it does:** Maps the free-text indication strings to a structured disease/symptom taxonomy.
+
+`සෙම් වා ප්‍රධාන ශ්වාස කාස නසයි` needs to map to something like: `{primary_dosha: [kapha, vata], condition: respiratory_distress, action: curative}`.
+
+This is harder than the botanical normaliser because indications are linguistic objects, not entity names. They carry doshas, patient categories, severity qualifiers, and treatment actions simultaneously in a single clause.
+
+**What needs building:**
+
+A two-stage resolver:
+
+**Stage A — Dosha and action tagger.** A rule-based tagger that extracts:
+- Primary dosha (`වා`, `පිත්ත`, `සෙම්`, `සන්නිපාත`)
+- Treatment action (`නසයි` = destroys, `ශමනය කරයි` = pacifies, `යෝග්‍ය` = suitable for)
+- Patient category markers (`ළදරුවන්`, `සූතිකා`, `බිළිඳුන්`)
+
+This is tractable with rules because the vocabulary is limited and formulaic.
+
+**Stage B — Condition mapping.** Map the residual condition terms to a taxonomy. The taxonomy options are:
+
+- Āyurvēdic disease classification (traditional — maps to Sanskrit terms your corpus already contains)
+- ICD-11 (modern biomedical — enables cross-system research but loses traditional meaning)
+- A hybrid — traditional classification as primary, ICD approximation as secondary
+
+The hybrid is the right answer academically. It's also the hardest to build because it requires both an Ayurvedic physician and a biomedical professional to agree on mappings, and they will sometimes disagree fundamentally — some traditional conditions have no ICD equivalent, and some ICD conditions span multiple traditional categories.
+
+**Difficulty:** High. The rule-based tagger (Stage A) is medium difficulty and buildable within the corpus. The condition taxonomy (Stage B) is a research contribution in its own right — it has been attempted for Hindi Ayurvedic NLP and the papers are not flattering about how well it works.
+
+---
+
+### Resolver 5 — Preparation Method Classifier
+
+**What it does:** Converts the semi-structured preparation text into a canonical preparation type with structured parameters.
+
+`සමව ගෙන කොටා වණ්ඩුවෙන් හෝ උනාළුවෙන් තම්බා මිරිකා පෙරා ගත යුතු ය` needs to resolve to:
+
+```
+{
+  method: "kasaya_decoction",
+  vessel: ["vanduva", "unaluva"],   # clay pot vs. metal pot
+  steps: ["pound", "simmer", "press", "strain"],
+  ratio: "equal_parts"
+}
+```
+
+**What needs building:**
+
+- A verb chain extractor for Sinhala converb sequences — this is the core of preparation encoding
+- A vessel/equipment named entity recogniser — `වණ්ඩු`, `උනාළු`, `මඩ` etc. are equipment terms that determine the preparation type
+- A ratio expression parser — `සමව` (equal parts), `බරට බරක්` (weight for weight), `දෙගුණ` (double) are ratio markers with specific meanings
+
+The 37 unresolved cross-references in your current corpus (`ක්‍රමය අනුව`) become resolvable once this resolver exists — they point to canonical preparation types that the resolver can name.
+
+**Difficulty:** Medium-high. The verb chain extractor is novel for classical Sinhala. The equipment NER is straightforward once you have a vocabulary list. This is a publishable contribution on its own.
+
+---
+
+### Resolver 6 — Metrical Parser (for verse manuscripts)
+
+**What it does:** Identifies the metre of a verse passage and uses metrical structure to inform word boundary and semantic slot detection.
+
+This is the hardest resolver in the stack and the one most dependent on everything below it.
+
+Classical Sinhala verse uses syllabic metres — the most common in medical manuscripts are *Siyabaslakara*-tradition metres and Eḷu metres that predate Sanskrit influence. Metre matters for NLP because:
+
+- It constrains word order in ways that violate normal Sinhala syntax
+- It creates obligatory sandhi at line boundaries
+- The *position* of a word within the metrical line is semantically meaningful — ingredient lists tend to occupy specific feet, indications tend to close the verse
+
+**What needs building:**
+
+- A syllable weight classifier for classical Sinhala — distinguishing heavy and light syllables, which is prerequisite to metre identification
+- A metre identifier — matching a scanned syllable sequence to a known metrical template
+- A metrical position to semantic role mapper — learned from the small set of verses that can be aligned to pharmacopoeia entries
+
+**What exists:** Sanskrit metrical analysis tools exist and are partially applicable — many Sinhala metres are derived from Sanskrit Āryā and Anuṣṭubh. A scholar named Godakumbura did foundational work on Sinhala metres in the 1950s. That work exists in print and needs digitising.
+
+**Difficulty:** Very high. This is a full PhD sub-project. Do not attempt until resolvers 1–5 are working.
+
+---
+
+### Resolver 7 — Schema Alignment (structure ↔ prose)
+
+**What it does:** Given a prose or verse passage, produces a filled schema — the same structured output as a pharmacopoeia entry — using all resolvers below it in the stack.
+
+This is the capstone resolver. It is not a single model but a pipeline:
+
+```
+Raw text
+   ↓  Tokeniser (R1) + Script normaliser (R2)
+Normalised tokens
+   ↓  Botanical NER + Condition NER (R3, R4)
+   ↓  Preparation verb chain extractor (R5)
+   ↓  [Metrical parser if verse] (R6)
+Slot candidates
+   ↓  Schema slot filler (learned from pharmacopoeia alignment)
+Structured entry
+```
+
+The slot filler at the bottom is the learned component. Everything above it is deterministic or rule-based. This is intentional — in a low-resource setting, putting the learning where you have signal (slot filling given extracted candidates) and rules where you have structure (tokenisation, entity detection) is more robust than end-to-end learning.
+
+**Training signal:** The pharmacopoeia entries are your silver-standard training data. Each entry is a (structured output, implicit prose input) pair — the implicit prose being the kind of text the scholar read when they compiled the entry. Finding actual parallel pairs from manuscripts is the research project, but the pharmacopoeia itself gives you synthetic training signal in the meantime.
+
+**Difficulty:** Very high as a complete system. Medium as a research prototype that works on a subset of formula types (kasaya decoctions, say) under controlled conditions.
+
+---
+
+### The honest build order
+
+| Phase | Resolvers | Prerequisite human work | Output |
+|---|---|---|---|
+| **Now** | R1 partial (converb tokeniser), R2 (orthographic variants) | Domain expert for 2–3 weeks | Clean tokenised corpus |
+| **6 months** | R3 (botanical normaliser) | Pharmacopoeia digitisation, botanist | Herb entity map |
+| **12 months** | R4 Stage A (dosha/action tagger), R5 (preparation classifier) | Ayurvedic physician review | Structured pharmacopoeia entries |
+| **18 months** | R7 prototype (prose slot filling on pharmacopoeia-adjacent text) | Manuscript digitisation, 50 aligned pairs | First reading of prose manuscripts |
+| **3 years** | R4 Stage B (condition taxonomy), R7 full | Physician + biomedical collaboration | Full schema alignment on prose |
+| **5+ years** | R6 (metrical parser), R7 verse extension | Metres scholar, more manuscripts | Verse manuscript reading |
+
+---
+
+### The thing that holds all of this together
+
+Every resolver produces output that feeds into an **expanding knowledge graph** — not a model, a graph. Herbs, formulas, conditions, preparation methods, manuscript sources, pharmacopoeia entries, all connected by typed edges. Each resolver adds a new class of edges to the graph. The graph accumulates knowledge that survives when models go stale.
+
+At the end of this programme, the knowledge graph is the contribution that matters most. The resolvers are how you build it. The models are how you query it.
+
+That graph, if built carefully and released openly, becomes the foundation for Sinhala Ayurvedic digital scholarship for the next generation. It is also, practically speaking, the thing that makes the ola manuscripts readable — not by translating them, but by giving a reader the structured context to understand what they're reading.
+
+This is the most linguistically interesting sub-problem in the whole stack. Let me think through it properly.
+
+---
+
+### What Sanskrit loanwords in Sinhala Ayurvedic text actually are
+
+First, a precision that matters enormously for how you build the resolver.
+
+These are not loanwords in the ordinary sense — borrowed, phonologically adapted, absorbed into the lexicon. What you have in this corpus is **three distinct categories** that look similar on the surface but require completely different resolution strategies.
+
+---
+
+**Category 1 — Tatsama: Sanskrit words copied unchanged into Sinhala script**
+
+The word is Sanskrit. The script is Sinhala. Nothing has changed phonologically. `ශ්වාස` is Sanskrit *śvāsa*. `ජ්වර` is Sanskrit *jvara*. `ත්‍රිදෝෂ` is Sanskrit *tridoṣa*. A Sanskrit NLP system reading the romanisation of this text would recognise these immediately.
+
+These are the easy case for resolution. You already have Sanskrit medical NLP resources — the Sanskrit Heritage Platform, the Cologne Digital Sanskrit Lexicon, and domain-specific work on Sanskrit Ayurvedic text. The resolution path is:
+
+```
+Sinhala script → transliteration → Sanskrit string → Sanskrit medical lexicon
+```
+
+The transliteration from Sinhala script to IAST (International Alphabet of Sanskrit Transliteration) is almost perfectly regular. Sinhala was specifically designed to represent Sanskrit phonology. Almost every Sanskrit phoneme has an exact Sinhala script equivalent, with only a few exceptions around retroflex distinctions.
+
+**The key resource that makes this tractable:** The Cologne Digital Sanskrit Lexicon (Monier-Williams) has been digitised and is queryable. The AYUSH ministry of India has published a Sanskrit Ayurvedic terminology database. Both are accessible. Neither has ever been linked to Sinhala script.
+
+---
+
+**Category 2 — Tadbhava: Sanskrit words phonologically adapted over generations of Sinhala use**
+
+The word is Sanskrit in origin but has been through centuries of Sinhala phonological change. `ඉඟුරු` comes from Sanskrit `śṛṅgavera` via Pali `siṅgavera` — the initial consonant cluster simplified, the retroflex was lost, the vowels shifted. You would not recognise the Sanskrit origin from the Sinhala surface form without historical linguistic knowledge.
+
+These are the hard case. The surface form gives you no direct transliteration path to Sanskrit. You need either:
+- An etymological dictionary mapping Sinhala terms to their Sanskrit origins
+- Or a learned model that can identify tadbhava patterns — which requires training data you don't have
+
+The good news: for the Ayurvedic domain specifically, the set of tadbhava terms is finite and largely known. Ayurvedic pharmacognosy literature in Sinhala has been documenting these correspondences since the early 20th century. The Sinhala *Dravyaguṇa* tradition explicitly lists Sanskrit-Sinhala term correspondences. This is lexicographic work, not machine learning.
+
+---
+
+**Category 3 — Sinhala vernacular with no Sanskrit equivalent**
+
+Some terms in the corpus are purely Sinhala — regional plant names, folk condition names, preparation vessel names — with no Sanskrit counterpart. `වණ්ඩු` (a clay cooking vessel) has no Sanskrit equivalent because it is a specifically Sri Lankan material culture object. Trying to resolve these through Sanskrit will fail and introduce errors.
+
+The resolver must distinguish Category 3 from Categories 1 and 2 before attempting any Sanskrit resolution. Applying tatsama resolution to a purely Sinhala word will produce nonsense.
+
+---
+
+### The resolution architecture
+
+**Module A — Category classifier**
+
+Before any resolution, classify each term:
+
+```
+Input: normalised Sinhala token
+
+Rule 1: Does it contain conjunct consonants that only exist 
+        in Sanskrit loans? (ශ්ව, ජ්ව, ක්ෂ, ත්‍ර, ශ්‍ර...)
+        → Likely tatsama → Route to Module B
+
+Rule 2: Does it appear in a known tadbhava lexicon?
+        → Confirmed tadbhava → Route to Module C
+
+Rule 3: Does it appear in a botanical reference under 
+        Sinhala vernacular names?
+        → Confirmed Sinhala → Route to Module D
+
+Rule 4: Unknown → Route to Module E (disambiguation)
+```
+
+The conjunct consonant heuristic for Rule 1 is powerful and reliable. Sanskrit has consonant clusters that Sinhala native vocabulary almost never uses. The presence of `ශ්ව`, `ജ්ව`, `ක්ෂ`, `ශ්‍ර`, `ස්‍ත`, `ත්‍ර` at word-initial position is a near-certain signal of tatsama status. Sinhala phonotactics don't generate these clusters natively.
+
+---
+
+**Module B — Tatsama resolver**
+
+```
+Sinhala tatsama token
+        ↓
+Sinhala-to-IAST transliteration table (rule-based, near-perfect)
+        ↓
+IAST string
+        ↓
+Lookup in Sanskrit medical lexicon
+        (Monier-Williams + AYUSH terminology DB + 
+         Meulenbeld's History of Indian Medical Literature index)
+        ↓
+{Sanskrit canonical form, meaning, 
+ Āyurvedic technical definition, 
+ botanical Latin if botanical term}
+```
+
+The transliteration table for tatsama resolution is the following critical mappings where Sinhala and Sanskrit diverge:
+
+Sinhala `ළ` has no Sanskrit equivalent — its presence signals a non-tatsama term. Sinhala `ශ` maps to Sanskrit `ś`. Sinhala `ෂ` maps to Sanskrit `ṣ`. Sinhala `ස` maps to Sanskrit `s`. These distinctions matter because Sanskrit medical terms use all three sibilants distinctively — `śvāsa` (breath/respiratory) vs. `svāsa` are different.
+
+The anusvāra (`ං`) and visarga (`ඃ`) both have direct Sanskrit counterparts and are usually preserved correctly in tatsama borrowings.
+
+**The one failure mode:** Some tatsama terms were borrowed at a time when a Sanskrit consonant had already merged in Sinhala spoken form. The script may reflect the Sanskrit original or the merged Sinhala pronunciation depending on which scribal tradition the manuscript follows. Your resolver needs a fallback that tries both.
+
+---
+
+**Module C — Tadbhava resolver**
+
+This cannot be done computationally without a lexicon. The phonological changes are historically regular but the rules are complex and interact, and applying them in reverse (Sinhala surface → Sanskrit origin) is much harder than applying them forward (Sanskrit → predicted Sinhala).
+
+The lexicon you need to build or find:
+
+**Primary source:** Sorata Thero's *Sinhala Sabdakośaya* — the authoritative Sinhala etymological dictionary — contains Sanskrit origins for most tadbhava terms. It exists in print. Critical sections need digitising.
+
+**Secondary source:** Wilhelm Geiger's *Grammar of the Sinhalese Language* (1938) contains systematic tables of Sanskrit-to-Sinhala phonological correspondences. This is the theoretical foundation for predicting tadbhava forms.
+
+**Domain-specific source:** Jayaweera's *Medicinal Plants Used in Ceylon* lists Sinhala plant names with Sanskrit equivalents. Directly applicable to your botanical terms.
+
+Once you have the lexicon, the resolver is a lookup with fuzzy matching for orthographic variants. The computational sophistication is not in the resolver itself but in building the lexicon correctly.
+
+**A partial computational shortcut:** The regular tadbhava correspondences produce predictable transformations. Sanskrit initial `ś` → Sinhala `ස` in most tadbhava. Sanskrit medial geminate consonants simplify. Sanskrit `au` diphthong → Sinhala `ඕ`. You can build a reverse transducer that generates candidate Sanskrit forms from a Sinhala tadbhava, then validate against the Sanskrit lexicon. This covers maybe 40% of cases automatically. The remaining 60% require the lexicon.
+
+---
+
+**Module D — Sinhala vernacular handler**
+
+For terms confirmed as purely Sinhala origin, Sanskrit resolution is not attempted. Instead:
+
+- Botanical terms → map to botanical Latin via the Āyurvēda Pharmacopoeia of Sri Lanka
+- Condition terms → map to the Sinhala condition taxonomy (Resolver 4 from the previous discussion)
+- Preparation/vessel terms → map to preparation method ontology (Resolver 5)
+
+These terms are actually often easier to resolve than the Sanskrit loans because they have been systematically documented in Sri Lankan pharmacopoeia literature.
+
+---
+
+**Module E — Disambiguation**
+
+Unknown terms that don't clearly fall into any category. Three strategies in order of preference:
+
+**Character n-gram classification.** Train a classifier on the character-level patterns of known tatsama vs. tadbhava vs. Sinhala terms. The conjunct consonant patterns are strong features. With your existing corpus you have maybe 500–600 labelled terms — marginal for training but usable for a simple classifier. Performance will be mediocre; use it only for routing, not for final resolution.
+
+**Contextual inference.** If an unknown term appears consistently in the ingredient list alongside known Sanskrit botanical terms, it is likely also a Sanskrit botanical term. If it appears in the preparation method alongside Sinhala action verbs, it is likely Sinhala. The collocational context of a term is a strong signal for its category.
+
+**Human-in-the-loop fallback.** Flag for expert review. Do not guess. A wrong category assignment poisons every resolver downstream.
+
+---
+
+### The cross-lingual resource you are missing and need to build
+
+There is no existing resource that maps Sinhala Ayurvedic terminology — tatsama, tadbhava, and vernacular — to a unified identifier space. This is the gap. Every existing resource covers part of the problem:
+
+| Resource | Coverage | Gap |
+|---|---|---|
+| Monier-Williams Sanskrit lexicon | Sanskrit tatsama terms | No Sinhala script entry points |
+| Āyurvēda Pharmacopoeia of Sri Lanka | Sinhala vernacular + Latin binomials | No Sanskrit cross-reference |
+| AYUSH terminology database | Sanskrit Ayurvedic terms | No Sinhala |
+| Sorata Thero Sabdakośaya | Sinhala etymologies | Not domain-specific, not digitised |
+| Geiger's Grammar | Phonological rules | No lexicon |
+
+What needs building is a **Sinhala Ayurvedic terminology database** that:
+
+- Enters through any of: Sinhala script surface form, IAST transliteration, botanical Latin, ICD approximation
+- Returns: canonical Sinhala form, Sanskrit origin (if applicable), botanical Latin, term category, source attestations
+- Is keyed by a stable identifier that survives script and transliteration changes
+
+This database is the foundational resource not just for your Sanskrit loanword resolver but for Resolvers 3, 4, and 7 from the previous discussion. It is the single most impactful thing you could build for this entire research programme.
+
+It is also genuinely novel. Nothing like it exists for Sinhala. The closest analogues are the Sanskrit-Tamil and Sanskrit-Malayalam terminology resources built by the IIT Sanskrit NLP groups — and even those are incomplete.
+
+---
+
+### The specific contribution this opens up
+
+Once you have Module B working reliably for tatsama terms, you have something immediately useful and publishable: a **Sinhala-to-Sanskrit medical terminology transliterator** with lexical validation. This lets researchers working on Sanskrit Ayurvedic NLP apply their tools — which are considerably more developed — to Sinhala manuscript material by routing through your transliteration layer.
+
+That is a bridge contribution. It connects a well-resourced tradition (Sanskrit NLP) to an under-resourced one (Sinhala) at the exact point — medical terminology — where the two traditions share the most vocabulary. Every Sanskrit medical NLP paper becomes partially relevant to Sinhala Ayurvedic NLP once this bridge exists.
+
+And conversely, your corpus — once the Sanskrit terms are resolved to canonical identifiers — becomes comparable to Hindi Ayurvedic corpora, Tamil Siddha medical corpora, and ultimately to the broader South Asian traditional medicine NLP literature that is slowly being built. You stop being an isolated Sinhala project and become a node in a multilingual traditional medicine knowledge network.
+
+That is the long-term value of getting the Sanskrit loanword resolver right.
+
+Now I have enough sweep depth. Let me compile the full survey.
+
+---
+
+## Computational Resource Survey — Sinhala Ayurvedic NLP
+
+*Eight search passes across Sinhala NLP, Sanskrit NLP, Ayurvedic databases, transliteration tools, manuscript digitization, cross-lingual models, and traditional medicine ontologies.*
+
+---
+
+### Tier 1 — Directly usable today
+
+---
+
+**Aksharamukha** (PyPI: `aksharamukha`)
+The single most important tool for this project. Aksharamukha aims to provide lossless transliteration between the main Indian scripts, including Sinhala, implementing language-specific orthographic conventions such as vowel lengths, gemination, and nasalization. This is the bridge between Sinhala script and IAST — the key step that makes tatsama Sanskrit terms readable by Sanskrit NLP tools. It was developed by Vinodh Rajan, a digital palaeographer, and supports interlingual transliteration between as many as 121 scripts and over 21 different romanization methods. Available as both a Python pip package and a REST API. *Use immediately for Module B of the Sanskrit loanword resolver.*
+
+**Cologne Digital Sanskrit Dictionaries / PyCDSL**
+The Cologne Digital Sanskrit Dictionaries contain 42 dictionaries organized primarily by secondary language, including XML and SLP1 files available for download, with the Monier-Williams Sanskrit-English Dictionary containing approximately 160,000 main entries. The Python interface `PyCDSL` makes this programmatically queryable: PyCDSL can be used in a Python project, as a console command and as an interactive REPL interface, supporting custom transliteration schemes for input and output using valid scheme names from indic-transliteration. This is your Sanskrit term validation backend — once Aksharamukha converts a Sinhala tatsama to IAST, PyCDSL confirms whether it resolves to a known Sanskrit medical term. *Combine these two tools and you have a working tatsama resolver.*
+
+**indic-transliteration** (PyPI: `indic-transliteration`)
+The Indic NLP Library provides a Sinhala-to-Devanagari mapping table with near-complete character coverage, enabling rule-based transliteration between Sinhala and Sanskrit writing systems. The `indic-transliteration` package supports schemes including IAST, Harvard-Kyoto, SLP1, WX, and Devanagari across a large software ecosystem. The Sinhala support is explicitly documented. Use this alongside Aksharamukha — Aksharamukha for quality, indic-transliteration for batch pipeline speed.
+
+**GRAYU**
+GRAYU provides insights into 1,370,257 plant-phytochemical, 116,531 plant-disease, 2,389 plant-formulation, and 4,087 formulation-disease associations, connecting 1,039 traditional formulations to 12,743 indigenous plants, 129,542 phytochemicals, and 13,480 indicated diseases. Available at `caps.ncbs.res.in/GRAYU`. In Ayurveda, substitution of medicinal plants (Abhava Pratinidhi Dravya) is practiced when a herb becomes scarce or unavailable — and GRAYU explicitly encodes herb-substitution relationships, which maps directly to your `(ප්‍රතිනිධි)` substitute annotations. This is the closest existing resource to your botanical normaliser's target schema. *Cross-reference your cleaned ingredient list against GRAYU plant names immediately.*
+
+**Heritage.py + sandhi_vicchedika**
+The `sandhi_vicchedika` package contains binaries from the Sanskrit Heritage Engine and Samsaadhanii Tools that perform morphological analysis and segmentation of Sanskrit sentences, with a Python wrapper for both standard and Vedic modes. The Heritage engine provides all possible segmentation solutions with ranking through Samsaadhanii and Heritage Platforms, accessible directly through a CGI call supporting encoding formats including IAST and Unicode with JSON output. For your tatsama terms that survive Aksharamukha conversion — terms long enough to have internal sandhi — this gives you morphological decomposition and validation. *Do not apply this to tadbhava terms; it will hallucinate Sanskrit etymologies for Sinhala words.*
+
+---
+
+### Tier 2 — Usable with adaptation
+
+---
+
+**SinLlama** (HuggingFace: `polyglots/SinLlama_v01`)
+SinLlama is the first large language model specifically extended for Sinhala, based on Meta-Llama-3-8B and adapted through tokenizer vocabulary extension and continual pretraining on a 10.7M-sentence Sinhala corpus. The tokenizer is the most important part for your work: SinLlama enhances the LLM tokenizer with Sinhala-specific vocabulary, resulting in a publicly released decoder-based open-source LLM — the first of its kind for Sinhala. The pretraining corpus is modern web Sinhala — news, social media — so domain shift to classical Ayurvedic register will be substantial. But the tokenizer is directly useful for your corpus because it handles Sinhala subword units properly. *Fine-tune on your cleaned pharmacopoeia text to adapt it to the classical register.*
+
+**SINHALA-GLUE encoder models** (HuggingFace: `sinhala-nlp`)
+Ranasinghe et al. (2025) collected the largest monolingual corpus for Sinhala, trained multiple encoder-only language models, and compiled SINHALA-GLUE — the first Sinhala NLP benchmark — showing that Sinhala LMs trained in this work outperform XLM-R and existing Sinhala LMs in downstream NLP tasks, with all models publicly available. The `sinhala-nlp` HuggingFace organisation hosts models at 0.3B, 0.6B, and 1B parameters. These are your baseline encoder models for any classification or slot-filling task. They will underperform on Ayurvedic domain text, but they are the best available starting point and will save months of pretraining.
+
+**ByT5-Sanskrit** (HuggingFace, EMNLP Findings 2024)
+ByT5-Sanskrit achieves new state-of-the-art results in Sanskrit word segmentation, Vedic dependency parsing, and OCR post-correction, demonstrating that byte-level pretrained language models outperform tokenizer-based models for morphologically rich languages and presenting an important vector of exploration when constructing NLP pipelines for such languages. The byte-level architecture is specifically relevant here because it does not require a pre-built Sinhala vocabulary — it operates on raw character bytes. For your tatsama Sanskrit terms once they have been transliterated to IAST, ByT5-Sanskrit gives you morphological segmentation and lemmatisation essentially for free. *The architectural insight — byte-level models for morphologically complex Indic text — should inform your own model choices for classical Sinhala.*
+
+**Digital Corpus of Sanskrit (DCS)**
+The DCS was initially designed to provide lexical and morphosyntactic annotations for classical Sanskrit texts and has since been expanded to include Vedic texts, with its depth of annotation enhanced to include a syntactic annotation layer in the Universal Dependencies formalism. A snapshot of the DCS from April 2024 used as the basis for ByT5-Sanskrit experiments contained a total of 601,403 sentences, with annotations available for download via GitHub. This corpus contains medical texts — the Caraka Saṃhitā, Suśruta Saṃhitā — which share vocabulary with your pharmacopoeia. *Mine the DCS medical texts for Sanskrit Ayurvedic term frequencies; these give you prior probabilities for your tatsama resolver's validation step.*
+
+**AyurKOSH** (IEEE DataPort, 2025)
+AyurKOSH contains structured information on diseases, associated symptoms, drug formulations, herbal components, and detailed pharmacological properties including Rasa, Guna, Virya, Vipaka, and Karma, with botanical metadata and herb-substitution relationships included for synergy prediction and drug repurposing. The schema — Vyādhi (diseases), Lakṣaṇa (symptoms), Aushadhi (herbs), compounds — maps almost perfectly onto your pharmacopoeia's field structure. This is the Hindi/Sanskrit-medium equivalent of what you're building for Sinhala. *Use AyurKOSH as a cross-lingual validation set: if your herb normaliser resolves to the same Latin binomial that AyurKOSH maps the Sanskrit term to, you have independent confirmation of correctness.*
+
+**NSINA corpus** (HuggingFace: `sinhala-nlp/NSINA`)
+NSINA is a comprehensive news corpus of over 500,000 articles from popular Sinhala news websites, introducing three Sinhala NLP tasks: News Media Identification, News Category Prediction, and News Headline Generation. This is not domain-relevant, but it is the largest freely available Sinhala text corpus. *Use it to bootstrap your tokeniser and then fine-tune on your pharmacopoeia text — do not use it as a final training corpus for anything Ayurvedic.*
+
+---
+
+### Tier 3 — Relevant but requires significant work to apply
+
+---
+
+**IndicNLP Catalog + IndicBERT**
+AI4Bharat's IndicBERT is a multilingual ALBERT-based model spanning 12 languages for Natural Language Understanding, though Sinhala is not among the 12 languages covered. Sinhala is explicitly absent. However, the catalog lists the UoM FastText 300-dimensional Sinhala word embeddings, which predate the transformer era but remain useful for fast vocabulary coverage checks on Ayurvedic herb names.
+
+**Sanskrit Heritage Platform (CGI API)**
+The sandhi splitter is accessible directly through a CGI call at the University of Hyderabad, supporting encoding in WX, VH, SLP, IAST, Itrans, and Unicode with JSON output in both word and sentence modes. This works as a web service call from Python — no local installation required. The limitation is latency for batch processing and occasional downtime. *Wrap in a local cache keyed by input term to avoid re-querying the same tatsama tokens.*
+
+**SinhalaMMLU** (EMNLP 2025)
+SinhalaMMLU introduces over 7,000 questions spanning secondary to collegiate education levels aligned with the Sri Lankan national curriculum, evaluating 26 LLMs and finding that Claude 3.5 Sonnet and GPT-4o achieve the highest average accuracies at 67% and 62% respectively, with models struggling particularly in culturally rich domains such as Humanities. The Humanities domain struggle is directly relevant — Ayurvedic knowledge is culturally embedded in the same way. This benchmark tells you your effective ceiling for general Sinhala LLM performance before domain adaptation.
+
+**Manuscript OCR for Ayurveda**
+A 2024 paper presents an approach to transcribe Ayurveda manuscripts using OCR technology enhanced with machine learning and forensic handwriting analysis, developing user-friendly interfaces that allow scholars to train models without technical expertise. This is not a released tool — it's a methods paper — but it confirms active work in this exact sub-problem and is worth tracking for when you reach the ola manuscript digitisation phase.
+
+**ByT5 for ancient language OCR post-correction**
+ByT5-Sanskrit outperformed the best existing approach for OCR post-correction by achieving 0.29 lower CER and 3.16 lower WER metrics. The same architecture applied to Sinhala manuscript OCR output — using your pharmacopoeia as a domain language model — is a directly actionable application once you have digitised ola leaf text.
+
+---
+
+### What is confirmed absent
+
+These are things you would expect to exist but do not, based on this search:
+
+**No Sinhala morphological analyser for classical register.** All tokenisers and models found are trained on modern web Sinhala. There is no analyser for archaic Sinhala verbal morphology, converb forms, or classical sandhi. *This is Resolver 1 from the previous discussion — it must be built.*
+
+**No Sinhala-Sanskrit bilingual lexicon in machine-readable form.** Sorata Thero's etymological dictionary exists in print. No digitised version surfaced. Geiger's grammar rules exist in academic publications but not as a computational transducer. *This is the core gap for Resolver 2 and Module C.*
+
+**No Sinhala Ayurvedic corpus of any kind in the public NLP literature.** Your cleaned pharmacopoeia dataset is, to the extent this search can confirm, the first structured Sinhala Ayurvedic text resource with NLP metadata.
+
+**No tatsama detection classifier for Sinhala.** The conjunct-consonant heuristic described earlier is the only approach available. A trained classifier does not exist.
+
+**No parallel corpus between Sinhala and Sanskrit medical text.** There is a large Sanskrit-Hindi medical parallel corpus implicit in the AYUSH pharmacopoeia volumes, but nothing connecting Sanskrit to Sinhala at the textual level.
+
+---
+
+### The resource stack for your immediate next steps
+
+```
+Task                          Resource                         Status
+─────────────────────────────────────────────────────────────────────────
+NFC normalization             Python unicodedata               Done
+Sinhala tokenization          sinhala-nlp encoder tokenizer    Available
+Tatsama detection             Conjunct-consonant rules         Build now
+Tatsama → IAST                Aksharamukha (pip)               Available
+IAST → Sanskrit meaning       PyCDSL + Monier-Williams         Available
+Sanskrit sandhi splitting     sandhi_vicchedika (GitHub)       Available
+Herb → Latin binomial         GRAYU (web) + AyurKOSH           Available
+Herb → Sinhala canonical      Āyurvēda Pharmacopoeia of SL     Physical book
+Tadbhava lexicon              Sorata Thero + Jayaweera         Physical books
+Indication classification     sinhala-nlp 0.6B + fine-tune     Needs labels
+Verse metrical parsing        Nothing                          Build later
+```
+
+The tools for the tatsama resolver — Aksharamukha, PyCDSL, sandhi_vicchedika — are all available today, pip-installable, and can be wired together in an afternoon. That is where to start.
