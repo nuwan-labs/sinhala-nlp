@@ -1,8 +1,7 @@
-# Thesis Proposal
+# Research Proposal
 
 ## Bootstrapping a Domain Knowledge Graph from Structured OCR to Enable Information Extraction in Unstructured Sinhala Ayurvedic Manuscripts
 
-**Degree**: Master of Computer Science
 **Domain**: Natural Language Processing / Information Extraction
 **Language**: Sinhala (ISO 639-1: si) — low-resource, morphologically rich
 **Corpus**: Sri Lankan Ayurvedic Pharmacopoeia, Volumes I–III
@@ -17,7 +16,7 @@ The Sri Lankan Ayurvedic Pharmacopoeia is an authoritative multi-volume referenc
 
 **The research opportunity**: Volume I of the pharmacopoeia has a strongly structured layout (column-delimited tabular entries). This structure makes automated extraction tractable. Volumes II and III follow the same column format and can be processed with the same pipeline. Other traditional medicine manuscripts in this domain use paragraph-level prose — a harder extraction problem.
 
-**The thesis claim**:
+**The research claim**:
 
 > A knowledge graph constructed from structured Volumes I–III can serve as a grounding resource to enable accurate entity and relation extraction from unstructured paragraph-level traditional medicine texts, without requiring large labeled corpora — by exploiting domain-closed vocabulary, ingredient co-occurrence priors, and structural transfer.
 
@@ -37,7 +36,7 @@ This work sits at the intersection of five research areas, none of which covers 
 | Traditional medicine NLP | AyurNLP (IIIT Hyderabad, Sanskrit) | Different language; no KG construction; no volume-to-volume transfer |
 | KG from low-resource text | Shi & Weninger (2018) open KG | General domain; does not model domain-closed vocabulary bootstrapping |
 
-**This thesis is the first work to:**
+**This research is the first work to:**
 1. Construct a labeled NER corpus for Sinhala domain-specific text
 2. Build a knowledge graph for traditional Sri Lankan medicine
 3. Empirically measure how KG enrichment from structured sources affects NER F1 on unstructured text
@@ -147,7 +146,7 @@ This work sits at the intersection of five research areas, none of which covers 
 1. Full pipeline benchmark: physical page → KG entry, measure end-to-end precision/recall
 2. Error analysis: which entity types benefit most from KG grounding?
 3. Extensibility analysis: what does adding more volumes do to downstream performance?
-4. Thesis writing and submission
+4. Writing and submission
 
 ---
 
@@ -175,7 +174,7 @@ This work sits at the intersection of five research areas, none of which covers 
 | 6 | Vol III scanned, OCR'd, extracted; KG enriched; XLM-RoBERTa trained |
 | 7–8 | Paragraph text OCR + gold annotation; transfer experiments |
 | 9–10 | Ablation studies; full evaluation; error analysis |
-| 11–12 | Thesis writing and submission |
+| 11–12 | Writing and submission |
 
 ---
 

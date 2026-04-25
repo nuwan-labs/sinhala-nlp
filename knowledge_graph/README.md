@@ -1,6 +1,6 @@
 # Knowledge Graph
 
-**Status**: Planned — Phase 2 of the thesis project.
+**Status**: Planned — Phase 2 of the research project.
 
 ---
 

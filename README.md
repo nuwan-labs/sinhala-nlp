@@ -77,9 +77,9 @@ Fields are in Sinhala Unicode. See [`docs/output_schema.md`](docs/output_schema.
 
 ## Research Direction
 
-This project is the foundation for a **Master of Computer Science thesis** on low-resource information extraction for historical Sinhala manuscripts.
+This project is the foundation for **research** on low-resource information extraction for historical Sinhala manuscripts.
 
-**Core thesis claim**: A knowledge graph constructed from structured Volume I can serve as a grounding resource to enable entity and relation extraction from the unstructured prose of other traditional texts — without requiring large labeled corpora.
+**Core research claim**: A knowledge graph constructed from structured Volume I can serve as a grounding resource to enable entity and relation extraction from the unstructured prose of other traditional texts — without requiring large labeled corpora.
 
 **Progressive roadmap**:
 
@@ -90,7 +90,7 @@ Phase 3:             Paragraph-structured traditional texts → KG-grounded NER
 Phase 4:             General Sinhala traditional medicine NLP resource
 ```
 
-See [`THESIS_PROPOSAL.md`](THESIS_PROPOSAL.md) for the full research proposal.
+See [`RESEARCH_PROPOSAL.md`](RESEARCH_PROPOSAL.md) for the full research proposal.
 
 ---
 
@@ -119,7 +119,7 @@ knowledge_graph/         Planned: KG construction (Phase 2)
 docs/
   output_schema.md       Full field documentation
   architecture.md        Pipeline design decisions and thresholds
-  THESIS_PROPOSAL.md     Full MCS thesis proposal
+  RESEARCH_PROPOSAL.md   Full research proposal
   pipeline_notes.txt     Data quality notes and known issues
 ```
 
