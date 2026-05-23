@@ -176,31 +176,33 @@ three stages. Each stage is a single Python file with no external
 dependencies — pure standard-library.
 
 ```
-data/source/Pharmacopoeia_Vol_I.pdf
+data/source/<source>.pdf
    │
-   │  scanned with Google Cloud Vision (GCV) in 50-page batches
-   ▼
-data/ocr/ocr_results_output-NNN-to-MMM.json
+   ▼  pipeline/ocr_gcv.py
+       (Stage 0 — Google Cloud Vision sync, per-page rendering at
+        configurable DPI, DOCUMENT_TEXT_DETECTION + languageHints=["si"],
+        optional upscale safety net for low-confidence pages)
+data/ocr/<source>/ocr_results_output-NNN-to-MMM.json
    │     │
-   │     │  GCV produces a deep nested tree:
-   │     │     pages → blocks → paragraphs → words → symbols
-   │     │     each with a bounding-box polygon in pixel coords.
+   │     │  Tree: pages → blocks → paragraphs → words → symbols
+   │     │  with normalized bounding-box polygons (0–1 coords).
    │     │
    │     ▼  pipeline/extract_page.py
-per-page extracted JSON (a slice of the GCV tree for one page)
+per-page extracted JSON (a slice of the OCR tree for one page)
    │
    ▼  pipeline/shrink_ocr_v4.py
-data/rows/<batch>_rows.json — flattened to one row per "visual line",
-                              with each token as (x, block_id, para_id, text)
+data/rows/<source>/<batch>_rows.json — flattened to one row per "visual
+                                       line", with each token as
+                                       (x, block_id, para_id, text)
    │
-   ▼  pipeline/extract_pharma_v4.py
+   ▼  pipeline/extract_pharma_v4.py    (tabular column layouts only)
 data/structured/<batch>_structured.json — one record per formula entry,
                                           with Sinhala field names
 ```
 
-`pipeline/pipeline.py` is the orchestrator that runs all three stages
-end-to-end for a given page range, handling cross-batch entry
-continuation.
+`pipeline/pipeline.py` orchestrates Stages 1–3 for the Vol I batches
+end-to-end. Stage 0 (`ocr_gcv.py`) is invoked separately when a new
+source PDF needs OCR (e.g. `yogamalawa.pdf` → `data/ocr/yogamalawa/`).
 
 ### 4.2 Stage 1 — per-page OCR extraction (`pipeline/extract_page.py`)
 
@@ -803,11 +805,13 @@ sinhala-traditional-medicine-nlp/
 │   └── MCS3306_proposal_draft.md   ← UCSC MSc-CS proposal draft (current)
 │
 ├── pipeline/                       ── (1) Pipeline: PDF → structured JSON
-│   ├── extract_page.py             — Stage 1: slice GCV batch by page
+│   ├── ocr_gcv.py                  — Stage 0: GCV OCR runner (sync, per-page,
+│   │                                 DOCUMENT_TEXT_DETECTION, language=si)
+│   ├── extract_page.py             — Stage 1: slice OCR batch by page
 │   ├── shrink_ocr_v4.py            — Stage 2: cluster words into rows
-│   ├── extract_pharma_v3.py        — Stage 3 (stable)
+│   ├── extract_pharma_v3.py        — Stage 3 (stable, tabular layout)
 │   ├── extract_pharma_v4.py        — Stage 3 (current development)
-│   └── pipeline.py                 — orchestrator
+│   └── pipeline.py                 — orchestrator (Stages 1–3, Vol I)
 │
 ├── resolvers/                      ── (2) Resolvers: Sinhala → Sanskrit
 │   ├── sanskrit_resolver.py        — Module A router + Tier 1 + 2 + driver
@@ -826,9 +830,12 @@ sinhala-traditional-medicine-nlp/
 │   └── glyph_corrections.json      — IskoolaPota ToUnicode fixes
 │
 ├── data/
-│   ├── source/                     — original Pharmacopoeia_Vol_I.pdf
-│   ├── ocr/                        — GCV batch outputs (Git LFS)
+│   ├── source/                     — original PDFs (Vol I is Git-LFS-tracked)
+│   ├── ocr/                        — GCV outputs
+│   │   ├── ocr_results_output-*.json   — Vol I, Git LFS (async batch)
+│   │   └── yogamalawa/             — Yogamālāva 1908 (sync per-page)
 │   ├── rows/                       — Stage-2 row-level JSON
+│   │   └── yogamalawa/             — verse-form rows (379 rows, 22 pages)
 │   ├── structured/                 — Stage-3 structured entries
 │   └── lexicons/                   — Resolver outputs (this work)
 │
