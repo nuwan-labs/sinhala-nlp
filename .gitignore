@@ -5,3 +5,9 @@ __pycache__/
 Thumbs.db
 *.egg-info/
 .env
+
+# session-local artifacts
+.venv/
+.cdsl_data/
+*.log
+resolver_run.log

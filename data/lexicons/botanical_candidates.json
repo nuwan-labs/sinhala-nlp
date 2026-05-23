@@ -1,0 +1,998 @@
+{
+  "ධාතකී": {
+    "freq": 39,
+    "iast": "dhātakī",
+    "latin": [
+      "Grislea Tomentosa"
+    ],
+    "gloss": "dhātakī f. Grislea Tomentosa, Suśr."
+  },
+  "පද්මකාෂ්ඨ": {
+    "freq": 21,
+    "iast": "padmakāṣṭha",
+    "latin": [
+      "Cerasus Puddum"
+    ],
+    "gloss": "padma—kāṣṭha n. the wood of Cerasus Puddum, L."
+  },
+  "ත්‍රිඵලා": {
+    "freq": 10,
+    "iast": "triphalā",
+    "latin": [
+      "Phyllanthus Emblica",
+      "Terminalia Chebula"
+    ],
+    "gloss": "tri—phalā f. (Pāṇ. iv, 1, 64, Vārtt. 3) the 3 Myrobalans (fruits of Terminalia Chebula, T˚, and Phyllanthus Emblica; also tṛph˚, L.), Suśr.; VarBṛS. xvi; Kathās. lxx; KātyŚr., Sch."
+  },
+  "පුෂ්කර": {
+    "freq": 7,
+    "iast": "puṣkara",
+    "latin": [
+      "Nelumbium Speciosum",
+      "Nymphaea Nelumbo"
+    ],
+    "gloss": "pu/ṣkara n. (rather fr. puṣka + ra than fr. puṣ + kara; but cf. Uṇ. iv, 4) a blue lotus-flower, a lotus, Nelumbium Speciosum or Nymphaea Nelumbo (ifc. f(ā). ), AV. &c. &c. (met. ‘the heart’, MBh. v, 1"
+  },
+  "විෂ්ණුක්‍රාන්තිය": {
+    "freq": 5,
+    "iast": "viṣṇukrāntiya",
+    "latin": [
+      "Evolvulus Alsinoides"
+    ],
+    "gloss": "viṣṇu—krānti f. Evolvulus Alsinoides, L."
+  },
+  "ශාලපර්ණී": {
+    "freq": 5,
+    "iast": "śālaparṇī",
+    "latin": [
+      "Hedysarum Gangeticum"
+    ],
+    "gloss": "śāla—parṇī f. Desmodium or Hedysarum Gangeticum, L."
+  },
+  "ශුද්ධ ගුග්ගුලු": {
+    "freq": 4,
+    "iast": "śuddha",
+    "latin": [
+      "Amyris Agallochum"
+    ],
+    "gloss": "śuddha/ mfn. cleansed, cleared, clean, pure, clear, free from (with instr.), bright, white, RV. &c. &c."
+  },
+  "අතිවිෂා": {
+    "freq": 4,
+    "iast": "ativiṣā",
+    "latin": [
+      "Aconitum Ferox"
+    ],
+    "gloss": "ati—viṣā f. the plant Aconitum Ferox"
+  },
+  "ශෝධිත හරිතාල": {
+    "freq": 4,
+    "iast": "śodhita",
+    "latin": [
+      "Columba Hurriyala"
+    ],
+    "gloss": "śodhita mfn. (fr. id.) cleansed, purified refined corrected &c."
+  },
+  "අශ්වගන්ධා": {
+    "freq": 3,
+    "iast": "aśvagandhā",
+    "latin": [
+      "Physalis Flexuosa"
+    ],
+    "gloss": "aśva—gandhā f. the plant Physalis Flexuosa, Suśr. Comm. on KātyŚr."
+  },
+  "නාග භස්ම": {
+    "freq": 3,
+    "iast": "nāga",
+    "latin": [
+      "Coluber Naga"
+    ],
+    "gloss": "nāga/ m. (prob. neither fr. na-ga nor fr. nagna) a snake, (esp.) Coluber Naga, ŚBr.; MBh. &c."
+  },
+  "ත්‍රායමාණා": {
+    "freq": 2,
+    "iast": "trāyamāṇā",
+    "latin": [
+      "Ficus heterophylla"
+    ],
+    "gloss": "trā/yamāṇā/ (ā/), f. Ficus heterophylla, vi, 107, 1 f.; viii, 2, 6; Suśr. i, 38 and 42; iv, vi; VarBṛS. xliv, 10 (˚ṇa, m. n.) and iil, 39."
+  },
+  "වෘද්ධදාරක": {
+    "freq": 2,
+    "iast": "vṛddhadāraka",
+    "latin": [
+      "Argyreia Speciosa"
+    ],
+    "gloss": "vṛddha—dāra or vṛddha—dāraka, m., vṛddha—dāru, n. Argyreia Speciosa or Argentea, L."
+  },
+  "පුෂ්කරමූල": {
+    "freq": 2,
+    "iast": "puṣkaramūla",
+    "latin": [
+      "Costus Speciosus"
+    ],
+    "gloss": "puṣkara—mūla (Bhpr.) n. the root of Costus Speciosus or Arabicus."
+  },
+  "ත්‍රිඵලා ප්‍රත්‍යෙකව": {
+    "freq": 2,
+    "iast": "triphalā",
+    "latin": [
+      "Phyllanthus Emblica",
+      "Terminalia Chebula"
+    ],
+    "gloss": "tri—phalā f. (Pāṇ. iv, 1, 64, Vārtt. 3) the 3 Myrobalans (fruits of Terminalia Chebula, T˚, and Phyllanthus Emblica; also tṛph˚, L.), Suśr.; VarBṛS. xvi; Kathās. lxx; KātyŚr., Sch."
+  },
+  "වරාටිකා භස්මය": {
+    "freq": 2,
+    "iast": "varāṭikā",
+    "latin": [
+      "Mirabilis Jalapa"
+    ],
+    "gloss": "varāṭikā f. Mirabilis Jalapa, L."
+  },
+  "නාග භස්මය": {
+    "freq": 2,
+    "iast": "nāga",
+    "latin": [
+      "Coluber Naga"
+    ],
+    "gloss": "nāga/ m. (prob. neither fr. na-ga nor fr. nagna) a snake, (esp.) Coluber Naga, ŚBr.; MBh. &c."
+  },
+  "අශ්වගන්ධා කෂාය": {
+    "freq": 2,
+    "iast": "aśvagandhā",
+    "latin": [
+      "Physalis Flexuosa"
+    ],
+    "gloss": "aśva—gandhā f. the plant Physalis Flexuosa, Suśr. Comm. on KātyŚr."
+  },
+  "අශ්වගන්ධා කල්කය": {
+    "freq": 2,
+    "iast": "aśvagandhā",
+    "latin": [
+      "Physalis Flexuosa"
+    ],
+    "gloss": "aśva—gandhā f. the plant Physalis Flexuosa, Suśr. Comm. on KātyŚr."
+  },
+  "පද්මකාෂ්ඨ ( ප්‍රතිනිධි නෙළූ අල )": {
+    "freq": 1,
+    "iast": "padmakāṣṭha",
+    "latin": [
+      "Cerasus Puddum"
+    ],
+    "gloss": "padma—kāṣṭha n. the wood of Cerasus Puddum, L."
+  },
+  "වැල්කහඹිලියා ( ප්‍රතිනිධි , යවාස )": {
+    "freq": 1,
+    "iast": "vælkaham̆biliyā",
+    "latin": [
+      "Alhagi Maurorum"
+    ],
+    "gloss": ""
+  },
+  "පද්මකාෂ්ඨ ( ප්‍රතිනිධි නෙළුඅල )": {
+    "freq": 1,
+    "iast": "padmakāṣṭha",
+    "latin": [
+      "Cerasus Puddum"
+    ],
+    "gloss": "padma—kāṣṭha n. the wood of Cerasus Puddum, L."
+  },
+  "ශතපුෂ්ප = මිශි": {
+    "freq": 1,
+    "iast": "śatapuṣpa",
+    "latin": [
+      "Anethum Panmori",
+      "Anethum Sowa",
+      "Nardostachys Jatamansi"
+    ],
+    "gloss": "śata—puṣpa mf(ā)n. having a h˚ flowers, many-flowered, MW."
+  },
+  "රසාඤ්ජන ( ප්‍රතිනිධි වෙනිවැල් )": {
+    "freq": 1,
+    "iast": "rasāñjana",
+    "latin": [
+      "Amomum Anthorrhiza"
+    ],
+    "gloss": "rasāñjana n. vitriol of copper or a sort of collyrium prepared from it with the addition of Curcuma or (accord. to some) from the calx of brass with Amomum Anthorrhiza or (accord. to others) from lead"
+  },
+  "අස්වැන්න ( ශාලපර්ණී )": {
+    "freq": 1,
+    "iast": "asvænna",
+    "latin": [
+      "Hedysarum Gangeticum"
+    ],
+    "gloss": ""
+  },
+  "පුෂ්කරමූල ( සුවඳකොට්ටන් )": {
+    "freq": 1,
+    "iast": "puṣkaramūla",
+    "latin": [
+      "Costus Speciosus"
+    ],
+    "gloss": "puṣkara—mūla (Bhpr.) n. the root of Costus Speciosus or Arabicus."
+  },
+  "කුටජ පොතු ඝන කෂාය වියලා ගන්න .": {
+    "freq": 1,
+    "iast": "kuṭaja",
+    "latin": [
+      "Wrightia antidysenterica"
+    ],
+    "gloss": "kuṭa—ja m. Wrightia antidysenterica (having seeds used as a vermifuge; cf. indra-yava), MBh.; R. &c."
+  },
+  "ස්වර්ණක්ෂීරී": {
+    "freq": 1,
+    "iast": "svarṇakṣīrī",
+    "latin": [
+      "Cleome Felina"
+    ],
+    "gloss": "svarṇa—kṣīriṇikā or svarṇa—kṣīrī, f. Cleome Felina, L."
+  },
+  "කුෂ්ඨ ( කොල්ලං )": {
+    "freq": 1,
+    "iast": "kuṣṭha",
+    "latin": [
+      "Costus speciosus"
+    ],
+    "gloss": "ku/ṣṭha as, am, m. n. (fr. 1. ku + stha, Pāṇ. viii, 3, 97) the plant Costus speciosus or arabicus (used as a remedy for the disease called takma/n), AV.; Kauś. 35; R. ii, 94, 23; Suśr."
+  },
+  "ඛදිර ( රත්කිහිරිය )": {
+    "freq": 1,
+    "iast": "khadira",
+    "latin": [
+      "Acacia Catechu",
+      "Terra japonica"
+    ],
+    "gloss": "khadira/ as, m. Acacia Catechu (having very hard wood, the resin of which is used in medicine, called Catechu, Khayar, Terra japonica), RV. iii, 53, 19; AV.; TS. &c."
+  },
+  "ශතාවරී ( හාතවාරිය )": {
+    "freq": 1,
+    "iast": "śatāvarī",
+    "latin": [
+      "Asparagus Racemosus"
+    ],
+    "gloss": "śatāvarī (ī), f. Asparagus Racemosus, Suśr.; ŚārṅgS.; VarBṛS.; Bhpr."
+  },
+  "පුෂ්කරමූල = සුවඳකොට්ටන්": {
+    "freq": 1,
+    "iast": "puṣkaramūla",
+    "latin": [
+      "Costus Speciosus"
+    ],
+    "gloss": "puṣkara—mūla (Bhpr.) n. the root of Costus Speciosus or Arabicus."
+  },
+  "ප්‍රපෞණ්ඩරීක": {
+    "freq": 1,
+    "iast": "prapauṇḍarīka",
+    "latin": [
+      "Nymphaea Lotus"
+    ],
+    "gloss": "pra-pauṇḍarīka n. the root of Nymphaea Lotus, Car. (v.l. prapuṇḍ˚)"
+  },
+  "අම්ලවේතස ( ප්‍රතිනිධි ගොරක )": {
+    "freq": 1,
+    "iast": "amlavetasa",
+    "latin": [
+      "Rumex Vesicarius"
+    ],
+    "gloss": "amla—vetasa m. a kind of dock or sorrel, Rumex Vesicarius, MBh. iii, 11568; Suśr."
+  },
+  "අජගන්ධා - ( බර්බරිකා )": {
+    "freq": 1,
+    "iast": "ajagandhā",
+    "latin": [
+      "Ocimum Gratissimum"
+    ],
+    "gloss": "aja—gandhā or aja—gandhikā, f. ‘smelling like a he-goat’, shrubby basil, Ocimum Gratissimum."
+  },
+  "ත්‍රිඵලා ක්වාථය": {
+    "freq": 1,
+    "iast": "triphalā",
+    "latin": [
+      "Phyllanthus Emblica",
+      "Terminalia Chebula"
+    ],
+    "gloss": "tri—phalā f. (Pāṇ. iv, 1, 64, Vārtt. 3) the 3 Myrobalans (fruits of Terminalia Chebula, T˚, and Phyllanthus Emblica; also tṛph˚, L.), Suśr.; VarBṛS. xvi; Kathās. lxx; KātyŚr., Sch."
+  },
+  "ශෝධිත හරිතාල භස්මය": {
+    "freq": 1,
+    "iast": "śodhita",
+    "latin": [
+      "Columba Hurriyala"
+    ],
+    "gloss": "śodhita mfn. (fr. id.) cleansed, purified refined corrected &c."
+  },
+  "අර්ධයට සිඳුවා ඊට ශුද්ධ ගුග්ගුලු": {
+    "freq": 1,
+    "iast": "ardhayaṭa",
+    "latin": [
+      "Amyris Agallochum"
+    ],
+    "gloss": ""
+  },
+  "කිරාත ( භූනිම්බ ප්‍රතිනිධි )": {
+    "freq": 1,
+    "iast": "kirāta",
+    "latin": [
+      "Gentiana Chirata"
+    ],
+    "gloss": "ki/rāta m. pl. N. of a degraded mountain-tribe (inhabiting woods and mountains and living by hunting, having become Śūdras by their neglect of all prescribed religious rites; also regarded as Mlecchas"
+  },
+  "නාග භස්ම අභ්‍ර භස්ම , ලෞහ භස්ම , මණ්ඩුර භස්ම , රසසින්දුර මෙම වර්ග එක්": {
+    "freq": 1,
+    "iast": "nāga",
+    "latin": [
+      "Coluber Naga"
+    ],
+    "gloss": "nāga/ m. (prob. neither fr. na-ga nor fr. nagna) a snake, (esp.) Coluber Naga, ŚBr.; MBh. &c."
+  },
+  "ත්‍රායමාණා ( ප්‍රතිනිධි ලුණුවිල )": {
+    "freq": 1,
+    "iast": "trāyamāṇā",
+    "latin": [
+      "Ficus heterophylla"
+    ],
+    "gloss": "trā/yamāṇā/ (ā/), f. Ficus heterophylla, vi, 107, 1 f.; viii, 2, 6; Suśr. i, 38 and 42; iv, vi; VarBṛS. xliv, 10 (˚ṇa, m. n.) and iil, 39."
+  },
+  "වෘක්ෂාම්ල": {
+    "freq": 1,
+    "iast": "vṛkṣāmla",
+    "latin": [
+      "Spondias Mangifera"
+    ],
+    "gloss": "vṛkṣāmla m. the hog-plum, Spondias Mangifera"
+  },
+  "චීන අල අති සූක්ෂ්ම චූර්ණය": {
+    "freq": 1,
+    "iast": "cīna",
+    "latin": [
+      "Old Germ"
+    ],
+    "gloss": "cīna m. pl. the Chinese, Mn. x, 44; MBh. ii f., v f.; R. iv, 44, 14; Lalit.; Jain.; Car.; VarBṛS. (also cīṇa)"
+  },
+  "වෘද්ධදාරු": {
+    "freq": 1,
+    "iast": "vṛddhadāru",
+    "latin": [
+      "Argyreia Speciosa"
+    ],
+    "gloss": "vṛddha—dāra or vṛddha—dāraka, m., vṛddha—dāru, n. Argyreia Speciosa or Argentea, L."
+  },
+  "චන්ද්‍රශූර": {
+    "freq": 1,
+    "iast": "candraśūra",
+    "latin": [
+      "Lepidium sativum"
+    ],
+    "gloss": "candra—śūra m. Lepidium sativum, Bhpr."
+  },
+  "රාජමාෂ ( ප්‍රතිනිධි උඳු )": {
+    "freq": 1,
+    "iast": "rājamāṣa",
+    "latin": [
+      "Dolichos Catjang"
+    ],
+    "gloss": "rāja—māṣa m. a kind of bean, Dolichos Catjang, MBh."
+  },
+  "ඉකිරිඇට ( ඉක්ෂුගන්ධා )": {
+    "freq": 1,
+    "iast": "ikiriæṭa",
+    "latin": [
+      "Asteracantha Longifolia",
+      "Batatas Paniculata",
+      "Capparis Spinosa",
+      "Saccharum Spontaneum"
+    ],
+    "gloss": ""
+  },
+  "කපර්ද භස්ම": {
+    "freq": 1,
+    "iast": "kaparda",
+    "latin": [
+      "Cypraea Moneta"
+    ],
+    "gloss": "kaparda m. a small shell or cowrie (of which eighty = one paṇa, used as a coin or as a die in gambling, Cypraea Moneta) Comm. on VS. Comm. on Pāṇ."
+  },
+  "පුෂ්කර ( බැද )": {
+    "freq": 1,
+    "iast": "puṣkara",
+    "latin": [
+      "Nelumbium Speciosum",
+      "Nymphaea Nelumbo"
+    ],
+    "gloss": "pu/ṣkara n. (rather fr. puṣka + ra than fr. puṣ + kara; but cf. Uṇ. iv, 4) a blue lotus-flower, a lotus, Nelumbium Speciosum or Nymphaea Nelumbo (ifc. f(ā). ), AV. &c. &c. (met. ‘the heart’, MBh. v, 1"
+  },
+  "ශෝධිත මුස්තක චූර්ණය": {
+    "freq": 1,
+    "iast": "śodhita",
+    "latin": [
+      "Cyperus Rotundus"
+    ],
+    "gloss": "śodhita mfn. (fr. id.) cleansed, purified refined corrected &c."
+  },
+  "ශෝධිත රසාඤ්ජන චූර්ණය": {
+    "freq": 1,
+    "iast": "śodhita",
+    "latin": [
+      "Amomum Anthorrhiza"
+    ],
+    "gloss": "śodhita mfn. (fr. id.) cleansed, purified refined corrected &c."
+  },
+  "ත්‍රිඵලා චූර්ණය ( ප්‍රත්‍යෙකව )": {
+    "freq": 1,
+    "iast": "triphalā",
+    "latin": [
+      "Phyllanthus Emblica",
+      "Terminalia Chebula"
+    ],
+    "gloss": "tri—phalā f. (Pāṇ. iv, 1, 64, Vārtt. 3) the 3 Myrobalans (fruits of Terminalia Chebula, T˚, and Phyllanthus Emblica; also tṛph˚, L.), Suśr.; VarBṛS. xvi; Kathās. lxx; KātyŚr., Sch."
+  },
+  "භුනිම්බ": {
+    "freq": 1,
+    "iast": "bhunimba",
+    "latin": [
+      "Azadirachta Indica",
+      "Neemb tree"
+    ],
+    "gloss": "bhu=bhu mfn. (ifc.) = 2. bhū, becoming being existing, produced  | nimba=nimba m. the Nimb or Neemb tree, Azadirachta Indica (its fru"
+  },
+  "ත්‍රිඵලා ( ප්‍රත්‍යෙකව )": {
+    "freq": 1,
+    "iast": "triphalā",
+    "latin": [
+      "Phyllanthus Emblica",
+      "Terminalia Chebula"
+    ],
+    "gloss": "tri—phalā f. (Pāṇ. iv, 1, 64, Vārtt. 3) the 3 Myrobalans (fruits of Terminalia Chebula, T˚, and Phyllanthus Emblica; also tṛph˚, L.), Suśr.; VarBṛS. xvi; Kathās. lxx; KātyŚr., Sch."
+  },
+  "ත්‍රිඵලා චූර්ණය මිලිකඩ": {
+    "freq": 1,
+    "iast": "triphalā",
+    "latin": [
+      "Phyllanthus Emblica",
+      "Terminalia Chebula"
+    ],
+    "gloss": "tri—phalā f. (Pāṇ. iv, 1, 64, Vārtt. 3) the 3 Myrobalans (fruits of Terminalia Chebula, T˚, and Phyllanthus Emblica; also tṛph˚, L.), Suśr.; VarBṛS. xvi; Kathās. lxx; KātyŚr., Sch."
+  },
+  "ශෝධිත විජයා චූර්ණය": {
+    "freq": 1,
+    "iast": "śodhita",
+    "latin": [
+      "Premna Spinosa",
+      "Rubia Munjista",
+      "Sesbania Aegyptiaca",
+      "Terminalia Chebula",
+      "Vitex Negundo"
+    ],
+    "gloss": "śodhita mfn. (fr. id.) cleansed, purified refined corrected &c."
+  },
+  "ශෝධිත හරිතාල චූර්ණය": {
+    "freq": 1,
+    "iast": "śodhita",
+    "latin": [
+      "Columba Hurriyala"
+    ],
+    "gloss": "śodhita mfn. (fr. id.) cleansed, purified refined corrected &c."
+  },
+  "ත්‍රිඵලා චූර්ණය ( මිලිතව )": {
+    "freq": 1,
+    "iast": "triphalā",
+    "latin": [
+      "Phyllanthus Emblica",
+      "Terminalia Chebula"
+    ],
+    "gloss": "tri—phalā f. (Pāṇ. iv, 1, 64, Vārtt. 3) the 3 Myrobalans (fruits of Terminalia Chebula, T˚, and Phyllanthus Emblica; also tṛph˚, L.), Suśr.; VarBṛS. xvi; Kathās. lxx; KātyŚr., Sch."
+  },
+  "වෘද්ධදාරු ඇට": {
+    "freq": 1,
+    "iast": "vṛddhadāru",
+    "latin": [
+      "Argyreia Speciosa"
+    ],
+    "gloss": "vṛddha—dāra or vṛddha—dāraka, m., vṛddha—dāru, n. Argyreia Speciosa or Argentea, L."
+  },
+  "වෘද්ධදාරු බීජ ( ග්‍රෑම් 24 යි . ) =": {
+    "freq": 1,
+    "iast": "vṛddhadāru",
+    "latin": [
+      "Argyreia Speciosa"
+    ],
+    "gloss": "vṛddha—dāra or vṛddha—dāraka, m., vṛddha—dāru, n. Argyreia Speciosa or Argentea, L."
+  },
+  "ත්‍රිඵලා චූර්ණය": {
+    "freq": 1,
+    "iast": "triphalā",
+    "latin": [
+      "Phyllanthus Emblica",
+      "Terminalia Chebula"
+    ],
+    "gloss": "tri—phalā f. (Pāṇ. iv, 1, 64, Vārtt. 3) the 3 Myrobalans (fruits of Terminalia Chebula, T˚, and Phyllanthus Emblica; also tṛph˚, L.), Suśr.; VarBṛS. xvi; Kathās. lxx; KātyŚr., Sch."
+  },
+  "( ඇ ) ශෝධිත ගුග්ගුලු": {
+    "freq": 1,
+    "iast": "(",
+    "latin": [
+      "Amyris Agallochum"
+    ],
+    "gloss": ""
+  },
+  "පුෂ්කර ( සුවඳ කොට්ටම් )": {
+    "freq": 1,
+    "iast": "puṣkara",
+    "latin": [
+      "Nelumbium Speciosum",
+      "Nymphaea Nelumbo"
+    ],
+    "gloss": "pu/ṣkara n. (rather fr. puṣka + ra than fr. puṣ + kara; but cf. Uṇ. iv, 4) a blue lotus-flower, a lotus, Nelumbium Speciosum or Nymphaea Nelumbo (ifc. f(ā). ), AV. &c. &c. (met. ‘the heart’, MBh. v, 1"
+  },
+  "කුරුඳු උටංගනබීජ පොතු මී ධාතකී පැණි": {
+    "freq": 1,
+    "iast": "kurun̆du",
+    "latin": [
+      "Grislea Tomentosa"
+    ],
+    "gloss": ""
+  },
+  "ඉදුනු ජම්බු ඵල ( මාදං ගෙඩි ) යුෂ": {
+    "freq": 1,
+    "iast": "idunu",
+    "latin": [
+      "Eugenia Jambolana"
+    ],
+    "gloss": ""
+  },
+  "තිපල් ක්වාථය ( ත්‍රිඵලා , මිලිතව තුලාව යි . ජලය": {
+    "freq": 1,
+    "iast": "tipal",
+    "latin": [
+      "Phyllanthus Emblica",
+      "Terminalia Chebula"
+    ],
+    "gloss": ""
+  },
+  "ඒලවාලුක සැවැන්දරා මුල් ගුඩ ධාතකී": {
+    "freq": 1,
+    "iast": "elavāluka",
+    "latin": [
+      "Grislea Tomentosa"
+    ],
+    "gloss": "elavāluka n. the above fragrant bark, Suśr."
+  },
+  "පටෝල ( දුම්මැල්ල ප්‍රතිනිධි )": {
+    "freq": 1,
+    "iast": "paṭola",
+    "latin": [
+      "Trichosanthes Dioeca"
+    ],
+    "gloss": "paṭola m. (cf. paṭu, paṭuka) Trichosanthes Dioeca"
+  },
+  "මධුරිකා ( ශත පුෂ්ප )": {
+    "freq": 1,
+    "iast": "madhurikā",
+    "latin": [
+      "Anethum Panmorium"
+    ],
+    "gloss": "madhurikā f. Anethum Panmorium (others a kind of fennel), L."
+  },
+  "ප්ලව ( කෛවර්ත මුස්තක )": {
+    "freq": 1,
+    "iast": "plava",
+    "latin": [
+      "Cyperus Rotundus"
+    ],
+    "gloss": "plava plavaka &c. See col. 2."
+  },
+  "ශෝථ , ගුල්ම , කාස , කථාමය යන රෝග නස යි . මල මූත්‍ර ප්‍රවර්තකය යි . දෝෂ": {
+    "freq": 1,
+    "iast": "śotha",
+    "latin": [
+      "Vasus and"
+    ],
+    "gloss": "śotha m. (ifc. f(ā). ; fr. √ śū = śvi) a swelling, tumour, morbid intumescence, dropsy, Suśr."
+  },
+  "පද්ම ගුඩුචි අභාවයෙහි ගුඩුචි යොදන්නේ ය .": {
+    "freq": 1,
+    "iast": "padma",
+    "latin": [
+      "Nelumbium Speciosum",
+      "Nymphaea Alba"
+    ],
+    "gloss": "padma m. n. (2. or 3. pad?) a lotus (esp. the flower of the lotus-plant Nelumbium Speciosum which closes towards evening; often confounded with the water-lily or Nymphaea Alba), MBh.; Kāv. &c. (ifc. f"
+  },
+  "යථා යෝග්‍ය ප්‍රමාණයක් ගෙන මෝරු , ද්‍රව්‍ය මෙන් සොළොස් ගුණයකි .": {
+    "freq": 1,
+    "iast": "yathā",
+    "latin": [
+      "Veda also"
+    ],
+    "gloss": "ya/thā ind. (in Veda also unaccented; fr. 3. ya, correlative of ta/thā) in which manner or way, according as, as, like (also with cid, ha, ha vai, iva, ivāṅga, iva ha, eva, and followed by correl. tat"
+  },
+  "කුෂ්ඨ ( කොට්ට )": {
+    "freq": 1,
+    "iast": "kuṣṭha",
+    "latin": [
+      "Costus speciosus"
+    ],
+    "gloss": "ku/ṣṭha as, am, m. n. (fr. 1. ku + stha, Pāṇ. viii, 3, 97) the plant Costus speciosus or arabicus (used as a remedy for the disease called takma/n), AV.; Kauś. 35; R. ii, 94, 23; Suśr."
+  },
+  "බබ්බුල ( සීනිද්ද පොතු ප්‍රතිනිධි )": {
+    "freq": 1,
+    "iast": "babbula",
+    "latin": [
+      "Acacia Arabica"
+    ],
+    "gloss": "babbula (Subh.) and babbūla (ŚārṅgP.) m. Acacia Arabica (cf. varvūra)."
+  },
+  "( ග්‍රෑ : ) බැගින් , ධාතකී": {
+    "freq": 1,
+    "iast": "(",
+    "latin": [
+      "Grislea Tomentosa"
+    ],
+    "gloss": ""
+  },
+  "ශිරීෂ ( හුරීමාර ) පොතු": {
+    "freq": 1,
+    "iast": "śirīṣa",
+    "latin": [
+      "Acacia Sirissa"
+    ],
+    "gloss": "śirīṣa m. Acacia Sirissa (n. its flower), ṢaḍvBr. &c. &c."
+  },
+  "භද්‍ර මුස්තක": {
+    "freq": 1,
+    "iast": "bhadra",
+    "latin": [
+      "Cyperus Rotundus"
+    ],
+    "gloss": "bhadra/ mf(ā/)n. blessed, auspicious, fortunate, prosperous, happy, RV. &c. &c."
+  },
+  "වරා කොළ යුෂ": {
+    "freq": 1,
+    "iast": "varā",
+    "latin": [
+      "Asparagus Racemosus",
+      "Clypea Hernandifolia",
+      "Cocculus Cordifolius",
+      "Embelia Ribes"
+    ],
+    "gloss": "va/rā (ā), f. N. of various plants and vegetable products (accord. to L. ‘the three kinds of myrobalan’; Clypea Hernandifolia; Asparagus Racemosus; Cocculus Cordifolius; turmeric; Embelia Ribes; a roo"
+  },
+  "පර්ණීචතුෂ්කය ( ශාලපර්ණී , පෘෂ්ණිපර්ණී , මුද්ගපර්ණී , මාෂපර්ණී )": {
+    "freq": 1,
+    "iast": "parṇīcatuṣkaya",
+    "latin": [
+      "Glycine Debilis",
+      "Hedysarum Gangeticum",
+      "Phaseolus Trilobus"
+    ],
+    "gloss": "parṇī=parṇī (ī), f. a collect. N. of 4 plants ending with parṇī, C | catuṣkaya=catuṣka mfn. consisting of 4 Lāṭy.; RPrāt.; Śulbas.; Suśr."
+  },
+  "මාෂපර්ණී": {
+    "freq": 1,
+    "iast": "māṣaparṇī",
+    "latin": [
+      "Glycine Debilis"
+    ],
+    "gloss": "māṣa—pattrikā and māṣa—parṇī, f. Glycine Debilis, Var.; Suśr."
+  },
+  "පුෂ්කර ( සුවඳ කොට්ටන් ) හිඟුරුපියලි එකින්": {
+    "freq": 1,
+    "iast": "puṣkara",
+    "latin": [
+      "Nelumbium Speciosum",
+      "Nymphaea Nelumbo"
+    ],
+    "gloss": "pu/ṣkara n. (rather fr. puṣka + ra than fr. puṣ + kara; but cf. Uṇ. iv, 4) a blue lotus-flower, a lotus, Nelumbium Speciosum or Nymphaea Nelumbo (ifc. f(ā). ), AV. &c. &c. (met. ‘the heart’, MBh. v, 1"
+  },
+  "වැල්මුරුංගා ( මධුශිග්රු )": {
+    "freq": 1,
+    "iast": "vælmuruṃgā",
+    "latin": [
+      "Moringa Pterygosperma"
+    ],
+    "gloss": ""
+  },
+  "සිහින් එන්සාල් ( මාගධ )": {
+    "freq": 1,
+    "iast": "sihin",
+    "latin": [
+      "Magadha country"
+    ],
+    "gloss": ""
+  },
+  "ශතාවරී": {
+    "freq": 1,
+    "iast": "śatāvarī",
+    "latin": [
+      "Asparagus Racemosus"
+    ],
+    "gloss": "śatāvarī (ī), f. Asparagus Racemosus, Suśr.; ŚārṅgS.; VarBṛS.; Bhpr."
+  },
+  "ශ්‍රීපර්ණී": {
+    "freq": 1,
+    "iast": "śrīparṇī",
+    "latin": [
+      "Gmelina Arborea",
+      "Pistia Stratiotes",
+      "Premna Spinosa",
+      "Salmalia Malabarica"
+    ],
+    "gloss": "śrī—parṇī (ī), f. Gmelina Arborea, Hcat. (L. also ‘Premna Spinosa or Longifolia, Pistia Stratiotes, Salmalia Malabarica, and a species of Solanum’)."
+  },
+  "ත්‍රිමද": {
+    "freq": 1,
+    "iast": "trimada",
+    "latin": [
+      "Cyperus rotundus",
+      "Embelia Ribes",
+      "Plumbago zeylanica"
+    ],
+    "gloss": "tri—mada m. the 3 narcotic plants (Cyperus rotundus, Plumbago zeylanica, and Embelia Ribes)"
+  },
+  "තාලීශපත්‍ර": {
+    "freq": 1,
+    "iast": "tālīśapatra",
+    "latin": [
+      "Corypha Taliera"
+    ],
+    "gloss": "tālī=tālī (ī), f. (g. kuṇḍādī) N. of a tree (Corypha Taliera, Cor | śapa=śapa m. a curse, imprecation, oath (= śapatha), L. | tra=1. tra mf(ā)n. (√ trai, Pāṇ. iii, 2, 3) ifc. ‘protecting’, s"
+  },
+  "කේශරාජ ( කහ කීකිරිඳිය ) ස්වරස": {
+    "freq": 1,
+    "iast": "keśarāja",
+    "latin": [
+      "Eclipta prostrata"
+    ],
+    "gloss": "keśa—rāja m. (= -rañjana) Eclipta prostrata, L."
+  },
+  "ප්‍රියාල ( කොට්ටම්බ ප්‍රතිනිධි )": {
+    "freq": 1,
+    "iast": "priyāla",
+    "latin": [
+      "Buchanania Latifolia"
+    ],
+    "gloss": "priyāla m. the tree Buchanania Latifolia (commonly called Piyāl), MBh.; R.; Suśr."
+  },
+  "( ඡාගලාද්‍ය 1 ) නපුංසක සෘතය එළුවකුගේ ( II ) ( ක්ෂය මස් රෝගයෙහි": {
+    "freq": 1,
+    "iast": "(",
+    "latin": [
+      "Mimosa pudica"
+    ],
+    "gloss": ""
+  },
+  "ශම්පාක ( ඇහැළ කරල් )": {
+    "freq": 1,
+    "iast": "śampāka",
+    "latin": [
+      "Cathartocarpus Fistula"
+    ],
+    "gloss": "śam—pāka m. Cathartocarpus Fistula, MBh.; Suśr. &c. (perhaps w.r. for śamyāka, cf. śamyā)"
+  },
+  "කුෂ්ඨ ( කොට්ටන් )": {
+    "freq": 1,
+    "iast": "kuṣṭha",
+    "latin": [
+      "Costus speciosus"
+    ],
+    "gloss": "ku/ṣṭha as, am, m. n. (fr. 1. ku + stha, Pāṇ. viii, 3, 97) the plant Costus speciosus or arabicus (used as a remedy for the disease called takma/n), AV.; Kauś. 35; R. ii, 94, 23; Suśr."
+  },
+  "පද්මකාෂ්ඨ මිලිතව": {
+    "freq": 1,
+    "iast": "padmakāṣṭha",
+    "latin": [
+      "Cerasus Puddum"
+    ],
+    "gloss": "padma—kāṣṭha n. the wood of Cerasus Puddum, L."
+  },
+  "( ශිරීෂ ) මහරීඇට": {
+    "freq": 1,
+    "iast": "(",
+    "latin": [
+      "Acacia Sirissa"
+    ],
+    "gloss": ""
+  },
+  "රත්හඳුන් , වැල් මදට , ලෝධ්‍ර පොතු , කොට්ටම් , පුවඟු , නුගකරටි , පරිප්පු": {
+    "freq": 1,
+    "iast": "rat_han̆dun",
+    "latin": [
+      "Symplocos Racemosa"
+    ],
+    "gloss": ""
+  },
+  "ලෝධ්‍ර පොතු , කොත්තමල්ලි , වදකහ": {
+    "freq": 1,
+    "iast": "lodhra",
+    "latin": [
+      "Symplocos Racemosa"
+    ],
+    "gloss": "lodhra m. = rodhra, Symplocos Racemosa, MBh.; Kāv. &c."
+  },
+  "මාෂ": {
+    "freq": 2,
+    "iast": "māṣa",
+    "latin": [
+      "Phaseolus Radiatus"
+    ],
+    "gloss": "mā/ṣa m. (n. g. ardharcādi) a bean, RV. &c. &c. (sg. the plant; pl. the fruit; in later times = Phaseolus Radiatus, a valued kind of pulse having seeds marked with black and grey spots)"
+  },
+  "අභයා": {
+    "freq": 1,
+    "iast": "abhayā",
+    "latin": [
+      "Terminalia Chebula"
+    ],
+    "gloss": "a/-bhayā (ā), f. the plant Terminalia Chebula"
+  },
+  "අශ්වගන්ධාමෘතාදි": {
+    "freq": 1,
+    "iast": "aśvagandhāmṛtādi",
+    "latin": [
+      "Physalis Flexuosa"
+    ],
+    "gloss": "aśvagandhā=aśva—gandhā f. the plant Physalis Flexuosa, Suśr. Comm. on K | mṛt=mṛt , mṛt-kaṇa &c. See below. | ādi=1. ādi m. beginning, commencement"
+  },
+  "කතකඛදිරධාත්‍රී": {
+    "freq": 1,
+    "iast": "katakakhadiradhātrī",
+    "latin": [
+      "Acacia Catechu",
+      "Strychnos Potatorum"
+    ],
+    "gloss": "kataka=kataka m. Strychnos Potatorum or the clearing nut plant (its | khadira=khadira/ as, m. Acacia Catechu (having very hard wood, the r | dhātrī=dhātrī f. ‘female supporter’, a nurse, MBh.; Kāv. &c."
+  },
+  "කාලශාකාදි": {
+    "freq": 1,
+    "iast": "kālaśākādi",
+    "latin": [
+      "Ocimum sanctum"
+    ],
+    "gloss": "kālaśāka=kāla—śāka n. the potherb Ocimum sanctum, Mn. iii, 272; MBh.  | ādi=1. ādi m. beginning, commencement"
+  },
+  "බලාමෘතාදි": {
+    "freq": 1,
+    "iast": "balāmṛtādi",
+    "latin": [
+      "Sida Cordifolia"
+    ],
+    "gloss": "balā=balā f. Sida Cordifolia, Suśr. (du. the plants Balā and Ati- | mṛt=mṛt , mṛt-kaṇa &c. See below. | ādi=1. ādi m. beginning, commencement"
+  },
+  "රාස්නාශිග්රුක්වාථය": {
+    "freq": 1,
+    "iast": "rāsnāśigrukvāthaya",
+    "latin": [
+      "Moringa Pterygosperma"
+    ],
+    "gloss": "rāsnā=rā/snā f. a girdle (cf. raśanā, raśmi), VS.; ŚBr. | śigru=śigru/ m. (of unknown derivation) Moringa Pterygosperma (a k | kvāthaya=kvātha m. (g. jvalādi) boiling, Yājñ. iii, 253, Sch."
+  },
+  "ශාලපණ්‍යාදී": {
+    "freq": 1,
+    "iast": "śālapaṇyādī",
+    "latin": [
+      "Cardiospermum Halicacabum"
+    ],
+    "gloss": "śāla=1. śāla/ mfn. (fr. śṛ for śri) being in a house &c., ŚBr. (˚ | paṇyā=paṇyā f. Cardiospermum Halicacabum, L. | ādī=ā-√ 2. dī (3. sg. impf. ā/dīdet, RV. i, 149, 3; 3. sg. aor. "
+  },
+  "ශ්‍රීපණ්‍යාදි": {
+    "freq": 1,
+    "iast": "śrīpaṇyādi",
+    "latin": [
+      "Cardiospermum Halicacabum"
+    ],
+    "gloss": "śrī=1. śrī (cf. √ śrā) cl. 9. P. Ā. (Dhātup. xxxi, 3) śrīṇa/ti,  | paṇyā=paṇyā f. Cardiospermum Halicacabum, L. | ādi=1. ādi m. beginning, commencement"
+  },
+  "ශුණ්ඨිබලාමෘත": {
+    "freq": 1,
+    "iast": "śuṇṭhibalāmṛta",
+    "latin": [
+      "Sida Cordifolia"
+    ],
+    "gloss": "śuṇṭhi=śuṇṭhi or śuṇṭhī, f. dry ginger, Kāv.; VarBṛS.; Suśr. &c. | balā=balā f. Sida Cordifolia, Suśr. (du. the plants Balā and Ati- | mṛta=mṛta/ mfn. dead, deceased, death-like, torpid, rigid, RV. &c"
+  },
+  "හිංග්වෂ්ටක": {
+    "freq": 1,
+    "iast": "hiṃgvaṣṭaka",
+    "latin": [
+      "Ferula Asa"
+    ],
+    "gloss": "hiṅgu=hiṅgu m. Ferula Asa Foetida, Buddh.; BhP. | aṣṭaka=a/ṣṭaka mf(ā or ikā)n. (Śulb.; cf. Pāṇ. vii, 3, 45 Comm.) co"
+  },
+  "අභයාදී": {
+    "freq": 1,
+    "iast": "abhayādī",
+    "latin": [
+      "Terminalia Chebula"
+    ],
+    "gloss": "abhayā=a/-bhayā (ā), f. the plant Terminalia Chebula | ādī=ā-√ 2. dī (3. sg. impf. ā/dīdet, RV. i, 149, 3; 3. sg. aor. "
+  },
+  "කුෂ්මාණ්ඩය": {
+    "freq": 1,
+    "iast": "kuṣmāṇḍaya",
+    "latin": [
+      "Beninkasa cerifera"
+    ],
+    "gloss": "kuṣmāṇḍa m. (cf. kūṣm˚) a kind of pumpkin-gourd (Beninkasa cerifera), MBh. xiii, 4364 (kūśm˚ ed. Bomb.), Suśr."
+  },
+  "ක්‍රිමිකාලා": {
+    "freq": 1,
+    "iast": "krimikālā",
+    "latin": [
+      "Indigofera tinctoria"
+    ],
+    "gloss": "krimi=kri/mi for kṛ/mi, q.v. | kālā=kālā f. N. of several plants (Indigofera tinctoria, L.; Pipe"
+  },
+  "හිංගුලේශ්වර": {
+    "freq": 1,
+    "iast": "hiṃguleśvara",
+    "latin": [
+      "Vedic inf"
+    ],
+    "gloss": "hiṅgulā=hiṅgulā (ā), f., see below | īśvara=īśvara/ mfn. able to do, capable of (with gen. of Vedic inf."
+  },
+  "ශ්වාසාරි": {
+    "freq": 1,
+    "iast": "śvāsāri",
+    "latin": [
+      "Costus Speciosus"
+    ],
+    "gloss": "śvāsāri m. ‘breath-enemy’, Costus Speciosus or Arabicus, L."
+  },
+  "අභයාරිෂ්ටය": {
+    "freq": 1,
+    "iast": "abhayāriṣṭaya",
+    "latin": [
+      "Terminalia Chebula"
+    ],
+    "gloss": "abhayā=a/-bhayā (ā), f. the plant Terminalia Chebula | riṣṭaya=1. riṣṭa/ mfn. (for 2. See below) torn off, broken, injured,"
+  },
+  "අශ්වගන්ධාරිෂ්ටය": {
+    "freq": 1,
+    "iast": "aśvagandhāriṣṭaya",
+    "latin": [
+      "Physalis Flexuosa"
+    ],
+    "gloss": "aśvagandhā=aśva—gandhā f. the plant Physalis Flexuosa, Suśr. Comm. on K | riṣṭaya=1. riṣṭa/ mfn. (for 2. See below) torn off, broken, injured,"
+  },
+  "පුනර්නවාද්‍යරිෂ්ටය": {
+    "freq": 1,
+    "iast": "punarnavādyariṣṭaya",
+    "latin": [
+      "Boerhavia Procumbens"
+    ],
+    "gloss": "punarnavā=pu/nar—navā (ā), f. hog-weed, Boerhavia Procumbens, Suśr. | dya=dya dyas. See a-dya/, sa-dya/s. | riṣṭaya=1. riṣṭa/ mfn. (for 2. See below) torn off, broken, injured,"
+  },
+  "බලාරිෂ්ටය": {
+    "freq": 1,
+    "iast": "balāriṣṭaya",
+    "latin": [
+      "Sida Cordifolia"
+    ],
+    "gloss": "balā=balā f. Sida Cordifolia, Suśr. (du. the plants Balā and Ati- | riṣṭaya=1. riṣṭa/ mfn. (for 2. See below) torn off, broken, injured,"
+  },
+  "කුෂ්ඨ": {
+    "freq": 1,
+    "iast": "kuṣṭha",
+    "latin": [
+      "Costus speciosus"
+    ],
+    "gloss": "ku/ṣṭha as, am, m. n. (fr. 1. ku + stha, Pāṇ. viii, 3, 97) the plant Costus speciosus or arabicus (used as a remedy for the disease called takma/n), AV.; Kauś. 35; R. ii, 94, 23; Suśr."
+  },
+  "ලශුනෛරණ්ඩ": {
+    "freq": 1,
+    "iast": "laśunairaṇḍa",
+    "latin": [
+      "Ricinus Communis"
+    ],
+    "gloss": "laśuna=laśuna n. or (rarely) m. (Uṇ. iii, 57; sometimes written las | eraṇḍa=eraṇḍa m. the castor-oil plant, Ricinus Communis or Palma Ch"
+  },
+  "ශුද්ධබලා": {
+    "freq": 1,
+    "iast": "śuddhabalā",
+    "latin": [
+      "Sida Cordifolia"
+    ],
+    "gloss": "śuddha=śuddha/ mfn. cleansed, cleared, clean, pure, clear, free fro | balā=balā f. Sida Cordifolia, Suśr. (du. the plants Balā and Ati-"
+  }
+}

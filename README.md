@@ -102,6 +102,7 @@ data/
   ocr/             GCV batch JSON outputs (Git LFS, 11 batches, pages 1–525)
   rows/            Stage 2: row-level compressed OCR
   structured/      Stage 3: final structured JSON entries
+  lexicons/        Resolver outputs: per-field Sanskrit lexicons + botanical seed
 
 pipeline/
   extract_page.py        Extract single page from GCV batch
@@ -113,21 +114,30 @@ pipeline/
 analysis/
   nlp_stats.py           NLP statistics report
 
+resolvers/               Linguistic resolvers — tatsama Sanskrit bridge
+  sanskrit_resolver.py   Module A router + Module B MW lookup + sandhi
+  sandhi_worker.py       Memory-isolated subprocess for sanskrit_parser
+  README.md              Setup, usage, and latest measurements
+
 pdf_pipeline/            Experimental: direct PDF extraction path
 knowledge_graph/         Planned: KG construction (Phase 2)
 
 docs/
   output_schema.md       Full field documentation
   architecture.md        Pipeline design decisions and thresholds
-  RESEARCH_PROPOSAL.md   Full research proposal
   pipeline_notes.txt     Data quality notes and known issues
+  PROGRESS_NOTE.md       Latest preliminary work + measured resolver rates
+
+Proposal/                MCS3306 (UCSC MSc CS) research proposal draft
 ```
 
 ---
 
 ## Running the Pipeline
 
-No build system or package manager — standalone Python 3, no external dependencies.
+Pipeline + analysis scripts are standalone Python 3 with no external
+dependencies. The resolvers in `resolvers/` need a venv — see
+[`resolvers/README.md`](resolvers/README.md).
 
 ```bash
 # Run full pipeline (default: pages 444–453)
@@ -145,6 +155,25 @@ python analysis/nlp_stats.py
 # Extract a single page
 python pipeline/extract_page.py data/ocr/ocr_results_output-151-to-200.json 172
 ```
+
+## Sanskrit-bridge resolver — preliminary work
+
+A working three-tier resolver maps Sinhalized-Sanskrit (tatsama) terms
+in the corpus to Monier-Williams entries via Aksharamukha
+transliteration, with dictionary- and parser-based compound splitting.
+Latest measured resolution on the full Vol I corpus:
+
+| Field | Resolved | Total tatsama-signal types |
+| --- | ---: | ---: |
+| Ingredients | **81 %** | 948 / 3 393 |
+| Formula names | **76 %** | 325 / 915 |
+| Prose | **66 %** | 1 231 / 4 825 |
+
+The pass also produces 85 distinct candidate Latin binomials (a
+botanical-normaliser seed). Outputs are pre-computed and committed
+under [`data/lexicons/`](data/lexicons); see
+[`docs/PROGRESS_NOTE.md`](docs/PROGRESS_NOTE.md) and
+[`resolvers/README.md`](resolvers/README.md) for details.
 
 ---
 

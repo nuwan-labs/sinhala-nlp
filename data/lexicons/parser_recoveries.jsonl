@@ -1,0 +1,1015 @@
+{"iast": "-karṣa", "status": "no_split", "candidates": []}
+{"iast": "-samabhāgava", "status": "ok", "candidates": [["sama", "bhā", "gava"], ["sam", "abhās", "gava"]]}
+{"iast": "-śaṭhādi", "status": "ok", "candidates": [["śaṭhā", "ādi"]]}
+{"iast": "abhayādi", "status": "ok", "candidates": [["abhaya", "adi"], ["abhaya", "ādi"]]}
+{"iast": "abhayādī", "status": "ok", "candidates": [["abhayā", "ādī"]]}
+{"iast": "abhinyāsajvarayĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "abhiphĕna", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "abhiphĕnāsavaya", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "abhiśāpādija", "status": "no_split", "candidates": []}
+{"iast": "abhyaga", "status": "ok", "candidates": [["abhī", "aga"], ["abhi", "aga"]]}
+{"iast": "abhyagaya", "status": "no_split", "candidates": []}
+{"iast": "abhyagayaṭa", "status": "no_split", "candidates": []}
+{"iast": "abhyayaṭa", "status": "no_split", "candidates": []}
+{"iast": "abhyayĕn", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "abhyugayaṭa", "status": "no_split", "candidates": []}
+{"iast": "abhāvayĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "abhṛṃga", "status": "no_split", "candidates": []}
+{"iast": "abhṛṃgaya", "status": "no_split", "candidates": []}
+{"iast": "ahiphĕna", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "ahrabhasma", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "ahraka", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "akmælla", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "akṣirogayanhi", "status": "no_split", "candidates": []}
+{"iast": "akṣīspandana", "status": "ok", "candidates": [["akṣī", "spandana"]]}
+{"iast": "alakṣmiya", "status": "no_split", "candidates": []}
+{"iast": "alambuṣādi", "status": "ok", "candidates": [["alambuṣa", "adi"], ["alambuṣā", "adi"]]}
+{"iast": "alukĕhĕl", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "amuin̆guru", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "amukaha", "status": "no_split", "candidates": []}
+{"iast": "amunĕlli", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "amunĕl̤un", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "am̆barā", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "amṛtavāṣādī", "status": "no_split", "candidates": []}
+{"iast": "amṛtāṃkura", "status": "ok", "candidates": [["amṛta", "aṅkura"], ["amṛtā", "aṅkura"]]}
+{"iast": "amṛtāṣṭaka", "status": "ok", "candidates": [["amṛtā", "āṣṭaka"], ["amṛta", "āṣṭaka"], ["amṛtā", "aṣṭaka"]]}
+{"iast": "anekahetujabādhiryya", "status": "no_split", "candidates": []}
+{"iast": "antarṭūmadagdha", "status": "no_split", "candidates": []}
+{"iast": "antravṛdhi", "status": "ok", "candidates": [["antra", "vṛdhi"]]}
+{"iast": "antraśūlayanhi", "status": "no_split", "candidates": []}
+{"iast": "anyĕdyuṣka", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "aral̤u", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "arankaha", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "ardhayak", "status": "ok", "candidates": [["ardha", "yak"]]}
+{"iast": "ardhayaṭa", "status": "no_split", "candidates": []}
+{"iast": "ariṣṭayaṭa", "status": "no_split", "candidates": []}
+{"iast": "arjunāriṣṭaya", "status": "no_split", "candidates": []}
+{"iast": "arkagranthikādī", "status": "ok", "candidates": [["arka", "granthika", "ādī"]]}
+{"iast": "aryāṃśayak", "status": "ok", "candidates": [["arī", "āṃśa", "yak"], ["arya", "aṃśa", "yak"]]}
+{"iast": "asvænna", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "asādhaya", "status": "ok", "candidates": [["asās", "dhaya"]]}
+{"iast": "asṛddara", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "attana", "status": "no_split", "candidates": []}
+{"iast": "atyaṃgaya", "status": "ok", "candidates": [["atyam", "gaya"]]}
+{"iast": "aupadaṃśika", "status": "no_split", "candidates": []}
+{"iast": "avasthānukūla", "status": "ok", "candidates": [["avasthā", "anukūla"], ["avastha", "anukūla"]]}
+{"iast": "avasthānukūlava", "status": "no_split", "candidates": []}
+{"iast": "avasthānusārayĕn", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "avasthāvanhi", "status": "no_split", "candidates": []}
+{"iast": "avasthāvanṭa", "status": "no_split", "candidates": []}
+{"iast": "avasthāve", "status": "ok", "candidates": [["avastha", "āve"], ["avasthā", "āve"]]}
+{"iast": "avasthāvĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "avasthāvŏcitava", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "avaśyatā", "status": "ok", "candidates": [["ava", "śyatā"]]}
+{"iast": "aṃkĕnda", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "aṇḍavṛdhiya", "status": "no_split", "candidates": []}
+{"iast": "aṣiṭhilā", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "aṣṭhavidha", "status": "no_split", "candidates": []}
+{"iast": "aṣṭhilikā", "status": "no_split", "candidates": []}
+{"iast": "aṣṭhilā", "status": "no_split", "candidates": []}
+{"iast": "aṣṭādaśāṃga", "status": "ok", "candidates": [["aṣṭādaśā", "āṅga"], ["aṣṭādaśa", "āṅga"], ["aṣṭādaśā", "aṅga"]]}
+{"iast": "aṣṭādaśāṃgaya", "status": "ok", "candidates": [["aṣṭādaśām", "gaya"]]}
+{"iast": "aṣṭāvaśeṣita", "status": "ok", "candidates": [["aṣṭā", "avaśeṣita"], ["aṣṭau", "aśeṣita"], ["aṣṭa", "avaśeṣita"]]}
+{"iast": "aṣṭāvaśeṣitava", "status": "ok", "candidates": [["aṣṭau", "aśeṣi", "tava"]]}
+{"iast": "aṣṭāṃga", "status": "ok", "candidates": [["aṣṭa", "aṅga"]]}
+{"iast": "aṣṭāṃgaya", "status": "ok", "candidates": [["aṣṭām", "gaya"]]}
+{"iast": "aṣṭāṃgāva", "status": "ok", "candidates": [["aṣṭa", "aṅgāva"], ["aṣṭām", "gāva"], ["aṣṭa", "āṅgāva"]]}
+{"iast": "aṣṭāṃgāyurveda", "status": "ok", "candidates": [["aṣṭāṅgā", "āyurveda"], ["aṣṭāṅga", "āyurveda"], ["aṣṭāṅgā", "yus", "veda"]]}
+{"iast": "babbulyariṣṭaya", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "baddhakŏṭa", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "baddhayaṭa", "status": "no_split", "candidates": []}
+{"iast": "baddhaye", "status": "no_split", "candidates": []}
+{"iast": "badhiratādiyĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "bahurūpīyaṣmā", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "bal̤udam", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "ban̆duna", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "baraki", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "barbarikā", "status": "no_split", "candidates": []}
+{"iast": "barpara", "status": "no_split", "candidates": []}
+{"iast": "baḍayāma", "status": "ok", "candidates": [["baṭ", "ayāma"]]}
+{"iast": "bhagandara", "status": "ok", "candidates": [["bhagam", "dara"], ["bha", "gan", "dara"]]}
+{"iast": "bhagandarayĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "bhaṃga", "status": "no_split", "candidates": []}
+{"iast": "bhedanayi", "status": "ok", "candidates": [["bheda", "nayi"]]}
+{"iast": "bhedanīyayi", "status": "ok", "candidates": [["bhedanī", "yayi"]]}
+{"iast": "bhedayanhi", "status": "no_split", "candidates": []}
+{"iast": "bhedayĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "bhojanayaṭa", "status": "no_split", "candidates": []}
+{"iast": "bhāgayak", "status": "ok", "candidates": [["bhāga", "yak"]]}
+{"iast": "bhāgayaṭa", "status": "no_split", "candidates": []}
+{"iast": "bhāgaye", "status": "ok", "candidates": [["bhāk", "aye"], ["bhās", "gaye"]]}
+{"iast": "bhāgnyādi", "status": "ok", "candidates": [["bhā", "agnī", "ādi"]]}
+{"iast": "bhājanayak", "status": "ok", "candidates": [["bhājana", "yak"], ["bhās", "jana", "yak"], ["bha", "ajana", "yak"]]}
+{"iast": "bhājanayaṭa", "status": "no_split", "candidates": []}
+{"iast": "bhājanayĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "bhājanayĕk_hi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "bhāvanāvĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "bhāvitayaṭa", "status": "no_split", "candidates": []}
+{"iast": "bhāvitayĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "bhūnimbādi", "status": "ok", "candidates": [["bhūnimba", "adi"]]}
+{"iast": "bhūtaja", "status": "ok", "candidates": [["bhūt", "aja"]]}
+{"iast": "bhūtikā", "status": "ok", "candidates": [["bhū", "tikā"]]}
+{"iast": "bhūtotthajvaraya", "status": "no_split", "candidates": []}
+{"iast": "bhūtŏnmāda", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "bhṛṃgarāja", "status": "ok", "candidates": [["bhṛṅga", "rāja"]]}
+{"iast": "bhṛṃgarājadvaya", "status": "ok", "candidates": [["bhṛṅgarāja", "dvaya"], ["bhṛṅga", "rāja", "dvaya"]]}
+{"iast": "biṃtal", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "biṃtalala", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "bulatyuṣa", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "burulla", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "bæbalamul", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "bæbila", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "bægini", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "bævila", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "bābhyāyāma", "status": "ok", "candidates": [["bās", "bhyā", "yāma"], ["bās", "bhi", "āyāma"]]}
+{"iast": "bādhiryya", "status": "no_split", "candidates": []}
+{"iast": "bīmaṭa", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "bŏral̤u", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "būpaṇu", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "caturbhūja", "status": "no_split", "candidates": []}
+{"iast": "cirauṣaṃji", "status": "no_split", "candidates": []}
+{"iast": "cirŏtthita", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "cūrṇaya-", "status": "no_split", "candidates": []}
+{"iast": "dal̤uk", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "dal̤ukkiri", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "dantabhedotthaja", "status": "no_split", "candidates": []}
+{"iast": "dantod_havakṣata", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "dantŏbheda", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "dan̆ḍu", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "daśamula", "status": "ok", "candidates": [["daśam", "ula"]]}
+{"iast": "daśamulāriṣṭaya", "status": "no_split", "candidates": []}
+{"iast": "daśavaga", "status": "no_split", "candidates": []}
+{"iast": "daśavārayak", "status": "ok", "candidates": [["daśavāra", "yak"], ["daśa", "vāra", "yak"]]}
+{"iast": "daśāṃga", "status": "ok", "candidates": [["daśa", "āṅga"], ["daśā", "āṅga"]]}
+{"iast": "dhairyyaya", "status": "ok", "candidates": [["dhais", "yaya"]]}
+{"iast": "dhatvayāśa", "status": "ok", "candidates": [["dha", "tve", "āśa"], ["dha", "tvayā", "āśa"]]}
+{"iast": "dhuptūra", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "dhusturādi", "status": "ok", "candidates": [["dhu", "stur", "ādi"], ["dhus", "tura", "ādi"]]}
+{"iast": "dhvajabhaṃga", "status": "ok", "candidates": [["dhvaja", "bhaṅga"]]}
+{"iast": "dhārŏṣṇa", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "dipĕralidiya", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "diyahabarala", "status": "no_split", "candidates": []}
+{"iast": "diyamidĕlla", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "doṣatrayĕn", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "doṣayaṭa", "status": "no_split", "candidates": []}
+{"iast": "dravatrayayĕn", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "dravatāvayaṭa", "status": "no_split", "candidates": []}
+{"iast": "dravayakin", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "dravayangĕn", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "dravayanhi", "status": "no_split", "candidates": []}
+{"iast": "dravayĕnma", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "dravyama", "status": "ok", "candidates": [["dravi", "ama"]]}
+{"iast": "dravyange", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "dravyangen", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "dravyangĕn", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "dravyayak", "status": "ok", "candidates": [["dravya", "yak"], ["dra", "vya", "yak"]]}
+{"iast": "dravyayanda", "status": "no_split", "candidates": []}
+{"iast": "dravyayange", "status": "no_split", "candidates": []}
+{"iast": "dravyayanhi", "status": "no_split", "candidates": []}
+{"iast": "droṇayak", "status": "ok", "candidates": [["droṇa", "yak"]]}
+{"iast": "droṇayaṭa", "status": "no_split", "candidates": []}
+{"iast": "drākṣābhayādi", "status": "ok", "candidates": [["drākṣa", "ābhayā", "ādi"]]}
+{"iast": "drākṣādi", "status": "ok", "candidates": [["drākṣā", "ādi"]]}
+{"iast": "drākṣāmṛtā", "status": "ok", "candidates": [["drākṣa", "amṛtā"], ["drākṣā", "amṛtā"], ["drākṣa", "āmṛtā"]]}
+{"iast": "duhudu", "status": "no_split", "candidates": []}
+{"iast": "dummælla", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "duraṭa", "status": "ok", "candidates": [["dus", "aṭa"]]}
+{"iast": "durālahā", "status": "no_split", "candidates": []}
+{"iast": "dvandaja", "status": "no_split", "candidates": []}
+{"iast": "dvandavaja", "status": "no_split", "candidates": []}
+{"iast": "dvidoṣaja", "status": "no_split", "candidates": []}
+{"iast": "dvigaṃjā", "status": "ok", "candidates": [["dvi", "gañjā"]]}
+{"iast": "dāhādhika", "status": "ok", "candidates": [["dāha", "adhika"]]}
+{"iast": "dāḍimāṣṭaka", "status": "ok", "candidates": [["dāḍimā", "aṣṭaka"], ["dāḍima", "aṣṭaka"], ["dāḍimā", "āṣṭaka"]]}
+{"iast": "dĕguṇa", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "dĕguṇaya", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "dĕguṇayak", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "dĕguṇayayi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "dĕl̤um", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "dĕl̤umphala", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "dĕmaṭa", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "dĕpakṣayaṭama", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "dĕpatakin", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "dĕpham", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "dĕvage", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "dĕṣaghana", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "dŏṣāvasthāvanṭa", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "ekadoṣaja", "status": "no_split", "candidates": []}
+{"iast": "ekāveriya", "status": "no_split", "candidates": []}
+{"iast": "ekāṃgaśoṣa", "status": "ok", "candidates": [["ekāṅga", "śoṣa"], ["eka", "āṅga", "śoṣa"]]}
+{"iast": "gajakeśarī", "status": "ok", "candidates": [["gaja", "keśarī"]]}
+{"iast": "gajāṃkuśaya", "status": "ok", "candidates": [["gajām", "kuśaya"]]}
+{"iast": "gammiris", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "gandharvahastādi", "status": "ok", "candidates": [["gandharvahasta", "ādi"]]}
+{"iast": "gandharvahastādī", "status": "ok", "candidates": [["gandharvahasta", "ādī"]]}
+{"iast": "gan̆dakṛmi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "garavīṣaṭa", "status": "no_split", "candidates": []}
+{"iast": "garbhaṇī", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "garbhinīnṭa", "status": "no_split", "candidates": []}
+{"iast": "gatayutu", "status": "no_split", "candidates": []}
+{"iast": "gauripāṣāṇam", "status": "ok", "candidates": [["gauri", "pāṣāṇam"]]}
+{"iast": "gaurīpāṣāṇam", "status": "ok", "candidates": [["gaurī", "pāṣāṇam"]]}
+{"iast": "giniyam", "status": "no_split", "candidates": []}
+{"iast": "ginnĕn", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "giritilla", "status": "no_split", "candidates": []}
+{"iast": "glipadayĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "gojitvā", "status": "ok", "candidates": [["goji", "tvā"], ["gas", "ajitvā"]]}
+{"iast": "gokṣurādi", "status": "ok", "candidates": [["gokṣura", "adi"]]}
+{"iast": "gomūtrayĕn", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "gonusu", "status": "no_split", "candidates": []}
+{"iast": "gorocana", "status": "ok", "candidates": [["gas", "rocana"], ["gos", "rocana"]]}
+{"iast": "grahaṇiyaṭa", "status": "no_split", "candidates": []}
+{"iast": "grahaṇiyĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "granthayanhi", "status": "no_split", "candidates": []}
+{"iast": "granthiparṇi", "status": "ok", "candidates": [["granthi", "parṇi"]]}
+{"iast": "granthīndrādi", "status": "ok", "candidates": [["granthī", "indrā", "adi"]]}
+{"iast": "grīvera", "status": "ok", "candidates": [["grīva", "īra"], ["grīvā", "īra"]]}
+{"iast": "grīvĕra", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "gudahraśa", "status": "no_split", "candidates": []}
+{"iast": "gudahraśayaṭa", "status": "no_split", "candidates": []}
+{"iast": "gudaśa", "status": "no_split", "candidates": []}
+{"iast": "gulikara", "status": "ok", "candidates": [["guli", "kara"]]}
+{"iast": "guḍapātayaṭa", "status": "no_split", "candidates": []}
+{"iast": "guḍuci", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "guṇayak", "status": "ok", "candidates": [["guṇa", "yak"]]}
+{"iast": "guṇayaki", "status": "ok", "candidates": [["guṇa", "yaki"]]}
+{"iast": "guṇṭhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "guṣkārśashi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "gĕndagam", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "gĕrika", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "gĕḍiye", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "gŏkṣura", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "gŏkṣurabīja", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "gŏkṣurādi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "gŏmayuṣa", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "gŏraka", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "gŏḍakaduru", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "gǣmaṭa", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "gṛdhirasī.śirṣavāta", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "gṛdhrasi", "status": "no_split", "candidates": []}
+{"iast": "gṛdhræsi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "gṛḍrasi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "habarala", "status": "no_split", "candidates": []}
+{"iast": "harankaha", "status": "no_split", "candidates": []}
+{"iast": "haraṃkaha", "status": "no_split", "candidates": []}
+{"iast": "higulottha", "status": "no_split", "candidates": []}
+{"iast": "hin̆guru", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "hin̆gurupaṭṭa", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "hin̆gurupaṭṭavæl", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "hin̆gurupiyali", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "hin̆ḍagula", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "hiriyal", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "hiṃgula", "status": "ok", "candidates": [["him", "gula"]]}
+{"iast": "hiṃguleśvara", "status": "ok", "candidates": [["hiṅgulā", "īśvara"], ["hiṅgula", "īśvara"]]}
+{"iast": "hiṃgulottha", "status": "ok", "candidates": [["hiṅgula", "uttha"], ["hiṅgulā", "uttha"], ["hiṅgulo", "attha"]]}
+{"iast": "hiṃgulākṛṣṭa", "status": "ok", "candidates": [["hiṅgula", "ākṛṣṭa"], ["hiṅgulā", "ākṛṣṭa"], ["hiṅgula", "akṛṣṭa"]]}
+{"iast": "hiṃgvaṣṭaka", "status": "ok", "candidates": [["hiṅgu", "aṣṭaka"], ["hiṅgū", "aṣṭaka"]]}
+{"iast": "hurīmāra", "status": "no_split", "candidates": []}
+{"iast": "hæn̆digā", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "hārgīmūla", "status": "no_split", "candidates": []}
+{"iast": "hātāvāriya", "status": "no_split", "candidates": []}
+{"iast": "hīndĕmaṭagĕḍi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "hīnmugunuvænna", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "hīræssa", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "hŏn̆daṭa", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "hŏn̆dākāra", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "hṛdayāṇīva", "status": "ok", "candidates": [["hṛdayāṇi", "iva"]]}
+{"iast": "hṛdbhūla", "status": "ok", "candidates": [["hṛt", "bhu", "ula"], ["hṛt", "bhū", "ula"]]}
+{"iast": "hṛtparśavaśūla", "status": "no_split", "candidates": []}
+{"iast": "hṛśūla", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "ikbiti", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "ikiriæṭa", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "im̆bul", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "in̆guru", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "iramusu", "status": "no_split", "candidates": []}
+{"iast": "iriveriya", "status": "no_split", "candidates": []}
+{"iast": "jalabhītikā", "status": "ok", "candidates": [["jala", "bhī", "tikā"]]}
+{"iast": "javśvāsavaya", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "jaṃghā-", "status": "ok", "candidates": [["jam", "ghā"]]}
+{"iast": "jaṃghārujā", "status": "ok", "candidates": [["jaṅghā", "rujā"], ["jaṅgha", "ārujā"], ["jaṅghā", "arujā"]]}
+{"iast": "jaṭāmāṃśa", "status": "ok", "candidates": [["jaṭām", "āṃśa"]]}
+{"iast": "jihvasatambha", "status": "ok", "candidates": [["jihva", "satam", "bha"], ["jihva", "sas", "tam", "bha"]]}
+{"iast": "jvarayanhi", "status": "no_split", "candidates": []}
+{"iast": "jvarayaṭa", "status": "no_split", "candidates": []}
+{"iast": "jvarayaṭada", "status": "no_split", "candidates": []}
+{"iast": "jvarayĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "jvarātīsārayanhi", "status": "no_split", "candidates": []}
+{"iast": "jvarātīsārayaṭa", "status": "no_split", "candidates": []}
+{"iast": "jvarātīsārayĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "jyŏtiṣmatī", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "jīrakādyariṣṭaya", "status": "no_split", "candidates": []}
+{"iast": "kabalĕk_hi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kaham̆biliya", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kaham̆biliyamul", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kaham̆biliyā", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kaiśŏra", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kajjali", "status": "ok", "candidates": [["kad", "jali"]]}
+{"iast": "kajjaliyak", "status": "ok", "candidates": [["kajjali", "yak"], ["kad", "jali", "yak"]]}
+{"iast": "kakul̤u", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kakul̤usugu", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kalkayaṭa", "status": "no_split", "candidates": []}
+{"iast": "kalān̆duru", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kalāyakhañcha", "status": "ok", "candidates": [["kalāya", "kham", "cha"]]}
+{"iast": "kal̤uiramusu", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kal̤uuk", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kaphajvarayaṭa", "status": "no_split", "candidates": []}
+{"iast": "kaphajvarayĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kaphavātajvarayĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kaphādhika", "status": "ok", "candidates": [["kapha", "adhika"]]}
+{"iast": "kaphāĕdbhūta", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kapitthāṣṭaka", "status": "ok", "candidates": [["kapittha", "aṣṭaka"], ["kapittha", "āṣṭaka"]]}
+{"iast": "karanna", "status": "no_split", "candidates": []}
+{"iast": "karanne", "status": "no_split", "candidates": []}
+{"iast": "karanu", "status": "no_split", "candidates": []}
+{"iast": "karkaṭakaśṛṃgi", "status": "ok", "candidates": [["karkaṭaka", "śṛṅgi"]]}
+{"iast": "karkaṭakaśṛṃgī", "status": "ok", "candidates": [["karkaṭaka", "śṛṅgī"]]}
+{"iast": "karkaṭakaśṛṃhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "karkaṭakaśṛṃśi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "karkaṭakaśṝṃgi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "karkaṭakaśṝṃgī", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "karābu", "status": "no_split", "candidates": []}
+{"iast": "kasapæn", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kavāthaya", "status": "no_split", "candidates": []}
+{"iast": "kavĕl̤u", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kaśĕru", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kaṣāyak", "status": "ok", "candidates": [["kaṣā", "yak"], ["kaṣās", "yak"]]}
+{"iast": "kaṣāyaṭa", "status": "no_split", "candidates": []}
+{"iast": "kaṣāyĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kaṣāyĕki", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kaṣāyĕn", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kaṭupĕn̆dagĕḍi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kaṭupĕn̆dakŏla", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kaṭuvælbaṭu", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "keśarabævila", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "khajūrāriṣṭaya", "status": "no_split", "candidates": []}
+{"iast": "khalvayĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "khalvayĕk_hi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kharjurādi", "status": "ok", "candidates": [["kharjus", "ādi"], ["kharjura", "adi"]]}
+{"iast": "khaṃja", "status": "no_split", "candidates": []}
+{"iast": "khaṇḍapākayaṭa", "status": "no_split", "candidates": []}
+{"iast": "khaṇḍayĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kiribadu", "status": "no_split", "candidates": []}
+{"iast": "kirīmedī", "status": "ok", "candidates": [["kirī", "medī"]]}
+{"iast": "kiḍāran", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kiḍāraṃ", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kolaśleṣmā", "status": "ok", "candidates": [["kola", "śleṣmā"]]}
+{"iast": "komārikā", "status": "ok", "candidates": [["kas", "mārikā"], ["kas", "amārikā"]]}
+{"iast": "koṣayanhi", "status": "no_split", "candidates": []}
+{"iast": "kramayaki", "status": "ok", "candidates": [["krama", "yaki"]]}
+{"iast": "kramayaṭa", "status": "no_split", "candidates": []}
+{"iast": "kramayĕn", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "krikaṭu", "status": "ok", "candidates": [["kri", "kaṭu"]]}
+{"iast": "krimirogayaṭa", "status": "no_split", "candidates": []}
+{"iast": "krimirupu", "status": "no_split", "candidates": []}
+{"iast": "krimiśatræ", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kroṣṭaka", "status": "ok", "candidates": [["kras", "aṣṭaka"]]}
+{"iast": "krŏṣṭuka", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kulatthādī", "status": "ok", "candidates": [["kulattha", "adī"]]}
+{"iast": "kum̆bukpātu", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kum̆buru", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kuppameniya", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kurun̆du", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kuruṇi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kuśataṇa", "status": "no_split", "candidates": []}
+{"iast": "kuṣmāṇḍāva", "status": "ok", "candidates": [["kuṣmāṇḍa", "āva"], ["kuṣmāṇḍa", "ava"]]}
+{"iast": "kuṣṭhasni", "status": "ok", "candidates": [["kuṣṭha", "sni"], ["kus", "ṭha", "sni"]]}
+{"iast": "kuṣṭhavairī", "status": "ok", "candidates": [["kuṣṭha", "vairī"], ["kus", "ṭha", "vairī"]]}
+{"iast": "kuṣṭhayĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kuṭajādyariṣṭaya", "status": "no_split", "candidates": []}
+{"iast": "kvāthayaṭa", "status": "no_split", "candidates": []}
+{"iast": "kvāthayĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kvāthayĕn", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kæhipittaṃ", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kæmmeriya", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kæppĕṭi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kākajaghā", "status": "no_split", "candidates": []}
+{"iast": "kālaśākādi", "status": "ok", "candidates": [["kālaśāka", "adi"], ["kālaśāka", "ādi"]]}
+{"iast": "kāsādhya", "status": "no_split", "candidates": []}
+{"iast": "kāñacanābhra", "status": "no_split", "candidates": []}
+{"iast": "kāṣṭhāṃṣadha", "status": "no_split", "candidates": []}
+{"iast": "kĕsĕlgĕḍi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kīkirin̆diya", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kŏhŏm̆ba", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kŏhŏm̆bakŏl̤a", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kŏllankŏl̤a", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kŏllaṃ", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kŏsam̆ba", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kŏttamalli", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kŏvakkā", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kŏṣṭha", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kŏṣṭhabaddha", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kŏṣṭhagata", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kŏṭṭam", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kŏṭṭamba", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kŏṭṭan", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kǣmukhaye", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kṛghra", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kṛmirogayĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kṛmiśatræ", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kṛraya", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kṛśavīma", "status": "no_split", "candidates": []}
+{"iast": "kṣatakṣīṇayĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kṣaṇendriya", "status": "ok", "candidates": [["kṣaṇa", "indriya"]]}
+{"iast": "kṣudrādi", "status": "ok", "candidates": [["kṣudrā", "ādi"]]}
+{"iast": "kṣīrakākŏli", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "kṣīṇavīryya", "status": "no_split", "candidates": []}
+{"iast": "kṣīṇayin", "status": "no_split", "candidates": []}
+{"iast": "kṣīṇĕndriya", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "laghupuṭayakin", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "laubhadræti", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "laśunairaṇḍa", "status": "ok", "candidates": [["laśuna", "eraṇḍa"], ["laśunais", "aṇḍa"], ["laśunais", "raṇḍa"]]}
+{"iast": "laśunu", "status": "no_split", "candidates": []}
+{"iast": "lekhanayakini", "status": "ok", "candidates": [["lekhana", "yak", "ini"]]}
+{"iast": "lodhara", "status": "ok", "candidates": [["las", "dhara"], ["las", "adhara"]]}
+{"iast": "lodhupŏtu", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "lodhīra", "status": "ok", "candidates": [["las", "dhīra"], ["las", "adhīra"]]}
+{"iast": "luṇuvila", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "lākaḍa", "status": "no_split", "candidates": []}
+{"iast": "lākṣādī", "status": "ok", "candidates": [["lākṣā", "ādī"]]}
+{"iast": "madaṭa", "status": "ok", "candidates": [["mat", "aṭa"]]}
+{"iast": "madaṭiya", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "madhukādi", "status": "ok", "candidates": [["madhukā", "adi"]]}
+{"iast": "madhumehayaṭa", "status": "no_split", "candidates": []}
+{"iast": "madhumehayĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "madhūkāsavaya", "status": "ok", "candidates": [["madhū", "kāsa", "vaya"], ["madhūka", "āsa", "vaya"]]}
+{"iast": "mahamuguṇuvænna", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "maharīæṭa", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "mahaṇa", "status": "no_split", "candidates": []}
+{"iast": "mahāmaṃjiṣṭhādiya", "status": "ok", "candidates": [["mahās", "mañjiṣṭhā", "diya"], ["mahā", "mañjiṣṭhā", "diya"], ["mahās", "mañjiṣṭhās", "diya"]]}
+{"iast": "mahāmṛgāṃka", "status": "ok", "candidates": [["mahās", "mṛgāṅka"], ["mahā", "mṛgāṅka"], ["mahāmṛga", "aṅka"]]}
+{"iast": "mahāśaṃkhavaṭī", "status": "ok", "candidates": [["mahāśaṅkha", "vaṭī"], ["mahā", "śaṅkha", "vaṭī"]]}
+{"iast": "malarŏdhayĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "manyāsatambha", "status": "ok", "candidates": [["manyā", "āsatam", "bha"], ["manya", "asatam", "bha"], ["manyā", "satam", "bha"]]}
+{"iast": "man̆gulkaran̆da", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "marmāśrita", "status": "ok", "candidates": [["marma", "āśrita"], ["marma", "aśrita"]]}
+{"iast": "masbædda", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "masvænna", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "maḍūra", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "maṃcādhi", "status": "ok", "candidates": [["mañca", "adhi"], ["mañcās", "dhi"], ["mañca", "ādhi"]]}
+{"iast": "maṃjiṣṭhādi", "status": "ok", "candidates": [["mañjiṣṭhā", "adi"]]}
+{"iast": "maṇḍukaparṇi", "status": "ok", "candidates": [["maṇḍuka", "parṇi"], ["maṇḍu", "kapa", "ṛṇi"]]}
+{"iast": "maṇḍura", "status": "no_split", "candidates": []}
+{"iast": "mehajasandhivāta", "status": "no_split", "candidates": []}
+{"iast": "membha", "status": "no_split", "candidates": []}
+{"iast": "mendhākara", "status": "no_split", "candidates": []}
+{"iast": "meṣaśṛṃgi", "status": "ok", "candidates": [["meṣa", "śṛṅgi"]]}
+{"iast": "milikaḍa", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "miśrakŏ", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "miśrakŏṭa", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "miśraṇayĕn", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "mmiris", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "muddarappalam", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "mukhayĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "mukuṇuvænna", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "muruvā", "status": "ok", "candidates": [["mus", "uvā"]]}
+{"iast": "muruṃgā", "status": "no_split", "candidates": []}
+{"iast": "muruṃgākŏl̤a", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "mustakāriṣṭaya", "status": "no_split", "candidates": []}
+{"iast": "mustāśuṇṭhi", "status": "ok", "candidates": [["mustā", "śuṇṭhi"]]}
+{"iast": "mutrādoṣa", "status": "ok", "candidates": [["mut", "rāt", "oṣa"], ["mut", "rās", "doṣa"]]}
+{"iast": "mutrāghāta", "status": "no_split", "candidates": []}
+{"iast": "mutrāghātaya", "status": "ok", "candidates": [["mut", "rāghā", "taya"], ["mut", "rās", "ghātaya"]]}
+{"iast": "mutrāghātādiya", "status": "no_split", "candidates": []}
+{"iast": "mutrākṛjra", "status": "ok", "candidates": [["mut", "rāk", "ṛjra"]]}
+{"iast": "muvahaṃ", "status": "no_split", "candidates": []}
+{"iast": "muṃyuṣaya", "status": "no_split", "candidates": []}
+{"iast": "mæḍahan̆gu", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "mæṭibhājanayĕk_hi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "mātuluṃga", "status": "no_split", "candidates": []}
+{"iast": "māṣaparṇi", "status": "ok", "candidates": [["māṣa", "parṇi"]]}
+{"iast": "mĕṣaśṛṃgi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "mīkiri", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "mūcchā", "status": "no_split", "candidates": []}
+{"iast": "mūnamal", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "mūtrabaddhatā", "status": "no_split", "candidates": []}
+{"iast": "mūtrakṛ", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "mūtrakṛcchara", "status": "ok", "candidates": [["mūtra", "kṛt", "śara"]]}
+{"iast": "mūtrakṛcchura", "status": "ok", "candidates": [["mūtra", "kṛt", "śura"]]}
+{"iast": "mūtrakṛra", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "mūtrāghataya", "status": "ok", "candidates": [["mūtra", "agha", "taya"]]}
+{"iast": "mūṣikaparṇi", "status": "ok", "candidates": [["mūṣika", "parṇi"], ["mūṣi", "kapa", "ṛṇi"]]}
+{"iast": "mṛddaraśṛṃga", "status": "ok", "candidates": [["mṛd", "dara", "śṛṅga"], ["mṛt", "dara", "śṛṅga"]]}
+{"iast": "mṛdvikā", "status": "no_split", "candidates": []}
+{"iast": "mṛtyaṃjaya", "status": "ok", "candidates": [["mṛtī", "añjaya"], ["mṛti", "añjaya"]]}
+{"iast": "nasnāran", "status": "ok", "candidates": [["nasna", "āran"]]}
+{"iast": "navasāram", "status": "ok", "candidates": [["nava", "sāram"]]}
+{"iast": "nikakŏl̤a", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "nilkaṭukaran̆ḍu", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "nimbāriṣṭaya", "status": "no_split", "candidates": []}
+{"iast": "nivula", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "niyan̆da", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "nugakaraṭi", "status": "no_split", "candidates": []}
+{"iast": "nækatin", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "næliya", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "næliyak", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "nævata", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "nāmalveṇu", "status": "ok", "candidates": [["nāma", "lve", "aṇu"], ["nās", "malve", "aṇu"]]}
+{"iast": "nāśakayi", "status": "no_split", "candidates": []}
+{"iast": "nĕllikkā", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "nĕl̤uala", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "nĕl̤um", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "nĕl̤umīṇu", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "nĕriviṣa", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "padmakāṣṭa", "status": "ok", "candidates": [["padmaka", "aṣṭa"]]}
+{"iast": "pahata", "status": "no_split", "candidates": []}
+{"iast": "pakṣimaṃśa", "status": "ok", "candidates": [["pakṣim", "aṃśa"]]}
+{"iast": "pakṣāghātayĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "pakṣāghātādi", "status": "ok", "candidates": [["pakṣāghāta", "ādi"]]}
+{"iast": "pakṣīnge", "status": "no_split", "candidates": []}
+{"iast": "palmānikkam", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "palmāṇikkam", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "palāśabija", "status": "no_split", "candidates": []}
+{"iast": "pal̤amu", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "pal̤amuva", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "pamaṇa", "status": "no_split", "candidates": []}
+{"iast": "paramauṣadhayaki", "status": "ok", "candidates": [["parama", "auṣadha", "yaki"], ["paramā", "auṣadha", "yaki"], ["param", "auṣadha", "yaki"]]}
+{"iast": "paribhāṣāvĕn", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "paribhāṣāvĕni", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "paridi", "status": "no_split", "candidates": []}
+{"iast": "parippu", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "parpaṭādyariṣṭaya", "status": "no_split", "candidates": []}
+{"iast": "pasuya", "status": "no_split", "candidates": []}
+{"iast": "pasvagayĕ", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "pathyādi", "status": "ok", "candidates": [["pathi", "ādi"], ["pathya", "ādi"]]}
+{"iast": "pathyādī", "status": "ok", "candidates": [["pathī", "ādī"], ["pathi", "ādī"]]}
+{"iast": "paṃcavidha", "status": "ok", "candidates": [["pañca", "vidha"], ["pam", "cavi", "dha"]]}
+{"iast": "paṃcāṃgaya", "status": "ok", "candidates": [["pañcām", "gaya"]]}
+{"iast": "paṭolādikvāthaya", "status": "ok", "candidates": [["paṭola", "adi", "kvāthaya"]]}
+{"iast": "paṭāmāṃśa", "status": "ok", "candidates": [["paṭāma", "aṃśa"], ["paṭām", "āṃśa"], ["paṭāma", "āṃśa"]]}
+{"iast": "phalatrayādi", "status": "ok", "candidates": [["phalatraya", "adi"], ["phalatraya", "ādi"]]}
+{"iast": "phusphusa", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "phusthusa", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "phvālāmukhī", "status": "ok", "candidates": [["phū", "ālā", "mukhī"], ["phu", "ālā", "mukhī"], ["phū", "ālās", "mukhī"]]}
+{"iast": "phāṇṭha", "status": "ok", "candidates": [["phāṇ", "ṭha"], ["phām", "ṭha"], ["phāṇ", "tha"]]}
+{"iast": "phāṇṭhaya", "status": "no_split", "candidates": []}
+{"iast": "pil̤iyĕla", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "pin̆ḍuvak", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "pittaśoṣayĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "pittādhika", "status": "ok", "candidates": [["pitta", "adhika"]]}
+{"iast": "piyali", "status": "no_split", "candidates": []}
+{"iast": "piṇisa", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "piṇḍakharpūra", "status": "no_split", "candidates": []}
+{"iast": "pluvansā", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "plīharogādiyĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "plūrasi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "pra.ni", "status": "no_split", "candidates": []}
+{"iast": "pradarayaṭa", "status": "no_split", "candidates": []}
+{"iast": "pradarayĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "pradarāntaka", "status": "ok", "candidates": [["pradara", "antaka"], ["pradarān", "taka"]]}
+{"iast": "pradarāri", "status": "ok", "candidates": [["pradara", "āri"]]}
+{"iast": "pradeśayĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "pradĕśayĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "prakaraṇaye", "status": "ok", "candidates": [["pra", "karaṇaye"]]}
+{"iast": "pralepayĕn", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "pralāpāntaka", "status": "ok", "candidates": [["pralāpān", "taka"], ["pralāpa", "antaka"]]}
+{"iast": "pramehaja", "status": "no_split", "candidates": []}
+{"iast": "pramehapiḍakā", "status": "no_split", "candidates": []}
+{"iast": "pramehayaṭa", "status": "no_split", "candidates": []}
+{"iast": "pramehayĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "pramha", "status": "no_split", "candidates": []}
+{"iast": "pramādayĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "pramāṇayak", "status": "ok", "candidates": [["pramāṇa", "yak"], ["pra", "māṇa", "yak"]]}
+{"iast": "pramāṇayaki", "status": "ok", "candidates": [["pramāṇa", "yaki"]]}
+{"iast": "pramāṇayaṭa", "status": "no_split", "candidates": []}
+{"iast": "pramāṇaye", "status": "ok", "candidates": [["pram", "āṇaye"], ["pramā", "āṇaye"]]}
+{"iast": "pramāṇayĕn", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "pramāṇayĕni", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "prapunnāḍa", "status": "ok", "candidates": [["pra", "pum", "nāḍa"]]}
+{"iast": "prapunnāṭa", "status": "ok", "candidates": [["pra", "pum", "nāṭa"]]}
+{"iast": "prasāriṇi", "status": "ok", "candidates": [["pra", "sāriṇi"]]}
+{"iast": "prasĕka", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "prathamakŏṭa", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "prathamayĕn", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "pratiniyi", "status": "ok", "candidates": [["prati", "niyi"]]}
+{"iast": "pratyaṣṭhilā", "status": "no_split", "candidates": []}
+{"iast": "pratyĕkava", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "pratūnī", "status": "no_split", "candidates": []}
+{"iast": "prayogayĕ", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "prayogayĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "priyagu", "status": "no_split", "candidates": []}
+{"iast": "priyaṃ", "status": "ok", "candidates": [["pri", "yam"]]}
+{"iast": "priyaṃgu", "status": "no_split", "candidates": []}
+{"iast": "priyaṃgukādi", "status": "ok", "candidates": [["priyaṅgukā", "adi"]]}
+{"iast": "prāmbha", "status": "ok", "candidates": [["prām", "bha"]]}
+{"iast": "prĕpḷṇḍyakayuṣa", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "punarnavāṣṭakaya", "status": "no_split", "candidates": []}
+{"iast": "pupula", "status": "no_split", "candidates": []}
+{"iast": "purātaṇa", "status": "no_split", "candidates": []}
+{"iast": "pusvæl", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "puvan̆gu", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "puṇḍarika", "status": "no_split", "candidates": []}
+{"iast": "puṣpayĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "puṣyānuga", "status": "ok", "candidates": [["puṣya", "anuga"], ["puṣyā", "anuga"]]}
+{"iast": "pæsunu", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "pæsuṇu", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "pācanāmṛta", "status": "ok", "candidates": [["pācanās", "mṛta"], ["pācanā", "mṛta"], ["pācana", "amṛta"]]}
+{"iast": "pādayaṭa", "status": "no_split", "candidates": []}
+{"iast": "pākayak", "status": "ok", "candidates": [["pāka", "yak"]]}
+{"iast": "pārthādyariṣṭaya", "status": "no_split", "candidates": []}
+{"iast": "pāṣāṇam", "status": "no_split", "candidates": []}
+{"iast": "pāṭhādī", "status": "ok", "candidates": [["pāṭha", "ādī"], ["pāṭhā", "ādī"]]}
+{"iast": "pāṭhākarañjādi", "status": "ok", "candidates": [["pāṭhā", "karañja", "adi"]]}
+{"iast": "pāṭhāsamaṃgādi", "status": "ok", "candidates": [["pāṭha", "asamam", "gādi"], ["pāṭhā", "asamam", "gādi"]]}
+{"iast": "pĕnahalu", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "pĕnĕla", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "pĕruṃkāyam", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "pĕrāgat", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "pŏlpalā", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "pǣdīma", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "pṛgniparṇi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "pṛśyiparṇa", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "pṛśṇaparṇi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "pṛṣṇaparṇī", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "pṛṣṇiparṇi", "status": "ok", "candidates": [["pṛṣṇi", "parṇi"]]}
+{"iast": "rankirigŏkaṭu", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "rasakin̆da", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "rasasindura", "status": "ok", "candidates": [["rasa", "sim", "dura"]]}
+{"iast": "rasāṃjana", "status": "ok", "candidates": [["rasān", "jana"], ["rasa", "añjana"]]}
+{"iast": "rat_han̆dun", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "rat_hiriyal", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "ratkihiriya", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "ratniṭul", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "ratnĕṭul", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "ratulūnu", "status": "no_split", "candidates": []}
+{"iast": "ratulūṇu", "status": "no_split", "candidates": []}
+{"iast": "raṭaïn̆di", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "ridītutthaṃ", "status": "no_split", "candidates": []}
+{"iast": "rogayanhi", "status": "no_split", "candidates": []}
+{"iast": "rogayĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "rogābādha", "status": "ok", "candidates": [["rogās", "bādha"], ["roga", "ābādha"], ["roga", "abādha"]]}
+{"iast": "rogāvasthā", "status": "ok", "candidates": [["rogau", "asthā"], ["roga", "avasthā"]]}
+{"iast": "rogāvasthāva", "status": "ok", "candidates": [["rogau", "asthāva"], ["roga", "avasthāva"], ["rogau", "astha", "āva"]]}
+{"iast": "rogāvasthāvanaṭa", "status": "ok", "candidates": [["roga", "avasthāvan", "aṭa"], ["rogau", "asthāva", "naṭa"], ["roga", "avasthāva", "naṭa"]]}
+{"iast": "rogāvasthāvanṭa", "status": "no_split", "candidates": []}
+{"iast": "rogīnṭa", "status": "no_split", "candidates": []}
+{"iast": "rohitakāriṣṭaya", "status": "no_split", "candidates": []}
+{"iast": "rājamṛgāṃka", "status": "ok", "candidates": [["rāja", "mṛgāṅka"]]}
+{"iast": "rājayakṣmi", "status": "ok", "candidates": [["rāja", "yakṣmi"]]}
+{"iast": "rākṣadoṣa", "status": "no_split", "candidates": []}
+{"iast": "rāśiyak", "status": "ok", "candidates": [["rāśi", "yak"]]}
+{"iast": "rūkmal", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "sabĕru", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "sahamulin", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "saindhavaluṇu", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "saindhavādī", "status": "ok", "candidates": [["saindhava", "ādī"]]}
+{"iast": "samabhāgavayi", "status": "ok", "candidates": [["samabhāga", "vayi"], ["sam", "abhās", "gavayi"]]}
+{"iast": "samanpicca", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "samapākayaṭa", "status": "no_split", "candidates": []}
+{"iast": "sandhika", "status": "no_split", "candidates": []}
+{"iast": "sandhivātayanhi", "status": "no_split", "candidates": []}
+{"iast": "sandhiśothayĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "san̆dahan", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "san̆dahā", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "saptāmṛta", "status": "ok", "candidates": [["saptām", "ṛta"], ["saptā", "mṛta"], ["sapta", "amṛta"]]}
+{"iast": "sassan̆da", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "satambha", "status": "ok", "candidates": [["satam", "bha"], ["sas", "tam", "bha"]]}
+{"iast": "sathāvara", "status": "ok", "candidates": [["sas", "thās", "vara"]]}
+{"iast": "satiyak", "status": "ok", "candidates": [["sati", "yak"]]}
+{"iast": "savarjikṣāra", "status": "ok", "candidates": [["sas", "varji", "kṣāra"]]}
+{"iast": "savin̆daluṇu", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "savāthyaya", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "siddhakŏṭa", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "siddhaprāṇĕśvara", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "siddhayurveda", "status": "ok", "candidates": [["siddha", "yus", "veda"]]}
+{"iast": "sin̆du", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "sin̆dunāṭa", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "sin̆duvanu", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "sin̆duvā", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "sin̆dī", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "sin̆ḍārtha", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "sin̆ḍārthaka", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "siritekaku", "status": "no_split", "candidates": []}
+{"iast": "siritekku", "status": "no_split", "candidates": []}
+{"iast": "sivuvagaya", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "siyalla", "status": "no_split", "candidates": []}
+{"iast": "siyallehi", "status": "no_split", "candidates": []}
+{"iast": "siyallĕn", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "siyallĕnma", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "siyalu", "status": "no_split", "candidates": []}
+{"iast": "siyaluma", "status": "no_split", "candidates": []}
+{"iast": "siyal̤u", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "siyam̆balāpŏtu", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "snuhīkṣira", "status": "no_split", "candidates": []}
+{"iast": "snāyuvyuhagata", "status": "no_split", "candidates": []}
+{"iast": "spiriṭ", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "srāvayangĕn", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "sthānayanhi", "status": "no_split", "candidates": []}
+{"iast": "stringe", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "strīnṭa", "status": "no_split", "candidates": []}
+{"iast": "suddhakara", "status": "ok", "candidates": [["sut", "hak", "ara"], ["sut", "dha", "kara"]]}
+{"iast": "sududuru", "status": "no_split", "candidates": []}
+{"iast": "suduhan̆dun", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "sudulunu", "status": "no_split", "candidates": []}
+{"iast": "sudulūnu", "status": "no_split", "candidates": []}
+{"iast": "sudupāṣāṇam", "status": "no_split", "candidates": []}
+{"iast": "sudusu", "status": "no_split", "candidates": []}
+{"iast": "sun̆gu", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "suprasiddhayi", "status": "no_split", "candidates": []}
+{"iast": "suvan̆da", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "suvan̆dakŏṭṭam", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "suvan̆dakŏṭṭan", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "svapnamehayanhi", "status": "no_split", "candidates": []}
+{"iast": "svarasarayĕn", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "svarasayangĕn", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "svarasayĕn", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "svarasinda", "status": "no_split", "candidates": []}
+{"iast": "svarasĕn", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "svarṇakṣirī", "status": "no_split", "candidates": []}
+{"iast": "svarṇavaṃga", "status": "ok", "candidates": [["svarṇa", "vaṅga"]]}
+{"iast": "svāgaśīta", "status": "ok", "candidates": [["sva", "aga", "śīta"]]}
+{"iast": "sælakiya", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "sævændarā", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "sādaliṃgam", "status": "ok", "candidates": [["sāda", "liṅgam"], ["sāt", "aliṅgam"], ["sāda", "lim", "gam"]]}
+{"iast": "sādikkā", "status": "no_split", "candidates": []}
+{"iast": "sādiliṃgam", "status": "ok", "candidates": [["sādi", "liṅgam"], ["sādi", "lim", "gam"]]}
+{"iast": "sādiliṃgaṃ", "status": "ok", "candidates": [["sādi", "liṅgam"], ["sādi", "lim", "gam"]]}
+{"iast": "sāmānārtha", "status": "ok", "candidates": [["sāmān", "ārtha"], ["sās", "mān", "ārtha"]]}
+{"iast": "sāraṃgadharaya", "status": "ok", "candidates": [["sāraṅga", "dha", "raya"]]}
+{"iast": "sĕl̤uǣṇaya", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "sĕmbhoga", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "sĕnkŏṭṭan", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "sīnidda", "status": "no_split", "candidates": []}
+{"iast": "sŏl̤ŏs", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "sūkiri", "status": "no_split", "candidates": []}
+{"iast": "sūkṣmati", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "sūryyakānta", "status": "ok", "candidates": [["sūryī", "aka", "ānta"], ["sūryi", "aka", "ānta"]]}
+{"iast": "sṛddhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "sṛtumat", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "sṛtuvĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "sṛṣabha", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "sṛṣabhaka", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "tabanna", "status": "no_split", "candidates": []}
+{"iast": "talatĕl", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "tikul̤u", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "tirassavālu", "status": "ok", "candidates": [["tiras", "savā", "alu"]]}
+{"iast": "tiræssavālu", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "trayodaśāṃga", "status": "ok", "candidates": [["trayodaśa", "aṅga"], ["trayodaśā", "aṅga"]]}
+{"iast": "traṃjana", "status": "ok", "candidates": [["tram", "jana"]]}
+{"iast": "trikampī", "status": "ok", "candidates": [["tri", "kampī"]]}
+{"iast": "trikaṇṭakādi", "status": "ok", "candidates": [["trikaṇṭaka", "adi"]]}
+{"iast": "tripalā", "status": "no_split", "candidates": []}
+{"iast": "triphalākvāthayĕn", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "trisuganda", "status": "no_split", "candidates": []}
+{"iast": "trīvṛt", "status": "ok", "candidates": [["trī", "vṛt"]]}
+{"iast": "tugākṣiri", "status": "no_split", "candidates": []}
+{"iast": "tugākṣīri", "status": "ok", "candidates": [["tugā", "kṣīri"]]}
+{"iast": "tuvāla", "status": "no_split", "candidates": []}
+{"iast": "tæm̆bili", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "tĕlaṭa", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "tīkṣaṇalauha", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "tīkṣyalauha", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "tŏlaboala", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "tṛtiyaka", "status": "ok", "candidates": [["tṛti", "yaka"]]}
+{"iast": "uguræssa", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "ukrasa", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "ukyuṣa", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "ul̤uvā", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "uraḥstŏya", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "urdhavajatrægata", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "urdhavajatræroga", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "utpalāṣṭaka", "status": "ok", "candidates": [["utpala", "āṣṭaka"], ["utpalā", "aṣṭaka"], ["utpala", "aṣṭaka"]]}
+{"iast": "uśirādi", "status": "no_split", "candidates": []}
+{"iast": "uśirādiya", "status": "ok", "candidates": [["uśi", "rās", "diya"]]}
+{"iast": "uśirādī", "status": "no_split", "candidates": []}
+{"iast": "uśirāsavaya", "status": "ok", "candidates": [["uśi", "rāsa", "vaya"]]}
+{"iast": "uḍattā", "status": "no_split", "candidates": []}
+{"iast": "uṣṇayĕn", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "uṭaṃganabīja", "status": "ok", "candidates": [["uṭam", "gan", "abīja"]]}
+{"iast": "vacanāvi", "status": "ok", "candidates": [["vaca", "nāvi"], ["vacanā", "avi"], ["vacana", "āvi"]]}
+{"iast": "vacanāvī", "status": "ok", "candidates": [["vacan", "āvī"], ["vaca", "nāvī"]]}
+{"iast": "vadakaha", "status": "no_split", "candidates": []}
+{"iast": "vaikāntra", "status": "ok", "candidates": [["vai", "kām", "tra"]]}
+{"iast": "valan̆gasāl", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "valīphalitayaṭa", "status": "no_split", "candidates": []}
+{"iast": "val̤an̆gasāl", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "vanaturu", "status": "ok", "candidates": [["vanat", "uru"]]}
+{"iast": "van̆duru", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "van̆durumǣ", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "varākŏl̤a", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "vatura", "status": "no_split", "candidates": []}
+{"iast": "vaśayĕn", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "vaśayĕni", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "vaṃgabhasma", "status": "ok", "candidates": [["vaṅga", "bhasma"], ["vam", "gabha", "sma"], ["vaṅga", "bha", "sma"]]}
+{"iast": "vaṃgāṣṭaka", "status": "ok", "candidates": [["vaṅga", "aṣṭaka"], ["vaṅga", "āṣṭaka"]]}
+{"iast": "vaṃmutu", "status": "no_split", "candidates": []}
+{"iast": "vaṅakṣaṇa", "status": "no_split", "candidates": []}
+{"iast": "ve.pañcavidha", "status": "no_split", "candidates": []}
+{"iast": "vidhise", "status": "no_split", "candidates": []}
+{"iast": "vidhiyĕn", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "vidhiyĕni", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "vidhānayĕn", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "vidræma", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "vidyālayānubaddha", "status": "ok", "candidates": [["vidyālaya", "anubaddha"], ["vidī", "ālayā", "anubaddha"], ["vidyālaya", "ānu", "baddha"]]}
+{"iast": "vikṛtīnhi", "status": "no_split", "candidates": []}
+{"iast": "vividhotthāna", "status": "ok", "candidates": [["vividha", "utthāna"], ["vividhā", "utthāna"]]}
+{"iast": "vividhāśrayavedanā", "status": "ok", "candidates": [["vividhā", "śraya", "vedanā"], ["vividha", "āśraya", "vedanā"], ["vividhā", "āśraya", "vedanā"]]}
+{"iast": "vivṛtavæ", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "viyali", "status": "no_split", "candidates": []}
+{"iast": "viyalā", "status": "no_split", "candidates": []}
+{"iast": "viśeṣayak", "status": "ok", "candidates": [["viśeṣa", "yak"], ["viśā", "īṣa", "yak"]]}
+{"iast": "viśeṣayĕn", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "viśeṣayĕnma", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "viśiṣṭayi", "status": "no_split", "candidates": []}
+{"iast": "viśiṣṭhayi.gara", "status": "no_split", "candidates": []}
+{"iast": "viśvāci", "status": "no_split", "candidates": []}
+{"iast": "viśĕṣa", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "viḍaṃgāriṣṭaya", "status": "no_split", "candidates": []}
+{"iast": "viṣaghananili", "status": "ok", "candidates": [["viṣa", "gha", "nan", "ili"]]}
+{"iast": "viṣaghŏra", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "viṣamajvarayaṭa", "status": "no_split", "candidates": []}
+{"iast": "viṣamajvarayĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "viṣamehayanhi", "status": "no_split", "candidates": []}
+{"iast": "viṣayĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "viṣaṭa", "status": "no_split", "candidates": []}
+{"iast": "vraṇayanhi", "status": "no_split", "candidates": []}
+{"iast": "vraṇaśūkla", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "vyavahārayĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "vyavahārayĕki", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "vyavārayĕki", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "vyaṃga", "status": "no_split", "candidates": []}
+{"iast": "vyādhīn", "status": "ok", "candidates": [["vyās", "dhīn"], ["vya", "ādhīn"]]}
+{"iast": "vyādhīnṭa", "status": "no_split", "candidates": []}
+{"iast": "vælkaham̆biliya", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "vælkaham̆biliyā", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "vælmuruṃgā", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "vælpĕnĕla", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "væl̤an̆diya", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "væṭake", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "vāddha", "status": "ok", "candidates": [["vāt", "dha"]]}
+{"iast": "vālmugrā", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "vālmŏlan̆gu", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "vāridoṣaja", "status": "no_split", "candidates": []}
+{"iast": "vāsakāriṣṭaya", "status": "no_split", "candidates": []}
+{"iast": "vātakaphŏlvaṇa", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "vātakṣayĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "vātanāgāṃkuśaya", "status": "ok", "candidates": [["vāta", "nāgām", "kuśaya"], ["vāt", "anāgām", "kuśaya"]]}
+{"iast": "vātaraktaśothayĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "vātaśleṣmayĕn", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "vātaślĕśmaja", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "vātaśŏṇitaja", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "vātādhika", "status": "ok", "candidates": [["vātā", "adhika"], ["vāta", "adhika"]]}
+{"iast": "vātārśayĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "vāṃgaśita", "status": "ok", "candidates": [["vāṅga", "śita"]]}
+{"iast": "vāṣpaśīlī", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "vĕnama", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "vĕnivæl", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "vĕnuvaṭa", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "vĕpathu", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "vīpŏri", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "vǣkŏn̆da", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "vṛddhayanṭa", "status": "no_split", "candidates": []}
+{"iast": "vṛddhi-", "status": "ok", "candidates": [["vṛt", "dhi"]]}
+{"iast": "vṛddhigaroga", "status": "ok", "candidates": [["vṛt", "dhik", "aroga"]]}
+{"iast": "vṛddhikŏṭa", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "vṛddhiyana", "status": "no_split", "candidates": []}
+{"iast": "vṛdhadāru", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "vṛhagaṃgādhara", "status": "ok", "candidates": [["vṛha", "gaṅgādhara"], ["vṛha", "gaṅga", "adhara"], ["vṛha", "gaṅgās", "dhara"]]}
+{"iast": "vṛhatyādigaṇa", "status": "ok", "candidates": [["vṛhati", "ādi", "gaṇa"], ["vṛhatyā", "ādi", "gaṇa"], ["vṛhatī", "ādi", "gaṇa"]]}
+{"iast": "vṛhaṇa", "status": "no_split", "candidates": []}
+{"iast": "vṛkkapradāhayaṭa", "status": "no_split", "candidates": []}
+{"iast": "vṛkkaśūlayaṭa", "status": "no_split", "candidates": []}
+{"iast": "vṛṣyātāvayaṭa", "status": "no_split", "candidates": []}
+{"iast": "ya.madhumehayĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "yabŏra", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "yahavapu", "status": "no_split", "candidates": []}
+{"iast": "yakveriya", "status": "no_split", "candidates": []}
+{"iast": "yakṛroga", "status": "no_split", "candidates": []}
+{"iast": "yakṛtmula", "status": "no_split", "candidates": []}
+{"iast": "yakṛvṛddhi", "status": "no_split", "candidates": []}
+{"iast": "yakṣāksvādi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "yogaye", "status": "ok", "candidates": [["yok", "aye"], ["yas", "gaye"]]}
+{"iast": "yogayĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "yogayĕn", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "yutuyi", "status": "no_split", "candidates": []}
+{"iast": "yuṣada", "status": "no_split", "candidates": []}
+{"iast": "yuṣaya", "status": "no_split", "candidates": []}
+{"iast": "yuṣayangĕn", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "yuṣayaṭa", "status": "no_split", "candidates": []}
+{"iast": "yuṣayĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "yuṣayĕn", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "yuṣaṭa", "status": "no_split", "candidates": []}
+{"iast": "yĕde.śvitra", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "yĕdiya", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "yĕdīma", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "yŏdanne", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "yŏniśūla", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "æddĕmaṭa", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "æhæl̤a", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "æm̆biliya", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "æm̆bul", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "æm̆buldŏḍama", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "æm̆buldŏḍamyuṣa", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "æm̆bulæm̆biliya", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "ættora", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "æṭamada", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "ājānusthuṭika", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "ākārakarabhādi", "status": "no_split", "candidates": []}
+{"iast": "ārambhayĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "ārogyaśālāvĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "āthūkaphala", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "āyuṣaṭa", "status": "no_split", "candidates": []}
+{"iast": "āḍatoḍā", "status": "no_split", "candidates": []}
+{"iast": "ĕkādaśavidha", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "ĕlabaṭu", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "ĕlakaṭarŏlū", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "ĕlakiri", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "ĕl̤ukiri", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "ĕl̤uvakuge", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "ĕrabadu", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "ĕramiṇiyā", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "ĕran̆ḍumul", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "ĕyuṣin", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "īśvarī", "status": "no_split", "candidates": []}
+{"iast": "ŏlin̆da", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "śadhyā", "status": "no_split", "candidates": []}
+{"iast": "śailaṣmika", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "śailĕya", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "śakhapuṣpī", "status": "no_split", "candidates": []}
+{"iast": "śakhapuṣyādi", "status": "no_split", "candidates": []}
+{"iast": "śarkarādi", "status": "ok", "candidates": [["śarkarā", "adi"]]}
+{"iast": "śarīrayĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "śarīrayĕn", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "śastrakṣārāgni", "status": "ok", "candidates": [["śastrakṣāra", "agni"], ["śastṛ", "akṣārā", "agni"], ["śastra", "kṣārā", "agni"]]}
+{"iast": "śasyādi", "status": "ok", "candidates": [["śasya", "adi"], ["śasi", "ādi"], ["śasya", "ādi"]]}
+{"iast": "śatapatrādi", "status": "ok", "candidates": [["śata", "patra", "adi"], ["śata", "patra", "ādi"]]}
+{"iast": "śathyādi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "śatāvaryyadiya", "status": "no_split", "candidates": []}
+{"iast": "śayyādi", "status": "ok", "candidates": [["śayya", "ādi"], ["śayya", "adi"]]}
+{"iast": "śaṃkhapuṣpi", "status": "ok", "candidates": [["śaṅkha", "puṣpi"], ["śam", "kha", "puṣpi"]]}
+{"iast": "śaṃkhapuṣpī", "status": "ok", "candidates": [["śaṅkha", "puṣpī"], ["śam", "kha", "puṣpī"]]}
+{"iast": "śaṃkhini", "status": "no_split", "candidates": []}
+{"iast": "śaṃkhinī", "status": "no_split", "candidates": []}
+{"iast": "śaṭhiādi", "status": "ok", "candidates": [["śaṭhi", "ādi"]]}
+{"iast": "śirastŏda", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "śirŏbhrama", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "śirŏgraha", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "śirŏrujā", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "śirṣakampa", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "śirṣātyaṃga", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "śivaśarmā", "status": "ok", "candidates": [["śiva", "śarmā"]]}
+{"iast": "ślemolbaṇa", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "śleṣmajvarayaṭa", "status": "no_split", "candidates": []}
+{"iast": "śleṣmakṣayĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "śleṣmaśailĕndra", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "śleṣmādaraya", "status": "no_split", "candidates": []}
+{"iast": "ślĕmajvara", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "śodata", "status": "no_split", "candidates": []}
+{"iast": "śodhanayaṭa", "status": "no_split", "candidates": []}
+{"iast": "śothayanhi", "status": "no_split", "candidates": []}
+{"iast": "śothayaṭa", "status": "no_split", "candidates": []}
+{"iast": "śothayĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "śreṣṭhave", "status": "no_split", "candidates": []}
+{"iast": "śreṣṭhayi", "status": "no_split", "candidates": []}
+{"iast": "śrĕṣṭhayi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "śrīpaṇyādi", "status": "ok", "candidates": [["śrī", "paṇyā", "ādi"], ["śrī", "paṇya", "ādi"]]}
+{"iast": "śuddhagugul", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "śuddharatniṭul", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "śukramehayaṭa", "status": "no_split", "candidates": []}
+{"iast": "śukrāśmari", "status": "ok", "candidates": [["śukra", "aśmari"], ["śukrā", "aśmari"]]}
+{"iast": "śulādiyaṭa", "status": "no_split", "candidates": []}
+{"iast": "śunyatā", "status": "no_split", "candidates": []}
+{"iast": "śuptavāta", "status": "ok", "candidates": [["śup", "tava", "āta"], ["śup", "tava", "ata"]]}
+{"iast": "śuṅakha", "status": "no_split", "candidates": []}
+{"iast": "śuṣkamūlakādi", "status": "ok", "candidates": [["śuṣka", "mūlaka", "adi"], ["śuṣka", "mūlakā", "ādi"]]}
+{"iast": "śvasanakajvarayaṭa", "status": "no_split", "candidates": []}
+{"iast": "śvetakarhī", "status": "no_split", "candidates": []}
+{"iast": "śvāsayaṭa", "status": "no_split", "candidates": []}
+{"iast": "śvĕtakuṣṭha", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "śā.saṃ", "status": "no_split", "candidates": []}
+{"iast": "śāgadhara", "status": "no_split", "candidates": []}
+{"iast": "śālaparṇi", "status": "ok", "candidates": [["śāla", "parṇi"], ["śās", "lapa", "ṛṇi"]]}
+{"iast": "śālapaṇyādī", "status": "ok", "candidates": [["śāla", "paṇya", "adī"], ["śāla", "paṇyā", "ādī"]]}
+{"iast": "śāntiyaṭa", "status": "no_split", "candidates": []}
+{"iast": "śāraṃgadhara", "status": "ok", "candidates": [["śas", "raṅga", "dhara"], ["śās", "raṅga", "dhara"]]}
+{"iast": "śārivādyāsavaya", "status": "ok", "candidates": [["śāri", "vādi", "āsa", "vaya"], ["śāri", "vādī", "āsa", "vaya"]]}
+{"iast": "śāstravĕlliya", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "śātāvarī", "status": "ok", "candidates": [["śātau", "arī"], ["śātās", "varī"], ["śāta", "avarī"]]}
+{"iast": "śāṇaye", "status": "ok", "candidates": [["śāṇ", "aye"]]}
+{"iast": "śīghrayĕn", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "śīrṣayĕhi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "śīrṣābhāṃga", "status": "ok", "candidates": [["śīrṣā", "bhāṅga"], ["śīrṣās", "bhāṅga"]]}
+{"iast": "śīrṣātyaṃga", "status": "ok", "candidates": [["śīrṣa", "ātī", "aṅga"], ["śīrṣā", "ātī", "aṅga"]]}
+{"iast": "śīrṣātyaṃgaya", "status": "ok", "candidates": [["śīrṣā", "tyam", "gaya"], ["śīrṣa", "ātyam", "gaya"], ["śīrṣā", "ātyam", "gaya"]]}
+{"iast": "śītajvarayanhi", "status": "no_split", "candidates": []}
+{"iast": "śītalacinī", "status": "no_split", "candidates": []}
+{"iast": "śītalĕn", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "śŏphātīsārayaṭa", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "śūddha", "status": "no_split", "candidates": []}
+{"iast": "śūlayaṭa", "status": "no_split", "candidates": []}
+{"iast": "śūlopadrava", "status": "ok", "candidates": [["śūlā", "upadrava"], ["śūla", "upadrava"], ["śūlā", "upa", "drava"]]}
+{"iast": "śṛḍrasi", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "śṛṃgyādi", "status": "ok", "candidates": [["śṛṅgī", "ādi"]]}
+{"iast": "śṛṃgārābhra", "status": "ok", "candidates": [["śṛṅgāra", "ābhra"], ["śṛṅgārā", "ābhra"]]}
+{"iast": "śṛṃgāṭa", "status": "ok", "candidates": [["śṛṅga", "aṭa"], ["śṛṅgā", "āṭa"]]}
+{"iast": "śṛṃgāṭaka", "status": "ok", "candidates": [["śṛṅgā", "āṭaka"]]}
+{"iast": "ūrdhajatrægata", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "ūrdhavajatrægata", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "ūrdhavāṃga", "status": "no_split", "candidates": []}
+{"iast": "ūruvĕnṭa", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "ṣadharaṇa", "status": "no_split", "candidates": []}
+{"iast": "ṣaguṇabalijārita", "status": "no_split", "candidates": []}
+{"iast": "ṭakaṇa", "status": "no_split", "candidates": []}
+{"iast": "ṭaḍkaṇa", "status": "error", "candidates": [], "error": "TypeError: 'NoneType' object is not iterable"}
+{"iast": "ṭaṃgaṇa", "status": "ok", "candidates": [["ṭam", "gaṇa"]]}
+{"iast": "ṭaṃkana", "status": "ok", "candidates": [["ṭam", "kana"]]}
+{"iast": "ṭaṃkaṇa", "status": "ok", "candidates": [["ṭam", "kaṇa"]]}
