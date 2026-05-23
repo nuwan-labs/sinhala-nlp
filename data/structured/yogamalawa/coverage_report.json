@@ -1,0 +1,172 @@
+{
+  "source": "yogamalawa",
+  "summary": {
+    "structured_entries": 96,
+    "unassigned_rows": 14,
+    "expected_entries": 231,
+    "entries_coverage_pct": 41.6
+  },
+  "token_coverage": {
+    "source_tokens": 5779,
+    "source_types": 2701,
+    "captured_total": 5852,
+    "captured_in_entries": 5799,
+    "captured_unassigned": 53,
+    "lost_tokens": 118,
+    "lost_pct": 2.04,
+    "gained_dup_tokens": 191,
+    "gained_dup_note": "tokens appearing more often in output than in source — caused by entry markers re-opening on noisy/column-wrap rows; needs deduplication downstream"
+  },
+  "lost_by_category": {
+    "running_headers_intentional": 23,
+    "numeric_intentional": 6,
+    "substantive_tokens": 89,
+    "substantive_types": 62,
+    "substantive_pct_of_source": 1.54
+  },
+  "sinhala_only": {
+    "source": 5185,
+    "captured": 5169,
+    "lost": 96,
+    "loss_pct": 1.85
+  },
+  "lost_substantive_sample": {
+    "9.": 7,
+    "නො.": 4,
+    "ලකුනු.": 4,
+    "කරුනු.": 3,
+    "9,": 3,
+    "රෝගයට.": 3,
+    "විධි.": 3,
+    "ය.": 2,
+    "මාලාවේ.": 2,
+    "ලෙඩට.": 2,
+    "කුෂ්ටයට.": 2,
+    "විසට.": 2,
+    "මුත්‍රයි.": 2,
+    "ණ.": 2,
+    "ලදි.": 1,
+    "ඩී.": 1,
+    "ලදී.": 1,
+    "1908.": 1,
+    "පටුන.": 1,
+    "ලොවේ.": 1,
+    "දොසජ්වරයට.": 1,
+    "ආමජ්වරයට.": 1,
+    "පිත්තවරයට,": 1,
+    "උනට.": 1,
+    "ලා..": 1,
+    "උතුට.": 1,
+    "අතීසාරයට.": 1,
+    "ක්‍රිච්ඡයට.": 1,
+    "ඇවිලිල්ලට.": 1,
+    "උදරයට.": 1
+  },
+  "duplicated_entry_numbers": {
+    "2": 3,
+    "30": 2,
+    "4": 2,
+    "36": 2,
+    "8": 2,
+    "21": 2,
+    "23": 2,
+    "81": 2,
+    "82": 2
+  },
+  "per_page": {
+    "1": {
+      "src": 35,
+      "captured": 39
+    },
+    "2": {
+      "src": 198,
+      "captured": 203
+    },
+    "3": {
+      "src": 231,
+      "captured": 230
+    },
+    "4": {
+      "src": 229,
+      "captured": 232
+    },
+    "5": {
+      "src": 207,
+      "captured": 215
+    },
+    "6": {
+      "src": 190,
+      "captured": 191
+    },
+    "7": {
+      "src": 300,
+      "captured": 302
+    },
+    "8": {
+      "src": 311,
+      "captured": 316
+    },
+    "9": {
+      "src": 301,
+      "captured": 301
+    },
+    "10": {
+      "src": 304,
+      "captured": 358
+    },
+    "11": {
+      "src": 287,
+      "captured": 240
+    },
+    "12": {
+      "src": 286,
+      "captured": 293
+    },
+    "13": {
+      "src": 287,
+      "captured": 286
+    },
+    "14": {
+      "src": 280,
+      "captured": 592
+    },
+    "15": {
+      "src": 300,
+      "captured": 0
+    },
+    "16": {
+      "src": 289,
+      "captured": 595
+    },
+    "17": {
+      "src": 306,
+      "captured": 0
+    },
+    "18": {
+      "src": 296,
+      "captured": 297
+    },
+    "19": {
+      "src": 267,
+      "captured": 274
+    },
+    "20": {
+      "src": 305,
+      "captured": 480
+    },
+    "21": {
+      "src": 336,
+      "captured": 189
+    },
+    "22": {
+      "src": 234,
+      "captured": 219
+    }
+  },
+  "known_limitations": [
+    "Pages 15 and 17 yield zero entries: their entry numbers (133-140, 164-165) appear embedded inline with the running header or as bare 'N <numeric>' rows; the row-clustering on those pages does not surface them at a recognisable left-margin position.",
+    "BACK_TOL=100 admits entry-number re-openings on later pages where a small number gets misread inside a verse body — manifests as ~191 'gained' tokens (duplication). Downstream consumers should deduplicate by aංkaya.",
+    "Indication extraction succeeds on only 7/96 entries because indication phrases often land at x0 below the INDIC_X_MIN threshold, or get embedded in the final verse line itself rather than appearing as a separate centred row.",
+    "Yogamalawa verse structure (4-line stanzas with end-rhyme) is preserved as `lines[]` but not yet decomposed into yogaya/sanskaranaya/anupana/prayoga sub-fields the way the tabular Vol I pipeline does."
+  ]
+}
