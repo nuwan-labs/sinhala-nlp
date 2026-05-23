@@ -891,7 +891,7 @@ repository:
 
 ```
 @misc{sinhala-traditional-medicine-nlp,
-  author       = {<author name here>},
+  author       = {Medawaththa, Nuwan},
   title        = {Sinhala Traditional Medicine NLP: A knowledge-extraction
                   pipeline and Sanskrit-bridge resolver for the
                   Sri Lankan Ayurvedic Pharmacopoeia},

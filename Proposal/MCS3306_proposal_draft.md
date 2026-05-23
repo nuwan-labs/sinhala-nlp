@@ -18,8 +18,8 @@
 
 | Field | Value |
 | --- | --- |
-| Name with initials | _to fill_ |
-| Full name | _to fill_ |
+| Name with initials | N. Medawaththa |
+| Full name | Nuwan Medawaththa |
 | Email | _to fill_ |
 | Registration No. | _to fill_ |
 | Phone | _to fill_ |
