@@ -18,6 +18,7 @@ graph of traditional Sri Lankan medicine.
 4. [The pharmacopoeia extraction pipeline](#4-the-pharmacopoeia-extraction-pipeline)
 5. [The output: structured pharmacopoeia entries](#5-the-output-structured-pharmacopoeia-entries)
 6. [The Sanskrit-bridge resolver](#6-the-sanskrit-bridge-resolver)
+6½. [External-ID enrichers](#6-external-id-enrichers-interoperability-with-international-standards)
 7. [The knowledge graph (planned)](#7-the-knowledge-graph-planned)
 8. [Research direction](#8-research-direction)
 9. [Reproducing everything](#9-reproducing-everything)
@@ -31,12 +32,14 @@ graph of traditional Sri Lankan medicine.
 
 | Question | Answer |
 |---|---|
-| What is the source material? | *Sri Lankan Ayurvedic Pharmacopoeia*, Volume I — pages 172–443 of the printed reference, containing 707 herbal-formula entries written entirely in Sinhala. |
-| What has been built? | A 3-stage OCR-to-JSON extraction pipeline; a 3-tier Sinhala→Sanskrit lexical resolver; a planned knowledge graph (design only, not yet built). |
-| What's the corpus size? | 707 structured entries · 11 007 ingredient cells · 62 562 tokens · 7 100 distinct vocabulary types. |
-| What's the Sanskrit-bridge result? | **81 % / 76 % / 66 %** of tatsama-signal terms resolved against Monier-Williams in ingredients / formula names / prose, with zero manual labelling. **85 distinct Latin botanical binomials** extracted as a free by-product. |
-| What's still planned? | Volumes II and III (physical copies in hand); the knowledge graph; a labelled NER corpus; the empirical KG-grounded extraction study. |
-| What is the formal deliverable? | A UCSC MSc-CS individual project proposal (MCS 3306) — draft in [`Proposal/MCS3306_proposal_draft.md`](Proposal/MCS3306_proposal_draft.md). |
+| What is the source material? | *Sri Lankan Ayurvedic Pharmacopoeia*, Volume I — 707 herbal-formula entries on pages 172–443 of the printed reference, written entirely in Sinhala. Plus a second source, *Yogamālāva* (1908), a 22-page Sinhala verse-form formulary digitised end-to-end. |
+| What has been built? | Stage 0 OCR runner (Google Cloud Vision, language-pinned `si`, DPI-tuned for old prints); 3-stage OCR-to-JSON extraction pipeline; verse-aware Stage 3 for Yogamālāva; 3-tier Sinhala→Sanskrit lexical resolver with memory-isolated parser workers; external-ID enrichers binding to POWO (botany) and ICD-11 TM2 (WHO traditional medicine codes); a designed-but-not-yet-built knowledge graph documented in [`docs/kg_schema.md`](docs/kg_schema.md). |
+| What's the corpus size? | Vol I: 707 structured entries · 11 007 ingredient cells · 62 562 tokens · 7 100 vocab types. Yogamālāva: 145 entries · 22 pages · 5 855 captured tokens (98.5 % of source OCR). |
+| Sanskrit-bridge resolver result | **81 % / 76 % / 66 %** of tatsama-signal terms resolved against Monier-Williams in ingredients / formula names / prose, zero manual labelling. |
+| POWO botanical enrichment | **69 / 85 (81 %)** binomials resolved to IPNI LSID; 19th-century MW names mapped to modern accepted forms (e.g. *Grislea Tomentosa* → *Woodfordia fruticosa*; *Physalis Flexuosa* → *Withania somnifera*). |
+| ICD-11 TM2 disease mapping | **49 / 56 (88 %)** Sanskrit indication terms mapped to WHO ICD-11 Traditional Medicine Module 2 codes (released Feb 2025); 9 / 10 anchor terms validated against expected TM2 codes. |
+| What's still planned? | Volumes II and III (physical copies in hand); the knowledge graph implementation; a labelled NER corpus; the empirical KG-grounded extraction study. |
+| What is the formal deliverable? | A UCSC MSc-CS individual project proposal (MCS 3306) — current draft at [`Proposal/MCS3306_proposal_draft.md`](Proposal/MCS3306_proposal_draft.md); KG schema design at [`docs/kg_schema.md`](docs/kg_schema.md); bibliography at [`docs/references.md`](docs/references.md) / [`docs/references.bib`](docs/references.bib). |
 
 For the latest measured numbers and the architectural rationale behind
 the resolver, see [`docs/PROGRESS_NOTE.md`](docs/PROGRESS_NOTE.md).
@@ -145,25 +148,28 @@ MCS 3306 MSc proposal in [`Proposal/`](Proposal).
 
 ## 3. What this repository contains
 
-Three independent components, building on each other:
+Four independent components, layered on each other:
 
 ```
 ┌──────────────────────────────────────────────────────────────────────┐
-│  (1) Pipeline  —  scanned PDF  →  structured JSON corpus              │
+│  (1) Pipeline   —  scanned PDF  →  structured JSON corpus             │
 │      pipeline/, data/{ocr,rows,structured}/, analysis/                │
 │                                                                       │
 │  (2) Resolvers  —  Sinhala tokens  →  Sanskrit lexical entries        │
 │      resolvers/, data/lexicons/                                       │
 │                                                                       │
-│  (3) Knowledge graph  —  structured terms  →  typed graph (planned)   │
-│      knowledge_graph/                                                 │
+│  (2b) Enrichers —  resolved entities  →  external authority IDs       │
+│       enrichers/ — POWO (plants), ICD-11 TM2 (diseases)               │
+│                                                                       │
+│  (3) Knowledge graph  —  structured + resolved + bound  →  typed graph │
+│      docs/kg_schema.md (v1 design), knowledge_graph/ (not yet built)  │
 └──────────────────────────────────────────────────────────────────────┘
 ```
 
-Plus supporting material: `docs/` (architecture notes, data-quality
-catalogue, the latest progress note), `pdf_pipeline/` (an experimental
-alternative extraction path that reads embedded PDF text directly), and
-`Proposal/` (the academic deliverable).
+Plus supporting material: `docs/` (KG schema, architecture notes,
+data-quality catalogue, the latest progress note, bibliography),
+`pdf_pipeline/` (an experimental alternative extraction path that reads
+embedded PDF text directly), and `Proposal/` (the academic deliverable).
 
 ---
 
@@ -659,33 +665,53 @@ algorithm are documented in [`enrichers/README.md`](enrichers/README.md).
 
 ## 7. The knowledge graph (planned)
 
-The structured corpus and the resolved lexicons together support the
-construction of a domain knowledge graph — the planned next phase of
-the work. The design is documented in
-[`knowledge_graph/README.md`](knowledge_graph/README.md):
+The structured corpus, the resolved lexicons, and the external-ID
+bindings together support the construction of a domain knowledge graph
+— the planned next phase of the work.
 
-| Node type | Source field | Estimated count |
-|---|---|---:|
-| Formula | `අංකය` + `යෝග නාමය` | 707 |
-| Ingredient | `ද්‍රව්‍යය` (after normalisation) | ~300 canonical |
-| Indication | `ප්‍රයෝග` (NLP-extracted) | ~50–100 |
-| Formula-type | name suffix (*kvātha*, *cūrṇa*, *ghṛta*, …) | ~10 |
-| Adjuvant | `අනුපාන` | ~50 |
-| Preparation-method | `සංස්කරණය` (NLP-extracted) | ~20–30 |
+The **v1 schema** is fully designed in
+[`docs/kg_schema.md`](docs/kg_schema.md) (≈ 500 lines, supervisor-facing).
+It defines:
 
-Edges:
+* **10 node types**: Plant, PlantPart, Phytochemical, Mineral,
+  Formulation, PreparationType, Route, Disease, Symptom,
+  PharmacologicalProperty.
+* **13 edge types**: `CONTAINS`, `USES_PART`, `CONSISTS_OF`, `IS_TYPE`,
+  `PREPARED_BY`, `ADMINISTERED_AS`, `DOSED_WITH`, `TREATS`,
+  `HAS_SYMPTOM`, `RELIEVES`, `HAS_PROPERTY`, `SUBSTITUTES_FOR`,
+  `VARIANT_OF`, `CITES`.
+* **Required external-authority IDs**: POWO IPNI LSID on every Plant,
+  ICD-11 TM2 code on every Disease, PubChem CID / ChEBI ID on every
+  Phytochemical. Synthesised from comparable initiatives — GRAYU
+  (Frontiers Pharmacology 2026), HerbKG, AyurKOSH (IEEE DataPort 2026),
+  and the WHO ICD-11 TM2 international standard (released Feb 2025).
+* **Provenance per node and per edge**: `source_doc`,
+  `source_sentence_id`, `extractor_version`, `resolver_version`,
+  `confidence`, `created_at`.
+* **Four serialisation views**: Neo4j (canonical), JSON-LD (publish),
+  RDF/Turtle (semantic-web), JSONL (streaming).
+* **Schema-constrained extraction** as the explicit design principle —
+  matching the 2025 best practice (RELATE, SPIREX, ODKE+,
+  schema-constrained AI for biomedical evidence).
 
-| Edge type | Source | Available now? |
+A companion [`docs/context.jsonld`](docs/context.jsonld) defines the
+JSON-LD context so worked examples parse against the schema.
+
+What's ready vs. pending:
+
+| Edge type | Source | Status |
 |---|---|---|
 | FORMULA `CONTAINS` Ingredient | `යෝගය` | Yes — 11 007 instances ready |
-| FORMULA `TREATS` Indication | `ප්‍රයෝග` | Needs NLP extraction |
-| FORMULA `REFERENCES` Formula | `සංස්කරණය` | Needs regex |
 | FORMULA `IS_TYPE` FormulaType | name suffix | Yes — regex |
 | FORMULA `DOSED_WITH` Adjuvant | `අනුපාන` | Yes |
 | Ingredient `CO_OCCURS` Ingredient | co-occurrence | Yes |
-| Ingredient `VARIANT_OF` Ingredient | normalisation | Needs labelling |
+| FORMULA `TREATS` Disease (with ICD-11 TM2 code) | `ප්‍රයෝග` + the ICD-11 mapper | Mapping built (88 % coverage); KG builder not yet written |
+| Plant **external.powo_lsid** | POWO enricher | Built (81 % coverage) |
+| FORMULA `REFERENCES` Formula | `සංස්කරණය` | Needs regex |
+| Plant `VARIANT_OF` canonical | normalisation | Needs labelling |
 
-Implementation has not yet started.
+The KG **builder** module (`knowledge_graph/build.py`) is the next
+implementation step.
 
 ---
 
@@ -797,7 +823,45 @@ parser_recoveries.jsonl      resolver_run.log
 A frozen reference copy of these outputs is committed at
 [`data/lexicons/`](data/lexicons).
 
-### 9.5 Memory profile
+### 9.5 Running the external-ID enrichers
+
+Both enrichers need a couple of extra packages:
+
+```bash
+.venv/bin/python -m pip install requests rapidfuzz
+```
+
+**Plants → POWO** (Royal Botanic Gardens, Kew; no auth needed):
+
+```bash
+.venv/bin/python enrichers/botanical_powo.py
+# ~25 s for the 85 binomials, hits POWO /api/2/search.
+# Writes data/lexicons/botanical_powo.json
+```
+
+**Diseases → ICD-11 TM2** (WHO API; one-time free registration at
+[icd.who.int/icdapi](https://icd.who.int/icdapi) to obtain a
+client_id + client_secret):
+
+```bash
+# put credentials in a gitignored .env file at the repo root
+cat > .env << 'EOF'
+ICD_CLIENT_ID=<your-client-id>
+ICD_CLIENT_SECRET=<your-client-secret>
+EOF
+
+.venv/bin/python enrichers/icd11_tm2_mapper.py
+# first run crawls + caches all 710 TM2 entities (~30 s);
+# subsequent runs are offline. Writes data/lexicons/icd11_tm2_cache.json
+# and data/lexicons/indication_icd11_tm2.json.
+.venv/bin/python enrichers/icd11_tm2_mapper.py --anchors-only   # 10-term smoke test
+.venv/bin/python enrichers/icd11_tm2_mapper.py --refresh        # force re-crawl
+```
+
+Setup details, the 5-tier matching algorithm, and known limits are
+documented in [`enrichers/README.md`](enrichers/README.md).
+
+### 9.6 Memory profile
 
 For reference (Python interpreter on Linux, 8 GB RAM machine):
 
@@ -831,6 +895,9 @@ sinhala-traditional-medicine-nlp/
 │   ├── shrink_ocr_v4.py            — Stage 2: cluster words into rows
 │   ├── extract_pharma_v3.py        — Stage 3 (stable, tabular layout)
 │   ├── extract_pharma_v4.py        — Stage 3 (current development)
+│   ├── extract_yogamalawa_v1.py    — Stage 3 (verse-form, baseline)
+│   ├── extract_yogamalawa_v2.py    — Stage 3 (verse-form, v2.1 with embedded
+│   │                                 marker split + indication mop-up)
 │   └── pipeline.py                 — orchestrator (Stages 1–3, Vol I)
 │
 ├── resolvers/                      ── (2) Resolvers: Sinhala → Sanskrit
@@ -856,13 +923,24 @@ sinhala-traditional-medicine-nlp/
 │
 ├── data/
 │   ├── source/                     — original PDFs (Vol I is Git-LFS-tracked)
-│   ├── ocr/                        — GCV outputs
+│   ├── ocr/                        — Stage-0 GCV outputs
 │   │   ├── ocr_results_output-*.json   — Vol I, Git LFS (async batch)
 │   │   └── yogamalawa/             — Yogamālāva 1908 (sync per-page)
 │   ├── rows/                       — Stage-2 row-level JSON
 │   │   └── yogamalawa/             — verse-form rows (379 rows, 22 pages)
 │   ├── structured/                 — Stage-3 structured entries
-│   └── lexicons/                   — Resolver outputs (this work)
+│   │   ├── *_structured.json       — Vol I batches (tabular)
+│   │   └── yogamalawa/             — Yogamālāva v2.1 (145 entries, 98.5 %
+│   │       │                         per-token coverage)
+│   │       ├── yogamalawa_structured_v2.json
+│   │       ├── coverage_report_v2.json
+│   │       └── yogamalawa_reading.txt  — supervisor-friendly plain-text view
+│   └── lexicons/                   — Resolver + enricher outputs
+│       ├── {ingredients,names,prose}_lexicon.json  — resolver Tier 1+2+3
+│       ├── botanical_candidates.json               — Latin binomial seed
+│       ├── botanical_powo.json                     — POWO enrichment
+│       ├── icd11_tm2_cache.json                    — TM2 entity cache (710)
+│       └── indication_icd11_tm2.json               — Sanskrit → TM2 mapping
 │
 └── docs/
     ├── architecture.md             — pipeline design and threshold rationale
