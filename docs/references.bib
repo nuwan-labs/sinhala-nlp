@@ -1,0 +1,168 @@
+% References for the Sinhala Traditional Medicine NLP project.
+% Compiled May 2026 — verified against original sources where possible.
+% Annotated browsable version in references.md.
+
+@article{joshi2026grayu,
+  author    = {Joshi, Sarthak and Pathak, Aditi and Regati, Dheemanth Reddy and
+               Menon, Revathy and Ajith, Deepthi S. and Sheshadri, Aditya and
+               Viswanathan, Neerja and Ray, Poulomi and Koul, Vimarishi and
+               Panda, Pratishruti and Bhambore, Shriya Anand and Verma, Shailya and
+               Sinha, Ananya and Shafi, K. Mohamed and Pavalam, Murugavel and
+               Sowdhamini, Ramanathan},
+  title     = {{GRAYU}: graph-based database integrating Ayurvedic formulations,
+               medicinal plants, phytochemicals and diseases},
+  journal   = {Frontiers in Pharmacology},
+  volume    = {16},
+  pages     = {1727224},
+  year      = {2026},
+  doi       = {10.3389/fphar.2025.1727224},
+  url       = {https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2025.1727224/full},
+  note      = {Source of the 4-node Ayurvedic KG model adopted in this project's schema v1}
+}
+
+@misc{mirasdar2026ayurkosh,
+  author    = {Mirasdar, Sharayu and Bedekar, Mangesh and Patankar, Harish and Gujar, Yash},
+  title     = {{AyurKOSH} Dataset: A Machine-Readable Ayurvedic Knowledge Resource for
+               Knowledge Graph and Computational Intelligence},
+  howpublished = {IEEE Dataport},
+  year      = {2026},
+  doi       = {10.21227/58ej-wz87},
+  url       = {https://dx.doi.org/10.21227/58ej-wz87},
+  note      = {Source of the Rasa/Guna/Virya/Vipaka/Karma pharmacological-property axes}
+}
+
+@article{lin2022herbkg,
+  author    = {Lin, Xian and Quan, Zhe and Wang, Zhi-Jie and Huang, Huang and Zeng, Xiangxiang},
+  title     = {{HerbKG}: Constructing a Herbal-Molecular Medicine Knowledge Graph Using a
+               Two-Stage Framework Based on Deep Transfer Learning},
+  journal   = {Frontiers in Genetics},
+  volume    = {13},
+  pages     = {799349},
+  year      = {2022},
+  doi       = {10.3389/fgene.2022.799349},
+  url       = {https://www.frontiersin.org/journals/genetics/articles/10.3389/fgene.2022.799349/full},
+  note      = {Inspiration for the typed-entity-and-relation extraction pattern}
+}
+
+@inproceedings{terdalkar2023ayurjnanam,
+  author    = {Terdalkar, Hrishikesh},
+  title     = {{\=A}yurj{\~n}{\=a}nam: Exploring {\=A}yurveda using Knowledge Graphs},
+  booktitle = {NYCIKS},
+  year      = {2023},
+  url       = {https://hrishikeshrt.github.io/publication/nyciks2023/abstract.pdf},
+  note      = {Small but careful OWL-based KG of the Dhanyavarga chapter; 410 entities, 764 relationships}
+}
+
+@misc{singhal2022semantic,
+  author    = {Singhal, Niraj and Sharma, Aman},
+  title     = {Semantic Annotation and Querying Framework based on Semi-structured Ayurvedic Text},
+  year      = {2022},
+  eprint    = {2202.00216},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/2202.00216}
+}
+
+@misc{who2025icd11tm2,
+  author       = {{World Health Organization}},
+  title        = {{ICD-11} Traditional Medicine Module 2 ({TM2})},
+  howpublished = {WHO ICD-11 Browser},
+  year         = {2025},
+  month        = feb,
+  url          = {https://icd.who.int/browse/2025-01/mms/en\#1435254666},
+  note         = {529 codes across 18 chapters, dedicated to Ayurveda/Siddha/Unani.
+                  Required external ID for Disease nodes in this project's schema.}
+}
+
+@article{ijar2025icdroadmap,
+  author    = {{Government of India, Ministry of AYUSH}},
+  title     = {India's roadmap for {ICD-11 TM2} implementation: Integrating traditional
+               medicine into global health information systems},
+  journal   = {International Journal of Ayurveda Research},
+  year      = {2025},
+  month     = oct,
+  url       = {https://journals.lww.com/ijar/fulltext/2025/10000/india_s_roadmap_for_icd_11_tm2_implementation_.18.aspx},
+  note      = {Details on the 1941 AYUSH morbidity codes mapped to ICD-11 TM2 via NAMASTE Portal}
+}
+
+@misc{kew2024powo,
+  author       = {{Royal Botanic Gardens, Kew}},
+  title        = {Plants of the World Online ({POWO})},
+  howpublished = {Online database},
+  url          = {https://powo.science.kew.org/},
+  note         = {Botanical taxonomy authority; provides IPNI LSID identifiers. Required external ID for Plant nodes.}
+}
+
+@article{hastings2013chebi,
+  author    = {Hastings, Janna and de Matos, Paula and Dekker, Adriano and
+               Ennis, Marcus and Harsha, Bhavana and Kale, Namrata and
+               Muthukrishnan, Venkatesh and Owen, Gareth and Turner, Steve and
+               Williams, Mark and Steinbeck, Christoph},
+  title     = {The {ChEBI} reference database and ontology for biologically relevant chemistry:
+               enhancements for 2013},
+  journal   = {Nucleic Acids Research},
+  volume    = {41},
+  number    = {D1},
+  pages     = {D456--D463},
+  year      = {2013},
+  doi       = {10.1093/nar/gks1146},
+  url       = {https://academic.oup.com/nar/article/41/D1/D456/1062873},
+  note      = {Chemical-entities-of-biological-interest ontology; optional external ID for Phytochemical and Mineral nodes}
+}
+
+@misc{kew2024pykew,
+  author       = {{Royal Botanic Gardens, Kew}},
+  title        = {pykew: Python library for accessing Kew's data services},
+  howpublished = {GitHub},
+  year         = {2024},
+  url          = {https://github.com/RBGKew/pykew},
+  note         = {Official Python client for POWO and other Kew APIs; used in enrichers/botanical_powo.py}
+}
+
+@misc{zhong2025llmkgsurvey,
+  author    = {Zhong, Lingfeng and others},
+  title     = {{LLM}-empowered knowledge graph construction: A survey},
+  year      = {2025},
+  eprint    = {2510.20345},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/2510.20345}
+}
+
+@misc{li2025relate,
+  author    = {Li, Wei and others},
+  title     = {{RELATE}: Relation Extraction in Biomedical Abstracts with {LLM}s and
+               Ontology Constraints},
+  year      = {2025},
+  eprint    = {2509.19057},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/2509.19057}
+}
+
+@misc{wang2025odkeplus,
+  author    = {Wang, Bin and others},
+  title     = {{ODKE+}: Ontology-Guided Open-Domain Knowledge Extraction with {LLM}s},
+  year      = {2025},
+  eprint    = {2509.04696},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/2509.04696}
+}
+
+@misc{automated2025medical,
+  author    = {Chen, Yu and others},
+  title     = {Automated Construction of Medical Indicator Knowledge Graphs Using
+               Retrieval Augmented Large Language Models},
+  year      = {2025},
+  eprint    = {2511.13526},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/2511.13526}
+}
+
+@misc{chaos2025clarity,
+  author    = {{Anonymous}},
+  title     = {From Chaos to Clarity: Schema-Constrained {AI} for Auditable Biomedical
+               Evidence Extraction from Full-Text {PDF}s},
+  year      = {2025},
+  eprint    = {2601.14267},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/2601.14267},
+  note      = {Articulates the "schema-constrained, auditable" paradigm adopted in §9 of kg_schema.md}
+}

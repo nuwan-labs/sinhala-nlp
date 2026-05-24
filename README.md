@@ -637,6 +637,26 @@ In [`data/lexicons/`](data/lexicons/):
 
 ---
 
+## 6½. External-ID enrichers (interoperability with international standards)
+
+The Sanskrit-bridge resolver produces canonical IAST lemmas. The
+**enrichers** in [`enrichers/`](enrichers) take those lemmas and bind
+them to globally-recognised identifiers, making the KG interoperate
+with established botanical, pharmacological and clinical authorities.
+
+| Enricher | Authority | Coverage |
+|---|---|---:|
+| [`botanical_powo.py`](enrichers/botanical_powo.py) | Plants of the World Online (Royal Botanic Gardens, Kew) — provides the IPNI LSID for each plant; resolves Monier-Williams 19th-century names to modern accepted forms (e.g. *Grislea Tomentosa* → *Woodfordia fruticosa*; *Physalis Flexuosa* → *Withania somnifera*). | **69 / 85 (81 %)** |
+| [`icd11_tm2_mapper.py`](enrichers/icd11_tm2_mapper.py) | WHO ICD-11 Traditional Medicine Module 2 (released February 2025; 529 codes specifically for Ayurveda/Siddha/Unani). Matches via the `indexTerm` field where TM2 stores the Sanskrit equivalents in the `(a) <Ayurveda> (b) <Siddha> (c) <Unani>` convention. | **49 / 56 (88 %)**, 9/10 anchor terms correct |
+
+The schema design that motivates both is in
+[`docs/kg_schema.md`](docs/kg_schema.md) — POWO LSIDs are a required
+external ID on every `Plant` node; ICD-11 TM2 codes are required on
+every `Disease` node. Setup, run instructions, and the matching
+algorithm are documented in [`enrichers/README.md`](enrichers/README.md).
+
+---
+
 ## 7. The knowledge graph (planned)
 
 The structured corpus and the resolved lexicons together support the
@@ -818,8 +838,13 @@ sinhala-traditional-medicine-nlp/
 │   ├── sandhi_worker.py            — Tier 3 disposable subprocess
 │   └── README.md                   — setup + measured rates
 │
+├── enrichers/                      ── (2b) Bind resolved entities to external IDs
+│   ├── botanical_powo.py           — Plant → POWO IPNI LSID + modern accepted name
+│   ├── icd11_tm2_mapper.py         — Sanskrit indication → ICD-11 TM2 code
+│   └── README.md                   — setup + measured rates
+│
 ├── knowledge_graph/                ── (3) KG construction (planned)
-│   └── README.md                   — node/edge schema, phases
+│   └── README.md                   — see docs/kg_schema.md for the v1 contract
 │
 ├── analysis/
 │   └── nlp_stats.py                — corpus statistics report
@@ -843,7 +868,11 @@ sinhala-traditional-medicine-nlp/
     ├── architecture.md             — pipeline design and threshold rationale
     ├── output_schema.md            — full structured-entry field reference
     ├── pipeline_notes.txt          — data-quality catalogue
-    └── PROGRESS_NOTE.md            — latest preliminary-work writeup
+    ├── PROGRESS_NOTE.md            — latest preliminary-work writeup
+    ├── kg_schema.md                — v1 KG schema (10 nodes, 13 edges, ICD-11 TM2 + POWO + ChEBI bindings)
+    ├── context.jsonld              — JSON-LD context for the schema
+    ├── references.md               — bibliography (annotated)
+    └── references.bib              — bibliography (BibTeX)
 ```
 
 ---

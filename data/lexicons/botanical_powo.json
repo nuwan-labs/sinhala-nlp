@@ -1,0 +1,825 @@
+{
+  "Acacia Arabica": {
+    "input": "Acacia Arabica",
+    "powo_lsid": "urn:lsid:ipni.org:names:469735-1",
+    "modern_accepted_name": "Vachellia nilotica subsp. tomentosa",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:77131754-1",
+    "family": "Fabaceae",
+    "kingdom": "Plantae",
+    "is_synonym": true,
+    "author": "(Lam.) Willd.",
+    "status": "synonym_with_accepted"
+  },
+  "Acacia Catechu": {
+    "input": "Acacia Catechu",
+    "powo_lsid": "urn:lsid:ipni.org:names:469951-1",
+    "modern_accepted_name": "Senegalia catechu",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:77089268-1",
+    "family": "Fabaceae",
+    "kingdom": "Plantae",
+    "is_synonym": true,
+    "author": "(L.f.) Willd.",
+    "status": "synonym_with_accepted"
+  },
+  "Acacia Sirissa": {
+    "input": "Acacia Sirissa",
+    "powo_lsid": "urn:lsid:ipni.org:names:77332121-1",
+    "modern_accepted_name": "Albizia lebbeck",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:99109-3",
+    "family": "Fabaceae",
+    "kingdom": "Plantae",
+    "is_synonym": true,
+    "author": "(Roxb.) Jacques",
+    "status": "synonym_with_accepted"
+  },
+  "Aconitum Ferox": {
+    "input": "Aconitum Ferox",
+    "powo_lsid": "urn:lsid:ipni.org:names:707352-1",
+    "modern_accepted_name": "Aconitum ferox",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:707352-1",
+    "family": "Ranunculaceae",
+    "kingdom": "Plantae",
+    "is_synonym": false,
+    "author": "Wall. ex Ser.",
+    "status": "accepted"
+  },
+  "Alhagi Maurorum": {
+    "input": "Alhagi Maurorum",
+    "powo_lsid": "urn:lsid:ipni.org:names:473473-1",
+    "modern_accepted_name": "Alhagi maurorum",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:473473-1",
+    "family": "Fabaceae",
+    "kingdom": "Plantae",
+    "is_synonym": false,
+    "author": "Medik.",
+    "status": "accepted"
+  },
+  "Amomum Anthorrhiza": {
+    "input": "Amomum Anthorrhiza",
+    "status": "no_match"
+  },
+  "Amyris Agallochum": {
+    "input": "Amyris Agallochum",
+    "status": "no_match"
+  },
+  "Anethum Panmori": {
+    "input": "Anethum Panmori",
+    "powo_lsid": "urn:lsid:ipni.org:names:2638947-4",
+    "modern_accepted_name": "Foeniculum vulgare",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:842680-1",
+    "family": "Apiaceae",
+    "kingdom": "Plantae",
+    "is_synonym": true,
+    "author": "Roxb.",
+    "status": "synonym_with_accepted"
+  },
+  "Anethum Panmorium": {
+    "input": "Anethum Panmorium",
+    "powo_lsid": "urn:lsid:ipni.org:names:837534-1",
+    "modern_accepted_name": "Foeniculum vulgare",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:842680-1",
+    "family": "Apiaceae",
+    "kingdom": "Plantae",
+    "is_synonym": true,
+    "author": "Roxb.",
+    "status": "synonym_with_accepted"
+  },
+  "Anethum Sowa": {
+    "input": "Anethum Sowa",
+    "powo_lsid": "urn:lsid:ipni.org:names:837544-1",
+    "modern_accepted_name": "Anethum graveolens",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:837530-1",
+    "family": "Apiaceae",
+    "kingdom": "Plantae",
+    "is_synonym": true,
+    "author": "Roxb.",
+    "status": "synonym_with_accepted"
+  },
+  "Argyreia Speciosa": {
+    "input": "Argyreia Speciosa",
+    "powo_lsid": "urn:lsid:ipni.org:names:265286-1",
+    "modern_accepted_name": "Argyreia nervosa",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:265238-1",
+    "family": "Convolvulaceae",
+    "kingdom": "Plantae",
+    "is_synonym": true,
+    "author": "(L.f.) Sweet",
+    "status": "synonym_with_accepted"
+  },
+  "Asparagus Racemosus": {
+    "input": "Asparagus Racemosus",
+    "powo_lsid": "urn:lsid:ipni.org:names:531271-1",
+    "modern_accepted_name": "Asparagus racemosus",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:531271-1",
+    "family": "Asparagaceae",
+    "kingdom": "Plantae",
+    "is_synonym": false,
+    "author": "Willd.",
+    "status": "accepted"
+  },
+  "Asteracantha Longifolia": {
+    "input": "Asteracantha Longifolia",
+    "powo_lsid": "urn:lsid:ipni.org:names:45702-1",
+    "modern_accepted_name": "Hygrophila auriculata",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:49646-1",
+    "family": "Acanthaceae",
+    "kingdom": "Plantae",
+    "is_synonym": true,
+    "author": "(L.) Nees",
+    "status": "synonym_with_accepted"
+  },
+  "Azadirachta Indica": {
+    "input": "Azadirachta Indica",
+    "powo_lsid": "urn:lsid:ipni.org:names:924837-1",
+    "modern_accepted_name": "Azadirachta",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:924837-1",
+    "family": "Meliaceae",
+    "kingdom": "Plantae",
+    "is_synonym": false,
+    "author": "A.Juss.",
+    "status": "accepted"
+  },
+  "Batatas Paniculata": {
+    "input": "Batatas Paniculata",
+    "powo_lsid": "urn:lsid:ipni.org:names:265373-1",
+    "modern_accepted_name": "Ipomoea mauritiana",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:269292-1",
+    "family": "Convolvulaceae",
+    "kingdom": "Plantae",
+    "is_synonym": true,
+    "author": "(L.) Choisy",
+    "status": "synonym_with_accepted"
+  },
+  "Beninkasa cerifera": {
+    "input": "Beninkasa cerifera",
+    "status": "no_match"
+  },
+  "Boerhavia Procumbens": {
+    "input": "Boerhavia Procumbens",
+    "powo_lsid": "urn:lsid:ipni.org:names:604252-1",
+    "modern_accepted_name": "Boerhavia procumbens",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:604252-1",
+    "family": "Nyctaginaceae",
+    "kingdom": "Plantae",
+    "is_synonym": false,
+    "author": "Banks ex Roxb.",
+    "status": "accepted"
+  },
+  "Buchanania Latifolia": {
+    "input": "Buchanania Latifolia",
+    "powo_lsid": "urn:lsid:ipni.org:names:76563-3",
+    "modern_accepted_name": "Buchanania lanzan",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:69300-1",
+    "family": "Anacardiaceae",
+    "kingdom": "Plantae",
+    "is_synonym": true,
+    "author": "Roxb.",
+    "status": "synonym_with_accepted"
+  },
+  "Capparis Spinosa": {
+    "input": "Capparis Spinosa",
+    "powo_lsid": "urn:lsid:ipni.org:names:30001562-2",
+    "modern_accepted_name": "Capparaceae",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:30001562-2",
+    "family": "Capparaceae",
+    "kingdom": "Plantae",
+    "is_synonym": false,
+    "author": "Juss.",
+    "status": "accepted"
+  },
+  "Cardiospermum Halicacabum": {
+    "input": "Cardiospermum Halicacabum",
+    "powo_lsid": "urn:lsid:ipni.org:names:782206-1",
+    "modern_accepted_name": "Cardiospermum halicacabum",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:782206-1",
+    "family": "Sapindaceae",
+    "kingdom": "Plantae",
+    "is_synonym": false,
+    "author": "L.",
+    "status": "accepted"
+  },
+  "Cathartocarpus Fistula": {
+    "input": "Cathartocarpus Fistula",
+    "powo_lsid": "urn:lsid:ipni.org:names:485453-1",
+    "modern_accepted_name": "Cassia fistula",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:484507-1",
+    "family": "Fabaceae",
+    "kingdom": "Plantae",
+    "is_synonym": true,
+    "author": "(L.) Pers.",
+    "status": "synonym_with_accepted"
+  },
+  "Cerasus Puddum": {
+    "input": "Cerasus Puddum",
+    "powo_lsid": "urn:lsid:ipni.org:names:722033-1",
+    "modern_accepted_name": "Prunus cerasoides",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:729572-1",
+    "family": "Rosaceae",
+    "kingdom": "Plantae",
+    "is_synonym": true,
+    "author": "Roxb. ex Ser.",
+    "status": "synonym_with_accepted"
+  },
+  "Cleome Felina": {
+    "input": "Cleome Felina",
+    "powo_lsid": "urn:lsid:ipni.org:names:147033-1",
+    "modern_accepted_name": "Cleome felina",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:147033-1",
+    "family": "Cleomaceae",
+    "kingdom": "Plantae",
+    "is_synonym": false,
+    "author": "L.f.",
+    "status": "accepted"
+  },
+  "Clypea Hernandifolia": {
+    "input": "Clypea Hernandifolia",
+    "status": "no_match"
+  },
+  "Cocculus Cordifolius": {
+    "input": "Cocculus Cordifolius",
+    "powo_lsid": "urn:lsid:ipni.org:names:580523-1",
+    "modern_accepted_name": "Tinospora glabra",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:581608-1",
+    "family": "Menispermaceae",
+    "kingdom": "Plantae",
+    "is_synonym": true,
+    "author": "DC.",
+    "status": "synonym_with_accepted"
+  },
+  "Coluber Naga": {
+    "input": "Coluber Naga",
+    "status": "skipped_zoological_or_malformed"
+  },
+  "Columba Hurriyala": {
+    "input": "Columba Hurriyala",
+    "status": "skipped_zoological_or_malformed"
+  },
+  "Corypha Taliera": {
+    "input": "Corypha Taliera",
+    "powo_lsid": "urn:lsid:ipni.org:names:1009125-1",
+    "modern_accepted_name": "Corypha taliera",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:1009125-1",
+    "family": "Arecaceae",
+    "kingdom": "Plantae",
+    "is_synonym": false,
+    "author": "Roxb.",
+    "status": "accepted"
+  },
+  "Costus Speciosus": {
+    "input": "Costus Speciosus",
+    "powo_lsid": "urn:lsid:ipni.org:names:796383-1",
+    "modern_accepted_name": "Hellenia speciosa",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:60469691-2",
+    "family": "Costaceae",
+    "kingdom": "Plantae",
+    "is_synonym": true,
+    "author": "(J.Koenig) Sm.",
+    "status": "synonym_with_accepted"
+  },
+  "Costus speciosus": {
+    "input": "Costus speciosus",
+    "powo_lsid": "urn:lsid:ipni.org:names:796383-1",
+    "modern_accepted_name": "Hellenia speciosa",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:60469691-2",
+    "family": "Costaceae",
+    "kingdom": "Plantae",
+    "is_synonym": true,
+    "author": "(J.Koenig) Sm.",
+    "status": "synonym_with_accepted"
+  },
+  "Cyperus Rotundus": {
+    "input": "Cyperus Rotundus",
+    "powo_lsid": "urn:lsid:ipni.org:names:305797-1",
+    "modern_accepted_name": "Cyperus rotundus",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:305797-1",
+    "family": "Cyperaceae",
+    "kingdom": "Plantae",
+    "is_synonym": false,
+    "author": "L.",
+    "status": "accepted"
+  },
+  "Cyperus rotundus": {
+    "input": "Cyperus rotundus",
+    "powo_lsid": "urn:lsid:ipni.org:names:305797-1",
+    "modern_accepted_name": "Cyperus rotundus",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:305797-1",
+    "family": "Cyperaceae",
+    "kingdom": "Plantae",
+    "is_synonym": false,
+    "author": "L.",
+    "status": "accepted"
+  },
+  "Cypraea Moneta": {
+    "input": "Cypraea Moneta",
+    "status": "no_match"
+  },
+  "Dolichos Catjang": {
+    "input": "Dolichos Catjang",
+    "powo_lsid": "urn:lsid:ipni.org:names:82854-2",
+    "modern_accepted_name": "Vigna unguiculata subsp. unguiculata",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:101661-3",
+    "family": "Fabaceae",
+    "kingdom": "Plantae",
+    "is_synonym": true,
+    "author": "Burm.f.",
+    "status": "synonym_with_accepted"
+  },
+  "Eclipta prostrata": {
+    "input": "Eclipta prostrata",
+    "powo_lsid": "urn:lsid:ipni.org:names:1186403-2",
+    "modern_accepted_name": "Eclipta prostrata",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:1186403-2",
+    "family": "Asteraceae",
+    "kingdom": "Plantae",
+    "is_synonym": false,
+    "author": "(L.) L.",
+    "status": "accepted"
+  },
+  "Embelia Ribes": {
+    "input": "Embelia Ribes",
+    "powo_lsid": "urn:lsid:ipni.org:names:588451-1",
+    "modern_accepted_name": "Embelia ribes",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:588451-1",
+    "family": "Primulaceae",
+    "kingdom": "Plantae",
+    "is_synonym": false,
+    "author": "Burm.f.",
+    "status": "accepted"
+  },
+  "Eugenia Jambolana": {
+    "input": "Eugenia Jambolana",
+    "powo_lsid": "urn:lsid:ipni.org:names:594746-1",
+    "modern_accepted_name": "Syzygium cumini",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:601603-1",
+    "family": "Myrtaceae",
+    "kingdom": "Plantae",
+    "is_synonym": true,
+    "author": "Lam.",
+    "status": "synonym_with_accepted"
+  },
+  "Evolvulus Alsinoides": {
+    "input": "Evolvulus Alsinoides",
+    "powo_lsid": "urn:lsid:ipni.org:names:267957-1",
+    "modern_accepted_name": "Evolvulus alsinoides",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:267957-1",
+    "family": "Convolvulaceae",
+    "kingdom": "Plantae",
+    "is_synonym": false,
+    "author": "(L.) L.",
+    "status": "accepted"
+  },
+  "Ferula Asa": {
+    "input": "Ferula Asa",
+    "status": "no_match"
+  },
+  "Ficus heterophylla": {
+    "input": "Ficus heterophylla",
+    "powo_lsid": "urn:lsid:ipni.org:names:852970-1",
+    "modern_accepted_name": "Ficus heterophylla",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:852970-1",
+    "family": "Moraceae",
+    "kingdom": "Plantae",
+    "is_synonym": false,
+    "author": "L.f.",
+    "status": "accepted"
+  },
+  "Gentiana Chirata": {
+    "input": "Gentiana Chirata",
+    "status": "no_match"
+  },
+  "Glycine Debilis": {
+    "input": "Glycine Debilis",
+    "powo_lsid": "urn:lsid:ipni.org:names:496698-1",
+    "modern_accepted_name": "Teramnus labialis subsp. labialis",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:77194520-1",
+    "family": "Fabaceae",
+    "kingdom": "Plantae",
+    "is_synonym": true,
+    "author": "Aiton",
+    "status": "synonym_with_accepted"
+  },
+  "Gmelina Arborea": {
+    "input": "Gmelina Arborea",
+    "powo_lsid": "urn:lsid:ipni.org:names:77159191-1",
+    "modern_accepted_name": "Gmelina arborea",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:77159191-1",
+    "family": "Lamiaceae",
+    "kingdom": "Plantae",
+    "is_synonym": false,
+    "author": "Roxb. ex Sm.",
+    "status": "accepted"
+  },
+  "Grislea Tomentosa": {
+    "input": "Grislea Tomentosa",
+    "powo_lsid": "urn:lsid:ipni.org:names:553472-1",
+    "modern_accepted_name": "Woodfordia fruticosa",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:554290-1",
+    "family": "Lythraceae",
+    "kingdom": "Plantae",
+    "is_synonym": true,
+    "author": "Roxb.",
+    "status": "synonym_with_accepted"
+  },
+  "Hedysarum Gangeticum": {
+    "input": "Hedysarum Gangeticum",
+    "powo_lsid": "urn:lsid:ipni.org:names:497717-1",
+    "modern_accepted_name": "Pleurolobus gangeticus",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:515302-1",
+    "family": "Fabaceae",
+    "kingdom": "Plantae",
+    "is_synonym": true,
+    "author": "L.",
+    "status": "synonym_with_accepted"
+  },
+  "Indigofera tinctoria": {
+    "input": "Indigofera tinctoria",
+    "powo_lsid": "urn:lsid:ipni.org:names:500112-1",
+    "modern_accepted_name": "Indigofera articulata",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:498998-1",
+    "family": "Fabaceae",
+    "kingdom": "Plantae",
+    "is_synonym": true,
+    "author": "Forssk.",
+    "status": "synonym_with_accepted"
+  },
+  "Lepidium sativum": {
+    "input": "Lepidium sativum",
+    "powo_lsid": "urn:lsid:ipni.org:names:138141-2",
+    "modern_accepted_name": "Lepidium sativum",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:138141-2",
+    "family": "Brassicaceae",
+    "kingdom": "Plantae",
+    "is_synonym": false,
+    "author": "L.",
+    "status": "accepted"
+  },
+  "Magadha country": {
+    "input": "Magadha country",
+    "status": "no_match"
+  },
+  "Mimosa pudica": {
+    "input": "Mimosa pudica",
+    "powo_lsid": "urn:lsid:ipni.org:names:313242-2",
+    "modern_accepted_name": "Mimosa pudica",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:313242-2",
+    "family": "Fabaceae",
+    "kingdom": "Plantae",
+    "is_synonym": false,
+    "author": "L.",
+    "status": "accepted"
+  },
+  "Mirabilis Jalapa": {
+    "input": "Mirabilis Jalapa",
+    "powo_lsid": "urn:lsid:ipni.org:names:162591-2",
+    "modern_accepted_name": "Mirabilis jalapa",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:162591-2",
+    "family": "Nyctaginaceae",
+    "kingdom": "Plantae",
+    "is_synonym": false,
+    "author": "L.",
+    "status": "accepted"
+  },
+  "Moringa Pterygosperma": {
+    "input": "Moringa Pterygosperma",
+    "powo_lsid": "urn:lsid:ipni.org:names:584743-1",
+    "modern_accepted_name": "Moringa oleifera",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:584736-1",
+    "family": "Moringaceae",
+    "kingdom": "Plantae",
+    "is_synonym": true,
+    "author": "Gaertn.",
+    "status": "synonym_with_accepted"
+  },
+  "Nardostachys Jatamansi": {
+    "input": "Nardostachys Jatamansi",
+    "powo_lsid": "urn:lsid:ipni.org:names:859418-1",
+    "modern_accepted_name": "Nardostachys jatamansi",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:859418-1",
+    "family": "Caprifoliaceae",
+    "kingdom": "Plantae",
+    "is_synonym": false,
+    "author": "(D.Don) DC.",
+    "status": "accepted"
+  },
+  "Neemb tree": {
+    "input": "Neemb tree",
+    "status": "no_match"
+  },
+  "Nelumbium Speciosum": {
+    "input": "Nelumbium Speciosum",
+    "powo_lsid": "urn:lsid:ipni.org:names:605411-1",
+    "modern_accepted_name": "Nelumbo nucifera",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:605422-1",
+    "family": "Nelumbonaceae",
+    "kingdom": "Plantae",
+    "is_synonym": true,
+    "author": "Willd.",
+    "status": "synonym_with_accepted"
+  },
+  "Nymphaea Alba": {
+    "input": "Nymphaea Alba",
+    "powo_lsid": "urn:lsid:ipni.org:names:171158-2",
+    "modern_accepted_name": "Nymphaea alba",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:171158-2",
+    "family": "Nymphaeaceae",
+    "kingdom": "Plantae",
+    "is_synonym": false,
+    "author": "L.",
+    "status": "accepted"
+  },
+  "Nymphaea Lotus": {
+    "input": "Nymphaea Lotus",
+    "powo_lsid": "urn:lsid:ipni.org:names:605604-1",
+    "modern_accepted_name": "Nymphaea lotus",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:605604-1",
+    "family": "Nymphaeaceae",
+    "kingdom": "Plantae",
+    "is_synonym": false,
+    "author": "L.",
+    "status": "accepted"
+  },
+  "Nymphaea Nelumbo": {
+    "input": "Nymphaea Nelumbo",
+    "powo_lsid": "urn:lsid:ipni.org:names:605638-1",
+    "modern_accepted_name": "Nelumbo nucifera",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:605422-1",
+    "family": "Nymphaeaceae",
+    "kingdom": "Plantae",
+    "is_synonym": true,
+    "author": "L.",
+    "status": "synonym_with_accepted"
+  },
+  "Ocimum Gratissimum": {
+    "input": "Ocimum Gratissimum",
+    "powo_lsid": "urn:lsid:ipni.org:names:452969-1",
+    "modern_accepted_name": "Ocimum gratissimum",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:452969-1",
+    "family": "Lamiaceae",
+    "kingdom": "Plantae",
+    "is_synonym": false,
+    "author": "L.",
+    "status": "accepted"
+  },
+  "Ocimum sanctum": {
+    "input": "Ocimum sanctum",
+    "powo_lsid": "urn:lsid:ipni.org:names:30252269-2",
+    "modern_accepted_name": "Ocimum tenuiflorum",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:453130-1",
+    "family": "Lamiaceae",
+    "kingdom": "Plantae",
+    "is_synonym": true,
+    "author": "L.",
+    "status": "synonym_with_accepted"
+  },
+  "Old Germ": {
+    "input": "Old Germ",
+    "status": "no_match"
+  },
+  "Phaseolus Radiatus": {
+    "input": "Phaseolus Radiatus",
+    "powo_lsid": "urn:lsid:ipni.org:names:525492-1",
+    "modern_accepted_name": "Vigna radiata",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:525492-1",
+    "family": "Fabaceae",
+    "kingdom": "Plantae",
+    "is_synonym": false,
+    "author": "(L.) R.Wilczek",
+    "status": "accepted"
+  },
+  "Phaseolus Trilobus": {
+    "input": "Phaseolus Trilobus",
+    "powo_lsid": "urn:lsid:ipni.org:names:514160-1",
+    "modern_accepted_name": "Pueraria montana var. lobata",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:967441-1",
+    "family": "Fabaceae",
+    "kingdom": "Plantae",
+    "is_synonym": true,
+    "author": "Aiton",
+    "status": "synonym_with_accepted"
+  },
+  "Phyllanthus Emblica": {
+    "input": "Phyllanthus Emblica",
+    "powo_lsid": "urn:lsid:ipni.org:names:353838-1",
+    "modern_accepted_name": "Phyllanthus emblica",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:353838-1",
+    "family": "Phyllanthaceae",
+    "kingdom": "Plantae",
+    "is_synonym": false,
+    "author": "L.",
+    "status": "accepted"
+  },
+  "Physalis Flexuosa": {
+    "input": "Physalis Flexuosa",
+    "powo_lsid": "urn:lsid:ipni.org:names:817399-1",
+    "modern_accepted_name": "Withania somnifera",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:821709-1",
+    "family": "Solanaceae",
+    "kingdom": "Plantae",
+    "is_synonym": true,
+    "author": "L.",
+    "status": "synonym_with_accepted"
+  },
+  "Pistia Stratiotes": {
+    "input": "Pistia Stratiotes",
+    "powo_lsid": "urn:lsid:ipni.org:names:317684-2",
+    "modern_accepted_name": "Pistia stratiotes",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:317684-2",
+    "family": "Araceae",
+    "kingdom": "Plantae",
+    "is_synonym": false,
+    "author": "L.",
+    "status": "accepted"
+  },
+  "Plumbago zeylanica": {
+    "input": "Plumbago zeylanica",
+    "powo_lsid": "urn:lsid:ipni.org:names:687109-1",
+    "modern_accepted_name": "Plumbago zeylanica",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:687109-1",
+    "family": "Plumbaginaceae",
+    "kingdom": "Plantae",
+    "is_synonym": false,
+    "author": "L.",
+    "status": "accepted"
+  },
+  "Premna Spinosa": {
+    "input": "Premna Spinosa",
+    "powo_lsid": "urn:lsid:ipni.org:names:864428-1",
+    "modern_accepted_name": "Premna serratifolia",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:864424-1",
+    "family": "Lamiaceae",
+    "kingdom": "Plantae",
+    "is_synonym": true,
+    "author": "Roxb.",
+    "status": "synonym_with_accepted"
+  },
+  "Ricinus Communis": {
+    "input": "Ricinus Communis",
+    "powo_lsid": "urn:lsid:ipni.org:names:355498-1",
+    "modern_accepted_name": "Ricinus communis",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:355498-1",
+    "family": "Euphorbiaceae",
+    "kingdom": "Plantae",
+    "is_synonym": false,
+    "author": "L.",
+    "status": "accepted"
+  },
+  "Rubia Munjista": {
+    "input": "Rubia Munjista",
+    "powo_lsid": "urn:lsid:ipni.org:names:765302-1",
+    "modern_accepted_name": "Rubia manjith",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:765292-1",
+    "family": "Rubiaceae",
+    "kingdom": "Plantae",
+    "is_synonym": true,
+    "author": "Roxb.",
+    "status": "synonym_with_accepted"
+  },
+  "Rumex Vesicarius": {
+    "input": "Rumex Vesicarius",
+    "powo_lsid": "urn:lsid:ipni.org:names:697616-1",
+    "modern_accepted_name": "Rumex vesicarius",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:697616-1",
+    "family": "Polygonaceae",
+    "kingdom": "Plantae",
+    "is_synonym": false,
+    "author": "L.",
+    "status": "accepted"
+  },
+  "Saccharum Spontaneum": {
+    "input": "Saccharum Spontaneum",
+    "powo_lsid": "urn:lsid:ipni.org:names:420031-1",
+    "modern_accepted_name": "Saccharum spontaneum",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:420031-1",
+    "family": "Poaceae",
+    "kingdom": "Plantae",
+    "is_synonym": false,
+    "author": "L.",
+    "status": "accepted"
+  },
+  "Salmalia Malabarica": {
+    "input": "Salmalia Malabarica",
+    "powo_lsid": "urn:lsid:ipni.org:names:563332-1",
+    "modern_accepted_name": "Bombax ceiba",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:559120-1",
+    "family": "Malvaceae",
+    "kingdom": "Plantae",
+    "is_synonym": true,
+    "author": "(DC.) Schott & Endl.",
+    "status": "synonym_with_accepted"
+  },
+  "Sesbania Aegyptiaca": {
+    "input": "Sesbania Aegyptiaca",
+    "powo_lsid": "urn:lsid:ipni.org:names:518430-1",
+    "modern_accepted_name": "Sesbania sesban",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:518533-1",
+    "family": "Fabaceae",
+    "kingdom": "Plantae",
+    "is_synonym": true,
+    "author": "Poir.",
+    "status": "synonym_with_accepted"
+  },
+  "Sida Cordifolia": {
+    "input": "Sida Cordifolia",
+    "powo_lsid": "urn:lsid:ipni.org:names:563599-1",
+    "modern_accepted_name": "Sida dubia",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:563666-1",
+    "family": "Malvaceae",
+    "kingdom": "Plantae",
+    "is_synonym": true,
+    "author": "Griseb.",
+    "status": "synonym_with_accepted"
+  },
+  "Spondias Mangifera": {
+    "input": "Spondias Mangifera",
+    "powo_lsid": "urn:lsid:ipni.org:names:71475-1",
+    "modern_accepted_name": "Spondias pinnata",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:71489-1",
+    "family": "Anacardiaceae",
+    "kingdom": "Plantae",
+    "is_synonym": true,
+    "author": "Willd.",
+    "status": "synonym_with_accepted"
+  },
+  "Strychnos Potatorum": {
+    "input": "Strychnos Potatorum",
+    "powo_lsid": "urn:lsid:ipni.org:names:547420-1",
+    "modern_accepted_name": "Strychnos potatorum",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:547420-1",
+    "family": "Loganiaceae",
+    "kingdom": "Plantae",
+    "is_synonym": false,
+    "author": "L.f.",
+    "status": "accepted"
+  },
+  "Symplocos Racemosa": {
+    "input": "Symplocos Racemosa",
+    "powo_lsid": "urn:lsid:ipni.org:names:891838-1",
+    "modern_accepted_name": "Symplocos macrophylla subsp. rosea",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:891838-1",
+    "family": "Symplocaceae",
+    "kingdom": "Plantae",
+    "is_synonym": false,
+    "author": "(Bedd.) Noot.",
+    "status": "accepted"
+  },
+  "Terminalia Chebula": {
+    "input": "Terminalia Chebula",
+    "powo_lsid": "urn:lsid:ipni.org:names:171037-1",
+    "modern_accepted_name": "Terminalia chebula",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:171037-1",
+    "family": "Combretaceae",
+    "kingdom": "Plantae",
+    "is_synonym": false,
+    "author": "Retz.",
+    "status": "accepted"
+  },
+  "Terra japonica": {
+    "input": "Terra japonica",
+    "powo_lsid": "urn:lsid:ipni.org:names:60458896-2",
+    "modern_accepted_name": "Uncaria gambir",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:60458896-2",
+    "family": "Rubiaceae",
+    "kingdom": "Plantae",
+    "is_synonym": false,
+    "author": "(W.Hunter) Roxb.",
+    "status": "accepted"
+  },
+  "Trichosanthes Dioeca": {
+    "input": "Trichosanthes Dioeca",
+    "status": "no_match"
+  },
+  "Vasus and": {
+    "input": "Vasus and",
+    "status": "no_match"
+  },
+  "Veda also": {
+    "input": "Veda also",
+    "status": "no_match"
+  },
+  "Vedic inf": {
+    "input": "Vedic inf",
+    "status": "no_match"
+  },
+  "Vitex Negundo": {
+    "input": "Vitex Negundo",
+    "powo_lsid": "urn:lsid:ipni.org:names:865894-1",
+    "modern_accepted_name": "Vitex negundo",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:865894-1",
+    "family": "Lamiaceae",
+    "kingdom": "Plantae",
+    "is_synonym": false,
+    "author": "L.",
+    "status": "accepted"
+  },
+  "Wrightia antidysenterica": {
+    "input": "Wrightia antidysenterica",
+    "powo_lsid": "urn:lsid:ipni.org:names:82830-1",
+    "modern_accepted_name": "Wrightia antidysenterica",
+    "modern_accepted_lsid": "urn:lsid:ipni.org:names:82830-1",
+    "family": "Apocynaceae",
+    "kingdom": "Plantae",
+    "is_synonym": false,
+    "author": "(L.) R.Br.",
+    "status": "accepted"
+  }
+}

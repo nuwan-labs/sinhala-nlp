@@ -1,0 +1,46 @@
+{
+  "@version": 1.1,
+  "@vocab":   "https://nuwan-labs.github.io/sinhala-traditional-medicine-nlp/ns/",
+
+  "schema_version": "1.0",
+
+  "from": { "@type": "@id" },
+  "to":   { "@type": "@id" },
+
+  "Plant":                   "https://nuwan-labs.github.io/sinhala-traditional-medicine-nlp/ns/Plant",
+  "PlantPart":               "https://nuwan-labs.github.io/sinhala-traditional-medicine-nlp/ns/PlantPart",
+  "Phytochemical":           "https://nuwan-labs.github.io/sinhala-traditional-medicine-nlp/ns/Phytochemical",
+  "Mineral":                 "https://nuwan-labs.github.io/sinhala-traditional-medicine-nlp/ns/Mineral",
+  "Formulation":             "https://nuwan-labs.github.io/sinhala-traditional-medicine-nlp/ns/Formulation",
+  "PreparationType":         "https://nuwan-labs.github.io/sinhala-traditional-medicine-nlp/ns/PreparationType",
+  "Route":                   "https://nuwan-labs.github.io/sinhala-traditional-medicine-nlp/ns/Route",
+  "Disease":                 "https://nuwan-labs.github.io/sinhala-traditional-medicine-nlp/ns/Disease",
+  "Symptom":                 "https://nuwan-labs.github.io/sinhala-traditional-medicine-nlp/ns/Symptom",
+  "PharmacologicalProperty": "https://nuwan-labs.github.io/sinhala-traditional-medicine-nlp/ns/PharmacologicalProperty",
+
+  "CONTAINS":         "https://nuwan-labs.github.io/sinhala-traditional-medicine-nlp/ns/CONTAINS",
+  "USES_PART":        "https://nuwan-labs.github.io/sinhala-traditional-medicine-nlp/ns/USES_PART",
+  "CONSISTS_OF":      "https://nuwan-labs.github.io/sinhala-traditional-medicine-nlp/ns/CONSISTS_OF",
+  "IS_TYPE":          "https://nuwan-labs.github.io/sinhala-traditional-medicine-nlp/ns/IS_TYPE",
+  "PREPARED_BY":      "https://nuwan-labs.github.io/sinhala-traditional-medicine-nlp/ns/PREPARED_BY",
+  "ADMINISTERED_AS":  "https://nuwan-labs.github.io/sinhala-traditional-medicine-nlp/ns/ADMINISTERED_AS",
+  "DOSED_WITH":       "https://nuwan-labs.github.io/sinhala-traditional-medicine-nlp/ns/DOSED_WITH",
+  "TREATS":           "https://nuwan-labs.github.io/sinhala-traditional-medicine-nlp/ns/TREATS",
+  "HAS_SYMPTOM":      "https://nuwan-labs.github.io/sinhala-traditional-medicine-nlp/ns/HAS_SYMPTOM",
+  "RELIEVES":         "https://nuwan-labs.github.io/sinhala-traditional-medicine-nlp/ns/RELIEVES",
+  "HAS_PROPERTY":     "https://nuwan-labs.github.io/sinhala-traditional-medicine-nlp/ns/HAS_PROPERTY",
+  "SUBSTITUTES_FOR":  "https://nuwan-labs.github.io/sinhala-traditional-medicine-nlp/ns/SUBSTITUTES_FOR",
+  "VARIANT_OF":       "https://nuwan-labs.github.io/sinhala-traditional-medicine-nlp/ns/VARIANT_OF",
+
+  "powo_lsid":      "https://www.ipni.org/n/",
+  "ncbi_taxonomy":  "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=",
+  "pubchem_cid":    "https://pubchem.ncbi.nlm.nih.gov/compound/",
+  "chebi_id":       "http://purl.obolibrary.org/obo/CHEBI_",
+  "icd11_tm2":      "http://id.who.int/icd/release/11/2025-01/mms/",
+  "mondo":          "http://purl.obolibrary.org/obo/MONDO_",
+  "doid":           "http://purl.obolibrary.org/obo/DOID_",
+  "snomed":         "http://snomed.info/id/",
+  "umls":           "https://uts.nlm.nih.gov/uts/umls/concept/",
+
+  "provenance": { "@container": "@set" }
+}
