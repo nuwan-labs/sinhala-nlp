@@ -118,6 +118,68 @@ References for the project. BibTeX machine-readable version in
 
 ---
 
+## KG validation methodology
+
+These references inform the four-layer framework in
+[`validation_methodology.md`](validation_methodology.md) and the
+implementation in [`../validate/`](../validate).
+
+- **Zaveri, A.** et al. (2016). *Quality assessment for Linked Data: A
+  survey.* Semantic Web 7(1), 63–93. DOI: 10.3233/SW-150175.
+  — The 18-dimension / 4-category framework whose intrinsic trio
+    (accuracy + completeness + consistency) is the spine of our v1.
+
+- **W3C SHACL** (2017). *Shapes Constraint Language Recommendation.*
+  [link](https://www.w3.org/TR/shacl/)
+  — The formal mechanism. Our `validate/shapes.ttl` is written against it.
+
+- **pySHACL** (RDFLib team). *Python validator for SHACL.*
+  [GitHub](https://github.com/RDFLib/pySHACL)
+  — The validator we run in `validate/validate_kg.py`.
+
+- **Jackson, R. C.** et al. (2019). *ROBOT: A Tool for Automating
+  Ontology Workflows.* BMC Bioinformatics 20:407.
+  [link](https://link.springer.com/article/10.1186/s12859-019-3002-3)
+  — The OBO Foundry's biomedical-ontology QA tool; inspires the
+    "report = categorised SPARQL queries" pattern.
+
+- **xpSHACL** (2025). *Explainable SHACL Validation using
+  Retrieval-Augmented Generation and Large Language Models.*
+  arXiv:2507.08432.
+  [link](https://arxiv.org/abs/2507.08432)
+
+- **SHACLens** (2026). *A visualization workflow for SHACL violation
+  exploration in knowledge graphs.* Frontiers in Bioinformatics.
+  [link](https://www.frontiersin.org/journals/bioinformatics/articles/10.3389/fbinf.2026.1756507/full)
+
+- **Lavrinovics, E.** et al. (2025). *Hallucination to truth: a review
+  of fact-checking and factuality evaluation in large language models.*
+  Artificial Intelligence Review.
+  [link](https://link.springer.com/article/10.1007/s10462-025-11454-w)
+  — Survey informing the Layer 4 (LLM-judge) design.
+
+- **Cohen, J.** (1960). *A Coefficient of Agreement for Nominal Scales.*
+  Educational and Psychological Measurement 20(1), 37–46.
+  — The Layer 3 inter-annotator-agreement metric.
+
+- **Counting on Consensus** (2025). *Selecting the Right
+  Inter-annotator Agreement Metric for NLP Annotation and Evaluation.*
+  arXiv:2603.06865.
+  [link](https://arxiv.org/abs/2603.06865)
+  — Modern guidance on κ vs α; supports our κ ≥ 0.75 target.
+
+- **OAEI 2021 Large BioMed Track.** Results.
+  [link](https://www.cs.ox.ac.uk/isg/projects/SEALS/oaei/2021/results/)
+  — Calibrating context: state-of-the-art F1 = 0.55–0.66 on
+    BioPortal/UMLS ontology mapping benchmarks.
+
+- **Solimando, A.** et al. (2014). *Towards Annotating Potential
+  Incoherences in BioPortal Mappings.* ISWC.
+  [link](https://link.springer.com/chapter/10.1007/978-3-319-11915-1_2)
+  — The "22 % of BioPortal mappings have logical errors" finding.
+
+---
+
 ## How to use
 
 For the MCS3306 proposal's §11 References block, run the BibTeX file

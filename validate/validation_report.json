@@ -1,0 +1,192 @@
+{
+  "generated_at": "2026-05-24T06:27:06+00:00",
+  "schema_version": "v1",
+  "kg_size": {
+    "nodes": 3642,
+    "edges": 12163
+  },
+  "layer1": {
+    "shacl": {
+      "conforms": true,
+      "violation_count": 0,
+      "report_text_summary": "Validation Report\nConforms: True\n",
+      "data_triples": 33000
+    },
+    "anchors": {
+      "per_check": {
+        "positive_disease_tm2": [
+          {
+            "lemma": "jvara",
+            "expected_tm2": "SP51",
+            "actual_tm2": "SP51",
+            "rubric_match": true,
+            "pass": true
+          },
+          {
+            "lemma": "kāsa",
+            "expected_tm2": "SL41",
+            "actual_tm2": "SL41",
+            "rubric_match": true,
+            "pass": true
+          },
+          {
+            "lemma": "śvāsa",
+            "expected_tm2": "SL42",
+            "actual_tm2": "SL42",
+            "rubric_match": true,
+            "pass": true
+          },
+          {
+            "lemma": "kuṣṭha",
+            "expected_tm2": "SN49",
+            "actual_tm2": "SN49",
+            "rubric_match": true,
+            "pass": true
+          },
+          {
+            "lemma": "gulma",
+            "expected_tm2": "SM3K",
+            "actual_tm2": "SM3K",
+            "rubric_match": true,
+            "pass": true
+          },
+          {
+            "lemma": "arśas",
+            "expected_tm2": "SM53",
+            "actual_tm2": "SM53",
+            "rubric_match": true,
+            "pass": true
+          },
+          {
+            "lemma": "aśmarī",
+            "expected_tm2": "SM8C",
+            "actual_tm2": "SM8C",
+            "rubric_match": true,
+            "pass": true
+          },
+          {
+            "lemma": "meha",
+            "expected_tm2": "SM8D",
+            "actual_tm2": "SM8D",
+            "rubric_match": true,
+            "pass": true
+          }
+        ],
+        "positive_plant_powo": [
+          {
+            "lemma": "viṣṇukrānti",
+            "has_powo_lsid": true,
+            "family_match": true,
+            "latin_match": true,
+            "pass": true
+          },
+          {
+            "lemma": "pippalī",
+            "pass": false,
+            "reason": "Plant not in KG"
+          },
+          {
+            "lemma": "haritakī",
+            "pass": false,
+            "reason": "Plant not in KG"
+          },
+          {
+            "lemma": "āmalakī",
+            "pass": false,
+            "reason": "Plant not in KG"
+          }
+        ],
+        "negative_unresolved_vernacular": [
+          {
+            "sinhala": "තිප්පිලි",
+            "is_unresolved": true,
+            "canonical_iast": null,
+            "pass": true
+          },
+          {
+            "sinhala": "කොත්තමල්ලි",
+            "is_unresolved": true,
+            "canonical_iast": null,
+            "pass": true
+          },
+          {
+            "sinhala": "එන්සාල්",
+            "is_unresolved": true,
+            "canonical_iast": null,
+            "pass": true
+          },
+          {
+            "sinhala": "වැල්මී",
+            "is_unresolved": true,
+            "canonical_iast": null,
+            "pass": true
+          }
+        ]
+      },
+      "n_pass": 13,
+      "n_total": 16,
+      "pct": 81.2
+    },
+    "prov": {
+      "nodes_total": 3642,
+      "nodes_with_missing_provenance": 0,
+      "edges_total": 12163,
+      "edges_with_missing_provenance": 0,
+      "ids_failing_format": 0,
+      "sample_bad_node_ids": [],
+      "sample_bad_nodes": [],
+      "sample_bad_edges": []
+    },
+    "edges": {
+      "edge_counts": {
+        "CONTAINS": 11007,
+        "DOSED_WITH": 215,
+        "TREATS": 562,
+        "IS_TYPE": 179,
+        "CO_OCCURS": 200
+      },
+      "failures_by_edge_type": {},
+      "samples": {}
+    },
+    "cardinality": {
+      "formulation_total": 628,
+      "formulation_with_no_CONTAINS": 135,
+      "formulation_pct_with_contains": 78.5,
+      "sample_no_CONTAINS": [
+        "formula:201-to-250/109",
+        "formula:201-to-250/167",
+        "formula:yogamalawa/2",
+        "formula:yogamalawa/3",
+        "formula:yogamalawa/30",
+        "formula:yogamalawa/32",
+        "formula:yogamalawa/4",
+        "formula:yogamalawa/36"
+      ],
+      "note": "Yogamālāva formulas have no separately-extracted ingredient list, so 'no CONTAINS' is expected for verse-form formulations."
+    }
+  },
+  "layer2": {
+    "powo": {
+      "sample_size": 30,
+      "agree": 30,
+      "disagree": 0,
+      "errors": 0,
+      "agreement_pct": 100.0,
+      "samples_disagree": [],
+      "samples_error": []
+    },
+    "icd11": {
+      "sample_size": 20,
+      "agree": 20,
+      "disagree": 0,
+      "errors": 0,
+      "agreement_pct": 100.0,
+      "samples_disagree": [],
+      "samples_error": []
+    }
+  },
+  "layer3": {
+    "sample_size": 95,
+    "out_path": "/home/nuwan/Documents/penbackup/D/Pipeline/sinhala-traditional-medicine-nlp/validate/expert_sample.tsv"
+  }
+}

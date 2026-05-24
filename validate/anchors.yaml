@@ -1,0 +1,90 @@
+# Anchor tests for the validator.
+#
+# Each row asserts a relationship that MUST hold in a correct KG. The
+# validator runs every assertion and tallies pass/fail in the report.
+#
+# Hand-curated against known Ayurvedic terminology and standard references
+# (Monier-Williams, ICD-11 TM2 Feb-2025, POWO).
+
+# ─── Positive: these Sanskrit lemmas MUST resolve to specific TM2 codes ───
+positive_disease_tm2:
+  - lemma: "jvara"
+    expected_tm2: "SP51"
+    rubric_substring: "Fever"
+  - lemma: "kāsa"
+    expected_tm2: "SL41"
+    rubric_substring: "Cough"
+  - lemma: "śvāsa"
+    expected_tm2: "SL42"
+    rubric_substring: "Dyspnoea"
+  - lemma: "kuṣṭha"
+    expected_tm2: "SN49"
+    rubric_substring: "Integumentary"
+  - lemma: "gulma"
+    expected_tm2: "SM3K"
+    rubric_substring: "Abdominal"
+  - lemma: "arśas"
+    expected_tm2: "SM53"
+    rubric_substring: "Haemorrhoids"
+  - lemma: "aśmarī"
+    expected_tm2: "SM8C"
+    rubric_substring: "Urinary stone"
+  - lemma: "meha"
+    expected_tm2: "SM8D"
+    rubric_substring: "Polyuria"
+
+# ─── Positive: these Plant lemmas MUST have POWO LSIDs in our KG ───
+positive_plant_powo:
+  - lemma: "viṣṇukrānti"
+    expected_powo_family: "Convolvulaceae"
+    latin_substring: "Evolvulus"
+  - lemma: "pippalī"
+    latin_substring: "Piper"
+  - lemma: "haritakī"
+    latin_substring: "Terminalia"
+  - lemma: "āmalakī"
+    latin_substring: "Phyllanthus"
+
+# ─── Negative: these Sinhala vernacular terms MUST be classified
+#             as Plant with is_unresolved=true (no Sanskrit lemma)
+negative_unresolved_vernacular:
+  - sinhala: "තිප්පිලි"
+  - sinhala: "කොත්තමල්ලි"
+  - sinhala: "එන්සාල්"
+  - sinhala: "වැල්මී"
+
+# ─── Provenance: every node and every edge MUST have these fields ───
+required_node_provenance:
+  - "id"
+  - "type"
+  - "created_at"
+  - "extractor_version"
+
+required_edge_provenance:
+  - "type"
+  - "from"
+  - "to"
+  - "extractor_version"
+
+# ─── Schema-mechanical: edge domain/range constraints ───
+edge_domain_range:
+  CONTAINS:
+    from: ["Formulation"]
+    to:   ["Plant", "Mineral"]
+  IS_TYPE:
+    from: ["Formulation"]
+    to:   ["PreparationType"]
+  TREATS:
+    from: ["Formulation"]
+    to:   ["Disease"]
+  DOSED_WITH:
+    from: ["Formulation"]
+    to:   ["Plant", "Mineral"]   # vehicles are stored as Plant nodes
+  CO_OCCURS:
+    from: ["Plant", "Mineral"]
+    to:   ["Plant", "Mineral"]
+
+# ─── Cardinality sanity ───
+cardinality:
+  Formulation_min_CONTAINS: 1    # tabular formulas must have ≥1 ingredient
+  Disease_must_have_id: true

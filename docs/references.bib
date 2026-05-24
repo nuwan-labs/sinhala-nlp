@@ -166,3 +166,139 @@
   url       = {https://arxiv.org/abs/2601.14267},
   note      = {Articulates the "schema-constrained, auditable" paradigm adopted in §9 of kg_schema.md}
 }
+
+% ────────────────────────────────────────────────────────────────────────
+% KG validation — informs the four-layer framework in validate/
+% ────────────────────────────────────────────────────────────────────────
+
+@article{zaveri2016quality,
+  author    = {Zaveri, Amrapali and Rula, Anisa and Maurino, Andrea and
+               Pietrobon, Ricardo and Lehmann, Jens and Auer, Sören},
+  title     = {Quality assessment for {L}inked {D}ata: A survey},
+  journal   = {Semantic Web},
+  volume    = {7},
+  number    = {1},
+  pages     = {63--93},
+  year      = {2016},
+  doi       = {10.3233/SW-150175},
+  note      = {The 18-dimension / 4-category quality framework adopted as the spine of
+               our validation methodology (intrinsic accuracy + completeness + consistency).}
+}
+
+@misc{w3c2017shacl,
+  author       = {{World Wide Web Consortium}},
+  title        = {Shapes Constraint Language ({SHACL})},
+  howpublished = {{W3C} Recommendation, 20 July 2017},
+  year         = {2017},
+  url          = {https://www.w3.org/TR/shacl/},
+  note         = {The W3C standard for RDF graph constraints; basis of our shapes.ttl.}
+}
+
+@misc{rdflib_pyshacl,
+  author       = {{RDFLib team}},
+  title        = {{pySHACL} — a Python validator for {SHACL}},
+  year         = {2024},
+  url          = {https://github.com/RDFLib/pySHACL},
+  note         = {The Python SHACL validator we use in validate/validate\_kg.py.}
+}
+
+@article{jackson2019robot,
+  author    = {Jackson, Rebecca C. and Balhoff, James P. and Douglass, Eric and
+               Harris, Nomi L. and Mungall, Christopher J. and Overton, James A.},
+  title     = {{ROBOT}: A Tool for Automating Ontology Workflows},
+  journal   = {{BMC} Bioinformatics},
+  volume    = {20},
+  pages     = {407},
+  year      = {2019},
+  doi       = {10.1186/s12859-019-3002-3},
+  note      = {The OBO Foundry validation tool; inspires the "report = categorised SPARQL queries" pattern.}
+}
+
+@inproceedings{xpshacl2025,
+  author    = {{xpSHACL authors}},
+  title     = {{xpSHACL}: Explainable {SHACL} Validation using Retrieval-Augmented
+               Generation and Large Language Models},
+  booktitle = {{VLDB} 2025 Workshop on {LLM}+{G}raph},
+  year      = {2025},
+  eprint    = {2507.08432},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/2507.08432}
+}
+
+@article{shaclens2026,
+  author    = {{SHACLens authors}},
+  title     = {{SHACLens}: a visualization workflow for {SHACL} violation exploration in knowledge graphs},
+  journal   = {Frontiers in Bioinformatics},
+  year      = {2026},
+  doi       = {10.3389/fbinf.2026.1756507}
+}
+
+@misc{kg_repair2025,
+  author    = {{KG-Repair authors}},
+  title     = {Systematic Evaluation of Knowledge Graph Repair with Large Language Models},
+  year      = {2025},
+  eprint    = {2507.22419},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/2507.22419}
+}
+
+@article{hallucination2025review,
+  author    = {Lavrinovics, Eduards and others},
+  title     = {Hallucination to truth: a review of fact-checking and factuality
+               evaluation in large language models},
+  journal   = {Artificial Intelligence Review},
+  year      = {2025},
+  doi       = {10.1007/s10462-025-11454-w},
+  note      = {Survey informing the LLM-judge tier (Layer 4) design in our methodology.}
+}
+
+@misc{kghalubench2026,
+  author    = {{KGHaluBench authors}},
+  title     = {{KGHaluBench}: A Knowledge Graph-Based Hallucination Benchmark for
+               Evaluating the Breadth and Depth of {LLM} Knowledge},
+  year      = {2026},
+  eprint    = {2602.19643},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/2602.19643}
+}
+
+@article{cohen1960kappa,
+  author    = {Cohen, Jacob},
+  title     = {A Coefficient of Agreement for Nominal Scales},
+  journal   = {Educational and Psychological Measurement},
+  volume    = {20},
+  number    = {1},
+  pages     = {37--46},
+  year      = {1960},
+  doi       = {10.1177/001316446002000104},
+  note      = {The original Cohen's $\kappa$ paper; basis of our Layer 3 IAA target.}
+}
+
+@inproceedings{counting_consensus2025,
+  author    = {{Counting on Consensus authors}},
+  title     = {Counting on Consensus: Selecting the Right Inter-annotator Agreement Metric
+               for {NLP} Annotation and Evaluation},
+  booktitle = {arXiv preprint},
+  year      = {2025},
+  eprint    = {2603.06865},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/2603.06865}
+}
+
+@article{oaei_bioportal2021,
+  author    = {{Ontology Alignment Evaluation Initiative}},
+  title     = {Results {OAEI} 2021 :: Large BioMed Track},
+  year      = {2021},
+  url       = {https://www.cs.ox.ac.uk/isg/projects/SEALS/oaei/2021/results/},
+  note      = {AgreementMakerLight / FCA-Map / LogMap F1 = 0.55–0.66 on BioPortal pairs;
+               calibrating context for our 81 %/88 % POWO/TM2 coverage numbers.}
+}
+
+@inproceedings{bioportal_incoherences2014,
+  author    = {Solimando, Alessandro and Jiménez-Ruiz, Ernesto and Pinkel, Christoph},
+  title     = {Towards Annotating Potential Incoherences in {B}io{P}ortal Mappings},
+  booktitle = {International Semantic Web Conference ({ISWC})},
+  year      = {2014},
+  doi       = {10.1007/978-3-319-11915-1\_2},
+  note      = {The "22 \% of BioPortal mappings have logical errors" finding.}
+}

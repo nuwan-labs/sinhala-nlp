@@ -1,0 +1,85 @@
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix nl:   <https://nuwan-labs.github.io/sinhala-traditional-medicine-nlp/ns/> .
+
+# ─────────────────────────────────────────────────────────────────────────────
+# SHACL shapes for the v1 schema (see docs/kg_schema.md).
+# Validated by pySHACL against knowledge_graph/kg.ttl.
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Every node (any type) must carry an extractor_version and a created_at.
+nl:NodeProvenanceShape
+    a sh:NodeShape ;
+    sh:targetClass nl:Formulation, nl:Plant, nl:Mineral, nl:Disease,
+                   nl:PreparationType, nl:Route, nl:PharmacologicalProperty ;
+    sh:property [
+        sh:path nl:extractor_version ;
+        sh:minCount 1 ;
+        sh:datatype xsd:string ;
+        sh:message "Every node must record the extractor_version that produced it."
+    ] ;
+    sh:property [
+        sh:path nl:created_at ;
+        sh:minCount 1 ;
+        sh:message "Every node must record when it was created."
+    ] .
+
+# ─── Formulation ───────────────────────────────────────────────────────────
+nl:FormulationShape
+    a sh:NodeShape ;
+    sh:targetClass nl:Formulation ;
+    sh:property [
+        sh:path nl:source_register ;
+        sh:minCount 1 ;
+        sh:in ( "tabular" "verse" "prose" "misc" ) ;
+        sh:message "Formulation.source_register must be tabular | verse | prose | misc."
+    ] .
+
+# ─── Disease ───────────────────────────────────────────────────────────────
+nl:DiseaseShape
+    a sh:NodeShape ;
+    sh:targetClass nl:Disease ;
+    sh:property [
+        sh:path nl:canonical_iast ;
+        sh:minCount 1 ;
+        sh:datatype xsd:string ;
+        sh:message "Disease must have a canonical_iast Sanskrit lemma."
+    ] ;
+    sh:property [
+        sh:path nl:english_rubric ;
+        sh:minCount 1 ;
+        sh:message "Disease must have an English rubric for downstream display."
+    ] .
+
+# ─── Plant (resolved or unresolved) ────────────────────────────────────────
+nl:PlantShape
+    a sh:NodeShape ;
+    sh:targetClass nl:Plant ;
+    # Either canonical_iast OR canonical_si must be present (resolved or
+    # Sinhala-only surface).
+    sh:or (
+        [ sh:property [ sh:path nl:canonical_iast ; sh:minCount 1 ] ]
+        [ sh:property [ sh:path nl:canonical_si   ; sh:minCount 1 ] ]
+    ) ;
+    sh:message "Plant must have at least canonical_iast (resolved) or canonical_si (unresolved)." .
+
+# ─── PreparationType (closed enum) ─────────────────────────────────────────
+nl:PreparationTypeShape
+    a sh:NodeShape ;
+    sh:targetClass nl:PreparationType ;
+    sh:property [
+        sh:path nl:canonical_iast ;
+        sh:in ( "kaṣāya" "kvātha" "taila" "ghṛta" "kalka" "cūrṇa"
+                "gulika" "ariṣṭa" "avaleha" "bhasma" ) ;
+        sh:message "PreparationType.canonical_iast must be in the closed enum."
+    ] .
+
+# ─── Route (closed enum) ───────────────────────────────────────────────────
+nl:RouteShape
+    a sh:NodeShape ;
+    sh:targetClass nl:Route ;
+    sh:property [
+        sh:path nl:canonical_iast ;
+        sh:in ( "oral" "anuvāsana" "nasya" "basti" "abhyaṅga" ) ;
+        sh:message "Route.canonical_iast must be in the closed enum."
+    ] .
