@@ -12,6 +12,9 @@ INPUTS (read-only)
   data/lexicons/botanical_candidates.json            Latin binomials extracted from MW glosses
   data/lexicons/botanical_powo.json                  Latin → POWO IPNI LSID + modern name
   data/lexicons/indication_icd11_tm2.json            Sanskrit indication → ICD-11 TM2 code
+  data/lexicons/materia_medica.json                  Pharmacopoeia-categorised raw materials
+                                                     (Sinhala → plant | mineral | animal_origin),
+                                                     produced by pipeline/extract_materia_medica.py
 
 OUTPUTS (knowledge_graph/)
   kg.jsonld             Linked-data view (JSON-LD @graph, matches docs/context.jsonld)
@@ -45,8 +48,38 @@ from datetime import datetime, timezone
 from pathlib import Path
 from itertools import combinations
 
-EXTRACTOR_VERSION = "kg_build_v1"
-SCHEMA_VERSION    = "1.0"
+EXTRACTOR_VERSION = "kg_build_v1.2"
+SCHEMA_VERSION    = "1.1"
+
+# Dosage normaliser (optional). Loaded once if the unit registry is present.
+_DOSAGE = None
+
+
+def _load_dosage_registry(repo_root):
+    """Best-effort load of the multi-system unit registry. None on failure."""
+    global _DOSAGE
+    try:
+        import importlib.util as _u
+        spec = _u.spec_from_file_location(
+            "_kg_dosage", str(repo_root / "knowledge_graph" / "dosage.py"))
+        mod = _u.module_from_spec(spec); spec.loader.exec_module(mod)
+        _DOSAGE = mod.load_units(
+            str(repo_root / "data" / "lexicons" / "unit_equivalences.json"))
+    except Exception as e:
+        print(f"  (dosage normaliser unavailable: {e})")
+        _DOSAGE = None
+    return _DOSAGE
+
+
+def _to_grams(text, default_density=1.0):
+    """Safe wrapper. Returns (grams_or_None, matched_unit_iast, system, ml)."""
+    if not _DOSAGE or not text:
+        return None, None, None, None
+    out = _DOSAGE.to_grams(text, default_density=default_density)
+    sym = out.get("matched_unit")
+    iast = ((_DOSAGE.symbols.get(sym) or {}).get("iast")
+            if sym else None)
+    return out.get("grams"), iast, out.get("system"), out.get("ml")
 
 
 # ── helpers ──────────────────────────────────────────────────────────────────
@@ -167,6 +200,14 @@ def load_inputs(repo_root: Path, include_yogamalawa: bool):
     botanical_seed  = jload(lex_dir / "botanical_candidates.json")
     powo            = jload(lex_dir / "botanical_powo.json")
     tm2             = jload(lex_dir / "indication_icd11_tm2.json")
+    mm              = jload(lex_dir / "materia_medica.json")
+    pratinidhi      = jload(lex_dir / "pratinidhi_lookup.json")
+    mahakashaya     = jload(lex_dir / "mahakashaya_groups.json")
+    # Build a Sinhala-surface → section lookup for ingredient classification.
+    # Keys are NFC-normalised. The materia_medica file is itself NFC.
+    mm_lookup: dict[str, str] = {}
+    for surf, rec in (mm.get("by_sinhala") or {}).items():
+        mm_lookup[nfc(surf)] = rec.get("section")
     return {
         "formulas": structured,
         "ingredients_lex": ingredients_lex,
@@ -175,6 +216,9 @@ def load_inputs(repo_root: Path, include_yogamalawa: bool):
         "botanical_seed": botanical_seed,
         "powo": powo,
         "tm2": tm2,
+        "materia_medica": mm_lookup,
+        "pratinidhi":  pratinidhi,
+        "mahakashaya": mahakashaya,
     }
 
 
@@ -203,6 +247,44 @@ def classify_ingredient(lemma, gloss):
     if MINERAL_GLOSS_KEYWORDS.search(gloss or ""):
         return "Mineral", f"min:{slug(lemma)}"
     return "Plant", f"plant:{slug(lemma)}"
+
+
+# Mapping from materia_medica section → (node type, internal-ID prefix).
+MM_SECTION = {
+    "plant":          ("Plant",         "plant"),
+    "mineral":        ("Mineral",       "min"),
+    "animal_origin": ("AnimalOrigin", "animal"),
+}
+
+
+def apply_materia_medica(surf, kind, internal, lemma, mm_lookup):
+    """Use the pharmacopoeia's own categorisation (materia_medica.json) to
+    refine ingredient classification.
+
+    Override rules:
+      • Resolver returned a kind but mm disagrees      → mm wins, re-ID.
+      • Resolver returned nothing (unresolved)          → mm sets the kind.
+      • surf not in mm                                  → no change.
+
+    The lemma stays the same; only the type label and the internal-ID
+    prefix may change. For unresolved ingredients (lemma is None) the
+    internal ID is `<prefix>:_si_<slug(surf)>` regardless of section.
+    Returns (kind, internal, override_reason | None).
+    """
+    section = mm_lookup.get(nfc(surf))
+    if section is None or section not in MM_SECTION:
+        return kind, internal, None
+    new_kind, new_prefix = MM_SECTION[section]
+    if kind == new_kind:
+        # Already correctly classified; just attach the source-authority tag.
+        return kind, internal, "mm_confirmed"
+    # Override.
+    if lemma:
+        new_internal = f"{new_prefix}:{slug(lemma)}"
+    else:
+        new_internal = f"{new_prefix}:_si_{slug(surf)}"
+    reason = f"mm_override:{kind or 'unresolved'}→{new_kind}"
+    return new_kind, new_internal, reason
 
 
 def resolve_ingredient(surface_si, lex):
@@ -281,10 +363,16 @@ def build_kg(inputs, max_cooccurrence=200, min_cooccurrence=3):
     for r in (DEFAULT_ROUTE, "anuvāsana", "nasya", "basti", "abhyaṅga"):
         ensure_node(f"route:{slug(r)}", "Route",
                     canonical_iast=r, sanskrit=r)
-    for v_iast, v_en in [(v[0], v[1]) for v in VEHICLE_HINTS.values()]:
-        ensure_node(f"vehicle:{slug(v_iast)}", "Plant",
+    # Vehicles: split into AnimalOrigin (madhu / ghṛta / kṣīras) vs Plant
+    # (plant oils, water). The classical anupāna vocabulary maps cleanly.
+    ANIMAL_VEHICLE_LEMMAS = {"madhu", "ghṛta", "kṣīra"}
+    for sin_phrase, (v_iast, v_en) in VEHICLE_HINTS.items():
+        is_animal = v_iast in ANIMAL_VEHICLE_LEMMAS
+        ntype = "AnimalOrigin" if is_animal else "Plant"
+        ensure_node(f"vehicle:{slug(v_iast)}", ntype,
                     canonical_iast=v_iast, sanskrit=v_iast,
-                    english_common=[v_en])
+                    english_common=[v_en],
+                    also_acts_as_vehicle=True if is_animal else None)
 
     # ── 2. Build POWO-cached Latin-binomial → LSID lookup ──
     powo = inputs["powo"]
@@ -330,6 +418,8 @@ def build_kg(inputs, max_cooccurrence=200, min_cooccurrence=3):
     # ── 4. Walk formulas ──
     ing_lex   = inputs["ingredients_lex"]
     prose_lex = inputs["prose_lex"]
+    mm_lookup = inputs.get("materia_medica", {})
+    mm_stats  = {"confirmed": 0, "override": Counter(), "unresolved_classified": 0}
 
     for fobj in inputs["formulas"]:
         e = fobj["entry"]
@@ -371,26 +461,63 @@ def build_kg(inputs, max_cooccurrence=200, min_cooccurrence=3):
                 kind, internal, lemma, gloss, method = resolve_ingredient(surf, ing_lex)
                 unresolved = False
                 if not internal:
-                    # No Sanskrit lemma; treat as a Plant node keyed on the
-                    # NFC-normalised Sinhala surface form, explicitly flagged
-                    # as unresolved.
+                    # No Sanskrit lemma. Default to Plant; materia_medica
+                    # may correct the section below.
                     internal = f"plant:_si_{slug(surf)}"
                     kind = "Plant"
                     lemma = None
                     unresolved = True
+                # ── apply materia_medica authority ─────────────────────────
+                pre_kind = kind
+                kind, internal, mm_reason = apply_materia_medica(
+                    surf, kind, internal, lemma, mm_lookup)
+                if mm_reason == "mm_confirmed":
+                    mm_stats["confirmed"] += 1
+                elif mm_reason and mm_reason.startswith("mm_override"):
+                    mm_stats["override"][mm_reason] += 1
+                    if unresolved:
+                        mm_stats["unresolved_classified"] += 1
                 node = ensure_node(internal, kind,
                                    canonical_si=surf if not lemma else None,
                                    canonical_iast=lemma,
                                    sanskrit=lemma,
                                    gloss=(gloss or "")[:200],
-                                   is_unresolved=unresolved or None)
+                                   is_unresolved=unresolved or None,
+                                   mm_section=(mm_lookup.get(nfc(surf))
+                                               if mm_reason else None),
+                                   mm_authority=("pharmacopoeia_pp444-453"
+                                                 if mm_reason else None))
                 if kind == "Plant" and lemma and gloss:
                     attach_powo_external(node, lemma, gloss)
+                # If the structured JSON didn't already carry a metric
+                # weight, try to derive one from the raw quantity text via
+                # the dosage normaliser (Sri Lankan unit system by default).
+                derived_grams = None
+                derived_unit  = None
+                derived_ml    = None
+                if not grams and qty_text:
+                    derived_grams, derived_unit, _system, derived_ml = \
+                        _to_grams(qty_text)
+                final_grams = grams or derived_grams
+                # quantity_unit reflects what we ACTUALLY recorded:
+                # parts (relative), gram (numeric), or the source unit-iast.
+                if final_grams:
+                    qty_unit_label = "gram"
+                elif qty_text and derived_unit:
+                    qty_unit_label = derived_unit
+                elif qty_text:
+                    qty_unit_label = "text_only"
+                else:
+                    qty_unit_label = "parts"
                 add_edge("CONTAINS", f_id, internal,
-                         parts=1 if not grams else None,
+                         parts=1 if not final_grams and not qty_text else None,
                          quantity_text=qty_text or None,
-                         quantity_unit="parts" if not grams else "gram",
-                         quantity_grams=grams if grams else None,
+                         quantity_unit=qty_unit_label,
+                         quantity_grams=final_grams or None,
+                         quantity_ml=derived_ml or None,
+                         quantity_source=("structured_metric" if grams
+                                          else "dosage_normaliser"
+                                          if derived_grams else None),
                          resolver_method=method,
                          provenance={**provenance,
                                      "ingredient_surface": surf})
@@ -437,7 +564,138 @@ def build_kg(inputs, max_cooccurrence=200, min_cooccurrence=3):
         for a, b in combinations(sorted(plant_ids_in_formula), 2):
             co_pairs[(a, b)] += 1
 
-    # 5. Emit CO_OCCURS edges above min threshold; cap at max
+    # ── 5. Index existing substance nodes by NFC Sinhala surface form ─────
+    # Used by Block-3 / Block-2 KG enrichment below.  Maps every known
+    # Sinhala alias (canonical_si on unresolved nodes; sanskrit/iast on
+    # resolved nodes via the ingredients lexicon) to its node id.
+    surface_to_node: dict[str, str] = {}
+    for node_id, n in nodes.items():
+        if n["type"] not in ("Plant", "Mineral", "AnimalOrigin"):
+            continue
+        si = n.get("canonical_si") or n.get("sanskrit")
+        if si:
+            surface_to_node.setdefault(nfc(si), node_id)
+    # Also: Sinhala ingredient surface → resolved node id via the lexicon.
+    # ing_lex keys are the raw ingredient surface forms used in the corpus.
+    for surf in (inputs.get("ingredients_lex") or {}):
+        # The node would have been emitted only if a formula used this
+        # ingredient; otherwise skip.
+        # Build a likely id; if not in nodes, skip.
+        skey = nfc(surf)
+        if skey in surface_to_node:
+            continue
+        # Search nodes for one whose provenance/aliases match this surface.
+        # Simple fallback: the slug-Sinhala form.
+        candidate = f"plant:_si_{slug(skey)}"
+        if candidate in nodes:
+            surface_to_node[skey] = candidate
+
+    # Helper: get-or-create a substance node from a Sinhala surface.
+    # New nodes are created with classification from materia_medica when
+    # available; otherwise default to Plant flagged unresolved.
+    def _ensure_substance_node(surf, source_tag):
+        surf = nfc(surf)
+        if surf in surface_to_node:
+            return surface_to_node[surf]
+        section = mm_lookup.get(surf)
+        ntype, prefix = MM_SECTION.get(section, ("Plant", "plant"))
+        nid = f"{prefix}:_si_{slug(surf)}"
+        ensure_node(nid, ntype,
+                    canonical_si=surf,
+                    is_unresolved=True,
+                    mm_section=section,
+                    introduced_by=source_tag)
+        surface_to_node[surf] = nid
+        return nid
+
+    # ── 6. mahā-kaṣāya groups → PharmacologicalProperty + HAS_PROPERTY ─────
+    mk_stats = {"property_nodes": 0, "has_property_edges": 0,
+                "substances_with_property": 0, "substances_new": 0}
+    mk = inputs.get("mahakashaya") or {}
+    for v in (mk.get("vargas") or []):
+        for g in v.get("ganas", []):
+            gana_si  = nfc(g.get("gana_name_si") or "")
+            if not gana_si:
+                continue
+            prop_id = f"prop:karma:{slug(gana_si)}"
+            ensure_node(prop_id, "PharmacologicalProperty",
+                        axis="karma",
+                        canonical_si=gana_si,
+                        varga_num=v.get("varga_num"),
+                        varga_name_si=v.get("varga_name_si"),
+                        varga_name_iast=v.get("varga_name_iast"),
+                        source=f"pharmacopoeia_pp82-90_varga{v.get('varga_num')}")
+            mk_stats["property_nodes"] += 1
+            for s in g.get("substances", []):
+                s_nfc = nfc(s)
+                existed = s_nfc in surface_to_node
+                s_id = _ensure_substance_node(s, "mahakashaya")
+                if not existed:
+                    mk_stats["substances_new"] += 1
+                else:
+                    mk_stats["substances_with_property"] += 1
+                add_edge("HAS_PROPERTY", s_id, prop_id,
+                         provenance={"source_doc":
+                                       "data/lexicons/mahakashaya_groups.json",
+                                     "varga": v.get("varga_num"),
+                                     "gana":  g.get("gana_num"),
+                                     "gana_name_si": gana_si})
+                mk_stats["has_property_edges"] += 1
+    # Deduplicate property nodes counter (we incremented per-gana but
+    # ensure_node is idempotent — recount from the actual node set).
+    mk_stats["property_nodes"] = sum(
+        1 for n in nodes.values() if n["type"] == "PharmacologicalProperty"
+    )
+
+    # ── 7. pratinidhi → SUBSTITUTES_FOR edges ─────────────────────────────
+    # Each entry's lhs_si (source) has rhs_si (substitute(s)). When `rhs_si`
+    # contains multiple substances they're separated by " " or " = " (the
+    # latter is itself a Sanskrit/Sinhala name-pair for ONE substitute).
+    pr_stats = {"substitute_edges": 0, "new_substitute_nodes": 0}
+    pr = inputs.get("pratinidhi") or {}
+    for ent in (pr.get("entries") or []):
+        lhs_si = nfc(ent.get("lhs_si") or "")
+        rhs_si = nfc(ent.get("rhs_si") or "")
+        if not lhs_si or not rhs_si:
+            continue
+        # Source node: prefer the existing alias (lhs_alt_si if it's already
+        # a known surface), else the lhs_si Sanskrit form.
+        src_surf = nfc(ent.get("lhs_alt_si") or "") or lhs_si
+        src_id = surface_to_node.get(src_surf)
+        if src_id is None:
+            # Source not in the formula corpus — emit a node anyway so the
+            # substitute edge has a domain.
+            existed = False
+            src_id = _ensure_substance_node(src_surf, "pratinidhi_source")
+            if not existed:
+                pr_stats["new_substitute_nodes"] += 1
+        # Split rhs into individual substitute substances. Pratinidhi rhs
+        # text uses commas / "=" for name-pairs / "හෝ" (= "or") for choices.
+        # Conservative: take the first phrase as the canonical substitute.
+        rhs_parts = re.split(r"\s*(?:,|හෝ)\s*", rhs_si)
+        rhs_parts = [p.strip() for p in rhs_parts if p.strip()]
+        for sub in rhs_parts:
+            # A part of the form "X = Y" is itself a Sanskrit/Sinhala
+            # pair for ONE substitute — keep the first piece as canonical.
+            sub_main = sub.split("=")[0].strip()
+            if not sub_main or len(sub_main) < 2:
+                continue
+            existed = nfc(sub_main) in surface_to_node
+            sub_id = _ensure_substance_node(sub_main, "pratinidhi_substitute")
+            if not existed:
+                pr_stats["new_substitute_nodes"] += 1
+            if sub_id == src_id:
+                continue
+            add_edge("SUBSTITUTES_FOR", sub_id, src_id,
+                     substitution_rule="abhāva-pratinidhi",
+                     provenance={"source_doc":
+                                   "data/lexicons/pratinidhi_lookup.json",
+                                 "pratinidhi_num": ent.get("num"),
+                                 "source_surface_si": src_surf,
+                                 "substitute_surface_si": sub_main})
+            pr_stats["substitute_edges"] += 1
+
+    # ── 8. Emit CO_OCCURS edges above min threshold; cap at max ──
     sorted_pairs = sorted(co_pairs.items(), key=lambda x: -x[1])
     if max_cooccurrence:
         sorted_pairs = sorted_pairs[:max_cooccurrence]
@@ -448,7 +706,7 @@ def build_kg(inputs, max_cooccurrence=200, min_cooccurrence=3):
                  confidence=min(1.0, n / 10),
                  provenance={"computed_from": "ingredient_co_occurrence"})
 
-    return nodes, edges
+    return nodes, edges, mm_stats, mk_stats, pr_stats
 
 
 # ── exporters ────────────────────────────────────────────────────────────────
@@ -554,7 +812,7 @@ def export_turtle(nodes, edges, out_path):
     out_path.write_text("\n".join(lines), encoding="utf-8")
 
 
-def build_report(nodes, edges):
+def build_report(nodes, edges, mm_stats, mk_stats, pr_stats):
     node_counts = Counter(n["type"] for n in nodes.values())
     edge_counts = Counter(e["type"] for e in edges)
 
@@ -567,6 +825,8 @@ def build_report(nodes, edges):
     diseases = [n for n in nodes.values() if n["type"] == "Disease"]
     disease_with_tm2 = sum(1 for n in diseases
                            if (n.get("external") or {}).get("icd11_tm2"))
+
+    mm_tagged = sum(1 for n in nodes.values() if n.get("mm_section"))
 
     return {
         "schema_version":    SCHEMA_VERSION,
@@ -597,6 +857,66 @@ def build_report(nodes, edges):
             "Disease_with_ICD11_TM2":        disease_with_tm2,
             "Disease_total":                 len(diseases),
         },
+        "materia_medica_authority": {
+            "ingredients_confirmed":       mm_stats["confirmed"],
+            "ingredients_overridden":      dict(mm_stats["override"]),
+            "unresolved_classified_by_mm": mm_stats["unresolved_classified"],
+            "nodes_tagged_with_mm_authority": mm_tagged,
+            "note": ("Counts ingredient surface-forms where the Sri Lankan "
+                     "Ayurvedic Pharmacopoeia's categorised raw-materials "
+                     "list (pp. 444–453) confirmed or corrected the "
+                     "resolver's Plant/Mineral assignment, including new "
+                     "AnimalOrigin classifications."),
+        },
+        "mahakashaya_coverage": {
+            "PharmacologicalProperty_nodes": mk_stats["property_nodes"],
+            "HAS_PROPERTY_edges":            mk_stats["has_property_edges"],
+            "substances_already_in_kg":      mk_stats["substances_with_property"],
+            "substances_introduced_new":     mk_stats["substances_new"],
+            "note": ("Caraka's 50 mahā-kaṣāya substance groups from "
+                     "pp. 82–90 of the source. Each gana → one "
+                     "PharmacologicalProperty (axis=karma); each listed "
+                     "substance → one HAS_PROPERTY edge."),
+        },
+        "pratinidhi_substitutes": {
+            "SUBSTITUTES_FOR_edges":         pr_stats["substitute_edges"],
+            "new_substitute_nodes_added":    pr_stats["new_substitute_nodes"],
+            "note": ("Abhāva-pratinidhi substitute relationships from "
+                     "pp. 77–81 of the source. The substitute substance "
+                     "(rhs_si) is a DIFFERENT substance from the source "
+                     "(lhs_si) — use it only when the source is "
+                     "unavailable. Modelled in the KG as SUBSTITUTES_FOR "
+                     "edges, NOT as a same-meaning alias."),
+        },
+        "dosage_normalisation": _dosage_report(edges),
+    }
+
+
+def _dosage_report(edges):
+    """Counts of CONTAINS edges with quantity_grams populated and by source."""
+    c = Counter()
+    for e in edges:
+        if e["type"] != "CONTAINS":
+            continue
+        if e.get("quantity_grams"):
+            c["with_grams"] += 1
+        c[f"source:{e.get('quantity_source') or 'none'}"] += 1
+        c[f"unit:{e.get('quantity_unit') or 'unknown'}"] += 1
+    total = sum(1 for e in edges if e["type"] == "CONTAINS")
+    return {
+        "total_CONTAINS":   total,
+        "with_grams":       c["with_grams"],
+        "pct_with_grams":   round(100 * c["with_grams"] / max(total, 1), 1),
+        "by_source":        {k.split(":",1)[1]: v for k, v in c.items() if k.startswith("source:")},
+        "by_unit_top":      dict(Counter({k.split(":",1)[1]: v
+                                          for k, v in c.items()
+                                          if k.startswith("unit:")}).most_common(12)),
+        "note": ("CONTAINS edges with their dosage parsed into grams. "
+                 "Sources: structured_metric (the original Stage-3 OCR "
+                 "extracted ග්‍රෑ/ලී directly); dosage_normaliser "
+                 "(grams derived via knowledge_graph/dosage.py from the "
+                 "raw quantity text, using the Sri Lankan unit system "
+                 "by default).")
     }
 
 
@@ -615,15 +935,17 @@ def main():
 
     print("Loading inputs…")
     inputs = load_inputs(here, include_yogamalawa=not args.no_yogamalawa)
+    _load_dosage_registry(here)
     print(f"  formulas: {len(inputs['formulas'])}")
     print(f"  ingredient lexicon entries: {len(inputs['ingredients_lex'])}")
     print(f"  POWO records: {len(inputs['powo'])}")
     print(f"  TM2 records:  {len(inputs['tm2'])}")
 
     print("Building KG…")
-    nodes, edges = build_kg(inputs,
-                            max_cooccurrence=args.max_cooccurrence,
-                            min_cooccurrence=args.min_cooccurrence)
+    nodes, edges, mm_stats, mk_stats, pr_stats = build_kg(
+        inputs,
+        max_cooccurrence=args.max_cooccurrence,
+        min_cooccurrence=args.min_cooccurrence)
 
     print(f"  nodes: {len(nodes)}")
     print(f"  edges: {len(edges)}")
@@ -633,7 +955,7 @@ def main():
     export_cypher(nodes, edges, out_dir / "kg.cypher")
     export_turtle(nodes, edges, out_dir / "kg.ttl")
 
-    report = build_report(nodes, edges)
+    report = build_report(nodes, edges, mm_stats, mk_stats, pr_stats)
     (out_dir / "build_report.json").write_text(
         json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8"
     )
@@ -657,6 +979,24 @@ def main():
     print(f"  External-ID coverage:")
     for k, v in report["external_id_coverage"].items():
         print(f"    {k:32s}  {v}")
+    print(f"  Materia-medica authority:")
+    for k, v in report["materia_medica_authority"].items():
+        if k == "note": continue
+        print(f"    {k:32s}  {v}")
+    print(f"  Mahā-kaṣāya coverage:")
+    for k, v in report["mahakashaya_coverage"].items():
+        if k == "note": continue
+        print(f"    {k:32s}  {v}")
+    print(f"  Pratinidhi substitutes:")
+    for k, v in report["pratinidhi_substitutes"].items():
+        if k == "note": continue
+        print(f"    {k:32s}  {v}")
+    print(f"  Dosage normalisation:")
+    dr = report["dosage_normalisation"]
+    print(f"    total_CONTAINS                  {dr['total_CONTAINS']}")
+    print(f"    with_grams                      {dr['with_grams']}  ({dr['pct_with_grams']}%)")
+    print(f"    by source                       {dr['by_source']}")
+    print(f"    top units                       {dr['by_unit_top']}")
 
 
 if __name__ == "__main__":

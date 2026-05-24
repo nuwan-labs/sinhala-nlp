@@ -430,14 +430,14 @@
   },
   "අභ්‍යග": {
     "freq": 25,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "අභ්‍යග",
         "iast": "abhyaga",
-        "lemma": "abhi+aga",
-        "gloss": "abhi=1. abhi/ ind. (a prefix to verbs and nouns, expressing) to,  | aga=1. aga m. a snake [in this sense perhaps rather a-ga] L.",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -1041,14 +1041,14 @@
   },
   "අෂ්ටාංග": {
     "freq": 12,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "අෂ්ටාංග",
         "iast": "aṣṭāṃga",
-        "lemma": "aṣṭā+āṅga",
-        "gloss": "aṣṭā=aṣṭā (in comp. for aṣṭan) | āṅga=āṅga mfn. (in Gr.) relating to the base (aṅga) of a word, Pā",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -1431,14 +1431,14 @@
   },
   "රෝගාවස්ථාවනට": {
     "freq": 8,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "රෝගාවස්ථාවනට",
         "iast": "rogāvasthāvanaṭa",
-        "lemma": "roga+avasthāva+naṭa",
-        "gloss": "roga=ro/ga m. (√ 1. ruj) ‘breaking up of strength’, disease, infi | avasthāva=ava-√ sthā P. -tiṣṭhati (impf. -atiṣṭhat; aor. Subj. -sthāt; | naṭa=naṭa m. (fr. prec.; but cf. Uṇ. iv, 104) actor, dancer, mime",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -2172,14 +2172,14 @@
   },
   "වාතාධික": {
     "freq": 5,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "වාතාධික",
         "iast": "vātādhika",
-        "lemma": "vāta+adhika",
-        "gloss": "vāta=1. vāta mfn. (for 2. See p. 939, col. 3) blown &c. | adhika=adhika mfn. additional, subsequent, later",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -2991,14 +2991,14 @@
   },
   "ද්විගංජා": {
     "freq": 4,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "ද්විගංජා",
         "iast": "dvigaṃjā",
-        "lemma": "dvi+gañjā",
-        "gloss": "dvi=dvi du. two (nom. dvau See dva). | gañjā=gañjā f. a tavern, Rājat. viii, 3028",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -3147,14 +3147,14 @@
   },
   "කඵාධික": {
     "freq": 3,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "කඵාධික",
         "iast": "kaphādhika",
-        "lemma": "kapha+adhika",
-        "gloss": "kapha=kapha m. phlegm (as one of the three humors of the body See  | adhika=adhika mfn. additional, subsequent, later",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -3433,14 +3433,14 @@
   },
   "අෂ්ටාංගායුර්වේද": {
     "freq": 3,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "අෂ්ටාංගායුර්වේද",
         "iast": "aṣṭāṃgāyurveda",
-        "lemma": "aṣṭāṅga+āyurveda",
-        "gloss": "aṣṭāṅga=aṣṭāṅga mf(ā)n. consisting of eight parts or members (as med | āyurveda=āyur—veda m. the science of health or medicine (it is classe",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -3875,14 +3875,14 @@
   },
   "අවස්ථාවේ": {
     "freq": 2,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "අවස්ථාවේ",
         "iast": "avasthāve",
-        "lemma": "avasthā+āve",
-        "gloss": "avasthā=ava-√ sthā P. -tiṣṭhati (impf. -atiṣṭhat; aor. Subj. -sthāt; | āve=1. ā-√ ve P. -vayati, to weave on to; to interweave, string;",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -4044,14 +4044,14 @@
   },
   "පක්ෂාඝාතාදි": {
     "freq": 2,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "පක්ෂාඝාතාදි",
         "iast": "pakṣāghātādi",
-        "lemma": "pakṣāghāta+ādi",
-        "gloss": "pakṣāghāta=pakṣāghāta m. = ˚kṣa-vadha, Car.; Suśr. | ādi=1. ādi m. beginning, commencement",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -4265,14 +4265,14 @@
   },
   "ශාරංගධර": {
     "freq": 2,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "ශාරංගධර",
         "iast": "śāraṃgadhara",
-        "lemma": "śās+raṅga+dhara",
-        "gloss": "śās=1. śās (cf. √ śaṃs) cl. 2. P. (Dhātup. xxiv, 67) śāsti (Ved. | raṅga=raṅga raṅgita, raṅgin See p. 862. | dhara=dhara mf(ā)n. (√ dhṛ) bearing, supporting (scil. the world, ",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -4629,14 +4629,14 @@
   },
   "විද්‍යාලයානුබද්ධ": {
     "freq": 2,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "විද්‍යාලයානුබද්ධ",
         "iast": "vidyālayānubaddha",
-        "lemma": "vidyālaya+anubaddha",
-        "gloss": "vidyālaya=vidyā˚laya (˚yāl˚), m. abode or seat of learning, a school,  | anubaddha=anu-baddha mfn. bound to, obliged to, connected with, relate",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -4889,14 +4889,14 @@
   },
   "හෘද්භූල": {
     "freq": 2,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "හෘද්භූල",
         "iast": "hṛdbhūla",
-        "lemma": "hṛt+bhu+ula",
-        "gloss": "hṛt=hṛt mfn. (only ifc.) bringing, carrying, carrying away, seiz | bhu=bhu mfn. (ifc.) = 2. bhū, becoming being existing, produced  | ula=ula/ m. a kind of wild animal, AV. xii, 1, 49; VS.; MaitrS.",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -5240,14 +5240,14 @@
   },
   "ධ්වජභංග": {
     "freq": 2,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "ධ්වජභංග",
         "iast": "dhvajabhaṃga",
-        "lemma": "dhvaja+bhaṅga",
-        "gloss": "dhvaja=dhvaja/ m. (n. only, Hariv. 9245 and g. ardharcādi; fr. 2. d | bhaṅga=bhaṅga/ &c. See p. 744, col. 3.",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -5461,14 +5461,14 @@
   },
   "රෝගාවස්ථා": {
     "freq": 2,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "රෝගාවස්ථා",
         "iast": "rogāvasthā",
-        "lemma": "roga+avasthā",
-        "gloss": "roga=ro/ga m. (√ 1. ruj) ‘breaking up of strength’, disease, infi | avasthā=ava-√ sthā P. -tiṣṭhati (impf. -atiṣṭhat; aor. Subj. -sthāt;",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -5955,14 +5955,14 @@
   },
   "මූත්‍රකෘච්ඡර": {
     "freq": 2,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "මූත්‍රකෘච්ඡර",
         "iast": "mūtrakṛcchara",
-        "lemma": "mūtra+kṛt+śara",
-        "gloss": "mūtra=mū/tra n. (prob. fr. √ mū = mīv; but cf. Uṇ. iv, 162) the fl | kṛt=1. kṛt mfn. only ifc. (Pāṇ. vi, 1, 182) making, doing, perfo | śara=śara/ m. (fr. √ śṝ ‘to rend’ or ‘destroy’) a sort of reed or",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -6566,14 +6566,14 @@
   },
   "ගන්ධර්වහස්තාදි": {
     "freq": 1,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "ගන්ධර්වහස්තාදි",
         "iast": "gandharvahastādi",
-        "lemma": "gandharvahasta+ādi",
-        "gloss": "gandharvahasta=gandharva—hasta m. ‘Gandharva-handed (the form of the leaves | ādi=1. ādi m. beginning, commencement",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -7255,14 +7255,14 @@
   },
   "අෂ්ටාවශේෂිත": {
     "freq": 1,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "අෂ්ටාවශේෂිත",
         "iast": "aṣṭāvaśeṣita",
-        "lemma": "aṣṭa+avaśeṣita",
-        "gloss": "aṣṭa=1. aṣṭa mfn. (√ akṣ; cf. nir-√ akṣ) ‘marked, branded’, only  | avaśeṣita=ava-śeṣita mfn. left as a remnant, remaining, MBh. i, 5129, ",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -7489,14 +7489,14 @@
   },
   "ශූලෝපද්‍රව": {
     "freq": 1,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "ශූලෝපද්‍රව",
         "iast": "śūlopadrava",
-        "lemma": "śūlā+upadrava",
-        "gloss": "śūlā=śū/lā (ā), f. a stake (= śūla), L. | upadrava=upa-drava m. that which attacks or occurs suddenly, any grie",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -7801,14 +7801,14 @@
   },
   "අවස්ථානුකූල": {
     "freq": 1,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "අවස්ථානුකූල",
         "iast": "avasthānukūla",
-        "lemma": "avastha+anukūla",
-        "gloss": "avastha=ava-stha/ m. membrum virile, AV. vii, 90, 3 (cf. upa/-stha) | anukūla=anu-kū/la mf(ā)n. following the bank (kūla) or slope or decl",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -8061,14 +8061,14 @@
   },
   "කපිත්ථාෂ්ටක": {
     "freq": 1,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "කපිත්ථාෂ්ටක",
         "iast": "kapitthāṣṭaka",
-        "lemma": "kapittha+āṣṭaka",
-        "gloss": "kapittha=kapittha m. (ttha = stha) ‘on which monkeys dwell’, Feronia  | āṣṭaka=āṣṭaka n. N. of a district, Pat. on Kāty. Vārt. 31 on Pāṇ. i",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -8763,14 +8763,14 @@
   },
   "මූත්‍රාඝතය": {
     "freq": 1,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "මූත්‍රාඝතය",
         "iast": "mūtrāghataya",
-        "lemma": "mūtra+agha+taya",
-        "gloss": "mūtra=mū/tra n. (prob. fr. √ mū = mīv; but cf. Uṇ. iv, 162) the fl | agha=agha/ mfn. bad, dangerous, RV. | taya=taya m. g. vṛṣādi",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -9348,14 +9348,14 @@
   },
   "රෝගාබාධ": {
     "freq": 1,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "රෝගාබාධ",
         "iast": "rogābādha",
-        "lemma": "roga+abādha",
-        "gloss": "roga=ro/ga m. (√ 1. ruj) ‘breaking up of strength’, disease, infi | abādha=a-bādha mfn. unobstructed, unrestrained",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -9686,14 +9686,14 @@
   },
   "ජංඝා-": {
     "freq": 1,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "ජංඝා-",
         "iast": "jaṃghā-",
-        "lemma": "jam+ghā",
-        "gloss": "jam=1. jam jmā, jma/s. See 2. kṣa/m. | ghā=ghā f. a stroke, L.",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -9881,14 +9881,14 @@
   },
   "ශස්ත්‍රක්ෂාරාග්නි": {
     "freq": 1,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "ශස්ත්‍රක්ෂාරාග්නි",
         "iast": "śastrakṣārāgni",
-        "lemma": "śastrakṣāra+agni",
-        "gloss": "śastrakṣāra=śastra—kṣāra m. borax, L. | agni=agni/ m. (√ ag, Uṇ.) fire, sacrificial fire (of three kinds,",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -10102,14 +10102,14 @@
   },
   "මූත්‍රකෘච්ඡුර": {
     "freq": 1,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "මූත්‍රකෘච්ඡුර",
         "iast": "mūtrakṛcchura",
-        "lemma": "mūtra+kṛt+śura",
-        "gloss": "mūtra=mū/tra n. (prob. fr. √ mū = mīv; but cf. Uṇ. iv, 162) the fl | kṛt=1. kṛt mfn. only ifc. (Pāṇ. vi, 1, 182) making, doing, perfo | śura=śura m. a lion, L.",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -10557,14 +10557,14 @@
   },
   "භෘංගරාජ": {
     "freq": 1,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "භෘංගරාජ",
         "iast": "bhṛṃgarāja",
-        "lemma": "bhṛṅga+rāja",
-        "gloss": "bhṛṅga=bhṛṅga m. (√ bhram) a species of large black bee, the humble | rāja=1. rāja m. (ifc.) = 1. rājan, a king, sovereign, chief or be",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -11272,14 +11272,14 @@
   },
   "ස්වාගශීත": {
     "freq": 1,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "ස්වාගශීත",
         "iast": "svāgaśīta",
-        "lemma": "sva+aga+śīta",
-        "gloss": "sva=1. sva/ mf(ā/)n. own, one's own, my own, thy own, his own, h | aga=1. aga m. a snake [in this sense perhaps rather a-ga] L. | śīta=śīta/ mf(ā/)n. (fr. śyai; cf. śīna) cold, cool, chilly, frig",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -11350,14 +11350,14 @@
   },
   "වාංගශිත": {
     "freq": 1,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "වාංගශිත",
         "iast": "vāṃgaśita",
-        "lemma": "vāṅga+śita",
-        "gloss": "vāṅga=vāṅga m. a king of the Vaṅgas, VarBṛS. (cf. Pāṇ. iv, 1, 170, | śita=1. śita/ mfn. (for 2. See p. 1071, col. 2) satisfied, regale",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -11519,14 +11519,14 @@
   },
   "රෝගාවස්ථාව": {
     "freq": 1,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "රෝගාවස්ථාව",
         "iast": "rogāvasthāva",
-        "lemma": "roga+avasthāva",
-        "gloss": "roga=ro/ga m. (√ 1. ruj) ‘breaking up of strength’, disease, infi | avasthāva=ava-√ sthā P. -tiṣṭhati (impf. -atiṣṭhat; aor. Subj. -sthāt;",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -11935,40 +11935,40 @@
   },
   "විවිධෝත්ථාන": {
     "freq": 1,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "විවිධෝත්ථාන",
         "iast": "vividhotthāna",
-        "lemma": "vividha+utthāna",
-        "gloss": "vividha=vi—vidha See s.v. | utthāna=ut-thā/na n. the act of standing up or rising, ŚBr.; Suśr.; ",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
   "විවිධාශ්‍රයවේදනා": {
     "freq": 1,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "විවිධාශ්‍රයවේදනා",
         "iast": "vividhāśrayavedanā",
-        "lemma": "vividha+āśraya+vedanā",
-        "gloss": "vividha=vi—vidha See s.v. | āśraya=āśraya &c. See ā-√ śri. | vedanā=vedanā f. pain, torture, agony (also personified as a daught",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
   "ශ්ලේෂ්මාදරය": {
     "freq": 1,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "ශ්ලේෂ්මාදරය",
         "iast": "śleṣmādaraya",
-        "lemma": "śleṣma+ada+raya",
-        "gloss": "śleṣma=śleṣma in comp. for śleṣman. | ada=ada or adaka, mfn. chiefly ifc., eating. | raya=raya m. (√ rī) the stream of a river, current, MBh.; Kāv. &c",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -12169,14 +12169,14 @@
   },
   "සුද්ධකර": {
     "freq": 1,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "සුද්ධකර",
         "iast": "suddhakara",
-        "lemma": "sut+hak+ara",
-        "gloss": "sut=1. sut mfn. (ifc.; for 2. See col. 3) extracting juice, maki | hak=hak ind. (onomat.) the sound hak. | ara=ara mfn. (√ ṛ), swift, speedy, L.",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -12273,14 +12273,14 @@
   },
   "ස්වර්ණවංග": {
     "freq": 1,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "ස්වර්ණවංග",
         "iast": "svarṇavaṃga",
-        "lemma": "svarṇa+vaṅga",
-        "gloss": "svarṇa=svarṇa m. (contracted from su-varṇa) a partic. Agni, Hariv. | vaṅga=vaṅga m. Bengal proper or the eastern parts of the modern pr",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -12377,14 +12377,14 @@
   },
   "භෘංගරාජද්වය": {
     "freq": 1,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "භෘංගරාජද්වය",
         "iast": "bhṛṃgarājadvaya",
-        "lemma": "bhṛṅgarāja+dvaya",
-        "gloss": "bhṛṅgarāja=bhṛṅga—rāja m. ‘bee-king’, a species of large bee, the humbl | dvaya=dvaya/ mf(ī)n. (fr. and in comp. = dvi) twofold, double, of ",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -12494,14 +12494,14 @@
   },
   "පිත්තාධික": {
     "freq": 1,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "පිත්තාධික",
         "iast": "pittādhika",
-        "lemma": "pitta+adhika",
-        "gloss": "pitta=pitta/ n. (etym. unknown) bile, the bilious humour (one of t | adhika=adhika mfn. additional, subsequent, later",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -13014,14 +13014,14 @@
   },
   "කර්කටකශෘංගී": {
     "freq": 1,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "කර්කටකශෘංගී",
         "iast": "karkaṭakaśṛṃgī",
-        "lemma": "karkaṭaka+śṛṅgī",
-        "gloss": "karkaṭaka=karkaṭaka m. a crab, Suśr.; Pañcat. &c. | śṛṅgī=śṛṅgī (ī), f., see s.v.",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -13703,14 +13703,14 @@
   },
   "ද්‍රව්‍යම": {
     "freq": 1,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "ද්‍රව්‍යම",
         "iast": "dravyama",
-        "lemma": "dravi+ama",
-        "gloss": "dravi=dravi/ m. a smelter, one who melts metal, RV. vi, 3, 4. | ama=1. a/ma m. impetuosity, violence, strength, power, RV.; VS.;",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -14223,14 +14223,14 @@
   },
   "ශීර්ෂාභාංග": {
     "freq": 1,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "ශීර්ෂාභාංග",
         "iast": "śīrṣābhāṃga",
-        "lemma": "śīrṣā+bhāṅga",
-        "gloss": "śīrṣā=śīrṣā (ā), f. a kind of metre, Col. | bhāṅga=bhāṅga mf(ī)n. (fr. bhaṅgā) hempen, made or consisting of he",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -14340,14 +14340,14 @@
   },
   "වෘද්ධිගරෝග": {
     "freq": 1,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "වෘද්ධිගරෝග",
         "iast": "vṛddhigaroga",
-        "lemma": "vṛt+dhik+aroga",
-        "gloss": "vṛt=1. vṛ/t (ifc.; for 2. See p. 1009, col. 2) surrounding, encl | dhik=dhik ind., used as a prefix or as an interj. of reproach, me | aroga=a-roga mf(ā)n. free from disease, healthy, well, Mn. &c.",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -14392,14 +14392,14 @@
   },
   "දාහාධික": {
     "freq": 1,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "දාහාධික",
         "iast": "dāhādhika",
-        "lemma": "dāha+adhika",
-        "gloss": "dāha=dāha m. (fr. √ dah) burning, combustion, conflagration, heat | adhika=adhika mfn. additional, subsequent, later",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -14561,27 +14561,27 @@
   },
   "කලායඛඤ්ඡ": {
     "freq": 1,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "කලායඛඤ්ඡ",
         "iast": "kalāyakhañcha",
-        "lemma": "kalāya+kham+cha",
-        "gloss": "kalāya=kalāya m. a sort of pea or pulse, MBh.; Suśr. &c. | kham=kham ind. g. cādi (v.l.) | cha=1. cha the 7th consonant (aspirate of the preceding).",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
   "ශුප්තවාත": {
     "freq": 1,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "ශුප්තවාත",
         "iast": "śuptavāta",
-        "lemma": "śup+tava+āta",
-        "gloss": "śup=śup (in gram.) a technical term for the affix u (the charact | tava=1. ta the 1st dental consonant. | āta=ā/-ta instr. pl. ā/-tais See ā/-tā under ā-√ tan.",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -15159,14 +15159,14 @@
   },
   "ඒකාංගශෝෂ": {
     "freq": 1,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "ඒකාංගශෝෂ",
         "iast": "ekāṃgaśoṣa",
-        "lemma": "ekāṅga+śoṣa",
-        "gloss": "ekāṅga=ekāṅga n. a single member, single part, MBh.; R. &c. | śoṣa=śoṣa &c. See 1. śoṣa, p. 1092, col. 2.",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -15354,14 +15354,14 @@
   },
   "මර්මාශ්‍රිත": {
     "freq": 1,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "මර්මාශ්‍රිත",
         "iast": "marmāśrita",
-        "lemma": "marma+āśrita",
-        "gloss": "marma=marma in comp. for marman. | āśrita=ā-śrita mfn. attaching one's self to, joining",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -15523,14 +15523,14 @@
   },
   "පංචවිධ": {
     "freq": 1,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "පංචවිධ",
         "iast": "paṃcavidha",
-        "lemma": "pañca+vidha",
-        "gloss": "pañca=1. pañca mf(ā)n. spread out, Uttarar. | vidha=1. vidha m. piercing, perforating, L. (for other meanings Se",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -15614,14 +15614,14 @@
   },
   "ක්ෂණේන්ද්‍රිය": {
     "freq": 1,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "ක්ෂණේන්ද්‍රිය",
         "iast": "kṣaṇendriya",
-        "lemma": "kṣaṇa+indriya",
-        "gloss": "kṣaṇa=1. kṣaṇa m. any instantaneous point of time, instant, twinkl | indriya=indriya/ mfn. fit for or belonging to or agreeable to Indra,",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -15731,14 +15731,14 @@
   },
   "සාරංගධරය": {
     "freq": 1,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "සාරංගධරය",
         "iast": "sāraṃgadharaya",
-        "lemma": "sāraṅga+dha+raya",
-        "gloss": "sāraṅga=sāra/ṅga or sāraṅga/ mf(ī)n. (sometimes written śār˚; either | dha=1. dha aspirate of the preceding letter, | raya=raya m. (√ rī) the stream of a river, current, MBh.; Kāv. &c",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -15999,6 +15999,351 @@
         "lemma": null,
         "gloss": null,
         "method": null
+      }
+    ]
+  },
+  "එලකිරි": {
+    "freq": 25,
+    "resolved": true,
+    "words": [
+      {
+        "word": "එලකිරි",
+        "iast": "ĕlakiri",
+        "lemma": "māhiṣa+kṣīra",
+        "gloss": "māhiṣa=māhiṣa mf(ī)n. (fr. mahiṣa, ˚ṣī) coming from or belonging to | kṣīra=kṣīra/ am, n. (fr. √ śyai?; fr. √ kṣar, or √ ghas, Nir. ii, ",
+        "method": "pratinidhi+sandhi",
+        "pratinidhi_sanskrit_si": "මාහිෂක්ෂීර",
+        "pratinidhi_entry_num": 104
+      }
+    ]
+  },
+  "වැල්මී": {
+    "freq": 16,
+    "resolved": true,
+    "words": [
+      {
+        "word": "වැල්මී",
+        "iast": "vælmī",
+        "lemma": "madhuyaṣṭī",
+        "gloss": "madhu—yaṣṭikā or madhu—yaṣṭī, f. liquorice, L.",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "මධුයෂ්ටී",
+        "pratinidhi_entry_num": 102
+      }
+    ]
+  },
+  "කලාඳුරු": {
+    "freq": 15,
+    "resolved": true,
+    "words": [
+      {
+        "word": "කලාඳුරු",
+        "iast": "kalān̆duru",
+        "lemma": "ativiṣā",
+        "gloss": "ati—viṣā f. the plant Aconitum Ferox",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "අතිවිෂා",
+        "pratinidhi_entry_num": 6
+      }
+    ]
+  },
+  "ලෞහ": {
+    "freq": 13,
+    "resolved": true,
+    "words": [
+      {
+        "word": "ලෞහ",
+        "iast": "lauha",
+        "lemma": "suvarṇa",
+        "gloss": "su—varṇa &c. See s.v.",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "සුවර්ණ රෞප්‍ය",
+        "pratinidhi_entry_num": 131
+      }
+    ]
+  },
+  "ගම්මිරිස්": {
+    "freq": 11,
+    "resolved": true,
+    "words": [
+      {
+        "word": "ගම්මිරිස්",
+        "iast": "gammiris",
+        "lemma": "lavaṃga",
+        "gloss": "lavaṃga m. (Uṇ. i, 119) the clove tree",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "ලවංග",
+        "pratinidhi_entry_num": 113
+      }
+    ]
+  },
+  "සුදුදුරු": {
+    "freq": 11,
+    "resolved": true,
+    "words": [
+      {
+        "word": "සුදුදුරු",
+        "iast": "sududuru",
+        "lemma": "jīraka",
+        "gloss": "jīraka m. n. = ˚raṇa, Suśr. i; iv, 5, 35",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "ජීරක",
+        "pratinidhi_entry_num": 54
+      }
+    ]
+  },
+  "නික": {
+    "freq": 9,
+    "resolved": true,
+    "words": [
+      {
+        "word": "නික",
+        "iast": "nika",
+        "lemma": "nirguṇḍī",
+        "gloss": "nirguṇṭī (L.) or nirguṇḍī or nirguṇḍi (Suśr.), f. Vitex Negundo; ˚ṇḍī, f. the root of a lotus, L.",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "නිර්ගුණ්ඩී",
+        "pratinidhi_entry_num": 66
+      }
+    ]
+  },
+  "කොත්තමල්ලි": {
+    "freq": 7,
+    "resolved": true,
+    "words": [
+      {
+        "word": "කොත්තමල්ලි",
+        "iast": "kŏttamalli",
+        "lemma": "dhānya",
+        "gloss": "1. dhānya^ mfn. consisting or made of grain, RV.; AV.",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "ධාන්‍ය",
+        "pratinidhi_entry_num": 63
+      }
+    ]
+  },
+  "එළුකිරි": {
+    "freq": 6,
+    "resolved": true,
+    "words": [
+      {
+        "word": "එළුකිරි",
+        "iast": "ĕl̤ukiri",
+        "lemma": "ajākṣīra",
+        "gloss": "ajā-kṣīra/ n. goat's milk, ŚBr. &c.",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "අජාක්ෂීර",
+        "pratinidhi_entry_num": 5
+      }
+    ]
+  },
+  "රත්නිටුල්": {
+    "freq": 5,
+    "resolved": true,
+    "words": [
+      {
+        "word": "රත්නිටුල්",
+        "iast": "ratniṭul",
+        "lemma": "citraka",
+        "gloss": "citraka m. a painter, L.",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "චිත්‍රක",
+        "pratinidhi_entry_num": 49
+      }
+    ]
+  },
+  "අමුඉඟුරු": {
+    "freq": 4,
+    "resolved": true,
+    "words": [
+      {
+        "word": "අමුඉඟුරු",
+        "iast": "amuin̆guru",
+        "lemma": "ārdraka",
+        "gloss": "ārdraka mf(ikā)n. wet, moist, Bhpr.; VarBṛS.",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "ආර්ද්‍රක",
+        "pratinidhi_entry_num": 14
+      }
+    ]
+  },
+  "සූකිරි": {
+    "freq": 4,
+    "resolved": true,
+    "words": [
+      {
+        "word": "සූකිරි",
+        "iast": "sūkiri",
+        "lemma": "miśrī",
+        "gloss": "miśrī in comp. for miśra.",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "මිශ්‍රී",
+        "pratinidhi_entry_num": 106
+      }
+    ]
+  },
+  "සිවිය": {
+    "freq": 4,
+    "resolved": true,
+    "words": [
+      {
+        "word": "සිවිය",
+        "iast": "siviya",
+        "lemma": "cavikā",
+        "gloss": "cavikā f. id., Suśr. vi, 39, 225; 42, 93.",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "චවිකා",
+        "pratinidhi_entry_num": 50
+      }
+    ]
+  },
+  "මල්": {
+    "freq": 3,
+    "resolved": true,
+    "words": [
+      {
+        "word": "මල්",
+        "iast": "mal",
+        "lemma": "puṣpa",
+        "gloss": "pu/ṣpa n. (for puṣka?) a flower, blossom (ifc. f(ā). , in names of plants oftener f(ī). ; cf. Pāṇ. iv, 1, 64, Vārtt. 1), AV. &c. &c.",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "පුෂ්ප",
+        "pratinidhi_entry_num": 92
+      }
+    ]
+  },
+  "අගිල්": {
+    "freq": 2,
+    "resolved": true,
+    "words": [
+      {
+        "word": "අගිල්",
+        "iast": "agil",
+        "lemma": "agaru",
+        "gloss": "agaru m. n. Agallochum, Amyris Agallocha",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "අගරු",
+        "pratinidhi_entry_num": 2
+      }
+    ]
+  },
+  "ගොටුකොළ": {
+    "freq": 1,
+    "resolved": true,
+    "words": [
+      {
+        "word": "ගොටුකොළ",
+        "iast": "gŏṭukŏl̤a",
+        "lemma": "brāhmī",
+        "gloss": "brāhmī/ (ī), f., see brāhmī",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "බ්‍රාහ්මී",
+        "pratinidhi_entry_num": 96
+      }
+    ]
+  },
+  "ගිරිතිල්ල": {
+    "freq": 1,
+    "resolved": true,
+    "words": [
+      {
+        "word": "ගිරිතිල්ල",
+        "iast": "giritilla",
+        "lemma": "vṛddhadāraka",
+        "gloss": "vṛddha—dāra or vṛddha—dāraka, m., vṛddha—dāru, n. Argyreia Speciosa or Argentea, L.",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "වෘද්ධදාරක",
+        "pratinidhi_entry_num": 122
+      }
+    ]
+  },
+  "කලුදුරු": {
+    "freq": 1,
+    "resolved": true,
+    "words": [
+      {
+        "word": "කලුදුරු",
+        "iast": "kaluduru",
+        "lemma": "kṛṣṇajīra",
+        "gloss": "kṛṣṇa—jīra m. Nigella indica (having a small black seed used for medical and culinary purposes), Bhpr.",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "කෘෂ්ණජීර",
+        "pratinidhi_entry_num": 41
+      }
+    ]
+  },
+  "දෙළුම්": {
+    "freq": 1,
+    "resolved": true,
+    "words": [
+      {
+        "word": "දෙළුම්",
+        "iast": "dĕl̤um",
+        "lemma": "dāḍima",
+        "gloss": "dāḍima mf(ī)n. the pomegranate tree, MBh.; Hariv.; Suśr. (n. also its fruit; ˚māni danś, to bite pomegranates, said of a hard or unwelcome task, Vām. iii, 2, 14)",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "දාඩිම",
+        "pratinidhi_entry_num": 58
+      }
+    ]
+  },
+  "වෛක්‍රාන්ත": {
+    "freq": 1,
+    "resolved": true,
+    "words": [
+      {
+        "word": "වෛක්‍රාන්ත",
+        "iast": "vaikrānta",
+        "lemma": "vajra",
+        "gloss": "va/jra m. n. ‘the hard or mighty one’, a thunderbolt (esp. that of Indra, said to have been formed out of the bones of the Ṛṣi Dadhīca or Dadhīci [q.v.], and shaped like a circular discus, or in later",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "වජ්ර",
+        "pratinidhi_entry_num": 118
+      }
+    ]
+  },
+  "සමන්මල්": {
+    "freq": 1,
+    "resolved": true,
+    "words": [
+      {
+        "word": "සමන්මල්",
+        "iast": "samanmal",
+        "lemma": "jātī+puṣpa",
+        "gloss": "jātī=jātī f. = ˚ti, q.v. | puṣpa=pu/ṣpa n. (for puṣka?) a flower, blossom (ifc. f(ā). , in na",
+        "method": "pratinidhi+sandhi",
+        "pratinidhi_sanskrit_si": "ජාතීපුෂ්ප",
+        "pratinidhi_entry_num": 52
+      }
+    ]
+  },
+  "නාමල්දෙණු": {
+    "freq": 1,
+    "resolved": true,
+    "words": [
+      {
+        "word": "නාමල්දෙණු",
+        "iast": "nāmaldĕṇu",
+        "lemma": "kamala+keśara",
+        "gloss": "kamala=ka/mala mfn. (Comm. on Uṇ. i, 106) pale-red, rose-coloured,  | keśara=keśara &c. See ke/sara.",
+        "method": "pratinidhi+sandhi",
+        "pratinidhi_sanskrit_si": "කමලකේශර",
+        "pratinidhi_entry_num": 23
+      }
+    ]
+  },
+  "ගොකටු": {
+    "freq": 1,
+    "resolved": true,
+    "words": [
+      {
+        "word": "ගොකටු",
+        "iast": "gŏkaṭu",
+        "lemma": "gokṣura",
+        "gloss": "go—kṣura m. = -kaṇṭa, or Tribulus lanuginosus, Suśr.",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "ගෝක්ෂුර",
+        "pratinidhi_entry_num": 46
       }
     ]
   }

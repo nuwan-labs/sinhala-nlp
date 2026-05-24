@@ -178,6 +178,86 @@ def resolve_term(term, use_sandhi):
     return [resolve_word(w, use_sandhi) for w in term.split()]
 
 
+# ── Module C: pratinidhi-table lookup (Tier 1b) ──────────────────────────────
+# Loaded from data/lexicons/pratinidhi_lookup.json (produced by
+# pipeline/extract_pratinidhi.py). Provides a Sinhala↔Sanskrit bridge for
+# tadbhava and vernacular terms that bear no surface Sanskritic signal.
+_PRATINIDHI = None      # dict with keys "by_lhs", "by_rhs", "by_alt", or None
+_PRATINIDHI_PATH = None
+
+
+def load_pratinidhi(path):
+    """Load the pratinidhi lookup table. Returns True if loaded, else False."""
+    global _PRATINIDHI, _PRATINIDHI_PATH
+    import os
+    if not path or not os.path.exists(path):
+        return False
+    raw = json.load(open(path, encoding="utf-8"))
+    by_alt = {}
+    for e in raw.get("entries", []):
+        if e.get("lhs_alt_si"):
+            by_alt[nfc(e["lhs_alt_si"])] = e
+    _PRATINIDHI = {"by_lhs": {nfc(k): v for k, v in raw.get("by_lhs", {}).items()},
+                   "by_rhs": {nfc(k): v for k, v in raw.get("by_rhs", {}).items()},
+                   "by_alt": by_alt}
+    _PRATINIDHI_PATH = path
+    return True
+
+
+def pratinidhi_resolve(term, use_sandhi):
+    """Resolve a Sinhala TERM via the pratinidhi table's *paraphrase* pair.
+
+    The pratinidhi-paribhāṣā lists, for each Sanskrit headword (`lhs_si`),
+    its Sinhala-vernacular equivalent (`lhs_alt_si`) AND a list of
+    substitute substances (`rhs_si`). These are SEMANTICALLY DIFFERENT:
+
+      • `lhs_si ↔ lhs_alt_si` are two names for the SAME substance
+        (e.g. *madhuyaṣṭī* ↔ *vael-mī* = licorice). Legitimate lemma
+        bridge — Module C uses this.
+
+      • `lhs_si → rhs_si` is a SUBSTITUTE relationship: a different
+        substance used in place of `lhs_si` when it is unavailable
+        (*abhāva-pratinidhi*). Using this for lemma resolution would
+        falsely equate two distinct substances; the KG models it
+        separately via the `SUBSTITUTES_FOR` edge.
+
+    Returns a dict like resolve_word's output, or None if nothing matched.
+    """
+    if _PRATINIDHI is None:
+        return None
+    t = nfc(term)
+    entry = _PRATINIDHI["by_alt"].get(t)
+    if not entry:
+        return None
+    sanskrit_si = entry.get("lhs_si") or ""
+    if not sanskrit_si:
+        return None
+    # Resolve the Sanskrit headword via Module B + sandhi.
+    head = sanskrit_si.split()[0]   # for compound headwords use the head word
+    iast = to_iast(head)
+    hit = mw_lookup(iast)
+    if hit:
+        method = "pratinidhi+direct"
+        lemma, gloss = hit
+    elif use_sandhi:
+        sp = sandhi_lookup(iast)
+        if not sp:
+            return None
+        method = "pratinidhi+sandhi"
+        lemma = "+".join(s for s, _ in sp)
+        gloss = " | ".join(f"{s}={g[1][:60]}" for s, g in sp)
+    else:
+        return None
+    return {
+        "iast":   iast,
+        "lemma":  lemma,
+        "gloss":  gloss,
+        "method": method,
+        "pratinidhi_sanskrit_si": sanskrit_si,
+        "pratinidhi_entry_num":   entry.get("num"),
+    }
+
+
 # ── botanical Latin extraction (R3 seed) ──────────────────────────────────────
 _LATIN = re.compile(r"\b([A-Z][a-zæëïöü]{2,})\s+([A-Za-z][a-zæëïöü]{2,})\b")
 _LATIN_STOP = {"The", "This", "That", "See", "Name", "Comp", "Often", "Bombay",
@@ -214,6 +294,25 @@ def load_terms(field):
     return {"ingredients": ing, "names": name, "prose": prose}[field]
 
 
+def _annotate_pratinidhi(term, recs, use_sandhi):
+    """If a multi-word term failed Module B for all words, try resolving the
+    WHOLE term against the pratinidhi table and propagate the hit to every
+    word record. Returns True iff anything changed."""
+    if all(r["method"] for r in recs):
+        return False
+    prat = pratinidhi_resolve(term, use_sandhi)
+    if not prat:
+        return False
+    for r in recs:
+        if r["method"] is None:
+            r["method"] = prat["method"]
+            r["lemma"]  = prat["lemma"]
+            r["gloss"]  = prat["gloss"]
+            r["pratinidhi_sanskrit_si"] = prat["pratinidhi_sanskrit_si"]
+            r["pratinidhi_entry_num"]   = prat["pratinidhi_entry_num"]
+    return True
+
+
 def process_field(field, terms, use_sandhi, limit):
     buckets = {"tatsama": [], "other": [], "artefact": []}
     for t in terms:
@@ -222,27 +321,54 @@ def process_field(field, terms, use_sandhi, limit):
     if limit:
         targets = targets[:limit]
 
+    pratinidhi_active = _PRATINIDHI is not None
+
     lexicon = {}
-    n_direct = n_sandhi = 0
+    n_direct = n_sandhi = n_pratinidhi = 0
+    # Tatsama path: full Module B + optional pratinidhi annotation as last
+    # resort for terms that Module B couldn't resolve.
     for t in targets:
         recs = resolve_term(t, use_sandhi)
+        if pratinidhi_active:
+            _annotate_pratinidhi(t, recs, use_sandhi)
         methods = {r["method"] for r in recs if r["method"]}
         any_hit = bool(methods)
-        if any_hit and "sandhi" in methods and "direct" not in methods:
+        if any_hit and any(m.startswith("pratinidhi") for m in methods):
+            n_pratinidhi += 1
+        elif any_hit and "sandhi" in methods and "direct" not in methods:
             n_sandhi += 1
         elif any_hit:
             n_direct += 1
         lexicon[t] = {"freq": terms[t], "resolved": any_hit, "words": recs}
 
+    # "Other" bucket: tadbhava / vernacular terms with no Sanskritic signal.
+    # The only viable resolution path for these is the pratinidhi table.
+    n_other_resolved = 0
+    if pratinidhi_active:
+        other_terms = sorted(buckets["other"], key=lambda t: -terms[t])
+        if limit:
+            other_terms = other_terms[:limit]
+        for t in other_terms:
+            # Synthesise per-word records so the output schema matches.
+            recs = [{"word": w, "iast": to_iast(w), "lemma": None,
+                     "gloss": None, "method": None}
+                    for w in t.split()]
+            if _annotate_pratinidhi(t, recs, use_sandhi):
+                n_other_resolved += 1
+                lexicon[t] = {"freq": terms[t], "resolved": True, "words": recs}
+
     total = len(terms)
-    resolved = n_direct + n_sandhi
+    resolved = n_direct + n_sandhi + n_pratinidhi
     print(f"\n=== {field} ===")
     print(f"  unique types: {total}  |  tatsama {len(buckets['tatsama'])} "
           f"({100*len(buckets['tatsama'])/max(total,1):.1f}%)  "
           f"other {len(buckets['other'])}  artefact {len(buckets['artefact'])}")
     print(f"  Module B resolved {resolved}/{len(targets)} "
           f"({100*resolved/max(len(targets),1):.0f}%)  "
-          f"[direct {n_direct}  +sandhi-recovered {n_sandhi}]")
+          f"[direct {n_direct}  +sandhi {n_sandhi}  +pratinidhi {n_pratinidhi}]")
+    if pratinidhi_active:
+        print(f"  pratinidhi rescue of 'other' bucket: "
+              f"{n_other_resolved}/{len(buckets['other'])}")
     out = f"{field}_lexicon.json"
     json.dump(lexicon, open(out, "w", encoding="utf-8"),
               ensure_ascii=False, indent=2)
@@ -455,14 +581,36 @@ def main():
     ap.add_argument("--parser-mem-cap", type=int, default=1500,
                     help="per-worker RLIMIT_AS in MiB")
     ap.add_argument("--cdsl-dir", default=".cdsl_data")
+    ap.add_argument("--pratinidhi", default=None,
+                    help="path to pratinidhi_lookup.json "
+                         "(default: ../data/lexicons/pratinidhi_lookup.json "
+                         "if running from data/structured/)")
     args = ap.parse_args()
 
     fields = ["ingredients", "names", "prose"] if args.field == "all" else [args.field]
     have_b, have_sandhi = load_backends(args.cdsl_dir, not args.no_sandhi)
     if not have_b:
         sys.exit("Module B unavailable; install aksharamukha + pycdsl.")
+
+    # Module C — pratinidhi-table lookup. Default lookup path is the repo's
+    # `data/lexicons/pratinidhi_lookup.json`, resolved from the script
+    # location (resolvers/ is one level inside the repo).
+    import os
+    prat_path = args.pratinidhi
+    if prat_path is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        prat_path = os.path.normpath(
+            os.path.join(here, "..", "data", "lexicons",
+                         "pratinidhi_lookup.json"))
+    have_prat = load_pratinidhi(prat_path)
+
+    prat_msg = (f"ON ({os.path.basename(prat_path)}, "
+                f"{len(_PRATINIDHI['by_alt'])} sinhala paraphrases, "
+                f"{len(_PRATINIDHI['by_rhs'])} substitutes)"
+                if have_prat else "OFF")
     print(f"sandhi fallback (dict): {'ON' if have_sandhi else 'OFF'}   "
-          f"parser recovery: {'ON' if args.with_parser else 'OFF'}")
+          f"parser recovery: {'ON' if args.with_parser else 'OFF'}   "
+          f"pratinidhi (Module C): {prat_msg}")
 
     lexicons = {}
     for fld in fields:

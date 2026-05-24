@@ -10,8 +10,9 @@
 # Every node (any type) must carry an extractor_version and a created_at.
 nl:NodeProvenanceShape
     a sh:NodeShape ;
-    sh:targetClass nl:Formulation, nl:Plant, nl:Mineral, nl:Disease,
-                   nl:PreparationType, nl:Route, nl:PharmacologicalProperty ;
+    sh:targetClass nl:Formulation, nl:Plant, nl:Mineral, nl:AnimalOrigin,
+                   nl:Disease, nl:PreparationType, nl:Route,
+                   nl:PharmacologicalProperty ;
     sh:property [
         sh:path nl:extractor_version ;
         sh:minCount 1 ;
@@ -62,6 +63,17 @@ nl:PlantShape
         [ sh:property [ sh:path nl:canonical_si   ; sh:minCount 1 ] ]
     ) ;
     sh:message "Plant must have at least canonical_iast (resolved) or canonical_si (unresolved)." .
+
+# ─── AnimalOrigin (resolved or unresolved) ────────────────────────────────
+# Same identity rule as Plant: at least one of canonical_iast or canonical_si.
+nl:AnimalOriginShape
+    a sh:NodeShape ;
+    sh:targetClass nl:AnimalOrigin ;
+    sh:or (
+        [ sh:property [ sh:path nl:canonical_iast ; sh:minCount 1 ] ]
+        [ sh:property [ sh:path nl:canonical_si   ; sh:minCount 1 ] ]
+    ) ;
+    sh:message "AnimalOrigin must have at least canonical_iast (resolved) or canonical_si (unresolved)." .
 
 # ─── PreparationType (closed enum) ─────────────────────────────────────────
 nl:PreparationTypeShape

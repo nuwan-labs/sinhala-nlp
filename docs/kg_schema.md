@@ -1,8 +1,13 @@
-# Knowledge Graph Schema — v1
+# Knowledge Graph Schema — v1.1
 
 > **Status:** design document. Defines the target graph model for the
 > project. Implementation in `enrichers/` (external-ID binding) and the
-> not-yet-built KG-builder is constrained by this schema.
+> KG-builder (`knowledge_graph/build.py`) is constrained by this schema.
+>
+> **v1.1** (2026-05-24) added the `AnimalOrigin` node type to accommodate
+> the `ජාන්තව ද්‍රව්‍ය` (animal-origin substances) category enumerated in
+> the Sri Lankan Ayurvedic Pharmacopoeia (pp. 452–453). Backward-compatible
+> minor bump.
 
 ---
 
@@ -110,7 +115,7 @@ this principle in §9.
 
 ## 4. Node types
 
-**10 node types.** Internal IDs use a colon-separated namespace; the
+**11 node types.** Internal IDs use a colon-separated namespace; the
 prefix is the type slug.
 
 | # | Type | Internal ID format | Required external IDs | Optional external IDs |
@@ -119,12 +124,27 @@ prefix is the type slug.
 | 2 | **PlantPart** | `part:<part>` (e.g. `part:root`, `part:fruit`, `part:bark`) | — (closed enum, ~15 parts) | PO (Plant Ontology) ID |
 | 3 | **Phytochemical** | `chem:<inchikey>` | PubChem CID | ChEBI ID, CAS RN |
 | 4 | **Mineral** | `min:<canonical_iast>` (e.g. `min:saindhava_lavaṇa`) | — | ChEBI ID, PubChem CID |
-| 5 | **Formulation** | `formula:<source>/<entry_no>` (e.g. `formula:vol1/44`) | source citation (book + page) | AyurKOSH ID, GRAYU formulation ID |
-| 6 | **PreparationType** | `prep:<sanskrit>` (e.g. `prep:taila`, `prep:kaṣāya`, `prep:bhasma`) | — (closed enum, ~15 types) | NAMASTE Portal code |
-| 7 | **Route** | `route:<sanskrit>` (e.g. `route:anuvāsana`, `route:oral`, `route:nasya`) | — (closed enum, ~10 routes) | — |
-| 8 | **Disease** | `disease:<canonical_iast>` (e.g. `disease:udāvarta`) | **ICD-11 TM2 code** | MONDO, DOID, MeSH C-tree |
-| 9 | **Symptom** | `symptom:<canonical_iast>` | — | SNOMED CT, UMLS CUI |
-| 10 | **PharmacologicalProperty** | `prop:<axis>:<value>` (e.g. `prop:rasa:madhura`, `prop:vīrya:śīta`) | — (closed enum) | NAMASTE Portal code |
+| 5 | **AnimalOrigin** | `animal:<canonical_iast_or_si>` (e.g. `animal:madhu`, `animal:_si_ඇත්කිරි`) | — | NCBI Taxonomy ID (of the producing species), FoodOn ID |
+| 6 | **Formulation** | `formula:<source>/<entry_no>` (e.g. `formula:vol1/44`) | source citation (book + page) | AyurKOSH ID, GRAYU formulation ID |
+| 7 | **PreparationType** | `prep:<sanskrit>` (e.g. `prep:taila`, `prep:kaṣāya`, `prep:bhasma`) | — (closed enum, ~15 types) | NAMASTE Portal code |
+| 8 | **Route** | `route:<sanskrit>` (e.g. `route:anuvāsana`, `route:oral`, `route:nasya`) | — (closed enum, ~10 routes) | — |
+| 9 | **Disease** | `disease:<canonical_iast>` (e.g. `disease:udāvarta`) | **ICD-11 TM2 code** | MONDO, DOID, MeSH C-tree |
+| 10 | **Symptom** | `symptom:<canonical_iast>` | — | SNOMED CT, UMLS CUI |
+| 11 | **PharmacologicalProperty** | `prop:<axis>:<value>` (e.g. `prop:rasa:madhura`, `prop:vīrya:śīta`) | — (closed enum) | NAMASTE Portal code |
+
+### Note on `AnimalOrigin`
+
+Classical Ayurvedic *dravya* (substances) divide into three origins:
+*udbhida* (vegetable), *pārthiva* (earthly / mineral), and *jāntava*
+(animal-born). The Sri Lankan Ayurvedic Pharmacopoeia enumerates the
+*jāntava* category on pp. 452–453: ~42 substances including the eight
+classical *kṣīra* (milks), *madhu* (honey), *ghṛta* (ghee), *gomūtra*
+(urines), *śaṅkha* (conch), *muktā* (pearl), *mr̥ga-śṛṅga* (deer antell),
+and so on. Some of these (e.g. *ghṛta*, *madhu*) also act as vehicles
+(`DOSED_WITH`), so an `AnimalOrigin` may be linked from `DOSED_WITH`
+as well as `CONTAINS`. The closed-set authority is
+`data/lexicons/materia_medica.json` (produced by
+`pipeline/extract_materia_medica.py`).
 
 ### Node property reference
 
@@ -151,6 +171,10 @@ provenance:       <see §6>
 - `Phytochemical` adds: `iupac_name`, `molecular_formula`, `molecular_weight`.
 - `Mineral` adds: `chemical_formula`, `processing_state` (`raw` /
   `śodhita` / `bhasma`).
+- `AnimalOrigin` adds: `producing_species_si` (Sinhala name of the
+  animal), `producing_species_iast` (IAST), `processing_state`
+  (`raw` / `fermented` / `purified`), `also_acts_as_vehicle` (bool —
+  true for *madhu*, *ghṛta*, the *kṣīras*).
 - `Formulation` adds: `name_sa`, `name_si`, `source_register`
   (`tabular`, `verse`, `prose`).
 - `Disease` adds: `english_rubric` (the ICD-11 English title),
@@ -167,13 +191,13 @@ provenance:       <see §6>
 
 | # | Edge | Domain → Range | Edge properties |
 |---|---|---|---|
-| 1 | `CONTAINS` | Formulation → Plant ∨ Mineral | `parts:int`, `quantity_text:str`, `quantity_unit:enum`, `is_substitute:bool` |
+| 1 | `CONTAINS` | Formulation → Plant ∨ Mineral ∨ AnimalOrigin | `parts:int`, `quantity_text:str`, `quantity_unit:enum`, `is_substitute:bool` |
 | 2 | `USES_PART` | Formulation → PlantPart (composed with a Plant) | — |
 | 3 | `CONSISTS_OF` | Plant → Phytochemical | `concentration:float?`, `evidence_source:str` |
 | 4 | `IS_TYPE` | Formulation → PreparationType | — |
 | 5 | `PREPARED_BY` | Formulation → Formulation | `step_order:int` (a formula may be prepared *from* another formula, e.g. a kalka used inside a taila) |
 | 6 | `ADMINISTERED_AS` | Formulation → Route | — |
-| 7 | `DOSED_WITH` | Formulation → Plant ∨ Vehicle | `disjunctive:bool` (true if "A or B"; false if "A and B") |
+| 7 | `DOSED_WITH` | Formulation → Plant ∨ Mineral ∨ AnimalOrigin | `disjunctive:bool` (true if "A or B"; false if "A and B") |
 | 8 | `TREATS` | Formulation → Disease | `evidence_level:enum` (`canonical_text` / `inferred` / `clinical_trial`), `efficacy_score:float?` |
 | 9 | `HAS_SYMPTOM` | Disease → Symptom | — |
 | 10 | `RELIEVES` | Formulation → Symptom | — |
@@ -429,7 +453,23 @@ rules:
 3. **Property changes** (adding optional properties) are minor;
    removing or changing semantics of an existing property is major.
 4. The current schema version is recorded in every emitted JSON-LD
-   document as `"schema_version": "1.0"`.
+   document as `"schema_version": "1.1"`.
+
+### v1.0 → v1.1 changelog
+
+- **Added** `AnimalOrigin` node type (#5 in the node table), covering
+  the *jāntava* substance class enumerated on pp. 452–453 of the source
+  pharmacopoeia. ~42 substances.
+- **Widened** `CONTAINS` range from {Plant, Mineral} to
+  {Plant, Mineral, AnimalOrigin}.
+- **Widened** `DOSED_WITH` range from {Plant, Vehicle} to
+  {Plant, Mineral, AnimalOrigin}. Honey, ghee, and milks (the most
+  common Ayurvedic vehicles) are now stored as `AnimalOrigin` nodes
+  rather than synthetic `vehicle:*` Plant nodes; the
+  `also_acts_as_vehicle` property flags this dual role.
+- **Source authority**: `data/lexicons/materia_medica.json`, produced
+  by `pipeline/extract_materia_medica.py` from pp. 444–453 of the
+  source. Existing v1.0 graphs migrate by re-running the KG builder.
 
 ---
 

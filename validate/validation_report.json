@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-05-24T06:27:06+00:00",
-  "schema_version": "v1",
+  "generated_at": "2026-05-24T11:21:29+00:00",
+  "schema_version": "v1.1",
   "kg_size": {
-    "nodes": 3642,
-    "edges": 12163
+    "nodes": 4089,
+    "edges": 12754
   },
   "layer1": {
     "shacl": {
       "conforms": true,
       "violation_count": 0,
       "report_text_summary": "Validation Report\nConforms: True\n",
-      "data_triples": 33000
+      "data_triples": 37181
     },
     "anchors": {
       "per_check": {
@@ -128,9 +128,9 @@
       "pct": 81.2
     },
     "prov": {
-      "nodes_total": 3642,
+      "nodes_total": 4089,
       "nodes_with_missing_provenance": 0,
-      "edges_total": 12163,
+      "edges_total": 12754,
       "edges_with_missing_provenance": 0,
       "ids_failing_format": 0,
       "sample_bad_node_ids": [],
@@ -143,6 +143,8 @@
         "DOSED_WITH": 215,
         "TREATS": 562,
         "IS_TYPE": 179,
+        "HAS_PROPERTY": 436,
+        "SUBSTITUTES_FOR": 155,
         "CO_OCCURS": 200
       },
       "failures_by_edge_type": {},
@@ -186,7 +188,7 @@
     }
   },
   "layer3": {
-    "sample_size": 95,
+    "sample_size": 96,
     "out_path": "/home/nuwan/Documents/penbackup/D/Pipeline/sinhala-traditional-medicine-nlp/validate/expert_sample.tsv"
   }
 }

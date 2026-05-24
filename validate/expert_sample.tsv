@@ -1,96 +1,97 @@
 kind	type	id	display_a	display_b	correct	notes
-node	PreparationType	prep:cūrṇa	cūrṇa			
-node	PreparationType	prep:ghṛta	ghṛta			
-node	PreparationType	prep:bhasma	bhasma			
-node	PreparationType	prep:ariṣṭa	ariṣṭa			
-node	PreparationType	prep:kvātha	kvātha			
-node	PreparationType	prep:kaṣāya	kaṣāya			
-node	PreparationType	prep:kalka	kalka			
 node	PreparationType	prep:gulika	gulika			
-node	Route	route:anuvāsana	anuvāsana			
-node	Route	route:basti	basti			
-node	Route	route:oral	oral			
+node	PreparationType	prep:kvātha	kvātha			
+node	PreparationType	prep:ariṣṭa	ariṣṭa			
+node	PreparationType	prep:bhasma	bhasma			
+node	PreparationType	prep:taila	taila			
+node	PreparationType	prep:kaṣāya	kaṣāya			
 node	Route	route:nasya	nasya			
+node	Route	route:oral	oral			
+node	Route	route:basti	basti			
 node	Route	route:abhyaṅga	abhyaṅga			
-node	Plant	plant:_si_පුලිල_දළු	පුලිල දළු			
-node	Plant	plant:_si_වානේ	වානේ			
-node	Plant	plant:_si_දසමුල	දසමුල			
-node	Plant	plant:_si_රන්නෙටොල්_මුල්_චූර්ණය	රන්නෙටොල් මුල් චූර්ණය			
-node	Plant	plant:_si_අංකෙන්ද_කොළ_යුෂ	අංකෙන්ද කොළ යුෂ			
-node	Plant	plant:_si_ගුගුල්_ගත_යුතු_වන්නේ_ය_.	ගුගුල් ගත යුතු වන්නේ ය .			
-node	Plant	plant:_si_සියල්ල_බරට_ගුඩ_.	සියල්ල බරට ගුඩ .			
-node	Plant	plant:vaidya	vaidya	vaidya mfn. (fr. vidyā, and in some meanings fr. veda) versed in science, learne		
+node	Route	route:anuvāsana	anuvāsana			
+node	AnimalOrigin	animal:_si_ගිතෙල්	ගිතෙල්			
+node	AnimalOrigin	animal:_si_එළුකිරි	එළුකිරි			
+node	AnimalOrigin	animal:_si_එළුමස්	එළුමස්			
+node	AnimalOrigin	vehicle:kṣīra	kṣīra			
+node	AnimalOrigin	vehicle:ghṛta	ghṛta			
+node	AnimalOrigin	animal:_si_තනකිරි	තනකිරි			
+node	Plant	plant:_si_මහදද_කීරිය_මුල්	මහදද කීරිය මුල්			
+node	Plant	plant:_si_දලුක්_මුල්	දලුක් මුල්			
+node	Plant	plant:_si_වියලිමිදි	වියලිමිදි			
+node	Plant	plant:_si_නෙල්ලි_උක්හකුරු	නෙල්ලි උක්හකුරු			
+node	Plant	plant:_si_වැටක්_අරළු_යුෂ	වැටක් අරළු යුෂ			
+node	Plant	plant:_si_යවකාරලුණු	යවකාරලුණු			
+node	Disease	disease:kāsa	kāsa	Cough disorder (TM2)		
+node	Disease	disease:aśmarī	aśmarī	Urinary stone disorder (TM2)		
 node	Disease	disease:yakṣma	yakṣma	Consumptive disorder (TM2)		
 node	Disease	disease:kukṣiśūla	kukṣiśūla	Renal colic disorder (TM2)		
 node	Disease	disease:pratiśyā	pratiśyā	Rhinitis disorder (TM2)		
 node	Disease	disease:pravāhikā	pravāhikā	Dysentery disorder (TM2)		
-node	Disease	disease:galavidradhi	galavidradhi	Abscess disorder (TM2)		
-node	Disease	disease:udāvarta	udāvarta	Volvulus disorder (TM2)		
-node	Disease	disease:abhinyāsa	abhinyāsa	Enteric fever disorder (TM2)		
-node	Disease	disease:vidradhi	vidradhi	Abscess disorder (TM2)		
+node	Formulation	formula:yogamalawa/207				
+node	Formulation	formula:yogamalawa/93				
+node	Formulation	formula:yogamalawa/178				
+node	Formulation	formula:301-to-350/45				
 node	Formulation	formula:401-to-450/88				
 node	Formulation	formula:201-to-250/94				
-node	Formulation	formula:yogamalawa/190				
-node	Formulation	formula:351-to-400/29				
-node	Formulation	formula:301-to-350/75				
-node	Formulation	formula:yogamalawa/160				
-node	Formulation	formula:201-to-250/62				
-node	Formulation	formula:301-to-350/48				
-node	Mineral	min:lavaṇa	lavaṇa	lavaṇa/ mf(ā)n. (derivation doubtful) saline, salt, briny, brinish, ŚBr. &c. &c.		
+node	Mineral	min:kāntalauha	kāntalauha	kānta—lauha n. cast-iron (cf. loha-kānta), L.		
+node	Mineral	min:_si_බළල්_ලුණු	බළල් ලුණු			
+node	Mineral	min:abhra+bhasma	abhra+bhasma	abhra=abhra/ n. (sometimes spelt abbhra, according to the derivati | bhasma=bhas		
+node	Mineral	min:_si_තඹ	තඹ			
 node	Mineral	min:gandhaka	gandhaka	gandhaka mf(ikā)n. ifc. ‘having the smell of, scenting’, see aja-, avi-		
-node	Mineral	min:rasa	rasa	ra/sa m. (ifc. f(ā). ) the sap or juice of plants, juice of fruit, any liquid or		
-node	Mineral	min:padmakāṣṭha	padmakāṣṭha	padma—kāṣṭha n. the wood of Cerasus Puddum, L.		
-node	Mineral	min:tāmra	tāmra	tāmra/ mf(ā)n. (√ tam, Uṇ.) of a coppery red colour, VS. xvi (Naigh. iii, 7), MB		
-node	Mineral	min:bhasma	bhasma	bhasma in comp. for bhasman.		
-node	Mineral	min:sarjikṣāra	sarjikṣāra	sarji—kṣāra m. id., L.		
-node	Mineral	min:śilājatu	śilājatu	śilā—jatu n. ‘rock-exudation’, bitumen, MBh.; Suśr. &c.		
+node	Mineral	min:tāmra+bhasma	tāmra+bhasma	tāmra=tāmra/ mf(ā)n. (√ tam, Uṇ.) of a coppery red colour, VS. xvi | bhasma=bhas		
+node	PharmacologicalProperty	prop:karma:අර්ගෝස්න	අර්ගෝස්න			
+node	PharmacologicalProperty	prop:karma:කුෂ්ඨස්න	කුෂ්ඨස්න			
+node	PharmacologicalProperty	prop:karma:වයඃස්ථාපන	වයඃස්ථාපන			
+node	PharmacologicalProperty	prop:karma:ලේඛනීය	ලේඛනීය			
+node	PharmacologicalProperty	prop:karma:ශ්රමහර	ශ්‍රමහර			
+node	PharmacologicalProperty	prop:karma:උදර්ද_ප්රශමන	උදර්ද ප්‍රශමන			
+edge	CONTAINS		formula:251-to-300/12	plant:_si_උණකපුරු		
+edge	CONTAINS		formula:351-to-400/25	plant:_si_තලතෙල්		
+edge	CONTAINS		formula:151-to-200/81	plant:_si_ඉඟුරු		
 edge	CONTAINS		formula:201-to-250/128	plant:_si_කටුවැල්බටු		
-edge	CONTAINS		formula:201-to-250/186	plant:_si_වැල්මී		
+edge	CONTAINS		formula:201-to-250/186	plant:madhuyaṣṭī		
 edge	CONTAINS		formula:201-to-250/29	plant:hapuṣā		
-edge	CONTAINS		formula:151-to-200/29	plant:_si_වැල්මී		
-edge	CONTAINS		formula:201-to-250/108	plant:_si_බෙලි_ගැටමද		
-edge	CONTAINS		formula:401-to-450/62	plant:_si_හෙළකටුකරඬු		
-edge	CONTAINS		formula:301-to-350/25	plant:_si_ලෝඩ්ර		
-edge	CONTAINS		formula:351-to-400/55	plant:_si_මුංවැන්න		
-edge	CONTAINS		formula:251-to-300/6	plant:_si_අමුක්කරා		
-edge	CONTAINS		formula:351-to-400/54	plant:_si_තලතෙල්		
-edge	DOSED_WITH		formula:401-to-450/1	vehicle:kṣīra		
-edge	DOSED_WITH		formula:201-to-250/144	vehicle:madhu		
-edge	DOSED_WITH		formula:201-to-250/130	vehicle:madhu		
-edge	DOSED_WITH		formula:301-to-350/44	vehicle:ghṛta		
-edge	DOSED_WITH		formula:251-to-300/4	vehicle:ghṛta		
-edge	DOSED_WITH		formula:401-to-450/18	vehicle:kṣīra		
-edge	DOSED_WITH		formula:201-to-250/57	vehicle:madhu		
+edge	CONTAINS		formula:151-to-200/29	plant:madhuyaṣṭī		
+edge	DOSED_WITH		formula:151-to-200/11	vehicle:madhu		
+edge	DOSED_WITH		formula:301-to-350/56	vehicle:madhu		
+edge	DOSED_WITH		formula:401-to-450/20	vehicle:kṣīra		
 edge	DOSED_WITH		formula:251-to-300/16	vehicle:kṣīra		
-edge	DOSED_WITH		formula:201-to-250/174	vehicle:madhu		
-edge	DOSED_WITH		formula:201-to-250/2	vehicle:madhu		
-edge	TREATS		formula:401-to-450/74	disease:arśas		
-edge	TREATS		formula:301-to-350/79	disease:chardi		
-edge	TREATS		formula:201-to-250/131	disease:jvara		
-edge	TREATS		formula:301-to-350/50	disease:vidradhi		
-edge	TREATS		formula:201-to-250/11	disease:aśmarī		
-edge	TREATS		formula:401-to-450/62	disease:kapha		
-edge	TREATS		formula:301-to-350/55	disease:jvara		
-edge	TREATS		formula:251-to-300/3	disease:kuṣṭha		
-edge	TREATS		formula:251-to-300/1	disease:arśas		
-edge	TREATS		formula:151-to-200/6	disease:śvāsa		
-edge	IS_TYPE		formula:201-to-250/140	prep:kvātha		
-edge	IS_TYPE		formula:151-to-200/53	prep:kaṣāya		
-edge	IS_TYPE		formula:201-to-250/120	prep:kaṣāya		
-edge	IS_TYPE		formula:201-to-250/186	prep:kvātha		
-edge	IS_TYPE		formula:201-to-250/92	prep:kaṣāya		
-edge	IS_TYPE		formula:201-to-250/169	prep:kvātha		
-edge	IS_TYPE		formula:201-to-250/45	prep:cūrṇa		
-edge	IS_TYPE		formula:151-to-200/11	prep:kaṣāya		
-edge	IS_TYPE		formula:151-to-200/42	prep:kaṣāya		
-edge	IS_TYPE		formula:151-to-200/70	prep:kvātha		
-edge	CO_OCCURS		plant:_si_කුරුඳු_පොතු	plant:_si_සාදික්කා		
-edge	CO_OCCURS		plant:_si_කරාබු	plant:_si_සුදුදුරු		
-edge	CO_OCCURS		plant:_si_කරාබු	plant:_si_තිප්පිලි		
-edge	CO_OCCURS		plant:_si_අසමෝදගම්	plant:_si_වදකහ		
-edge	CO_OCCURS		plant:_si_ඉඟුරු	plant:_si_සුදුලූනු		
-edge	CO_OCCURS		plant:_si_ඉඟුරු	plant:śatapuṣpa		
-edge	CO_OCCURS		plant:_si_තලතෙල්	plant:_si_තිප්පිලි		
-edge	CO_OCCURS		plant:_si_කටුකරෝසන	plant:_si_ගම්මිරිස්		
-edge	CO_OCCURS		plant:_si_ඉඟුරු	plant:_si_දේවදාර		
-edge	CO_OCCURS		plant:_si_ඉඟුරු	plant:_si_ගම්මිරිස්		
+edge	DOSED_WITH		formula:301-to-350/44	vehicle:kṣīra		
+edge	DOSED_WITH		formula:201-to-250/40	vehicle:ghṛta		
+edge	DOSED_WITH		formula:401-to-450/26	vehicle:kṣīra		
+edge	TREATS		formula:401-to-450/20	disease:kuṣṭha		
+edge	TREATS		formula:251-to-300/6	disease:prameha		
+edge	TREATS		formula:401-to-450/16	disease:śvāsa		
+edge	TREATS		formula:251-to-300/17	disease:śotha		
+edge	TREATS		formula:251-to-300/4	disease:mūtrāghāta		
+edge	TREATS		formula:351-to-400/6	disease:jvara		
+edge	TREATS		formula:251-to-300/5	disease:aśmarī		
+edge	IS_TYPE		formula:201-to-250/57	prep:cūrṇa		
+edge	IS_TYPE		formula:351-to-400/11	prep:taila		
+edge	IS_TYPE		formula:401-to-450/97	prep:taila		
+edge	IS_TYPE		formula:401-to-450/76	prep:taila		
+edge	IS_TYPE		formula:201-to-250/179	prep:kvātha		
+edge	IS_TYPE		formula:151-to-200/34	prep:kvātha		
+edge	IS_TYPE		formula:201-to-250/166	prep:kaṣāya		
+edge	HAS_PROPERTY		plant:_si_මදුරුතලා	prop:karma:ශ්වාසහර		
+edge	HAS_PROPERTY		plant:_si__ගොන්_කැකිරි	prop:karma:බලකාරක		
+edge	HAS_PROPERTY		plant:_si_බාලක	prop:karma:තෘෂ්ණානිග්රහණ		
+edge	HAS_PROPERTY		plant:_si_නෙල්ලි	prop:karma:කාසහර		
+edge	HAS_PROPERTY		plant:_si_කටුවැල්බටු	prop:karma:ශෝථහර		
+edge	HAS_PROPERTY		plant:_si__මුද්දරප්පලම්	prop:karma:ස්නේහෝපග		
+edge	HAS_PROPERTY		plant:_si_හාතාවාරිය	prop:karma:වයඃස්ථාපන		
+edge	SUBSTITUTES_FOR		plant:_si_මීකිරි	plant:_si_ගොදුග්ධ		
+edge	SUBSTITUTES_FOR		plant:_si_වෘක්ෂාම්ල	plant:_si_දෙළුම්		
+edge	SUBSTITUTES_FOR		animal:_si_ගෝමූත්ර	plant:_si_එළුමූත්ර		
+edge	SUBSTITUTES_FOR		plant:_si_නෙළුණු	plant:_si_නාගකේශර		
+edge	SUBSTITUTES_FOR		plant:_si_ඇත්දෙමට_පොතු	plant:_si_කඵල		
+edge	SUBSTITUTES_FOR		plant:_si_ලවංග	plant:_si_සමන්මල්		
+edge	SUBSTITUTES_FOR		plant:_si_යාම_සතරක්_අව්වේ_වියලා_ගත්_ගුඩ	plant:_si_පුරාතණ_ගුඩ		
+edge	CO_OCCURS		plant:_si_වදකහ	plant:lavaṃga		
+edge	CO_OCCURS		plant:_si_කටුකරෝසන	plant:dhānya		
+edge	CO_OCCURS		plant:_si_එන්සාල්	plant:_si_කුරුඳු_පොතු		
+edge	CO_OCCURS		plant:_si_තිප්පිලි	plant:madhuyaṣṭī		
+edge	CO_OCCURS		plant:_si_දේවදාර	plant:_si_වදකහ		
+edge	CO_OCCURS		plant:_si_ඉඟුරු	plant:dhānya		
+edge	CO_OCCURS		plant:_si_කුරුඳු_පොතු	plant:kamala+keśara		

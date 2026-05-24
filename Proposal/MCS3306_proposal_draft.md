@@ -297,9 +297,13 @@ The research questions decompose into six concrete objectives.
   pharmacopoeia. Schema alignment for free-prose IE is a logical
   follow-on but is outside the 15-credit envelope.
 * A comprehensive *tadbhava* etymological lexicon (Sorata Thero,
-  Geiger, Jayaweera). Required for full coverage of the resolver's
-  "other" bucket but expert-bound; the resolver routes such terms to
-  an explicit unresolved category rather than guessing.
+  Geiger, Jayaweera). The project now covers ~143 of the highest-
+  frequency tadbhava ingredients via the pharmacopoeia's own
+  *abhāva-pratinidhi-paribhāṣā* (substitute-substance glossary,
+  pp. 77–81) — extracted as `data/lexicons/pratinidhi_lookup.json` and
+  wired into the resolver as Module C. The full tadbhava space
+  (thousands of terms) remains expert-bound; the resolver routes the
+  long tail to an explicit unresolved category rather than guessing.
 * The full clinical-condition taxonomy (R4-Stage B in the project's
   internal roadmap), which requires an Ayurvedic physician + a
   biomedical professional on the design team.

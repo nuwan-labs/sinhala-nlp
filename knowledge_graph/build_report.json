@@ -1,39 +1,86 @@
 {
-  "schema_version": "1.0",
-  "extractor_version": "kg_build_v1",
-  "built_at": "2026-05-24T06:06:34+00:00",
+  "schema_version": "1.1",
+  "extractor_version": "kg_build_v1.2",
+  "built_at": "2026-05-24T11:20:23+00:00",
   "nodes": {
-    "total": 3642,
+    "total": 4089,
     "by_type": {
       "PreparationType": 10,
       "Route": 5,
-      "Plant": 2926,
+      "AnimalOrigin": 19,
+      "Plant": 3277,
       "Disease": 49,
       "Formulation": 628,
-      "Mineral": 24
+      "Mineral": 51,
+      "PharmacologicalProperty": 50
     }
   },
   "edges": {
-    "total": 12163,
+    "total": 12754,
     "by_type": {
       "CONTAINS": 11007,
       "DOSED_WITH": 215,
       "TREATS": 562,
       "IS_TYPE": 179,
+      "HAS_PROPERTY": 436,
+      "SUBSTITUTES_FOR": 155,
       "CO_OCCURS": 200
     }
   },
   "plant_resolution": {
-    "Plant_resolved_to_sanskrit": 297,
-    "Plant_unresolved_sinhala_only": 2629,
-    "Plant_total": 2926,
+    "Plant_resolved_to_sanskrit": 301,
+    "Plant_unresolved_sinhala_only": 2976,
+    "Plant_total": 3277,
     "note": "Unresolved plant nodes are Sinhala surface forms that the resolver did not map to a Sanskrit lemma — typically tadbhava or vernacular terms awaiting R3/R4 lexicons."
   },
   "external_id_coverage": {
-    "Plant_with_POWO_LSID": 33,
-    "Plant_with_latin_name": 33,
-    "Plant_with_POWO_pct_of_resolved": 11.1,
+    "Plant_with_POWO_LSID": 35,
+    "Plant_with_latin_name": 35,
+    "Plant_with_POWO_pct_of_resolved": 11.6,
     "Disease_with_ICD11_TM2": 47,
     "Disease_total": 49
+  },
+  "materia_medica_authority": {
+    "ingredients_confirmed": 3851,
+    "ingredients_overridden": {
+      "mm_override:Plant→AnimalOrigin": 112,
+      "mm_override:Plant→Mineral": 97,
+      "mm_override:Mineral→Plant": 21
+    },
+    "unresolved_classified_by_mm": 200,
+    "nodes_tagged_with_mm_authority": 411,
+    "note": "Counts ingredient surface-forms where the Sri Lankan Ayurvedic Pharmacopoeia's categorised raw-materials list (pp. 444–453) confirmed or corrected the resolver's Plant/Mineral assignment, including new AnimalOrigin classifications."
+  },
+  "mahakashaya_coverage": {
+    "PharmacologicalProperty_nodes": 50,
+    "HAS_PROPERTY_edges": 436,
+    "substances_already_in_kg": 252,
+    "substances_introduced_new": 184,
+    "note": "Caraka's 50 mahā-kaṣāya substance groups from pp. 82–90 of the source. Each gana → one PharmacologicalProperty (axis=karma); each listed substance → one HAS_PROPERTY edge."
+  },
+  "pratinidhi_substitutes": {
+    "SUBSTITUTES_FOR_edges": 155,
+    "new_substitute_nodes_added": 226,
+    "note": "Abhāva-pratinidhi substitute relationships from pp. 77–81 of the source. The substitute substance (rhs_si) is a DIFFERENT substance from the source (lhs_si) — use it only when the source is unavailable. Modelled in the KG as SUBSTITUTES_FOR edges, NOT as a same-meaning alias."
+  },
+  "dosage_normalisation": {
+    "total_CONTAINS": 11007,
+    "with_grams": 5375,
+    "pct_with_grams": 48.8,
+    "by_source": {
+      "none": 5632,
+      "dosage_normaliser": 1426,
+      "structured_metric": 3949
+    },
+    "by_unit_top": {
+      "gram": 5375,
+      "parts": 4785,
+      "text_only": 434,
+      "bhāga": 300,
+      "patha": 87,
+      "bo": 25,
+      "pala": 1
+    },
+    "note": "CONTAINS edges with their dosage parsed into grams. Sources: structured_metric (the original Stage-3 OCR extracted ග්‍රෑ/ලී directly); dosage_normaliser (grams derived via knowledge_graph/dosage.py from the raw quantity text, using the Sri Lankan unit system by default)."
   }
 }

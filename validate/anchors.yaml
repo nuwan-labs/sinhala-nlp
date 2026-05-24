@@ -70,7 +70,7 @@ required_edge_provenance:
 edge_domain_range:
   CONTAINS:
     from: ["Formulation"]
-    to:   ["Plant", "Mineral"]
+    to:   ["Plant", "Mineral", "AnimalOrigin"]
   IS_TYPE:
     from: ["Formulation"]
     to:   ["PreparationType"]
@@ -79,10 +79,10 @@ edge_domain_range:
     to:   ["Disease"]
   DOSED_WITH:
     from: ["Formulation"]
-    to:   ["Plant", "Mineral"]   # vehicles are stored as Plant nodes
+    to:   ["Plant", "Mineral", "AnimalOrigin"]   # AnimalOrigin holds the classical vehicles (madhu, ghṛta, kṣīra)
   CO_OCCURS:
-    from: ["Plant", "Mineral"]
-    to:   ["Plant", "Mineral"]
+    from: ["Plant", "Mineral", "AnimalOrigin"]
+    to:   ["Plant", "Mineral", "AnimalOrigin"]
 
 # ─── Cardinality sanity ───
 cardinality:

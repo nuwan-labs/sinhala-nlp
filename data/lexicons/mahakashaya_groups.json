@@ -1,0 +1,4001 @@
+{
+  "metadata": {
+    "extractor_version": "mahakashaya_v1",
+    "built_at": "2026-05-24T10:40:36+00:00",
+    "source_doc": "Sri Lankan Ayurvedic Pharmacopoeia, Vol I",
+    "source_pages": [
+      82,
+      90
+    ],
+    "section_name_si": "පඤ්චාශන්මහාකෂාය ද්‍රව්‍ය ගණය",
+    "section_name_iast": "pañcāśanmahākaṣāya-dravya-gaṇa",
+    "n_vargas": 10,
+    "n_ganas": 50,
+    "n_substance_mentions": 436,
+    "n_unique_substances": 279
+  },
+  "vargas": [
+    {
+      "varga_num": 1,
+      "varga_name_si": "ප්‍රථම",
+      "varga_name_iast": "prathama",
+      "ganas": [
+        {
+          "gana_num": 1,
+          "gana_name_si": "ජීවණීය",
+          "substances": [
+            " ජීවක",
+            "සෘෂභක",
+            "මේදා",
+            "මහාමේදා",
+            "කවෙලු",
+            "කිරිකවෙලු",
+            "මුංවැන්න",
+            "මස්වැන්න",
+            "ජීවන්නී",
+            "වැල්මී "
+          ]
+        },
+        {
+          "gana_num": 2,
+          "gana_name_si": "වෘහණීය",
+          "substances": [
+            " ක්ෂීරිණී",
+            "රාජක්ෂවක",
+            "බැබිල",
+            "කවෙලු",
+            "කිරි කවෙලු",
+            "සුදු බැබිල",
+            "කහ බැබිල",
+            "වන කපු",
+            "සුදු කිරිබදු",
+            " වෘධදාරක"
+          ]
+        },
+        {
+          "gana_num": 3,
+          "gana_name_si": "ලේඛනීය",
+          "substances": [
+            " කලාඳුරු",
+            "සුවඳ කොට්ට",
+            "කහ",
+            "දාරුහරිද්‍රා",
+            "වදකහ",
+            "අතිවිඩයම්",
+            "කුළුරෑණ",
+            "රත්නෙටුල්",
+            "කරඳ",
+            "සුදු වදකහ"
+          ]
+        },
+        {
+          "gana_num": 4,
+          "gana_name_si": "භේදනීය",
+          "substances": [
+            " තිරස්සවාලු",
+            "වරා",
+            "එරඩු",
+            "භල්ලාතක",
+            "දැත්ත",
+            "රත්නෙටුල්",
+            "කරඳ",
+            "ශඞඛිණී",
+            "කුළුරෑණ",
+            "රන්කිරි ගොකටු"
+          ]
+        },
+        {
+          "gana_num": 5,
+          "gana_name_si": "සන්ධානීය",
+          "substances": [
+            " වැල්මී",
+            "රසකිඳ",
+            "පෘශ්ණපර්ණි",
+            "දියමිත්ත",
+            "නිදිකුම්බා",
+            "ඉඹුල් මැලියම්",
+            "මලිතමල්",
+            "ලොත්",
+            "පුවඟු",
+            " කඵල"
+          ]
+        },
+        {
+          "gana_num": 6,
+          "gana_name_si": "අග්නිදීපක",
+          "substances": [
+            " තිප්පිලි",
+            "තිප්පිලි මුල්",
+            "සිවිය",
+            "රත්නෙටුල්",
+            "ඉඟුරු",
+            "අම්ලවෙතස",
+            "ගම්මිරිස්",
+            "අසමෝදගම්",
+            "භල්ලාතක ඇට (ශුද්ධ). පෙරුම්කායම්"
+          ]
+        }
+      ]
+    },
+    {
+      "varga_num": 2,
+      "varga_name_si": "ද්විතීය",
+      "varga_name_iast": "dvitīya",
+      "ganas": [
+        {
+          "gana_num": 1,
+          "gana_name_si": "බලකාරක",
+          "substances": [
+            " ගොන් කැකිරි",
+            "වඳුරුමෑ ඇට",
+            "හාතාවාරිය",
+            "මස්වැන්ත"
+          ]
+        },
+        {
+          "gana_num": 2,
+          "gana_name_si": "වර්ණකාරක",
+          "substances": [
+            " රත්හඳුන්",
+            "දොඹ",
+            "පද්මකාෂ්ඨ",
+            "සැවැන්දරා මුල්",
+            "වැල්මී",
+            "වැල්මදට",
+            "ඉරමුසු කිරිබදු",
+            "ශර්කරා) දුර්වා "
+          ]
+        },
+        {
+          "gana_num": 3,
+          "gana_name_si": "ස්වරකාරක",
+          "substances": [
+            " ඉරමුසු",
+            "උක්මුල්",
+            "වැල්මී",
+            "තිප්පිලි",
+            "මුද්දරප්පලම්",
+            "කිරිබදු",
+            "කට්වල",
+            "ගොටුකොළ",
+            "එළබටු",
+            " කටුවැල්බටු යන දශක ය කණ්ඩ්‍ය"
+          ]
+        },
+        {
+          "gana_num": 4,
+          "gana_name_si": "හෘද්‍ය",
+          "substances": [
+            " අඹ",
+            "ඇඹරැල්ල",
+            "නිකුච",
+            "කරඹ",
+            "සියඹලා ගොරක",
+            "මහ මසන්",
+            "කුඩා මසන්",
+            "දෙළුම්",
+            "ලප්නාරං"
+          ]
+        }
+      ]
+    },
+    {
+      "varga_num": 3,
+      "varga_name_si": "තෘතිය",
+      "varga_name_iast": "tṛtīya",
+      "ganas": [
+        {
+          "gana_num": 1,
+          "gana_name_si": "තෘප්තිස්න",
+          "substances": [
+            " ඉඟුරු",
+            "සිවිය",
+            "රත්නෙටොල්",
+            "වළඟසාල්",
+            "මුර්වා",
+            "රසකිඳ",
+            "වදකහ",
+            "කලාඳුරු",
+            "තිප්පිලි",
+            "පටෝල"
+          ]
+        },
+        {
+          "gana_num": 2,
+          "gana_name_si": "අර්ගෝස්න",
+          "substances": [
+            " කෙළිඳ",
+            "බෙලි",
+            "රත්නෙටොල්",
+            "ඉඟුරු",
+            "අතිවිඩයම්",
+            "අරළු",
+            "දුරාලභා",
+            "දාරුහරිද්‍රා",
+            "වදකහ",
+            "සිවිය"
+          ]
+        },
+        {
+          "gana_num": 3,
+          "gana_name_si": "කුෂ්ඨස්න",
+          "substances": [
+            " 19 කිහිරි",
+            "අරළු",
+            "නෙල්ලි",
+            "කහ",
+            "භල්ලාතක",
+            "රුක්අත්තන",
+            "ඇසළ",
+            "කනේරු",
+            "වළඟසාල්",
+            "අමු දෑසමන් කොළ"
+          ]
+        },
+        {
+          "gana_num": 4,
+          "gana_name_si": "කණ්ඩුස්න",
+          "substances": [
+            " රත්හඳුන්",
+            "ජටාමාංස",
+            "ඇසළ",
+            "කරඳ",
+            "කොසඹ",
+            "කෙළිඳ",
+            "අඹ",
+            "වැල්මී",
+            "දාරුහරිද්‍රා",
+            "කලාඳුරු"
+          ]
+        },
+        {
+          "gana_num": 5,
+          "gana_name_si": "ක්‍රිමිස්න",
+          "substances": [
+            " මුරුංගා",
+            "ගම්මිරිස්",
+            "ගණ්ඩීර",
+            "කේබුක"
+          ]
+        },
+        {
+          "gana_num": 6,
+          "gana_name_si": "විෂස්න",
+          "substances": [
+            " කහ",
+            "වැල්මදට",
+            "අරත්ත",
+            "හීන් එන්සාල්",
+            "කළු ඉරමුසු",
+            "රත්හඳුන්",
+            "ඉඟිනි ඇට",
+            "මහරි",
+            "නික",
+            "ලෝලු "
+          ]
+        }
+      ]
+    },
+    {
+      "varga_num": 4,
+      "varga_name_si": "චතුර්ථ",
+      "varga_name_iast": "caturtha",
+      "ganas": [
+        {
+          "gana_num": 1,
+          "gana_name_si": "ස්තන්‍ය ජනන",
+          "substances": [
+            " යන ගණ සතරකින් යුක්තය. "
+          ]
+        },
+        {
+          "gana_num": 2,
+          "gana_name_si": "ස්තන්‍ය ශෝධන",
+          "substances": [
+            " දියමිත්ත",
+            "ඉඟුරු",
+            "දේවදාර",
+            "කලාඳුරු",
+            "මූර්වා",
+            "රසකිඳ",
+            "කෙළිඳ",
+            "බිංකොහොඹ",
+            "කුළුරෑණ",
+            "ඉරමුසු "
+          ]
+        },
+        {
+          "gana_num": 3,
+          "gana_name_si": "ශුක්‍ර ජනන",
+          "substances": [
+            " ජීවක",
+            "සෘෂභක",
+            "කවෙලු",
+            "කිරිකවෙලු",
+            "මුං වැන්න",
+            "මස්වැන්න",
+            "මේදා",
+            "වෘක්ෂරුහා",
+            "පිලිල) කිරිබදු හෝ ජටාමාංශ කකුළු සුඟු"
+          ]
+        },
+        {
+          "gana_num": 4,
+          "gana_name_si": "ශුක්‍ර ශෝධන",
+          "substances": [
+            " කොට්ට",
+            "එල්වලු",
+            "කඵල",
+            "මුහුදු පෙන",
+            "කොළොම් මැලියම්",
+            "කළු උක්",
+            "ඉකිරි කතුරුමුරුංගා සැවැන්දරා"
+          ]
+        }
+      ]
+    },
+    {
+      "varga_num": 5,
+      "varga_name_si": "පඤ්චම",
+      "varga_name_iast": "pañcama",
+      "ganas": [
+        {
+          "gana_num": 1,
+          "gana_name_si": "ස්නේහෝපග",
+          "substances": [
+            " මුද්දරප්පලම්",
+            "වැල්මී",
+            "රසකිඳ",
+            "මේදා",
+            "කිරිබදු",
+            "කවෙලු",
+            "කිරිකවෙලු",
+            "ජීවක",
+            "ජීවන්ති",
+            "ශාලපර්ණී දශකය ස්නේහ"
+          ]
+        },
+        {
+          "gana_num": 2,
+          "gana_name_si": "ස්වේදෝපග",
+          "substances": [
+            " මුරුංගා",
+            "එරඬු",
+            "වරා",
+            "සුදුසාරණ",
+            "රතුසාරණ",
+            "යව",
+            "තල",
+            "කොල්ලු",
+            "උඳු",
+            "මසන්"
+          ]
+        },
+        {
+          "gana_num": 3,
+          "gana_name_si": "වමනෝපග",
+          "substances": [
+            " කොවක්කා",
+            "වන මීපැණි",
+            "වැල්මී",
+            "රතු කොබෝලීල",
+            "සුදු කොබෝලීල",
+            "කොළොම්",
+            "ජලවේතස හණ"
+          ]
+        },
+        {
+          "gana_num": 4,
+          "gana_name_si": "විරේචනෝපග",
+          "substances": [
+            " මුද්දරප්පලම්",
+            "ඇද්දෙමට ගෙඩි",
+            "බොරළුදමුනු ගෙඩි",
+            "අරළු",
+            "බුළු",
+            "නෙල්ලි",
+            "මහ මසන්",
+            "කුඩා මසන් කැළෑ මසන්",
+            "මොර"
+          ]
+        },
+        {
+          "gana_num": 5,
+          "gana_name_si": "ආස්ථාපනෝපග",
+          "substances": [
+            " තිරැස්සවාලු",
+            "බෙලි",
+            "තිප්පිලි කොට්ටු",
+            "අබ",
+            "වදකහ",
+            "කෙළිඳ",
+            "ශතපුෂ්ප",
+            "වැල්මී",
+            "කුකුරුමාන්"
+          ]
+        },
+        {
+          "gana_num": 6,
+          "gana_name_si": "අනුවාසනෝපග",
+          "substances": [
+            " අරත්ත",
+            "දේවදාර",
+            "බෙලි",
+            "කුකුරුමාන්",
+            "ශතපුෂ්ප",
+            "සුදු සාරණ",
+            "රතු සාරණ. ගොකටු",
+            "මිදි",
+            "තොටිල "
+          ]
+        },
+        {
+          "gana_num": 7,
+          "gana_name_si": "ශිරෝවිරේචනෝපග",
+          "substances": [
+            " දුහුදු",
+            "ක්ෂවක",
+            "ගම්මිරිස්",
+            "තිප්පිලි",
+            "වළඟසාල්",
+            "මුරුංගා ඇට",
+            "අබ",
+            "කරල් හැබ ඇට",
+            "එළ කටරොළු නිල් කටරොළු"
+          ]
+        }
+      ]
+    },
+    {
+      "varga_num": 6,
+      "varga_name_si": "ෂෂ්ඨ",
+      "varga_name_iast": "ṣaṣṭha",
+      "ganas": [
+        {
+          "gana_num": 1,
+          "gana_name_si": "ඡර්දිනිග්‍රහණ",
+          "substances": [
+            " මාදම් කොළ",
+            "අඹකොළ",
+            "ලප්නාරං",
+            "ඇඹුල් මසන්",
+            "දෙළුම්",
+            "යව",
+            "වැල්මී",
+            "සැවැන්දරා සෞරාෂ්ට්‍ර මෘත්තිකා"
+          ]
+        },
+        {
+          "gana_num": 2,
+          "gana_name_si": "තෘෂ්ණානිග්‍රහණ",
+          "substances": [
+            " ඉඟුරු",
+            "දුරාලභා",
+            "කලාඳුරු",
+            "පැපිලිය",
+            "රත්හඳුන්",
+            "බිම්නිඹ",
+            "රසකිඳ",
+            "බාලක",
+            "කොත්තමල්ලි",
+            "පටෝල "
+          ]
+        },
+        {
+          "gana_num": 3,
+          "gana_name_si": "හික්කානිග්‍රහණ",
+          "substances": [
+            " ශථී",
+            "පොකුරුමුල්",
+            "මසන් ඇට",
+            "කටුවැල්බටු",
+            "එළබටු",
+            "පිලිල",
+            "අරළු",
+            "තිප්පිලි",
+            "දුරාලභා",
+            "කකුළුසුඟු "
+          ]
+        }
+      ]
+    },
+    {
+      "varga_num": 7,
+      "varga_name_si": "සප්තම",
+      "varga_name_iast": "saptama",
+      "ganas": [
+        {
+          "gana_num": 1,
+          "gana_name_si": "පුරීෂ සංග්‍රහණීය",
+          "substances": [
+            " පුවඟු",
+            "ඉරමුසු",
+            "අඹ ඇට",
+            "තොටිල",
+            "ලොත්",
+            "ඉඹුල් මැලියම්",
+            "නිදිකුම්බා",
+            "මලිත මල්",
+            "භාර්හී",
+            " නෙළුණු"
+          ]
+        },
+        {
+          "gana_num": 2,
+          "gana_name_si": "පුරීෂ විරජනීය",
+          "substances": [
+            " දශකය මල පිරිසිඳු කොට ස්වාභාවික මාදම් පොතු",
+            "ශල්ලකීත්වක්"
+          ]
+        },
+        {
+          "gana_num": 3,
+          "gana_name_si": "මූත්‍ර සංග්‍රහණ",
+          "substances": [
+            " මාදම්",
+            "අඹ",
+            "පුලිළ",
+            "නුග",
+            "ඇඹරැල්ලා",
+            "අට්ටික්කා",
+            "බෝ",
+            "භල්ලාතක",
+            "අශ්මන්තක",
+            "කිහිරි යන දේ දශකය මූත්‍ර සංග්‍රහණීය වෙයි. 4.මූත්‍ර විරජනීය ද්‍රව්‍ය"
+          ]
+        },
+        {
+          "gana_num": 4,
+          "gana_name_si": "මූත්‍ර විරජනීය",
+          "substances": [
+            " සුදු නෙළුම්",
+            "නිල් මානෙල්",
+            "රතු නෙළුම්",
+            "සුදු මානෙල්",
+            "අතිශයින් සුවඳවත් නිල් මානෙල්",
+            "සුදු නෙළුම්",
+            "ශතපත්‍ර නම් නෙළුම්",
+            "වැල්මී",
+            "පුවඟු",
+            "මලිත මල්"
+          ]
+        },
+        {
+          "gana_num": 5,
+          "gana_name_si": "මූත්‍ර විරේචනීය",
+          "substances": [
+            " පිලිල",
+            "ගොකටු",
+            "කතුරුමුරුංගා",
+            "වශිර "
+          ]
+        }
+      ]
+    },
+    {
+      "varga_num": 8,
+      "varga_name_si": "අෂ්ටම",
+      "varga_name_iast": "aṣṭama",
+      "ganas": [
+        {
+          "gana_num": 1,
+          "gana_name_si": "කාසහර",
+          "substances": [
+            " මුද්දරප්පලම්",
+            "අරළු",
+            "නෙල්ලි",
+            "තිප්පිලි",
+            "දුරාලභා",
+            "කකුළුසුඟු",
+            "කටුවැල්බටු",
+            "රතු සාරණ",
+            "සුදු සාරණ",
+            " එල පිටවක්කා"
+          ]
+        },
+        {
+          "gana_num": 2,
+          "gana_name_si": "ශ්වාසහර",
+          "substances": [
+            " ශඨි",
+            "සුවඳකොට්ට",
+            "එන්සාල් අම්ලවේතස",
+            "පෙරුම්කායම්",
+            "අගිල්",
+            "මදුරුතලා",
+            "එල පිටවක්කා",
+            " ජීවන්ති",
+            "චෝරපුෂ්පී"
+          ]
+        },
+        {
+          "gana_num": 3,
+          "gana_name_si": "ශෝථහර",
+          "substances": [
+            " පළොල්",
+            "මිදි",
+            "බෙලි",
+            "තොටිල",
+            "ඇද්දෙමට",
+            "කටුවැල්බටු",
+            "එළබටු",
+            "ශාලපර්ණි",
+            "පෘශ්ණපර්ණි",
+            " ගොකටු"
+          ]
+        },
+        {
+          "gana_num": 4,
+          "gana_name_si": "ජ්වරහර",
+          "substances": [
+            " ඉරමුසු",
+            "සීනි",
+            "දියමිත්ත",
+            "වැල්මදට",
+            "මුද්දරප්පලම්",
+            "මොර",
+            "බොරළුදමුනු",
+            "අරළු",
+            "බුළු",
+            "නෙල්ලි"
+          ]
+        },
+        {
+          "gana_num": 5,
+          "gana_name_si": "ශ්‍රමහර",
+          "substances": [
+            " මුදිරප්පලම්",
+            "රටඉඳි",
+            "කොට්ටම්බා",
+            "මසන්",
+            "දෙළුම්",
+            "කොටදිඹුලා",
+            "බොරළුදමුනු",
+            "උක්",
+            "යව සැටදා හැල්"
+          ]
+        }
+      ]
+    },
+    {
+      "varga_num": 9,
+      "varga_name_si": "නවම",
+      "varga_name_iast": "navama",
+      "ganas": [
+        {
+          "gana_num": 1,
+          "gana_name_si": "දාහ ප්‍රශමන",
+          "substances": [
+            " විලඳ",
+            "සුදුහඳුන්",
+            "ඇද්දෙමට ගෙඩි",
+            "වැල්මී",
+            "ශර්කරා",
+            "නිල්මානෙල්",
+            "සැවැන්දරා",
+            "ඉරමුසු",
+            "රසකිඳ",
+            " ඉරිවේරිය"
+          ]
+        },
+        {
+          "gana_num": 2,
+          "gana_name_si": "ශීත ප්‍රශමන",
+          "substances": [
+            " 23 තුවරලා",
+            "අගිල්",
+            "කොත්තමල්ලි",
+            "ඉඟුරු",
+            "අසමෝදගම්",
+            "වදකහ",
+            "කටුවැල්බටු",
+            "මිදි",
+            "තොටිල",
+            "තිප්පිලි "
+          ]
+        },
+        {
+          "gana_num": 3,
+          "gana_name_si": "උදර්ද ප්‍රශමන",
+          "substances": [
+            " තිඹිරි",
+            "කොට්ටම්බා",
+            "මසන්",
+            "කිහිරි",
+            "සුදුකිහිරි",
+            "රුක්අත්තන",
+            "සල්",
+            "කුඹුක්",
+            "අසන",
+            "අරිමේදා"
+          ]
+        },
+        {
+          "gana_num": 4,
+          "gana_name_si": "අංගමර්දප්‍රශමන",
+          "substances": [
+            " ශාලපර්ණී",
+            "පෘෂ්ණිපර්ණී",
+            "එළබටු",
+            "කටුවැල්බටු",
+            "එරඬු",
+            "කවෙලු",
+            "සඳුන්",
+            "සැවැන්දරා",
+            "එන්සාල්",
+            " වැල්මී"
+          ]
+        },
+        {
+          "gana_num": 5,
+          "gana_name_si": "ශූල ප්‍රශමන",
+          "substances": [
+            " තිප්පිලි",
+            "තිප්පිලි මුල්",
+            "සිවිය",
+            "රත්නෙටොල්",
+            "ඉඟුරු",
+            "ගම්මිරිස්",
+            "අසමෝදගම්",
+            "වල් අසමෝදගම්",
+            " සුදුදුරු",
+            "ගණ්ඩීරශාක"
+          ]
+        }
+      ]
+    },
+    {
+      "varga_num": 10,
+      "varga_name_si": "දශම",
+      "varga_name_iast": "daśama",
+      "ganas": [
+        {
+          "gana_num": 1,
+          "gana_name_si": "ශොණිතස්ථාපන",
+          "substances": [
+            " මීපැණි",
+            "වැල්මී",
+            "කුංකුමප්පු",
+            "ඉඹුල් මැලියම්",
+            "කැබිලිති",
+            "ලොත්",
+            "සිවංගුරු",
+            "පුවඟු",
+            "සීනි",
+            "විලඳ"
+          ]
+        },
+        {
+          "gana_num": 2,
+          "gana_name_si": "වේදනාස්ථාපන",
+          "substances": [
+            " සල්",
+            "කට්වල",
+            "කොළොම්",
+            "පද්මකාෂ්ඨ",
+            "දොඹ",
+            "ඉඹුල් මැලියම්",
+            "මහරි",
+            "වේ",
+            "එල්වලු",
+            "අශෝක"
+          ]
+        },
+        {
+          "gana_num": 3,
+          "gana_name_si": "සංඥාස්ථාපන",
+          "substances": [
+            " පෙරුම්කායම්",
+            "කඵල",
+            "අරිමේද",
+            "වදකහ",
+            "චෝරපුෂ්පි",
+            "බ්‍රාහ්මී",
+            "ගෝලෝමී"
+          ]
+        },
+        {
+          "gana_num": 4,
+          "gana_name_si": "ප්‍රජාස්ථාපන",
+          "substances": [
+            " ගොන්හැකිරි",
+            "ලුණුවිල",
+            "දූර්වා"
+          ]
+        },
+        {
+          "gana_num": 5,
+          "gana_name_si": "වයඃස්ථාපන",
+          "substances": [
+            " රසකිඳ",
+            "අරළු",
+            "නෙල්ලි",
+            "අරත්ත",
+            "එළකටරොළු",
+            "ජීවන්ති",
+            "හාතාවාරිය",
+            "ගොටුකොළ",
+            "ශාලපර්ණී",
+            " සාරණ"
+          ]
+        }
+      ]
+    }
+  ],
+  "by_substance": {
+    " ජීවක": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 1,
+        "gana_name_si": "ජීවණීය"
+      },
+      {
+        "varga_num": 4,
+        "varga_name_si": "චතුර්ථ",
+        "gana_num": 3,
+        "gana_name_si": "ශුක්‍ර ජනන"
+      }
+    ],
+    "සෘෂභක": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 1,
+        "gana_name_si": "ජීවණීය"
+      },
+      {
+        "varga_num": 4,
+        "varga_name_si": "චතුර්ථ",
+        "gana_num": 3,
+        "gana_name_si": "ශුක්‍ර ජනන"
+      }
+    ],
+    "මේදා": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 1,
+        "gana_name_si": "ජීවණීය"
+      },
+      {
+        "varga_num": 4,
+        "varga_name_si": "චතුර්ථ",
+        "gana_num": 3,
+        "gana_name_si": "ශුක්‍ර ජනන"
+      },
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 1,
+        "gana_name_si": "ස්නේහෝපග"
+      }
+    ],
+    "මහාමේදා": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 1,
+        "gana_name_si": "ජීවණීය"
+      }
+    ],
+    "කවෙලු": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 1,
+        "gana_name_si": "ජීවණීය"
+      },
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 2,
+        "gana_name_si": "වෘහණීය"
+      },
+      {
+        "varga_num": 4,
+        "varga_name_si": "චතුර්ථ",
+        "gana_num": 3,
+        "gana_name_si": "ශුක්‍ර ජනන"
+      },
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 1,
+        "gana_name_si": "ස්නේහෝපග"
+      },
+      {
+        "varga_num": 9,
+        "varga_name_si": "නවම",
+        "gana_num": 4,
+        "gana_name_si": "අංගමර්දප්‍රශමන"
+      }
+    ],
+    "කිරිකවෙලු": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 1,
+        "gana_name_si": "ජීවණීය"
+      },
+      {
+        "varga_num": 4,
+        "varga_name_si": "චතුර්ථ",
+        "gana_num": 3,
+        "gana_name_si": "ශුක්‍ර ජනන"
+      },
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 1,
+        "gana_name_si": "ස්නේහෝපග"
+      }
+    ],
+    "මුංවැන්න": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 1,
+        "gana_name_si": "ජීවණීය"
+      }
+    ],
+    "මස්වැන්න": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 1,
+        "gana_name_si": "ජීවණීය"
+      },
+      {
+        "varga_num": 4,
+        "varga_name_si": "චතුර්ථ",
+        "gana_num": 3,
+        "gana_name_si": "ශුක්‍ර ජනන"
+      }
+    ],
+    "ජීවන්නී": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 1,
+        "gana_name_si": "ජීවණීය"
+      }
+    ],
+    "වැල්මී ": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 1,
+        "gana_name_si": "ජීවණීය"
+      }
+    ],
+    " ක්ෂීරිණී": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 2,
+        "gana_name_si": "වෘහණීය"
+      }
+    ],
+    "රාජක්ෂවක": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 2,
+        "gana_name_si": "වෘහණීය"
+      }
+    ],
+    "බැබිල": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 2,
+        "gana_name_si": "වෘහණීය"
+      }
+    ],
+    "කිරි කවෙලු": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 2,
+        "gana_name_si": "වෘහණීය"
+      }
+    ],
+    "සුදු බැබිල": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 2,
+        "gana_name_si": "වෘහණීය"
+      }
+    ],
+    "කහ බැබිල": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 2,
+        "gana_name_si": "වෘහණීය"
+      }
+    ],
+    "වන කපු": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 2,
+        "gana_name_si": "වෘහණීය"
+      }
+    ],
+    "සුදු කිරිබදු": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 2,
+        "gana_name_si": "වෘහණීය"
+      }
+    ],
+    " වෘධදාරක": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 2,
+        "gana_name_si": "වෘහණීය"
+      }
+    ],
+    " කලාඳුරු": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 3,
+        "gana_name_si": "ලේඛනීය"
+      }
+    ],
+    "සුවඳ කොට්ට": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 3,
+        "gana_name_si": "ලේඛනීය"
+      }
+    ],
+    "කහ": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 3,
+        "gana_name_si": "ලේඛනීය"
+      },
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 3,
+        "gana_name_si": "කුෂ්ඨස්න"
+      }
+    ],
+    "දාරුහරිද්‍රා": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 3,
+        "gana_name_si": "ලේඛනීය"
+      },
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 2,
+        "gana_name_si": "අර්ගෝස්න"
+      },
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 4,
+        "gana_name_si": "කණ්ඩුස්න"
+      }
+    ],
+    "වදකහ": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 3,
+        "gana_name_si": "ලේඛනීය"
+      },
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 1,
+        "gana_name_si": "තෘප්තිස්න"
+      },
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 2,
+        "gana_name_si": "අර්ගෝස්න"
+      },
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 5,
+        "gana_name_si": "ආස්ථාපනෝපග"
+      },
+      {
+        "varga_num": 9,
+        "varga_name_si": "නවම",
+        "gana_num": 2,
+        "gana_name_si": "ශීත ප්‍රශමන"
+      },
+      {
+        "varga_num": 10,
+        "varga_name_si": "දශම",
+        "gana_num": 3,
+        "gana_name_si": "සංඥාස්ථාපන"
+      }
+    ],
+    "අතිවිඩයම්": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 3,
+        "gana_name_si": "ලේඛනීය"
+      },
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 2,
+        "gana_name_si": "අර්ගෝස්න"
+      }
+    ],
+    "කුළුරෑණ": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 3,
+        "gana_name_si": "ලේඛනීය"
+      },
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 4,
+        "gana_name_si": "භේදනීය"
+      },
+      {
+        "varga_num": 4,
+        "varga_name_si": "චතුර්ථ",
+        "gana_num": 2,
+        "gana_name_si": "ස්තන්‍ය ශෝධන"
+      }
+    ],
+    "රත්නෙටුල්": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 3,
+        "gana_name_si": "ලේඛනීය"
+      },
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 4,
+        "gana_name_si": "භේදනීය"
+      },
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 6,
+        "gana_name_si": "අග්නිදීපක"
+      }
+    ],
+    "කරඳ": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 3,
+        "gana_name_si": "ලේඛනීය"
+      },
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 4,
+        "gana_name_si": "භේදනීය"
+      },
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 4,
+        "gana_name_si": "කණ්ඩුස්න"
+      }
+    ],
+    "සුදු වදකහ": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 3,
+        "gana_name_si": "ලේඛනීය"
+      }
+    ],
+    " තිරස්සවාලු": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 4,
+        "gana_name_si": "භේදනීය"
+      }
+    ],
+    "වරා": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 4,
+        "gana_name_si": "භේදනීය"
+      },
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 2,
+        "gana_name_si": "ස්වේදෝපග"
+      }
+    ],
+    "එරඩු": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 4,
+        "gana_name_si": "භේදනීය"
+      }
+    ],
+    "භල්ලාතක": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 4,
+        "gana_name_si": "භේදනීය"
+      },
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 3,
+        "gana_name_si": "කුෂ්ඨස්න"
+      },
+      {
+        "varga_num": 7,
+        "varga_name_si": "සප්තම",
+        "gana_num": 3,
+        "gana_name_si": "මූත්‍ර සංග්‍රහණ"
+      }
+    ],
+    "දැත්ත": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 4,
+        "gana_name_si": "භේදනීය"
+      }
+    ],
+    "ශඞඛිණී": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 4,
+        "gana_name_si": "භේදනීය"
+      }
+    ],
+    "රන්කිරි ගොකටු": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 4,
+        "gana_name_si": "භේදනීය"
+      }
+    ],
+    " වැල්මී": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 5,
+        "gana_name_si": "සන්ධානීය"
+      },
+      {
+        "varga_num": 9,
+        "varga_name_si": "නවම",
+        "gana_num": 4,
+        "gana_name_si": "අංගමර්දප්‍රශමන"
+      }
+    ],
+    "රසකිඳ": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 5,
+        "gana_name_si": "සන්ධානීය"
+      },
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 1,
+        "gana_name_si": "තෘප්තිස්න"
+      },
+      {
+        "varga_num": 4,
+        "varga_name_si": "චතුර්ථ",
+        "gana_num": 2,
+        "gana_name_si": "ස්තන්‍ය ශෝධන"
+      },
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 1,
+        "gana_name_si": "ස්නේහෝපග"
+      },
+      {
+        "varga_num": 6,
+        "varga_name_si": "ෂෂ්ඨ",
+        "gana_num": 2,
+        "gana_name_si": "තෘෂ්ණානිග්‍රහණ"
+      },
+      {
+        "varga_num": 9,
+        "varga_name_si": "නවම",
+        "gana_num": 1,
+        "gana_name_si": "දාහ ප්‍රශමන"
+      }
+    ],
+    "පෘශ්ණපර්ණි": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 5,
+        "gana_name_si": "සන්ධානීය"
+      },
+      {
+        "varga_num": 8,
+        "varga_name_si": "අෂ්ටම",
+        "gana_num": 3,
+        "gana_name_si": "ශෝථහර"
+      }
+    ],
+    "දියමිත්ත": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 5,
+        "gana_name_si": "සන්ධානීය"
+      },
+      {
+        "varga_num": 8,
+        "varga_name_si": "අෂ්ටම",
+        "gana_num": 4,
+        "gana_name_si": "ජ්වරහර"
+      }
+    ],
+    "නිදිකුම්බා": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 5,
+        "gana_name_si": "සන්ධානීය"
+      },
+      {
+        "varga_num": 7,
+        "varga_name_si": "සප්තම",
+        "gana_num": 1,
+        "gana_name_si": "පුරීෂ සංග්‍රහණීය"
+      }
+    ],
+    "ඉඹුල් මැලියම්": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 5,
+        "gana_name_si": "සන්ධානීය"
+      },
+      {
+        "varga_num": 7,
+        "varga_name_si": "සප්තම",
+        "gana_num": 1,
+        "gana_name_si": "පුරීෂ සංග්‍රහණීය"
+      },
+      {
+        "varga_num": 10,
+        "varga_name_si": "දශම",
+        "gana_num": 1,
+        "gana_name_si": "ශොණිතස්ථාපන"
+      },
+      {
+        "varga_num": 10,
+        "varga_name_si": "දශම",
+        "gana_num": 2,
+        "gana_name_si": "වේදනාස්ථාපන"
+      }
+    ],
+    "මලිතමල්": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 5,
+        "gana_name_si": "සන්ධානීය"
+      }
+    ],
+    "ලොත්": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 5,
+        "gana_name_si": "සන්ධානීය"
+      },
+      {
+        "varga_num": 7,
+        "varga_name_si": "සප්තම",
+        "gana_num": 1,
+        "gana_name_si": "පුරීෂ සංග්‍රහණීය"
+      },
+      {
+        "varga_num": 10,
+        "varga_name_si": "දශම",
+        "gana_num": 1,
+        "gana_name_si": "ශොණිතස්ථාපන"
+      }
+    ],
+    "පුවඟු": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 5,
+        "gana_name_si": "සන්ධානීය"
+      },
+      {
+        "varga_num": 7,
+        "varga_name_si": "සප්තම",
+        "gana_num": 4,
+        "gana_name_si": "මූත්‍ර විරජනීය"
+      },
+      {
+        "varga_num": 10,
+        "varga_name_si": "දශම",
+        "gana_num": 1,
+        "gana_name_si": "ශොණිතස්ථාපන"
+      }
+    ],
+    " කඵල": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 5,
+        "gana_name_si": "සන්ධානීය"
+      }
+    ],
+    " තිප්පිලි": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 6,
+        "gana_name_si": "අග්නිදීපක"
+      },
+      {
+        "varga_num": 9,
+        "varga_name_si": "නවම",
+        "gana_num": 5,
+        "gana_name_si": "ශූල ප්‍රශමන"
+      }
+    ],
+    "තිප්පිලි මුල්": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 6,
+        "gana_name_si": "අග්නිදීපක"
+      },
+      {
+        "varga_num": 9,
+        "varga_name_si": "නවම",
+        "gana_num": 5,
+        "gana_name_si": "ශූල ප්‍රශමන"
+      }
+    ],
+    "සිවිය": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 6,
+        "gana_name_si": "අග්නිදීපක"
+      },
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 1,
+        "gana_name_si": "තෘප්තිස්න"
+      },
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 2,
+        "gana_name_si": "අර්ගෝස්න"
+      },
+      {
+        "varga_num": 9,
+        "varga_name_si": "නවම",
+        "gana_num": 5,
+        "gana_name_si": "ශූල ප්‍රශමන"
+      }
+    ],
+    "ඉඟුරු": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 6,
+        "gana_name_si": "අග්නිදීපක"
+      },
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 2,
+        "gana_name_si": "අර්ගෝස්න"
+      },
+      {
+        "varga_num": 4,
+        "varga_name_si": "චතුර්ථ",
+        "gana_num": 2,
+        "gana_name_si": "ස්තන්‍ය ශෝධන"
+      },
+      {
+        "varga_num": 9,
+        "varga_name_si": "නවම",
+        "gana_num": 2,
+        "gana_name_si": "ශීත ප්‍රශමන"
+      },
+      {
+        "varga_num": 9,
+        "varga_name_si": "නවම",
+        "gana_num": 5,
+        "gana_name_si": "ශූල ප්‍රශමන"
+      }
+    ],
+    "අම්ලවෙතස": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 6,
+        "gana_name_si": "අග්නිදීපක"
+      }
+    ],
+    "ගම්මිරිස්": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 6,
+        "gana_name_si": "අග්නිදීපක"
+      },
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 5,
+        "gana_name_si": "ක්‍රිමිස්න"
+      },
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 7,
+        "gana_name_si": "ශිරෝවිරේචනෝපග"
+      },
+      {
+        "varga_num": 9,
+        "varga_name_si": "නවම",
+        "gana_num": 5,
+        "gana_name_si": "ශූල ප්‍රශමන"
+      }
+    ],
+    "අසමෝදගම්": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 6,
+        "gana_name_si": "අග්නිදීපක"
+      },
+      {
+        "varga_num": 9,
+        "varga_name_si": "නවම",
+        "gana_num": 2,
+        "gana_name_si": "ශීත ප්‍රශමන"
+      },
+      {
+        "varga_num": 9,
+        "varga_name_si": "නවම",
+        "gana_num": 5,
+        "gana_name_si": "ශූල ප්‍රශමන"
+      }
+    ],
+    "භල්ලාතක ඇට (ශුද්ධ). පෙරුම්කායම්": [
+      {
+        "varga_num": 1,
+        "varga_name_si": "ප්‍රථම",
+        "gana_num": 6,
+        "gana_name_si": "අග්නිදීපක"
+      }
+    ],
+    " ගොන් කැකිරි": [
+      {
+        "varga_num": 2,
+        "varga_name_si": "ද්විතීය",
+        "gana_num": 1,
+        "gana_name_si": "බලකාරක"
+      }
+    ],
+    "වඳුරුමෑ ඇට": [
+      {
+        "varga_num": 2,
+        "varga_name_si": "ද්විතීය",
+        "gana_num": 1,
+        "gana_name_si": "බලකාරක"
+      }
+    ],
+    "හාතාවාරිය": [
+      {
+        "varga_num": 2,
+        "varga_name_si": "ද්විතීය",
+        "gana_num": 1,
+        "gana_name_si": "බලකාරක"
+      },
+      {
+        "varga_num": 10,
+        "varga_name_si": "දශම",
+        "gana_num": 5,
+        "gana_name_si": "වයඃස්ථාපන"
+      }
+    ],
+    "මස්වැන්ත": [
+      {
+        "varga_num": 2,
+        "varga_name_si": "ද්විතීය",
+        "gana_num": 1,
+        "gana_name_si": "බලකාරක"
+      }
+    ],
+    " රත්හඳුන්": [
+      {
+        "varga_num": 2,
+        "varga_name_si": "ද්විතීය",
+        "gana_num": 2,
+        "gana_name_si": "වර්ණකාරක"
+      },
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 4,
+        "gana_name_si": "කණ්ඩුස්න"
+      }
+    ],
+    "දොඹ": [
+      {
+        "varga_num": 2,
+        "varga_name_si": "ද්විතීය",
+        "gana_num": 2,
+        "gana_name_si": "වර්ණකාරක"
+      },
+      {
+        "varga_num": 10,
+        "varga_name_si": "දශම",
+        "gana_num": 2,
+        "gana_name_si": "වේදනාස්ථාපන"
+      }
+    ],
+    "පද්මකාෂ්ඨ": [
+      {
+        "varga_num": 2,
+        "varga_name_si": "ද්විතීය",
+        "gana_num": 2,
+        "gana_name_si": "වර්ණකාරක"
+      },
+      {
+        "varga_num": 10,
+        "varga_name_si": "දශම",
+        "gana_num": 2,
+        "gana_name_si": "වේදනාස්ථාපන"
+      }
+    ],
+    "සැවැන්දරා මුල්": [
+      {
+        "varga_num": 2,
+        "varga_name_si": "ද්විතීය",
+        "gana_num": 2,
+        "gana_name_si": "වර්ණකාරක"
+      }
+    ],
+    "වැල්මී": [
+      {
+        "varga_num": 2,
+        "varga_name_si": "ද්විතීය",
+        "gana_num": 2,
+        "gana_name_si": "වර්ණකාරක"
+      },
+      {
+        "varga_num": 2,
+        "varga_name_si": "ද්විතීය",
+        "gana_num": 3,
+        "gana_name_si": "ස්වරකාරක"
+      },
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 4,
+        "gana_name_si": "කණ්ඩුස්න"
+      },
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 1,
+        "gana_name_si": "ස්නේහෝපග"
+      },
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 3,
+        "gana_name_si": "වමනෝපග"
+      },
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 5,
+        "gana_name_si": "ආස්ථාපනෝපග"
+      },
+      {
+        "varga_num": 6,
+        "varga_name_si": "ෂෂ්ඨ",
+        "gana_num": 1,
+        "gana_name_si": "ඡර්දිනිග්‍රහණ"
+      },
+      {
+        "varga_num": 7,
+        "varga_name_si": "සප්තම",
+        "gana_num": 4,
+        "gana_name_si": "මූත්‍ර විරජනීය"
+      },
+      {
+        "varga_num": 9,
+        "varga_name_si": "නවම",
+        "gana_num": 1,
+        "gana_name_si": "දාහ ප්‍රශමන"
+      },
+      {
+        "varga_num": 10,
+        "varga_name_si": "දශම",
+        "gana_num": 1,
+        "gana_name_si": "ශොණිතස්ථාපන"
+      }
+    ],
+    "වැල්මදට": [
+      {
+        "varga_num": 2,
+        "varga_name_si": "ද්විතීය",
+        "gana_num": 2,
+        "gana_name_si": "වර්ණකාරක"
+      },
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 6,
+        "gana_name_si": "විෂස්න"
+      },
+      {
+        "varga_num": 8,
+        "varga_name_si": "අෂ්ටම",
+        "gana_num": 4,
+        "gana_name_si": "ජ්වරහර"
+      }
+    ],
+    "ඉරමුසු කිරිබදු": [
+      {
+        "varga_num": 2,
+        "varga_name_si": "ද්විතීය",
+        "gana_num": 2,
+        "gana_name_si": "වර්ණකාරක"
+      }
+    ],
+    "ශර්කරා) දුර්වා ": [
+      {
+        "varga_num": 2,
+        "varga_name_si": "ද්විතීය",
+        "gana_num": 2,
+        "gana_name_si": "වර්ණකාරක"
+      }
+    ],
+    " ඉරමුසු": [
+      {
+        "varga_num": 2,
+        "varga_name_si": "ද්විතීය",
+        "gana_num": 3,
+        "gana_name_si": "ස්වරකාරක"
+      },
+      {
+        "varga_num": 8,
+        "varga_name_si": "අෂ්ටම",
+        "gana_num": 4,
+        "gana_name_si": "ජ්වරහර"
+      }
+    ],
+    "උක්මුල්": [
+      {
+        "varga_num": 2,
+        "varga_name_si": "ද්විතීය",
+        "gana_num": 3,
+        "gana_name_si": "ස්වරකාරක"
+      }
+    ],
+    "තිප්පිලි": [
+      {
+        "varga_num": 2,
+        "varga_name_si": "ද්විතීය",
+        "gana_num": 3,
+        "gana_name_si": "ස්වරකාරක"
+      },
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 1,
+        "gana_name_si": "තෘප්තිස්න"
+      },
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 7,
+        "gana_name_si": "ශිරෝවිරේචනෝපග"
+      },
+      {
+        "varga_num": 6,
+        "varga_name_si": "ෂෂ්ඨ",
+        "gana_num": 3,
+        "gana_name_si": "හික්කානිග්‍රහණ"
+      },
+      {
+        "varga_num": 8,
+        "varga_name_si": "අෂ්ටම",
+        "gana_num": 1,
+        "gana_name_si": "කාසහර"
+      }
+    ],
+    "මුද්දරප්පලම්": [
+      {
+        "varga_num": 2,
+        "varga_name_si": "ද්විතීය",
+        "gana_num": 3,
+        "gana_name_si": "ස්වරකාරක"
+      },
+      {
+        "varga_num": 8,
+        "varga_name_si": "අෂ්ටම",
+        "gana_num": 4,
+        "gana_name_si": "ජ්වරහර"
+      }
+    ],
+    "කිරිබදු": [
+      {
+        "varga_num": 2,
+        "varga_name_si": "ද්විතීය",
+        "gana_num": 3,
+        "gana_name_si": "ස්වරකාරක"
+      },
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 1,
+        "gana_name_si": "ස්නේහෝපග"
+      }
+    ],
+    "කට්වල": [
+      {
+        "varga_num": 2,
+        "varga_name_si": "ද්විතීය",
+        "gana_num": 3,
+        "gana_name_si": "ස්වරකාරක"
+      },
+      {
+        "varga_num": 10,
+        "varga_name_si": "දශම",
+        "gana_num": 2,
+        "gana_name_si": "වේදනාස්ථාපන"
+      }
+    ],
+    "ගොටුකොළ": [
+      {
+        "varga_num": 2,
+        "varga_name_si": "ද්විතීය",
+        "gana_num": 3,
+        "gana_name_si": "ස්වරකාරක"
+      },
+      {
+        "varga_num": 10,
+        "varga_name_si": "දශම",
+        "gana_num": 5,
+        "gana_name_si": "වයඃස්ථාපන"
+      }
+    ],
+    "එළබටු": [
+      {
+        "varga_num": 2,
+        "varga_name_si": "ද්විතීය",
+        "gana_num": 3,
+        "gana_name_si": "ස්වරකාරක"
+      },
+      {
+        "varga_num": 6,
+        "varga_name_si": "ෂෂ්ඨ",
+        "gana_num": 3,
+        "gana_name_si": "හික්කානිග්‍රහණ"
+      },
+      {
+        "varga_num": 8,
+        "varga_name_si": "අෂ්ටම",
+        "gana_num": 3,
+        "gana_name_si": "ශෝථහර"
+      },
+      {
+        "varga_num": 9,
+        "varga_name_si": "නවම",
+        "gana_num": 4,
+        "gana_name_si": "අංගමර්දප්‍රශමන"
+      }
+    ],
+    " කටුවැල්බටු යන දශක ය කණ්ඩ්‍ය": [
+      {
+        "varga_num": 2,
+        "varga_name_si": "ද්විතීය",
+        "gana_num": 3,
+        "gana_name_si": "ස්වරකාරක"
+      }
+    ],
+    " අඹ": [
+      {
+        "varga_num": 2,
+        "varga_name_si": "ද්විතීය",
+        "gana_num": 4,
+        "gana_name_si": "හෘද්‍ය"
+      }
+    ],
+    "ඇඹරැල්ල": [
+      {
+        "varga_num": 2,
+        "varga_name_si": "ද්විතීය",
+        "gana_num": 4,
+        "gana_name_si": "හෘද්‍ය"
+      }
+    ],
+    "නිකුච": [
+      {
+        "varga_num": 2,
+        "varga_name_si": "ද්විතීය",
+        "gana_num": 4,
+        "gana_name_si": "හෘද්‍ය"
+      }
+    ],
+    "කරඹ": [
+      {
+        "varga_num": 2,
+        "varga_name_si": "ද්විතීය",
+        "gana_num": 4,
+        "gana_name_si": "හෘද්‍ය"
+      }
+    ],
+    "සියඹලා ගොරක": [
+      {
+        "varga_num": 2,
+        "varga_name_si": "ද්විතීය",
+        "gana_num": 4,
+        "gana_name_si": "හෘද්‍ය"
+      }
+    ],
+    "මහ මසන්": [
+      {
+        "varga_num": 2,
+        "varga_name_si": "ද්විතීය",
+        "gana_num": 4,
+        "gana_name_si": "හෘද්‍ය"
+      },
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 4,
+        "gana_name_si": "විරේචනෝපග"
+      }
+    ],
+    "කුඩා මසන්": [
+      {
+        "varga_num": 2,
+        "varga_name_si": "ද්විතීය",
+        "gana_num": 4,
+        "gana_name_si": "හෘද්‍ය"
+      }
+    ],
+    "දෙළුම්": [
+      {
+        "varga_num": 2,
+        "varga_name_si": "ද්විතීය",
+        "gana_num": 4,
+        "gana_name_si": "හෘද්‍ය"
+      },
+      {
+        "varga_num": 6,
+        "varga_name_si": "ෂෂ්ඨ",
+        "gana_num": 1,
+        "gana_name_si": "ඡර්දිනිග්‍රහණ"
+      },
+      {
+        "varga_num": 8,
+        "varga_name_si": "අෂ්ටම",
+        "gana_num": 5,
+        "gana_name_si": "ශ්‍රමහර"
+      }
+    ],
+    "ලප්නාරං": [
+      {
+        "varga_num": 2,
+        "varga_name_si": "ද්විතීය",
+        "gana_num": 4,
+        "gana_name_si": "හෘද්‍ය"
+      },
+      {
+        "varga_num": 6,
+        "varga_name_si": "ෂෂ්ඨ",
+        "gana_num": 1,
+        "gana_name_si": "ඡර්දිනිග්‍රහණ"
+      }
+    ],
+    " ඉඟුරු": [
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 1,
+        "gana_name_si": "තෘප්තිස්න"
+      },
+      {
+        "varga_num": 6,
+        "varga_name_si": "ෂෂ්ඨ",
+        "gana_num": 2,
+        "gana_name_si": "තෘෂ්ණානිග්‍රහණ"
+      }
+    ],
+    "රත්නෙටොල්": [
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 1,
+        "gana_name_si": "තෘප්තිස්න"
+      },
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 2,
+        "gana_name_si": "අර්ගෝස්න"
+      },
+      {
+        "varga_num": 9,
+        "varga_name_si": "නවම",
+        "gana_num": 5,
+        "gana_name_si": "ශූල ප්‍රශමන"
+      }
+    ],
+    "වළඟසාල්": [
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 1,
+        "gana_name_si": "තෘප්තිස්න"
+      },
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 3,
+        "gana_name_si": "කුෂ්ඨස්න"
+      },
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 7,
+        "gana_name_si": "ශිරෝවිරේචනෝපග"
+      }
+    ],
+    "මුර්වා": [
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 1,
+        "gana_name_si": "තෘප්තිස්න"
+      }
+    ],
+    "කලාඳුරු": [
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 1,
+        "gana_name_si": "තෘප්තිස්න"
+      },
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 4,
+        "gana_name_si": "කණ්ඩුස්න"
+      },
+      {
+        "varga_num": 4,
+        "varga_name_si": "චතුර්ථ",
+        "gana_num": 2,
+        "gana_name_si": "ස්තන්‍ය ශෝධන"
+      },
+      {
+        "varga_num": 6,
+        "varga_name_si": "ෂෂ්ඨ",
+        "gana_num": 2,
+        "gana_name_si": "තෘෂ්ණානිග්‍රහණ"
+      }
+    ],
+    "පටෝල": [
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 1,
+        "gana_name_si": "තෘප්තිස්න"
+      }
+    ],
+    " කෙළිඳ": [
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 2,
+        "gana_name_si": "අර්ගෝස්න"
+      }
+    ],
+    "බෙලි": [
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 2,
+        "gana_name_si": "අර්ගෝස්න"
+      },
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 5,
+        "gana_name_si": "ආස්ථාපනෝපග"
+      },
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 6,
+        "gana_name_si": "අනුවාසනෝපග"
+      },
+      {
+        "varga_num": 8,
+        "varga_name_si": "අෂ්ටම",
+        "gana_num": 3,
+        "gana_name_si": "ශෝථහර"
+      }
+    ],
+    "අරළු": [
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 2,
+        "gana_name_si": "අර්ගෝස්න"
+      },
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 3,
+        "gana_name_si": "කුෂ්ඨස්න"
+      },
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 4,
+        "gana_name_si": "විරේචනෝපග"
+      },
+      {
+        "varga_num": 6,
+        "varga_name_si": "ෂෂ්ඨ",
+        "gana_num": 3,
+        "gana_name_si": "හික්කානිග්‍රහණ"
+      },
+      {
+        "varga_num": 8,
+        "varga_name_si": "අෂ්ටම",
+        "gana_num": 1,
+        "gana_name_si": "කාසහර"
+      },
+      {
+        "varga_num": 8,
+        "varga_name_si": "අෂ්ටම",
+        "gana_num": 4,
+        "gana_name_si": "ජ්වරහර"
+      },
+      {
+        "varga_num": 10,
+        "varga_name_si": "දශම",
+        "gana_num": 5,
+        "gana_name_si": "වයඃස්ථාපන"
+      }
+    ],
+    "දුරාලභා": [
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 2,
+        "gana_name_si": "අර්ගෝස්න"
+      },
+      {
+        "varga_num": 6,
+        "varga_name_si": "ෂෂ්ඨ",
+        "gana_num": 2,
+        "gana_name_si": "තෘෂ්ණානිග්‍රහණ"
+      },
+      {
+        "varga_num": 6,
+        "varga_name_si": "ෂෂ්ඨ",
+        "gana_num": 3,
+        "gana_name_si": "හික්කානිග්‍රහණ"
+      },
+      {
+        "varga_num": 8,
+        "varga_name_si": "අෂ්ටම",
+        "gana_num": 1,
+        "gana_name_si": "කාසහර"
+      }
+    ],
+    " 19 කිහිරි": [
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 3,
+        "gana_name_si": "කුෂ්ඨස්න"
+      }
+    ],
+    "නෙල්ලි": [
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 3,
+        "gana_name_si": "කුෂ්ඨස්න"
+      },
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 4,
+        "gana_name_si": "විරේචනෝපග"
+      },
+      {
+        "varga_num": 8,
+        "varga_name_si": "අෂ්ටම",
+        "gana_num": 1,
+        "gana_name_si": "කාසහර"
+      },
+      {
+        "varga_num": 8,
+        "varga_name_si": "අෂ්ටම",
+        "gana_num": 4,
+        "gana_name_si": "ජ්වරහර"
+      },
+      {
+        "varga_num": 10,
+        "varga_name_si": "දශම",
+        "gana_num": 5,
+        "gana_name_si": "වයඃස්ථාපන"
+      }
+    ],
+    "රුක්අත්තන": [
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 3,
+        "gana_name_si": "කුෂ්ඨස්න"
+      },
+      {
+        "varga_num": 9,
+        "varga_name_si": "නවම",
+        "gana_num": 3,
+        "gana_name_si": "උදර්ද ප්‍රශමන"
+      }
+    ],
+    "ඇසළ": [
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 3,
+        "gana_name_si": "කුෂ්ඨස්න"
+      },
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 4,
+        "gana_name_si": "කණ්ඩුස්න"
+      }
+    ],
+    "කනේරු": [
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 3,
+        "gana_name_si": "කුෂ්ඨස්න"
+      }
+    ],
+    "අමු දෑසමන් කොළ": [
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 3,
+        "gana_name_si": "කුෂ්ඨස්න"
+      }
+    ],
+    "ජටාමාංස": [
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 4,
+        "gana_name_si": "කණ්ඩුස්න"
+      }
+    ],
+    "කොසඹ": [
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 4,
+        "gana_name_si": "කණ්ඩුස්න"
+      }
+    ],
+    "කෙළිඳ": [
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 4,
+        "gana_name_si": "කණ්ඩුස්න"
+      },
+      {
+        "varga_num": 4,
+        "varga_name_si": "චතුර්ථ",
+        "gana_num": 2,
+        "gana_name_si": "ස්තන්‍ය ශෝධන"
+      },
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 5,
+        "gana_name_si": "ආස්ථාපනෝපග"
+      }
+    ],
+    "අඹ": [
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 4,
+        "gana_name_si": "කණ්ඩුස්න"
+      },
+      {
+        "varga_num": 7,
+        "varga_name_si": "සප්තම",
+        "gana_num": 3,
+        "gana_name_si": "මූත්‍ර සංග්‍රහණ"
+      }
+    ],
+    " මුරුංගා": [
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 5,
+        "gana_name_si": "ක්‍රිමිස්න"
+      },
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 2,
+        "gana_name_si": "ස්වේදෝපග"
+      }
+    ],
+    "ගණ්ඩීර": [
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 5,
+        "gana_name_si": "ක්‍රිමිස්න"
+      }
+    ],
+    "කේබුක": [
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 5,
+        "gana_name_si": "ක්‍රිමිස්න"
+      }
+    ],
+    " කහ": [
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 6,
+        "gana_name_si": "විෂස්න"
+      }
+    ],
+    "අරත්ත": [
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 6,
+        "gana_name_si": "විෂස්න"
+      },
+      {
+        "varga_num": 10,
+        "varga_name_si": "දශම",
+        "gana_num": 5,
+        "gana_name_si": "වයඃස්ථාපන"
+      }
+    ],
+    "හීන් එන්සාල්": [
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 6,
+        "gana_name_si": "විෂස්න"
+      }
+    ],
+    "කළු ඉරමුසු": [
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 6,
+        "gana_name_si": "විෂස්න"
+      }
+    ],
+    "රත්හඳුන්": [
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 6,
+        "gana_name_si": "විෂස්න"
+      },
+      {
+        "varga_num": 6,
+        "varga_name_si": "ෂෂ්ඨ",
+        "gana_num": 2,
+        "gana_name_si": "තෘෂ්ණානිග්‍රහණ"
+      }
+    ],
+    "ඉඟිනි ඇට": [
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 6,
+        "gana_name_si": "විෂස්න"
+      }
+    ],
+    "මහරි": [
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 6,
+        "gana_name_si": "විෂස්න"
+      },
+      {
+        "varga_num": 10,
+        "varga_name_si": "දශම",
+        "gana_num": 2,
+        "gana_name_si": "වේදනාස්ථාපන"
+      }
+    ],
+    "නික": [
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 6,
+        "gana_name_si": "විෂස්න"
+      }
+    ],
+    "ලෝලු ": [
+      {
+        "varga_num": 3,
+        "varga_name_si": "තෘතිය",
+        "gana_num": 6,
+        "gana_name_si": "විෂස්න"
+      }
+    ],
+    " යන ගණ සතරකින් යුක්තය. ": [
+      {
+        "varga_num": 4,
+        "varga_name_si": "චතුර්ථ",
+        "gana_num": 1,
+        "gana_name_si": "ස්තන්‍ය ජනන"
+      }
+    ],
+    " දියමිත්ත": [
+      {
+        "varga_num": 4,
+        "varga_name_si": "චතුර්ථ",
+        "gana_num": 2,
+        "gana_name_si": "ස්තන්‍ය ශෝධන"
+      }
+    ],
+    "දේවදාර": [
+      {
+        "varga_num": 4,
+        "varga_name_si": "චතුර්ථ",
+        "gana_num": 2,
+        "gana_name_si": "ස්තන්‍ය ශෝධන"
+      },
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 6,
+        "gana_name_si": "අනුවාසනෝපග"
+      }
+    ],
+    "මූර්වා": [
+      {
+        "varga_num": 4,
+        "varga_name_si": "චතුර්ථ",
+        "gana_num": 2,
+        "gana_name_si": "ස්තන්‍ය ශෝධන"
+      }
+    ],
+    "බිංකොහොඹ": [
+      {
+        "varga_num": 4,
+        "varga_name_si": "චතුර්ථ",
+        "gana_num": 2,
+        "gana_name_si": "ස්තන්‍ය ශෝධන"
+      }
+    ],
+    "ඉරමුසු ": [
+      {
+        "varga_num": 4,
+        "varga_name_si": "චතුර්ථ",
+        "gana_num": 2,
+        "gana_name_si": "ස්තන්‍ය ශෝධන"
+      }
+    ],
+    "මුං වැන්න": [
+      {
+        "varga_num": 4,
+        "varga_name_si": "චතුර්ථ",
+        "gana_num": 3,
+        "gana_name_si": "ශුක්‍ර ජනන"
+      }
+    ],
+    "වෘක්ෂරුහා": [
+      {
+        "varga_num": 4,
+        "varga_name_si": "චතුර්ථ",
+        "gana_num": 3,
+        "gana_name_si": "ශුක්‍ර ජනන"
+      }
+    ],
+    "පිලිල) කිරිබදු හෝ ජටාමාංශ කකුළු සුඟු": [
+      {
+        "varga_num": 4,
+        "varga_name_si": "චතුර්ථ",
+        "gana_num": 3,
+        "gana_name_si": "ශුක්‍ර ජනන"
+      }
+    ],
+    " කොට්ට": [
+      {
+        "varga_num": 4,
+        "varga_name_si": "චතුර්ථ",
+        "gana_num": 4,
+        "gana_name_si": "ශුක්‍ර ශෝධන"
+      }
+    ],
+    "එල්වලු": [
+      {
+        "varga_num": 4,
+        "varga_name_si": "චතුර්ථ",
+        "gana_num": 4,
+        "gana_name_si": "ශුක්‍ර ශෝධන"
+      },
+      {
+        "varga_num": 10,
+        "varga_name_si": "දශම",
+        "gana_num": 2,
+        "gana_name_si": "වේදනාස්ථාපන"
+      }
+    ],
+    "කඵල": [
+      {
+        "varga_num": 4,
+        "varga_name_si": "චතුර්ථ",
+        "gana_num": 4,
+        "gana_name_si": "ශුක්‍ර ශෝධන"
+      },
+      {
+        "varga_num": 10,
+        "varga_name_si": "දශම",
+        "gana_num": 3,
+        "gana_name_si": "සංඥාස්ථාපන"
+      }
+    ],
+    "මුහුදු පෙන": [
+      {
+        "varga_num": 4,
+        "varga_name_si": "චතුර්ථ",
+        "gana_num": 4,
+        "gana_name_si": "ශුක්‍ර ශෝධන"
+      }
+    ],
+    "කොළොම් මැලියම්": [
+      {
+        "varga_num": 4,
+        "varga_name_si": "චතුර්ථ",
+        "gana_num": 4,
+        "gana_name_si": "ශුක්‍ර ශෝධන"
+      }
+    ],
+    "කළු උක්": [
+      {
+        "varga_num": 4,
+        "varga_name_si": "චතුර්ථ",
+        "gana_num": 4,
+        "gana_name_si": "ශුක්‍ර ශෝධන"
+      }
+    ],
+    "ඉකිරි කතුරුමුරුංගා සැවැන්දරා": [
+      {
+        "varga_num": 4,
+        "varga_name_si": "චතුර්ථ",
+        "gana_num": 4,
+        "gana_name_si": "ශුක්‍ර ශෝධන"
+      }
+    ],
+    " මුද්දරප්පලම්": [
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 1,
+        "gana_name_si": "ස්නේහෝපග"
+      },
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 4,
+        "gana_name_si": "විරේචනෝපග"
+      },
+      {
+        "varga_num": 8,
+        "varga_name_si": "අෂ්ටම",
+        "gana_num": 1,
+        "gana_name_si": "කාසහර"
+      }
+    ],
+    "ජීවක": [
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 1,
+        "gana_name_si": "ස්නේහෝපග"
+      }
+    ],
+    "ජීවන්ති": [
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 1,
+        "gana_name_si": "ස්නේහෝපග"
+      },
+      {
+        "varga_num": 10,
+        "varga_name_si": "දශම",
+        "gana_num": 5,
+        "gana_name_si": "වයඃස්ථාපන"
+      }
+    ],
+    "ශාලපර්ණී දශකය ස්නේහ": [
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 1,
+        "gana_name_si": "ස්නේහෝපග"
+      }
+    ],
+    "එරඬු": [
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 2,
+        "gana_name_si": "ස්වේදෝපග"
+      },
+      {
+        "varga_num": 9,
+        "varga_name_si": "නවම",
+        "gana_num": 4,
+        "gana_name_si": "අංගමර්දප්‍රශමන"
+      }
+    ],
+    "සුදුසාරණ": [
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 2,
+        "gana_name_si": "ස්වේදෝපග"
+      }
+    ],
+    "රතුසාරණ": [
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 2,
+        "gana_name_si": "ස්වේදෝපග"
+      }
+    ],
+    "යව": [
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 2,
+        "gana_name_si": "ස්වේදෝපග"
+      },
+      {
+        "varga_num": 6,
+        "varga_name_si": "ෂෂ්ඨ",
+        "gana_num": 1,
+        "gana_name_si": "ඡර්දිනිග්‍රහණ"
+      }
+    ],
+    "තල": [
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 2,
+        "gana_name_si": "ස්වේදෝපග"
+      }
+    ],
+    "කොල්ලු": [
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 2,
+        "gana_name_si": "ස්වේදෝපග"
+      }
+    ],
+    "උඳු": [
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 2,
+        "gana_name_si": "ස්වේදෝපග"
+      }
+    ],
+    "මසන්": [
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 2,
+        "gana_name_si": "ස්වේදෝපග"
+      },
+      {
+        "varga_num": 8,
+        "varga_name_si": "අෂ්ටම",
+        "gana_num": 5,
+        "gana_name_si": "ශ්‍රමහර"
+      },
+      {
+        "varga_num": 9,
+        "varga_name_si": "නවම",
+        "gana_num": 3,
+        "gana_name_si": "උදර්ද ප්‍රශමන"
+      }
+    ],
+    " කොවක්කා": [
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 3,
+        "gana_name_si": "වමනෝපග"
+      }
+    ],
+    "වන මීපැණි": [
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 3,
+        "gana_name_si": "වමනෝපග"
+      }
+    ],
+    "රතු කොබෝලීල": [
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 3,
+        "gana_name_si": "වමනෝපග"
+      }
+    ],
+    "සුදු කොබෝලීල": [
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 3,
+        "gana_name_si": "වමනෝපග"
+      }
+    ],
+    "කොළොම්": [
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 3,
+        "gana_name_si": "වමනෝපග"
+      },
+      {
+        "varga_num": 10,
+        "varga_name_si": "දශම",
+        "gana_num": 2,
+        "gana_name_si": "වේදනාස්ථාපන"
+      }
+    ],
+    "ජලවේතස හණ": [
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 3,
+        "gana_name_si": "වමනෝපග"
+      }
+    ],
+    "ඇද්දෙමට ගෙඩි": [
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 4,
+        "gana_name_si": "විරේචනෝපග"
+      },
+      {
+        "varga_num": 9,
+        "varga_name_si": "නවම",
+        "gana_num": 1,
+        "gana_name_si": "දාහ ප්‍රශමන"
+      }
+    ],
+    "බොරළුදමුනු ගෙඩි": [
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 4,
+        "gana_name_si": "විරේචනෝපග"
+      }
+    ],
+    "බුළු": [
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 4,
+        "gana_name_si": "විරේචනෝපග"
+      },
+      {
+        "varga_num": 8,
+        "varga_name_si": "අෂ්ටම",
+        "gana_num": 4,
+        "gana_name_si": "ජ්වරහර"
+      }
+    ],
+    "කුඩා මසන් කැළෑ මසන්": [
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 4,
+        "gana_name_si": "විරේචනෝපග"
+      }
+    ],
+    "මොර": [
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 4,
+        "gana_name_si": "විරේචනෝපග"
+      },
+      {
+        "varga_num": 8,
+        "varga_name_si": "අෂ්ටම",
+        "gana_num": 4,
+        "gana_name_si": "ජ්වරහර"
+      }
+    ],
+    " තිරැස්සවාලු": [
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 5,
+        "gana_name_si": "ආස්ථාපනෝපග"
+      }
+    ],
+    "තිප්පිලි කොට්ටු": [
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 5,
+        "gana_name_si": "ආස්ථාපනෝපග"
+      }
+    ],
+    "අබ": [
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 5,
+        "gana_name_si": "ආස්ථාපනෝපග"
+      },
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 7,
+        "gana_name_si": "ශිරෝවිරේචනෝපග"
+      }
+    ],
+    "ශතපුෂ්ප": [
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 5,
+        "gana_name_si": "ආස්ථාපනෝපග"
+      },
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 6,
+        "gana_name_si": "අනුවාසනෝපග"
+      }
+    ],
+    "කුකුරුමාන්": [
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 5,
+        "gana_name_si": "ආස්ථාපනෝපග"
+      },
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 6,
+        "gana_name_si": "අනුවාසනෝපග"
+      }
+    ],
+    " අරත්ත": [
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 6,
+        "gana_name_si": "අනුවාසනෝපග"
+      }
+    ],
+    "සුදු සාරණ": [
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 6,
+        "gana_name_si": "අනුවාසනෝපග"
+      },
+      {
+        "varga_num": 8,
+        "varga_name_si": "අෂ්ටම",
+        "gana_num": 1,
+        "gana_name_si": "කාසහර"
+      }
+    ],
+    "රතු සාරණ. ගොකටු": [
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 6,
+        "gana_name_si": "අනුවාසනෝපග"
+      }
+    ],
+    "මිදි": [
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 6,
+        "gana_name_si": "අනුවාසනෝපග"
+      },
+      {
+        "varga_num": 8,
+        "varga_name_si": "අෂ්ටම",
+        "gana_num": 3,
+        "gana_name_si": "ශෝථහර"
+      },
+      {
+        "varga_num": 9,
+        "varga_name_si": "නවම",
+        "gana_num": 2,
+        "gana_name_si": "ශීත ප්‍රශමන"
+      }
+    ],
+    "තොටිල ": [
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 6,
+        "gana_name_si": "අනුවාසනෝපග"
+      }
+    ],
+    " දුහුදු": [
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 7,
+        "gana_name_si": "ශිරෝවිරේචනෝපග"
+      }
+    ],
+    "ක්ෂවක": [
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 7,
+        "gana_name_si": "ශිරෝවිරේචනෝපග"
+      }
+    ],
+    "මුරුංගා ඇට": [
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 7,
+        "gana_name_si": "ශිරෝවිරේචනෝපග"
+      }
+    ],
+    "කරල් හැබ ඇට": [
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 7,
+        "gana_name_si": "ශිරෝවිරේචනෝපග"
+      }
+    ],
+    "එළ කටරොළු නිල් කටරොළු": [
+      {
+        "varga_num": 5,
+        "varga_name_si": "පඤ්චම",
+        "gana_num": 7,
+        "gana_name_si": "ශිරෝවිරේචනෝපග"
+      }
+    ],
+    " මාදම් කොළ": [
+      {
+        "varga_num": 6,
+        "varga_name_si": "ෂෂ්ඨ",
+        "gana_num": 1,
+        "gana_name_si": "ඡර්දිනිග්‍රහණ"
+      }
+    ],
+    "අඹකොළ": [
+      {
+        "varga_num": 6,
+        "varga_name_si": "ෂෂ්ඨ",
+        "gana_num": 1,
+        "gana_name_si": "ඡර්දිනිග්‍රහණ"
+      }
+    ],
+    "ඇඹුල් මසන්": [
+      {
+        "varga_num": 6,
+        "varga_name_si": "ෂෂ්ඨ",
+        "gana_num": 1,
+        "gana_name_si": "ඡර්දිනිග්‍රහණ"
+      }
+    ],
+    "සැවැන්දරා සෞරාෂ්ට්‍ර මෘත්තිකා": [
+      {
+        "varga_num": 6,
+        "varga_name_si": "ෂෂ්ඨ",
+        "gana_num": 1,
+        "gana_name_si": "ඡර්දිනිග්‍රහණ"
+      }
+    ],
+    "පැපිලිය": [
+      {
+        "varga_num": 6,
+        "varga_name_si": "ෂෂ්ඨ",
+        "gana_num": 2,
+        "gana_name_si": "තෘෂ්ණානිග්‍රහණ"
+      }
+    ],
+    "බිම්නිඹ": [
+      {
+        "varga_num": 6,
+        "varga_name_si": "ෂෂ්ඨ",
+        "gana_num": 2,
+        "gana_name_si": "තෘෂ්ණානිග්‍රහණ"
+      }
+    ],
+    "බාලක": [
+      {
+        "varga_num": 6,
+        "varga_name_si": "ෂෂ්ඨ",
+        "gana_num": 2,
+        "gana_name_si": "තෘෂ්ණානිග්‍රහණ"
+      }
+    ],
+    "කොත්තමල්ලි": [
+      {
+        "varga_num": 6,
+        "varga_name_si": "ෂෂ්ඨ",
+        "gana_num": 2,
+        "gana_name_si": "තෘෂ්ණානිග්‍රහණ"
+      },
+      {
+        "varga_num": 9,
+        "varga_name_si": "නවම",
+        "gana_num": 2,
+        "gana_name_si": "ශීත ප්‍රශමන"
+      }
+    ],
+    "පටෝල ": [
+      {
+        "varga_num": 6,
+        "varga_name_si": "ෂෂ්ඨ",
+        "gana_num": 2,
+        "gana_name_si": "තෘෂ්ණානිග්‍රහණ"
+      }
+    ],
+    " ශථී": [
+      {
+        "varga_num": 6,
+        "varga_name_si": "ෂෂ්ඨ",
+        "gana_num": 3,
+        "gana_name_si": "හික්කානිග්‍රහණ"
+      }
+    ],
+    "පොකුරුමුල්": [
+      {
+        "varga_num": 6,
+        "varga_name_si": "ෂෂ්ඨ",
+        "gana_num": 3,
+        "gana_name_si": "හික්කානිග්‍රහණ"
+      }
+    ],
+    "මසන් ඇට": [
+      {
+        "varga_num": 6,
+        "varga_name_si": "ෂෂ්ඨ",
+        "gana_num": 3,
+        "gana_name_si": "හික්කානිග්‍රහණ"
+      }
+    ],
+    "කටුවැල්බටු": [
+      {
+        "varga_num": 6,
+        "varga_name_si": "ෂෂ්ඨ",
+        "gana_num": 3,
+        "gana_name_si": "හික්කානිග්‍රහණ"
+      },
+      {
+        "varga_num": 8,
+        "varga_name_si": "අෂ්ටම",
+        "gana_num": 1,
+        "gana_name_si": "කාසහර"
+      },
+      {
+        "varga_num": 8,
+        "varga_name_si": "අෂ්ටම",
+        "gana_num": 3,
+        "gana_name_si": "ශෝථහර"
+      },
+      {
+        "varga_num": 9,
+        "varga_name_si": "නවම",
+        "gana_num": 2,
+        "gana_name_si": "ශීත ප්‍රශමන"
+      },
+      {
+        "varga_num": 9,
+        "varga_name_si": "නවම",
+        "gana_num": 4,
+        "gana_name_si": "අංගමර්දප්‍රශමන"
+      }
+    ],
+    "පිලිල": [
+      {
+        "varga_num": 6,
+        "varga_name_si": "ෂෂ්ඨ",
+        "gana_num": 3,
+        "gana_name_si": "හික්කානිග්‍රහණ"
+      }
+    ],
+    "කකුළුසුඟු ": [
+      {
+        "varga_num": 6,
+        "varga_name_si": "ෂෂ්ඨ",
+        "gana_num": 3,
+        "gana_name_si": "හික්කානිග්‍රහණ"
+      }
+    ],
+    " පුවඟු": [
+      {
+        "varga_num": 7,
+        "varga_name_si": "සප්තම",
+        "gana_num": 1,
+        "gana_name_si": "පුරීෂ සංග්‍රහණීය"
+      }
+    ],
+    "ඉරමුසු": [
+      {
+        "varga_num": 7,
+        "varga_name_si": "සප්තම",
+        "gana_num": 1,
+        "gana_name_si": "පුරීෂ සංග්‍රහණීය"
+      },
+      {
+        "varga_num": 9,
+        "varga_name_si": "නවම",
+        "gana_num": 1,
+        "gana_name_si": "දාහ ප්‍රශමන"
+      }
+    ],
+    "අඹ ඇට": [
+      {
+        "varga_num": 7,
+        "varga_name_si": "සප්තම",
+        "gana_num": 1,
+        "gana_name_si": "පුරීෂ සංග්‍රහණීය"
+      }
+    ],
+    "තොටිල": [
+      {
+        "varga_num": 7,
+        "varga_name_si": "සප්තම",
+        "gana_num": 1,
+        "gana_name_si": "පුරීෂ සංග්‍රහණීය"
+      },
+      {
+        "varga_num": 8,
+        "varga_name_si": "අෂ්ටම",
+        "gana_num": 3,
+        "gana_name_si": "ශෝථහර"
+      },
+      {
+        "varga_num": 9,
+        "varga_name_si": "නවම",
+        "gana_num": 2,
+        "gana_name_si": "ශීත ප්‍රශමන"
+      }
+    ],
+    "මලිත මල්": [
+      {
+        "varga_num": 7,
+        "varga_name_si": "සප්තම",
+        "gana_num": 1,
+        "gana_name_si": "පුරීෂ සංග්‍රහණීය"
+      },
+      {
+        "varga_num": 7,
+        "varga_name_si": "සප්තම",
+        "gana_num": 4,
+        "gana_name_si": "මූත්‍ර විරජනීය"
+      }
+    ],
+    "භාර්හී": [
+      {
+        "varga_num": 7,
+        "varga_name_si": "සප්තම",
+        "gana_num": 1,
+        "gana_name_si": "පුරීෂ සංග්‍රහණීය"
+      }
+    ],
+    " නෙළුණු": [
+      {
+        "varga_num": 7,
+        "varga_name_si": "සප්තම",
+        "gana_num": 1,
+        "gana_name_si": "පුරීෂ සංග්‍රහණීය"
+      }
+    ],
+    " දශකය මල පිරිසිඳු කොට ස්වාභාවික මාදම් පොතු": [
+      {
+        "varga_num": 7,
+        "varga_name_si": "සප්තම",
+        "gana_num": 2,
+        "gana_name_si": "පුරීෂ විරජනීය"
+      }
+    ],
+    "ශල්ලකීත්වක්": [
+      {
+        "varga_num": 7,
+        "varga_name_si": "සප්තම",
+        "gana_num": 2,
+        "gana_name_si": "පුරීෂ විරජනීය"
+      }
+    ],
+    " මාදම්": [
+      {
+        "varga_num": 7,
+        "varga_name_si": "සප්තම",
+        "gana_num": 3,
+        "gana_name_si": "මූත්‍ර සංග්‍රහණ"
+      }
+    ],
+    "පුලිළ": [
+      {
+        "varga_num": 7,
+        "varga_name_si": "සප්තම",
+        "gana_num": 3,
+        "gana_name_si": "මූත්‍ර සංග්‍රහණ"
+      }
+    ],
+    "නුග": [
+      {
+        "varga_num": 7,
+        "varga_name_si": "සප්තම",
+        "gana_num": 3,
+        "gana_name_si": "මූත්‍ර සංග්‍රහණ"
+      }
+    ],
+    "ඇඹරැල්ලා": [
+      {
+        "varga_num": 7,
+        "varga_name_si": "සප්තම",
+        "gana_num": 3,
+        "gana_name_si": "මූත්‍ර සංග්‍රහණ"
+      }
+    ],
+    "අට්ටික්කා": [
+      {
+        "varga_num": 7,
+        "varga_name_si": "සප්තම",
+        "gana_num": 3,
+        "gana_name_si": "මූත්‍ර සංග්‍රහණ"
+      }
+    ],
+    "බෝ": [
+      {
+        "varga_num": 7,
+        "varga_name_si": "සප්තම",
+        "gana_num": 3,
+        "gana_name_si": "මූත්‍ර සංග්‍රහණ"
+      }
+    ],
+    "අශ්මන්තක": [
+      {
+        "varga_num": 7,
+        "varga_name_si": "සප්තම",
+        "gana_num": 3,
+        "gana_name_si": "මූත්‍ර සංග්‍රහණ"
+      }
+    ],
+    "කිහිරි යන දේ දශකය මූත්‍ර සංග්‍රහණීය වෙයි. 4.මූත්‍ර විරජනීය ද්‍රව්‍ය": [
+      {
+        "varga_num": 7,
+        "varga_name_si": "සප්තම",
+        "gana_num": 3,
+        "gana_name_si": "මූත්‍ර සංග්‍රහණ"
+      }
+    ],
+    " සුදු නෙළුම්": [
+      {
+        "varga_num": 7,
+        "varga_name_si": "සප්තම",
+        "gana_num": 4,
+        "gana_name_si": "මූත්‍ර විරජනීය"
+      }
+    ],
+    "නිල් මානෙල්": [
+      {
+        "varga_num": 7,
+        "varga_name_si": "සප්තම",
+        "gana_num": 4,
+        "gana_name_si": "මූත්‍ර විරජනීය"
+      }
+    ],
+    "රතු නෙළුම්": [
+      {
+        "varga_num": 7,
+        "varga_name_si": "සප්තම",
+        "gana_num": 4,
+        "gana_name_si": "මූත්‍ර විරජනීය"
+      }
+    ],
+    "සුදු මානෙල්": [
+      {
+        "varga_num": 7,
+        "varga_name_si": "සප්තම",
+        "gana_num": 4,
+        "gana_name_si": "මූත්‍ර විරජනීය"
+      }
+    ],
+    "අතිශයින් සුවඳවත් නිල් මානෙල්": [
+      {
+        "varga_num": 7,
+        "varga_name_si": "සප්තම",
+        "gana_num": 4,
+        "gana_name_si": "මූත්‍ර විරජනීය"
+      }
+    ],
+    "සුදු නෙළුම්": [
+      {
+        "varga_num": 7,
+        "varga_name_si": "සප්තම",
+        "gana_num": 4,
+        "gana_name_si": "මූත්‍ර විරජනීය"
+      }
+    ],
+    "ශතපත්‍ර නම් නෙළුම්": [
+      {
+        "varga_num": 7,
+        "varga_name_si": "සප්තම",
+        "gana_num": 4,
+        "gana_name_si": "මූත්‍ර විරජනීය"
+      }
+    ],
+    " පිලිල": [
+      {
+        "varga_num": 7,
+        "varga_name_si": "සප්තම",
+        "gana_num": 5,
+        "gana_name_si": "මූත්‍ර විරේචනීය"
+      }
+    ],
+    "ගොකටු": [
+      {
+        "varga_num": 7,
+        "varga_name_si": "සප්තම",
+        "gana_num": 5,
+        "gana_name_si": "මූත්‍ර විරේචනීය"
+      }
+    ],
+    "කතුරුමුරුංගා": [
+      {
+        "varga_num": 7,
+        "varga_name_si": "සප්තම",
+        "gana_num": 5,
+        "gana_name_si": "මූත්‍ර විරේචනීය"
+      }
+    ],
+    "වශිර ": [
+      {
+        "varga_num": 7,
+        "varga_name_si": "සප්තම",
+        "gana_num": 5,
+        "gana_name_si": "මූත්‍ර විරේචනීය"
+      }
+    ],
+    "කකුළුසුඟු": [
+      {
+        "varga_num": 8,
+        "varga_name_si": "අෂ්ටම",
+        "gana_num": 1,
+        "gana_name_si": "කාසහර"
+      }
+    ],
+    "රතු සාරණ": [
+      {
+        "varga_num": 8,
+        "varga_name_si": "අෂ්ටම",
+        "gana_num": 1,
+        "gana_name_si": "කාසහර"
+      }
+    ],
+    " එල පිටවක්කා": [
+      {
+        "varga_num": 8,
+        "varga_name_si": "අෂ්ටම",
+        "gana_num": 1,
+        "gana_name_si": "කාසහර"
+      }
+    ],
+    " ශඨි": [
+      {
+        "varga_num": 8,
+        "varga_name_si": "අෂ්ටම",
+        "gana_num": 2,
+        "gana_name_si": "ශ්වාසහර"
+      }
+    ],
+    "සුවඳකොට්ට": [
+      {
+        "varga_num": 8,
+        "varga_name_si": "අෂ්ටම",
+        "gana_num": 2,
+        "gana_name_si": "ශ්වාසහර"
+      }
+    ],
+    "එන්සාල් අම්ලවේතස": [
+      {
+        "varga_num": 8,
+        "varga_name_si": "අෂ්ටම",
+        "gana_num": 2,
+        "gana_name_si": "ශ්වාසහර"
+      }
+    ],
+    "පෙරුම්කායම්": [
+      {
+        "varga_num": 8,
+        "varga_name_si": "අෂ්ටම",
+        "gana_num": 2,
+        "gana_name_si": "ශ්වාසහර"
+      }
+    ],
+    "අගිල්": [
+      {
+        "varga_num": 8,
+        "varga_name_si": "අෂ්ටම",
+        "gana_num": 2,
+        "gana_name_si": "ශ්වාසහර"
+      },
+      {
+        "varga_num": 9,
+        "varga_name_si": "නවම",
+        "gana_num": 2,
+        "gana_name_si": "ශීත ප්‍රශමන"
+      }
+    ],
+    "මදුරුතලා": [
+      {
+        "varga_num": 8,
+        "varga_name_si": "අෂ්ටම",
+        "gana_num": 2,
+        "gana_name_si": "ශ්වාසහර"
+      }
+    ],
+    "එල පිටවක්කා": [
+      {
+        "varga_num": 8,
+        "varga_name_si": "අෂ්ටම",
+        "gana_num": 2,
+        "gana_name_si": "ශ්වාසහර"
+      }
+    ],
+    " ජීවන්ති": [
+      {
+        "varga_num": 8,
+        "varga_name_si": "අෂ්ටම",
+        "gana_num": 2,
+        "gana_name_si": "ශ්වාසහර"
+      }
+    ],
+    "චෝරපුෂ්පී": [
+      {
+        "varga_num": 8,
+        "varga_name_si": "අෂ්ටම",
+        "gana_num": 2,
+        "gana_name_si": "ශ්වාසහර"
+      }
+    ],
+    " පළොල්": [
+      {
+        "varga_num": 8,
+        "varga_name_si": "අෂ්ටම",
+        "gana_num": 3,
+        "gana_name_si": "ශෝථහර"
+      }
+    ],
+    "ඇද්දෙමට": [
+      {
+        "varga_num": 8,
+        "varga_name_si": "අෂ්ටම",
+        "gana_num": 3,
+        "gana_name_si": "ශෝථහර"
+      }
+    ],
+    "ශාලපර්ණි": [
+      {
+        "varga_num": 8,
+        "varga_name_si": "අෂ්ටම",
+        "gana_num": 3,
+        "gana_name_si": "ශෝථහර"
+      }
+    ],
+    " ගොකටු": [
+      {
+        "varga_num": 8,
+        "varga_name_si": "අෂ්ටම",
+        "gana_num": 3,
+        "gana_name_si": "ශෝථහර"
+      }
+    ],
+    "සීනි": [
+      {
+        "varga_num": 8,
+        "varga_name_si": "අෂ්ටම",
+        "gana_num": 4,
+        "gana_name_si": "ජ්වරහර"
+      },
+      {
+        "varga_num": 10,
+        "varga_name_si": "දශම",
+        "gana_num": 1,
+        "gana_name_si": "ශොණිතස්ථාපන"
+      }
+    ],
+    "බොරළුදමුනු": [
+      {
+        "varga_num": 8,
+        "varga_name_si": "අෂ්ටම",
+        "gana_num": 4,
+        "gana_name_si": "ජ්වරහර"
+      },
+      {
+        "varga_num": 8,
+        "varga_name_si": "අෂ්ටම",
+        "gana_num": 5,
+        "gana_name_si": "ශ්‍රමහර"
+      }
+    ],
+    " මුදිරප්පලම්": [
+      {
+        "varga_num": 8,
+        "varga_name_si": "අෂ්ටම",
+        "gana_num": 5,
+        "gana_name_si": "ශ්‍රමහර"
+      }
+    ],
+    "රටඉඳි": [
+      {
+        "varga_num": 8,
+        "varga_name_si": "අෂ්ටම",
+        "gana_num": 5,
+        "gana_name_si": "ශ්‍රමහර"
+      }
+    ],
+    "කොට්ටම්බා": [
+      {
+        "varga_num": 8,
+        "varga_name_si": "අෂ්ටම",
+        "gana_num": 5,
+        "gana_name_si": "ශ්‍රමහර"
+      },
+      {
+        "varga_num": 9,
+        "varga_name_si": "නවම",
+        "gana_num": 3,
+        "gana_name_si": "උදර්ද ප්‍රශමන"
+      }
+    ],
+    "කොටදිඹුලා": [
+      {
+        "varga_num": 8,
+        "varga_name_si": "අෂ්ටම",
+        "gana_num": 5,
+        "gana_name_si": "ශ්‍රමහර"
+      }
+    ],
+    "උක්": [
+      {
+        "varga_num": 8,
+        "varga_name_si": "අෂ්ටම",
+        "gana_num": 5,
+        "gana_name_si": "ශ්‍රමහර"
+      }
+    ],
+    "යව සැටදා හැල්": [
+      {
+        "varga_num": 8,
+        "varga_name_si": "අෂ්ටම",
+        "gana_num": 5,
+        "gana_name_si": "ශ්‍රමහර"
+      }
+    ],
+    " විලඳ": [
+      {
+        "varga_num": 9,
+        "varga_name_si": "නවම",
+        "gana_num": 1,
+        "gana_name_si": "දාහ ප්‍රශමන"
+      }
+    ],
+    "සුදුහඳුන්": [
+      {
+        "varga_num": 9,
+        "varga_name_si": "නවම",
+        "gana_num": 1,
+        "gana_name_si": "දාහ ප්‍රශමන"
+      }
+    ],
+    "ශර්කරා": [
+      {
+        "varga_num": 9,
+        "varga_name_si": "නවම",
+        "gana_num": 1,
+        "gana_name_si": "දාහ ප්‍රශමන"
+      }
+    ],
+    "නිල්මානෙල්": [
+      {
+        "varga_num": 9,
+        "varga_name_si": "නවම",
+        "gana_num": 1,
+        "gana_name_si": "දාහ ප්‍රශමන"
+      }
+    ],
+    "සැවැන්දරා": [
+      {
+        "varga_num": 9,
+        "varga_name_si": "නවම",
+        "gana_num": 1,
+        "gana_name_si": "දාහ ප්‍රශමන"
+      },
+      {
+        "varga_num": 9,
+        "varga_name_si": "නවම",
+        "gana_num": 4,
+        "gana_name_si": "අංගමර්දප්‍රශමන"
+      }
+    ],
+    " ඉරිවේරිය": [
+      {
+        "varga_num": 9,
+        "varga_name_si": "නවම",
+        "gana_num": 1,
+        "gana_name_si": "දාහ ප්‍රශමන"
+      }
+    ],
+    " 23 තුවරලා": [
+      {
+        "varga_num": 9,
+        "varga_name_si": "නවම",
+        "gana_num": 2,
+        "gana_name_si": "ශීත ප්‍රශමන"
+      }
+    ],
+    "තිප්පිලි ": [
+      {
+        "varga_num": 9,
+        "varga_name_si": "නවම",
+        "gana_num": 2,
+        "gana_name_si": "ශීත ප්‍රශමන"
+      }
+    ],
+    " තිඹිරි": [
+      {
+        "varga_num": 9,
+        "varga_name_si": "නවම",
+        "gana_num": 3,
+        "gana_name_si": "උදර්ද ප්‍රශමන"
+      }
+    ],
+    "කිහිරි": [
+      {
+        "varga_num": 9,
+        "varga_name_si": "නවම",
+        "gana_num": 3,
+        "gana_name_si": "උදර්ද ප්‍රශමන"
+      }
+    ],
+    "සුදුකිහිරි": [
+      {
+        "varga_num": 9,
+        "varga_name_si": "නවම",
+        "gana_num": 3,
+        "gana_name_si": "උදර්ද ප්‍රශමන"
+      }
+    ],
+    "සල්": [
+      {
+        "varga_num": 9,
+        "varga_name_si": "නවම",
+        "gana_num": 3,
+        "gana_name_si": "උදර්ද ප්‍රශමන"
+      }
+    ],
+    "කුඹුක්": [
+      {
+        "varga_num": 9,
+        "varga_name_si": "නවම",
+        "gana_num": 3,
+        "gana_name_si": "උදර්ද ප්‍රශමන"
+      }
+    ],
+    "අසන": [
+      {
+        "varga_num": 9,
+        "varga_name_si": "නවම",
+        "gana_num": 3,
+        "gana_name_si": "උදර්ද ප්‍රශමන"
+      }
+    ],
+    "අරිමේදා": [
+      {
+        "varga_num": 9,
+        "varga_name_si": "නවම",
+        "gana_num": 3,
+        "gana_name_si": "උදර්ද ප්‍රශමන"
+      }
+    ],
+    " ශාලපර්ණී": [
+      {
+        "varga_num": 9,
+        "varga_name_si": "නවම",
+        "gana_num": 4,
+        "gana_name_si": "අංගමර්දප්‍රශමන"
+      }
+    ],
+    "පෘෂ්ණිපර්ණී": [
+      {
+        "varga_num": 9,
+        "varga_name_si": "නවම",
+        "gana_num": 4,
+        "gana_name_si": "අංගමර්දප්‍රශමන"
+      }
+    ],
+    "සඳුන්": [
+      {
+        "varga_num": 9,
+        "varga_name_si": "නවම",
+        "gana_num": 4,
+        "gana_name_si": "අංගමර්දප්‍රශමන"
+      }
+    ],
+    "එන්සාල්": [
+      {
+        "varga_num": 9,
+        "varga_name_si": "නවම",
+        "gana_num": 4,
+        "gana_name_si": "අංගමර්දප්‍රශමන"
+      }
+    ],
+    "වල් අසමෝදගම්": [
+      {
+        "varga_num": 9,
+        "varga_name_si": "නවම",
+        "gana_num": 5,
+        "gana_name_si": "ශූල ප්‍රශමන"
+      }
+    ],
+    " සුදුදුරු": [
+      {
+        "varga_num": 9,
+        "varga_name_si": "නවම",
+        "gana_num": 5,
+        "gana_name_si": "ශූල ප්‍රශමන"
+      }
+    ],
+    "ගණ්ඩීරශාක": [
+      {
+        "varga_num": 9,
+        "varga_name_si": "නවම",
+        "gana_num": 5,
+        "gana_name_si": "ශූල ප්‍රශමන"
+      }
+    ],
+    " මීපැණි": [
+      {
+        "varga_num": 10,
+        "varga_name_si": "දශම",
+        "gana_num": 1,
+        "gana_name_si": "ශොණිතස්ථාපන"
+      }
+    ],
+    "කුංකුමප්පු": [
+      {
+        "varga_num": 10,
+        "varga_name_si": "දශම",
+        "gana_num": 1,
+        "gana_name_si": "ශොණිතස්ථාපන"
+      }
+    ],
+    "කැබිලිති": [
+      {
+        "varga_num": 10,
+        "varga_name_si": "දශම",
+        "gana_num": 1,
+        "gana_name_si": "ශොණිතස්ථාපන"
+      }
+    ],
+    "සිවංගුරු": [
+      {
+        "varga_num": 10,
+        "varga_name_si": "දශම",
+        "gana_num": 1,
+        "gana_name_si": "ශොණිතස්ථාපන"
+      }
+    ],
+    "විලඳ": [
+      {
+        "varga_num": 10,
+        "varga_name_si": "දශම",
+        "gana_num": 1,
+        "gana_name_si": "ශොණිතස්ථාපන"
+      }
+    ],
+    " සල්": [
+      {
+        "varga_num": 10,
+        "varga_name_si": "දශම",
+        "gana_num": 2,
+        "gana_name_si": "වේදනාස්ථාපන"
+      }
+    ],
+    "වේ": [
+      {
+        "varga_num": 10,
+        "varga_name_si": "දශම",
+        "gana_num": 2,
+        "gana_name_si": "වේදනාස්ථාපන"
+      }
+    ],
+    "අශෝක": [
+      {
+        "varga_num": 10,
+        "varga_name_si": "දශම",
+        "gana_num": 2,
+        "gana_name_si": "වේදනාස්ථාපන"
+      }
+    ],
+    " පෙරුම්කායම්": [
+      {
+        "varga_num": 10,
+        "varga_name_si": "දශම",
+        "gana_num": 3,
+        "gana_name_si": "සංඥාස්ථාපන"
+      }
+    ],
+    "අරිමේද": [
+      {
+        "varga_num": 10,
+        "varga_name_si": "දශම",
+        "gana_num": 3,
+        "gana_name_si": "සංඥාස්ථාපන"
+      }
+    ],
+    "චෝරපුෂ්පි": [
+      {
+        "varga_num": 10,
+        "varga_name_si": "දශම",
+        "gana_num": 3,
+        "gana_name_si": "සංඥාස්ථාපන"
+      }
+    ],
+    "බ්‍රාහ්මී": [
+      {
+        "varga_num": 10,
+        "varga_name_si": "දශම",
+        "gana_num": 3,
+        "gana_name_si": "සංඥාස්ථාපන"
+      }
+    ],
+    "ගෝලෝමී": [
+      {
+        "varga_num": 10,
+        "varga_name_si": "දශම",
+        "gana_num": 3,
+        "gana_name_si": "සංඥාස්ථාපන"
+      }
+    ],
+    " ගොන්හැකිරි": [
+      {
+        "varga_num": 10,
+        "varga_name_si": "දශම",
+        "gana_num": 4,
+        "gana_name_si": "ප්‍රජාස්ථාපන"
+      }
+    ],
+    "ලුණුවිල": [
+      {
+        "varga_num": 10,
+        "varga_name_si": "දශම",
+        "gana_num": 4,
+        "gana_name_si": "ප්‍රජාස්ථාපන"
+      }
+    ],
+    "දූර්වා": [
+      {
+        "varga_num": 10,
+        "varga_name_si": "දශම",
+        "gana_num": 4,
+        "gana_name_si": "ප්‍රජාස්ථාපන"
+      }
+    ],
+    " රසකිඳ": [
+      {
+        "varga_num": 10,
+        "varga_name_si": "දශම",
+        "gana_num": 5,
+        "gana_name_si": "වයඃස්ථාපන"
+      }
+    ],
+    "එළකටරොළු": [
+      {
+        "varga_num": 10,
+        "varga_name_si": "දශම",
+        "gana_num": 5,
+        "gana_name_si": "වයඃස්ථාපන"
+      }
+    ],
+    "ශාලපර්ණී": [
+      {
+        "varga_num": 10,
+        "varga_name_si": "දශම",
+        "gana_num": 5,
+        "gana_name_si": "වයඃස්ථාපන"
+      }
+    ],
+    " සාරණ": [
+      {
+        "varga_num": 10,
+        "varga_name_si": "දශම",
+        "gana_num": 5,
+        "gana_name_si": "වයඃස්ථාපන"
+      }
+    ]
+  }
+}

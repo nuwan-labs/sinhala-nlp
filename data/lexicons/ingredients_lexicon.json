@@ -192,14 +192,14 @@
   },
   "කර්කටකශෘංගි": {
     "freq": 14,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "කර්කටකශෘංගි",
         "iast": "karkaṭakaśṛṃgi",
-        "lemma": "karkaṭaka+śṛṅgi",
-        "gloss": "karkaṭaka=karkaṭaka m. a crab, Suśr.; Pañcat. &c. | śṛṅgi=1. śṛṅgi f. (= śṛṅgī) a species of fish, L.",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -1653,14 +1653,14 @@
   },
   "ලෝධර": {
     "freq": 3,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "ලෝධර",
         "iast": "lodhara",
-        "lemma": "las+adhara",
-        "gloss": "las=1. las cl. 1. P., (Dhātup. xvii, 64) lasati (only p. lasat,  | adhara=a/dhara mfn. (connected with adha/s), lower, inferior, tendi",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -1980,9 +1980,9 @@
       {
         "word": "හිංගුල",
         "iast": "hiṃgula",
-        "lemma": "him+gula",
-        "gloss": "him=1. hi/m ind. an exclamation (interchangeable with hi/ṅ, q.v. | gula=gula m. (= guḍa) raw or unrefined sugar, molasses, L.",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -2398,14 +2398,14 @@
   },
   "ග්රීවේර ( ඉරිවේරිය )": {
     "freq": 2,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "ග්රීවේර",
         "iast": "grīvera",
-        "lemma": "grīva+īra",
-        "gloss": "grīva=grīva m. the neck, ĀrṣBr. | īra=īra m. wind.",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       },
       {
         "word": "(",
@@ -3377,14 +3377,14 @@
   },
   "පද්මකාෂ්ට": {
     "freq": 2,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "පද්මකාෂ්ට",
         "iast": "padmakāṣṭa",
-        "lemma": "padmaka+aṣṭa",
-        "gloss": "padmaka=padmaka m. n. red spots on the skin of an elephant, L. | aṣṭa=1. aṣṭa mfn. (√ akṣ; cf. nir-√ akṣ) ‘marked, branded’, only ",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -4414,7 +4414,7 @@
   },
   "ලොත් ( ලෝධීර )": {
     "freq": 1,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "ලොත්",
@@ -4433,9 +4433,9 @@
       {
         "word": "ලෝධීර",
         "iast": "lodhīra",
-        "lemma": "las+dhīra",
-        "gloss": "las=1. las cl. 1. P., (Dhātup. xvii, 64) lasati (only p. lasat,  | dhīra=1. dhī/ra mf(ī/ or ā)n. intelligent, wise, skilful, clever, ",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       },
       {
         "word": ")",
@@ -4536,9 +4536,9 @@
       {
         "word": "ග්රීවේර",
         "iast": "grīvera",
-        "lemma": "grīva+īra",
-        "gloss": "grīva=grīva m. the neck, ĀrṣBr. | īra=īra m. wind.",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       },
       {
         "word": ",",
@@ -5063,9 +5063,9 @@
       {
         "word": "යෝගයේ",
         "iast": "yogaye",
-        "lemma": "yok+aye",
-        "gloss": "yok=yok ind. = jyok, for a long time g. svar-ādi. | aye=aye ind. a vocative particle, an interjection (of surprise, ",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       },
       {
         "word": "හිම",
@@ -6008,14 +6008,14 @@
   },
   "කර්කටකශෘංගී": {
     "freq": 1,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "කර්කටකශෘංගී",
         "iast": "karkaṭakaśṛṃgī",
-        "lemma": "karkaṭaka+śṛṅgī",
-        "gloss": "karkaṭaka=karkaṭaka m. a crab, Suśr.; Pañcat. &c. | śṛṅgī=śṛṅgī (ī), f., see s.v.",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -6700,9 +6700,9 @@
       {
         "word": "රසාංජන",
         "iast": "rasāṃjana",
-        "lemma": "rasā+āñjana",
-        "gloss": "rasā=ra/sā (ā), f., see s.v. | āñjana=ā/ñjana n. ointment (especially for the eyes), AV.; TS.; ŚBr",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       },
       {
         "word": "(",
@@ -7683,14 +7683,14 @@
   },
   "ලෝධර පොතු": {
     "freq": 1,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "ලෝධර",
         "iast": "lodhara",
-        "lemma": "las+adhara",
-        "gloss": "las=1. las cl. 1. P., (Dhātup. xvii, 64) lasati (only p. lasat,  | adhara=a/dhara mfn. (connected with adha/s), lower, inferior, tendi",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       },
       {
         "word": "පොතු",
@@ -8782,9 +8782,9 @@
       {
         "word": "හිංගුලාකෘෂ්ට",
         "iast": "hiṃgulākṛṣṭa",
-        "lemma": "hiṅgulā+ākṛṣṭa",
-        "gloss": "hiṅgulā=hiṅgulā (ā), f., see below | ākṛṣṭa=ā-kṛṣṭa mfn. drawn, pulled, attracted.",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       },
       {
         "word": ")",
@@ -9459,7 +9459,7 @@
   },
   "රත්හිරියල් , ඉඟුරු , වංගභස්ම , සියල්ල": {
     "freq": 1,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "රත්හිරියල්",
@@ -9492,9 +9492,9 @@
       {
         "word": "වංගභස්ම",
         "iast": "vaṃgabhasma",
-        "lemma": "vaṅga+bhasma",
-        "gloss": "vaṅga=vaṅga m. Bengal proper or the eastern parts of the modern pr | bhasma=bhasma in comp. for bhasman.",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       },
       {
         "word": ",",
@@ -10286,9 +10286,9 @@
       {
         "word": "බඩයාම",
         "iast": "baḍayāma",
-        "lemma": "baṭ+ayāma",
-        "gloss": "baṭ=ba/ṭ ind. in truth, certainly (Sāy. = satyam), RV. | ayāma=a/-yāma m. not a path, TS.",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       },
       {
         "word": ",",
@@ -11557,9 +11557,9 @@
       {
         "word": "රසසින්දුර",
         "iast": "rasasindura",
-        "lemma": "rasa+sim+dura",
-        "gloss": "rasa=ra/sa m. (ifc. f(ā). ) the sap or juice of plants, juice of  | sim=1. sim ind. g. cādi. | dura=1. dura = 1. dur, only in śata- (q.v.)",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       },
       {
         "word": "මෙම",
@@ -11742,9 +11742,9 @@
       {
         "word": "තිරස්සවාලු",
         "iast": "tirassavālu",
-        "lemma": "tiras+sava+alu",
-        "gloss": "tiras=tira/s ind. (g. svar-ādi; √ tṝ) through (acc.), RV.; AV. xii | sava=1. sava/ m. (fr. √ 3. su) pressing out the juice of the Soma | alu=alu f. (= ālu, q.v.) a small water-pot, L.",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       },
       {
         "word": "මුල්",
@@ -13514,7 +13514,7 @@
   },
   "කටුපෙඳගෙඩි ( ශෘංගාටක )": {
     "freq": 1,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "කටුපෙඳගෙඩි",
@@ -13533,9 +13533,9 @@
       {
         "word": "ශෘංගාටක",
         "iast": "śṛṃgāṭaka",
-        "lemma": "śṛṅga+āṭaka",
-        "gloss": "śṛṅga=śṛṅga n. (perhaps connected with śiras, śīrṣan; ifc. f(ā or  | āṭaka=āṭaka mf(ikā)n. going. See kāraskarāṭikā.",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       },
       {
         "word": ")",
@@ -14804,9 +14804,9 @@
       {
         "word": "හිංගුල",
         "iast": "hiṃgula",
-        "lemma": "him+gula",
-        "gloss": "him=1. hi/m ind. an exclamation (interchangeable with hi/ṅ, q.v. | gula=gula m. (= guḍa) raw or unrefined sugar, molasses, L.",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       },
       {
         "word": ",",
@@ -15895,9 +15895,9 @@
       {
         "word": "හිංගුලෝත්ථ",
         "iast": "hiṃgulottha",
-        "lemma": "hiṅgula+uttha",
-        "gloss": "hiṅgula=hiṅgula m. n. a preparation of mercury with sulphur, vermili | uttha=ut-tha mfn. (generally ifc.) standing up, rising, arising, M",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       },
       {
         "word": "රසදිය",
@@ -17122,9 +17122,11 @@
       {
         "word": "රිදී",
         "iast": "ridī",
-        "lemma": null,
-        "gloss": null,
-        "method": null
+        "lemma": "māṇikya",
+        "gloss": "māṇikya n. ruby, Kāv.; Kathās. &c.",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "මාණික්‍ය භස්ම",
+        "pratinidhi_entry_num": 105
       },
       {
         "word": "භස්ම",
@@ -17666,9 +17668,9 @@
       {
         "word": "හිංගුලෝත්ථ",
         "iast": "hiṃgulottha",
-        "lemma": "hiṅgula+uttha",
-        "gloss": "hiṅgula=hiṅgula m. n. a preparation of mercury with sulphur, vermili | uttha=ut-tha mfn. (generally ifc.) standing up, rising, arising, M",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       },
       {
         "word": "රසදිය",
@@ -17740,9 +17742,9 @@
       {
         "word": "හිංගුල",
         "iast": "hiṃgula",
-        "lemma": "him+gula",
-        "gloss": "him=1. hi/m ind. an exclamation (interchangeable with hi/ṅ, q.v. | gula=gula m. (= guḍa) raw or unrefined sugar, molasses, L.",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       },
       {
         "word": "කොසඹ",
@@ -18072,9 +18074,9 @@
       {
         "word": "හිංගුලෝත්ථ",
         "iast": "hiṃgulottha",
-        "lemma": "hiṅgula+uttha",
-        "gloss": "hiṅgula=hiṅgula m. n. a preparation of mercury with sulphur, vermili | uttha=ut-tha mfn. (generally ifc.) standing up, rising, arising, M",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       },
       {
         "word": ")",
@@ -18196,14 +18198,14 @@
   },
   "ස්වර්ණවංග": {
     "freq": 1,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "ස්වර්ණවංග",
         "iast": "svarṇavaṃga",
-        "lemma": "svarṇa+vaṅga",
-        "gloss": "svarṇa=svarṇa m. (contracted from su-varṇa) a partic. Agni, Hariv. | vaṅga=vaṅga m. Bengal proper or the eastern parts of the modern pr",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -18566,9 +18568,9 @@
       {
         "word": "වචනාවී",
         "iast": "vacanāvī",
-        "lemma": "vacana+āvī",
-        "gloss": "vacana=vacana/ mfn. speaking, a speaker, eloquent, RV. | āvī=āvī f. pl. (yas) pangs of childbirth, Suśr.",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -22445,14 +22447,14 @@
   },
   "වෘද්ධි- මේවා එකින්": {
     "freq": 1,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "වෘද්ධි-",
         "iast": "vṛddhi-",
-        "lemma": "vṛt+dhi",
-        "gloss": "vṛt=1. vṛ/t (ifc.; for 2. See p. 1009, col. 2) surrounding, encl | dhi=1. dhi cl. 6. P. dhiyati (didhāya, dheṣyati &c.) to hold (Dh",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       },
       {
         "word": "මේවා",
@@ -23651,9 +23653,9 @@
       {
         "word": "මංචාධි",
         "iast": "maṃcādhi",
-        "lemma": "mañca+adhi",
-        "gloss": "mañca=mañca m. a stage or platform on a palace or on columns, rais | adhi=1. adhi m. (better ādhi, q.v.), anxiety",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       },
       {
         "word": "6",
@@ -24315,9 +24317,9 @@
       {
         "word": "අභ්‍යග",
         "iast": "abhyaga",
-        "lemma": "abhi+aga",
-        "gloss": "abhi=1. abhi/ ind. (a prefix to verbs and nouns, expressing) to,  | aga=1. aga m. a snake [in this sense perhaps rather a-ga] L.",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       },
       {
         "word": "සඳහා",
@@ -26214,9 +26216,9 @@
       {
         "word": "වාද්ධ",
         "iast": "vāddha",
-        "lemma": "vāt+dha",
-        "gloss": "vāt=1. vāt ind. g. cādi. | dha=1. dha aspirate of the preceding letter,",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       },
       {
         "word": "වෛද්‍ය",
@@ -28607,14 +28609,14 @@
   },
   "මේෂශෘංගි ( මස්බැද්ද )": {
     "freq": 1,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "මේෂශෘංගි",
         "iast": "meṣaśṛṃgi",
-        "lemma": "meṣa+śṛṅgi",
-        "gloss": "meṣa=meṣa/ m. (√ 2. miṣ) a ram, sheep (in the older language appl | śṛṅgi=1. śṛṅgi f. (= śṛṅgī) a species of fish, L.",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       },
       {
         "word": "(",
@@ -28675,14 +28677,14 @@
   },
   "ප්‍රපුන්නාඩ ( ඇත්තෝර )": {
     "freq": 1,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "ප්‍රපුන්නාඩ",
         "iast": "prapunnāḍa",
-        "lemma": "pra+pum+nāḍa",
-        "gloss": "pra=1. pra/ ind. before | pum=pum in comp. for 2. puṃs. | nāḍa=nāḍa n. (fr. naḍa) = nāla, a hollow stalk, L.",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       },
       {
         "word": "(",
@@ -29289,9 +29291,9 @@
       {
         "word": "ප්‍රපුන්නාට",
         "iast": "prapunnāṭa",
-        "lemma": "pra+pum+nāṭa",
-        "gloss": "pra=1. pra/ ind. before | pum=pum in comp. for 2. puṃs. | nāṭa=nāṭa m. n. (√ naṭ; g. ardharcādi) dancing, acting, a dance, ",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       },
       {
         "word": "රස",
@@ -31519,14 +31521,14 @@
   },
   "මෘද්දරශෘංග": {
     "freq": 1,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "මෘද්දරශෘංග",
         "iast": "mṛddaraśṛṃga",
-        "lemma": "mṛd+dara+śṛṅga",
-        "gloss": "mṛd=1. mṛd (cf. √ mrad and mṛḍ) cl. 9. P. mṛdnāti (cl. 1. P. Ā.  | dara=dara mfn. (Pāṇ. iii, 3, 58) (√ dṝ) ifc., cleaving, breaking  | śṛṅga=śṛṅga n. (perhaps connected with śiras, śīrṣan; ifc. f(ā or ",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -32172,6 +32174,603 @@
         "lemma": "samabhāga",
         "gloss": "sama—bhāga m. an equal share, MW.",
         "method": "direct"
+      }
+    ]
+  },
+  "ගම්මිරිස්": {
+    "freq": 136,
+    "resolved": true,
+    "words": [
+      {
+        "word": "ගම්මිරිස්",
+        "iast": "gammiris",
+        "lemma": "lavaṃga",
+        "gloss": "lavaṃga m. (Uṇ. i, 119) the clove tree",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "ලවංග",
+        "pratinidhi_entry_num": 113
+      }
+    ]
+  },
+  "වැල්මී": {
+    "freq": 134,
+    "resolved": true,
+    "words": [
+      {
+        "word": "වැල්මී",
+        "iast": "vælmī",
+        "lemma": "madhuyaṣṭī",
+        "gloss": "madhu—yaṣṭikā or madhu—yaṣṭī, f. liquorice, L.",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "මධුයෂ්ටී",
+        "pratinidhi_entry_num": 102
+      }
+    ]
+  },
+  "කොත්තමල්ලි": {
+    "freq": 92,
+    "resolved": true,
+    "words": [
+      {
+        "word": "කොත්තමල්ලි",
+        "iast": "kŏttamalli",
+        "lemma": "dhānya",
+        "gloss": "1. dhānya^ mfn. consisting or made of grain, RV.; AV.",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "ධාන්‍ය",
+        "pratinidhi_entry_num": 63
+      }
+    ]
+  },
+  "සුදුදුරු": {
+    "freq": 68,
+    "resolved": true,
+    "words": [
+      {
+        "word": "සුදුදුරු",
+        "iast": "sududuru",
+        "lemma": "jīraka",
+        "gloss": "jīraka m. n. = ˚raṇa, Suśr. i; iv, 5, 35",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "ජීරක",
+        "pratinidhi_entry_num": 54
+      }
+    ]
+  },
+  "තිප්පිලි මුල්": {
+    "freq": 54,
+    "resolved": true,
+    "words": [
+      {
+        "word": "තිප්පිලි",
+        "iast": "tippili",
+        "lemma": "cavikā",
+        "gloss": "cavikā f. id., Suśr. vi, 39, 225; 42, 93.",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "චවිකා",
+        "pratinidhi_entry_num": 50
+      },
+      {
+        "word": "මුල්",
+        "iast": "mul",
+        "lemma": "cavikā",
+        "gloss": "cavikā f. id., Suśr. vi, 39, 225; 42, 93.",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "චවිකා",
+        "pratinidhi_entry_num": 50
+      }
+    ]
+  },
+  "වියලි ඉඟුරු": {
+    "freq": 49,
+    "resolved": true,
+    "words": [
+      {
+        "word": "වියලි",
+        "iast": "viyali",
+        "lemma": "ārdraka",
+        "gloss": "ārdraka mf(ikā)n. wet, moist, Bhpr.; VarBṛS.",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "ආර්ද්‍රක",
+        "pratinidhi_entry_num": 14
+      },
+      {
+        "word": "ඉඟුරු",
+        "iast": "in̆guru",
+        "lemma": "ārdraka",
+        "gloss": "ārdraka mf(ikā)n. wet, moist, Bhpr.; VarBṛS.",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "ආර්ද්‍රක",
+        "pratinidhi_entry_num": 14
+      }
+    ]
+  },
+  "රත්නිටුල්": {
+    "freq": 37,
+    "resolved": true,
+    "words": [
+      {
+        "word": "රත්නිටුල්",
+        "iast": "ratniṭul",
+        "lemma": "citraka",
+        "gloss": "citraka m. a painter, L.",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "චිත්‍රක",
+        "pratinidhi_entry_num": 49
+      }
+    ]
+  },
+  "නාමල්දෙණු": {
+    "freq": 37,
+    "resolved": true,
+    "words": [
+      {
+        "word": "නාමල්දෙණු",
+        "iast": "nāmaldĕṇu",
+        "lemma": "kamala+keśara",
+        "gloss": "kamala=ka/mala mfn. (Comm. on Uṇ. i, 106) pale-red, rose-coloured,  | keśara=keśara &c. See ke/sara.",
+        "method": "pratinidhi+sandhi",
+        "pratinidhi_sanskrit_si": "කමලකේශර",
+        "pratinidhi_entry_num": 23
+      }
+    ]
+  },
+  "එලකිරි": {
+    "freq": 34,
+    "resolved": true,
+    "words": [
+      {
+        "word": "එලකිරි",
+        "iast": "ĕlakiri",
+        "lemma": "māhiṣa+kṣīra",
+        "gloss": "māhiṣa=māhiṣa mf(ī)n. (fr. mahiṣa, ˚ṣī) coming from or belonging to | kṣīra=kṣīra/ am, n. (fr. √ śyai?; fr. √ kṣar, or √ ghas, Nir. ii, ",
+        "method": "pratinidhi+sandhi",
+        "pratinidhi_sanskrit_si": "මාහිෂක්ෂීර",
+        "pratinidhi_entry_num": 104
+      }
+    ]
+  },
+  "සිවිය": {
+    "freq": 19,
+    "resolved": true,
+    "words": [
+      {
+        "word": "සිවිය",
+        "iast": "siviya",
+        "lemma": "cavikā",
+        "gloss": "cavikā f. id., Suśr. vi, 39, 225; 42, 93.",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "චවිකා",
+        "pratinidhi_entry_num": 50
+      }
+    ]
+  },
+  "අගිල්": {
+    "freq": 19,
+    "resolved": true,
+    "words": [
+      {
+        "word": "අගිල්",
+        "iast": "agil",
+        "lemma": "agaru",
+        "gloss": "agaru m. n. Agallochum, Amyris Agallocha",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "අගරු",
+        "pratinidhi_entry_num": 2
+      }
+    ]
+  },
+  "දුම්මැල්ල": {
+    "freq": 16,
+    "resolved": true,
+    "words": [
+      {
+        "word": "දුම්මැල්ල",
+        "iast": "dummælla",
+        "lemma": "paṭola",
+        "gloss": "paṭola m. (cf. paṭu, paṭuka) Trichosanthes Dioeca",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "පටෝල",
+        "pratinidhi_entry_num": 82
+      }
+    ]
+  },
+  "ගොකටු": {
+    "freq": 10,
+    "resolved": true,
+    "words": [
+      {
+        "word": "ගොකටු",
+        "iast": "gŏkaṭu",
+        "lemma": "gokṣura",
+        "gloss": "go—kṣura m. = -kaṇṭa, or Tribulus lanuginosus, Suśr.",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "ගෝක්ෂුර",
+        "pratinidhi_entry_num": 46
+      }
+    ]
+  },
+  "සුදු ඉරමුසු": {
+    "freq": 8,
+    "resolved": true,
+    "words": [
+      {
+        "word": "සුදු",
+        "iast": "sudu",
+        "lemma": "śyāmā",
+        "gloss": "śyāmā (ā), f. a woman with peculiar marks or characteristics (accord. to some ‘a girl who has the marks of puberty’; accord. to others ‘a woman who has not borne children’; also described as ‘a female",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "ශ්‍යාමා",
+        "pratinidhi_entry_num": 139
+      },
+      {
+        "word": "ඉරමුසු",
+        "iast": "iramusu",
+        "lemma": "śyāmā",
+        "gloss": "śyāmā (ā), f. a woman with peculiar marks or characteristics (accord. to some ‘a girl who has the marks of puberty’; accord. to others ‘a woman who has not borne children’; also described as ‘a female",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "ශ්‍යාමා",
+        "pratinidhi_entry_num": 139
+      }
+    ]
+  },
+  "චීන අල": {
+    "freq": 7,
+    "resolved": true,
+    "words": [
+      {
+        "word": "චීන",
+        "iast": "cīna",
+        "lemma": "mūla",
+        "gloss": "mū/la n. (or m. g. ardharcādi; ifc. f(ā or ī). ; prob. for 3. mū/ra See above) ‘firmly fixed’, a root (of any plant or tree; but also fig. the foot or lowest part or bottom of anything), RV. &c. &c. (",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "මූල රාස්නා",
+        "pratinidhi_entry_num": 108
+      },
+      {
+        "word": "අල",
+        "iast": "ala",
+        "lemma": "mūla",
+        "gloss": "mū/la n. (or m. g. ardharcādi; ifc. f(ā or ī). ; prob. for 3. mū/ra See above) ‘firmly fixed’, a root (of any plant or tree; but also fig. the foot or lowest part or bottom of anything), RV. &c. &c. (",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "මූල රාස්නා",
+        "pratinidhi_entry_num": 108
+      }
+    ]
+  },
+  "කිරිබදු අල": {
+    "freq": 7,
+    "resolved": true,
+    "words": [
+      {
+        "word": "කිරිබදු",
+        "iast": "kiribadu",
+        "lemma": "vārāhīkanda",
+        "gloss": "vārāhī—kanda m. = -mūla, MW.",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "වාරාහීකන්ද",
+        "pratinidhi_entry_num": 119
+      },
+      {
+        "word": "අල",
+        "iast": "ala",
+        "lemma": "vārāhīkanda",
+        "gloss": "vārāhī—kanda m. = -mūla, MW.",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "වාරාහීකන්ද",
+        "pratinidhi_entry_num": 119
+      }
+    ]
+  },
+  "එළුකිරි": {
+    "freq": 7,
+    "resolved": true,
+    "words": [
+      {
+        "word": "එළුකිරි",
+        "iast": "ĕl̤ukiri",
+        "lemma": "ajākṣīra",
+        "gloss": "ajā-kṣīra/ n. goat's milk, ŚBr. &c.",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "අජාක්ෂීර",
+        "pratinidhi_entry_num": 5
+      }
+    ]
+  },
+  "නික": {
+    "freq": 6,
+    "resolved": true,
+    "words": [
+      {
+        "word": "නික",
+        "iast": "nika",
+        "lemma": "nirguṇḍī",
+        "gloss": "nirguṇṭī (L.) or nirguṇḍī or nirguṇḍi (Suśr.), f. Vitex Negundo; ˚ṇḍī, f. the root of a lotus, L.",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "නිර්ගුණ්ඩී",
+        "pratinidhi_entry_num": 66
+      }
+    ]
+  },
+  "වෙඩිලුණු": {
+    "freq": 5,
+    "resolved": true,
+    "words": [
+      {
+        "word": "වෙඩිලුණු",
+        "iast": "vĕḍiluṇu",
+        "lemma": "śilājatu",
+        "gloss": "śilā—jatu n. ‘rock-exudation’, bitumen, MBh.; Suśr. &c.",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "ශිලාජතු",
+        "pratinidhi_entry_num": 137
+      }
+    ]
+  },
+  "සූකිරි": {
+    "freq": 4,
+    "resolved": true,
+    "words": [
+      {
+        "word": "සූකිරි",
+        "iast": "sūkiri",
+        "lemma": "miśrī",
+        "gloss": "miśrī in comp. for miśra.",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "මිශ්‍රී",
+        "pratinidhi_entry_num": 106
+      }
+    ]
+  },
+  "නෙළුණු": {
+    "freq": 3,
+    "resolved": true,
+    "words": [
+      {
+        "word": "නෙළුණු",
+        "iast": "nĕl̤uṇu",
+        "lemma": "nāga+keśara",
+        "gloss": "nāga=nāga/ m. (prob. neither fr. na-ga nor fr. nagna) a snake, (e | keśara=keśara &c. See ke/sara.",
+        "method": "pratinidhi+sandhi",
+        "pratinidhi_sanskrit_si": "නාගකේශර",
+        "pratinidhi_entry_num": 65
+      }
+    ]
+  },
+  "අක්කරපට්ටා": {
+    "freq": 2,
+    "resolved": true,
+    "words": [
+      {
+        "word": "අක්කරපට්ටා",
+        "iast": "akkarapaṭṭā",
+        "lemma": "ākāra+karabha",
+        "gloss": "ākāra=ā-kāra , ˚raṇa, &c. See ā-√ kṛ. | karabha=1. karabha m. (for 2. See col. 3) (√ kṝ, Uṇ. iii, 122; but m",
+        "method": "pratinidhi+sandhi",
+        "pratinidhi_sanskrit_si": "ආකාරකරභ",
+        "pratinidhi_entry_num": 13
+      }
+    ]
+  },
+  "වසාවාසී": {
+    "freq": 2,
+    "resolved": true,
+    "words": [
+      {
+        "word": "වසාවාසී",
+        "iast": "vasāvāsī",
+        "lemma": "jātī+koṣa",
+        "gloss": "jātī=jātī f. = ˚ti, q.v. | koṣa=1. koṣa See kośa.",
+        "method": "pratinidhi+sandhi",
+        "pratinidhi_sanskrit_si": "ජාතීකෝෂ",
+        "pratinidhi_entry_num": 53
+      }
+    ]
+  },
+  "කලාඳුරු": {
+    "freq": 2,
+    "resolved": true,
+    "words": [
+      {
+        "word": "කලාඳුරු",
+        "iast": "kalān̆duru",
+        "lemma": "ativiṣā",
+        "gloss": "ati—viṣā f. the plant Aconitum Ferox",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "අතිවිෂා",
+        "pratinidhi_entry_num": 6
+      }
+    ]
+  },
+  "රසකිඳ පිටි": {
+    "freq": 2,
+    "resolved": true,
+    "words": [
+      {
+        "word": "රසකිඳ",
+        "iast": "rasakin̆da",
+        "lemma": "guḍūcī+satva",
+        "gloss": "guḍūcī=guḍūcī f. Cocculus cordifolius, Suśr. i, 12; 25; 38; ii, 1,  | satva=sa/t mf(satī/)n. (pr. p. of √ 1. as) being, existing, occurr",
+        "method": "pratinidhi+sandhi",
+        "pratinidhi_sanskrit_si": "ගුඩූචීසත්ව",
+        "pratinidhi_entry_num": 45
+      },
+      {
+        "word": "පිටි",
+        "iast": "piṭi",
+        "lemma": "guḍūcī+satva",
+        "gloss": "guḍūcī=guḍūcī f. Cocculus cordifolius, Suśr. i, 12; 25; 38; ii, 1,  | satva=sa/t mf(satī/)n. (pr. p. of √ 1. as) being, existing, occurr",
+        "method": "pratinidhi+sandhi",
+        "pratinidhi_sanskrit_si": "ගුඩූචීසත්ව",
+        "pratinidhi_entry_num": 45
+      }
+    ]
+  },
+  "ගෝමූත්‍ර": {
+    "freq": 2,
+    "resolved": true,
+    "words": [
+      {
+        "word": "ගෝමූත්‍ර",
+        "iast": "gomūtra",
+        "lemma": "ajā+mūtra",
+        "gloss": "ajā=ajā (ā), f. N. of Prakṛti, of Māyā or Illusion See a-jā (s.v | mūtra=mū/tra n. (prob. fr. √ mū = mīv; but cf. Uṇ. iv, 162) the fl",
+        "method": "pratinidhi+sandhi",
+        "pratinidhi_sanskrit_si": "අජාමූත්‍ර",
+        "pratinidhi_entry_num": 4
+      }
+    ]
+  },
+  "කලු ඉරමුසු": {
+    "freq": 2,
+    "resolved": true,
+    "words": [
+      {
+        "word": "කලු",
+        "iast": "kalu",
+        "lemma": "śyāmā",
+        "gloss": "śyāmā (ā), f. a woman with peculiar marks or characteristics (accord. to some ‘a girl who has the marks of puberty’; accord. to others ‘a woman who has not borne children’; also described as ‘a female",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "ශ්‍යාමා",
+        "pratinidhi_entry_num": 139
+      },
+      {
+        "word": "ඉරමුසු",
+        "iast": "iramusu",
+        "lemma": "śyāmā",
+        "gloss": "śyāmā (ā), f. a woman with peculiar marks or characteristics (accord. to some ‘a girl who has the marks of puberty’; accord. to others ‘a woman who has not borne children’; also described as ‘a female",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "ශ්‍යාමා",
+        "pratinidhi_entry_num": 139
+      }
+    ]
+  },
+  "ගොටුකොළ": {
+    "freq": 1,
+    "resolved": true,
+    "words": [
+      {
+        "word": "ගොටුකොළ",
+        "iast": "gŏṭukŏl̤a",
+        "lemma": "brāhmī",
+        "gloss": "brāhmī/ (ī), f., see brāhmī",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "බ්‍රාහ්මී",
+        "pratinidhi_entry_num": 96
+      }
+    ]
+  },
+  "වැල්කහඹිලියා": {
+    "freq": 1,
+    "resolved": true,
+    "words": [
+      {
+        "word": "වැල්කහඹිලියා",
+        "iast": "vælkaham̆biliyā",
+        "lemma": "yavāsa",
+        "gloss": "yavāsa m. (said to be fr. √ 2. yu) Alhagi Maurorum, L.",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "යවාස",
+        "pratinidhi_entry_num": 111
+      }
+    ]
+  },
+  "අමුඉඟුරු": {
+    "freq": 1,
+    "resolved": true,
+    "words": [
+      {
+        "word": "අමුඉඟුරු",
+        "iast": "amuin̆guru",
+        "lemma": "ārdraka",
+        "gloss": "ārdraka mf(ikā)n. wet, moist, Bhpr.; VarBṛS.",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "ආර්ද්‍රක",
+        "pratinidhi_entry_num": 14
+      }
+    ]
+  },
+  "මීකිරි": {
+    "freq": 1,
+    "resolved": true,
+    "words": [
+      {
+        "word": "මීකිරි",
+        "iast": "mīkiri",
+        "lemma": "māhiṣa+kṣīra",
+        "gloss": "māhiṣa=māhiṣa mf(ī)n. (fr. mahiṣa, ˚ṣī) coming from or belonging to | kṣīra=kṣīra/ am, n. (fr. √ śyai?; fr. √ kṣar, or √ ghas, Nir. ii, ",
+        "method": "pratinidhi+sandhi",
+        "pratinidhi_sanskrit_si": "මාහිෂක්ෂීර",
+        "pratinidhi_entry_num": 104
+      }
+    ]
+  },
+  "කාන්දම්": {
+    "freq": 1,
+    "resolved": true,
+    "words": [
+      {
+        "word": "කාන්දම්",
+        "iast": "kāndam",
+        "lemma": "kāntalauha",
+        "gloss": "kānta—lauha n. cast-iron (cf. loha-kānta), L.",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "කාන්තලෞහ",
+        "pratinidhi_entry_num": 31
+      }
+    ]
+  },
+  "වරාකිරි": {
+    "freq": 1,
+    "resolved": true,
+    "words": [
+      {
+        "word": "වරාකිරි",
+        "iast": "varākiri",
+        "lemma": "arkakṣīra",
+        "gloss": "arka—kṣīra n. the milky juice of the Arka plant, Suśr.",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "අර්කක්ෂීර",
+        "pratinidhi_entry_num": 9
+      }
+    ]
+  },
+  "ගිරිතිල්ල": {
+    "freq": 1,
+    "resolved": true,
+    "words": [
+      {
+        "word": "ගිරිතිල්ල",
+        "iast": "giritilla",
+        "lemma": "vṛddhadāraka",
+        "gloss": "vṛddha—dāra or vṛddha—dāraka, m., vṛddha—dāru, n. Argyreia Speciosa or Argentea, L.",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "වෘද්ධදාරක",
+        "pratinidhi_entry_num": 122
+      }
+    ]
+  },
+  "එළ අබ": {
+    "freq": 1,
+    "resolved": true,
+    "words": [
+      {
+        "word": "එළ",
+        "iast": "ĕl̤a",
+        "lemma": "śukla",
+        "gloss": "śukla/ mf(ā)n. (later form of śukra, for which it is sometimes w.r.) bright, light (with pakṣa = śukla-p˚, q.v.), KātyŚr.; Mn.; MBh. &c.",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "ශුක්ල සර්ප",
+        "pratinidhi_entry_num": 140
+      },
+      {
+        "word": "අබ",
+        "iast": "aba",
+        "lemma": "śukla",
+        "gloss": "śukla/ mf(ā)n. (later form of śukra, for which it is sometimes w.r.) bright, light (with pakṣa = śukla-p˚, q.v.), KātyŚr.; Mn.; MBh. &c.",
+        "method": "pratinidhi+direct",
+        "pratinidhi_sanskrit_si": "ශුක්ල සර්ප",
+        "pratinidhi_entry_num": 140
       }
     ]
   }

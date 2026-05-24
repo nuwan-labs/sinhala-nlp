@@ -38,7 +38,9 @@ graph of traditional Sri Lankan medicine.
 | Sanskrit-bridge resolver result | **81 % / 76 % / 66 %** of tatsama-signal terms resolved against Monier-Williams in ingredients / formula names / prose, zero manual labelling. |
 | POWO botanical enrichment | **69 / 85 (81 %)** binomials resolved to IPNI LSID; 19th-century MW names mapped to modern accepted forms (e.g. *Grislea Tomentosa* → *Woodfordia fruticosa*; *Physalis Flexuosa* → *Withania somnifera*). |
 | ICD-11 TM2 disease mapping | **49 / 56 (88 %)** Sanskrit indication terms mapped to WHO ICD-11 Traditional Medicine Module 2 codes (released Feb 2025); 9 / 10 anchor terms validated against expected TM2 codes. |
-| What's still planned? | Volumes II and III (physical copies in hand); the knowledge graph implementation; a labelled NER corpus; the empirical KG-grounded extraction study. |
+| Pharmacopoeia-internal reference lexicons | Built from the same Vol I OCR: **materia-medica catalogue** (`materia_medica.json` — 771 substances on pp. 444–453: 647 plants, 82 minerals, 42 animal-origin); **pratinidhi-paribhāṣā** (`pratinidhi_lookup.json` — 143 Sanskrit↔Sinhala substitute pairs from pp. 77–81); **mahā-kaṣāya groups** (`mahakashaya_groups.json` — Caraka's 50 therapeutic-action groups, 436 substance-property edges, from pp. 82–90). |
+| Knowledge graph (built) | **4,089 nodes / 12,754 edges** across 8 node types. Plant 3,277 · Formulation 628 · PharmacologicalProperty 50 · Disease 49 · Mineral 51 · AnimalOrigin 19. Edges: CONTAINS 11,007 · TREATS 562 · HAS_PROPERTY 436 · DOSED_WITH 215 · CO_OCCURS 200 · IS_TYPE 179 · SUBSTITUTES_FOR 155. SHACL conforms; POWO / ICD-11 re-verification 100 %. |
+| What's still planned? | Volumes II and III (physical copies in hand); a labelled NER corpus; the empirical KG-grounded extraction study; an expert audit of the classical unit-conversion tables (pp. 471–475 — see [`docs/unit_audit_pp471-475.md`](docs/unit_audit_pp471-475.md)). |
 | What is the formal deliverable? | A UCSC MSc-CS individual project proposal (MCS 3306) — current draft at [`Proposal/MCS3306_proposal_draft.md`](Proposal/MCS3306_proposal_draft.md); KG schema design at [`docs/kg_schema.md`](docs/kg_schema.md); bibliography at [`docs/references.md`](docs/references.md) / [`docs/references.bib`](docs/references.bib). |
 
 For the latest measured numbers and the architectural rationale behind
@@ -635,8 +637,14 @@ In [`data/lexicons/`](data/lexicons/):
   these tokens; they aren't really tatsama and should be routed back
   to the "other" bucket by a Module-A refinement (a roughly 10-line
   change, deferred).
-* **Tadbhava** (Sanskrit-origin phonologically nativised) terms cannot
-  be resolved — no surface signal, no lexicon yet.
+* **Tadbhava** (Sanskrit-origin phonologically nativised) terms have a
+  partial lexicon: the *abhāva-pratinidhi-paribhāṣā* (substitute-substance
+  glossary, pp. 77–81 of the source pharmacopoeia) lists 143 Sanskrit
+  headwords with their Sinhala-vernacular paraphrase
+  (e.g. *මධුයෂ්ටී = වැල්මී* — licorice). Module C uses this as a
+  Sinhala→Sanskrit bridge for ~50 vernacular ingredient terms with no
+  Sanskritic surface signal. The wider tadbhava space (thousands of
+  terms) still needs Sorata or Geiger.
 * **OCR / spelling variants** of the same Sanskrit term (e.g.
   *ශයී / ශඨි / ශටී* for *śaṭhī*, zedoary) are treated as distinct
   terms. A fuzzy pass over MW headwords would collapse these.
@@ -669,11 +677,12 @@ The structured corpus, the resolved lexicons, and the external-ID
 bindings together support the construction of a domain knowledge graph
 — the planned next phase of the work.
 
-The **v1 schema** is fully designed in
+The **v1.1 schema** is fully designed in
 [`docs/kg_schema.md`](docs/kg_schema.md) (≈ 500 lines, supervisor-facing).
 It defines:
 
-* **10 node types**: Plant, PlantPart, Phytochemical, Mineral,
+* **11 node types**: Plant, PlantPart, Phytochemical, Mineral,
+  **AnimalOrigin** (added v1.1 for the *jāntava* substance class),
   Formulation, PreparationType, Route, Disease, Symptom,
   PharmacologicalProperty.
 * **13 edge types**: `CONTAINS`, `USES_PART`, `CONSISTS_OF`, `IS_TYPE`,

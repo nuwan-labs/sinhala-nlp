@@ -612,7 +612,7 @@ def main():
 
     report = {
         "generated_at": now_iso(),
-        "schema_version": "v1",
+        "schema_version": "v1.1",
         "kg_size": {"nodes": len(nodes), "edges": len(edges)},
         "layer1": {
             "shacl":       shacl,

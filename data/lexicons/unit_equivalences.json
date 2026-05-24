@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "extractor_version": "units_v3_multi_system",
+    "source_doc":   "Sri Lankan Ayurvedic Pharmacopoeia, Vol I",
+    "schema_note":  "Unit data is split into THREE layers: (1) a flat symbol registry that maps every Sinhala surface form to its canonical (IAST, kind, aliases), independent of any conversion factor; (2) per-system ladders that encode N <unit-A> = 1 <unit-B> rows verbatim; (3) per-system absolute_grams maps with the same symbol resolving to potentially different gram values per system. This lets the dosage normaliser pick the active system at lookup time, and lets future audit add new systems without touching the symbol layer.",
+    "default_system": "sri_lankan",
+    "default_rationale": "The pharmacopoeia is published in Sri Lanka and pp. 65–68 explicitly title their conversion table 'ලංකා (මංචාඩි - කලං) මානය'. Formula dosages should be interpreted under this scale unless the formula context overrides.",
+    "built_at": "2026-05-24"
+  },
+
+  "symbols": {
+    "තළාටු":          {"iast": "taḷāṭu",        "kind": "mass",       "aliases": []},
+    "අඳු ඇටු":       {"iast": "aňdu-äṭa",      "kind": "mass",       "aliases": []},
+    "වී ඇට":          {"iast": "vī-äṭa",        "kind": "mass",       "aliases": []},
+
+    "රත්තිකා":        {"iast": "raktikā",       "kind": "mass",       "aliases": ["රත්ති", "ratti"]},
+    "මංචාඩි":         {"iast": "mañcāḍi",       "kind": "mass",       "aliases": ["මංචාඩිය", "ගුඤ්ජා"]},
+    "මාෂ":            {"iast": "māṣa",          "kind": "mass",       "aliases": ["මාෂා"]},
+    "මාෂක":           {"iast": "māṣaka",        "kind": "mass",       "aliases": []},
+    "ශාණ":            {"iast": "śāṇa",          "kind": "mass",       "aliases": []},
+    "කොඳ":            {"iast": "koňda",         "kind": "mass",       "aliases": []},
+    "ගණ":             {"iast": "gaṇa",          "kind": "mass",       "aliases": []},
+    "කලං":            {"iast": "kalan",         "kind": "mass",       "aliases": ["කලන්", "කලඤ්චු"]},
+    "කර්ෂ":           {"iast": "karṣa",         "kind": "mass",       "aliases": ["කර්ෂා"]},
+    "අඩපල":           {"iast": "ardha-pala",    "kind": "mass",       "aliases": ["අඩපලං"]},
+    "පල":             {"iast": "pala",          "kind": "mass",       "aliases": ["පලං", "පලම්"]},
+    "ප්‍රසෘත":        {"iast": "prasṛta",       "kind": "mass",       "aliases": ["ප්‍රසෘති"]},
+    "කුඩව":           {"iast": "kuḍava",        "kind": "mass",       "aliases": ["කුඩුව", "අෂ්ටපදී"]},
+    "අර්ධගඤව":        {"iast": "ardha-gañcu",   "kind": "mass",       "aliases": ["අංජලී"]},
+    "ශරාව":           {"iast": "śarāva",        "kind": "mass",       "aliases": ["මානිකා"]},
+    "පුෂ්ට":          {"iast": "puṣṭa",         "kind": "mass",       "aliases": ["පැටී"]},
+    "ආඛාක":           {"iast": "āḍhaka",        "kind": "mass",       "aliases": ["ආඬක", "ආඪක"]},
+    "ද්‍රෝණ":          {"iast": "droṇa",        "kind": "mass",       "aliases": []},
+    "ශූර්ප":          {"iast": "śūrpa",         "kind": "mass",       "aliases": []},
+    "වාහ":             {"iast": "vāha",         "kind": "mass",       "aliases": []},
+    "තුලා":           {"iast": "tulā",          "kind": "mass",       "aliases": []},
+
+    "ග්‍රෑ":           {"iast": "gram",         "kind": "mass",       "aliases": ["ග්‍රෑම්", "ග්‍රෑම්ස්"]},
+    "කි.ග්‍රෑ":        {"iast": "kilogram",     "kind": "mass",       "aliases": ["කිලෝ"]},
+    "මි.ග්‍රෑ":        {"iast": "milligram",    "kind": "mass",       "aliases": ["මිලිග්‍රෑ", "මිලිග්‍රෑම්"]},
+    "ලී":              {"iast": "litre",        "kind": "volume",     "aliases": ["ලීටර්"]},
+    "මි.ලී":           {"iast": "ml",           "kind": "volume",     "aliases": ["මිලිලීටර්"]},
+
+    "රාත්තල්":         {"iast": "pound",        "kind": "mass",       "aliases": []},
+    "ග්‍රෑන්ස්":         {"iast": "grain",      "kind": "mass",       "aliases": []},
+    "සේරු":           {"iast": "sēr",          "kind": "mass",       "aliases": ["සේර්"]},
+    "තෝලා":           {"iast": "tolā",         "kind": "mass",       "aliases": ["තෝල"]},
+    "ඇනා":             {"iast": "annā",        "kind": "mass",       "aliases": []},
+    "ඔන්ස":            {"iast": "ounce",       "kind": "mass",       "aliases": []},
+
+    "තේ හැඳි":         {"iast": "tea-spoon",   "kind": "volume",     "aliases": []},
+    "හැඳි":           {"iast": "table-spoon",  "kind": "volume",     "aliases": []},
+    "බෝතල":           {"iast": "bottle",       "kind": "volume",     "aliases": []},
+    "බින්දු":          {"iast": "bindu",       "kind": "volume",     "aliases": []},
+
+    "භාග":             {"iast": "bhāga",       "kind": "relative",   "aliases": []},
+    "පත":              {"iast": "patha",       "kind": "relative",   "aliases": []},
+    "බෝ":              {"iast": "bo",          "kind": "relative",   "aliases": []},
+    "සමව":             {"iast": "samaḥ",       "kind": "relative",   "aliases": ["සමභාග"]}
+  },
+
+  "systems": {
+
+    "sri_lankan": {
+      "name_si":      "ලංකා (මංචාඩි - කලං) මානය",
+      "name_iast":    "śrī-laṅkā (mañcāḍi-kalan) māna",
+      "anchor":       "පල",
+      "anchor_grams": 60.0,
+      "source_pages": [65, 66, 68, 480],
+      "primary_source_page": 65,
+      "confidence":   "high",
+      "ladder": [
+        {"a": "තළාටු",    "n":   3, "b": "අඳු ඇටු"},
+        {"a": "අඳු ඇටු", "n":   2, "b": "වී ඇට"},
+        {"a": "වී ඇට",    "n":   4, "b": "මංචාඩි"},
+        {"a": "රත්තිකා",  "n":   2, "b": "මංචාඩි"},
+        {"a": "මංචාඩි",   "n":  20, "b": "කලං"},
+        {"a": "කලං",      "n":   3, "b": "කර්ෂ"},
+        {"a": "කර්ෂ",     "n":   2, "b": "අඩපල"},
+        {"a": "අඩපල",     "n":   2, "b": "පල"},
+        {"a": "පල",        "n":   2, "b": "ප්‍රසෘත"},
+        {"a": "පල",        "n":   2, "b": "කුඩව"},
+        {"a": "ප්‍රසෘත",  "n":   2, "b": "අර්ධගඤව"},
+        {"a": "අර්ධගඤව",  "n":   2, "b": "ශරාව"},
+        {"a": "ශරාව",     "n":   2, "b": "පුෂ්ට"},
+        {"a": "පුෂ්ට",    "n":   4, "b": "ආඛාක"},
+        {"a": "ආඛාක",     "n":   4, "b": "ද්‍රෝණ"},
+        {"a": "ද්‍රෝණ",   "n":   2, "b": "ශූර්ප"},
+        {"a": "ශූර්ප",    "n":   2, "b": "වාහ"},
+        {"a": "පල",        "n": 100, "b": "තුලා"}
+      ],
+      "absolute_grams": {
+        "තළාටු":     0.0052,
+        "අඳු ඇටු":  0.0156,
+        "වී ඇට":     0.03125,
+        "රත්තිකා":   0.125,
+        "මංචාඩි":    0.250,
+        "කලං":        5.0,
+        "කර්ෂ":       15.0,
+        "අඩපල":       30.0,
+        "පල":          60.0,
+        "ප්‍රසෘත":    120.0,
+        "කුඩව":        120.0,
+        "අර්ධගඤව":    240.0,
+        "ශරාව":       480.0,
+        "පුෂ්ට":      960.0,
+        "ආඛාක":       3840.0,
+        "ද්‍රෝණ":      15360.0,
+        "ශූර්ප":      30720.0,
+        "වාහ":         61440.0,
+        "තුලා":        6000.0
+      },
+      "absolute_ml": {
+        "රත්තිකා":   0.125,
+        "මංචාඩි":    0.250,
+        "මාෂ":         1.0,
+        "ශාණ":         3.0,
+        "කොඳ":         6.0,
+        "කලං":          5.0,
+        "කර්ෂ":        15.0,
+        "අඩපල":        30.0,
+        "පල":           60.0,
+        "ප්‍රසෘත":     120.0,
+        "කුඩව":         120.0,
+        "අර්ධගඤව":    240.0,
+        "ශරාව":        480.0,
+        "පුෂ්ට":       960.0,
+        "ආඛාක":        3840.0,
+        "ද්‍රෝණ":      15360.0,
+        "ශූර්ප":       30720.0,
+        "වාහ":          61440.0,
+        "තුලා":         6000.0
+      }
+    },
+
+    "yauna_indian": {
+      "name_si":      "ඉන්දියානේ, යෞන ආයුර්වේද මාන",
+      "name_iast":    "indian-yauna-āyurveda māna",
+      "anchor":       "පල",
+      "anchor_grams": 48.0,
+      "source_pages": [477],
+      "primary_source_page": 477,
+      "confidence":   "high",
+      "ladder": [
+        {"a": "මංචාඩි",  "n":   8, "b": "මාෂ"},
+        {"a": "මාෂ",      "n":   3, "b": "ගණ"},
+        {"a": "ගණ",       "n":   4, "b": "කර්ෂ"},
+        {"a": "කර්ෂ",     "n":   2, "b": "අඩපල"},
+        {"a": "අඩපල",     "n":   2, "b": "පල"},
+        {"a": "පල",        "n":   2, "b": "ප්‍රසෘත"},
+        {"a": "ප්‍රසෘත",  "n":   2, "b": "කුඩව"},
+        {"a": "කුඩව",     "n":   2, "b": "ශරාව"},
+        {"a": "ශරාව",    "n":   2, "b": "පුෂ්ට"},
+        {"a": "පුෂ්ට",   "n":   4, "b": "ආඛාක"},
+        {"a": "ආඛාක",    "n":   4, "b": "ද්‍රෝණ"},
+        {"a": "පල",        "n": 100, "b": "තුලා"}
+      ],
+      "absolute_grams": {
+        "මංචාඩි":  0.125,
+        "මාෂ":      1.0,
+        "ගණ":       3.0,
+        "කර්ෂ":     12.0,
+        "අඩපල":     24.0,
+        "පල":        48.0,
+        "ප්‍රසෘත":  96.0,
+        "කුඩව":      192.0,
+        "ශරාව":     384.0,
+        "පුෂ්ට":    768.0,
+        "ආඛාක":     3072.0,
+        "ද්‍රෝණ":    12288.0,
+        "තුලා":      4800.0
+      }
+    },
+
+    "tola_astanga": {
+      "name_si":      "තෝලා චක්‍රය (අෂ්ටාංග සංග්‍රහයෙනි)",
+      "name_iast":    "tolā-cakra (aṣṭāṅga-saṅgraha)",
+      "anchor":       "තෝලා",
+      "anchor_grams": 11.66,
+      "source_pages": [474, 475],
+      "primary_source_page": 474,
+      "confidence":   "high",
+      "ladder": [
+        {"a": "මංචාඩි",  "n":   8, "b": "මාෂ"},
+        {"a": "මාෂ",      "n":  12, "b": "තෝලා"},
+        {"a": "තෝලා",    "n":  80, "b": "සේරු"},
+        {"a": "සේරු",    "n":  40, "b": "මන"}
+      ],
+      "absolute_grams": {
+        "මංචාඩි":  0.1215,
+        "මාෂ":      0.972,
+        "තෝලා":     11.664,
+        "සේරු":     933.1,
+        "මන":        37324.0
+      },
+      "note": "British-India Tolā scale. 1 tolā = 11.664 g (defined as half a British-India rupee weight)."
+    },
+
+    "tola_modern": {
+      "name_si":      "තෝලා චක්‍රය (නූතන ව්‍යවහාරයෙහි)",
+      "name_iast":    "tolā-cakra (modern usage)",
+      "anchor":       "තෝලා",
+      "anchor_grams": 11.66,
+      "source_pages": [475],
+      "primary_source_page": 475,
+      "confidence":   "medium",
+      "ladder": [
+        {"a": "ධාන",      "n":   4, "b": "රත්තිකා"},
+        {"a": "රත්තිකා",  "n":   6, "b": "ඇනා"},
+        {"a": "ඇනා",      "n":  16, "b": "තෝලා"}
+      ],
+      "absolute_grams": {
+        "ධාන":     0.030,
+        "රත්තිකා":  0.122,
+        "ඇනා":      0.729,
+        "තෝලා":     11.66
+      }
+    },
+
+    "metric": {
+      "name_si":      "මෙට්රික් ක්‍රමය",
+      "name_iast":    "metric",
+      "anchor":       "ග්‍රෑ",
+      "anchor_grams": 1.0,
+      "source_pages": [65, 66, 480],
+      "confidence":   "high",
+      "absolute_grams": {
+        "මි.ග්‍රෑ":   0.001,
+        "ග්‍රෑ":     1.0,
+        "කි.ග්‍රෑ":  1000.0,
+        "මි.ලී":      1.0,
+        "ලී":          1000.0
+      },
+      "absolute_ml": {
+        "මි.ලී":      1.0,
+        "ලී":          1000.0
+      }
+    },
+
+    "imperial": {
+      "name_si":      "අශාංගිත ක්‍රමය",
+      "name_iast":    "imperial",
+      "anchor":       "රාත්තල්",
+      "anchor_grams": 453.592,
+      "source_pages": [480],
+      "confidence":   "high",
+      "absolute_grams": {
+        "ග්‍රෑන්ස්":  0.0648,
+        "ඔන්ස":      28.3495,
+        "රාත්තල්":   453.592
+      },
+      "absolute_ml": {
+        "තේ හැඳි":  5.0,
+        "හැඳි":     15.0,
+        "බෝතල":     720.0
+      }
+    }
+  },
+
+  "needs_audit": [],
+  "audit_notes": [
+    "1 pala has three different gram values across systems: 60g (Sri Lankan, p.65), 48g (Yauna/Indian, p.477), and 933g/80 = 11.66g × 80 / pala in tolā-system reference (not pala-anchored). The Sri Lankan value is the default for this corpus.",
+    "1 māṣa = 1g in Sri Lankan and Yauna; ≈ 0.972g in tolā (slightly different definition).",
+    "p.475 'සිර් ස්ටර්ලීන්' (sterling sēr) value of 180 tolā differs from the standard 80 tolā — needs cross-check against the broader pharmacy literature before being treated as authoritative.",
+    "Drop-systems on p.476 (bindu chakra and modern-bindu chakra) are not yet encoded; they're rare in the formula corpus and require liquid-density assumptions to compare with mass units."
+  ]
+}

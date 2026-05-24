@@ -1,0 +1,3846 @@
+{
+  "metadata": {
+    "extractor_version": "pratinidhi_v1",
+    "built_at": "2026-05-24T10:24:15+00:00",
+    "source_doc": "Sri Lankan Ayurvedic Pharmacopoeia, Vol I",
+    "source_pages": [
+      77,
+      81
+    ],
+    "section_name_si": "ප්‍රතිනිධි පරිභාෂාව",
+    "section_name_iast": "pratinidhi-paribhāṣā",
+    "entries_total": 143,
+    "entries_with_substitute": 143,
+    "entries_per_page": {
+      "77": 16,
+      "78": 40,
+      "79": 41,
+      "80": 39,
+      "81": 7
+    },
+    "expected_max_num": 143,
+    "actual_max_num": 143
+  },
+  "entries": [
+    {
+      "num": 1,
+      "lhs_si": "අක්ෂොට",
+      "lhs_alt_si": "Indian Walnut",
+      "rhs_si": "පියල් ඇටඹ හෝ කෙට්ටම්බා",
+      "gloss_en": null,
+      "page": 77,
+      "y": 0.5815
+    },
+    {
+      "num": 2,
+      "lhs_si": "අගරු",
+      "lhs_alt_si": "අගිල්",
+      "rhs_si": "කුරුඳු පොතු කරාබු නාමප්රේණු",
+      "gloss_en": null,
+      "page": 77,
+      "y": 0.6005
+    },
+    {
+      "num": 3,
+      "lhs_si": "අජමෝදා",
+      "lhs_alt_si": null,
+      "rhs_si": "අජ්ජායන අසමෝදගම් විශේෂයක්",
+      "gloss_en": null,
+      "page": 77,
+      "y": 0.6195
+    },
+    {
+      "num": 4,
+      "lhs_si": "අජාමූත්‍ර",
+      "lhs_alt_si": "එළුමූත්‍ර",
+      "rhs_si": "ගෝමූත්‍ර",
+      "gloss_en": null,
+      "page": 77,
+      "y": 0.6373
+    },
+    {
+      "num": 5,
+      "lhs_si": "අජාක්ෂීර",
+      "lhs_alt_si": "එළුකිරි",
+      "rhs_si": "ඵලකිරි",
+      "gloss_en": null,
+      "page": 77,
+      "y": 0.6564
+    },
+    {
+      "num": 6,
+      "lhs_si": "අතිවිෂා",
+      "lhs_alt_si": null,
+      "rhs_si": "කලාඳුරු",
+      "gloss_en": null,
+      "page": 77,
+      "y": 0.676
+    },
+    {
+      "num": 7,
+      "lhs_si": "අභ්රක භම",
+      "lhs_alt_si": null,
+      "rhs_si": "ලෞහ භස්ම",
+      "gloss_en": null,
+      "page": 77,
+      "y": 0.6944
+    },
+    {
+      "num": 8,
+      "lhs_si": "අම්ලවේතස",
+      "lhs_alt_si": null,
+      "rhs_si": "චුක්‍ර = චුකා පාලම් බෙං කෝකම් ලංකාවේ ගොරක ව්‍යවහාරයි",
+      "gloss_en": null,
+      "page": 77,
+      "y": 0.7134
+    },
+    {
+      "num": 9,
+      "lhs_si": "අර්කක්ෂීර",
+      "lhs_alt_si": "වරාකිරි",
+      "rhs_si": "පැසුනු වරා කොළ යුෂ",
+      "gloss_en": null,
+      "page": 77,
+      "y": 0.7503
+    },
+    {
+      "num": 10,
+      "lhs_si": "අහිංස්රා",
+      "lhs_alt_si": null,
+      "rhs_si": "මාණකන්ද = හබරල අල",
+      "gloss_en": null,
+      "page": 77,
+      "y": 0.7693
+    },
+    {
+      "num": 11,
+      "lhs_si": "අහිඵෙන",
+      "lhs_alt_si": "අබිං",
+      "rhs_si": "කොරාසානි කුචිලා = ගොඩකදුරු අබිං ගෙඩියේ පොතු = පෝස්තක කෂායේ ඝන සාරය",
+      "gloss_en": null,
+      "page": 77,
+      "y": 0.786
+    },
+    {
+      "num": 12,
+      "lhs_si": "ආඪකි හිං අර්හර්",
+      "lhs_alt_si": "රටතෝර",
+      "rhs_si": "මයිසුර් පරිප්පු",
+      "gloss_en": null,
+      "page": 77,
+      "y": 0.8252
+    },
+    {
+      "num": 13,
+      "lhs_si": "ආකාරකරභ",
+      "lhs_alt_si": "අක්කරපට්ටා",
+      "rhs_si": "තිප්පිලි මහාරාෂ්ට්රි මල්",
+      "gloss_en": null,
+      "page": 77,
+      "y": 0.8442
+    },
+    {
+      "num": 14,
+      "lhs_si": "ආර්ද්‍රක",
+      "lhs_alt_si": "අමුඉඟුරු",
+      "rhs_si": "වියලි ඉඟුරු",
+      "gloss_en": null,
+      "page": 77,
+      "y": 0.8633
+    },
+    {
+      "num": 15,
+      "lhs_si": "ඉක්ෂු මූල",
+      "lhs_alt_si": null,
+      "rhs_si": "නල = බට මුල්",
+      "gloss_en": null,
+      "page": 77,
+      "y": 0.8823
+    },
+    {
+      "num": 16,
+      "lhs_si": "ඉන්ද්‍රයව",
+      "lhs_alt_si": null,
+      "rhs_si": "කෙළිඳ පොතු සාදික්කා",
+      "gloss_en": null,
+      "page": 77,
+      "y": 0.9013
+    },
+    {
+      "num": 17,
+      "lhs_si": "ඊසගෝල් හිං",
+      "lhs_alt_si": null,
+      "rhs_si": "බිහිදානා = බේදානම් ඇට",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.0797
+    },
+    {
+      "num": 18,
+      "lhs_si": "ඔලිව්තල්",
+      "lhs_alt_si": null,
+      "rhs_si": "තලතෙල්",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.1153
+    },
+    {
+      "num": 19,
+      "lhs_si": "සෘද්ධි වෘද්ධි",
+      "lhs_alt_si": null,
+      "rhs_si": "බලා = බැබිල මුල් මහාබලා = මහබැබිල මුල්",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.1356
+    },
+    {
+      "num": 20,
+      "lhs_si": "කක්කෝල",
+      "lhs_alt_si": null,
+      "rhs_si": "ජාතිපුෂ්ප = දෑසමන් මල්",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.1546
+    },
+    {
+      "num": 21,
+      "lhs_si": "කණ්ටකාරීමූල",
+      "lhs_alt_si": null,
+      "rhs_si": "නිම්බපංචාංගය",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.1712
+    },
+    {
+      "num": 22,
+      "lhs_si": "කණ්ටකාරී",
+      "lhs_alt_si": "ක්ෂුද්‍රා",
+      "rhs_si": "මහ කටුවැල්බටු කොට්ටු",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.1902
+    },
+    {
+      "num": 23,
+      "lhs_si": "කමලකේශර",
+      "lhs_alt_si": "නෙළුම්ගේණු",
+      "rhs_si": "නාමල්දෙණු",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.2105
+    },
+    {
+      "num": 24,
+      "lhs_si": "කර්චර",
+      "lhs_alt_si": null,
+      "rhs_si": "අමුඉඟුරු හෝ හිඟුරුපියලි",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.2289
+    },
+    {
+      "num": 25,
+      "lhs_si": "කර්පූර",
+      "lhs_alt_si": null,
+      "rhs_si": "බාලා ග්‍රන්ථිපර්ණි",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.2485
+    },
+    {
+      "num": 26,
+      "lhs_si": "කළු ඉරමුසු",
+      "lhs_alt_si": null,
+      "rhs_si": "සුදු ඉරමුසු",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.2675
+    },
+    {
+      "num": 27,
+      "lhs_si": "කස්තුරි",
+      "lhs_alt_si": null,
+      "rhs_si": "ලතාකස්තුරි = කපුකිනිස්සඇට වසාවාසි වාල්මොල්ගු",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.2866
+    },
+    {
+      "num": 28,
+      "lhs_si": "කඵල",
+      "lhs_alt_si": null,
+      "rhs_si": "ඇත්දෙමට පොතු",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.3228
+    },
+    {
+      "num": 29,
+      "lhs_si": "2",
+      "lhs_alt_si": null,
+      "rhs_si": "දෙහි ඇඹුල්",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.3418
+    },
+    {
+      "num": 30,
+      "lhs_si": "කාකෝලි",
+      "lhs_alt_si": null,
+      "rhs_si": "අශ්වගන්ධා = අමුක්කරා ශතාවරී",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.3603
+    },
+    {
+      "num": 31,
+      "lhs_si": "කාන්තලෞහ",
+      "lhs_alt_si": "කාන්දම්",
+      "rhs_si": "තීක්ෂ්යලෞහ = වානේ ඉස්පාත් බෙංගාලි",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.3805
+    },
+    {
+      "num": 32,
+      "lhs_si": "කාලමුෂලී",
+      "lhs_alt_si": "කළු බිංතල්",
+      "rhs_si": "සුදුබිංතල්",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.3983
+    },
+    {
+      "num": 33,
+      "lhs_si": "ලවණ",
+      "lhs_alt_si": "කළු ලුණු",
+      "rhs_si": "සාම්බර ලවණ",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.4174
+    },
+    {
+      "num": 34,
+      "lhs_si": "කුංකුම",
+      "lhs_alt_si": "කුංකුමප්පු",
+      "rhs_si": "කුසුම්භ පුෂ්ප වසාවාසි සපුමල් කැකුළු සමන්පිච්ච වෘද්ධ වෛද්‍ය ව්‍යවහාරයකි",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.4364
+    },
+    {
+      "num": 35,
+      "lhs_si": "කුෂ්ඨ",
+      "lhs_alt_si": null,
+      "rhs_si": "සුවඳකොට්ට අක්කරපට්ටා",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.4732
+    },
+    {
+      "num": 36,
+      "lhs_si": "කුශතණ",
+      "lhs_alt_si": null,
+      "rhs_si": "සැන්දරා ඊතණ",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.4911
+    },
+    {
+      "num": 37,
+      "lhs_si": "කුලිංජන",
+      "lhs_alt_si": "සුගන්ධවචා",
+      "rhs_si": "කුරුඳු පොතු",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.5101
+    },
+    {
+      "num": 38,
+      "lhs_si": "කිණ්ව",
+      "lhs_alt_si": "සුරාබීජ මුහුං",
+      "rhs_si": "ධාතකී මිපුප් මී මල්",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.5476
+    },
+    {
+      "num": 39,
+      "lhs_si": "කේතකී",
+      "lhs_alt_si": null,
+      "rhs_si": "රක්ත චන්දන දුනුකේ",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.5672
+    },
+    {
+      "num": 40,
+      "lhs_si": "කේශර",
+      "lhs_alt_si": null,
+      "rhs_si": "වසාවාසි සපුමල් කැකුළු",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.585
+    },
+    {
+      "num": 41,
+      "lhs_si": "කෘෂ්ණජීර",
+      "lhs_alt_si": "කලුදුරු",
+      "rhs_si": "සුදුදුරු",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.604
+    },
+    {
+      "num": 42,
+      "lhs_si": "ක්ෂීරකාකෝලි",
+      "lhs_alt_si": null,
+      "rhs_si": "ශතාවරි කිරිබදු අල",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.6225
+    },
+    {
+      "num": 43,
+      "lhs_si": "බදිර",
+      "lhs_alt_si": "කිහිරි",
+      "rhs_si": "ශෛරික = සිවංගුරු ඛදිරසාර කයිප්පු",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.6415
+    },
+    {
+      "num": 44,
+      "lhs_si": "ඛදිරත්වක්",
+      "lhs_alt_si": "කිහිරිපොතු",
+      "rhs_si": "කොහොඹ ගසෙහි ඇතුළු පොත්ත",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.6599
+    },
+    {
+      "num": 45,
+      "lhs_si": "ගුඩූචීසත්ව",
+      "lhs_alt_si": "රසකිඳ පිටි",
+      "rhs_si": "රසකිඳ ඝනසාරය",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.6801
+    },
+    {
+      "num": 46,
+      "lhs_si": "ගෝක්ෂුර",
+      "lhs_alt_si": "ගොකටු",
+      "rhs_si": "කැකිරි ඇට",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.6992
+    },
+    {
+      "num": 47,
+      "lhs_si": "ගොදුග්ධ",
+      "lhs_alt_si": null,
+      "rhs_si": "මීකිරි = මීගව කිරි මුං යුෂ හෝ පරිප්පු යුෂ",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.7158
+    },
+    {
+      "num": 48,
+      "lhs_si": "ගොපී චන්දන",
+      "lhs_alt_si": null,
+      "rhs_si": "සීනක්කාරං",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.736
+    },
+    {
+      "num": 49,
+      "lhs_si": "චිත්‍රක",
+      "lhs_alt_si": "රත්නිටුල්",
+      "rhs_si": "දන්තී හෝ අපාමර්ගක්ෂාර හෙළනිටුල් මුල් හෝ සිවිය මුල්",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.7539
+    },
+    {
+      "num": 50,
+      "lhs_si": "චවිකා",
+      "lhs_alt_si": "සිවිය",
+      "rhs_si": "තිප්පිලි මුල්",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.7919
+    },
+    {
+      "num": 51,
+      "lhs_si": "චීන අල",
+      "lhs_alt_si": null,
+      "rhs_si": "කබරස මුල්",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.8115
+    },
+    {
+      "num": 52,
+      "lhs_si": "ජාතීපුෂ්ප",
+      "lhs_alt_si": "සමන්මල්",
+      "rhs_si": "ලවංග = කාරබු ගැටපිච්චාමල්",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.83
+    },
+    {
+      "num": 53,
+      "lhs_si": "ජාතීකෝෂ",
+      "lhs_alt_si": "වසාවාසී",
+      "rhs_si": "සාදික්කා කරාබු",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.849
+    },
+    {
+      "num": 54,
+      "lhs_si": "ජීරක",
+      "lhs_alt_si": "සුදුදුරු",
+      "rhs_si": "කොත්තමල්ලි",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.8674
+    },
+    {
+      "num": 55,
+      "lhs_si": "ජීවක සෘෂභක",
+      "lhs_alt_si": null,
+      "rhs_si": "ශතාවරී කිරිබදු අල උණකපුරු රසකිඳ",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.887
+    },
+    {
+      "num": 56,
+      "lhs_si": "තගර",
+      "lhs_alt_si": null,
+      "rhs_si": "සීහලීජටා කොට්ට සේපාලිකාමල් ජටාමාංස",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.9049
+    },
+    {
+      "num": 57,
+      "lhs_si": "තාලිසපත්‍ර",
+      "lhs_alt_si": null,
+      "rhs_si": "ස්වර්ණනාලී කටුවැල්බටු",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.0785
+    },
+    {
+      "num": 58,
+      "lhs_si": "දාඩිම",
+      "lhs_alt_si": "දෙළුම්",
+      "rhs_si": "වෘක්ෂාම්ල = සියඹලා",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.0987
+    },
+    {
+      "num": 59,
+      "lhs_si": "දාරුහරිද්‍රා",
+      "lhs_alt_si": null,
+      "rhs_si": "හරිද්‍රා = වියලි කහ",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.1159
+    },
+    {
+      "num": 60,
+      "lhs_si": "දේවදාලි",
+      "lhs_alt_si": null,
+      "rhs_si": "වැටකොළු හීනි වැටකොළු තිත්ත වැටකොළු",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.1356
+    },
+    {
+      "num": 61,
+      "lhs_si": "ද්‍රාක්ෂා",
+      "lhs_alt_si": null,
+      "rhs_si": "ගාම්භාරීඵල = ඇද්දෙමට ගෙඩි රට ඉඳි",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.1546
+    },
+    {
+      "num": 62,
+      "lhs_si": "ධන්වයාස",
+      "lhs_alt_si": null,
+      "rhs_si": "දුරාලභා ධන්වයාස දුරාලභා අභාවයෙහි වැල්කහඹිලියා",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.1736
+    },
+    {
+      "num": 63,
+      "lhs_si": "ධාන්‍ය",
+      "lhs_alt_si": "කොත්තමල්ලි",
+      "rhs_si": "ශතපුෂ්ප",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.2093
+    },
+    {
+      "num": 64,
+      "lhs_si": "නඛී",
+      "lhs_alt_si": null,
+      "rhs_si": "ලවංග = කරාබු",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.2295
+    },
+    {
+      "num": 65,
+      "lhs_si": "නාගකේශර",
+      "lhs_alt_si": null,
+      "rhs_si": "නෙළුණු",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.2485
+    },
+    {
+      "num": 66,
+      "lhs_si": "නිර්ගුණ්ඩී",
+      "lhs_alt_si": "නික",
+      "rhs_si": "තුලසී මදුරුතලා",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.2675
+    },
+    {
+      "num": 67,
+      "lhs_si": "නීලොත්පල",
+      "lhs_alt_si": "නිල්මානෙල්",
+      "rhs_si": "කුමුදු",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.2866
+    },
+    {
+      "num": 68,
+      "lhs_si": "නීලකලමී",
+      "lhs_alt_si": "කාලාදානා ඛේ",
+      "rhs_si": "ගොංකැකිරි ඇට",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.3044
+    },
+    {
+      "num": 69,
+      "lhs_si": "නෙත්‍රබාලා",
+      "lhs_alt_si": "සුගන්ධබාලා",
+      "rhs_si": "කලාඳුරු සැවැන්දරා ලංකාවේ ඉරිවේරිය",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.3246
+    },
+    {
+      "num": 70,
+      "lhs_si": "රක්ත චන්දන",
+      "lhs_alt_si": null,
+      "rhs_si": "නව උශීර = අලුත් සුවඳහොට පතඟිහර මදටහර",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.3424
+    },
+    {
+      "num": 71,
+      "lhs_si": "රජත භස්ම",
+      "lhs_alt_si": "රිදී අළු",
+      "rhs_si": "කාන්තලෞහ භස්ම රජතමාක්ෂික භස්ම",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.3603
+    },
+    {
+      "num": 72,
+      "lhs_si": "රසාංජන",
+      "lhs_alt_si": null,
+      "rhs_si": "දාරුහරිද්‍රා ක්වාථ ඝන සාරය",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.3793
+    },
+    {
+      "num": 73,
+      "lhs_si": "රස භස්ම",
+      "lhs_alt_si": null,
+      "rhs_si": "රස සින්දුර",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.3983
+    },
+    {
+      "num": 74,
+      "lhs_si": "රාස්නා",
+      "lhs_alt_si": null,
+      "rhs_si": "හීන් අරත්ත හෝ මහ අරත්ත චීන අල",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.4168
+    },
+    {
+      "num": 75,
+      "lhs_si": "රුචක ලවණ",
+      "lhs_alt_si": null,
+      "rhs_si": "පාංශු ලවණ",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.437
+    },
+    {
+      "num": 76,
+      "lhs_si": "රෝහිතක",
+      "lhs_alt_si": null,
+      "rhs_si": "කොහොඹ පොතු ලාක්ෂා යක්එරබදු",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.4542
+    },
+    {
+      "num": 77,
+      "lhs_si": "රෞප්‍යමාක්ෂික භස්ම",
+      "lhs_alt_si": null,
+      "rhs_si": "ස්වර්ණමාක්ෂික භස්ම විමල භස්ම",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.4744
+    },
+    {
+      "num": 78,
+      "lhs_si": "පංචක්ෂාර",
+      "lhs_alt_si": null,
+      "rhs_si": "අපාමාර්ගක්ෂාර",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.4935
+    },
+    {
+      "num": 79,
+      "lhs_si": "පංච ලවණ",
+      "lhs_alt_si": null,
+      "rhs_si": "සහිඳ ලුණු",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.5125
+    },
+    {
+      "num": 80,
+      "lhs_si": "පද්මකාෂ්ඨ",
+      "lhs_alt_si": null,
+      "rhs_si": "නෙළුම්දඬු කීණ අරටු",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.5315
+    },
+    {
+      "num": 81,
+      "lhs_si": "පන්නා භස්ම",
+      "lhs_alt_si": null,
+      "rhs_si": "ප්‍රවාල භස්ම",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.5493
+    },
+    {
+      "num": 82,
+      "lhs_si": "පටෝල",
+      "lhs_alt_si": null,
+      "rhs_si": "දුම්මැල්ල",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.5678
+    },
+    {
+      "num": 83,
+      "lhs_si": "පාෂාණභේද",
+      "lhs_alt_si": null,
+      "rhs_si": "පොල්පලා අක්කපාන කප්පරවල්ලිය",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.5874
+    },
+    {
+      "num": 84,
+      "lhs_si": "පෞෂ්කර",
+      "lhs_alt_si": null,
+      "rhs_si": "කොට්ට",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.6052
+    },
+    {
+      "num": 85,
+      "lhs_si": "පිප්පලී",
+      "lhs_alt_si": null,
+      "rhs_si": "ගම්මිරිස් තිප්පිලි මුල්",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.6254
+    },
+    {
+      "num": 86,
+      "lhs_si": "පිත්ත",
+      "lhs_alt_si": null,
+      "rhs_si": "මාංස මිරිකා ගත් යුෂ",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.6433
+    },
+    {
+      "num": 87,
+      "lhs_si": "ජීවක සෘෂභක",
+      "lhs_alt_si": null,
+      "rhs_si": "විදාරි = කිරිබදු අල ශතාවරී උණකපුරු",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.6635
+    },
+    {
+      "num": 88,
+      "lhs_si": "පිප්පලී මූල",
+      "lhs_alt_si": null,
+      "rhs_si": "රත්නිටුල් ජටාමාංසි තිප්පිලි",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.6807
+    },
+    {
+      "num": 89,
+      "lhs_si": "පුනර්නවා",
+      "lhs_alt_si": null,
+      "rhs_si": "රක්තපුනර්නවා",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.6998
+    },
+    {
+      "num": 90,
+      "lhs_si": "පුරාතණ ගුඩ",
+      "lhs_alt_si": null,
+      "rhs_si": "යාම සතරක් අව්වේ වියලා ගත් ගුඩ හෝ එබඳු සීනි",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.7182
+    },
+    {
+      "num": 91,
+      "lhs_si": "පුෂ්කර මූල",
+      "lhs_alt_si": null,
+      "rhs_si": "කොට්ට එරඬු මුල්",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.7551
+    },
+    {
+      "num": 92,
+      "lhs_si": "පුෂ්ප",
+      "lhs_alt_si": "මල්",
+      "rhs_si": "අපක්ව ඵල = ගැට",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.7741
+    },
+    {
+      "num": 93,
+      "lhs_si": "පුෂ්පරාග භස්ම",
+      "lhs_alt_si": null,
+      "rhs_si": "අභ්රක භස්ම",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.7943
+    },
+    {
+      "num": 94,
+      "lhs_si": "පෘෂ්ණපර්ණි",
+      "lhs_alt_si": null,
+      "rhs_si": "පොල්පලා",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.8121
+    },
+    {
+      "num": 95,
+      "lhs_si": "ප්‍රියංගු",
+      "lhs_alt_si": null,
+      "rhs_si": "රුක්මල් කලාඳුරු සැවැන්න",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.83
+    },
+    {
+      "num": 96,
+      "lhs_si": "බ්‍රාහ්මී",
+      "lhs_alt_si": null,
+      "rhs_si": "ගොටුකොළ",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.868
+    },
+    {
+      "num": 97,
+      "lhs_si": "භාගී",
+      "lhs_alt_si": null,
+      "rhs_si": "සිරිතේක්කු",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.8876
+    },
+    {
+      "num": 98,
+      "lhs_si": "භල්ලාතක",
+      "lhs_alt_si": "සෙම්කොල්ලං",
+      "rhs_si": "බදුල්ල ඇට",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.0785
+    },
+    {
+      "num": 99,
+      "lhs_si": "මත්ස්‍යණ්ඩිකා",
+      "lhs_alt_si": "සූකිරි බවට",
+      "rhs_si": "සුදුසීනි",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.0975
+    },
+    {
+      "num": 100,
+      "lhs_si": "මද්‍ය",
+      "lhs_alt_si": null,
+      "rhs_si": "ආසව අරිෂ්ට",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.1356
+    },
+    {
+      "num": 101,
+      "lhs_si": "මධු",
+      "lhs_alt_si": "මීපැණි",
+      "rhs_si": "පුරාතණ ගුඩ පරණ උක්හකුරු",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.1546
+    },
+    {
+      "num": 102,
+      "lhs_si": "මධුයෂ්ටී",
+      "lhs_alt_si": "වැල්මී",
+      "rhs_si": "ධාතකී = මලිතමල් ඔල්ද මුල්",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.1712
+    },
+    {
+      "num": 103,
+      "lhs_si": "මයුර මාංස",
+      "lhs_alt_si": null,
+      "rhs_si": "කුකුළු හංස හෝ හාමස්",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.1914
+    },
+    {
+      "num": 104,
+      "lhs_si": "මාහිෂක්ෂීර",
+      "lhs_alt_si": "මීකිරි",
+      "rhs_si": "එලකිරි",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.2105
+    },
+    {
+      "num": 105,
+      "lhs_si": "මාණික්‍ය භස්ම",
+      "lhs_alt_si": null,
+      "rhs_si": "රිදී භස්ම",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.2295
+    },
+    {
+      "num": 106,
+      "lhs_si": "මිශ්‍රී",
+      "lhs_alt_si": "සූකිරි",
+      "rhs_si": "සීනි පුරාණ ගුඩ",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.2485
+    },
+    {
+      "num": 107,
+      "lhs_si": "මුක්තා",
+      "lhs_alt_si": null,
+      "rhs_si": "මුක්තා ශුක්ති මුතුබෙලි කටු භස්ම",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.2657
+    },
+    {
+      "num": 108,
+      "lhs_si": "මූල රාස්නා",
+      "lhs_alt_si": null,
+      "rhs_si": "චීන අල",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.2866
+    },
+    {
+      "num": 109,
+      "lhs_si": "මූර්වා",
+      "lhs_alt_si": null,
+      "rhs_si": "කුරුඳු පොතු වැල්මදට තිප්පිලි මුල්",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.3044
+    },
+    {
+      "num": 110,
+      "lhs_si": "මේදා මහාමේදා",
+      "lhs_alt_si": null,
+      "rhs_si": "අශ්වගන්ධා අමුක්කරා ශාරිබා ඉරමුසු හාතාවාරිය අල",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.3234
+    },
+    {
+      "num": 111,
+      "lhs_si": "යවාස",
+      "lhs_alt_si": null,
+      "rhs_si": "වැල්කහඹිලියා",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.3615
+    },
+    {
+      "num": 112,
+      "lhs_si": "ලක්ෂ්මණාමූල",
+      "lhs_alt_si": null,
+      "rhs_si": "මොණරකුඩුම්බිය සුදු මල් සහිත හීන් කටුවැල්බටු හෝ මහකටුවැල්බටු",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.3793
+    },
+    {
+      "num": 113,
+      "lhs_si": "ලවංග",
+      "lhs_alt_si": null,
+      "rhs_si": "ගම්මිරිස්",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.4174
+    },
+    {
+      "num": 114,
+      "lhs_si": "ලාංගලි",
+      "lhs_alt_si": "නියඟලා",
+      "rhs_si": "කොට්ට",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.4352
+    },
+    {
+      "num": 115,
+      "lhs_si": "ලෝධිර",
+      "lhs_alt_si": null,
+      "rhs_si": "ඛදිර බෝඹු පොතු ඔ.සං II ලෝත් බලන්න",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.453
+    },
+    {
+      "num": 116,
+      "lhs_si": "ලෞහ හස්ම",
+      "lhs_alt_si": null,
+      "rhs_si": "ලෞහමල = යබොර භස්ම",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.4738
+    },
+    {
+      "num": 117,
+      "lhs_si": "වකුල",
+      "lhs_alt_si": "මූනමල්",
+      "rhs_si": "කර උත්පල හෝ පද්ම",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.4911
+    },
+    {
+      "num": 118,
+      "lhs_si": "වජ්ර",
+      "lhs_alt_si": "දියමන්ති",
+      "rhs_si": "වෛක්‍රාන්ත",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.5089
+    },
+    {
+      "num": 119,
+      "lhs_si": "වාරාහීකන්ද",
+      "lhs_alt_si": null,
+      "rhs_si": "කිරිබදු අල",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.5291
+    },
+    {
+      "num": 120,
+      "lhs_si": "විදාරි",
+      "lhs_alt_si": "= කිරිබදු",
+      "rhs_si": "අමුක්කරා හාතාවාරිය සුදුබිංතල් අල",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.5493
+    },
+    {
+      "num": 121,
+      "lhs_si": "වෛදූර්‍ය්‍ය භස්ම",
+      "lhs_alt_si": null,
+      "rhs_si": "යසද භස්ම ශුක්ති භස්ම",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.5672
+    },
+    {
+      "num": 122,
+      "lhs_si": "වෘද්ධදාරක",
+      "lhs_alt_si": null,
+      "rhs_si": "ගිරිතිල්ල",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.5856
+    },
+    {
+      "num": 123,
+      "lhs_si": "වෘක්ෂරුහා",
+      "lhs_alt_si": null,
+      "rhs_si": "පිළිල",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.6052
+    },
+    {
+      "num": 124,
+      "lhs_si": "ස්ත්‍රීදුග්ධ",
+      "lhs_alt_si": "තන කිරි",
+      "rhs_si": "එලකිරි එළුකිරි",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.6243
+    },
+    {
+      "num": 125,
+      "lhs_si": "ස්වර්ණ භස්ම",
+      "lhs_alt_si": null,
+      "rhs_si": "ස්වර්ණමාක්ෂික හෝ රජත මාක්ෂික භස්ම",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.6421
+    },
+    {
+      "num": 126,
+      "lhs_si": "රජත භස්ම",
+      "lhs_alt_si": null,
+      "rhs_si": "කාන්ත ලෞහ භස්ම",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.6623
+    },
+    {
+      "num": 127,
+      "lhs_si": "ස්වර්ණ මාක්ෂික",
+      "lhs_alt_si": "රන්මැසිදෑ",
+      "rhs_si": "ශෛරික = සිවංගුරු ලෞහ එක් කොටසකට ගෛරික කොටස් 3 ක් එක් කිරීමද කෙරේ",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.679
+    },
+    {
+      "num": 128,
+      "lhs_si": "සෛන්ධව ලවණ",
+      "lhs_alt_si": null,
+      "rhs_si": "මූදුලුණු හෝ බළල් ලුණු පෝරන් ලුණු",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.7158
+    },
+    {
+      "num": 129,
+      "lhs_si": "සෞරාෂ්ට්‍ර මෘත්තිකා",
+      "lhs_alt_si": null,
+      "rhs_si": "පකපර්පටී = = වියලී පුපුරන ලද මඩ",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.736
+    },
+    {
+      "num": 130,
+      "lhs_si": "සිතා සීනි",
+      "lhs_alt_si": null,
+      "rhs_si": "ඛණ්ඩශර්කරා = සූකිරි",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.7729
+    },
+    {
+      "num": 131,
+      "lhs_si": "සුවර්ණ රෞප්‍ය",
+      "lhs_alt_si": "රන් රිදී",
+      "rhs_si": "ලෞහ",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.7931
+    },
+    {
+      "num": 132,
+      "lhs_si": "සෝමරාජී",
+      "lhs_alt_si": "කරුවාඅරිසි",
+      "rhs_si": "ප්‍රපුන්නාඩ = ඇත්තෝර ඇට",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.8115
+    },
+    {
+      "num": 133,
+      "lhs_si": "සෘද්ධි වෘද්ධි",
+      "lhs_alt_si": null,
+      "rhs_si": "වරාහීකන්ද බලා කිරිබදු අල මහබැබිල මුල්",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.849
+    },
+    {
+      "num": 134,
+      "lhs_si": "ශයී",
+      "lhs_alt_si": null,
+      "rhs_si": "රක්ත චන්දන ඉඟුරුපියලි හරංකහ",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.868
+    },
+    {
+      "num": 135,
+      "lhs_si": "ශඞබිනී",
+      "lhs_alt_si": null,
+      "rhs_si": "එළකටරොළු",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.8864
+    },
+    {
+      "num": 136,
+      "lhs_si": "ශ්‍රී ඛණ්ඩචන්දන",
+      "lhs_alt_si": null,
+      "rhs_si": "කර්පූරද්වය කපුරු දෙක",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.9049
+    },
+    {
+      "num": 137,
+      "lhs_si": "ශිලාජතු",
+      "lhs_alt_si": null,
+      "rhs_si": "වෙඩිලුණු",
+      "gloss_en": null,
+      "page": 81,
+      "y": 0.0791
+    },
+    {
+      "num": 138,
+      "lhs_si": "ශාලි",
+      "lhs_alt_si": "ඇල්වී",
+      "rhs_si": "ෂෂ්ටි = හැටදා වී",
+      "gloss_en": null,
+      "page": 81,
+      "y": 0.0969
+    },
+    {
+      "num": 139,
+      "lhs_si": "ශ්‍යාමා",
+      "lhs_alt_si": "කලු ඉරමුසු",
+      "rhs_si": "සුදු ඉරමුසු",
+      "gloss_en": null,
+      "page": 81,
+      "y": 0.1153
+    },
+    {
+      "num": 140,
+      "lhs_si": "ශුක්ල සර්ප",
+      "lhs_alt_si": "එළ අබ",
+      "rhs_si": "සාමාන්‍ය ව්‍යවහාර අබ",
+      "gloss_en": null,
+      "page": 81,
+      "y": 0.1356
+    },
+    {
+      "num": 141,
+      "lhs_si": "හංස ඩිම්බ බිත්තර",
+      "lhs_alt_si": null,
+      "rhs_si": "කුකුළු බිත්තර",
+      "gloss_en": null,
+      "page": 81,
+      "y": 0.1546
+    },
+    {
+      "num": 142,
+      "lhs_si": "හපුෂා",
+      "lhs_alt_si": null,
+      "rhs_si": "ගම්මිරිස් මුඩමහණ මල්",
+      "gloss_en": null,
+      "page": 81,
+      "y": 0.173
+    },
+    {
+      "num": 143,
+      "lhs_si": "හීරා",
+      "lhs_alt_si": "දියමන්ති",
+      "rhs_si": "වෛක්‍රාන්ත භස්ම",
+      "gloss_en": null,
+      "page": 81,
+      "y": 0.1914
+    }
+  ],
+  "by_lhs": {
+    "අක්ෂොට": {
+      "num": 1,
+      "lhs_si": "අක්ෂොට",
+      "lhs_alt_si": "Indian Walnut",
+      "rhs_si": "පියල් ඇටඹ හෝ කෙට්ටම්බා",
+      "gloss_en": null,
+      "page": 77,
+      "y": 0.5815
+    },
+    "අගරු": {
+      "num": 2,
+      "lhs_si": "අගරු",
+      "lhs_alt_si": "අගිල්",
+      "rhs_si": "කුරුඳු පොතු කරාබු නාමප්රේණු",
+      "gloss_en": null,
+      "page": 77,
+      "y": 0.6005
+    },
+    "අජමෝදා": {
+      "num": 3,
+      "lhs_si": "අජමෝදා",
+      "lhs_alt_si": null,
+      "rhs_si": "අජ්ජායන අසමෝදගම් විශේෂයක්",
+      "gloss_en": null,
+      "page": 77,
+      "y": 0.6195
+    },
+    "අජාමූත්‍ර": {
+      "num": 4,
+      "lhs_si": "අජාමූත්‍ර",
+      "lhs_alt_si": "එළුමූත්‍ර",
+      "rhs_si": "ගෝමූත්‍ර",
+      "gloss_en": null,
+      "page": 77,
+      "y": 0.6373
+    },
+    "අජාක්ෂීර": {
+      "num": 5,
+      "lhs_si": "අජාක්ෂීර",
+      "lhs_alt_si": "එළුකිරි",
+      "rhs_si": "ඵලකිරි",
+      "gloss_en": null,
+      "page": 77,
+      "y": 0.6564
+    },
+    "අතිවිෂා": {
+      "num": 6,
+      "lhs_si": "අතිවිෂා",
+      "lhs_alt_si": null,
+      "rhs_si": "කලාඳුරු",
+      "gloss_en": null,
+      "page": 77,
+      "y": 0.676
+    },
+    "අභ්රක භම": {
+      "num": 7,
+      "lhs_si": "අභ්රක භම",
+      "lhs_alt_si": null,
+      "rhs_si": "ලෞහ භස්ම",
+      "gloss_en": null,
+      "page": 77,
+      "y": 0.6944
+    },
+    "අම්ලවේතස": {
+      "num": 8,
+      "lhs_si": "අම්ලවේතස",
+      "lhs_alt_si": null,
+      "rhs_si": "චුක්‍ර = චුකා පාලම් බෙං කෝකම් ලංකාවේ ගොරක ව්‍යවහාරයි",
+      "gloss_en": null,
+      "page": 77,
+      "y": 0.7134
+    },
+    "අර්කක්ෂීර": {
+      "num": 9,
+      "lhs_si": "අර්කක්ෂීර",
+      "lhs_alt_si": "වරාකිරි",
+      "rhs_si": "පැසුනු වරා කොළ යුෂ",
+      "gloss_en": null,
+      "page": 77,
+      "y": 0.7503
+    },
+    "අහිංස්රා": {
+      "num": 10,
+      "lhs_si": "අහිංස්රා",
+      "lhs_alt_si": null,
+      "rhs_si": "මාණකන්ද = හබරල අල",
+      "gloss_en": null,
+      "page": 77,
+      "y": 0.7693
+    },
+    "අහිඵෙන": {
+      "num": 11,
+      "lhs_si": "අහිඵෙන",
+      "lhs_alt_si": "අබිං",
+      "rhs_si": "කොරාසානි කුචිලා = ගොඩකදුරු අබිං ගෙඩියේ පොතු = පෝස්තක කෂායේ ඝන සාරය",
+      "gloss_en": null,
+      "page": 77,
+      "y": 0.786
+    },
+    "ආඪකි හිං අර්හර්": {
+      "num": 12,
+      "lhs_si": "ආඪකි හිං අර්හර්",
+      "lhs_alt_si": "රටතෝර",
+      "rhs_si": "මයිසුර් පරිප්පු",
+      "gloss_en": null,
+      "page": 77,
+      "y": 0.8252
+    },
+    "ආකාරකරභ": {
+      "num": 13,
+      "lhs_si": "ආකාරකරභ",
+      "lhs_alt_si": "අක්කරපට්ටා",
+      "rhs_si": "තිප්පිලි මහාරාෂ්ට්රි මල්",
+      "gloss_en": null,
+      "page": 77,
+      "y": 0.8442
+    },
+    "ආර්ද්‍රක": {
+      "num": 14,
+      "lhs_si": "ආර්ද්‍රක",
+      "lhs_alt_si": "අමුඉඟුරු",
+      "rhs_si": "වියලි ඉඟුරු",
+      "gloss_en": null,
+      "page": 77,
+      "y": 0.8633
+    },
+    "ඉක්ෂු මූල": {
+      "num": 15,
+      "lhs_si": "ඉක්ෂු මූල",
+      "lhs_alt_si": null,
+      "rhs_si": "නල = බට මුල්",
+      "gloss_en": null,
+      "page": 77,
+      "y": 0.8823
+    },
+    "ඉන්ද්‍රයව": {
+      "num": 16,
+      "lhs_si": "ඉන්ද්‍රයව",
+      "lhs_alt_si": null,
+      "rhs_si": "කෙළිඳ පොතු සාදික්කා",
+      "gloss_en": null,
+      "page": 77,
+      "y": 0.9013
+    },
+    "ඊසගෝල් හිං": {
+      "num": 17,
+      "lhs_si": "ඊසගෝල් හිං",
+      "lhs_alt_si": null,
+      "rhs_si": "බිහිදානා = බේදානම් ඇට",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.0797
+    },
+    "ඔලිව්තල්": {
+      "num": 18,
+      "lhs_si": "ඔලිව්තල්",
+      "lhs_alt_si": null,
+      "rhs_si": "තලතෙල්",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.1153
+    },
+    "සෘද්ධි වෘද්ධි": {
+      "num": 133,
+      "lhs_si": "සෘද්ධි වෘද්ධි",
+      "lhs_alt_si": null,
+      "rhs_si": "වරාහීකන්ද බලා කිරිබදු අල මහබැබිල මුල්",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.849
+    },
+    "කක්කෝල": {
+      "num": 20,
+      "lhs_si": "කක්කෝල",
+      "lhs_alt_si": null,
+      "rhs_si": "ජාතිපුෂ්ප = දෑසමන් මල්",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.1546
+    },
+    "කණ්ටකාරීමූල": {
+      "num": 21,
+      "lhs_si": "කණ්ටකාරීමූල",
+      "lhs_alt_si": null,
+      "rhs_si": "නිම්බපංචාංගය",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.1712
+    },
+    "කණ්ටකාරී": {
+      "num": 22,
+      "lhs_si": "කණ්ටකාරී",
+      "lhs_alt_si": "ක්ෂුද්‍රා",
+      "rhs_si": "මහ කටුවැල්බටු කොට්ටු",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.1902
+    },
+    "කමලකේශර": {
+      "num": 23,
+      "lhs_si": "කමලකේශර",
+      "lhs_alt_si": "නෙළුම්ගේණු",
+      "rhs_si": "නාමල්දෙණු",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.2105
+    },
+    "කර්චර": {
+      "num": 24,
+      "lhs_si": "කර්චර",
+      "lhs_alt_si": null,
+      "rhs_si": "අමුඉඟුරු හෝ හිඟුරුපියලි",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.2289
+    },
+    "කර්පූර": {
+      "num": 25,
+      "lhs_si": "කර්පූර",
+      "lhs_alt_si": null,
+      "rhs_si": "බාලා ග්‍රන්ථිපර්ණි",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.2485
+    },
+    "කළු ඉරමුසු": {
+      "num": 26,
+      "lhs_si": "කළු ඉරමුසු",
+      "lhs_alt_si": null,
+      "rhs_si": "සුදු ඉරමුසු",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.2675
+    },
+    "කස්තුරි": {
+      "num": 27,
+      "lhs_si": "කස්තුරි",
+      "lhs_alt_si": null,
+      "rhs_si": "ලතාකස්තුරි = කපුකිනිස්සඇට වසාවාසි වාල්මොල්ගු",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.2866
+    },
+    "කඵල": {
+      "num": 28,
+      "lhs_si": "කඵල",
+      "lhs_alt_si": null,
+      "rhs_si": "ඇත්දෙමට පොතු",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.3228
+    },
+    "2": {
+      "num": 29,
+      "lhs_si": "2",
+      "lhs_alt_si": null,
+      "rhs_si": "දෙහි ඇඹුල්",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.3418
+    },
+    "කාකෝලි": {
+      "num": 30,
+      "lhs_si": "කාකෝලි",
+      "lhs_alt_si": null,
+      "rhs_si": "අශ්වගන්ධා = අමුක්කරා ශතාවරී",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.3603
+    },
+    "කාන්තලෞහ": {
+      "num": 31,
+      "lhs_si": "කාන්තලෞහ",
+      "lhs_alt_si": "කාන්දම්",
+      "rhs_si": "තීක්ෂ්යලෞහ = වානේ ඉස්පාත් බෙංගාලි",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.3805
+    },
+    "කාලමුෂලී": {
+      "num": 32,
+      "lhs_si": "කාලමුෂලී",
+      "lhs_alt_si": "කළු බිංතල්",
+      "rhs_si": "සුදුබිංතල්",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.3983
+    },
+    "ලවණ": {
+      "num": 33,
+      "lhs_si": "ලවණ",
+      "lhs_alt_si": "කළු ලුණු",
+      "rhs_si": "සාම්බර ලවණ",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.4174
+    },
+    "කුංකුම": {
+      "num": 34,
+      "lhs_si": "කුංකුම",
+      "lhs_alt_si": "කුංකුමප්පු",
+      "rhs_si": "කුසුම්භ පුෂ්ප වසාවාසි සපුමල් කැකුළු සමන්පිච්ච වෘද්ධ වෛද්‍ය ව්‍යවහාරයකි",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.4364
+    },
+    "කුෂ්ඨ": {
+      "num": 35,
+      "lhs_si": "කුෂ්ඨ",
+      "lhs_alt_si": null,
+      "rhs_si": "සුවඳකොට්ට අක්කරපට්ටා",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.4732
+    },
+    "කුශතණ": {
+      "num": 36,
+      "lhs_si": "කුශතණ",
+      "lhs_alt_si": null,
+      "rhs_si": "සැන්දරා ඊතණ",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.4911
+    },
+    "කුලිංජන": {
+      "num": 37,
+      "lhs_si": "කුලිංජන",
+      "lhs_alt_si": "සුගන්ධවචා",
+      "rhs_si": "කුරුඳු පොතු",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.5101
+    },
+    "කිණ්ව": {
+      "num": 38,
+      "lhs_si": "කිණ්ව",
+      "lhs_alt_si": "සුරාබීජ මුහුං",
+      "rhs_si": "ධාතකී මිපුප් මී මල්",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.5476
+    },
+    "කේතකී": {
+      "num": 39,
+      "lhs_si": "කේතකී",
+      "lhs_alt_si": null,
+      "rhs_si": "රක්ත චන්දන දුනුකේ",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.5672
+    },
+    "කේශර": {
+      "num": 40,
+      "lhs_si": "කේශර",
+      "lhs_alt_si": null,
+      "rhs_si": "වසාවාසි සපුමල් කැකුළු",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.585
+    },
+    "කෘෂ්ණජීර": {
+      "num": 41,
+      "lhs_si": "කෘෂ්ණජීර",
+      "lhs_alt_si": "කලුදුරු",
+      "rhs_si": "සුදුදුරු",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.604
+    },
+    "ක්ෂීරකාකෝලි": {
+      "num": 42,
+      "lhs_si": "ක්ෂීරකාකෝලි",
+      "lhs_alt_si": null,
+      "rhs_si": "ශතාවරි කිරිබදු අල",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.6225
+    },
+    "බදිර": {
+      "num": 43,
+      "lhs_si": "බදිර",
+      "lhs_alt_si": "කිහිරි",
+      "rhs_si": "ශෛරික = සිවංගුරු ඛදිරසාර කයිප්පු",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.6415
+    },
+    "ඛදිරත්වක්": {
+      "num": 44,
+      "lhs_si": "ඛදිරත්වක්",
+      "lhs_alt_si": "කිහිරිපොතු",
+      "rhs_si": "කොහොඹ ගසෙහි ඇතුළු පොත්ත",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.6599
+    },
+    "ගුඩූචීසත්ව": {
+      "num": 45,
+      "lhs_si": "ගුඩූචීසත්ව",
+      "lhs_alt_si": "රසකිඳ පිටි",
+      "rhs_si": "රසකිඳ ඝනසාරය",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.6801
+    },
+    "ගෝක්ෂුර": {
+      "num": 46,
+      "lhs_si": "ගෝක්ෂුර",
+      "lhs_alt_si": "ගොකටු",
+      "rhs_si": "කැකිරි ඇට",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.6992
+    },
+    "ගොදුග්ධ": {
+      "num": 47,
+      "lhs_si": "ගොදුග්ධ",
+      "lhs_alt_si": null,
+      "rhs_si": "මීකිරි = මීගව කිරි මුං යුෂ හෝ පරිප්පු යුෂ",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.7158
+    },
+    "ගොපී චන්දන": {
+      "num": 48,
+      "lhs_si": "ගොපී චන්දන",
+      "lhs_alt_si": null,
+      "rhs_si": "සීනක්කාරං",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.736
+    },
+    "චිත්‍රක": {
+      "num": 49,
+      "lhs_si": "චිත්‍රක",
+      "lhs_alt_si": "රත්නිටුල්",
+      "rhs_si": "දන්තී හෝ අපාමර්ගක්ෂාර හෙළනිටුල් මුල් හෝ සිවිය මුල්",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.7539
+    },
+    "චවිකා": {
+      "num": 50,
+      "lhs_si": "චවිකා",
+      "lhs_alt_si": "සිවිය",
+      "rhs_si": "තිප්පිලි මුල්",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.7919
+    },
+    "චීන අල": {
+      "num": 51,
+      "lhs_si": "චීන අල",
+      "lhs_alt_si": null,
+      "rhs_si": "කබරස මුල්",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.8115
+    },
+    "ජාතීපුෂ්ප": {
+      "num": 52,
+      "lhs_si": "ජාතීපුෂ්ප",
+      "lhs_alt_si": "සමන්මල්",
+      "rhs_si": "ලවංග = කාරබු ගැටපිච්චාමල්",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.83
+    },
+    "ජාතීකෝෂ": {
+      "num": 53,
+      "lhs_si": "ජාතීකෝෂ",
+      "lhs_alt_si": "වසාවාසී",
+      "rhs_si": "සාදික්කා කරාබු",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.849
+    },
+    "ජීරක": {
+      "num": 54,
+      "lhs_si": "ජීරක",
+      "lhs_alt_si": "සුදුදුරු",
+      "rhs_si": "කොත්තමල්ලි",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.8674
+    },
+    "ජීවක සෘෂභක": {
+      "num": 87,
+      "lhs_si": "ජීවක සෘෂභක",
+      "lhs_alt_si": null,
+      "rhs_si": "විදාරි = කිරිබදු අල ශතාවරී උණකපුරු",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.6635
+    },
+    "තගර": {
+      "num": 56,
+      "lhs_si": "තගර",
+      "lhs_alt_si": null,
+      "rhs_si": "සීහලීජටා කොට්ට සේපාලිකාමල් ජටාමාංස",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.9049
+    },
+    "තාලිසපත්‍ර": {
+      "num": 57,
+      "lhs_si": "තාලිසපත්‍ර",
+      "lhs_alt_si": null,
+      "rhs_si": "ස්වර්ණනාලී කටුවැල්බටු",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.0785
+    },
+    "දාඩිම": {
+      "num": 58,
+      "lhs_si": "දාඩිම",
+      "lhs_alt_si": "දෙළුම්",
+      "rhs_si": "වෘක්ෂාම්ල = සියඹලා",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.0987
+    },
+    "දාරුහරිද්‍රා": {
+      "num": 59,
+      "lhs_si": "දාරුහරිද්‍රා",
+      "lhs_alt_si": null,
+      "rhs_si": "හරිද්‍රා = වියලි කහ",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.1159
+    },
+    "දේවදාලි": {
+      "num": 60,
+      "lhs_si": "දේවදාලි",
+      "lhs_alt_si": null,
+      "rhs_si": "වැටකොළු හීනි වැටකොළු තිත්ත වැටකොළු",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.1356
+    },
+    "ද්‍රාක්ෂා": {
+      "num": 61,
+      "lhs_si": "ද්‍රාක්ෂා",
+      "lhs_alt_si": null,
+      "rhs_si": "ගාම්භාරීඵල = ඇද්දෙමට ගෙඩි රට ඉඳි",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.1546
+    },
+    "ධන්වයාස": {
+      "num": 62,
+      "lhs_si": "ධන්වයාස",
+      "lhs_alt_si": null,
+      "rhs_si": "දුරාලභා ධන්වයාස දුරාලභා අභාවයෙහි වැල්කහඹිලියා",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.1736
+    },
+    "ධාන්‍ය": {
+      "num": 63,
+      "lhs_si": "ධාන්‍ය",
+      "lhs_alt_si": "කොත්තමල්ලි",
+      "rhs_si": "ශතපුෂ්ප",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.2093
+    },
+    "නඛී": {
+      "num": 64,
+      "lhs_si": "නඛී",
+      "lhs_alt_si": null,
+      "rhs_si": "ලවංග = කරාබු",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.2295
+    },
+    "නාගකේශර": {
+      "num": 65,
+      "lhs_si": "නාගකේශර",
+      "lhs_alt_si": null,
+      "rhs_si": "නෙළුණු",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.2485
+    },
+    "නිර්ගුණ්ඩී": {
+      "num": 66,
+      "lhs_si": "නිර්ගුණ්ඩී",
+      "lhs_alt_si": "නික",
+      "rhs_si": "තුලසී මදුරුතලා",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.2675
+    },
+    "නීලොත්පල": {
+      "num": 67,
+      "lhs_si": "නීලොත්පල",
+      "lhs_alt_si": "නිල්මානෙල්",
+      "rhs_si": "කුමුදු",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.2866
+    },
+    "නීලකලමී": {
+      "num": 68,
+      "lhs_si": "නීලකලමී",
+      "lhs_alt_si": "කාලාදානා ඛේ",
+      "rhs_si": "ගොංකැකිරි ඇට",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.3044
+    },
+    "නෙත්‍රබාලා": {
+      "num": 69,
+      "lhs_si": "නෙත්‍රබාලා",
+      "lhs_alt_si": "සුගන්ධබාලා",
+      "rhs_si": "කලාඳුරු සැවැන්දරා ලංකාවේ ඉරිවේරිය",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.3246
+    },
+    "රක්ත චන්දන": {
+      "num": 70,
+      "lhs_si": "රක්ත චන්දන",
+      "lhs_alt_si": null,
+      "rhs_si": "නව උශීර = අලුත් සුවඳහොට පතඟිහර මදටහර",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.3424
+    },
+    "රජත භස්ම": {
+      "num": 126,
+      "lhs_si": "රජත භස්ම",
+      "lhs_alt_si": null,
+      "rhs_si": "කාන්ත ලෞහ භස්ම",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.6623
+    },
+    "රසාංජන": {
+      "num": 72,
+      "lhs_si": "රසාංජන",
+      "lhs_alt_si": null,
+      "rhs_si": "දාරුහරිද්‍රා ක්වාථ ඝන සාරය",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.3793
+    },
+    "රස භස්ම": {
+      "num": 73,
+      "lhs_si": "රස භස්ම",
+      "lhs_alt_si": null,
+      "rhs_si": "රස සින්දුර",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.3983
+    },
+    "රාස්නා": {
+      "num": 74,
+      "lhs_si": "රාස්නා",
+      "lhs_alt_si": null,
+      "rhs_si": "හීන් අරත්ත හෝ මහ අරත්ත චීන අල",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.4168
+    },
+    "රුචක ලවණ": {
+      "num": 75,
+      "lhs_si": "රුචක ලවණ",
+      "lhs_alt_si": null,
+      "rhs_si": "පාංශු ලවණ",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.437
+    },
+    "රෝහිතක": {
+      "num": 76,
+      "lhs_si": "රෝහිතක",
+      "lhs_alt_si": null,
+      "rhs_si": "කොහොඹ පොතු ලාක්ෂා යක්එරබදු",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.4542
+    },
+    "රෞප්‍යමාක්ෂික භස්ම": {
+      "num": 77,
+      "lhs_si": "රෞප්‍යමාක්ෂික භස්ම",
+      "lhs_alt_si": null,
+      "rhs_si": "ස්වර්ණමාක්ෂික භස්ම විමල භස්ම",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.4744
+    },
+    "පංචක්ෂාර": {
+      "num": 78,
+      "lhs_si": "පංචක්ෂාර",
+      "lhs_alt_si": null,
+      "rhs_si": "අපාමාර්ගක්ෂාර",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.4935
+    },
+    "පංච ලවණ": {
+      "num": 79,
+      "lhs_si": "පංච ලවණ",
+      "lhs_alt_si": null,
+      "rhs_si": "සහිඳ ලුණු",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.5125
+    },
+    "පද්මකාෂ්ඨ": {
+      "num": 80,
+      "lhs_si": "පද්මකාෂ්ඨ",
+      "lhs_alt_si": null,
+      "rhs_si": "නෙළුම්දඬු කීණ අරටු",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.5315
+    },
+    "පන්නා භස්ම": {
+      "num": 81,
+      "lhs_si": "පන්නා භස්ම",
+      "lhs_alt_si": null,
+      "rhs_si": "ප්‍රවාල භස්ම",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.5493
+    },
+    "පටෝල": {
+      "num": 82,
+      "lhs_si": "පටෝල",
+      "lhs_alt_si": null,
+      "rhs_si": "දුම්මැල්ල",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.5678
+    },
+    "පාෂාණභේද": {
+      "num": 83,
+      "lhs_si": "පාෂාණභේද",
+      "lhs_alt_si": null,
+      "rhs_si": "පොල්පලා අක්කපාන කප්පරවල්ලිය",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.5874
+    },
+    "පෞෂ්කර": {
+      "num": 84,
+      "lhs_si": "පෞෂ්කර",
+      "lhs_alt_si": null,
+      "rhs_si": "කොට්ට",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.6052
+    },
+    "පිප්පලී": {
+      "num": 85,
+      "lhs_si": "පිප්පලී",
+      "lhs_alt_si": null,
+      "rhs_si": "ගම්මිරිස් තිප්පිලි මුල්",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.6254
+    },
+    "පිත්ත": {
+      "num": 86,
+      "lhs_si": "පිත්ත",
+      "lhs_alt_si": null,
+      "rhs_si": "මාංස මිරිකා ගත් යුෂ",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.6433
+    },
+    "පිප්පලී මූල": {
+      "num": 88,
+      "lhs_si": "පිප්පලී මූල",
+      "lhs_alt_si": null,
+      "rhs_si": "රත්නිටුල් ජටාමාංසි තිප්පිලි",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.6807
+    },
+    "පුනර්නවා": {
+      "num": 89,
+      "lhs_si": "පුනර්නවා",
+      "lhs_alt_si": null,
+      "rhs_si": "රක්තපුනර්නවා",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.6998
+    },
+    "පුරාතණ ගුඩ": {
+      "num": 90,
+      "lhs_si": "පුරාතණ ගුඩ",
+      "lhs_alt_si": null,
+      "rhs_si": "යාම සතරක් අව්වේ වියලා ගත් ගුඩ හෝ එබඳු සීනි",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.7182
+    },
+    "පුෂ්කර මූල": {
+      "num": 91,
+      "lhs_si": "පුෂ්කර මූල",
+      "lhs_alt_si": null,
+      "rhs_si": "කොට්ට එරඬු මුල්",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.7551
+    },
+    "පුෂ්ප": {
+      "num": 92,
+      "lhs_si": "පුෂ්ප",
+      "lhs_alt_si": "මල්",
+      "rhs_si": "අපක්ව ඵල = ගැට",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.7741
+    },
+    "පුෂ්පරාග භස්ම": {
+      "num": 93,
+      "lhs_si": "පුෂ්පරාග භස්ම",
+      "lhs_alt_si": null,
+      "rhs_si": "අභ්රක භස්ම",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.7943
+    },
+    "පෘෂ්ණපර්ණි": {
+      "num": 94,
+      "lhs_si": "පෘෂ්ණපර්ණි",
+      "lhs_alt_si": null,
+      "rhs_si": "පොල්පලා",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.8121
+    },
+    "ප්‍රියංගු": {
+      "num": 95,
+      "lhs_si": "ප්‍රියංගු",
+      "lhs_alt_si": null,
+      "rhs_si": "රුක්මල් කලාඳුරු සැවැන්න",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.83
+    },
+    "බ්‍රාහ්මී": {
+      "num": 96,
+      "lhs_si": "බ්‍රාහ්මී",
+      "lhs_alt_si": null,
+      "rhs_si": "ගොටුකොළ",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.868
+    },
+    "භාගී": {
+      "num": 97,
+      "lhs_si": "භාගී",
+      "lhs_alt_si": null,
+      "rhs_si": "සිරිතේක්කු",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.8876
+    },
+    "භල්ලාතක": {
+      "num": 98,
+      "lhs_si": "භල්ලාතක",
+      "lhs_alt_si": "සෙම්කොල්ලං",
+      "rhs_si": "බදුල්ල ඇට",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.0785
+    },
+    "මත්ස්‍යණ්ඩිකා": {
+      "num": 99,
+      "lhs_si": "මත්ස්‍යණ්ඩිකා",
+      "lhs_alt_si": "සූකිරි බවට",
+      "rhs_si": "සුදුසීනි",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.0975
+    },
+    "මද්‍ය": {
+      "num": 100,
+      "lhs_si": "මද්‍ය",
+      "lhs_alt_si": null,
+      "rhs_si": "ආසව අරිෂ්ට",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.1356
+    },
+    "මධු": {
+      "num": 101,
+      "lhs_si": "මධු",
+      "lhs_alt_si": "මීපැණි",
+      "rhs_si": "පුරාතණ ගුඩ පරණ උක්හකුරු",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.1546
+    },
+    "මධුයෂ්ටී": {
+      "num": 102,
+      "lhs_si": "මධුයෂ්ටී",
+      "lhs_alt_si": "වැල්මී",
+      "rhs_si": "ධාතකී = මලිතමල් ඔල්ද මුල්",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.1712
+    },
+    "මයුර මාංස": {
+      "num": 103,
+      "lhs_si": "මයුර මාංස",
+      "lhs_alt_si": null,
+      "rhs_si": "කුකුළු හංස හෝ හාමස්",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.1914
+    },
+    "මාහිෂක්ෂීර": {
+      "num": 104,
+      "lhs_si": "මාහිෂක්ෂීර",
+      "lhs_alt_si": "මීකිරි",
+      "rhs_si": "එලකිරි",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.2105
+    },
+    "මාණික්‍ය භස්ම": {
+      "num": 105,
+      "lhs_si": "මාණික්‍ය භස්ම",
+      "lhs_alt_si": null,
+      "rhs_si": "රිදී භස්ම",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.2295
+    },
+    "මිශ්‍රී": {
+      "num": 106,
+      "lhs_si": "මිශ්‍රී",
+      "lhs_alt_si": "සූකිරි",
+      "rhs_si": "සීනි පුරාණ ගුඩ",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.2485
+    },
+    "මුක්තා": {
+      "num": 107,
+      "lhs_si": "මුක්තා",
+      "lhs_alt_si": null,
+      "rhs_si": "මුක්තා ශුක්ති මුතුබෙලි කටු භස්ම",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.2657
+    },
+    "මූල රාස්නා": {
+      "num": 108,
+      "lhs_si": "මූල රාස්නා",
+      "lhs_alt_si": null,
+      "rhs_si": "චීන අල",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.2866
+    },
+    "මූර්වා": {
+      "num": 109,
+      "lhs_si": "මූර්වා",
+      "lhs_alt_si": null,
+      "rhs_si": "කුරුඳු පොතු වැල්මදට තිප්පිලි මුල්",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.3044
+    },
+    "මේදා මහාමේදා": {
+      "num": 110,
+      "lhs_si": "මේදා මහාමේදා",
+      "lhs_alt_si": null,
+      "rhs_si": "අශ්වගන්ධා අමුක්කරා ශාරිබා ඉරමුසු හාතාවාරිය අල",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.3234
+    },
+    "යවාස": {
+      "num": 111,
+      "lhs_si": "යවාස",
+      "lhs_alt_si": null,
+      "rhs_si": "වැල්කහඹිලියා",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.3615
+    },
+    "ලක්ෂ්මණාමූල": {
+      "num": 112,
+      "lhs_si": "ලක්ෂ්මණාමූල",
+      "lhs_alt_si": null,
+      "rhs_si": "මොණරකුඩුම්බිය සුදු මල් සහිත හීන් කටුවැල්බටු හෝ මහකටුවැල්බටු",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.3793
+    },
+    "ලවංග": {
+      "num": 113,
+      "lhs_si": "ලවංග",
+      "lhs_alt_si": null,
+      "rhs_si": "ගම්මිරිස්",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.4174
+    },
+    "ලාංගලි": {
+      "num": 114,
+      "lhs_si": "ලාංගලි",
+      "lhs_alt_si": "නියඟලා",
+      "rhs_si": "කොට්ට",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.4352
+    },
+    "ලෝධිර": {
+      "num": 115,
+      "lhs_si": "ලෝධිර",
+      "lhs_alt_si": null,
+      "rhs_si": "ඛදිර බෝඹු පොතු ඔ.සං II ලෝත් බලන්න",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.453
+    },
+    "ලෞහ හස්ම": {
+      "num": 116,
+      "lhs_si": "ලෞහ හස්ම",
+      "lhs_alt_si": null,
+      "rhs_si": "ලෞහමල = යබොර භස්ම",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.4738
+    },
+    "වකුල": {
+      "num": 117,
+      "lhs_si": "වකුල",
+      "lhs_alt_si": "මූනමල්",
+      "rhs_si": "කර උත්පල හෝ පද්ම",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.4911
+    },
+    "වජ්ර": {
+      "num": 118,
+      "lhs_si": "වජ්ර",
+      "lhs_alt_si": "දියමන්ති",
+      "rhs_si": "වෛක්‍රාන්ත",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.5089
+    },
+    "වාරාහීකන්ද": {
+      "num": 119,
+      "lhs_si": "වාරාහීකන්ද",
+      "lhs_alt_si": null,
+      "rhs_si": "කිරිබදු අල",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.5291
+    },
+    "විදාරි": {
+      "num": 120,
+      "lhs_si": "විදාරි",
+      "lhs_alt_si": "= කිරිබදු",
+      "rhs_si": "අමුක්කරා හාතාවාරිය සුදුබිංතල් අල",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.5493
+    },
+    "වෛදූර්‍ය්‍ය භස්ම": {
+      "num": 121,
+      "lhs_si": "වෛදූර්‍ය්‍ය භස්ම",
+      "lhs_alt_si": null,
+      "rhs_si": "යසද භස්ම ශුක්ති භස්ම",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.5672
+    },
+    "වෘද්ධදාරක": {
+      "num": 122,
+      "lhs_si": "වෘද්ධදාරක",
+      "lhs_alt_si": null,
+      "rhs_si": "ගිරිතිල්ල",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.5856
+    },
+    "වෘක්ෂරුහා": {
+      "num": 123,
+      "lhs_si": "වෘක්ෂරුහා",
+      "lhs_alt_si": null,
+      "rhs_si": "පිළිල",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.6052
+    },
+    "ස්ත්‍රීදුග්ධ": {
+      "num": 124,
+      "lhs_si": "ස්ත්‍රීදුග්ධ",
+      "lhs_alt_si": "තන කිරි",
+      "rhs_si": "එලකිරි එළුකිරි",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.6243
+    },
+    "ස්වර්ණ භස්ම": {
+      "num": 125,
+      "lhs_si": "ස්වර්ණ භස්ම",
+      "lhs_alt_si": null,
+      "rhs_si": "ස්වර්ණමාක්ෂික හෝ රජත මාක්ෂික භස්ම",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.6421
+    },
+    "ස්වර්ණ මාක්ෂික": {
+      "num": 127,
+      "lhs_si": "ස්වර්ණ මාක්ෂික",
+      "lhs_alt_si": "රන්මැසිදෑ",
+      "rhs_si": "ශෛරික = සිවංගුරු ලෞහ එක් කොටසකට ගෛරික කොටස් 3 ක් එක් කිරීමද කෙරේ",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.679
+    },
+    "සෛන්ධව ලවණ": {
+      "num": 128,
+      "lhs_si": "සෛන්ධව ලවණ",
+      "lhs_alt_si": null,
+      "rhs_si": "මූදුලුණු හෝ බළල් ලුණු පෝරන් ලුණු",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.7158
+    },
+    "සෞරාෂ්ට්‍ර මෘත්තිකා": {
+      "num": 129,
+      "lhs_si": "සෞරාෂ්ට්‍ර මෘත්තිකා",
+      "lhs_alt_si": null,
+      "rhs_si": "පකපර්පටී = = වියලී පුපුරන ලද මඩ",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.736
+    },
+    "සිතා සීනි": {
+      "num": 130,
+      "lhs_si": "සිතා සීනි",
+      "lhs_alt_si": null,
+      "rhs_si": "ඛණ්ඩශර්කරා = සූකිරි",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.7729
+    },
+    "සුවර්ණ රෞප්‍ය": {
+      "num": 131,
+      "lhs_si": "සුවර්ණ රෞප්‍ය",
+      "lhs_alt_si": "රන් රිදී",
+      "rhs_si": "ලෞහ",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.7931
+    },
+    "සෝමරාජී": {
+      "num": 132,
+      "lhs_si": "සෝමරාජී",
+      "lhs_alt_si": "කරුවාඅරිසි",
+      "rhs_si": "ප්‍රපුන්නාඩ = ඇත්තෝර ඇට",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.8115
+    },
+    "ශයී": {
+      "num": 134,
+      "lhs_si": "ශයී",
+      "lhs_alt_si": null,
+      "rhs_si": "රක්ත චන්දන ඉඟුරුපියලි හරංකහ",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.868
+    },
+    "ශඞබිනී": {
+      "num": 135,
+      "lhs_si": "ශඞබිනී",
+      "lhs_alt_si": null,
+      "rhs_si": "එළකටරොළු",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.8864
+    },
+    "ශ්‍රී ඛණ්ඩචන්දන": {
+      "num": 136,
+      "lhs_si": "ශ්‍රී ඛණ්ඩචන්දන",
+      "lhs_alt_si": null,
+      "rhs_si": "කර්පූරද්වය කපුරු දෙක",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.9049
+    },
+    "ශිලාජතු": {
+      "num": 137,
+      "lhs_si": "ශිලාජතු",
+      "lhs_alt_si": null,
+      "rhs_si": "වෙඩිලුණු",
+      "gloss_en": null,
+      "page": 81,
+      "y": 0.0791
+    },
+    "ශාලි": {
+      "num": 138,
+      "lhs_si": "ශාලි",
+      "lhs_alt_si": "ඇල්වී",
+      "rhs_si": "ෂෂ්ටි = හැටදා වී",
+      "gloss_en": null,
+      "page": 81,
+      "y": 0.0969
+    },
+    "ශ්‍යාමා": {
+      "num": 139,
+      "lhs_si": "ශ්‍යාමා",
+      "lhs_alt_si": "කලු ඉරමුසු",
+      "rhs_si": "සුදු ඉරමුසු",
+      "gloss_en": null,
+      "page": 81,
+      "y": 0.1153
+    },
+    "ශුක්ල සර්ප": {
+      "num": 140,
+      "lhs_si": "ශුක්ල සර්ප",
+      "lhs_alt_si": "එළ අබ",
+      "rhs_si": "සාමාන්‍ය ව්‍යවහාර අබ",
+      "gloss_en": null,
+      "page": 81,
+      "y": 0.1356
+    },
+    "හංස ඩිම්බ බිත්තර": {
+      "num": 141,
+      "lhs_si": "හංස ඩිම්බ බිත්තර",
+      "lhs_alt_si": null,
+      "rhs_si": "කුකුළු බිත්තර",
+      "gloss_en": null,
+      "page": 81,
+      "y": 0.1546
+    },
+    "හපුෂා": {
+      "num": 142,
+      "lhs_si": "හපුෂා",
+      "lhs_alt_si": null,
+      "rhs_si": "ගම්මිරිස් මුඩමහණ මල්",
+      "gloss_en": null,
+      "page": 81,
+      "y": 0.173
+    },
+    "හීරා": {
+      "num": 143,
+      "lhs_si": "හීරා",
+      "lhs_alt_si": "දියමන්ති",
+      "rhs_si": "වෛක්‍රාන්ත භස්ම",
+      "gloss_en": null,
+      "page": 81,
+      "y": 0.1914
+    }
+  },
+  "by_rhs": {
+    "පියල් ඇටඹ හෝ කෙට්ටම්බා": {
+      "num": 1,
+      "lhs_si": "අක්ෂොට",
+      "lhs_alt_si": "Indian Walnut",
+      "rhs_si": "පියල් ඇටඹ හෝ කෙට්ටම්බා",
+      "gloss_en": null,
+      "page": 77,
+      "y": 0.5815
+    },
+    "කුරුඳු පොතු කරාබු නාමප්රේණු": {
+      "num": 2,
+      "lhs_si": "අගරු",
+      "lhs_alt_si": "අගිල්",
+      "rhs_si": "කුරුඳු පොතු කරාබු නාමප්රේණු",
+      "gloss_en": null,
+      "page": 77,
+      "y": 0.6005
+    },
+    "අජ්ජායන අසමෝදගම් විශේෂයක්": {
+      "num": 3,
+      "lhs_si": "අජමෝදා",
+      "lhs_alt_si": null,
+      "rhs_si": "අජ්ජායන අසමෝදගම් විශේෂයක්",
+      "gloss_en": null,
+      "page": 77,
+      "y": 0.6195
+    },
+    "ගෝමූත්‍ර": {
+      "num": 4,
+      "lhs_si": "අජාමූත්‍ර",
+      "lhs_alt_si": "එළුමූත්‍ර",
+      "rhs_si": "ගෝමූත්‍ර",
+      "gloss_en": null,
+      "page": 77,
+      "y": 0.6373
+    },
+    "ඵලකිරි": {
+      "num": 5,
+      "lhs_si": "අජාක්ෂීර",
+      "lhs_alt_si": "එළුකිරි",
+      "rhs_si": "ඵලකිරි",
+      "gloss_en": null,
+      "page": 77,
+      "y": 0.6564
+    },
+    "කලාඳුරු": {
+      "num": 6,
+      "lhs_si": "අතිවිෂා",
+      "lhs_alt_si": null,
+      "rhs_si": "කලාඳුරු",
+      "gloss_en": null,
+      "page": 77,
+      "y": 0.676
+    },
+    "ලෞහ භස්ම": {
+      "num": 7,
+      "lhs_si": "අභ්රක භම",
+      "lhs_alt_si": null,
+      "rhs_si": "ලෞහ භස්ම",
+      "gloss_en": null,
+      "page": 77,
+      "y": 0.6944
+    },
+    "චුක්‍ර = චුකා පාලම් බෙං කෝකම් ලංකාවේ ගොරක ව්‍යවහාරයි": {
+      "num": 8,
+      "lhs_si": "අම්ලවේතස",
+      "lhs_alt_si": null,
+      "rhs_si": "චුක්‍ර = චුකා පාලම් බෙං කෝකම් ලංකාවේ ගොරක ව්‍යවහාරයි",
+      "gloss_en": null,
+      "page": 77,
+      "y": 0.7134
+    },
+    "පැසුනු වරා කොළ යුෂ": {
+      "num": 9,
+      "lhs_si": "අර්කක්ෂීර",
+      "lhs_alt_si": "වරාකිරි",
+      "rhs_si": "පැසුනු වරා කොළ යුෂ",
+      "gloss_en": null,
+      "page": 77,
+      "y": 0.7503
+    },
+    "මාණකන්ද = හබරල අල": {
+      "num": 10,
+      "lhs_si": "අහිංස්රා",
+      "lhs_alt_si": null,
+      "rhs_si": "මාණකන්ද = හබරල අල",
+      "gloss_en": null,
+      "page": 77,
+      "y": 0.7693
+    },
+    "කොරාසානි කුචිලා = ගොඩකදුරු අබිං ගෙඩියේ පොතු = පෝස්තක කෂායේ ඝන සාරය": {
+      "num": 11,
+      "lhs_si": "අහිඵෙන",
+      "lhs_alt_si": "අබිං",
+      "rhs_si": "කොරාසානි කුචිලා = ගොඩකදුරු අබිං ගෙඩියේ පොතු = පෝස්තක කෂායේ ඝන සාරය",
+      "gloss_en": null,
+      "page": 77,
+      "y": 0.786
+    },
+    "මයිසුර් පරිප්පු": {
+      "num": 12,
+      "lhs_si": "ආඪකි හිං අර්හර්",
+      "lhs_alt_si": "රටතෝර",
+      "rhs_si": "මයිසුර් පරිප්පු",
+      "gloss_en": null,
+      "page": 77,
+      "y": 0.8252
+    },
+    "තිප්පිලි මහාරාෂ්ට්රි මල්": {
+      "num": 13,
+      "lhs_si": "ආකාරකරභ",
+      "lhs_alt_si": "අක්කරපට්ටා",
+      "rhs_si": "තිප්පිලි මහාරාෂ්ට්රි මල්",
+      "gloss_en": null,
+      "page": 77,
+      "y": 0.8442
+    },
+    "වියලි ඉඟුරු": {
+      "num": 14,
+      "lhs_si": "ආර්ද්‍රක",
+      "lhs_alt_si": "අමුඉඟුරු",
+      "rhs_si": "වියලි ඉඟුරු",
+      "gloss_en": null,
+      "page": 77,
+      "y": 0.8633
+    },
+    "නල = බට මුල්": {
+      "num": 15,
+      "lhs_si": "ඉක්ෂු මූල",
+      "lhs_alt_si": null,
+      "rhs_si": "නල = බට මුල්",
+      "gloss_en": null,
+      "page": 77,
+      "y": 0.8823
+    },
+    "කෙළිඳ පොතු සාදික්කා": {
+      "num": 16,
+      "lhs_si": "ඉන්ද්‍රයව",
+      "lhs_alt_si": null,
+      "rhs_si": "කෙළිඳ පොතු සාදික්කා",
+      "gloss_en": null,
+      "page": 77,
+      "y": 0.9013
+    },
+    "බිහිදානා = බේදානම් ඇට": {
+      "num": 17,
+      "lhs_si": "ඊසගෝල් හිං",
+      "lhs_alt_si": null,
+      "rhs_si": "බිහිදානා = බේදානම් ඇට",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.0797
+    },
+    "තලතෙල්": {
+      "num": 18,
+      "lhs_si": "ඔලිව්තල්",
+      "lhs_alt_si": null,
+      "rhs_si": "තලතෙල්",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.1153
+    },
+    "බලා = බැබිල මුල් මහාබලා = මහබැබිල මුල්": {
+      "num": 19,
+      "lhs_si": "සෘද්ධි වෘද්ධි",
+      "lhs_alt_si": null,
+      "rhs_si": "බලා = බැබිල මුල් මහාබලා = මහබැබිල මුල්",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.1356
+    },
+    "ජාතිපුෂ්ප = දෑසමන් මල්": {
+      "num": 20,
+      "lhs_si": "කක්කෝල",
+      "lhs_alt_si": null,
+      "rhs_si": "ජාතිපුෂ්ප = දෑසමන් මල්",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.1546
+    },
+    "නිම්බපංචාංගය": {
+      "num": 21,
+      "lhs_si": "කණ්ටකාරීමූල",
+      "lhs_alt_si": null,
+      "rhs_si": "නිම්බපංචාංගය",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.1712
+    },
+    "මහ කටුවැල්බටු කොට්ටු": {
+      "num": 22,
+      "lhs_si": "කණ්ටකාරී",
+      "lhs_alt_si": "ක්ෂුද්‍රා",
+      "rhs_si": "මහ කටුවැල්බටු කොට්ටු",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.1902
+    },
+    "නාමල්දෙණු": {
+      "num": 23,
+      "lhs_si": "කමලකේශර",
+      "lhs_alt_si": "නෙළුම්ගේණු",
+      "rhs_si": "නාමල්දෙණු",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.2105
+    },
+    "අමුඉඟුරු හෝ හිඟුරුපියලි": {
+      "num": 24,
+      "lhs_si": "කර්චර",
+      "lhs_alt_si": null,
+      "rhs_si": "අමුඉඟුරු හෝ හිඟුරුපියලි",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.2289
+    },
+    "බාලා ග්‍රන්ථිපර්ණි": {
+      "num": 25,
+      "lhs_si": "කර්පූර",
+      "lhs_alt_si": null,
+      "rhs_si": "බාලා ග්‍රන්ථිපර්ණි",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.2485
+    },
+    "සුදු ඉරමුසු": {
+      "num": 139,
+      "lhs_si": "ශ්‍යාමා",
+      "lhs_alt_si": "කලු ඉරමුසු",
+      "rhs_si": "සුදු ඉරමුසු",
+      "gloss_en": null,
+      "page": 81,
+      "y": 0.1153
+    },
+    "ලතාකස්තුරි = කපුකිනිස්සඇට වසාවාසි වාල්මොල්ගු": {
+      "num": 27,
+      "lhs_si": "කස්තුරි",
+      "lhs_alt_si": null,
+      "rhs_si": "ලතාකස්තුරි = කපුකිනිස්සඇට වසාවාසි වාල්මොල්ගු",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.2866
+    },
+    "ඇත්දෙමට පොතු": {
+      "num": 28,
+      "lhs_si": "කඵල",
+      "lhs_alt_si": null,
+      "rhs_si": "ඇත්දෙමට පොතු",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.3228
+    },
+    "දෙහි ඇඹුල්": {
+      "num": 29,
+      "lhs_si": "2",
+      "lhs_alt_si": null,
+      "rhs_si": "දෙහි ඇඹුල්",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.3418
+    },
+    "අශ්වගන්ධා = අමුක්කරා ශතාවරී": {
+      "num": 30,
+      "lhs_si": "කාකෝලි",
+      "lhs_alt_si": null,
+      "rhs_si": "අශ්වගන්ධා = අමුක්කරා ශතාවරී",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.3603
+    },
+    "තීක්ෂ්යලෞහ = වානේ ඉස්පාත් බෙංගාලි": {
+      "num": 31,
+      "lhs_si": "කාන්තලෞහ",
+      "lhs_alt_si": "කාන්දම්",
+      "rhs_si": "තීක්ෂ්යලෞහ = වානේ ඉස්පාත් බෙංගාලි",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.3805
+    },
+    "සුදුබිංතල්": {
+      "num": 32,
+      "lhs_si": "කාලමුෂලී",
+      "lhs_alt_si": "කළු බිංතල්",
+      "rhs_si": "සුදුබිංතල්",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.3983
+    },
+    "සාම්බර ලවණ": {
+      "num": 33,
+      "lhs_si": "ලවණ",
+      "lhs_alt_si": "කළු ලුණු",
+      "rhs_si": "සාම්බර ලවණ",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.4174
+    },
+    "කුසුම්භ පුෂ්ප වසාවාසි සපුමල් කැකුළු සමන්පිච්ච වෘද්ධ වෛද්‍ය ව්‍යවහාරයකි": {
+      "num": 34,
+      "lhs_si": "කුංකුම",
+      "lhs_alt_si": "කුංකුමප්පු",
+      "rhs_si": "කුසුම්භ පුෂ්ප වසාවාසි සපුමල් කැකුළු සමන්පිච්ච වෘද්ධ වෛද්‍ය ව්‍යවහාරයකි",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.4364
+    },
+    "සුවඳකොට්ට අක්කරපට්ටා": {
+      "num": 35,
+      "lhs_si": "කුෂ්ඨ",
+      "lhs_alt_si": null,
+      "rhs_si": "සුවඳකොට්ට අක්කරපට්ටා",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.4732
+    },
+    "සැන්දරා ඊතණ": {
+      "num": 36,
+      "lhs_si": "කුශතණ",
+      "lhs_alt_si": null,
+      "rhs_si": "සැන්දරා ඊතණ",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.4911
+    },
+    "කුරුඳු පොතු": {
+      "num": 37,
+      "lhs_si": "කුලිංජන",
+      "lhs_alt_si": "සුගන්ධවචා",
+      "rhs_si": "කුරුඳු පොතු",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.5101
+    },
+    "ධාතකී මිපුප් මී මල්": {
+      "num": 38,
+      "lhs_si": "කිණ්ව",
+      "lhs_alt_si": "සුරාබීජ මුහුං",
+      "rhs_si": "ධාතකී මිපුප් මී මල්",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.5476
+    },
+    "රක්ත චන්දන දුනුකේ": {
+      "num": 39,
+      "lhs_si": "කේතකී",
+      "lhs_alt_si": null,
+      "rhs_si": "රක්ත චන්දන දුනුකේ",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.5672
+    },
+    "වසාවාසි සපුමල් කැකුළු": {
+      "num": 40,
+      "lhs_si": "කේශර",
+      "lhs_alt_si": null,
+      "rhs_si": "වසාවාසි සපුමල් කැකුළු",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.585
+    },
+    "සුදුදුරු": {
+      "num": 41,
+      "lhs_si": "කෘෂ්ණජීර",
+      "lhs_alt_si": "කලුදුරු",
+      "rhs_si": "සුදුදුරු",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.604
+    },
+    "ශතාවරි කිරිබදු අල": {
+      "num": 42,
+      "lhs_si": "ක්ෂීරකාකෝලි",
+      "lhs_alt_si": null,
+      "rhs_si": "ශතාවරි කිරිබදු අල",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.6225
+    },
+    "ශෛරික = සිවංගුරු ඛදිරසාර කයිප්පු": {
+      "num": 43,
+      "lhs_si": "බදිර",
+      "lhs_alt_si": "කිහිරි",
+      "rhs_si": "ශෛරික = සිවංගුරු ඛදිරසාර කයිප්පු",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.6415
+    },
+    "කොහොඹ ගසෙහි ඇතුළු පොත්ත": {
+      "num": 44,
+      "lhs_si": "ඛදිරත්වක්",
+      "lhs_alt_si": "කිහිරිපොතු",
+      "rhs_si": "කොහොඹ ගසෙහි ඇතුළු පොත්ත",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.6599
+    },
+    "රසකිඳ ඝනසාරය": {
+      "num": 45,
+      "lhs_si": "ගුඩූචීසත්ව",
+      "lhs_alt_si": "රසකිඳ පිටි",
+      "rhs_si": "රසකිඳ ඝනසාරය",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.6801
+    },
+    "කැකිරි ඇට": {
+      "num": 46,
+      "lhs_si": "ගෝක්ෂුර",
+      "lhs_alt_si": "ගොකටු",
+      "rhs_si": "කැකිරි ඇට",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.6992
+    },
+    "මීකිරි = මීගව කිරි මුං යුෂ හෝ පරිප්පු යුෂ": {
+      "num": 47,
+      "lhs_si": "ගොදුග්ධ",
+      "lhs_alt_si": null,
+      "rhs_si": "මීකිරි = මීගව කිරි මුං යුෂ හෝ පරිප්පු යුෂ",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.7158
+    },
+    "සීනක්කාරං": {
+      "num": 48,
+      "lhs_si": "ගොපී චන්දන",
+      "lhs_alt_si": null,
+      "rhs_si": "සීනක්කාරං",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.736
+    },
+    "දන්තී හෝ අපාමර්ගක්ෂාර හෙළනිටුල් මුල් හෝ සිවිය මුල්": {
+      "num": 49,
+      "lhs_si": "චිත්‍රක",
+      "lhs_alt_si": "රත්නිටුල්",
+      "rhs_si": "දන්තී හෝ අපාමර්ගක්ෂාර හෙළනිටුල් මුල් හෝ සිවිය මුල්",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.7539
+    },
+    "තිප්පිලි මුල්": {
+      "num": 50,
+      "lhs_si": "චවිකා",
+      "lhs_alt_si": "සිවිය",
+      "rhs_si": "තිප්පිලි මුල්",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.7919
+    },
+    "කබරස මුල්": {
+      "num": 51,
+      "lhs_si": "චීන අල",
+      "lhs_alt_si": null,
+      "rhs_si": "කබරස මුල්",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.8115
+    },
+    "ලවංග = කාරබු ගැටපිච්චාමල්": {
+      "num": 52,
+      "lhs_si": "ජාතීපුෂ්ප",
+      "lhs_alt_si": "සමන්මල්",
+      "rhs_si": "ලවංග = කාරබු ගැටපිච්චාමල්",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.83
+    },
+    "සාදික්කා කරාබු": {
+      "num": 53,
+      "lhs_si": "ජාතීකෝෂ",
+      "lhs_alt_si": "වසාවාසී",
+      "rhs_si": "සාදික්කා කරාබු",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.849
+    },
+    "කොත්තමල්ලි": {
+      "num": 54,
+      "lhs_si": "ජීරක",
+      "lhs_alt_si": "සුදුදුරු",
+      "rhs_si": "කොත්තමල්ලි",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.8674
+    },
+    "ශතාවරී කිරිබදු අල උණකපුරු රසකිඳ": {
+      "num": 55,
+      "lhs_si": "ජීවක සෘෂභක",
+      "lhs_alt_si": null,
+      "rhs_si": "ශතාවරී කිරිබදු අල උණකපුරු රසකිඳ",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.887
+    },
+    "සීහලීජටා කොට්ට සේපාලිකාමල් ජටාමාංස": {
+      "num": 56,
+      "lhs_si": "තගර",
+      "lhs_alt_si": null,
+      "rhs_si": "සීහලීජටා කොට්ට සේපාලිකාමල් ජටාමාංස",
+      "gloss_en": null,
+      "page": 78,
+      "y": 0.9049
+    },
+    "ස්වර්ණනාලී කටුවැල්බටු": {
+      "num": 57,
+      "lhs_si": "තාලිසපත්‍ර",
+      "lhs_alt_si": null,
+      "rhs_si": "ස්වර්ණනාලී කටුවැල්බටු",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.0785
+    },
+    "වෘක්ෂාම්ල = සියඹලා": {
+      "num": 58,
+      "lhs_si": "දාඩිම",
+      "lhs_alt_si": "දෙළුම්",
+      "rhs_si": "වෘක්ෂාම්ල = සියඹලා",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.0987
+    },
+    "හරිද්‍රා = වියලි කහ": {
+      "num": 59,
+      "lhs_si": "දාරුහරිද්‍රා",
+      "lhs_alt_si": null,
+      "rhs_si": "හරිද්‍රා = වියලි කහ",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.1159
+    },
+    "වැටකොළු හීනි වැටකොළු තිත්ත වැටකොළු": {
+      "num": 60,
+      "lhs_si": "දේවදාලි",
+      "lhs_alt_si": null,
+      "rhs_si": "වැටකොළු හීනි වැටකොළු තිත්ත වැටකොළු",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.1356
+    },
+    "ගාම්භාරීඵල = ඇද්දෙමට ගෙඩි රට ඉඳි": {
+      "num": 61,
+      "lhs_si": "ද්‍රාක්ෂා",
+      "lhs_alt_si": null,
+      "rhs_si": "ගාම්භාරීඵල = ඇද්දෙමට ගෙඩි රට ඉඳි",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.1546
+    },
+    "දුරාලභා ධන්වයාස දුරාලභා අභාවයෙහි වැල්කහඹිලියා": {
+      "num": 62,
+      "lhs_si": "ධන්වයාස",
+      "lhs_alt_si": null,
+      "rhs_si": "දුරාලභා ධන්වයාස දුරාලභා අභාවයෙහි වැල්කහඹිලියා",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.1736
+    },
+    "ශතපුෂ්ප": {
+      "num": 63,
+      "lhs_si": "ධාන්‍ය",
+      "lhs_alt_si": "කොත්තමල්ලි",
+      "rhs_si": "ශතපුෂ්ප",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.2093
+    },
+    "ලවංග = කරාබු": {
+      "num": 64,
+      "lhs_si": "නඛී",
+      "lhs_alt_si": null,
+      "rhs_si": "ලවංග = කරාබු",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.2295
+    },
+    "නෙළුණු": {
+      "num": 65,
+      "lhs_si": "නාගකේශර",
+      "lhs_alt_si": null,
+      "rhs_si": "නෙළුණු",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.2485
+    },
+    "තුලසී මදුරුතලා": {
+      "num": 66,
+      "lhs_si": "නිර්ගුණ්ඩී",
+      "lhs_alt_si": "නික",
+      "rhs_si": "තුලසී මදුරුතලා",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.2675
+    },
+    "කුමුදු": {
+      "num": 67,
+      "lhs_si": "නීලොත්පල",
+      "lhs_alt_si": "නිල්මානෙල්",
+      "rhs_si": "කුමුදු",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.2866
+    },
+    "ගොංකැකිරි ඇට": {
+      "num": 68,
+      "lhs_si": "නීලකලමී",
+      "lhs_alt_si": "කාලාදානා ඛේ",
+      "rhs_si": "ගොංකැකිරි ඇට",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.3044
+    },
+    "කලාඳුරු සැවැන්දරා ලංකාවේ ඉරිවේරිය": {
+      "num": 69,
+      "lhs_si": "නෙත්‍රබාලා",
+      "lhs_alt_si": "සුගන්ධබාලා",
+      "rhs_si": "කලාඳුරු සැවැන්දරා ලංකාවේ ඉරිවේරිය",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.3246
+    },
+    "නව උශීර = අලුත් සුවඳහොට පතඟිහර මදටහර": {
+      "num": 70,
+      "lhs_si": "රක්ත චන්දන",
+      "lhs_alt_si": null,
+      "rhs_si": "නව උශීර = අලුත් සුවඳහොට පතඟිහර මදටහර",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.3424
+    },
+    "කාන්තලෞහ භස්ම රජතමාක්ෂික භස්ම": {
+      "num": 71,
+      "lhs_si": "රජත භස්ම",
+      "lhs_alt_si": "රිදී අළු",
+      "rhs_si": "කාන්තලෞහ භස්ම රජතමාක්ෂික භස්ම",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.3603
+    },
+    "දාරුහරිද්‍රා ක්වාථ ඝන සාරය": {
+      "num": 72,
+      "lhs_si": "රසාංජන",
+      "lhs_alt_si": null,
+      "rhs_si": "දාරුහරිද්‍රා ක්වාථ ඝන සාරය",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.3793
+    },
+    "රස සින්දුර": {
+      "num": 73,
+      "lhs_si": "රස භස්ම",
+      "lhs_alt_si": null,
+      "rhs_si": "රස සින්දුර",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.3983
+    },
+    "හීන් අරත්ත හෝ මහ අරත්ත චීන අල": {
+      "num": 74,
+      "lhs_si": "රාස්නා",
+      "lhs_alt_si": null,
+      "rhs_si": "හීන් අරත්ත හෝ මහ අරත්ත චීන අල",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.4168
+    },
+    "පාංශු ලවණ": {
+      "num": 75,
+      "lhs_si": "රුචක ලවණ",
+      "lhs_alt_si": null,
+      "rhs_si": "පාංශු ලවණ",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.437
+    },
+    "කොහොඹ පොතු ලාක්ෂා යක්එරබදු": {
+      "num": 76,
+      "lhs_si": "රෝහිතක",
+      "lhs_alt_si": null,
+      "rhs_si": "කොහොඹ පොතු ලාක්ෂා යක්එරබදු",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.4542
+    },
+    "ස්වර්ණමාක්ෂික භස්ම විමල භස්ම": {
+      "num": 77,
+      "lhs_si": "රෞප්‍යමාක්ෂික භස්ම",
+      "lhs_alt_si": null,
+      "rhs_si": "ස්වර්ණමාක්ෂික භස්ම විමල භස්ම",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.4744
+    },
+    "අපාමාර්ගක්ෂාර": {
+      "num": 78,
+      "lhs_si": "පංචක්ෂාර",
+      "lhs_alt_si": null,
+      "rhs_si": "අපාමාර්ගක්ෂාර",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.4935
+    },
+    "සහිඳ ලුණු": {
+      "num": 79,
+      "lhs_si": "පංච ලවණ",
+      "lhs_alt_si": null,
+      "rhs_si": "සහිඳ ලුණු",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.5125
+    },
+    "නෙළුම්දඬු කීණ අරටු": {
+      "num": 80,
+      "lhs_si": "පද්මකාෂ්ඨ",
+      "lhs_alt_si": null,
+      "rhs_si": "නෙළුම්දඬු කීණ අරටු",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.5315
+    },
+    "ප්‍රවාල භස්ම": {
+      "num": 81,
+      "lhs_si": "පන්නා භස්ම",
+      "lhs_alt_si": null,
+      "rhs_si": "ප්‍රවාල භස්ම",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.5493
+    },
+    "දුම්මැල්ල": {
+      "num": 82,
+      "lhs_si": "පටෝල",
+      "lhs_alt_si": null,
+      "rhs_si": "දුම්මැල්ල",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.5678
+    },
+    "පොල්පලා අක්කපාන කප්පරවල්ලිය": {
+      "num": 83,
+      "lhs_si": "පාෂාණභේද",
+      "lhs_alt_si": null,
+      "rhs_si": "පොල්පලා අක්කපාන කප්පරවල්ලිය",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.5874
+    },
+    "කොට්ට": {
+      "num": 114,
+      "lhs_si": "ලාංගලි",
+      "lhs_alt_si": "නියඟලා",
+      "rhs_si": "කොට්ට",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.4352
+    },
+    "ගම්මිරිස් තිප්පිලි මුල්": {
+      "num": 85,
+      "lhs_si": "පිප්පලී",
+      "lhs_alt_si": null,
+      "rhs_si": "ගම්මිරිස් තිප්පිලි මුල්",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.6254
+    },
+    "මාංස මිරිකා ගත් යුෂ": {
+      "num": 86,
+      "lhs_si": "පිත්ත",
+      "lhs_alt_si": null,
+      "rhs_si": "මාංස මිරිකා ගත් යුෂ",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.6433
+    },
+    "විදාරි = කිරිබදු අල ශතාවරී උණකපුරු": {
+      "num": 87,
+      "lhs_si": "ජීවක සෘෂභක",
+      "lhs_alt_si": null,
+      "rhs_si": "විදාරි = කිරිබදු අල ශතාවරී උණකපුරු",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.6635
+    },
+    "රත්නිටුල් ජටාමාංසි තිප්පිලි": {
+      "num": 88,
+      "lhs_si": "පිප්පලී මූල",
+      "lhs_alt_si": null,
+      "rhs_si": "රත්නිටුල් ජටාමාංසි තිප්පිලි",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.6807
+    },
+    "රක්තපුනර්නවා": {
+      "num": 89,
+      "lhs_si": "පුනර්නවා",
+      "lhs_alt_si": null,
+      "rhs_si": "රක්තපුනර්නවා",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.6998
+    },
+    "යාම සතරක් අව්වේ වියලා ගත් ගුඩ හෝ එබඳු සීනි": {
+      "num": 90,
+      "lhs_si": "පුරාතණ ගුඩ",
+      "lhs_alt_si": null,
+      "rhs_si": "යාම සතරක් අව්වේ වියලා ගත් ගුඩ හෝ එබඳු සීනි",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.7182
+    },
+    "කොට්ට එරඬු මුල්": {
+      "num": 91,
+      "lhs_si": "පුෂ්කර මූල",
+      "lhs_alt_si": null,
+      "rhs_si": "කොට්ට එරඬු මුල්",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.7551
+    },
+    "අපක්ව ඵල = ගැට": {
+      "num": 92,
+      "lhs_si": "පුෂ්ප",
+      "lhs_alt_si": "මල්",
+      "rhs_si": "අපක්ව ඵල = ගැට",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.7741
+    },
+    "අභ්රක භස්ම": {
+      "num": 93,
+      "lhs_si": "පුෂ්පරාග භස්ම",
+      "lhs_alt_si": null,
+      "rhs_si": "අභ්රක භස්ම",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.7943
+    },
+    "පොල්පලා": {
+      "num": 94,
+      "lhs_si": "පෘෂ්ණපර්ණි",
+      "lhs_alt_si": null,
+      "rhs_si": "පොල්පලා",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.8121
+    },
+    "රුක්මල් කලාඳුරු සැවැන්න": {
+      "num": 95,
+      "lhs_si": "ප්‍රියංගු",
+      "lhs_alt_si": null,
+      "rhs_si": "රුක්මල් කලාඳුරු සැවැන්න",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.83
+    },
+    "ගොටුකොළ": {
+      "num": 96,
+      "lhs_si": "බ්‍රාහ්මී",
+      "lhs_alt_si": null,
+      "rhs_si": "ගොටුකොළ",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.868
+    },
+    "සිරිතේක්කු": {
+      "num": 97,
+      "lhs_si": "භාගී",
+      "lhs_alt_si": null,
+      "rhs_si": "සිරිතේක්කු",
+      "gloss_en": null,
+      "page": 79,
+      "y": 0.8876
+    },
+    "බදුල්ල ඇට": {
+      "num": 98,
+      "lhs_si": "භල්ලාතක",
+      "lhs_alt_si": "සෙම්කොල්ලං",
+      "rhs_si": "බදුල්ල ඇට",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.0785
+    },
+    "සුදුසීනි": {
+      "num": 99,
+      "lhs_si": "මත්ස්‍යණ්ඩිකා",
+      "lhs_alt_si": "සූකිරි බවට",
+      "rhs_si": "සුදුසීනි",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.0975
+    },
+    "ආසව අරිෂ්ට": {
+      "num": 100,
+      "lhs_si": "මද්‍ය",
+      "lhs_alt_si": null,
+      "rhs_si": "ආසව අරිෂ්ට",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.1356
+    },
+    "පුරාතණ ගුඩ පරණ උක්හකුරු": {
+      "num": 101,
+      "lhs_si": "මධු",
+      "lhs_alt_si": "මීපැණි",
+      "rhs_si": "පුරාතණ ගුඩ පරණ උක්හකුරු",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.1546
+    },
+    "ධාතකී = මලිතමල් ඔල්ද මුල්": {
+      "num": 102,
+      "lhs_si": "මධුයෂ්ටී",
+      "lhs_alt_si": "වැල්මී",
+      "rhs_si": "ධාතකී = මලිතමල් ඔල්ද මුල්",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.1712
+    },
+    "කුකුළු හංස හෝ හාමස්": {
+      "num": 103,
+      "lhs_si": "මයුර මාංස",
+      "lhs_alt_si": null,
+      "rhs_si": "කුකුළු හංස හෝ හාමස්",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.1914
+    },
+    "එලකිරි": {
+      "num": 104,
+      "lhs_si": "මාහිෂක්ෂීර",
+      "lhs_alt_si": "මීකිරි",
+      "rhs_si": "එලකිරි",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.2105
+    },
+    "රිදී භස්ම": {
+      "num": 105,
+      "lhs_si": "මාණික්‍ය භස්ම",
+      "lhs_alt_si": null,
+      "rhs_si": "රිදී භස්ම",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.2295
+    },
+    "සීනි පුරාණ ගුඩ": {
+      "num": 106,
+      "lhs_si": "මිශ්‍රී",
+      "lhs_alt_si": "සූකිරි",
+      "rhs_si": "සීනි පුරාණ ගුඩ",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.2485
+    },
+    "මුක්තා ශුක්ති මුතුබෙලි කටු භස්ම": {
+      "num": 107,
+      "lhs_si": "මුක්තා",
+      "lhs_alt_si": null,
+      "rhs_si": "මුක්තා ශුක්ති මුතුබෙලි කටු භස්ම",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.2657
+    },
+    "චීන අල": {
+      "num": 108,
+      "lhs_si": "මූල රාස්නා",
+      "lhs_alt_si": null,
+      "rhs_si": "චීන අල",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.2866
+    },
+    "කුරුඳු පොතු වැල්මදට තිප්පිලි මුල්": {
+      "num": 109,
+      "lhs_si": "මූර්වා",
+      "lhs_alt_si": null,
+      "rhs_si": "කුරුඳු පොතු වැල්මදට තිප්පිලි මුල්",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.3044
+    },
+    "අශ්වගන්ධා අමුක්කරා ශාරිබා ඉරමුසු හාතාවාරිය අල": {
+      "num": 110,
+      "lhs_si": "මේදා මහාමේදා",
+      "lhs_alt_si": null,
+      "rhs_si": "අශ්වගන්ධා අමුක්කරා ශාරිබා ඉරමුසු හාතාවාරිය අල",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.3234
+    },
+    "වැල්කහඹිලියා": {
+      "num": 111,
+      "lhs_si": "යවාස",
+      "lhs_alt_si": null,
+      "rhs_si": "වැල්කහඹිලියා",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.3615
+    },
+    "මොණරකුඩුම්බිය සුදු මල් සහිත හීන් කටුවැල්බටු හෝ මහකටුවැල්බටු": {
+      "num": 112,
+      "lhs_si": "ලක්ෂ්මණාමූල",
+      "lhs_alt_si": null,
+      "rhs_si": "මොණරකුඩුම්බිය සුදු මල් සහිත හීන් කටුවැල්බටු හෝ මහකටුවැල්බටු",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.3793
+    },
+    "ගම්මිරිස්": {
+      "num": 113,
+      "lhs_si": "ලවංග",
+      "lhs_alt_si": null,
+      "rhs_si": "ගම්මිරිස්",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.4174
+    },
+    "ඛදිර බෝඹු පොතු ඔ.සං II ලෝත් බලන්න": {
+      "num": 115,
+      "lhs_si": "ලෝධිර",
+      "lhs_alt_si": null,
+      "rhs_si": "ඛදිර බෝඹු පොතු ඔ.සං II ලෝත් බලන්න",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.453
+    },
+    "ලෞහමල = යබොර භස්ම": {
+      "num": 116,
+      "lhs_si": "ලෞහ හස්ම",
+      "lhs_alt_si": null,
+      "rhs_si": "ලෞහමල = යබොර භස්ම",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.4738
+    },
+    "කර උත්පල හෝ පද්ම": {
+      "num": 117,
+      "lhs_si": "වකුල",
+      "lhs_alt_si": "මූනමල්",
+      "rhs_si": "කර උත්පල හෝ පද්ම",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.4911
+    },
+    "වෛක්‍රාන්ත": {
+      "num": 118,
+      "lhs_si": "වජ්ර",
+      "lhs_alt_si": "දියමන්ති",
+      "rhs_si": "වෛක්‍රාන්ත",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.5089
+    },
+    "කිරිබදු අල": {
+      "num": 119,
+      "lhs_si": "වාරාහීකන්ද",
+      "lhs_alt_si": null,
+      "rhs_si": "කිරිබදු අල",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.5291
+    },
+    "අමුක්කරා හාතාවාරිය සුදුබිංතල් අල": {
+      "num": 120,
+      "lhs_si": "විදාරි",
+      "lhs_alt_si": "= කිරිබදු",
+      "rhs_si": "අමුක්කරා හාතාවාරිය සුදුබිංතල් අල",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.5493
+    },
+    "යසද භස්ම ශුක්ති භස්ම": {
+      "num": 121,
+      "lhs_si": "වෛදූර්‍ය්‍ය භස්ම",
+      "lhs_alt_si": null,
+      "rhs_si": "යසද භස්ම ශුක්ති භස්ම",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.5672
+    },
+    "ගිරිතිල්ල": {
+      "num": 122,
+      "lhs_si": "වෘද්ධදාරක",
+      "lhs_alt_si": null,
+      "rhs_si": "ගිරිතිල්ල",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.5856
+    },
+    "පිළිල": {
+      "num": 123,
+      "lhs_si": "වෘක්ෂරුහා",
+      "lhs_alt_si": null,
+      "rhs_si": "පිළිල",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.6052
+    },
+    "එලකිරි එළුකිරි": {
+      "num": 124,
+      "lhs_si": "ස්ත්‍රීදුග්ධ",
+      "lhs_alt_si": "තන කිරි",
+      "rhs_si": "එලකිරි එළුකිරි",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.6243
+    },
+    "ස්වර්ණමාක්ෂික හෝ රජත මාක්ෂික භස්ම": {
+      "num": 125,
+      "lhs_si": "ස්වර්ණ භස්ම",
+      "lhs_alt_si": null,
+      "rhs_si": "ස්වර්ණමාක්ෂික හෝ රජත මාක්ෂික භස්ම",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.6421
+    },
+    "කාන්ත ලෞහ භස්ම": {
+      "num": 126,
+      "lhs_si": "රජත භස්ම",
+      "lhs_alt_si": null,
+      "rhs_si": "කාන්ත ලෞහ භස්ම",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.6623
+    },
+    "ශෛරික = සිවංගුරු ලෞහ එක් කොටසකට ගෛරික කොටස් 3 ක් එක් කිරීමද කෙරේ": {
+      "num": 127,
+      "lhs_si": "ස්වර්ණ මාක්ෂික",
+      "lhs_alt_si": "රන්මැසිදෑ",
+      "rhs_si": "ශෛරික = සිවංගුරු ලෞහ එක් කොටසකට ගෛරික කොටස් 3 ක් එක් කිරීමද කෙරේ",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.679
+    },
+    "මූදුලුණු හෝ බළල් ලුණු පෝරන් ලුණු": {
+      "num": 128,
+      "lhs_si": "සෛන්ධව ලවණ",
+      "lhs_alt_si": null,
+      "rhs_si": "මූදුලුණු හෝ බළල් ලුණු පෝරන් ලුණු",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.7158
+    },
+    "පකපර්පටී = = වියලී පුපුරන ලද මඩ": {
+      "num": 129,
+      "lhs_si": "සෞරාෂ්ට්‍ර මෘත්තිකා",
+      "lhs_alt_si": null,
+      "rhs_si": "පකපර්පටී = = වියලී පුපුරන ලද මඩ",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.736
+    },
+    "ඛණ්ඩශර්කරා = සූකිරි": {
+      "num": 130,
+      "lhs_si": "සිතා සීනි",
+      "lhs_alt_si": null,
+      "rhs_si": "ඛණ්ඩශර්කරා = සූකිරි",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.7729
+    },
+    "ලෞහ": {
+      "num": 131,
+      "lhs_si": "සුවර්ණ රෞප්‍ය",
+      "lhs_alt_si": "රන් රිදී",
+      "rhs_si": "ලෞහ",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.7931
+    },
+    "ප්‍රපුන්නාඩ = ඇත්තෝර ඇට": {
+      "num": 132,
+      "lhs_si": "සෝමරාජී",
+      "lhs_alt_si": "කරුවාඅරිසි",
+      "rhs_si": "ප්‍රපුන්නාඩ = ඇත්තෝර ඇට",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.8115
+    },
+    "වරාහීකන්ද බලා කිරිබදු අල මහබැබිල මුල්": {
+      "num": 133,
+      "lhs_si": "සෘද්ධි වෘද්ධි",
+      "lhs_alt_si": null,
+      "rhs_si": "වරාහීකන්ද බලා කිරිබදු අල මහබැබිල මුල්",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.849
+    },
+    "රක්ත චන්දන ඉඟුරුපියලි හරංකහ": {
+      "num": 134,
+      "lhs_si": "ශයී",
+      "lhs_alt_si": null,
+      "rhs_si": "රක්ත චන්දන ඉඟුරුපියලි හරංකහ",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.868
+    },
+    "එළකටරොළු": {
+      "num": 135,
+      "lhs_si": "ශඞබිනී",
+      "lhs_alt_si": null,
+      "rhs_si": "එළකටරොළු",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.8864
+    },
+    "කර්පූරද්වය කපුරු දෙක": {
+      "num": 136,
+      "lhs_si": "ශ්‍රී ඛණ්ඩචන්දන",
+      "lhs_alt_si": null,
+      "rhs_si": "කර්පූරද්වය කපුරු දෙක",
+      "gloss_en": null,
+      "page": 80,
+      "y": 0.9049
+    },
+    "වෙඩිලුණු": {
+      "num": 137,
+      "lhs_si": "ශිලාජතු",
+      "lhs_alt_si": null,
+      "rhs_si": "වෙඩිලුණු",
+      "gloss_en": null,
+      "page": 81,
+      "y": 0.0791
+    },
+    "ෂෂ්ටි = හැටදා වී": {
+      "num": 138,
+      "lhs_si": "ශාලි",
+      "lhs_alt_si": "ඇල්වී",
+      "rhs_si": "ෂෂ්ටි = හැටදා වී",
+      "gloss_en": null,
+      "page": 81,
+      "y": 0.0969
+    },
+    "සාමාන්‍ය ව්‍යවහාර අබ": {
+      "num": 140,
+      "lhs_si": "ශුක්ල සර්ප",
+      "lhs_alt_si": "එළ අබ",
+      "rhs_si": "සාමාන්‍ය ව්‍යවහාර අබ",
+      "gloss_en": null,
+      "page": 81,
+      "y": 0.1356
+    },
+    "කුකුළු බිත්තර": {
+      "num": 141,
+      "lhs_si": "හංස ඩිම්බ බිත්තර",
+      "lhs_alt_si": null,
+      "rhs_si": "කුකුළු බිත්තර",
+      "gloss_en": null,
+      "page": 81,
+      "y": 0.1546
+    },
+    "ගම්මිරිස් මුඩමහණ මල්": {
+      "num": 142,
+      "lhs_si": "හපුෂා",
+      "lhs_alt_si": null,
+      "rhs_si": "ගම්මිරිස් මුඩමහණ මල්",
+      "gloss_en": null,
+      "page": 81,
+      "y": 0.173
+    },
+    "වෛක්‍රාන්ත භස්ම": {
+      "num": 143,
+      "lhs_si": "හීරා",
+      "lhs_alt_si": "දියමන්ති",
+      "rhs_si": "වෛක්‍රාන්ත භස්ම",
+      "gloss_en": null,
+      "page": 81,
+      "y": 0.1914
+    }
+  }
+}

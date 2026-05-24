@@ -1,17 +1,17 @@
 # KG Validation Report
 
-Generated: 2026-05-24T06:27:06+00:00
-Schema version: v1
-Total nodes: 3642 · edges: 12163
+Generated: 2026-05-24T11:21:29+00:00
+Schema version: v1.1
+Total nodes: 4089 · edges: 12754
 
 ## Summary
 
 | Layer | Pass | Total | % |
 |---|---:|---:|---:|
 | 1 — anchor probe                          | 13 | 16 | 81.2 % |
-| 1 — provenance present (nodes)            | 3642 | 3642 | 100.0 % |
-| 1 — provenance present (edges)            | 12163 | 12163 | 100.0 % |
-| 1 — ID format                             | 3642 | 3642 | 100.0 % |
+| 1 — provenance present (nodes)            | 4089 | 4089 | 100.0 % |
+| 1 — provenance present (edges)            | 12754 | 12754 | 100.0 % |
+| 1 — ID format                             | 4089 | 4089 | 100.0 % |
 | 1 — SHACL conformance                     | YES | — | violations: 0 |
 
 ## Layer 1 — Programmatic
@@ -48,6 +48,8 @@ Total nodes: 3642 · edges: 12163
     "DOSED_WITH": 215,
     "TREATS": 562,
     "IS_TYPE": 179,
+    "HAS_PROPERTY": 436,
+    "SUBSTITUTES_FOR": 155,
     "CO_OCCURS": 200
   },
   "failures_by_edge_type": {},
@@ -90,7 +92,7 @@ Total nodes: 3642 · edges: 12163
 ## Layer 3 — Expert spot-check (sample for human review)
 
 Stratified random sample written to `validate/expert_sample.tsv`
-(95 rows). Two annotators
+(96 rows). Two annotators
 score each row as correct / partial / wrong; compute Cohen's κ on
 the 20-item double-coded subset. See
 [`docs/validation_methodology.md`](../docs/validation_methodology.md).
