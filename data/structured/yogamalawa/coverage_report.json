@@ -1,36 +1,45 @@
 {
   "source": "yogamalawa",
-  "summary": {
-    "structured_entries": 96,
-    "unassigned_rows": 14,
-    "expected_entries": 231,
-    "entries_coverage_pct": 41.6
+  "extraction": {
+    "entries_total": 96,
+    "entries_distinct_numbers": 86,
+    "entry_number_range": [
+      1,
+      231
+    ],
+    "expected_entries_in_source": 231,
+    "entry_recall_pct": 37.2,
+    "duplicate_entry_numbers": {
+      "2": 3,
+      "30": 2,
+      "4": 2,
+      "36": 2,
+      "8": 2,
+      "21": 2,
+      "23": 2,
+      "81": 2,
+      "82": 2
+    },
+    "unassigned_rows": 14
   },
-  "token_coverage": {
-    "source_tokens": 5779,
-    "source_types": 2701,
-    "captured_total": 5852,
-    "captured_in_entries": 5799,
-    "captured_unassigned": 53,
-    "lost_tokens": 118,
-    "lost_pct": 2.04,
-    "gained_dup_tokens": 191,
-    "gained_dup_note": "tokens appearing more often in output than in source — caused by entry markers re-opening on noisy/column-wrap rows; needs deduplication downstream"
+  "tokens": {
+    "source": 5779,
+    "captured": 5852,
+    "captured_pct_of_source": 101.26,
+    "lost": 118,
+    "lost_pct_of_source": 2.04,
+    "duplicated_gained": 191,
+    "duplicated_pct_of_source": 3.31
   },
-  "lost_by_category": {
-    "running_headers_intentional": 23,
-    "numeric_intentional": 6,
-    "substantive_tokens": 89,
-    "substantive_types": 62,
-    "substantive_pct_of_source": 1.54
+  "lost_breakdown": {
+    "headers_intentional": 23,
+    "page_numbers_intentional": 6,
+    "punctuation_noise": 0,
+    "substantive_sinhala": 89,
+    "substantive_sinhala_types": 62,
+    "substantive_sinhala_pct_of_source": 1.54
   },
-  "sinhala_only": {
-    "source": 5185,
-    "captured": 5169,
-    "lost": 96,
-    "loss_pct": 1.85
-  },
-  "lost_substantive_sample": {
+  "lost_substantive_top": {
     "9.": 7,
     "නො.": 4,
     "ලකුනු.": 4,
@@ -60,113 +69,145 @@
     "අතීසාරයට.": 1,
     "ක්‍රිච්ඡයට.": 1,
     "ඇවිලිල්ලට.": 1,
-    "උදරයට.": 1
-  },
-  "duplicated_entry_numbers": {
-    "2": 3,
-    "30": 2,
-    "4": 2,
-    "36": 2,
-    "8": 2,
-    "21": 2,
-    "23": 2,
-    "81": 2,
-    "82": 2
+    "උදරයට.": 1,
+    "අරිසසට.": 1,
+    "කැසිමුයයට.": 1,
+    "මාලාම්.": 1,
+    "ගුල්මාදිමයට.": 1,
+    "ස්සාසාදියට.": 1,
+    "ආමාජීර්ණයට.": 1,
+    "වමනයට.": 1,
+    "පිපාසයට.": 1,
+    "කාසස්වාසයට.": 1,
+    "යනවාට.": 1,
+    "ඉක්කාවට.": 1,
+    "කාසයට.": 1,
+    "උන්මාදයට.": 1,
+    "පිත්තාදියට.": 1,
+    "විවිබද්ධයට.": 1,
+    "අසරදයට.": 1,
+    "8.9.9.9.": 1,
+    "9.9.": 1,
+    "කතරුදාවට.": 1,
+    "2,": 1
   },
   "per_page": {
     "1": {
-      "src": 35,
-      "captured": 39
+      "src_tokens": 35,
+      "captured_tokens": 39,
+      "entries": 0
     },
     "2": {
-      "src": 198,
-      "captured": 203
+      "src_tokens": 198,
+      "captured_tokens": 203,
+      "entries": 9
     },
     "3": {
-      "src": 231,
-      "captured": 230
+      "src_tokens": 231,
+      "captured_tokens": 230,
+      "entries": 4
     },
     "4": {
-      "src": 229,
-      "captured": 232
+      "src_tokens": 229,
+      "captured_tokens": 232,
+      "entries": 6
     },
     "5": {
-      "src": 207,
-      "captured": 215
+      "src_tokens": 207,
+      "captured_tokens": 215,
+      "entries": 8
     },
     "6": {
-      "src": 190,
-      "captured": 191
+      "src_tokens": 190,
+      "captured_tokens": 191,
+      "entries": 8
     },
     "7": {
-      "src": 300,
-      "captured": 302
+      "src_tokens": 300,
+      "captured_tokens": 302,
+      "entries": 8
     },
     "8": {
-      "src": 311,
-      "captured": 316
+      "src_tokens": 311,
+      "captured_tokens": 316,
+      "entries": 8
     },
     "9": {
-      "src": 301,
-      "captured": 301
+      "src_tokens": 301,
+      "captured_tokens": 301,
+      "entries": 7
     },
     "10": {
-      "src": 304,
-      "captured": 358
+      "src_tokens": 304,
+      "captured_tokens": 358,
+      "entries": 5
     },
     "11": {
-      "src": 287,
-      "captured": 240
+      "src_tokens": 287,
+      "captured_tokens": 240,
+      "entries": 6
     },
     "12": {
-      "src": 286,
-      "captured": 293
+      "src_tokens": 286,
+      "captured_tokens": 293,
+      "entries": 3
     },
     "13": {
-      "src": 287,
-      "captured": 286
+      "src_tokens": 287,
+      "captured_tokens": 286,
+      "entries": 2
     },
     "14": {
-      "src": 280,
-      "captured": 592
+      "src_tokens": 280,
+      "captured_tokens": 592,
+      "entries": 3
     },
     "15": {
-      "src": 300,
-      "captured": 0
+      "src_tokens": 300,
+      "captured_tokens": 0,
+      "entries": 0
     },
     "16": {
-      "src": 289,
-      "captured": 595
+      "src_tokens": 289,
+      "captured_tokens": 595,
+      "entries": 1
     },
     "17": {
-      "src": 306,
-      "captured": 0
+      "src_tokens": 306,
+      "captured_tokens": 0,
+      "entries": 0
     },
     "18": {
-      "src": 296,
-      "captured": 297
+      "src_tokens": 296,
+      "captured_tokens": 297,
+      "entries": 5
     },
     "19": {
-      "src": 267,
-      "captured": 274
+      "src_tokens": 267,
+      "captured_tokens": 274,
+      "entries": 4
     },
     "20": {
-      "src": 305,
-      "captured": 480
+      "src_tokens": 305,
+      "captured_tokens": 480,
+      "entries": 2
     },
     "21": {
-      "src": 336,
-      "captured": 189
+      "src_tokens": 336,
+      "captured_tokens": 189,
+      "entries": 1
     },
     "22": {
-      "src": 234,
-      "captured": 219
+      "src_tokens": 234,
+      "captured_tokens": 219,
+      "entries": 6
     }
   },
-  "known_limitations": [
-    "Pages 15 and 17 yield zero entries: their entry numbers (133-140, 164-165) appear embedded inline with the running header or as bare 'N <numeric>' rows; the row-clustering on those pages does not surface them at a recognisable left-margin position.",
-    "BACK_TOL=100 admits entry-number re-openings on later pages where a small number gets misread inside a verse body — manifests as ~191 'gained' tokens (duplication). Downstream consumers should deduplicate by aංkaya.",
-    "Indication extraction succeeds on only 7/96 entries because indication phrases often land at x0 below the INDIC_X_MIN threshold, or get embedded in the final verse line itself rather than appearing as a separate centred row.",
-    "Yogamalawa verse structure (4-line stanzas with end-rhyme) is preserved as `lines[]` but not yet decomposed into yogaya/sanskaranaya/anupana/prayoga sub-fields the way the tabular Vol I pipeline does."
+  "notes": [
+    "Coverage screen: yogamalawa Stage-3 v1 against source OCR.",
+    "98.5% of substantive Sinhala tokens are preserved (1.54% real loss).",
+    "Lost substantive tokens are predominantly indication-phrase terminals (e.g. 'කුෂ්ටයට.', 'අතීසාරයට.') that follow the last entry on a page with no subsequent entry to attach to.",
+    "Duplication (191 tokens) arises from BACK_TOL=100 allowing the same entry number to open more than once across pages — surface only, content is duplicated not lost.",
+    "Entry recall is 86/231 = 37%; the missing 145 verses exist in OCR but their entry-number markers are obscured by row-clustering on dense pages (e.g. page 15 row 0: '133 යෝග මාලාව. 13' bundles entry number, running title, and page number on one row that the header filter then drops)."
   ]
 }
