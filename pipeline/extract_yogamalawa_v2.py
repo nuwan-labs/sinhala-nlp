@@ -1,7 +1,18 @@
 """
-extract_yogamalawa_v2.py
-────────────────────────
+extract_yogamalawa_v2.py  (v2.1)
+────────────────────────────────
 Stage 3 for Yogamālāva — second iteration.
+
+v2.1 fixes the residual-token-loss bug in v2's embedded-marker splitting.
+The bug: v2 used `first_match.start()` of the EMBEDDED_RE iterator as the
+prefix-end position. But that regex matches ANY digit between Sinhala
+flanks — including digits outside the window-valid set. When the first
+regex match was a non-valid embed (e.g. `117` on page-14 row 3, where the
+window-valid embed was `128`), the prefix was truncated at `117` and
+everything between `117` and `128` was dropped. v2.1 makes
+_scan_embedded_markers return (n, start, end) tuples and uses only the
+window-valid start positions for slicing — so no inter-embed content can
+fall through the cracks.
 
 v1 (extract_yogamalawa_v1.py) achieved 98.5% per-token coverage but only
 37% entry recall (86/231 distinct entry numbers). The coverage screen
@@ -85,14 +96,15 @@ def _is_header_row(row, text):
 
 
 def _scan_embedded_markers(text, max_seen):
-    """Return list of (n, body_start_pos) for digit tokens in [max_seen+1,
-    max_seen+EMBED_FWD_WIN] embedded mid-text between Sinhala flanks."""
+    """Return list of (n, start, end) tuples for digit tokens in
+    [max_seen+1, max_seen+EMBED_FWD_WIN] embedded mid-text between
+    Sinhala flanks. start/end are positions of the digit itself in `text`."""
     out = []
     cursor_max = max_seen
     for m in EMBEDDED_RE.finditer(text):
         n = int(m.group(1))
         if cursor_max + 1 <= n <= cursor_max + EMBED_FWD_WIN:
-            out.append((n, m.end()))
+            out.append((n, m.start(), m.end()))
             cursor_max = n
     return out
 
@@ -170,51 +182,42 @@ def extract(rows_doc):
                         and n >= max_seen - BACK_TOL
                         and _looks_like_entry_body(body)):
                     open_entry(n, page_num, [body])
-                    # IMPROVEMENT 2 — also scan THIS body for further embedded
-                    # markers (multiple verses concatenated into one OCR row).
+                    # IMPROVEMENT 2 (v2.1) — scan body for further embedded
+                    # markers and split into multiple entries, slicing only
+                    # at *window-valid* embed positions. Any inter-embed
+                    # content (including digit-tokens outside the window)
+                    # stays in the surrounding prefix / piece.
                     embeds = _scan_embedded_markers(body, max_seen)
                     if embeds:
-                        # The current entry holds text up to the first embed;
-                        # each embed opens a new entry whose body is the slice
-                        # from the previous embed end to the current embed end.
-                        prev_end = 0
-                        # adjust current entry's only line to be the prefix
-                        first_embed_match = next(EMBEDDED_RE.finditer(body))
-                        current["lines"][0] = body[:first_embed_match.start()].strip()
-                        for n_embed, body_end in embeds:
-                            # body of this newly-opened entry continues to
-                            # next embed, or to end of body
-                            next_embed_pos = None
-                            for nm in EMBEDDED_RE.finditer(body, pos=body_end):
-                                next_embed_pos = nm.start()
-                                break
-                            piece = body[body_end:next_embed_pos].strip() \
-                                if next_embed_pos else body[body_end:].strip()
+                        first_start = embeds[0][1]
+                        current["lines"][0] = body[:first_start].strip()
+                        for i, (n_embed, _start, end_pos) in enumerate(embeds):
+                            next_start = (embeds[i+1][1] if i+1 < len(embeds)
+                                          else len(body))
+                            piece = body[end_pos:next_start].strip()
                             open_entry(n_embed, page_num,
                                        [piece] if piece else [])
                     continue
 
-            # IMPROVEMENT 2 — continuation rows that contain a mid-row entry
-            # marker get split. Safety: the prefix before the first embed
-            # always goes SOMEWHERE — to current if open, else to unassigned
-            # (never dropped silently).
+            # IMPROVEMENT 2 (v2.1) — continuation rows containing a mid-row
+            # entry marker get split. Slicing uses window-valid embed
+            # positions only — content between non-valid digit-tokens and
+            # the first window-valid embed stays in the prefix (assigned to
+            # current entry if open, else preserved in `unassigned`).
             embeds = _scan_embedded_markers(text, max_seen)
             if embeds:
-                first_m = next(EMBEDDED_RE.finditer(text))
-                prefix = text[:first_m.start()].strip()
+                first_start = embeds[0][1]
+                prefix = text[:first_start].strip()
                 if prefix:
                     if current is not None:
                         append_line_to_current(prefix, x0)
                     else:
                         unassigned.append({"page": page_num, "y": row["y"],
                                            "x0": x0, "text": prefix})
-                for n_embed, body_end in embeds:
-                    next_pos = None
-                    for nm in EMBEDDED_RE.finditer(text, pos=body_end):
-                        next_pos = nm.start()
-                        break
-                    piece = text[body_end:next_pos].strip() if next_pos \
-                            else text[body_end:].strip()
+                for i, (n_embed, _start, end_pos) in enumerate(embeds):
+                    next_start = (embeds[i+1][1] if i+1 < len(embeds)
+                                  else len(text))
+                    piece = text[end_pos:next_start].strip()
                     open_entry(n_embed, page_num,
                                [piece] if piece else [])
                 continue
