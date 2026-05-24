@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "extractor_version": "kg_build_v1",
+  "built_at": "2026-05-24T06:06:34+00:00",
+  "nodes": {
+    "total": 3642,
+    "by_type": {
+      "PreparationType": 10,
+      "Route": 5,
+      "Plant": 2926,
+      "Disease": 49,
+      "Formulation": 628,
+      "Mineral": 24
+    }
+  },
+  "edges": {
+    "total": 12163,
+    "by_type": {
+      "CONTAINS": 11007,
+      "DOSED_WITH": 215,
+      "TREATS": 562,
+      "IS_TYPE": 179,
+      "CO_OCCURS": 200
+    }
+  },
+  "plant_resolution": {
+    "Plant_resolved_to_sanskrit": 297,
+    "Plant_unresolved_sinhala_only": 2629,
+    "Plant_total": 2926,
+    "note": "Unresolved plant nodes are Sinhala surface forms that the resolver did not map to a Sanskrit lemma — typically tadbhava or vernacular terms awaiting R3/R4 lexicons."
+  },
+  "external_id_coverage": {
+    "Plant_with_POWO_LSID": 33,
+    "Plant_with_latin_name": 33,
+    "Plant_with_POWO_pct_of_resolved": 11.1,
+    "Disease_with_ICD11_TM2": 47,
+    "Disease_total": 49
+  }
+}

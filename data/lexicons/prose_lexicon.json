@@ -435,8 +435,8 @@
       {
         "word": "අභ්‍යග",
         "iast": "abhyaga",
-        "lemma": "abhī+aga",
-        "gloss": "abhī=1. a-bhī mfn. fearless, R.; Ragh. | aga=1. aga m. a snake [in this sense perhaps rather a-ga] L.",
+        "lemma": "abhi+aga",
+        "gloss": "abhi=1. abhi/ ind. (a prefix to verbs and nouns, expressing) to,  | aga=1. aga m. a snake [in this sense perhaps rather a-ga] L.",
         "method": "sandhi-parser"
       }
     ]
@@ -1046,8 +1046,8 @@
       {
         "word": "අෂ්ටාංග",
         "iast": "aṣṭāṃga",
-        "lemma": "aṣṭa+aṅga",
-        "gloss": "aṣṭa=1. aṣṭa mfn. (√ akṣ; cf. nir-√ akṣ) ‘marked, branded’, only  | aṅga=1. aṅga/ ind. a particle implying attention, assent or desir",
+        "lemma": "aṣṭā+āṅga",
+        "gloss": "aṣṭā=aṣṭā (in comp. for aṣṭan) | āṅga=āṅga mfn. (in Gr.) relating to the base (aṅga) of a word, Pā",
         "method": "sandhi-parser"
       }
     ]
@@ -3880,8 +3880,8 @@
       {
         "word": "අවස්ථාවේ",
         "iast": "avasthāve",
-        "lemma": "avastha+āve",
-        "gloss": "avastha=ava-stha/ m. membrum virile, AV. vii, 90, 3 (cf. upa/-stha) | āve=1. ā-√ ve P. -vayati, to weave on to; to interweave, string;",
+        "lemma": "avasthā+āve",
+        "gloss": "avasthā=ava-√ sthā P. -tiṣṭhati (impf. -atiṣṭhat; aor. Subj. -sthāt; | āve=1. ā-√ ve P. -vayati, to weave on to; to interweave, string;",
         "method": "sandhi-parser"
       }
     ]
@@ -4270,8 +4270,8 @@
       {
         "word": "ශාරංගධර",
         "iast": "śāraṃgadhara",
-        "lemma": "śas+raṅga+dhara",
-        "gloss": "śas=1. śas mfn. reciting (see uktha-śa/s, -śasa/). | raṅga=raṅga raṅgita, raṅgin See p. 862. | dhara=dhara mf(ā)n. (√ dhṛ) bearing, supporting (scil. the world, ",
+        "lemma": "śās+raṅga+dhara",
+        "gloss": "śās=1. śās (cf. √ śaṃs) cl. 2. P. (Dhātup. xxiv, 67) śāsti (Ved. | raṅga=raṅga raṅgita, raṅgin See p. 862. | dhara=dhara mf(ā)n. (√ dhṛ) bearing, supporting (scil. the world, ",
         "method": "sandhi-parser"
       }
     ]
@@ -7260,8 +7260,8 @@
       {
         "word": "අෂ්ටාවශේෂිත",
         "iast": "aṣṭāvaśeṣita",
-        "lemma": "aṣṭā+avaśeṣita",
-        "gloss": "aṣṭā=aṣṭā (in comp. for aṣṭan) | avaśeṣita=ava-śeṣita mfn. left as a remnant, remaining, MBh. i, 5129, ",
+        "lemma": "aṣṭa+avaśeṣita",
+        "gloss": "aṣṭa=1. aṣṭa mfn. (√ akṣ; cf. nir-√ akṣ) ‘marked, branded’, only  | avaśeṣita=ava-śeṣita mfn. left as a remnant, remaining, MBh. i, 5129, ",
         "method": "sandhi-parser"
       }
     ]
@@ -7710,14 +7710,14 @@
   },
   "ජංඝාරුජා": {
     "freq": 1,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "ජංඝාරුජා",
         "iast": "jaṃghārujā",
-        "lemma": "jaṅghā+rujā",
-        "gloss": "jaṅghā=ja/ṅghā f. (√ jaṃh) the shank (from the ankle to the knee),  | rujā=rujā (ā), f., see below.",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -7806,8 +7806,8 @@
       {
         "word": "අවස්ථානුකූල",
         "iast": "avasthānukūla",
-        "lemma": "avasthā+anukūla",
-        "gloss": "avasthā=ava-√ sthā P. -tiṣṭhati (impf. -atiṣṭhat; aor. Subj. -sthāt; | anukūla=anu-kū/la mf(ā)n. following the bank (kūla) or slope or decl",
+        "lemma": "avastha+anukūla",
+        "gloss": "avastha=ava-stha/ m. membrum virile, AV. vii, 90, 3 (cf. upa/-stha) | anukūla=anu-kū/la mf(ā)n. following the bank (kūla) or slope or decl",
         "method": "sandhi-parser"
       }
     ]
@@ -8066,8 +8066,8 @@
       {
         "word": "කපිත්ථාෂ්ටක",
         "iast": "kapitthāṣṭaka",
-        "lemma": "kapittha+aṣṭaka",
-        "gloss": "kapittha=kapittha m. (ttha = stha) ‘on which monkeys dwell’, Feronia  | aṣṭaka=a/ṣṭaka mf(ā or ikā)n. (Śulb.; cf. Pāṇ. vii, 3, 45 Comm.) co",
+        "lemma": "kapittha+āṣṭaka",
+        "gloss": "kapittha=kapittha m. (ttha = stha) ‘on which monkeys dwell’, Feronia  | āṣṭaka=āṣṭaka n. N. of a district, Pat. on Kāty. Vārt. 31 on Pāṇ. i",
         "method": "sandhi-parser"
       }
     ]
@@ -9353,8 +9353,8 @@
       {
         "word": "රෝගාබාධ",
         "iast": "rogābādha",
-        "lemma": "roga+ābādha",
-        "gloss": "roga=ro/ga m. (√ 1. ruj) ‘breaking up of strength’, disease, infi | ābādha=ā-bādha/ m. pressing towards, RV. viii, 23, 3",
+        "lemma": "roga+abādha",
+        "gloss": "roga=ro/ga m. (√ 1. ruj) ‘breaking up of strength’, disease, infi | abādha=a-bādha mfn. unobstructed, unrestrained",
         "method": "sandhi-parser"
       }
     ]
@@ -11961,14 +11961,14 @@
   },
   "ශ්ලේෂ්මාදරය": {
     "freq": 1,
-    "resolved": false,
+    "resolved": true,
     "words": [
       {
         "word": "ශ්ලේෂ්මාදරය",
         "iast": "śleṣmādaraya",
-        "lemma": null,
-        "gloss": null,
-        "method": null
+        "lemma": "śleṣma+ada+raya",
+        "gloss": "śleṣma=śleṣma in comp. for śleṣman. | ada=ada or adaka, mfn. chiefly ifc., eating. | raya=raya m. (√ rī) the stream of a river, current, MBh.; Kāv. &c",
+        "method": "sandhi-parser"
       }
     ]
   },
@@ -14717,14 +14717,14 @@
   },
   "ශීර්ෂාත්‍යංග": {
     "freq": 1,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "ශීර්ෂාත්‍යංග",
         "iast": "śīrṣātyaṃga",
-        "lemma": "śīrṣa+ātī+aṅga",
-        "gloss": "śīrṣa=śīrṣa/ n. (connected with śiras; collateral of śīrṣa/n below | ātī=ātī/ See āti/. | aṅga=1. aṅga/ ind. a particle implying attention, assent or desir",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -15107,14 +15107,14 @@
   },
   "ජිහ්වසතම්භ": {
     "freq": 1,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "ජිහ්වසතම්භ",
         "iast": "jihvasatambha",
-        "lemma": "jihva+sas+tam+bha",
-        "gloss": "jihva=jihva/ mfn. (said of Agni), MaitrS. i, 3, 35 (for yahva/ of  | sas=sas cl. 2. P. (Dhātup. xxiv, 70) sa/sti (in TS. also sasa/st | tam=tam cl. 4. tā/myati (Pāṇ. vii, 3, 74; rarely Ā. R. ii, 63, 4 | bha=1. bha aspirate of ba.",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -15575,14 +15575,14 @@
   },
   "සතම්භ": {
     "freq": 1,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "සතම්භ",
         "iast": "satambha",
-        "lemma": "sas+tam+bha",
-        "gloss": "sas=sas cl. 2. P. (Dhātup. xxiv, 70) sa/sti (in TS. also sasa/st | tam=tam cl. 4. tā/myati (Pāṇ. vii, 3, 74; rarely Ā. R. ii, 63, 4 | bha=1. bha aspirate of ba.",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },

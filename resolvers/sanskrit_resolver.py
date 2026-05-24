@@ -283,14 +283,37 @@ def write_botanical(lexicons):
 
 
 # ── Tier 3: real sanskrit_parser via memory-isolated worker subprocesses ──────
+
+# Characters that Aksharamukha emits for Sinhala-native sounds with no
+# Sanskrit equivalent. A token whose IAST contains any of these is not
+# really tatsama (Module A admitted it on one Sanskritic letter alone)
+# and sanskrit_parser can't consume it anyway. Filtering before worker
+# spawn removes ~55 % of the residual worker-error count in v2.1.
+_SINHALA_IAST_MARKS = ("ĕ", "ŏ", "æ", "ḻ", "ǎ", "n̆")
+
+
+def _has_sinhala_only_iast_marks(iast: str) -> bool:
+    return any(m in iast for m in _SINHALA_IAST_MARKS)
+
+
 def _collect_residual_iast(lexicons, min_len=6, max_len=20):
-    """Deduped IAST forms (length-guarded) for words still method=None."""
+    """Deduped IAST forms (length-guarded) for words still method=None.
+    Excludes tokens whose IAST contains Sinhala-only diacritics
+    (ĕ ŏ æ ḻ ǎ n̆) — these are not really tatsama and would only
+    produce worker errors.
+    """
     out = set()
+    skipped_iast_marks = 0
     for lex in lexicons.values():
         for rec in lex.values():
             for w in rec["words"]:
                 if w["method"] is None and min_len <= len(w["iast"]) <= max_len:
+                    if _has_sinhala_only_iast_marks(w["iast"]):
+                        skipped_iast_marks += 1
+                        continue
                     out.add(w["iast"])
+    if skipped_iast_marks:
+        print(f"  (filtered {skipped_iast_marks} word-records with Sinhala-only IAST marks)")
     return sorted(out)
 
 
@@ -320,7 +343,12 @@ def run_parser_recovery(lexicons, batch_size=50, mem_cap_mb=1500,
     import subprocess
     import os as _os
 
-    worker = _os.path.abspath("sandhi_worker.py")
+    # Look for sandhi_worker.py next to this script (script-relative), then
+    # fall back to cwd-relative for legacy / dev invocations.
+    script_dir = _os.path.dirname(_os.path.abspath(__file__))
+    worker = _os.path.join(script_dir, "sandhi_worker.py")
+    if not _os.path.exists(worker):
+        worker = _os.path.abspath("sandhi_worker.py")
     if not _os.path.exists(worker):
         print("[parser recovery skipped: sandhi_worker.py not found]")
         return

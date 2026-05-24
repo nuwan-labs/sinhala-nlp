@@ -984,14 +984,14 @@
   },
   "කෝමාරිකා යුෂ": {
     "freq": 5,
-    "resolved": true,
+    "resolved": false,
     "words": [
       {
         "word": "කෝමාරිකා",
         "iast": "komārikā",
-        "lemma": "kas+mārikā",
-        "gloss": "kas=1. kas cl. 1. P. kasati (Dhātup. xx, 30), to go, move, appro | mārikā=mārikā f. a plague, pestilence, BhP.",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       },
       {
         "word": "යුෂ",
@@ -1474,9 +1474,9 @@
       {
         "word": "වචනාවි",
         "iast": "vacanāvi",
-        "lemma": "vacana+āvi",
-        "gloss": "vacana=vacana/ mfn. speaking, a speaker, eloquent, RV. | āvi=āvi f(i and ī/). (perhaps √ vī), pain, suffering, Suśr.; TS.",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       }
     ]
   },
@@ -1658,8 +1658,8 @@
       {
         "word": "ලෝධර",
         "iast": "lodhara",
-        "lemma": "las+dhara",
-        "gloss": "las=1. las cl. 1. P., (Dhātup. xvii, 64) lasati (only p. lasat,  | dhara=dhara mf(ā)n. (√ dhṛ) bearing, supporting (scil. the world, ",
+        "lemma": "las+adhara",
+        "gloss": "las=1. las cl. 1. P., (Dhātup. xvii, 64) lasati (only p. lasat,  | adhara=a/dhara mfn. (connected with adha/s), lower, inferior, tendi",
         "method": "sandhi-parser"
       }
     ]
@@ -3274,9 +3274,9 @@
       {
         "word": "-සමභාගව",
         "iast": "-samabhāgava",
-        "lemma": "sama+bhā+gava",
-        "gloss": "sama=1. sama mfn. (connected with 7. sa and with 2. sama/ and sam | bhā=bhā/ f. (ā/) light or a beam of l˚, lustre, splendour, MBh.; | gava=gava mf(ī)n. in comp. before a word beginning with a vowel [",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       },
       {
         "word": "ගත",
@@ -5618,9 +5618,9 @@
       {
         "word": "ධත්වයාශ",
         "iast": "dhatvayāśa",
-        "lemma": "dha+tvayā+āśa",
-        "gloss": "dha=1. dha aspirate of the preceding letter, | tvayā=1. tva mfn. (tvad). one, several, RV. | āśa=1. āśa m. (√ 1. aś), reaching, obtaining (cf. dur˚.)",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       },
       {
         "word": "ප්‍රතිනිධි",
@@ -6700,8 +6700,8 @@
       {
         "word": "රසාංජන",
         "iast": "rasāṃjana",
-        "lemma": "rasa+añjana",
-        "gloss": "rasa=ra/sa m. (ifc. f(ā). ) the sap or juice of plants, juice of  | añjana=añjana m. a kind of domestic lizard, L.",
+        "lemma": "rasā+āñjana",
+        "gloss": "rasā=ra/sā (ā), f., see s.v. | āñjana=ā/ñjana n. ointment (especially for the eyes), AV.; TS.; ŚBr",
         "method": "sandhi-parser"
       },
       {
@@ -7688,8 +7688,8 @@
       {
         "word": "ලෝධර",
         "iast": "lodhara",
-        "lemma": "las+dhara",
-        "gloss": "las=1. las cl. 1. P., (Dhātup. xvii, 64) lasati (only p. lasat,  | dhara=dhara mf(ā)n. (√ dhṛ) bearing, supporting (scil. the world, ",
+        "lemma": "las+adhara",
+        "gloss": "las=1. las cl. 1. P., (Dhātup. xvii, 64) lasati (only p. lasat,  | adhara=a/dhara mfn. (connected with adha/s), lower, inferior, tendi",
         "method": "sandhi-parser"
       },
       {
@@ -8782,8 +8782,8 @@
       {
         "word": "හිංගුලාකෘෂ්ට",
         "iast": "hiṃgulākṛṣṭa",
-        "lemma": "hiṅgula+ākṛṣṭa",
-        "gloss": "hiṅgula=hiṅgula m. n. a preparation of mercury with sulphur, vermili | ākṛṣṭa=ā-kṛṣṭa mfn. drawn, pulled, attracted.",
+        "lemma": "hiṅgulā+ākṛṣṭa",
+        "gloss": "hiṅgulā=hiṅgulā (ā), f., see below | ākṛṣṭa=ā-kṛṣṭa mfn. drawn, pulled, attracted.",
         "method": "sandhi-parser"
       },
       {
@@ -11742,9 +11742,9 @@
       {
         "word": "තිරස්සවාලු",
         "iast": "tirassavālu",
-        "lemma": null,
-        "gloss": null,
-        "method": null
+        "lemma": "tiras+sava+alu",
+        "gloss": "tiras=tira/s ind. (g. svar-ādi; √ tṝ) through (acc.), RV.; AV. xii | sava=1. sava/ m. (fr. √ 3. su) pressing out the juice of the Soma | alu=alu f. (= ālu, q.v.) a small water-pot, L.",
+        "method": "sandhi-parser"
       },
       {
         "word": "මුල්",
@@ -13514,7 +13514,7 @@
   },
   "කටුපෙඳගෙඩි ( ශෘංගාටක )": {
     "freq": 1,
-    "resolved": false,
+    "resolved": true,
     "words": [
       {
         "word": "කටුපෙඳගෙඩි",
@@ -13533,9 +13533,9 @@
       {
         "word": "ශෘංගාටක",
         "iast": "śṛṃgāṭaka",
-        "lemma": null,
-        "gloss": null,
-        "method": null
+        "lemma": "śṛṅga+āṭaka",
+        "gloss": "śṛṅga=śṛṅga n. (perhaps connected with śiras, śīrṣan; ifc. f(ā or  | āṭaka=āṭaka mf(ikā)n. going. See kāraskarāṭikā.",
+        "method": "sandhi-parser"
       },
       {
         "word": ")",
@@ -17864,9 +17864,9 @@
       {
         "word": "වෛකාන්ත්‍ර",
         "iast": "vaikāntra",
-        "lemma": "vai+kām+tra",
-        "gloss": "vai=1. vai (orig. identical with √ 2. vā) cl. 1. P. (Dhātup. xxi | kām=kām ind. an interjection used in calling out to another, L. | tra=1. tra mf(ā)n. (√ trai, Pāṇ. iii, 2, 3) ifc. ‘protecting’, s",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       },
       {
         "word": "භස්මය",
@@ -18566,9 +18566,9 @@
       {
         "word": "වචනාවී",
         "iast": "vacanāvī",
-        "lemma": null,
-        "gloss": null,
-        "method": null
+        "lemma": "vacana+āvī",
+        "gloss": "vacana=vacana/ mfn. speaking, a speaker, eloquent, RV. | āvī=āvī f. pl. (yas) pangs of childbirth, Suśr.",
+        "method": "sandhi-parser"
       }
     ]
   },
@@ -24315,8 +24315,8 @@
       {
         "word": "අභ්‍යග",
         "iast": "abhyaga",
-        "lemma": "abhī+aga",
-        "gloss": "abhī=1. a-bhī mfn. fearless, R.; Ragh. | aga=1. aga m. a snake [in this sense perhaps rather a-ga] L.",
+        "lemma": "abhi+aga",
+        "gloss": "abhi=1. abhi/ ind. (a prefix to verbs and nouns, expressing) to,  | aga=1. aga m. a snake [in this sense perhaps rather a-ga] L.",
         "method": "sandhi-parser"
       },
       {
@@ -24607,9 +24607,9 @@
       {
         "word": "කෝමාරිකා",
         "iast": "komārikā",
-        "lemma": "kas+mārikā",
-        "gloss": "kas=1. kas cl. 1. P. kasati (Dhātup. xx, 30), to go, move, appro | mārikā=mārikā f. a plague, pestilence, BhP.",
-        "method": "sandhi-parser"
+        "lemma": null,
+        "gloss": null,
+        "method": null
       },
       {
         "word": "යුෂ",

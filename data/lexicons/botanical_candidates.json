@@ -810,6 +810,14 @@
     ],
     "gloss": "lodhra m. = rodhra, Symplocos Racemosa, MBh.; Kāv. &c."
   },
+  "කුලත්ථාදී": {
+    "freq": 2,
+    "iast": "kulatthādī",
+    "latin": [
+      "Glycine labialis"
+    ],
+    "gloss": "kulatthā=kulatthā f. a kind of Dolichos (Glycine labialis), L. | ādī=ā-√ 2. dī (3. sg. impf. ā/dīdet, RV. i, 149, 3; 3. sg. aor. "
+  },
   "මාෂ": {
     "freq": 2,
     "iast": "māṣa",
@@ -851,6 +859,39 @@
     ],
     "gloss": "kālaśāka=kāla—śāka n. the potherb Ocimum sanctum, Mn. iii, 272; MBh.  | ādi=1. ādi m. beginning, commencement"
   },
+  "පටෝලාදික්වාථය": {
+    "freq": 1,
+    "iast": "paṭolādikvāthaya",
+    "latin": [
+      "Trichosanthes Dioeca"
+    ],
+    "gloss": "paṭola=paṭola m. (cf. paṭu, paṭuka) Trichosanthes Dioeca | ādi=1. ādi m. beginning, commencement | kvāthaya=kvātha m. (g. jvalādi) boiling, Yājñ. iii, 253, Sch."
+  },
+  "පාඨාකරඤ්ජාදි": {
+    "freq": 1,
+    "iast": "pāṭhākarañjādi",
+    "latin": [
+      "Clypea Hernandifolia",
+      "Pongamia Glabra"
+    ],
+    "gloss": "pāṭhā=pāṭhā f. Clypea Hernandifolia, L. | karañja=ka/rañja m. the tree Pongamia Glabra (used medicinally), Āp. | ādi=1. ādi m. beginning, commencement"
+  },
+  "පාඨාසමංගාදි": {
+    "freq": 1,
+    "iast": "pāṭhāsamaṃgādi",
+    "latin": [
+      "Clypea Hernandifolia"
+    ],
+    "gloss": "pāṭhā=pāṭhā f. Clypea Hernandifolia, L. | samaṅgā=sa/m-aṅgā (ā), f. N. of various plants (accord. to L. ‘Rubia | ādi=1. ādi m. beginning, commencement"
+  },
+  "ප්‍රියංගුකාදි": {
+    "freq": 1,
+    "iast": "priyaṃgukādi",
+    "latin": [
+      "Panicum Italicum"
+    ],
+    "gloss": "priyaṅgukā=priyaṅgukā f. Panicum Italicum, SāmavBr. | ādi=1. ādi m. beginning, commencement"
+  },
   "බලාමෘතාදි": {
     "freq": 1,
     "iast": "balāmṛtādi",
@@ -867,22 +908,6 @@
     ],
     "gloss": "rāsnā=rā/snā f. a girdle (cf. raśanā, raśmi), VS.; ŚBr. | śigru=śigru/ m. (of unknown derivation) Moringa Pterygosperma (a k | kvāthaya=kvātha m. (g. jvalādi) boiling, Yājñ. iii, 253, Sch."
   },
-  "ශාලපණ්‍යාදී": {
-    "freq": 1,
-    "iast": "śālapaṇyādī",
-    "latin": [
-      "Cardiospermum Halicacabum"
-    ],
-    "gloss": "śāla=1. śāla/ mfn. (fr. śṛ for śri) being in a house &c., ŚBr. (˚ | paṇyā=paṇyā f. Cardiospermum Halicacabum, L. | ādī=ā-√ 2. dī (3. sg. impf. ā/dīdet, RV. i, 149, 3; 3. sg. aor. "
-  },
-  "ශ්‍රීපණ්‍යාදි": {
-    "freq": 1,
-    "iast": "śrīpaṇyādi",
-    "latin": [
-      "Cardiospermum Halicacabum"
-    ],
-    "gloss": "śrī=1. śrī (cf. √ śrā) cl. 9. P. Ā. (Dhātup. xxxi, 3) śrīṇa/ti,  | paṇyā=paṇyā f. Cardiospermum Halicacabum, L. | ādi=1. ādi m. beginning, commencement"
-  },
   "ශුණ්ඨිබලාමෘත": {
     "freq": 1,
     "iast": "śuṇṭhibalāmṛta",
@@ -891,6 +916,14 @@
     ],
     "gloss": "śuṇṭhi=śuṇṭhi or śuṇṭhī, f. dry ginger, Kāv.; VarBṛS.; Suśr. &c. | balā=balā f. Sida Cordifolia, Suśr. (du. the plants Balā and Ati- | mṛta=mṛta/ mfn. dead, deceased, death-like, torpid, rigid, RV. &c"
   },
+  "භූනිම්බාදි": {
+    "freq": 1,
+    "iast": "bhūnimbādi",
+    "latin": [
+      "Gentiana Chirata"
+    ],
+    "gloss": "bhūnimba=bhū—nimba m. Gentiana Chirata, Suśr.; ŚārṅgS. | ādi=1. ādi m. beginning, commencement"
+  },
   "හිංග්වෂ්ටක": {
     "freq": 1,
     "iast": "hiṃgvaṣṭaka",
@@ -898,14 +931,6 @@
       "Ferula Asa"
     ],
     "gloss": "hiṅgu=hiṅgu m. Ferula Asa Foetida, Buddh.; BhP. | aṣṭaka=a/ṣṭaka mf(ā or ikā)n. (Śulb.; cf. Pāṇ. vii, 3, 45 Comm.) co"
-  },
-  "අභයාදී": {
-    "freq": 1,
-    "iast": "abhayādī",
-    "latin": [
-      "Terminalia Chebula"
-    ],
-    "gloss": "abhayā=a/-bhayā (ā), f. the plant Terminalia Chebula | ādī=ā-√ 2. dī (3. sg. impf. ā/dīdet, RV. i, 149, 3; 3. sg. aor. "
   },
   "කුෂ්මාණ්ඩය": {
     "freq": 1,
@@ -938,6 +963,14 @@
       "Costus Speciosus"
     ],
     "gloss": "śvāsāri m. ‘breath-enemy’, Costus Speciosus or Arabicus, L."
+  },
+  "ශාරිවාද්‍යාසවය": {
+    "freq": 1,
+    "iast": "śārivādyāsavaya",
+    "latin": [
+      "Alhagi Maurorum"
+    ],
+    "gloss": "śāri=śā/ri f. (L. also written śārī or sāri) a partic. bird (= śā | vāt=1. vāt ind. g. cādi. | yāsa=yāsa m. = yavāsa, Alhagi Maurorum, L. (-śarkarā f. = yavāsa- | vaya=vaya m. (fr. √ ve) one who weaves, a weaver, L."
   },
   "අභයාරිෂ්ටය": {
     "freq": 1,
