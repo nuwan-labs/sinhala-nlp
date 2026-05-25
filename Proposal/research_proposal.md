@@ -62,7 +62,7 @@ Five gaps emerge from the literature: (i) no machine-readable Sri Lankan traditi
 
 **RQ2.** Can a schema-constrained extraction system trained on a single structured pharmacopoeia satisfy three guarantees, byte-identical reproducibility, content-token completeness, and verbatim source-span binding, on unseen free-style traditional-medicine prose? (Wang *et al.*, 2025; Wang *et al.*, 2026; Hobbs *et al.*, 1997)
 
-**RQ3.** Does the system transfer with measurable precision and recall to structurally and temporally distinct traditional-medicine documents without retraining? (Shang *et al.*, 2018; Ratner *et al.*, 2017; Joshi *et al.*, 2020)
+**RQ3.** Does the system transfer with measurable precision and recall to unseen data (withheld formulas and, where available, distinct traditional-medicine documents) without retraining? (Shang *et al.*, 2018; Ratner *et al.*, 2017; Joshi *et al.*, 2020)
 
 **RQ4.** Does augmenting named-entity recognition with knowledge-graph-derived features improve F1 over gazetteer-only and distant-supervised CRF baselines on Ayurvedic entities? (Dhananjaya *et al.*, 2022; Ranathunga *et al.*, 2024; Kartchner *et al.*, 2024)
 
@@ -84,7 +84,7 @@ Five gaps emerge from the literature: (i) no machine-readable Sri Lankan traditi
 
 **Phase II, Validation:**
 
-**O5.** Evaluate system generalisation on unseen documents: withheld Vol I formulas, samples from other traditional-medicine books, and texts of varying register and period.
+**O5.** Evaluate system generalisation on unseen data: withheld Vol I formulas and, where digitised copies of other traditional-medicine texts are obtainable, samples of varying register and period.
 
 **O6.** Conduct a three-arm NER ablation to quantify the knowledge graph's downstream utility.
 
@@ -126,11 +126,9 @@ The project contributes along four axes, methodology, resource, empirical valida
 
 **N3. First machine-readable Sri Lankan traditional-medicine knowledge graph.** No computational knowledge graph of Sri Lankan traditional medicine exists. The proposed KG is interoperable with the international ecosystem through ICD-11 TM2, POWO and ChEBI bindings.
 
-**N4. Cross-document generalisation without retraining.** The demonstration that a rule-based system calibrated on one volume transfers to distinct documents establishes it as a general-purpose tool rather than a source-specific extraction script.
+**N4. First NER model for Sinhala traditional-medicine text.** No named-entity recognition model exists for Sinhala medical or Ayurvedic text. This project produces the first such model, trained via distant supervision from the structured pharmacopoeia data and augmented with knowledge-graph-derived features. The demonstration that KG-grounded features improve entity recognition where no labelled data previously existed establishes a feedback loop between KG construction and NER.
 
-**N5. KG-grounded NER improvement on a previously unlabelled domain.** The demonstration that knowledge-graph features improve entity recognition where no labelled data previously existed establishes a feedback loop between KG construction and NER.
-
-**N6. Three-guarantees verification framework.** The combination of reproducibility, completeness and exactness audit gates, with measured outcomes on both training and held-out data, is novel relative to existing provenance mechanisms in systems such as Wikidata.
+**N5. Three-guarantees verification framework.** The combination of reproducibility, completeness and exactness audit gates, with measured outcomes on both training and held-out data, is novel relative to existing provenance mechanisms in systems such as Wikidata.
 
 Additional contributions include a memory-isolated subprocess pattern for resource-bounded NLP libraries, a multi-system unit-conversion registry, and a CARE-Principles-informed governance framework for traditional-knowledge release.
 
@@ -150,16 +148,7 @@ Six evaluation pillars address both KG quality and system transferability.
 
 **E5. NER ablation.** Three-arm comparison (gazetteer, distant-supervised CRF, KG-augmented CRF) with bootstrap confidence intervals. Target: statistically significant improvement for the KG-augmented arm.
 
-**E6. Cross-document generalisation.** The system is applied without modification to held-out evaluation sets of increasing distance from the training corpus:
-
-| Evaluation set | Relationship to training corpus |
-|---|---|
-| 10% withheld Vol I formulas | Same genre, withheld during development |
-| Verse-form traditional-medicine text | Different register |
-| Sample from a different TM book | Same tradition, different source |
-| Informal clinical text (if available) | Different provenance and period |
-
-Precision and recall are measured against hand-annotated references. A degradation curve quantifies the system's transfer boundary. Target: precision ≥ 0.80 on same-genre held-out; reproducibility 100% across all sets.
+**E6. Generalisation on unseen data.** The system is applied without modification to a 10% withheld subset of Vol I formulas (same genre, unseen during development). Where digitised copies of other traditional-medicine texts are obtainable, additional evaluation sets of different register or provenance are included. Precision and recall are measured against hand-annotated references. Target: precision ≥ 0.80 on withheld data; reproducibility 100%.
 
 All evaluation data derives from sources already in the candidate's possession or publicly available. No external dataset acquisition is required.
 
