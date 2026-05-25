@@ -180,9 +180,11 @@ All evaluation data derives from sources already in the candidate's possession o
 
 **D3. Knowledge graph.** The first KG of Sri Lankan traditional medicine (~4,000+ nodes, ~12,000+ edges) with ICD-11 TM2, POWO and ChEBI bindings and triple-level provenance.
 
-**D4. Evaluation artefacts.** Four-layer validation report, NER ablation results, cross-document transfer evaluation with degradation curve, and reproducibility infrastructure.
+**D4. NER model.** The first named-entity recognition model for Sinhala traditional-medicine text, trained via distant supervision from the structured pharmacopoeia data and augmented with knowledge-graph-derived features.
 
-**D5. Publications.** MSc thesis; planned data paper (JOHD); planned methodology paper (EMNLP Findings or LREC-COLING).
+**D5. Evaluation artefacts.** Validation report, NER ablation results, generalisation evaluation on withheld data, and reproducibility infrastructure.
+
+**D6. Publications.** MSc thesis; planned data paper (JOHD); planned methodology paper (EMNLP Findings or LREC-COLING).
 
 ---
 
