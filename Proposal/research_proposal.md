@@ -163,7 +163,7 @@ All evaluation data derives from sources already in the candidate's possession o
 | **M4–M5** | Sinhala-to-Sanskrit cascade resolver | Resolver with measured coverage |
 | **M6** | External-authority enrichment; test-set preparation | Entity bindings to ICD-11 TM2 and POWO |
 | **M7** | KG schema, builder, validation framework | Knowledge graph with four-layer validation |
-| **M8–M9** | Prose-extraction system (labeller, emitter, audit gates, iteration loop) | Complete system with three-guarantees metrics |
+| **M8–M9** | Prose-extraction system (labeller, emitter, verb-chain extraction, audit gates, iteration loop) | Complete system with three-guarantees metrics |
 | **M10** | Cross-document evaluation; NER ablation | Transfer metrics; NER F1 with bootstrap CIs |
 | **M11** | Expert spot-check; statistical quality; release governance | Annotation report; credible intervals; governance |
 | **M12** | Thesis writing; publication preparation | MSc dissertation; paper drafts |
