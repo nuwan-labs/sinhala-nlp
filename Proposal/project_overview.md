@@ -126,3 +126,138 @@ TIMELINE SUMMARY:
   M11     Expert review + release governance ...... quality assurance
   M12     Thesis + publications ................... write-up
 ```
+
+---
+
+## Concrete Examples
+
+### A. What the training data looks like (Pharmacopoeia tabular layout)
+
+The Pharmacopoeia presents formulas in a fixed tabular format where column position encodes semantic role:
+
+```
+ Page 172, Entry 3:
+ +----------+------------+-------------------------------------------+
+ | Column 1 | Column 2   | Column 3 (content)                        |
+ | (number) | (label)    |                                           |
+ +----------+------------+-------------------------------------------+
+ | 3.       |            | දශමූල ක්වාථය                              |
+ |          | යෝගය :-    | බෙලි මුල් පොතු                             |
+ |          |            | පලොල් මුල් පොතු                            |
+ |          |            | මුගුනු වැල් මුල් පොතු                       |
+ |          |            | තොටිල්ල මුල් පොතු                          |
+ |          |            | පැරණි මුල් පොතු                             |
+ |          |            | එළබටු මුල්                                 |
+ |          |            | කටුවැල්බටු මුල්                             |
+ |          |            | එරබදු මුල් පොතු                             |
+ |          |            | බලු දුරු                                   |
+ |          |            | අස්වැන්න                     සමපමණ        |
+ |          | සංස්කරණය:-  | කොටා වතුරට දමා අටෙන් එකට නැවීම             |
+ |          | ප්‍රයෝග:-   | වාත රෝග                                   |
+ |          | අනුපාන:-   | බී පැණි                                    |
+ |          | මාත්‍රාව:-  | උදේ හවස කසාය බැගින්                        |
+ +----------+------------+-------------------------------------------+
+
+ After OCR + structural extraction, this becomes:
+ {
+   "අංකය": 3,
+   "යෝග නාමය": "දශමූල ක්වාථය",
+   "යෝගය": [
+     {"ද්‍රව්‍යය": "බෙලි මුල් පොතු", "ප්‍රමාණය": "සමපමණ"},
+     {"ද්‍රව්‍යය": "පලොල් මුල් පොතු", "ප්‍රමාණය": "සමපමණ"},
+     {"ද්‍රව්‍යය": "මුගුනු වැල් මුල් පොතු", "ප්‍රමාණය": "සමපමණ"},
+     {"ද්‍රව්‍යය": "තොටිල්ල මුල් පොතු", "ප්‍රමාණය": "සමපමණ"},
+     {"ද්‍රව්‍යය": "පැරණි මුල් පොතු", "ප්‍රමාණය": "සමපමණ"},
+     {"ද්‍රව්‍යය": "එළබටු මුල්", "ප්‍රමාණය": "සමපමණ"},
+     {"ද්‍රව්‍යය": "කටුවැල්බටු මුල්", "ප්‍රමාණය": "සමපමණ"},
+     {"ද්‍රව්‍යය": "එරබදු මුල් පොතු", "ප්‍රමාණය": "සමපමණ"},
+     {"ද්‍රව්‍යය": "බලු දුරු", "ප්‍රමාණය": "සමපමණ"},
+     {"ද්‍රව්‍යය": "අස්වැන්න", "ප්‍රමාණය": "සමපමණ"}
+   ],
+   "සංස්කරණය": "කොටා වතුරට දමා අටෙන් එකට නැවීම",
+   "ප්‍රයෝග": "වාත රෝග",
+   "අනුපාන": "බී පැණි",
+   "මාත්‍රාව": "උදේ හවස කසාය බැගින්",
+   "source_page": 172
+ }
+```
+
+This structured output is how the system **learns** what entities and relations look like: each ingredient cell is a known entity, the field labels encode relation types, and the formula name anchors a `Formulation` node.
+
+---
+
+### B. What the input (unseen prose) looks like
+
+When the trained system encounters free-style traditional-medicine prose (from any book), the text has no tabular layout:
+
+```
+ Input text (a preparation instruction from a different source):
+
+ "බෙලි මුල් පොතු, පලොල් මුල් පොතු, එළබටු මුල්, කටුවැල්බටු මුල්,
+  අස්වැන්න සම ප්‍රමාණයෙන් ගෙන කොටා වතුරට දමා අටෙන් එකට නගා
+  පෙරා බී පැණි මිශ්‍ර කොට වාත රෝග සඳහා උදේ හවස පානය කරවන්න."
+
+ (Translation: Take equal parts of beli root bark, palol root bark,
+  elabatu root, katuwelbatu root, and aswenna; crush, add water, boil
+  down to one-eighth, strain, mix with bee honey, and administer
+  morning and evening for vata diseases.)
+```
+
+The system must extract the same knowledge from this unstructured paragraph that it learned from the tabular layout.
+
+---
+
+### C. What the NER output looks like
+
+The NER model labels each token span with a schema-typed entity:
+
+```
+ "බෙලි මුල් පොතු"        --> [Plant]        (beli root bark)
+ "පලොල් මුල් පොතු"       --> [Plant]        (palol root bark)
+ "එළබටු මුල්"            --> [Plant]        (elabatu root)
+ "කටුවැල්බටු මුල්"       --> [Plant]        (katuwelbatu root)
+ "අස්වැන්න"              --> [Plant]        (aswenna)
+ "සම ප්‍රමාණයෙන්"         --> [Quantity]     (equal parts)
+ "කොටා"                  --> [PrepVerb]     (crush)
+ "අටෙන් එකට නගා"         --> [PrepVerb]     (boil down 8:1)
+ "පෙරා"                  --> [PrepVerb]     (strain)
+ "බී පැණි"               --> [Vehicle]      (bee honey)
+ "වාත රෝග"              --> [Disease]      (vata diseases)
+ "උදේ හවස"              --> [Dosage]       (morning and evening)
+```
+
+---
+
+### D. What the Knowledge Graph output looks like
+
+From the same text, the extraction system emits schema-valid triples with provenance:
+
+```
+ Formulation: "දශමූල ක්වාථය" (Dashamula Kvatha)
+
+ TRIPLES EMITTED:
+ +-----------+-------------------+------------------+---------------------------+
+ | Edge Type | From              | To               | Provenance (char_span)    |
+ +-----------+-------------------+------------------+---------------------------+
+ | CONTAINS  | දශමූල ක්වාථය      | බෙලි             | [0:15] "බෙලි මුල් පොතු"   |
+ | CONTAINS  | දශමූල ක්වාථය      | පලොල්            | [17:34] "පලොල් මුල් පොතු"  |
+ | CONTAINS  | දශමූල ක්වාථය      | එළබටු            | [36:47] "එළබටු මුල්"       |
+ | CONTAINS  | දශමූල ක්වාථය      | කටුවැල්බටු        | [49:63] "කටුවැල්බටු මුල්"  |
+ | CONTAINS  | දශමූල ක්වාථය      | අස්වැන්න          | [65:73] "අස්වැන්න"         |
+ | IS_TYPE   | දශමූල ක්වාථය      | Kvatha (කෂාය)    | formula name               |
+ | DOSED_WITH| දශමූල ක්වාථය      | බී පැණි           | [112:119] "බී පැණි"        |
+ | TREATS    | දශමූල ක්වාථය      | වාත රෝග          | [128:135] "වාත රෝග"       |
+ +-----------+-------------------+------------------+---------------------------+
+
+ VERB CHAIN (preparation steps):
+   කොටා (crush) --> වතුරට දමා (add water) --> නගා (boil) --> පෙරා (strain)
+
+ EXTERNAL BINDINGS:
+   බෙලි      -->  Aegle marmelos      -->  POWO LSID: urn:lsid:ipni.org:names:44964-1
+   වාත රෝග  -->  ICD-11 TM2: SP51     (Vata disorders)
+
+ GUARANTEES:
+   Reproducibility: SHA-256 of output is identical on every re-run
+   Exactness:       every char_span slices back to the exact surface text
+   Completeness:    all content tokens accounted for or logged as NIL
+```
