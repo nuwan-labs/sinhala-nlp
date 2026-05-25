@@ -112,12 +112,22 @@ def audit(text: str, extractor: ProseExtractor) -> dict:
 # Sinhala connectives / function words that legitimately fall outside any
 # triple — they carry no extractable KG fact, so they don't count against
 # completeness. (Mirrors the "content tokens" framing in the lit survey §5.x.)
+# Sinhala connectives / function / instruction words that carry no
+# extractable KG fact. Seeded by hand, then extended (v1.1) from the
+# Block-F gap report's top "GAZETTEER_CANDIDATE" list — the function words
+# that were polluting it (යි, යුතු, යෙදේ, …). Content words the gap report
+# also surfaced (කාස cough, මුල් root, යුෂ juice) are deliberately NOT here;
+# they are real gazetteer/resolver work-items.
 _STOPWORDS = {
     "යන", "මේ", "මේවා", "සහ", "හා", "හෝ", "ද", "ය", "යි", "වේ", "වෙයි",
     "බැගිනි", "බැගින්", "සියල්ල", "සියලු", "එක", "දෙක", "තුන", "හතර",
     "ආදි", "ආදිය", "සමඟ", "සමග", "හැර", "පමණ", "පමණි", "ලෙස", "වැනි",
     "කර", "කොට", "ගෙන", "කරයි", "කරන", "කළ", "වන", "විට", "තෙක්",
     "මෙන්", "අනුව", "සඳහා", "නම්", "හට", "ට", "ගේ", "කින්", "කැ",
+    # ── added v1.1 from Block-F gap report (function/instruction words) ──
+    "යුතු", "යෙදේ", "යෙදිය", "සුදුසු", "සහිත", "යෝග්‍ය", "ගත",
+    "වශයෙන්", "විශේෂයෙන්", "හි", "එම", "මෙය", "ඇති", "නැති", "හැකි",
+    "දී", "කල්හි", "තබා", "පමණක්", "හෝද", "හා සමග",
 }
 
 
