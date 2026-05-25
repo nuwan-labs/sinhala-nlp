@@ -48,7 +48,7 @@ Comparable traditional-medicine knowledge graphs include GRAYU (Joshi *et al.*, 
 
 ### 2.4 Evaluation without a gold standard
 
-Sample-based precision estimation with Bayesian credible intervals (Gao *et al.*, 2019; Marchesin and Silvello, 2025) and capture-recapture recall estimation constitute the applicable evaluation paradigm for unlabelled KGs. LLM-as-judge achieves 88% precision but only 44% recall (Adam and Kliegr, 2025), suitable as triage but not as validation. Gwet's AC1 (Gwet, 2008; Sarsa *et al.*, 2026) is preferred over Cohen's kappa for inter-annotator agreement under skewed distributions.
+Sample-based precision estimation with Bayesian credible intervals (Gao *et al.*, 2019; Marchesin and Silvello, 2025) and capture-recapture recall estimation constitute the applicable evaluation paradigm for unlabelled KGs. Gwet's AC1 (Gwet, 2008; Sarsa *et al.*, 2026) is preferred over Cohen's kappa for inter-annotator agreement under skewed distributions.
 
 ### 2.5 Research gap
 
@@ -110,7 +110,7 @@ The work proceeds in two phases.
 
 **Phase I** constructs four categories of component from the Pharmacopoeia: (i) a cross-lingual resolver that exploits the phonotactic distinction between native and mixed Sinhala to bridge tokens to Sanskrit lexical resources; (ii) closed-vocabulary lexicons covering the tradition's substance vocabulary, substitute terms, therapeutic-action classifications and measurement units; (iii) a knowledge-graph schema with external-authority bindings and a multi-layer validation framework; and (iv) a prose-extraction engine employing gazetteer-based span labelling, schema-constrained relation emission, and char-span provenance binding. The extraction engine is formally a cascaded finite-state transducer (Hobbs *et al.*, 1997), the non-neural limit of grammar-constrained decoding (Willard and Louf, 2023). An iteration-loop mechanism identifies uncovered tokens and routes them for systematic lexicon expansion.
 
-**Phase II** validates the system on documents it has never encountered. A three-arm NER ablation quantifies the downstream value of the constructed knowledge graph. Evaluation employs sample-based precision with credible intervals (Marchesin and Silvello, 2025), capture-recapture recall estimation, expert spot-checking with Gwet's AC1, and LLM-judge triage. Reproducibility is enforced by construction through stable sort ordering and fixed random seeds, verified via SHA-256 output manifests.
+**Phase II** validates the system on documents it has never encountered. A three-arm NER ablation quantifies the downstream value of the constructed knowledge graph. Evaluation employs sample-based precision with credible intervals (Marchesin and Silvello, 2025), capture-recapture recall estimation, and expert spot-checking with Gwet's AC1. Reproducibility is enforced by construction through stable sort ordering and fixed random seeds, verified via SHA-256 output manifests.
 
 The system exposes a pluggable interface for a future learned component (CRF, neural tagger), permitting extension without compromising the reproducible primary path.
 
@@ -138,7 +138,7 @@ Additional contributions include a memory-isolated subprocess pattern for resour
 
 ## 8. Evaluation
 
-Seven evaluation pillars address both KG quality and system transferability.
+Six evaluation pillars address both KG quality and system transferability.
 
 **E1. Schema conformance.** Programmatic SHACL validation, anchor probes for known entities, provenance-presence checks. Target: 100% conformance.
 
@@ -146,13 +146,11 @@ Seven evaluation pillars address both KG quality and system transferability.
 
 **E3. Expert spot-check.** A stratified 100-item triple sample assessed by a domain expert. Inter-annotator agreement reported as Gwet's AC1 with bootstrap confidence intervals. Target: AC1 ≥ 0.75.
 
-**E4. LLM-judge triage.** A grounded LLM flags suspect triples for human review, framed as triage (Adam and Kliegr, 2025).
+**E4. Statistical KG quality.** Stratified-sample precision with Bayesian credible intervals; capture-recapture recall. Target: precision ≥ 0.85.
 
-**E5. Statistical KG quality.** Stratified-sample precision with Bayesian credible intervals; capture-recapture recall. Target: precision ≥ 0.85.
+**E5. NER ablation.** Three-arm comparison (gazetteer, distant-supervised CRF, KG-augmented CRF) with bootstrap confidence intervals. Target: statistically significant improvement for the KG-augmented arm.
 
-**E6. NER ablation.** Three-arm comparison (gazetteer, distant-supervised CRF, KG-augmented CRF) with bootstrap confidence intervals. Target: statistically significant improvement for the KG-augmented arm.
-
-**E7. Cross-document generalisation.** The system is applied without modification to held-out evaluation sets of increasing distance from the training corpus:
+**E6. Cross-document generalisation.** The system is applied without modification to held-out evaluation sets of increasing distance from the training corpus:
 
 | Evaluation set | Relationship to training corpus |
 |---|---|
@@ -181,7 +179,7 @@ All evaluation data derives from sources already in the candidate's possession o
 | **M11** | Expert spot-check; statistical quality; release governance | Annotation report; credible intervals; governance |
 | **M12** | Thesis writing; publication preparation | MSc dissertation; paper drafts |
 
-**Risk mitigations.** OCR quality issues are addressed by a parallel PDF-direct extraction path. Resolver instability is mitigated by planned migration to ByT5-Sanskrit. Expert-annotator unavailability is mitigated by expanded LLM-judge triage with documented limitations.
+**Risk mitigations.** OCR quality issues are addressed by a parallel PDF-direct extraction path. Resolver instability is mitigated by planned migration to ByT5-Sanskrit. Expert-annotator unavailability is mitigated by expanding the statistical sampling approach with documented limitations.
 
 ---
 
@@ -200,8 +198,6 @@ All evaluation data derives from sources already in the candidate's possession o
 ---
 
 ## 11. List of References
-
-Adam, S. and Kliegr, T. (2025) 'Traceable LLM-based validation of statements in knowledge graphs', *Information Processing & Management* [Preprint]. arXiv:2409.07507.
 
 Aravinda, A. *et al.* (2025) 'SinLlama: a Sinhala-capable decoder LLM via continual pre-training' [Preprint]. arXiv:2508.09115.
 
