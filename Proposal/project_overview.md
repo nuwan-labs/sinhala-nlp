@@ -2,6 +2,145 @@
 
 **A Reproducible System for Knowledge-Graph Extraction from Sinhala Traditional Medicine Literature, Trained Using the Sri Lankan Ayurvedic Pharmacopoeia**
 
+---
+
+## Computational Techniques and CS Contributions at Each Stage
+
+```
++-----------------------------------------------------------------------------------+
+|                        COMPUTER SCIENCE PROBLEM SPACE                              |
++-----------------------------------------------------------------------------------+
+|                                                                                   |
+|  LOW-RESOURCE NLP          CROSS-LINGUAL IE        KNOWLEDGE REPRESENTATION       |
+|  (no labelled data,        (Sinhala --> Sanskrit    (schema-constrained,           |
+|   no domain models,         lexical bridge with     provenance-per-fact,           |
+|   Joshi class-1 lang)       no published prior)     reproducible-by-construction)  |
+|                                                                                   |
++-----------------------------------------------------------------------------------+
+
+STAGE         COMPUTATIONAL TECHNIQUE                    CS FIELD
+-----         -------------------------                  --------
+
+[OCR +        Spatial layout analysis:                   Document understanding,
+ Structural   - Normalised bounding-box clustering       Computer vision
+ Recovery]      (y-tolerance threshold = 0.012)
+              - Column-zone finite-state machine
+                (x-coordinate encodes semantic role)
+              - Cross-page state continuation
+                         |
+                         v
+[Lexicon      Table extraction as structured             Information extraction,
+ Mining]      induction (Kushmerick 2000):               Wrapper induction
+              - Pattern-driven row parsing
+              - Multi-system unit ontology design
+              - NFC Unicode canonicalisation
+                         |
+                         v
+[Cross-       Cascade architecture for cross-lingual     Computational linguistics,
+ Lingual      entity normalisation:                      Cross-lingual NLP
+ Resolver]    - Phonotactic binary classifier
+                (regex over Unicode character classes,
+                 formalises the suddha/misra distinction)
+              - Transliteration via finite transducer
+                (Aksharamukha: Sinhala --> IAST)
+              - Dictionary lookup with morphological
+                suffix stripping (6 nominal endings)
+              - Compound-word segmentation
+                (recursive splitting, dictionary-driven)
+              - Sandhi analysis via constraint solver
+                (memory-isolated subprocess with
+                 RLIMIT_AS + SIGALRM resource bounding)
+              - Fallback: corpus-internal substitute
+                glossary as a lookup table
+                         |
+                         v
+[Gazetteer    Aho-Corasick automaton (O(n) multi-        String algorithms,
+ Matching]    pattern matching):                          Finite automata
+              - 1,100+ surface forms
+              - Longest-match-with-priority resolution
+              - Overlap resolution via deterministic
+                tie-breaking (longer > earlier > alpha)
+                         |
+                         v
+[Sentence     Register-aware segmentation:               NLP preprocessing,
+ Segmenter]   - Sinhala clause-boundary detection        Computational morphology
+              - Verbal-participle recognition
+                (SOV clause chaining via -a/-i suffixes)
+              - Field-label classification
+                (domain-specific discourse structure)
+                         |
+                         v
+[Span         Schema-typed entity labelling:             Named Entity Recognition,
+ Labeller]    - Gazetteer hits with field-context-       Distant supervision
+                biased type disambiguation
+              - Quantity parsing (multi-system unit
+                registry with dynamic conversion)
+              - Pluggable second-oracle interface
+                (CRF / neural tagger slot)
+              - NIL recording for iteration loop
+                         |
+                         v
+[Relation     Cascaded Finite-State Transducer           Information Extraction,
+ Extraction]  (FASTUS architecture, Hobbs et al. 1997):  Formal language theory
+              - Field-state-driven relation emission
+              - Schema-constrained reject-at-emission
+                (only domain/range-valid triples pass)
+              - Verb-chain extraction for preparation
+                steps (procedural text understanding)
+              - Deduplication with mention-count
+              - Char-span provenance binding
+                         |
+                         v
+[KG           Graph construction with:                   Knowledge Representation,
+ Builder]     - SHACL constraint validation              Semantic Web
+              - External-authority binding
+                (ICD-11 TM2, POWO/IPNI, ChEBI)
+              - Provenance per node and per edge
+              - Four serialisation formats
+                (Cypher, JSON-LD, RDF/Turtle, JSONL)
+                         |
+                         v
+[Audit +      Three-guarantees verification:             Software verification,
+ Iteration    - Reproducibility: SHA-256 manifest,       Reproducible research
+ Loop]          stable sorts, no set iteration
+              - Completeness: token-coverage metric
+                with stopword-filtered gap report
+              - Exactness: char_span == surface text
+              Module-A-driven NIL triage
+              (phonotactic classifier routes gaps to
+               resolver vs gazetteer vs ignore)
+                         |
+                         v
+[NER          Conditional Random Field (CRF):            Machine Learning,
+ Model]       - Distant supervision from structured      Sequence labelling
+                corpus (11,000 labelled instances)
+              - Feature engineering:
+                  token, suffix, gazetteer-class,
+                  resolved-lemma class, KG-node-type,
+                  ICD-11 hit, materia-medica section
+              - Three-arm ablation:
+                  A: gazetteer baseline
+                  B: distant-supervised CRF
+                  C: KG-augmented CRF
+              - Bootstrap confidence intervals on F1
+                         |
+                         v
+[Evaluation]  Statistical estimation without gold:       Evaluation methodology,
+              - Stratified-sample precision with         Bayesian statistics
+                Bayesian credible intervals
+                (Marchesin & Silvello 2025)
+              - Capture-recapture recall estimation
+                (Lincoln-Petersen)
+              - Gwet's AC1 for inter-annotator
+                agreement (prevalence-robust)
+              - Bootstrap hypothesis testing for
+                NER F1 differences
+```
+
+---
+
+## System Architecture (data flow)
+
 ```
  INPUT                          SYSTEM CONSTRUCTION                         OUTPUT
  (Training Corpus)              (Phase I: M1-M9)                            (Deliverables)
