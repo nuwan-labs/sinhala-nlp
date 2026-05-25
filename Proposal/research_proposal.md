@@ -3,7 +3,7 @@
 **Project Title:** A Deterministic Knowledge-Graph Extraction System for Sinhala Traditional Medicine Literature Using a Sanskrit-Bridge Approach
 
 **Candidate:** Nuwan Medawaththa
-**Programme:** Master of Computer Science — Individual Project (MCS 3306)
+**Programme:** Master of Computer Science, Individual Project (MCS 3306)
 **Institution:** University of Colombo School of Computing (UCSC)
 **Date:** May 2026
 **Duration:** 12 months
@@ -12,15 +12,15 @@
 
 ## 1. Research Problem
 
-Sri Lankan traditional medicine is documented across thousands of books and ola-leaf manuscripts spanning several centuries of clinical practice. These texts record herbal formulas, preparation methods, therapeutic indications, dosages and adjuvants in Sinhala script — often intermixed with Sanskrit-derived terminology inherited from the classical Ayurvedic tradition. Despite this wealth of recorded knowledge, not a single machine-readable, structured or computationally queryable form of any Sri Lankan traditional-medicine text has been published to date (de Silva, 2026; Joshi *et al.*, 2026; Vivek-Ananth *et al.*, 2023). The Indian Ayurvedic ecosystem has produced substantial computational resources — TKDL, IMPPAT, GRAYU, AyurKOSH — but each draws exclusively upon Indian sources. Chinese network-pharmacology databases address an entirely different medical tradition. Sri Lanka remains unrepresented.
+Sri Lankan traditional medicine is documented across thousands of books and ola-leaf manuscripts spanning several centuries of clinical practice. These texts record herbal formulas, preparation methods, therapeutic indications, dosages and adjuvants in Sinhala script, often intermixed with Sanskrit-derived terminology inherited from the classical Ayurvedic tradition. Despite this wealth of recorded knowledge, not a single machine-readable, structured or computationally queryable form of any Sri Lankan traditional-medicine text has been published to date (de Silva, 2026; Joshi *et al.*, 2026; Vivek-Ananth *et al.*, 2023). The Indian Ayurvedic ecosystem has produced substantial computational resources, TKDL, IMPPAT, GRAYU, AyurKOSH, but each draws exclusively upon Indian sources. Chinese network-pharmacology databases address an entirely different medical tradition. Sri Lanka remains unrepresented.
 
-This project sets out to build a reusable, deterministic extraction system that can take arbitrary free-style Sinhala traditional-medicine text as input and produce a schema-constrained, provenance-grounded knowledge graph as output. The system is trained on the *Ayurvedic Pharmacopoeia, Volume I* (525 pages; published by the Department of Ayurveda, Government of Sri Lanka), which serves as a structured training corpus: its tabular formula section yields silver-labelled entity–relation pairs through spatial layout, its reference tables supply closed-vocabulary lexicons, and its terminology seeds a cross-lingual Sinhala-to-Sanskrit resolver. Once calibrated, the system is intended to generalise — without retraining — to unseen traditional-medicine prose from other books in the same tradition.
+This project sets out to build a reusable, deterministic extraction system that can take arbitrary free-style Sinhala traditional-medicine text as input and produce a schema-constrained, provenance-grounded knowledge graph as output. The system is trained on the *Ayurvedic Pharmacopoeia, Volume I* (525 pages; published by the Department of Ayurveda, Government of Sri Lanka), which serves as a structured training corpus: its tabular formula section yields silver-labelled entity–relation pairs through spatial layout, its reference tables supply closed-vocabulary lexicons, and its terminology seeds a cross-lingual Sinhala-to-Sanskrit resolver. Once calibrated, the system is intended to generalise, without retraining, to unseen traditional-medicine prose from other books in the same tradition.
 
 Several factors make this problem particularly challenging. Sinhala is classified among the world's most under-resourced languages for natural language processing (Joshi *et al.*, 2020) and is excluded from the AI4Bharat Indic-NLP ecosystem (Gala *et al.*, 2023). No medical Sinhala NER corpus or model exists. The Universal Dependencies treebank for Sinhala contains only 100 sentences (Liyanage and Sarveswaran, 2023). The source text employs a dense mixture of native Sinhala vocabulary and a Sanskrit-derived (*tatsama*) layer for which no computational classifier has been published. These constraints rule out standard supervised approaches and motivate the proposed rule-based, closed-vocabulary-first architecture.
 
 The project addresses five coupled sub-problems: (i) structural recovery of silver training data from a tabular printed source; (ii) cross-lingual lexical bridging from Sinhala to Sanskrit NLP resources; (iii) schema-constrained information extraction from free-style prose under hard determinism requirements; (iv) knowledge-graph construction with triple-level provenance and external-authority binding; and (v) empirical validation that the system generalises to unseen documents and that its knowledge graph improves downstream entity recognition.
 
-The work is positioned against the 2025 schema-constrained-extraction literature (Wang *et al.*, 2025; Wang *et al.*, 2026; Zhong *et al.*, 2025). Where those systems prioritise recall through LLM-driven generation, this project prioritises two guarantees they do not offer: byte-identical determinism and verbatim source-span binding on every emitted triple — properties essential in a low-resource biomedical domain where reproducibility and auditability take precedence over coverage.
+The work is positioned against the 2025 schema-constrained-extraction literature (Wang *et al.*, 2025; Wang *et al.*, 2026; Zhong *et al.*, 2025). Where those systems prioritise recall through LLM-driven generation, this project prioritises two guarantees they do not offer: byte-identical determinism and verbatim source-span binding on every emitted triple, properties essential in a low-resource biomedical domain where reproducibility and auditability take precedence over coverage.
 
 ---
 
@@ -32,13 +32,13 @@ Sinhala (ISO 639-3 `sin`) is an Insular Indo-Aryan language with approximately 1
 
 Within the Sinhala-specific landscape, the canonical survey is de Silva (2019, rev. 2026). Pre-trained models include SinBERT (Dhananjaya *et al.*, 2022) and SinLlama (Aravinda *et al.*, 2025), though both are trained on news and web data. No medical or Ayurvedic Sinhala NLP work has been published. The SinhalaMMLU benchmark (Pramodya *et al.*, 2025) demonstrates that frontier language models achieve only 67% on Sinhala cultural domains, motivating caution against reliance on LLM-only extraction in the Ayurvedic register.
 
-The Sinhala script is an abugida (Unicode U+0D80–U+0DFF) requiring virama plus ZWJ for conjunct formation in a way that is mandatory and rendering-affecting (Ishida, 2024). The orthographic distinction between *śuddha* (native) and *miśra* (mixed) Sinhala — the latter preserving Sanskrit aspirates, sibilants and vocalic-r — provides the operational signal for the proposed cross-lingual resolver.
+The Sinhala script is an abugida (Unicode U+0D80–U+0DFF) requiring virama plus ZWJ for conjunct formation in a way that is mandatory and rendering-affecting (Ishida, 2024). The orthographic distinction between *śuddha* (native) and *miśra* (mixed) Sinhala, the latter preserving Sanskrit aspirates, sibilants and vocalic-r, provides the operational signal for the proposed cross-lingual resolver.
 
 ### 2.2 Cross-lingual lexical bridging and Sanskrit NLP
 
 ByT5-Sanskrit (Nehrdich *et al.*, 2024) represents the current state of the art for Sanskrit sandhi-splitting and lemmatisation. The Monier-Williams dictionary (1899), accessible via the Cologne Digital Sanskrit Dictionaries, provides approximately 160,000 headwords. Aksharamukha (Rajan, 2024) enables lossless transliteration between Sinhala and IAST, bridging Sinhala script to the entire Sanskrit NLP tool chain.
 
-No published system connects Sinhala to Sanskrit lexical resources computationally. The closest analogue is xMEN (Borchert *et al.*, 2023), a cross-lingual medical-entity-normalisation toolkit, but its evaluation covers no Indic language. Cross-lingual SapBERT (Liu *et al.*, 2021) shares this limitation. This gap — a missing Sinhala-to-Sanskrit computational bridge — is central to the present proposal.
+No published system connects Sinhala to Sanskrit lexical resources computationally. The closest analogue is xMEN (Borchert *et al.*, 2023), a cross-lingual medical-entity-normalisation toolkit, but its evaluation covers no Indic language. Cross-lingual SapBERT (Liu *et al.*, 2021) shares this limitation. This gap, a missing Sinhala-to-Sanskrit computational bridge, is central to the present proposal.
 
 ### 2.3 Schema-constrained information extraction
 
@@ -60,7 +60,7 @@ Five gaps emerge from the literature: (i) no machine-readable Sri Lankan traditi
 
 **RQ1.** Can a deterministic cascade-based resolver bridge Sinhala-script tokens to Sanskrit Monier-Williams lemmas using orthographic signal and corpus-internal glossaries, and what coverage does it achieve on traditional-medicine terminology? (Nehrdich *et al.*, 2024; Borchert *et al.*, 2023; Gair, 1998)
 
-**RQ2.** Can a schema-constrained extraction system trained on a single structured pharmacopoeia satisfy three guarantees — byte-identical determinism, content-token completeness, and verbatim source-span binding — on unseen free-style traditional-medicine prose? (Wang *et al.*, 2025; Wang *et al.*, 2026; Hobbs *et al.*, 1997)
+**RQ2.** Can a schema-constrained extraction system trained on a single structured pharmacopoeia satisfy three guarantees, byte-identical determinism, content-token completeness, and verbatim source-span binding, on unseen free-style traditional-medicine prose? (Wang *et al.*, 2025; Wang *et al.*, 2026; Hobbs *et al.*, 1997)
 
 **RQ3.** Does the system transfer with measurable precision and recall to structurally and temporally distinct traditional-medicine documents without retraining? (Shang *et al.*, 2018; Ratner *et al.*, 2017; Joshi *et al.*, 2020)
 
@@ -72,17 +72,17 @@ Five gaps emerge from the literature: (i) no machine-readable Sri Lankan traditi
 
 ## 4. Research Objectives
 
-**Phase I — System construction** (Pharmacopoeia as training corpus):
+**Phase I, System construction** (Pharmacopoeia as training corpus):
 
 **O1.** Structure the training corpus by processing Pharmacopoeia Vol I through OCR and a three-stage extraction pipeline, producing approximately 850 structured formula entries as silver training data.
 
-**O2.** Construct a reusable Sinhala-to-Sanskrit cascade resolver comprising a phonotactic classifier, transliteration-based dictionary lookup, compound-word segmentation, sandhi analysis, and a substitute-glossary fallback — designed to operate on any Sinhala text containing Sanskrit-derived terminology.
+**O2.** Construct a reusable Sinhala-to-Sanskrit cascade resolver comprising a phonotactic classifier, transliteration-based dictionary lookup, compound-word segmentation, sandhi analysis, and a substitute-glossary fallback, designed to operate on any Sinhala text containing Sanskrit-derived terminology.
 
 **O3.** Extract closed-vocabulary lexicons from the Pharmacopoeia's reference tables (categorised raw materials, substitute glossary, therapeutic-action groups, unit-conversion systems) to form the system's knowledge base.
 
 **O4.** Implement the extraction system: a gazetteer-based span labeller, sentence segmenter, schema-constrained relation emitter with provenance binding, a three-guarantees audit framework, and an iteration-loop mechanism for gap identification. Design a knowledge-graph schema with external-authority bindings to ICD-11 TM2, POWO and ChEBI.
 
-**Phase II — Validation:**
+**Phase II, Validation:**
 
 **O5.** Evaluate system generalisation on unseen documents: withheld Vol I formulas, samples from other traditional-medicine books, and texts of varying register and period.
 
@@ -104,11 +104,11 @@ Five gaps emerge from the literature: (i) no machine-readable Sri Lankan traditi
 
 The methodology adopts a rule-based, closed-vocabulary-first architecture. This choice is motivated by two considerations. First, empirical evidence shows that frontier language models perform poorly on culturally-rich Sinhala domains (Pramodya *et al.*, 2025; Sonavane *et al.*, 2024), making LLM-only extraction unreliable for this register. Second, the requirements of determinism, auditability and zero hallucination are better served by a system whose behaviour is fully determined by its inputs and rules than by one that relies on stochastic generation.
 
-The key insight underlying the methodology is that the Pharmacopoeia functions as a structured training corpus. Its tabular layout — where column position encodes semantic role — provides silver-labelled entity–relation pairs that the system absorbs as lexicons, resolver calibration data and extraction patterns. Once these components are in place, the system operates on any prose input from the same medical tradition.
+The key insight underlying the methodology is that the Pharmacopoeia functions as a structured training corpus. Its tabular layout, where column position encodes semantic role, provides silver-labelled entity–relation pairs that the system absorbs as lexicons, resolver calibration data and extraction patterns. Once these components are in place, the system operates on any prose input from the same medical tradition.
 
 The work proceeds in two phases.
 
-**Phase I** constructs four categories of component from the Pharmacopoeia: (i) a cross-lingual resolver that exploits the phonotactic distinction between native and mixed Sinhala to bridge tokens to Sanskrit lexical resources; (ii) closed-vocabulary lexicons covering the tradition's substance vocabulary, substitute terms, therapeutic-action classifications and measurement units; (iii) a knowledge-graph schema with external-authority bindings and a multi-layer validation framework; and (iv) a prose-extraction engine employing gazetteer-based span labelling, schema-constrained relation emission, and char-span provenance binding. The extraction engine is formally a cascaded finite-state transducer (Hobbs *et al.*, 1997) — the non-neural limit of grammar-constrained decoding (Willard and Louf, 2023). An iteration-loop mechanism identifies uncovered tokens and routes them for systematic lexicon expansion.
+**Phase I** constructs four categories of component from the Pharmacopoeia: (i) a cross-lingual resolver that exploits the phonotactic distinction between native and mixed Sinhala to bridge tokens to Sanskrit lexical resources; (ii) closed-vocabulary lexicons covering the tradition's substance vocabulary, substitute terms, therapeutic-action classifications and measurement units; (iii) a knowledge-graph schema with external-authority bindings and a multi-layer validation framework; and (iv) a prose-extraction engine employing gazetteer-based span labelling, schema-constrained relation emission, and char-span provenance binding. The extraction engine is formally a cascaded finite-state transducer (Hobbs *et al.*, 1997), the non-neural limit of grammar-constrained decoding (Willard and Louf, 2023). An iteration-loop mechanism identifies uncovered tokens and routes them for systematic lexicon expansion.
 
 **Phase II** validates the system on documents it has never encountered. A three-arm NER ablation quantifies the downstream value of the constructed knowledge graph. Evaluation employs sample-based precision with credible intervals (Marchesin and Silvello, 2025), capture-recapture recall estimation, expert spot-checking with Gwet's AC1, and LLM-judge triage. Determinism is enforced by construction through stable sort ordering and fixed random seeds, verified via SHA-256 output manifests.
 
@@ -118,9 +118,9 @@ The system exposes a pluggable interface for a future learned component (CRF, ne
 
 ## 7. Novelty and Expected Research Contributions
 
-The project contributes along four axes — methodology, resource, empirical validation and scholarly framing — unified by the principle that the system is trained on a single pharmacopoeia yet validated on unseen literature.
+The project contributes along four axes, methodology, resource, empirical validation and scholarly framing, unified by the principle that the system is trained on a single pharmacopoeia yet validated on unseen literature.
 
-**N1. First computational Sinhala-to-Sanskrit lexical bridge.** No system mapping Sinhala-script tokens to Sanskrit lexical resources has been published. The proposed cascade resolver — phonotactic router, transliteration-based lookup, compound segmentation, sandhi analysis, substitute-glossary fallback — fills this gap and is designed as a reusable component for any Sinhala text containing Sanskrit-derived terminology.
+**N1. First computational Sinhala-to-Sanskrit lexical bridge.** No system mapping Sinhala-script tokens to Sanskrit lexical resources has been published. The proposed cascade resolver, phonotactic router, transliteration-based lookup, compound segmentation, sandhi analysis, substitute-glossary fallback, fills this gap and is designed as a reusable component for any Sinhala text containing Sanskrit-derived terminology.
 
 **N2. Deterministic, schema-constrained extraction with three verifiable guarantees.** The system guarantees byte-identical re-runs, content-token completeness with logged gaps, and verbatim source-span binding on every triple. This is positioned against the 2025 extraction literature (ODKE+, *Chaos to Clarity*), which does not offer byte-identical determinism as a headline property.
 
@@ -130,7 +130,7 @@ The project contributes along four axes — methodology, resource, empirical val
 
 **N5. KG-grounded NER improvement on a previously unlabelled domain.** The demonstration that knowledge-graph features improve entity recognition where no labelled data previously existed establishes a feedback loop between KG construction and NER.
 
-**N6. Three-guarantees verification framework.** The combination of determinism, completeness and exactness audit gates — with measured outcomes on both training and held-out data — is novel relative to existing provenance mechanisms in systems such as Wikidata.
+**N6. Three-guarantees verification framework.** The combination of determinism, completeness and exactness audit gates, with measured outcomes on both training and held-out data, is novel relative to existing provenance mechanisms in systems such as Wikidata.
 
 Additional contributions include a memory-isolated subprocess pattern for resource-bounded NLP libraries, a multi-system unit-conversion registry, and a CARE-Principles-informed governance framework for traditional-knowledge release.
 
@@ -225,7 +225,7 @@ Gwet, K.L. (2008) 'Computing inter-rater reliability and its variance in the pre
 
 Hobbs, J.R. *et al.* (1997) 'FASTUS: a cascaded finite-state transducer for extracting information from natural-language text', in *Finite-State Language Processing*. MIT Press, pp. 383–406.
 
-Ishida, R. (2024) *Sinhala — an overview for developers*. W3C.
+Ishida, R. (2024) *Sinhala, an overview for developers*. W3C.
 
 Joshi, P. *et al.* (2020) 'The state and fate of linguistic diversity and inclusion in the NLP world', in *Proceedings of ACL 2020*.
 
@@ -281,7 +281,7 @@ Willard, B.T. and Louf, R. (2023) 'Efficient guided generation for large languag
 
 WIPO (2024) *WIPO Treaty on Intellectual Property, Genetic Resources and Associated Traditional Knowledge*. Geneva.
 
-World Health Organization (2025) *ICD-11, Module 2 — Traditional Medicine*.
+World Health Organization (2025) *ICD-11, Module 2, Traditional Medicine*.
 
 Zaratiana, U. *et al.* (2024) 'GLiNER: generalist model for named entity recognition' [Preprint]. arXiv:2311.08526.
 
