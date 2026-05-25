@@ -129,81 +129,48 @@ TIMELINE SUMMARY:
 
 ---
 
-## Concrete Examples
+## Concrete Examples (Real Data from the OCR Output)
 
-### A. What the training data looks like (Pharmacopoeia tabular layout)
+### A. What the training data looks like (Pharmacopoeia, p.236, Entry 37)
 
-The Pharmacopoeia presents formulas in a fixed tabular format where column position encodes semantic role:
+The Pharmacopoeia presents formulas in a fixed tabular format. After OCR and structural extraction, Entry 37 yields:
 
-```
- Page 172, Entry 3:
- +----------+------------+-------------------------------------------+
- | Column 1 | Column 2   | Column 3 (content)                        |
- | (number) | (label)    |                                           |
- +----------+------------+-------------------------------------------+
- | 3.       |            | දශමූල ක්වාථය                              |
- |          | යෝගය :-    | බෙලි මුල් පොතු                             |
- |          |            | පලොල් මුල් පොතු                            |
- |          |            | මුගුනු වැල් මුල් පොතු                       |
- |          |            | තොටිල්ල මුල් පොතු                          |
- |          |            | පැරණි මුල් පොතු                             |
- |          |            | එළබටු මුල්                                 |
- |          |            | කටුවැල්බටු මුල්                             |
- |          |            | එරබදු මුල් පොතු                             |
- |          |            | බලු දුරු                                   |
- |          |            | අස්වැන්න                     සමපමණ        |
- |          | සංස්කරණය:-  | කොටා වතුරට දමා අටෙන් එකට නැවීම             |
- |          | ප්‍රයෝග:-   | වාත රෝග                                   |
- |          | අනුපාන:-   | බී පැණි                                    |
- |          | මාත්‍රාව:-  | උදේ හවස කසාය බැගින්                        |
- +----------+------------+-------------------------------------------+
-
- After OCR + structural extraction, this becomes:
- {
-   "අංකය": 3,
-   "යෝග නාමය": "දශමූල ක්වාථය",
-   "යෝගය": [
-     {"ද්‍රව්‍යය": "බෙලි මුල් පොතු", "ප්‍රමාණය": "සමපමණ"},
-     {"ද්‍රව්‍යය": "පලොල් මුල් පොතු", "ප්‍රමාණය": "සමපමණ"},
-     {"ද්‍රව්‍යය": "මුගුනු වැල් මුල් පොතු", "ප්‍රමාණය": "සමපමණ"},
-     {"ද්‍රව්‍යය": "තොටිල්ල මුල් පොතු", "ප්‍රමාණය": "සමපමණ"},
-     {"ද්‍රව්‍යය": "පැරණි මුල් පොතු", "ප්‍රමාණය": "සමපමණ"},
-     {"ද්‍රව්‍යය": "එළබටු මුල්", "ප්‍රමාණය": "සමපමණ"},
-     {"ද්‍රව්‍යය": "කටුවැල්බටු මුල්", "ප්‍රමාණය": "සමපමණ"},
-     {"ද්‍රව්‍යය": "එරබදු මුල් පොතු", "ප්‍රමාණය": "සමපමණ"},
-     {"ද්‍රව්‍යය": "බලු දුරු", "ප්‍රමාණය": "සමපමණ"},
-     {"ද්‍රව්‍යය": "අස්වැන්න", "ප්‍රමාණය": "සමපමණ"}
-   ],
-   "සංස්කරණය": "කොටා වතුරට දමා අටෙන් එකට නැවීම",
-   "ප්‍රයෝග": "වාත රෝග",
-   "අනුපාන": "බී පැණි",
-   "මාත්‍රාව": "උදේ හවස කසාය බැගින්",
-   "source_page": 172
- }
+```json
+{
+  "අංකය": 37,
+  "යෝග නාමය": "භූනිම්බාදි චූර්ණය",
+  "යෝගය": [
+    {"ද්‍රව්‍යය": "බිං කොහොඹ",   "ප්‍රමාණය": "කර්ෂ 2 යි", "ග්‍රෑ": "ග්‍රෑ : 30 යි"},
+    {"ද්‍රව්‍යය": "කුළුරෑණ",      "ප්‍රමාණය": "කර්ෂ 2 යි", "ග්‍රෑ": "ග්‍රෑ : 30 යි"},
+    {"ද්‍රව්‍යය": "කලාඳුරුඅල",    "ප්‍රමාණය": "කර්ෂ 2 යි", "ග්‍රෑ": "ග්‍රෑ : 30 යි"},
+    {"ද්‍රව්‍යය": "තිකුළු",       "ප්‍රමාණය": "කර්ෂ 2 යි", "ග්‍රෑ": "ග්‍රෑ : 30 යි"},
+    {"ද්‍රව්‍යය": "කෙළිඳඇට",     "ප්‍රමාණය": "කර්ෂ 2 යි", "ග්‍රෑ": "ග්‍රෑ : 30 යි"}
+  ],
+  "සංස්කරණය": "කෙළිඳ පොතු කලං 16 යි . ( ග්‍රෑම් 80 )",
+  "ප්‍රයෝග": "ග්‍රහණි , ගුල්ම , කාමලා , ජ්වර , පාණ්ඩු , ප්‍රමේහ , අරුචි , අතීසාර නස යි .",
+  "අනුපාන": "උණු දිය වේ .",
+  "මාත්‍රාව": "කලං 2 -1 දක්වා වේ . ( ග්‍රෑම් 2.5 - ග්‍රෑම් 5 )",
+  "source_page": 236
+}
 ```
 
-This structured output is how the system **learns** what entities and relations look like: each ingredient cell is a known entity, the field labels encode relation types, and the formula name anchors a `Formulation` node.
+Each ingredient cell is a known entity; the field labels encode relation types; the formula name anchors a `Formulation` node. Traditional units (කර්ෂ = karsha) appear alongside their gram equivalents.
 
 ---
 
 ### B. What the input (unseen prose) looks like
 
-When the trained system encounters free-style traditional-medicine prose (from any book), the text has no tabular layout:
+When the trained system encounters free-style traditional-medicine prose from another book, there is no tabular layout:
 
 ```
- Input text (a preparation instruction from a different source):
-
- "බෙලි මුල් පොතු, පලොල් මුල් පොතු, එළබටු මුල්, කටුවැල්බටු මුල්,
-  අස්වැන්න සම ප්‍රමාණයෙන් ගෙන කොටා වතුරට දමා අටෙන් එකට නගා
-  පෙරා බී පැණි මිශ්‍ර කොට වාත රෝග සඳහා උදේ හවස පානය කරවන්න."
-
- (Translation: Take equal parts of beli root bark, palol root bark,
-  elabatu root, katuwelbatu root, and aswenna; crush, add water, boil
-  down to one-eighth, strain, mix with bee honey, and administer
-  morning and evening for vata diseases.)
+"භූනිම්බාදි චූර්ණය සඳහා බිං කොහොඹ, කුළුරෑණ, කලාඳුරුඅල,
+ තිකුළු, කෙළිඳ ඇට යන ද්‍රව්‍ය කර්ෂ 2 බැගින් ගෙන කෙළිඳ පොතු
+ කලං 16 ක් සමග චූර්ණ කොට ග්‍රහණි, ගුල්ම, කාමලා, ජ්වර,
+ පාණ්ඩු, ප්‍රමේහ ආදී රෝග සඳහා උණු දියෙන් කලං 2 බැගින්
+ දිනකට දෙවේලක් පානය කරවන්න."
 ```
 
-The system must extract the same knowledge from this unstructured paragraph that it learned from the tabular layout.
+The system must extract the same structured knowledge from this paragraph.
 
 ---
 
@@ -212,52 +179,73 @@ The system must extract the same knowledge from this unstructured paragraph that
 The NER model labels each token span with a schema-typed entity:
 
 ```
- "බෙලි මුල් පොතු"        --> [Plant]        (beli root bark)
- "පලොල් මුල් පොතු"       --> [Plant]        (palol root bark)
- "එළබටු මුල්"            --> [Plant]        (elabatu root)
- "කටුවැල්බටු මුල්"       --> [Plant]        (katuwelbatu root)
- "අස්වැන්න"              --> [Plant]        (aswenna)
- "සම ප්‍රමාණයෙන්"         --> [Quantity]     (equal parts)
- "කොටා"                  --> [PrepVerb]     (crush)
- "අටෙන් එකට නගා"         --> [PrepVerb]     (boil down 8:1)
- "පෙරා"                  --> [PrepVerb]     (strain)
- "බී පැණි"               --> [Vehicle]      (bee honey)
- "වාත රෝග"              --> [Disease]      (vata diseases)
- "උදේ හවස"              --> [Dosage]       (morning and evening)
+"භූනිම්බාදි චූර්ණය"     --> [Formulation]         (Bhunimbadi Churna)
+"බිං කොහොඹ"             --> [Plant]               (Andrographis paniculata)
+"කුළුරෑණ"               --> [Plant]               (Cyperus rotundus)
+"කලාඳුරුඅල"             --> [Plant]               (Alpinia galanga)
+"තිකුළු"                --> [Plant]               (Trikatu compound)
+"කෙළිඳ ඇට"             --> [Plant]               (Holarrhena seeds)
+"කර්ෂ 2"                --> [Quantity]            (2 karsha = 30g)
+"කෙළිඳ පොතු"           --> [Plant]               (Holarrhena bark)
+"කලං 16"                --> [Quantity]            (16 kalang = 80g)
+"චූර්ණ කොට"            --> [PreparationType]     (powdering)
+"ග්‍රහණි"                --> [Disease]             (malabsorption)
+"ගුල්ම"                 --> [Disease]             (abdominal tumour)
+"කාමලා"                --> [Disease]             (jaundice)
+"ජ්වර"                  --> [Disease]             (fever)
+"පාණ්ඩු"               --> [Disease]             (anaemia)
+"ප්‍රමේහ"               --> [Disease]             (diabetes)
+"උණු දියෙන්"           --> [Vehicle]             (warm water)
+"කලං 2"                --> [Dosage]              (2 kalang = 2.5g)
 ```
 
 ---
 
 ### D. What the Knowledge Graph output looks like
 
-From the same text, the extraction system emits schema-valid triples with provenance:
+The extraction system emits schema-valid triples per the KG schema (docs/kg_schema.md, v1.1: 11 node types, 13 edge types):
 
 ```
- Formulation: "දශමූල ක්වාථය" (Dashamula Kvatha)
+Formulation node:  formula:vol1/37  "භූනිම්බාදි චූර්ණය"
 
- TRIPLES EMITTED:
- +-----------+-------------------+------------------+---------------------------+
- | Edge Type | From              | To               | Provenance (char_span)    |
- +-----------+-------------------+------------------+---------------------------+
- | CONTAINS  | දශමූල ක්වාථය      | බෙලි             | [0:15] "බෙලි මුල් පොතු"   |
- | CONTAINS  | දශමූල ක්වාථය      | පලොල්            | [17:34] "පලොල් මුල් පොතු"  |
- | CONTAINS  | දශමූල ක්වාථය      | එළබටු            | [36:47] "එළබටු මුල්"       |
- | CONTAINS  | දශමූල ක්වාථය      | කටුවැල්බටු        | [49:63] "කටුවැල්බටු මුල්"  |
- | CONTAINS  | දශමූල ක්වාථය      | අස්වැන්න          | [65:73] "අස්වැන්න"         |
- | IS_TYPE   | දශමූල ක්වාථය      | Kvatha (කෂාය)    | formula name               |
- | DOSED_WITH| දශමූල ක්වාථය      | බී පැණි           | [112:119] "බී පැණි"        |
- | TREATS    | දශමූල ක්වාථය      | වාත රෝග          | [128:135] "වාත රෝග"       |
- +-----------+-------------------+------------------+---------------------------+
+TRIPLES:
++----------------+------------------+--------------------+---------------------+
+| Edge           | From             | To                 | Properties          |
++----------------+------------------+--------------------+---------------------+
+| CONTAINS       | formula:vol1/37  | plant:bhūnimba     | parts:1, qty: 30g   |
+| CONTAINS       | formula:vol1/37  | plant:mustaka      | parts:1, qty: 30g   |
+| CONTAINS       | formula:vol1/37  | plant:kuliñjana    | parts:1, qty: 30g   |
+| CONTAINS       | formula:vol1/37  | plant:trikaṭu      | parts:1, qty: 30g   |
+| CONTAINS       | formula:vol1/37  | plant:kuṭaja       | parts:1, qty: 30g   |
+| IS_TYPE        | formula:vol1/37  | prep:cūrṇa         |                     |
+| TREATS         | formula:vol1/37  | disease:grahaṇī    | evidence: canonical |
+| TREATS         | formula:vol1/37  | disease:gulma      | evidence: canonical |
+| TREATS         | formula:vol1/37  | disease:kāmalā     | evidence: canonical |
+| TREATS         | formula:vol1/37  | disease:jvara      | evidence: canonical |
+| TREATS         | formula:vol1/37  | disease:pāṇḍu     | evidence: canonical |
+| TREATS         | formula:vol1/37  | disease:prameha    | evidence: canonical |
+| DOSED_WITH     | formula:vol1/37  | animal:uṣṇa_jala  | (warm water)        |
++----------------+------------------+--------------------+---------------------+
 
- VERB CHAIN (preparation steps):
-   කොටා (crush) --> වතුරට දමා (add water) --> නගා (boil) --> පෙරා (strain)
+PROVENANCE (per triple):
+  source_doc:        "data/structured/201-to-250_structured.json"
+  source_record_id:  "vol1/37"
+  char_span:         [0, 12] (for "බිං කොහොඹ")
+  extractor_version: "prose_v1"
 
- EXTERNAL BINDINGS:
-   බෙලි      -->  Aegle marmelos      -->  POWO LSID: urn:lsid:ipni.org:names:44964-1
-   වාත රෝග  -->  ICD-11 TM2: SP51     (Vata disorders)
+EXTERNAL BINDINGS:
+  plant:bhūnimba   -->  Andrographis paniculata  -->  POWO: urn:lsid:ipni.org:names:46122-1
+  disease:jvara    -->  ICD-11 TM2: SP51          (Jvara / Fever)
+  disease:prameha  -->  ICD-11 TM2: SE70          (Prameha / Urinary disorders)
+  disease:pāṇḍu   -->  ICD-11 TM2: SD50          (Pandu / Anaemia)
 
- GUARANTEES:
-   Reproducibility: SHA-256 of output is identical on every re-run
-   Exactness:       every char_span slices back to the exact surface text
-   Completeness:    all content tokens accounted for or logged as NIL
+UNIT CONVERSION (from the system's unit registry):
+  "කර්ෂ 2" = 2 karsha = 30g (Sri Lankan system, 1 karsha = 15g)
+  "කලං 16" = 16 kalang = 80g (1 kalang = 5g)
+  dose: "කලං 2" = 2.5g per administration
+
+GUARANTEES MET:
+  Reproducibility:  SHA-256 identical on re-run
+  Exactness:        char_span[0:12] == "බිං කොහොඹ" (verbatim)
+  Completeness:     all content tokens covered or logged as NIL
 ```
