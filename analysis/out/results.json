@@ -1,0 +1,1379 @@
+{
+ "meta": {
+  "seed": 20260611,
+  "python": "3.11.15",
+  "generated": "2026-06-12T00:13:49",
+  "yogamalawa_excluded": true,
+  "corpus": "Pharmacopoeia formula section pp.172-443"
+ },
+ "partA": {
+  "basic": {
+   "n_formulas_name": 700,
+   "n_formulas_name_page": 701,
+   "n_tokens": 60599,
+   "codepoints_content": 313361,
+   "codepoints_nonspace": 253462,
+   "codepoints_sinhala": 237095,
+   "codepoints_with_joinspaces": 314060,
+   "bytes": 788289,
+   "page_min": 172,
+   "page_max": 443,
+   "bytes_per_word": 13.008283965081931,
+   "bytes_per_codepoint": 2.509994905432083,
+   "codepoints_per_word": 5.182593772174458
+  },
+  "lexicon": {
+   "plant": 647,
+   "mineral": 82,
+   "animal_origin": 42,
+   "icd_concepts_lexicon": 56,
+   "icd_distinct_codes": 39,
+   "units_canonical": 43
+  },
+  "constituents": {
+   "token_subseq": 533,
+   "token_exact": 435,
+   "substring": 563
+  },
+  "indications": {
+   "distinct_concepts_realised": 49,
+   "distinct_tm2_codes_realised": 34,
+   "n_indication_bearing": 678,
+   "formulas_with_mapped_concept": 503,
+   "coverage_frac": 0.7418879056047197
+  },
+  "field_presence": {
+   "name": 1.0,
+   "constituents": 0.9928571428571429,
+   "preparation": 0.6328571428571429,
+   "indication": 0.9685714285714285,
+   "dosage": 0.4828571428571429,
+   "vehicle": 0.5057142857142857
+  },
+  "predicates": {
+   "n_clauses": 1418,
+   "topk_coverage": 0.8152327221438646,
+   "top_predicates": [
+    [
+     "යි",
+     575
+    ],
+    [
+     "ය",
+     181
+    ],
+    [
+     "යෙදේ",
+     139
+    ],
+    [
+     "වේ",
+     124
+    ],
+    [
+     "කරයි",
+     33
+    ],
+    [
+     "ලැබේ",
+     30
+    ],
+    [
+     "කෙරේ",
+     24
+    ],
+    [
+     "නසයි",
+     20
+    ],
+    [
+     "යොදති",
+     19
+    ],
+    [
+     "ශ්‍රේෂ්ඨයි",
+     11
+    ]
+   ]
+  },
+  "reconciliation": [
+   {
+    "claim": "Distinct formulas",
+    "proposal": 700,
+    "computed": 700,
+    "status": "match",
+    "note": "dedup by name; dedup by (name,page) gives 701 (sensitivity +/-1).",
+    "tag": "COMPUTED"
+   },
+   {
+    "claim": "Page span (min)",
+    "proposal": 172,
+    "computed": 172,
+    "status": "match",
+    "note": "structured formula section start",
+    "tag": "COMPUTED"
+   },
+   {
+    "claim": "Page span (max)",
+    "proposal": 443,
+    "computed": 443,
+    "status": "match",
+    "note": "structured formula section end",
+    "tag": "COMPUTED"
+   },
+   {
+    "claim": "Whitespace tokens (6 fields)",
+    "proposal": 60599,
+    "computed": 60599,
+    "status": "match",
+    "note": "diff traceable to dedup rule + continuation handling.",
+    "tag": "COMPUTED"
+   },
+   {
+    "claim": "Codepoints (corpus-wide)",
+    "proposal": 314060,
+    "computed": 313361,
+    "status": "match",
+    "note": "content codepoints = sum of field-text lengths (no inter-field join spaces).",
+    "tag": "COMPUTED"
+   },
+   {
+    "claim": "UTF-8 bytes",
+    "proposal": 788289,
+    "computed": 788289,
+    "status": "match",
+    "note": "all six fields joined.",
+    "tag": "COMPUTED"
+   },
+   {
+    "claim": "Codepoints (intrinsic table)",
+    "proposal": 253462,
+    "computed": 253462,
+    "status": "match",
+    "note": "non-whitespace ('segmentable') codepoints; 237095 are Sinhala-script.",
+    "tag": "COMPUTED"
+   },
+   {
+    "claim": "Plant names",
+    "proposal": 647,
+    "computed": 647,
+    "status": "match",
+    "note": "materia_medica section_counts.plant",
+    "tag": "COMPUTED"
+   },
+   {
+    "claim": "Minerals",
+    "proposal": 82,
+    "computed": 82,
+    "status": "match",
+    "note": "materia_medica section_counts.mineral",
+    "tag": "COMPUTED"
+   },
+   {
+    "claim": "ICD-11 TM2 concepts (lexicon)",
+    "proposal": 56,
+    "computed": 56,
+    "status": "match",
+    "note": "indication_icd11_tm2.json entries; 39 distinct TM2 codes.",
+    "tag": "COMPUTED"
+   },
+   {
+    "claim": "Units",
+    "proposal": 43,
+    "computed": 43,
+    "status": "match",
+    "note": "unit_equivalences canonical symbol registry",
+    "tag": "COMPUTED"
+   },
+   {
+    "claim": "Constituent concepts (open class)",
+    "proposal": 599,
+    "computed": 533,
+    "status": "mismatch",
+    "note": "PRE-REG rule token_subseq/concept-id; token_exact=435, substring=563.",
+    "tag": "COMPUTED"
+   },
+   {
+    "claim": "Indication concepts realised",
+    "proposal": 49,
+    "computed": 49,
+    "status": "match",
+    "note": "distinct lexicon concept-keys via substring match; distinct TM2 codes=34.",
+    "tag": "COMPUTED"
+   },
+   {
+    "claim": "Indication coverage of formulas",
+    "proposal": 0.74,
+    "computed": 0.742,
+    "status": "match",
+    "note": "fraction of indication-bearing formulas with >=1 mapped ICD concept.",
+    "tag": "COMPUTED"
+   },
+   {
+    "claim": "Clause-final predicates top-10 coverage",
+    "proposal": 0.81,
+    "computed": 0.815,
+    "status": "match",
+    "note": "top-10 clause-final tokens / all indication clause finals.",
+    "tag": "COMPUTED"
+   },
+   {
+    "claim": "Byte:word cost ratio",
+    "proposal": 3.0,
+    "computed": 13.01,
+    "status": "mismatch",
+    "note": "MISMATCH: bytes/word=13.0. The '3' is bytes/codepoint=2.51. codepoints/word=5.18.",
+    "tag": "COMPUTED"
+   }
+  ],
+  "erratum": [
+   {
+    "id": "E1-byte-ratio",
+    "old": "byte-level segmentation costs roughly three times word-level here",
+    "new": "byte-level segmentation costs roughly 13 times word-level here (13.0 bytes per word vs 1 unit per word); the ~3 figure is the bytes-per-codepoint ratio (2.51), not the byte-to-word ratio"
+   },
+   {
+    "id": "E2-constituent-concepts",
+    "old": "the constituent items map to 599 distinct concepts on the plant and materia-medica lists",
+    "new": "the constituent items map to 533 distinct concepts on the plant and materia-medica lists under a token-boundary longest-match rule (strict single-token matching gives 435; raw substring matching 563)"
+   },
+   {
+    "id": "E3-codepoints",
+    "old": "314,060 codepoints",
+    "new": "313361 codepoints corpus-wide (all six fields). The intrinsic-measure table reports 253462 codepoints, which counts non-whitespace segmentable content only; the two should be cited distinctly"
+   },
+   {
+    "id": "E4-indication-concepts",
+    "old": "the indication prose maps to 49 ICD-11 Traditional Medicine concepts across 74 percent of indication-bearing formulas",
+    "new": "the indication prose maps to 49 ICD-11 Traditional Medicine concepts across 74 percent of indication-bearing formulas (substring match of disease surfaces; 34 distinct TM2 codes realised, lexicon holds 56 concept entries)"
+   },
+   {
+    "id": "E5-baselines",
+    "old": "the Sinhala portions of CC-100 and OSCAR and a news corpus",
+    "new": "a news corpus (NLPC-UOM POS-tagged news, ~254k tokens) as the general-domain baseline and government order-paper text as a restricted-register control. CC-100, OSCAR and Sinhala Wikipedia were unreachable from the analysis environment (HTTP 403) and are named as intended, not realised, baselines"
+   },
+   {
+    "id": "E6-tokens",
+    "old": "60,599 whitespace-delimited tokens",
+    "new": "60599 whitespace-delimited tokens"
+   },
+   {
+    "id": "E7-bytes",
+    "old": "788,289 UTF-8 bytes",
+    "new": "788289 UTF-8 bytes"
+   }
+  ]
+ },
+ "rq1": {
+  "b1_heaps_beta": {
+   "cells": [
+    {
+     "unit": "word",
+     "baseline": "news(general)",
+     "matched_N": 60726,
+     "register_beta": 0.7211276724803378,
+     "register_ci": [
+      0.6809370806008747,
+      0.761318264359801
+     ],
+     "baseline_beta": 0.7487395081138221,
+     "baseline_ci": [
+      0.7216893590271044,
+      0.7757896572005397
+     ],
+     "gap": 0.02761183563348424,
+     "verdict": "overlap",
+     "note": ""
+    },
+    {
+     "unit": "word",
+     "baseline": "government(restricted-control)",
+     "matched_N": 17451,
+     "register_beta": 0.7868164532802479,
+     "register_ci": [
+      0.7534088977079705,
+      0.8202240088525252
+     ],
+     "baseline_beta": 0.7282513718634948,
+     "baseline_ci": [
+      0.6917074044421987,
+      0.7647953392847908
+     ],
+     "gap": -0.058565081416753095,
+     "verdict": "overlap",
+     "note": ""
+    },
+    {
+     "unit": "akshara",
+     "baseline": "news(general)",
+     "matched_N": 209970,
+     "register_beta": 0.3880079478569022,
+     "register_ci": [
+      0.36729774817090555,
+      0.4087181475428988
+     ],
+     "baseline_beta": 0.34988343183738657,
+     "baseline_ci": [
+      0.32998823693560214,
+      0.369778626739171
+     ],
+     "gap": -0.03812451601951561,
+     "verdict": "overlap",
+     "note": ""
+    },
+    {
+     "unit": "akshara",
+     "baseline": "government(restricted-control)",
+     "matched_N": 77138,
+     "register_beta": 0.4202092311959536,
+     "register_ci": [
+      0.3962581803685845,
+      0.4441602820233227
+     ],
+     "baseline_beta": 0.3121255649972313,
+     "baseline_ci": [
+      0.2803557053812565,
+      0.34389542461320616
+     ],
+     "gap": -0.10808366619872228,
+     "verdict": "anti (register higher)",
+     "note": ""
+    },
+    {
+     "unit": "grapheme",
+     "baseline": "news(general)",
+     "matched_N": 225681,
+     "register_beta": 0.23644332188854017,
+     "register_ci": [
+      0.21568550742118017,
+      0.25720113635590014
+     ],
+     "baseline_beta": 0.19567046422895784,
+     "baseline_ci": [
+      0.17741539556751634,
+      0.21392553289039934
+     ],
+     "gap": -0.04077285765958233,
+     "verdict": "anti (register higher)",
+     "note": ""
+    },
+    {
+     "unit": "grapheme",
+     "baseline": "government(restricted-control)",
+     "matched_N": 82300,
+     "register_beta": 0.2742266040842848,
+     "register_ci": [
+      0.2510454778014838,
+      0.2974077303670858
+     ],
+     "baseline_beta": 0.22693779674862866,
+     "baseline_ci": [
+      0.2016188420186403,
+      0.252256751478617
+     ],
+     "gap": -0.04728880733565613,
+     "verdict": "overlap",
+     "note": ""
+    },
+    {
+     "unit": "codepoint",
+     "baseline": "news(general)",
+     "matched_N": 314772,
+     "register_beta": 0.1495475484916282,
+     "register_ci": [
+      0.10922761661964209,
+      0.18986748036361434
+     ],
+     "baseline_beta": 0.12271586254315206,
+     "baseline_ci": [
+      0.086164130510616,
+      0.15926759457568812
+     ],
+     "gap": -0.026831685948476153,
+     "verdict": "overlap",
+     "note": ""
+    },
+    {
+     "unit": "codepoint",
+     "baseline": "government(restricted-control)",
+     "matched_N": 116363,
+     "register_beta": 0.16337982730215686,
+     "register_ci": [
+      0.13397517356125863,
+      0.1927844810430551
+     ],
+     "baseline_beta": 0.1396705741760407,
+     "baseline_ci": [
+      0.10886047877834945,
+      0.17048066957373195
+     ],
+     "gap": -0.02370925312611616,
+     "verdict": "overlap",
+     "note": ""
+    },
+    {
+     "unit": "byte",
+     "baseline": "news(general)",
+     "matched_N": 790095,
+     "register_beta": 0.13026529575823523,
+     "register_ci": [
+      0.08711680792273598,
+      0.1734137835937345
+     ],
+     "baseline_beta": 0.11304384933503275,
+     "baseline_ci": [
+      0.07040022454857106,
+      0.15568747412149445
+     ],
+     "gap": -0.017221446423202474,
+     "verdict": "overlap",
+     "note": ""
+    },
+    {
+     "unit": "byte",
+     "baseline": "government(restricted-control)",
+     "matched_N": 307279,
+     "register_beta": 0.13286689437954732,
+     "register_ci": [
+      0.10020005881806943,
+      0.16553372994102522
+     ],
+     "baseline_beta": 0.11362497207788863,
+     "baseline_ci": [
+      0.08049654503341395,
+      0.1467533991223633
+     ],
+     "gap": -0.019241922301658693,
+     "verdict": "overlap",
+     "note": ""
+    },
+    {
+     "unit": "bpe4000",
+     "baseline": "news(general)",
+     "matched_N": 69469,
+     "register_beta": 0.563728879918875,
+     "register_ci": [
+      0.5290895578549327,
+      0.5983682019828173
+     ],
+     "baseline_beta": 0.35468885709686615,
+     "baseline_ci": [
+      0.3368978039403824,
+      0.3724799102533499
+     ],
+     "gap": -0.20904002282200884,
+     "verdict": "anti (register higher)",
+     "note": "BPE vocab trained on the register, so applying it to a baseline is confounded (out-of-domain fragmentation against a register-fit 4k vocab); read with caution."
+    },
+    {
+     "unit": "bpe4000",
+     "baseline": "government(restricted-control)",
+     "matched_N": 43597,
+     "register_beta": 0.6287697115263778,
+     "register_ci": [
+      0.5942178993906475,
+      0.6633215236621082
+     ],
+     "baseline_beta": 0.3738604136060506,
+     "baseline_ci": [
+      0.3404923836178778,
+      0.4072284435942234
+     ],
+     "gap": -0.25490929792032724,
+     "verdict": "anti (register higher)",
+     "note": "BPE vocab trained on the register, so applying it to a baseline is confounded (out-of-domain fragmentation against a register-fit 4k vocab); read with caution."
+    }
+   ],
+   "n_cells": 12,
+   "n_restricted": 0,
+   "sesoi": 0.05
+  },
+  "b2_concentration": {
+   "comparisons": [
+    {
+     "baseline": "news(general)",
+     "matched_N": 60726,
+     "topk_coverage": {
+      "register": [
+       0.5014491321674406,
+       [
+        0.49333005593547835,
+        0.5095682083994029
+       ]
+      ],
+      "baseline": [
+       0.32305766887329973,
+       [
+        0.3175593869207545,
+        0.32855595082584493
+       ]
+      ],
+      "register_more_concentrated": true
+     },
+     "norm_entropy": {
+      "register": [
+       0.7421291628241933,
+       [
+        0.7375861981322213,
+        0.7466721275161653
+       ]
+      ],
+      "baseline": [
+       0.8254208531347795,
+       [
+        0.8225660389179179,
+        0.8282756673516412
+       ]
+      ],
+      "register_more_concentrated": true
+     },
+     "zipf_slope": {
+      "register": [
+       -1.1270238503408887,
+       [
+        -1.1412814695527664,
+        -1.112766231129011
+       ]
+      ],
+      "baseline": [
+       -0.9719298297445352,
+       [
+        -0.9851323456061174,
+        -0.9587273138829531
+       ]
+      ],
+      "register_more_concentrated": true
+     }
+    },
+    {
+     "baseline": "government(restricted-control)",
+     "matched_N": 17451,
+     "topk_coverage": {
+      "register": [
+       0.5210016617958856,
+       [
+        0.5080441643588951,
+        0.5339591592328761
+       ]
+      ],
+      "baseline": [
+       0.4117242564895994,
+       [
+        0.4006012952799051,
+        0.42284721769929373
+       ]
+      ],
+      "register_more_concentrated": true
+     },
+     "norm_entropy": {
+      "register": [
+       0.7843023431864174,
+       [
+        0.7784186989982763,
+        0.7901859873745586
+       ]
+      ],
+      "baseline": [
+       0.8719509740619276,
+       [
+        0.8670409845042296,
+        0.8768609636196255
+       ]
+      ],
+      "register_more_concentrated": true
+     },
+     "zipf_slope": {
+      "register": [
+       -0.9886925060473449,
+       [
+        -1.0071820825041062,
+        -0.9702029295905835
+       ]
+      ],
+      "baseline": [
+       -0.9064027052985135,
+       [
+        -0.9365593014194806,
+        -0.8762461091775464
+       ]
+      ],
+      "register_more_concentrated": true
+     }
+    }
+   ],
+   "k": 100
+  },
+  "b3_constructions": {
+   "matched_N": 1368,
+   "register_top": [
+    [
+     "යි",
+     572
+    ],
+    [
+     "ය",
+     179
+    ],
+    [
+     "යෙදේ",
+     133
+    ],
+    [
+     "වේ",
+     120
+    ],
+    [
+     "කරයි",
+     33
+    ],
+    [
+     "ලැබේ",
+     30
+    ],
+    [
+     "කෙරේ",
+     22
+    ],
+    [
+     "යොදති",
+     19
+    ],
+    [
+     "නසයි",
+     15
+    ],
+    [
+     "ශ්‍රේෂ්ඨයි",
+     11
+    ]
+   ],
+   "register_topk_coverage": 0.8289473684210527,
+   "register_norm_entropy": 0.5271717350316254,
+   "register_ne_ci": [
+    0.5099500866717693,
+    0.5443381546464967
+   ],
+   "baseline_topk_coverage": 0.4583333333333333,
+   "baseline_norm_entropy": 0.7848683902139814,
+   "baseline_ne_ci": [
+    0.7711843416088723,
+    0.7983436720378594
+   ],
+   "gap": 0.25769665518235596,
+   "verdict": "constructionally restricted",
+   "sesoi": 0.02
+  },
+  "b4_semantic_separation": {
+   "observed_jaccard": 0.09685039370078741,
+   "null_mean": 0.3377740157480315,
+   "null_ci": [
+    0.33128937007874015,
+    0.34409448818897637
+   ],
+   "margin": 0.2409236220472441,
+   "beyond_layout_separation": true,
+   "sesoi": 0.05,
+   "n_constit_tokens": 20626,
+   "n_indic_tokens": 15609
+  },
+  "b5_ocr_sensitivity": {
+   "cer_proxy_lower_bound_malformed": 0.0,
+   "n_sinhala_graphemes": 148551,
+   "n_malformed": 0,
+   "wer_proxy_upper_bound_hapax_gazmiss": 0.531223145230593,
+   "n_word_types": 6982,
+   "n_suspect_types": 3709,
+   "beta_word_dirty": 0.7211276724803378,
+   "beta_word_dirty_ci": [
+    0.6809370806008747,
+    0.761318264359801
+   ],
+   "beta_word_clean": 0.5983615679412869,
+   "beta_word_clean_ci": [
+    0.559160451362176,
+    0.6375626845203979
+   ],
+   "delta_beta_cleaning": -0.1227661045390509,
+   "news_beta_at_N": 0.7487395081138221,
+   "news_beta_ci": [
+    0.7216893590271044,
+    0.7757896572005397
+   ],
+   "verdict_survives": true,
+   "note": "True CER/WER requires gold transcription; rendered sample pages are embedded as a head-start (see figures). These two channels bracket the error rate; everything else is a proxy."
+  }
+ },
+ "rq2": {
+  "c1_intrinsic": {
+   "rows": [
+    {
+     "unit": "byte",
+     "n_units": 790095,
+     "vocab": 112,
+     "units_per_word": 13.010819089022824,
+     "units_per_byte": 1.0,
+     "shannon_eff": 0.5597949324294313,
+     "renyi_eff": {
+      "a0.5": 0.7211400337632711,
+      "a1.0": 0.5597949324294313,
+      "a1.5": 0.4646372903876219,
+      "a2.0": 0.41196281892176406,
+      "a2.5": 0.38077520767347134,
+      "a3.0": 0.36029761295482066
+     }
+    },
+    {
+     "unit": "codepoint",
+     "n_units": 314772,
+     "vocab": 131,
+     "units_per_word": 5.183479893291177,
+     "units_per_byte": 0.3983976610407609,
+     "shannon_eff": 0.6986476317825938,
+     "renyi_eff": {
+      "a0.5": 0.7956810004108421,
+      "a1.0": 0.6986476317825938,
+      "a1.5": 0.6280749889275556,
+      "a2.0": 0.5712990193124117,
+      "a2.5": 0.5264983053463347,
+      "a3.0": 0.49235488333307087
+     }
+    },
+    {
+     "unit": "akshara",
+     "n_units": 209970,
+     "vocab": 1136,
+     "units_per_word": 3.4576622863353426,
+     "units_per_byte": 0.2657528525050785,
+     "shannon_eff": 0.6058959625705557,
+     "renyi_eff": {
+      "a0.5": 0.7953207086229865,
+      "a1.0": 0.6058959625705557,
+      "a1.5": 0.441914951132418,
+      "a2.0": 0.3433582265521479,
+      "a2.5": 0.29250453673449955,
+      "a3.0": 0.2642582667060855
+     }
+    },
+    {
+     "unit": "grapheme",
+     "n_units": 225681,
+     "vocab": 527,
+     "units_per_word": 3.7163817804564765,
+     "units_per_byte": 0.28563780304900044,
+     "shannon_eff": 0.662958997407345,
+     "renyi_eff": {
+      "a0.5": 0.8210760434434498,
+      "a1.0": 0.662958997407345,
+      "a1.5": 0.5092225417635612,
+      "a2.0": 0.4046679997663985,
+      "a2.5": 0.34678801153347394,
+      "a3.0": 0.313746547008478
+     }
+    },
+    {
+     "unit": "word",
+     "n_units": 60726,
+     "vocab": 6982,
+     "units_per_word": 1.0,
+     "units_per_byte": 0.07685911187895127,
+     "shannon_eff": 0.7421291628241933,
+     "renyi_eff": {
+      "a0.5": 0.8956384761040898,
+      "a1.0": 0.7421291628241933,
+      "a1.5": 0.5969583735779642,
+      "a2.0": 0.5059704274879182,
+      "a2.5": 0.45423280764013024,
+      "a3.0": 0.4229815161263744
+     }
+    },
+    {
+     "unit": "bpe300",
+     "n_units": 150037,
+     "vocab": 298,
+     "units_per_word": 2.4707209432533017,
+     "units_per_byte": 0.1898974173991735,
+     "shannon_eff": 0.8875987148070748,
+     "renyi_eff": {
+      "a0.5": 0.931599002746258,
+      "a1.0": 0.8875987148070748,
+      "a1.5": 0.8502277333582895,
+      "a2.0": 0.8185036486186339,
+      "a2.5": 0.792702379716077,
+      "a3.0": 0.7722041636689932
+     }
+    },
+    {
+     "unit": "bpe500",
+     "n_units": 122833,
+     "vocab": 495,
+     "units_per_word": 2.0227414945822217,
+     "units_per_byte": 0.15546611483429207,
+     "shannon_eff": 0.8881349700481167,
+     "renyi_eff": {
+      "a0.5": 0.9395948285640151,
+      "a1.0": 0.8881349700481167,
+      "a1.5": 0.8393159440484567,
+      "a2.0": 0.7955317683391815,
+      "a2.5": 0.7588655240827338,
+      "a3.0": 0.7292711142363383
+     }
+    },
+    {
+     "unit": "bpe1000",
+     "n_units": 96278,
+     "vocab": 976,
+     "units_per_word": 1.5854493956460165,
+     "units_per_byte": 0.12185623247837285,
+     "shannon_eff": 0.8734973790626993,
+     "renyi_eff": {
+      "a0.5": 0.9404806937876967,
+      "a1.0": 0.8734973790626993,
+      "a1.5": 0.7977230585706478,
+      "a2.0": 0.7263379520422467,
+      "a2.5": 0.670622330431241,
+      "a3.0": 0.6306351457536781
+     }
+    },
+    {
+     "unit": "bpe2000",
+     "n_units": 79155,
+     "vocab": 1907,
+     "units_per_word": 1.3034779172018576,
+     "units_per_byte": 0.10018415506995994,
+     "shannon_eff": 0.8456469427807238,
+     "renyi_eff": {
+      "a0.5": 0.9348316834650391,
+      "a1.0": 0.8456469427807238,
+      "a1.5": 0.7360984594153736,
+      "a2.0": 0.6424140705888852,
+      "a2.5": 0.5805151868912587,
+      "a3.0": 0.541136904941228
+     }
+    },
+    {
+     "unit": "bpe4000",
+     "n_units": 69469,
+     "vocab": 3667,
+     "units_per_word": 1.1439745743174259,
+     "units_per_byte": 0.08792486979413867,
+     "shannon_eff": 0.7996961277058869,
+     "renyi_eff": {
+      "a0.5": 0.9192389786603927,
+      "a1.0": 0.7996961277058869,
+      "a1.5": 0.665117160757434,
+      "a2.0": 0.568211736085202,
+      "a2.5": 0.5106267904022261,
+      "a3.0": 0.4754253609335878
+     }
+    },
+    {
+     "unit": "bpe8000",
+     "n_units": 64030,
+     "vocab": 6507,
+     "units_per_word": 1.0544083259229984,
+     "units_per_byte": 0.08104088748821345,
+     "shannon_eff": 0.7506884196599386,
+     "renyi_eff": {
+      "a0.5": 0.899268019280922,
+      "a1.0": 0.7506884196599386,
+      "a1.5": 0.6063817242765387,
+      "a2.0": 0.5148224014533557,
+      "a2.5": 0.46248959421194324,
+      "a3.0": 0.43073848057138703
+     }
+    }
+   ],
+   "alphas": [
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0
+   ],
+   "syllable_grapheme_divergence": {
+    "n_aksharas": 209970,
+    "n_graphemes": 225681,
+    "akshara_per_grapheme": 0.9303840376460579,
+    "merge_rate": 0.06961596235394207
+   }
+  },
+  "c2_bpb": {
+   "kn_order": 3,
+   "bpe_sweep": [
+    {
+     "vocab": 300,
+     "bpb": 0.7269734593188354,
+     "renyi_2.5": 0.792702379716077,
+     "units_per_byte": 0.1898974173991735
+    },
+    {
+     "vocab": 500,
+     "bpb": 0.6863480300322881,
+     "renyi_2.5": 0.7588655240827338,
+     "units_per_byte": 0.15546611483429207
+    },
+    {
+     "vocab": 1000,
+     "bpb": 0.6594202801922908,
+     "renyi_2.5": 0.670622330431241,
+     "units_per_byte": 0.12185623247837285
+    },
+    {
+     "vocab": 2000,
+     "bpb": 0.649958940698364,
+     "renyi_2.5": 0.5805151868912587,
+     "units_per_byte": 0.10018415506995994
+    },
+    {
+     "vocab": 4000,
+     "bpb": 0.6428629970896509,
+     "renyi_2.5": 0.5106267904022261,
+     "units_per_byte": 0.08792486979413867
+    },
+    {
+     "vocab": 8000,
+     "bpb": 0.589971602467508,
+     "renyi_2.5": 0.46248959421194324,
+     "units_per_byte": 0.08104088748821345
+    }
+   ],
+   "bpe_min": {
+    "vocab": 8000,
+    "bpb": 0.589971602467508
+   },
+   "unit_bpb": {
+    "byte": 1.7007768514967145,
+    "codepoint": 1.0773703714968663,
+    "akshara": 0.787570493419849,
+    "grapheme": 0.8172441735552687,
+    "word": 0.8941130370696798
+   },
+   "transformer_secondary": {
+    "executed": false,
+    "reason": "Capacity-controlled transformer training (fixed-dim factorised embedding / low-rank projection, total-param reporting, seed-spread vs config-spread check) was NOT run in this verification environment. The decision rule (usable only if config-spread > seed-spread and the trend is not explained by parameter count) is pre-registered; the neural number is left uncomputed rather than substituted. The deterministic Kneser-Ney instrument carries C2/C3.",
+    "decision_rule": "report neural only if config_spread > seed_spread AND trend not explained by param count"
+   }
+  },
+  "c3_predictive": {
+   "sesoi_rho": 0.3,
+   "design_a_within_bpe": {
+    "renyi": [
+     0.792702379716077,
+     0.7588655240827338,
+     0.670622330431241,
+     0.5805151868912587,
+     0.5106267904022261,
+     0.46248959421194324
+    ],
+    "length": [
+     0.1898974173991735,
+     0.15546611483429207,
+     0.12185623247837285,
+     0.10018415506995994,
+     0.08792486979413867,
+     0.08104088748821345
+    ],
+    "bpb": [
+     0.7269734593188354,
+     0.6863480300322881,
+     0.6594202801922908,
+     0.649958940698364,
+     0.6428629970896509,
+     0.589971602467508
+    ],
+    "renyi_length_rankcorr": 1.0,
+    "partial_spearman_renyi_bpb_given_length": NaN,
+    "spearman_length_bpb": 1.0,
+    "labels": [
+     "bpe300",
+     "bpe500",
+     "bpe1000",
+     "bpe2000",
+     "bpe4000",
+     "bpe8000"
+    ],
+    "informative": false,
+    "verdict": "uninformative (Renyi-length collinear)"
+   },
+   "design_b_across_units": {
+    "renyi": [
+     0.38077520767347134,
+     0.5264983053463347,
+     0.29250453673449955,
+     0.34678801153347394,
+     0.5581013657403904,
+     0.45423280764013024,
+     0.670622330431241,
+     0.5106267904022261
+    ],
+    "length": [
+     1.0,
+     0.3983976610407609,
+     0.2657528525050785,
+     0.28563780304900044,
+     0.09517083388706421,
+     0.07685911187895127,
+     0.12185623247837285,
+     0.08792486979413867
+    ],
+    "bpb": [
+     1.7007768514967145,
+     1.0773703714968663,
+     0.787570493419849,
+     0.8172441735552687,
+     0.6490385841420693,
+     0.8941130370696798,
+     0.6594202801922908,
+     0.6428629970896509
+    ],
+    "renyi_length_rankcorr": -0.28571428571428575,
+    "partial_spearman_renyi_bpb_given_length": -0.2363163359313513,
+    "spearman_length_bpb": 0.6428571428571429,
+    "labels": [
+     "byte",
+     "codepoint",
+     "akshara",
+     "grapheme",
+     "gpe",
+     "word",
+     "bpe1000",
+     "bpe4000"
+    ],
+    "informative": true,
+    "verdict": "no signal beyond length (|rho|<SESOI)"
+   },
+   "design_c_across_algos": {
+    "renyi": [
+     0.5106267904022261,
+     0.5384354283521323,
+     0.5210445811963497,
+     0.5581013657403904
+    ],
+    "length": [
+     0.08792486979413867,
+     0.10585562495649257,
+     0.09127763117093514,
+     0.09517083388706421
+    ],
+    "bpb": [
+     0.6428629970896509,
+     0.6371403209650959,
+     0.6648781185756343,
+     0.6490385841420693
+    ],
+    "renyi_length_rankcorr": 0.7999999999999999,
+    "partial_spearman_renyi_bpb_given_length": 0.5819143739626464,
+    "spearman_length_bpb": -0.39999999999999997,
+    "labels": [
+     "bpe",
+     "unigram",
+     "wordpiece",
+     "grapheme-pair"
+    ],
+    "informative": true,
+    "verdict": "Renyi carries signal beyond length"
+   }
+  },
+  "c4_noise_robustness": {
+   "cer": 0.05,
+   "n_seeds": 5,
+   "results": [
+    {
+     "unit": "byte",
+     "clean_bpb": 1.7007768514967145,
+     "mean_degradation": 0.07324154586285121,
+     "degradation_ci": [
+      0.06772163085774115,
+      0.07876146086796128
+     ]
+    },
+    {
+     "unit": "codepoint",
+     "clean_bpb": 1.0773703714968663,
+     "mean_degradation": 0.2683798967842955,
+     "degradation_ci": [
+      0.25869304481978994,
+      0.2780667487488011
+     ]
+    },
+    {
+     "unit": "grapheme",
+     "clean_bpb": 0.8172441735552687,
+     "mean_degradation": 0.2942238930825066,
+     "degradation_ci": [
+      0.2848829388424159,
+      0.30356484732259736
+     ]
+    },
+    {
+     "unit": "akshara",
+     "clean_bpb": 0.787570493419849,
+     "mean_degradation": 0.2973745701762865,
+     "degradation_ci": [
+      0.2882392668080348,
+      0.3065098735445382
+     ]
+    },
+    {
+     "unit": "word",
+     "clean_bpb": 0.8941130370696798,
+     "mean_degradation": 0.7551267651529179,
+     "degradation_ci": [
+      0.7384294885694274,
+      0.7718240417364084
+     ]
+    },
+    {
+     "unit": "bpe4000",
+     "clean_bpb": 0.6428629970896509,
+     "mean_degradation": 0.37937678306105693,
+     "degradation_ci": [
+      0.36641422799916895,
+      0.3923393381229449
+     ]
+    }
+   ],
+   "most_robust": "byte",
+   "least_robust": "word"
+  }
+ },
+ "rq3": {
+  "d1_label_quality": {
+   "constituent_field_content_tokens": 17066,
+   "single_token_gazetteer_coverage": 0.38937067854213053,
+   "longest_match_span_hits": 6751,
+   "non_gazetteer_token_fraction": 0.6106293214578695,
+   "label_precision_proxy": 0.9932028594866987,
+   "precision_proxy_is_assumed": true,
+   "note": "Token-level distant-label coverage. 'label_precision_proxy' is a heuristic upper bound (subtracts an explicit connective/verb stop list only). TRUE precision/recall require the D5 manual sample."
+  },
+  "d2_d3_extraction": {
+   "n_folds": 5,
+   "n_examples": 699,
+   "F_overall": {
+    "CONSTIT": 0.9479143716315482,
+    "INDIC": 0.9182604890830437
+   },
+   "F_out_of_list": {
+    "CONSTIT": 0.9223782403440979,
+    "INDIC": 0.9187986780648588
+   },
+   "dict_baseline_F_out_of_list": {
+    "CONSTIT": 0.6707837255785508,
+    "INDIC": 0.0
+   },
+   "constit_minus_indic_F_out": {
+    "mean": 0.0035795622792390127,
+    "ci": [
+     -0.0033377381558976895,
+     0.010496862714375714
+    ],
+    "ci_width": 0.013834600870273404
+   },
+   "sesoi_F": 0.1,
+   "verdict": "equivalent-to-null",
+   "power_n_folds_needed_for_halfwidth_below_SESOI": 0.023924522654971202,
+   "scope": "FEASIBILITY (cross-validation on DISTANT labels; no manual gold set)"
+  },
+  "d4_concept_normalisation": {
+   "lexicon_concepts": 56,
+   "distinct_concept_keys_realised": 49,
+   "distinct_tm2_codes_realised": 34,
+   "coded_fraction_of_indication_formulas": 0.7418879056047197,
+   "unmapped_fraction": 0.2581120943952802,
+   "n_indication_formulas": 678,
+   "unmapped_top_terms": [
+    [
+     "යි",
+     94
+    ],
+    [
+     "ය",
+     57
+    ],
+    [
+     "ද",
+     41
+    ],
+    [
+     "නස",
+     33
+    ],
+    [
+     "යෙදේ",
+     31
+    ],
+    [
+     "සඳහා",
+     26
+    ],
+    [
+     "උණ",
+     20
+    ],
+    [
+     "හා",
+     19
+    ],
+    [
+     "වේ",
+     19
+    ],
+    [
+     "සමග",
+     18
+    ],
+    [
+     "විශේෂයෙන්",
+     17
+    ],
+    [
+     "යුතු",
+     16
+    ],
+    [
+     "සහිත",
+     16
+    ],
+    [
+     "ග්‍රෑම්",
+     16
+    ],
+    [
+     "විශේෂ",
+     15
+    ],
+    [
+     "උණට",
+     13
+    ],
+    [
+     "නාශක",
+     13
+    ],
+    [
+     "සියලු",
+     12
+    ],
+    [
+     "සහ",
+     12
+    ],
+    [
+     "හෝ",
+     12
+    ]
+   ],
+   "srilanka_specific_probe_counts": {
+    "සන්නි": 15,
+    "වැදුගෙය": 1,
+    "උණ": 37
+   },
+   "finding": "The ~26% unmapped stratum carries Sri-Lanka-specific register disease terms (e.g. සන්නි syndromes) absent from the Sanskrit-derived ICD-11 TM2 lexicon, not OCR noise."
+  },
+  "d5_gold_head_start": {
+   "strata_sizes": {
+    "unmapped|out_list": 191,
+    "mapped|out_list": 496,
+    "unmapped|in_list": 6,
+    "mapped|in_list": 7
+   },
+   "sampled_formula_ids": {
+    "unmapped|out_list": [
+     560,
+     187,
+     550,
+     483,
+     238,
+     224,
+     419,
+     389
+    ],
+    "mapped|out_list": [
+     451,
+     651,
+     542,
+     87,
+     285,
+     237,
+     401,
+     127
+    ],
+    "unmapped|in_list": [
+     141,
+     40,
+     190,
+     57,
+     317,
+     131
+    ],
+    "mapped|in_list": [
+     482,
+     199,
+     132,
+     241,
+     676,
+     88,
+     208
+    ]
+   },
+   "guidelines": "DRAFT ANNOTATION GUIDELINES (Sinhala Ayurvedic formula entities)\n1. Span the maximal surface form of each entity.\n2. CONSTITUENT: any substance entering the remedy (plant, mineral, animal-origin, processed preparation). Include rare/unlisted names; do NOT consult the gazetteer while annotating.\n3. INDICATION: a disease/symptom/condition the formula treats. Annotate the Sinhala surface; normalisation to ICD-11 TM2 is a separate layer.\n4. Do NOT label connectives (සමග, හා, සහ, හෝ), quantities/units, or preparation verbs (දියකර, කොටා, පෙරා) as entities.\n5. VEHICLE (anupana) is a distinct class from CONSTITUENT.\n6. Annotate independently of field position; the field a token came from is hidden during adjudication.\n7. Report inter-annotator agreement with Gwet's AC1 (skewed labels)."
+  }
+ },
+ "partE": {
+  "nulls": [
+   {
+    "null": "RQ1 Heaps beta: register grows vocabulary slower than baseline",
+    "sesoi": 0.05,
+    "sesoi_justification": "Delta-beta=0.05: a sub-0.05 exponent gap is below the run-to-run spread of Heaps fits at this corpus size and would not change any qualitative sublanguage claim.",
+    "effect": 0.02761183563348424,
+    "ci": [
+     -0.020833950986563772,
+     0.07605762225353224
+    ],
+    "evaluated_on": "most favourable cell: word vs news(general)",
+    "n_cells_separating": 0,
+    "n_cells": 12,
+    "conclusion": "underpowered"
+   },
+   {
+    "null": "RQ1 constructions: register predicate-entropy below news baseline",
+    "sesoi": 0.02,
+    "sesoi_justification": "0.02 normalised-entropy: smaller gaps are within bootstrap noise of the entropy estimate and would not distinguish a restricted construction inventory from generic Sinhala clause endings.",
+    "effect": 0.25769665518235596,
+    "ci": [
+     0.23578679183051499,
+     0.27960651853419694
+    ],
+    "conclusion": "effect present"
+   },
+   {
+    "null": "RQ2: Renyi efficiency predicts bpb beyond sequence length",
+    "sesoi": 0.3,
+    "sesoi_justification": "|rho|=0.3: a rank correlation below 0.3 explains <9% of rank variance and would not license using Renyi as a selection signal.",
+    "effect": -0.2363163359313513,
+    "ci": [
+     -0.806665303178425,
+     0.5619438914918188
+    ],
+    "evaluated_on": "design (b) across unit types (non-collinear)",
+    "renyi_length_collinearity": -0.28571428571428575,
+    "n_points": 8,
+    "conclusion": "underpowered"
+   },
+   {
+    "null": "RQ3: constituent-minus-indication F-gap beyond coverage+layout",
+    "sesoi": 0.1,
+    "sesoi_justification": "F-gap=0.10: below a tenth of an F point the asymmetry is of no practical consequence for an extraction pipeline.",
+    "effect": 0.0035795622792390127,
+    "ci": [
+     -0.0033377381558976895,
+     0.010496862714375714
+    ],
+    "scope": "FEASIBILITY (cross-validation on DISTANT labels; no manual gold set)",
+    "conclusion": "equivalent-to-null"
+   }
+  ]
+ }
+}
