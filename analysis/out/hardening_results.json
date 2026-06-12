@@ -1,0 +1,507 @@
+{
+ "task1_topic_concentration": {
+  "n_blocks": 4,
+  "register_N": 60726,
+  "register_bundle": {
+   "topk_coverage": [
+    0.5014491321674406,
+    [
+     0.49337063676420617,
+     0.509527627570675
+    ]
+   ],
+   "norm_entropy": [
+    0.7421291628241933,
+    [
+     0.7376113070439483,
+     0.7466470186044383
+    ]
+   ],
+   "zipf_slope": [
+    -1.1270238503408887,
+    [
+     -1.1410795827173201,
+     -1.1129681179644573
+    ]
+   ]
+  },
+  "blocks": [
+   {
+    "control": "news_block_0",
+    "N": 60726,
+    "topk_coverage": {
+     "register": [
+      0.5014491321674406,
+      [
+       0.49337063676420617,
+       0.509527627570675
+      ]
+     ],
+     "control": [
+      0.32305766887329973,
+      [
+       0.31766889700644857,
+       0.3284464407401509
+      ]
+     ],
+     "register_more_concentrated": true
+    },
+    "norm_entropy": {
+     "register": [
+      0.7421291628241933,
+      [
+       0.7376113070439483,
+       0.7466470186044383
+      ]
+     ],
+     "control": [
+      0.825420660248243,
+      [
+       0.8225804204416297,
+       0.8282609000548563
+      ]
+     ],
+     "register_more_concentrated": true
+    },
+    "zipf_slope": {
+     "register": [
+      -1.1270238503408887,
+      [
+       -1.1410795827173201,
+       -1.1129681179644573
+      ]
+     ],
+     "control": [
+      -0.9718942761328434,
+      [
+       -0.9848518129065694,
+       -0.9589367393591174
+      ]
+     ],
+     "register_more_concentrated": true
+    }
+   },
+   {
+    "control": "news_block_1",
+    "N": 60726,
+    "topk_coverage": {
+     "register": [
+      0.5014491321674406,
+      [
+       0.49337063676420617,
+       0.509527627570675
+      ]
+     ],
+     "control": [
+      0.28523202582090046,
+      [
+       0.2779079537837622,
+       0.2925560978580387
+      ]
+     ],
+     "register_more_concentrated": true
+    },
+    "norm_entropy": {
+     "register": [
+      0.7421291628241933,
+      [
+       0.7376113070439483,
+       0.7466470186044383
+      ]
+     ],
+     "control": [
+      0.8419043265054552,
+      [
+       0.8380380728916373,
+       0.8457705801192731
+      ]
+     ],
+     "register_more_concentrated": true
+    },
+    "zipf_slope": {
+     "register": [
+      -1.1270238503408887,
+      [
+       -1.1410795827173201,
+       -1.1129681179644573
+      ]
+     ],
+     "control": [
+      -0.948721267804859,
+      [
+       -0.9630668794648855,
+       -0.9343756561448325
+      ]
+     ],
+     "register_more_concentrated": true
+    }
+   },
+   {
+    "control": "news_block_2",
+    "N": 60726,
+    "topk_coverage": {
+     "register": [
+      0.5014491321674406,
+      [
+       0.49337063676420617,
+       0.509527627570675
+      ]
+     ],
+     "control": [
+      0.2973191054902348,
+      [
+       0.28967435385368046,
+       0.3049638571267892
+      ]
+     ],
+     "register_more_concentrated": true
+    },
+    "norm_entropy": {
+     "register": [
+      0.7421291628241933,
+      [
+       0.7376113070439483,
+       0.7466470186044383
+      ]
+     ],
+     "control": [
+      0.8372319011605663,
+      [
+       0.8335060897721628,
+       0.8409577125489699
+      ]
+     ],
+     "register_more_concentrated": true
+    },
+    "zipf_slope": {
+     "register": [
+      -1.1270238503408887,
+      [
+       -1.1410795827173201,
+       -1.1129681179644573
+      ]
+     ],
+     "control": [
+      -0.9455072119829531,
+      [
+       -0.9591199957934209,
+       -0.9318944281724852
+      ]
+     ],
+     "register_more_concentrated": true
+    }
+   },
+   {
+    "control": "news_block_3",
+    "N": 60726,
+    "topk_coverage": {
+     "register": [
+      0.5014491321674406,
+      [
+       0.49337063676420617,
+       0.509527627570675
+      ]
+     ],
+     "control": [
+      0.29781312782004415,
+      [
+       0.29172505934744586,
+       0.30390119629264245
+      ]
+     ],
+     "register_more_concentrated": true
+    },
+    "norm_entropy": {
+     "register": [
+      0.7421291628241933,
+      [
+       0.7376113070439483,
+       0.7466470186044383
+      ]
+     ],
+     "control": [
+      0.8382739359058309,
+      [
+       0.8352571818027559,
+       0.8412906900089059
+      ]
+     ],
+     "register_more_concentrated": true
+    },
+    "zipf_slope": {
+     "register": [
+      -1.1270238503408887,
+      [
+       -1.1410795827173201,
+       -1.1129681179644573
+      ]
+     ],
+     "control": [
+      -0.8999526296214911,
+      [
+       -0.9144842446262336,
+       -0.8854210146167487
+      ]
+     ],
+     "register_more_concentrated": true
+    }
+   }
+  ],
+  "toughest_control": "news_block_0",
+  "separates_against_all_blocks": {
+   "topk_coverage": true,
+   "norm_entropy": true,
+   "zipf_slope": true
+  },
+  "separates_against_toughest": {
+   "topk_coverage": true,
+   "norm_entropy": true,
+   "zipf_slope": true
+  },
+  "concentration_persists_topic_matched": true,
+  "headline": "Concentration STILL separates against the most concentrated topic-reduced news block -> sublanguage reading STRENGTHENED",
+  "note": "Control = contiguous same-source news blocks sized to the register token budget; labelled topic-reduced, not single-labelled-category (news category labels live on HuggingFace, HTTP 403 / unreachable). All CIs location-corrected; direction pre-registered."
+ },
+ "task2_real_cer": {
+  "sample_pages": [
+   189,
+   201,
+   237,
+   279,
+   285,
+   315,
+   355,
+   372,
+   408,
+   426
+  ],
+  "n_pages": 10,
+  "method": "second-engine re-OCR (Tesseract 5.3.4, lang=sin, psm 6) vs Google GCV rows",
+  "cer_inter_engine_micro": 0.08680721929404249,
+  "wer_inter_engine_micro": 0.05786280914605693,
+  "per_page": [
+   {
+    "page": 189,
+    "cer": 0.056640625,
+    "gcv_chars": 1024,
+    "n_gcv_tokens": 157,
+    "token_disagreements": 9
+   },
+   {
+    "page": 201,
+    "cer": 0.07992565055762081,
+    "gcv_chars": 1076,
+    "n_gcv_tokens": 176,
+    "token_disagreements": 10
+   },
+   {
+    "page": 237,
+    "cer": 0.06153846153846154,
+    "gcv_chars": 1430,
+    "n_gcv_tokens": 230,
+    "token_disagreements": 8
+   },
+   {
+    "page": 279,
+    "cer": 0.07036535859269283,
+    "gcv_chars": 1478,
+    "n_gcv_tokens": 258,
+    "token_disagreements": 8
+   },
+   {
+    "page": 285,
+    "cer": 0.08583391486392185,
+    "gcv_chars": 1433,
+    "n_gcv_tokens": 250,
+    "token_disagreements": 8
+   },
+   {
+    "page": 315,
+    "cer": 0.11177794448612154,
+    "gcv_chars": 1333,
+    "n_gcv_tokens": 234,
+    "token_disagreements": 28
+   },
+   {
+    "page": 355,
+    "cer": 0.1717100633356791,
+    "gcv_chars": 1421,
+    "n_gcv_tokens": 264,
+    "token_disagreements": 25
+   },
+   {
+    "page": 372,
+    "cer": 0.07383773928896992,
+    "gcv_chars": 1097,
+    "n_gcv_tokens": 195,
+    "token_disagreements": 4
+   },
+   {
+    "page": 408,
+    "cer": 0.050413223140495865,
+    "gcv_chars": 1210,
+    "n_gcv_tokens": 201,
+    "token_disagreements": 8
+   },
+   {
+    "page": 426,
+    "cer": 0.09117647058823529,
+    "gcv_chars": 1020,
+    "n_gcv_tokens": 178,
+    "token_disagreements": 16
+   }
+  ],
+  "n_verified_error_types_on_sample": 56,
+  "verified_error_examples": [
+   "II",
+   "අජීර්ණ",
+   "අන්‍ය",
+   "අනේකහේතුජබාධිර්‍ය්‍ය",
+   "අවස්ථාවෝචිතව",
+   "අසාධ්‍ය",
+   "ආර්‍ධන",
+   "ඇත්",
+   "ඉක්ෂුගන්ධා",
+   "කඑස්නයි",
+   "කටීවාතයට",
+   "කායිකව්‍යථා",
+   "කියත්",
+   "කුටජාද්‍යරිෂ්ටය",
+   "කෙසෙල්ගෙඩි",
+   "ගලක්කාවට",
+   "චලි",
+   "තිකුළුත්",
+   "දාවී",
+   "දාහජ්වර"
+  ],
+  "beta_register_dirty": 0.7211276724803378,
+  "beta_register_dirty_ci": [
+   0.6809370806008747,
+   0.761318264359801
+  ],
+  "beta_register_clean_verified": 0.7231668102459339,
+  "beta_register_clean_ci": [
+   0.6861817154119366,
+   0.7601519050799311
+  ],
+  "beta_news": 0.7487816891937994,
+  "beta_news_ci": [
+   0.7216426624355203,
+   0.7759207159520785
+  ],
+  "delta_beta_verified_cleaning": 0.002039137765596055,
+  "gap_dirty": 0.02765401671346157,
+  "gap_dirty_ci": [
+   -0.020841451621303048,
+   0.07614948504822619
+  ],
+  "gap_clean": 0.025614878947865516,
+  "gap_clean_ci": [
+   -0.02025912254825816,
+   0.07148888044398918
+  ],
+  "verdict_dirty": "underpowered",
+  "verdict_clean": "underpowered",
+  "note": "CER/WER are inter-engine disagreement (two independent OCR engines), a COMPUTED upper bound on the better engine's true error rate, not a gold transcription. Verified-error types are GCV tokens the second engine does not corroborate (edit-distance>1) on the sampled pages and absent from the gazetteer; this is a lower bound on corpus-wide error types, so the refit is conservative."
+ },
+ "task3_matcher_sensitivity": {
+  "modes": [
+   "token_exact",
+   "token_subseq",
+   "substring"
+  ],
+  "constituent_counts": {
+   "token_subseq": 533,
+   "token_exact": 435,
+   "substring": 563
+  },
+  "indication_counts": {
+   "token_exact": 49,
+   "token_subseq": 49,
+   "substring": 49
+  },
+  "indication_coverage": {
+   "token_exact": 0.5634218289085545,
+   "token_subseq": 0.5634218289085545,
+   "substring": 0.7418879056047197
+  },
+  "open_closed_ratio": {
+   "token_exact": 8.877551020408163,
+   "token_subseq": 10.877551020408163,
+   "substring": 11.489795918367347
+  },
+  "load_bearing_head_term": {
+   "token_exact": {
+    "concept": "roga",
+    "formulas_matched": 194,
+    "coverage_without": 0.45427728613569324,
+    "coverage_drop": 0.10914454277286129
+   },
+   "token_subseq": {
+    "concept": "roga",
+    "formulas_matched": 194,
+    "coverage_without": 0.45427728613569324,
+    "coverage_drop": 0.10914454277286129
+   },
+   "substring": {
+    "concept": "roga",
+    "formulas_matched": 333,
+    "coverage_without": 0.5589970501474927,
+    "coverage_drop": 0.18289085545722705
+   }
+  },
+  "asymmetry_holds_all_rules": true,
+  "constituent_range": [
+   435,
+   563
+  ],
+  "indication_range": [
+   49,
+   49
+  ]
+ },
+ "task4_feature_ablation": {
+  "ablations": {
+   "orthography_only": {
+    "F_out_of_list": {
+     "CONSTIT": 0.8812597975788687,
+     "INDIC": 0.8811661481483034
+    },
+    "constit_minus_indic_F": 9.364943056544561e-05,
+    "ci": [
+     -0.00893419015848717,
+     0.00912148901961806
+    ],
+    "verdict": "equivalent-to-null"
+   },
+   "context_only": {
+    "F_out_of_list": {
+     "CONSTIT": 0.8884727796492549,
+     "INDIC": 0.8787181118158074
+    },
+    "constit_minus_indic_F": 0.009754667833447427,
+    "ci": [
+     0.0003312234977992882,
+     0.019178112169095568
+    ],
+    "verdict": "equivalent-to-null"
+   },
+   "full": {
+    "F_out_of_list": {
+     "CONSTIT": 0.9223782403440979,
+     "INDIC": 0.9187986780648588
+    },
+    "constit_minus_indic_F": 0.0035795622792390127,
+    "ci": [
+     -0.0033377381558976895,
+     0.010496862714375714
+    ],
+    "verdict": "equivalent-to-null"
+   }
+  },
+  "sesoi_F": 0.1,
+  "orthography_saturates": false,
+  "headline": "Context features add measurable out-of-list F beyond orthography -> the boundary-free test reflects genuine context, not surface form alone.",
+  "scope": "FEASIBILITY (distant labels, 5-fold CV); gold set remains the gating dependency."
+ }
+}

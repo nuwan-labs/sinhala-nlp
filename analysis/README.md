@@ -18,6 +18,19 @@ python -m analysis.run_all             # regenerates every number + figure
 `--fast` reduces bootstrap/seed counts for a quick pass. Global seed `20260611`;
 environment pinned in `analysis/ENV.txt`.
 
+### Hardening pass (closes the four self-adversarial loose ends)
+
+```bash
+apt-get install -y tesseract-ocr tesseract-ocr-sin   # second OCR engine for Task 2
+python -m analysis.run_hardening
+#   -> analysis/out/hardening_results.json
+#   -> analysis/out/HARDENING_REPORT.html
+```
+
+Task 1 topic-controlled concentration; Task 2 real inter-engine CER + Heaps β
+refit on verified errors only; Task 3 matcher-sensitivity of the open/closed
+asymmetry on both sides; Task 4 feature ablation on the boundary-free RQ3 tagger.
+
 ## Epistemic contract
 
 - Every number is tagged COMPUTED or ASSUMED; unreachable inputs are documented,
