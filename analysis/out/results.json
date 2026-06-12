@@ -950,9 +950,144 @@
     "word": 0.8941130370696798
    },
    "transformer_secondary": {
-    "executed": false,
-    "reason": "Capacity-controlled transformer training (fixed-dim factorised embedding / low-rank projection, total-param reporting, seed-spread vs config-spread check) was NOT run in this verification environment. The decision rule (usable only if config-spread > seed-spread and the trend is not explained by parameter count) is pre-registered; the neural number is left uncomputed rather than substituted. The deterministic Kneser-Ney instrument carries C2/C3.",
-    "decision_rule": "report neural only if config_spread > seed_spread AND trend not explained by param count"
+    "executed": true,
+    "settings": {
+     "seq_len": 96,
+     "steps": 350,
+     "batch": 16,
+     "e_factor": 16,
+     "n_layers": 2,
+     "n_heads": 2,
+     "lr": 0.003,
+     "seeds": [
+      0,
+      1
+     ],
+     "optimizer": "AdamW",
+     "denominator": "raw UTF-8 bytes of held-out (same as KN primary)"
+    },
+    "vocab_sweep": [
+     {
+      "vocab": 300,
+      "d_model": 64,
+      "bpb_mean": 1.2486126673364462,
+      "bpb_sd": 0.010111153449571485,
+      "n_params": 113040,
+      "bpbs": [
+       1.255762332506256,
+       1.2414630021666364
+      ]
+     },
+     {
+      "vocab": 1000,
+      "d_model": 64,
+      "bpb_mean": 1.0244752961604588,
+      "bpb_sd": 0.013354282167224767,
+      "n_params": 124240,
+      "bpbs": [
+       1.033918199638782,
+       1.0150323926821356
+      ]
+     },
+     {
+      "vocab": 4000,
+      "d_model": 64,
+      "bpb_mean": 0.810852051134068,
+      "bpb_sd": 0.006966769780118384,
+      "n_params": 172240,
+      "bpbs": [
+       0.8157783012885552,
+       0.8059258009795808
+      ]
+     },
+     {
+      "vocab": 8000,
+      "d_model": 64,
+      "bpb_mean": 0.749436568993356,
+      "bpb_sd": 0.010190761107006995,
+      "n_params": 236240,
+      "bpbs": [
+       0.7566425252775727,
+       0.7422306127091391
+      ]
+     }
+    ],
+    "capacity_sweep": [
+     {
+      "vocab": 4000,
+      "d_model": 32,
+      "bpb_mean": 0.8362729301571713,
+      "bpb_sd": 0.009311248054030295,
+      "n_params": 93552,
+      "bpbs": [
+       0.8428569767974862,
+       0.8296888835168564
+      ]
+     },
+     {
+      "vocab": 4000,
+      "d_model": 64,
+      "bpb_mean": 0.810852051134068,
+      "bpb_sd": 0.006966769780118384,
+      "n_params": 172240,
+      "bpbs": [
+       0.8157783012885552,
+       0.8059258009795808
+      ]
+     },
+     {
+      "vocab": 4000,
+      "d_model": 96,
+      "bpb_mean": 0.7930538794480655,
+      "bpb_sd": 0.004066932278391118,
+      "n_params": 300080,
+      "bpbs": [
+       0.7959296348407423,
+       0.7901781240553887
+      ]
+     }
+    ],
+    "config_spread": 0.22658731744379107,
+    "seed_spread": 0.010155741625980408,
+    "config_gt_seed_spread": true,
+    "param_controlled": {
+     "capacity_curve_slope_per_lnparam": -0.03715645116518333,
+     "vocab_residuals_vs_param_curve": [
+      {
+       "vocab": 300,
+       "n_params": 113040,
+       "bpb": 1.2486126673364462,
+       "param_pred": 0.8283574687459928,
+       "residual": 0.42025519859045335
+      },
+      {
+       "vocab": 1000,
+       "n_params": 124240,
+       "bpb": 1.0244752961604588,
+       "param_pred": 0.8248471709689793,
+       "residual": 0.19962812519147954
+      },
+      {
+       "vocab": 4000,
+       "n_params": 172240,
+       "bpb": 0.810852051134068,
+       "param_pred": 0.8127091365460336,
+       "residual": -0.0018570854119656088
+      },
+      {
+       "vocab": 8000,
+       "n_params": 236240,
+       "bpb": 0.749436568993356,
+       "param_pred": 0.8009692071101531,
+       "residual": -0.05153263811679709
+      }
+     ],
+     "residual_vs_logvocab_spearman": -1.0,
+     "vocab_trend_beyond_params": true
+    },
+    "decision_rule": "usable iff config_spread>seed_spread AND vocab trend survives param control (residual rho<=-0.3)",
+    "usable": true,
+    "note": "Tied factorised embedding (VxE, E=16) minimises and exposes the vocab-dependent parameter mass; the capacity sweep gives the pure param->bpb curve so the vocab effect is tested BEYOND capacity. All bpb use the same held-out raw-UTF-8 denominator as Kneser-Ney."
    }
   },
   "c3_predictive": {

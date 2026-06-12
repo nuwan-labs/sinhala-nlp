@@ -166,6 +166,37 @@ def fig_d2_extraction(d):
     return _b64(fig)
 
 
+def fig_transformer(tr):
+    fig, axes = plt.subplots(1, 2, figsize=(11, 4))
+    vs = tr["vocab_sweep"]
+    vocab = [r["vocab"] for r in vs]
+    bpb = [r["bpb_mean"] for r in vs]
+    sd = [r["bpb_sd"] for r in vs]
+    axes[0].errorbar(vocab, bpb, yerr=sd, fmt="o-", color="#b2182b", capsize=3)
+    axes[0].set_xscale("log"); axes[0].set_xlabel("BPE vocab size")
+    axes[0].set_ylabel("transformer bpb (raw-UTF-8 denom)")
+    axes[0].set_title("C2 (secondary) — vocab sweep (±seed sd)")
+    axes[0].grid(alpha=0.3)
+    # param-controlled panel
+    cap = tr["capacity_sweep"]
+    cp = [r["n_params"] for r in cap]; cb = [r["bpb_mean"] for r in cap]
+    vp = [r["n_params"] for r in vs]; vb = [r["bpb_mean"] for r in vs]
+    axes[1].scatter(cp, cb, color="#2166ac", label="capacity sweep (fixed vocab)", zorder=3)
+    axes[1].scatter(vp, vb, color="#b2182b", label="vocab sweep", zorder=3)
+    import numpy as _np
+    allp = _np.array(sorted(cp))
+    slope = tr["param_controlled"]["capacity_curve_slope_per_lnparam"]
+    # reconstruct intercept from a capacity point
+    icpt = cb[0] - slope * _np.log(cp[0])
+    xs = _np.linspace(min(min(cp), min(vp)), max(max(cp), max(vp)), 50)
+    axes[1].plot(xs, slope * _np.log(xs) + icpt, "--", color="#2166ac",
+                 label="pure-capacity param curve")
+    axes[1].set_xlabel("total parameters"); axes[1].set_ylabel("bpb")
+    axes[1].set_title("C2 — bpb vs params: vocab effect beyond capacity?")
+    axes[1].legend(fontsize=7); axes[1].grid(alpha=0.3)
+    return _b64(fig)
+
+
 def rasterise_pages(page_numbers, zoom=1.3):
     """Render sample source PDF pages to base64 PNG (B5 head-start)."""
     try:

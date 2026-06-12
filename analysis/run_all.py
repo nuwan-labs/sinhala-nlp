@@ -24,6 +24,8 @@ from . import report as R
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--fast", action="store_true", help="fewer bootstrap/seed iterations")
+    ap.add_argument("--no-transformer", action="store_true",
+                    help="skip the C2 secondary transformer (needs torch)")
     args = ap.parse_args()
     t0 = time.time()
 
@@ -35,6 +37,14 @@ def main():
     rq2 = Cm.run(fast=args.fast)
     print("[4/6] Part D — RQ3 ...", flush=True)
     rq3 = D.run(fast=args.fast)
+
+    if not args.no_transformer:
+        try:
+            from . import partC_transformer as TR
+            print("[4b] C2 secondary — capacity-controlled transformer ...", flush=True)
+            rq2["c2_bpb"]["transformer_secondary"] = TR.run()
+        except Exception as e:  # torch unavailable -> keep the 'not executed' record
+            print(f"   transformer skipped: {e}", flush=True)
 
     results = {
         "meta": {
@@ -58,6 +68,8 @@ def main():
         "c4": Fig.fig_c4_noise(rq2["c4_noise_robustness"]),
         "d2": Fig.fig_d2_extraction(rq3["d2_d3_extraction"]),
     }
+    if rq2["c2_bpb"]["transformer_secondary"].get("executed"):
+        figs["transformer"] = Fig.fig_transformer(rq2["c2_bpb"]["transformer_secondary"])
     pages = Fig.rasterise_pages([172, 300])
 
     (C.OUT / "results.json").write_text(

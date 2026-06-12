@@ -274,10 +274,14 @@ def _rq2(P, Cc, figs):
       "By base unit, syllable (akshara) and large-vocab BPE compress best; byte is worst on bpb "
       "but (see C4) most robust. Word-level uses an explicit character-level KN backoff so every "
       "held-out byte receives probability (otherwise word-level bpb is not comparable).</p>")
-    P(f"<div class='note'><b>Transformer (secondary): NOT executed.</b> "
-      f"{esc(c2['transformer_secondary']['reason'])} The decision rule "
-      f"(<code>{esc(c2['transformer_secondary']['decision_rule'])}</code>) is pre-registered; the "
-      f"neural number is left <b>uncomputed, never substituted</b>.</div>")
+    ts = c2["transformer_secondary"]
+    if not ts.get("executed"):
+        P(f"<div class='note'><b>Transformer (secondary): NOT executed.</b> "
+          f"{esc(ts.get('reason',''))} The decision rule "
+          f"(<code>{esc(ts.get('decision_rule',''))}</code>) is pre-registered; the "
+          f"neural number is left <b>uncomputed, never substituted</b>.</div>")
+    else:
+        _transformer(P, ts, figs)
 
     P("<h3>C3 — Predictive test across three designs (collinearity diagnostics)</h3>")
     P(img(figs["c3"], "C3 designs"))
@@ -306,6 +310,36 @@ def _rq2(P, Cc, figs):
     P(f"<p class='small'>C1 syllable-vs-grapheme divergence: {c1['n_aksharas']:,} aksharas vs "
       f"{c1['n_graphemes']:,} grapheme clusters; conjunct merging removes "
       f"{fnum(c1['merge_rate'])} of grapheme boundaries (akshara/grapheme={fnum(c1['akshara_per_grapheme'])}).</p>")
+
+
+def _transformer(P, ts, figs):
+    P("<h4>Transformer (secondary, capacity-controlled) — executed</h4>")
+    if "transformer" in figs:
+        P(img(figs["transformer"], "transformer C2"))
+    s = ts["settings"]
+    P(f"<p>Tiny decoder-only LM (tied factorised embedding V×{s['e_factor']}→d_model, "
+      f"{s['n_layers']} layers, {s['n_heads']} heads), {s['steps']} AdamW steps, seeds "
+      f"{esc(s['seeds'])}; bpb over the <b>same held-out raw-UTF-8 denominator</b> as KN.</p>")
+    rows = []
+    for r in ts["vocab_sweep"]:
+        rows.append(["vocab " + str(r["vocab"]), str(r["n_params"]),
+                     f"{fnum(r['bpb_mean'])} ± {fnum(r['bpb_sd'])}"])
+    for r in ts["capacity_sweep"]:
+        rows.append([f"d_model {r['d_model']} (vocab {r['vocab']})", str(r["n_params"]),
+                     f"{fnum(r['bpb_mean'])} ± {fnum(r['bpb_sd'])}"])
+    P(table(["config", "total params", "bpb (mean ± seed sd)"], rows, "wide"))
+    pc = ts["param_controlled"]
+    P(f"<p><b>Decision-rule diagnostics.</b> config-spread = {fnum(ts['config_spread'])} vs "
+      f"seed-spread = {fnum(ts['seed_spread'])} "
+      f"({_verdict_badge('config>seed' if ts['config_gt_seed_spread'] else 'seed dominates')}). "
+      f"After fitting the pure-capacity param→bpb curve on the capacity sweep, the vocab-sweep "
+      f"residual-vs-log(vocab) Spearman = <b>{fnum(pc['residual_vs_logvocab_spearman'])}</b> "
+      f"({_verdict_badge('trend beyond params' if pc['vocab_trend_beyond_params'] else 'explained by params')}). "
+      f"<b>Overall: neural instrument {'USABLE' if ts['usable'] else 'NOT usable'}</b> under the "
+      f"pre-registered rule.</p>")
+    P(f"<div class='note'>{esc(ts['note'])} The KN primary remains the interpretable C2/C3 "
+      "instrument; the transformer is reported as a confound-controlled cross-check, not as the "
+      "headline.</div>")
 
 
 def _rq3(P, D, figs):
@@ -494,8 +528,12 @@ def _verdicts(P, results):
       "across unit types Rényi shows no signal beyond length; across algorithms at matched "
       "compression it does, but on only four points. The defensible statement is the dissociation is "
       "<i>design-dependent and unproven</i>; the deterministic KN bpb (minimum at the largest swept "
-      "BPE vocab) and the robustness result are solid. Confidence: low for the predictive claim, "
-      "high that design (a) cannot support it.</p>")
+      "BPE vocab) and the robustness result are solid. The capacity-controlled transformer "
+      "corroborates the bpb trend and resolves the prior embedding-parameter confound: a fixed-vocab "
+      "width sweep moves bpb by ~0.04 while the vocab sweep moves it by ~0.50, the vocab effect "
+      "surviving param control (residual–vocab ρ≈−1) — larger BPE vocab helps for segmentation "
+      "reasons, not capacity. Confidence: low for the Rényi-predicts-bpb claim, high that design (a) "
+      "cannot support it, and high that the vocab→bpb trend is real and not a parameter artefact.</p>")
     P("<p><b>RQ3.</b> The data (feasibility, distant labels) does <b>not</b> license the claim that "
       "register structure predicts extraction difficulty beyond coverage and layout: among "
       "out-of-list entities with field markers removed, the constituent−indication F-difference is "
