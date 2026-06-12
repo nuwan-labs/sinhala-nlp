@@ -14,3 +14,6 @@ resolver_run.log
 
 # external baseline corpora (fetch via analysis.fetch_baselines)
 data/baselines/
+
+# packaged code artifact (delivered, not tracked)
+analysis_code.zip
