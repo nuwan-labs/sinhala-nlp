@@ -105,16 +105,14 @@ the source and in its structured form. The indication field is a run of
 Sanskrit-derived disease terms closed by a Sinhala verb; the dose is recorded in
 both a traditional unit and a normalised gram value.
 
-  Source entry (reading order):
-    37. Name        : Bhunimbadi Curna  (භූනිම්බාදි චූර්ණය)
-        Constituents: බිං කොහොඹ, කුළුරෑණ, කලාඳුරුඅල, තිකුළු, කෙළිඳඇට,
-                      each කර්ෂ 2  (30 g)
-        Preparation : කෙළිඳ පොතු කලං 16 යි  (80 g)
-        Indication  : ග්‍රහණි, ගුල්ම, කාමලා, ජ්වර, පාණ්ඩු, ප්‍රමේහ, අරුචි,
-                      අතීසාර නස යි.  (destroys grahani, gulma, kamala, jvara,
-                      pandu, prameha, aruci, atisara)
-        Vehicle     : උණු දිය  (warm water)
-        Dosage      : කලං 2-1  (2.5-5 g)
+  Source entry (as it reads in the Pharmacopoeia, page 236):
+    37. යෝග නාමය :- භූනිම්බාදි චූර්ණය
+        යෝගය - බිං කොහොඹ, කුළුරෑණ, කලාඳුරුඅල, තිකුළු, කෙළිඳඇට
+               කර්ෂ 2 බැගින් ප්‍රත්‍යෙකව ගත යුතු ය . ( ග්‍රෑම් 30 )
+        සංස්කරණය - කෙළිඳ පොතු කලං 16 යි . ( ග්‍රෑම් 80 )
+        ප්‍රයෝග - ග්‍රහණි , ගුල්ම , කාමලා , ජ්වර , පාණ්ඩු , ප්‍රමේහ , අරුචි , අතීසාර නස යි .
+        අනුපාන :- උණු දිය වේ .
+        මාත්‍රාව - කලං 2 -1 දක්වා වේ . ( ග්‍රෑම් 2.5 - ග්‍රෑම් 5 )
 
   Structured JSON (the pipeline's actual output; Sinhala field keys are glossed
   below the figure). The five ingredient rows share the same quantity, so three
