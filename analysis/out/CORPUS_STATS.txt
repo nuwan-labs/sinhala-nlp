@@ -1,0 +1,25 @@
+Corpus statistics - Sinhala Ayurvedic formula register
+(Ayurveda Pharmacopoeia of Sri Lanka, formula section, pages 172-443)
+All figures computed from the corpus.
+
+  Statistic                          Value        Note
+  ---------------------------------  -----------  ---------------------------------
+  Formulas (documents)               700          701 if kept by name and page
+  Source pages                       172-443      272 pages
+  Running words (tokens)             60,599       across the six fields
+  Word types (vocabulary)            6,978
+  Type-token ratio                   0.12
+  Hapax legomena                     56%          types occurring once
+  Mean words per formula             86.6
+  Mean ingredients per formula       15.7
+  UTF-8 bytes                        790,095
+  Bytes per word                     13.0         abugida cost of the script
+  ---------------------------------  -----------  ---------------------------------
+  Ingredient concepts (open class)   435-563      range over matching rules
+  Indication concepts (closed)       49           stable across rules
+  Sanskrit-resolved ingredient names 80%          resolve to a Sanskrit lemma
+  Sanskrit-resolved name-words       61%
+  OCR character error rate           ~9%          Tesseract vs Google Vision
+  OCR word error rate                ~6%
+  ---------------------------------  -----------  ---------------------------------
+  Reference lists  plant 647 | mineral 82 | animal-origin 42 | units 43 | ICD 56
