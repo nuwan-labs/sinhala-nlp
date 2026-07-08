@@ -1,0 +1,198 @@
+================================================================================
+PROPOSAL EDITS - paste-ready replacement text
+Sublanguage Structure, Segmentation, and Extraction in Low-Resource
+Sinhala Ayurvedic Formula Text
+================================================================================
+
+HOW TO USE THIS FILE
+  Each block below is a full replacement for a named part of your current
+  proposal. Replace the whole part with the text under "NEW TEXT". The style
+  (formal register, flowing sentences, no em dashes, hyphens for ranges) matches
+  your current draft, and the length is held close to the original so the
+  overall document does not grow. Every figure quoted here was computed from the
+  corpus; none is invented. The corpus is the Ayurveda Pharmacopoeia formula
+  section, pages 172 to 443; the Yogamalawa source is excluded from all counts.
+
+  The unique features your supervisor asked for (the Sanskrit code-mixed layer,
+  the abugida cost, the open ingredient vocabulary, the converb preparation
+  chains, and the recognition noise) are built in quietly across Blocks 1 and 2,
+  the worked extract is Block 3, and the knowledge graph is Block 5.
+
+
+================================================================================
+BLOCK 1 - REPLACEMENT FOR: Research Problem (whole section)
+================================================================================
+NEW TEXT:
+
+Sri Lankan traditional medicine has been written in Sinhala for centuries. These
+texts record herbal formulas in a regular form: the ingredients of a remedy, how
+it is prepared, what it treats, the dose, and the substance it is taken with. The
+Ayurvedic Pharmacopoeia of Sri Lanka, published by the Department of Ayurveda, is
+one such source; its formula section is laid out as structured entries with
+reference lists of plant names, disease names, minerals, and units, which makes
+it a good starting point for studying the language the formulas are written in.
+The section holds roughly 700 formulas over about 60,600 running words, each
+naming on average some fifteen ingredients, so the material is small but densely
+structured.
+
+Sinhala is one of the lowest-resource languages in natural language processing
+(Joshi et al., 2020), and falls outside the main body of Indic work, since the
+AI4Bharat models cover the scheduled languages of India and leave Sinhala out
+(Gala et al., 2023). Its dependency treebank has only one hundred sentences
+(Liyanage et al., 2023), and the pre-trained models that exist were trained on
+news and web text rather than any specialised domain (Dhananjaya et al., 2022).
+The formula texts add further difficulty. They are written in a specialised
+register that draws on several strata, everyday Sinhala alongside a large
+Sanskrit-derived vocabulary and, more thinly, Tamil and Arabic terms: about four
+fifths of the ingredient names and three fifths of the formula-name words resolve
+to a Sanskrit lemma, yet they are written in Sinhala script and set in ordinary
+Sinhala grammar. The script itself is an abugida whose joined consonants are
+formed with a special joiner, so a single word costs on the order of thirteen
+bytes and fragments badly under byte and codepoint units. The ingredient names
+form a large open class while the indications reduce to a few dozen recurring
+concepts, and more than half of all word types occur only once. On top of this
+the printed pages reach the computer through optical character recognition, whose
+error, measured here against a second engine, runs near nine percent of
+characters and mints spurious word types if left uncontrolled.
+
+These texts raise four connected questions, set out below: whether the register
+is restricted in the way a sublanguage is (Grishman and Kittredge, 1986), how an
+abugida like Sinhala should be split into units for it (Zouhar et al., 2023),
+whether its structure, once described, predicts how hard its content is to
+extract, and whether its Sanskrit-derived layer carries any advantage for a model
+already trained on Sanskrit (Nehrdich et al., 2024).
+
+
+================================================================================
+BLOCK 2 - INSERT AT THE START OF: Research Methodology
+  (replaces the current opening paragraph "The data is the structured formula
+   section ... This asymmetry drives the extraction work.")
+================================================================================
+NEW TEXT:
+
+The data is the structured formula section of the Ayurvedic Pharmacopoeia of Sri
+Lanka: roughly 700 distinct formulas after removing page-continuation fragments
+and duplicates, spanning pages 172 to 443, about 60,600 running words with a
+vocabulary of some 7,000 word types. The corpus is small, short-form, and
+lexically sparse: a formula runs to about 87 words and names some fifteen
+ingredients, and more than half of all word types occur only once. Each formula
+is organised by six fields, name, constituents, preparation, indication, dosage,
+and accompanying substance, the first three almost always present and the rest in
+roughly half to two thirds. Two properties set the register apart from the
+general-domain Sinhala on which existing tools are trained. Its ingredient names
+form a large open class of several hundred distinct concepts, while its
+indications reduce to a few dozen closed concepts, and the two share almost no
+vocabulary; this asymmetry drives the extraction work. And its technical layer is
+Sanskrit-derived but written in Sinhala script and inflected as everyday Sinhala,
+about four fifths of the ingredient names resolving to a Sanskrit lemma, so a
+typical indication reads as a run of Sanskrit disease terms closed by an ordinary
+Sinhala verb, and the preparation prose runs as chains of non-finite step verbs,
+grind, strain, boil down, dry, and bind, closed by a verb of obligation. The
+abugida's joined consonants make the script costly to segment, near thirteen
+bytes to the word, and optical character recognition adds error near nine percent
+of characters. The four components proceed in order, each consuming the previous
+output.
+
+
+================================================================================
+BLOCK 3 - INSERT AS Figure 1, placed near the corpus description above
+  (a plain-text figure the reader can drop in; caption included)
+================================================================================
+NEW TEXT:
+
+Figure 1. A representative formula (entry 37, Bhunimbadi Curna) as it appears in
+the source and in its structured form. The indication field is a run of
+Sanskrit-derived disease terms closed by a Sinhala verb; the dose is recorded in
+both a traditional unit and a normalised gram value.
+
+  Source entry (reading order):
+    37. Name        : Bhunimbadi Curna  (භූනිම්බාදි චූර්ණය)
+        Constituents: බිං කොහොඹ, කුළුරෑණ, කලාඳුරුඅල, තිකුළු, කෙළිඳඇට,
+                      each කර්ෂ 2  (30 g)
+        Preparation : කෙළිඳ පොතු කලං 16 යි  (80 g)
+        Indication  : ග්‍රහණි, ගුල්ම, කාමලා, ජ්වර, පාණ්ඩු, ප්‍රමේහ, අරුචි,
+                      අතීසාර නස යි.  (destroys grahani, gulma, kamala, jvara,
+                      pandu, prameha, aruci, atisara)
+        Vehicle     : උණු දිය  (warm water)
+        Dosage      : කලං 2-1  (2.5-5 g)
+
+  Structured JSON (the pipeline's actual output; Sinhala field keys are glossed
+  below the figure). The five ingredient rows share the same quantity, so three
+  are elided here for space:
+    {
+      "අංකය": 37,
+      "යෝග නාමය": "භූනිම්බාදි චූර්ණය",
+      "යෝගය": [
+        {"ද්‍රව්‍යය": "බිං කොහොඹ", "ප්‍රමාණය": "කර්ෂ 2 යි", "ග්‍රෑ": "ග්‍රෑ : 30 යි"},
+        {"ද්‍රව්‍යය": "කුළුරෑණ",   "ප්‍රමාණය": "කර්ෂ 2 යි", "ග්‍රෑ": "ග්‍රෑ : 30 යි"},
+        ...
+        {"ද්‍රව්‍යය": "කෙළිඳඇට",   "ප්‍රමාණය": "කර්ෂ 2 යි", "ග්‍රෑ": "ග්‍රෑ : 30 යි"}
+      ],
+      "සංස්කරණය": "කෙළිඳ පොතු කලං 16 යි . ( ග්‍රෑම් 80 )",
+      "ප්‍රයෝග": "ග්‍රහණි , ගුල්ම , කාමලා , ජ්වර , පාණ්ඩු , ප්‍රමේහ , අරුචි , අතීසාර නස යි .",
+      "අනුපාන": "උණු දිය වේ .",
+      "මාත්‍රාව": "කලං 2 -1 දක්වා වේ . ( ග්‍රෑම් 2.5 - ග්‍රෑම් 5 )",
+      "සටහන": "",
+      "source_page": 236
+    }
+
+  Field keys: අංකය number, යෝග නාමය name, යෝගය constituents (each ද්‍රව්‍යය
+  substance, ප්‍රමාණය traditional quantity, ග්‍රෑ normalised grams), සංස්කරණය
+  preparation, ප්‍රයෝග indication, අනුපාන accompanying substance, මාත්‍රාව dosage,
+  සටහන note.
+
+
+================================================================================
+BLOCK 4 - REPLACEMENT FOR: the characterisation paragraph in Research Methodology
+  (the paragraph beginning "Register characterisation tests whether ...")
+================================================================================
+NEW TEXT:
+
+Register characterisation tests whether the formula language is restricted in the
+way a sublanguage is (Grishman and Kittredge, 1986). Because lexical-richness
+measures vary with sample size (Baayen, 2001), vocabulary growth is fitted under a
+Large-Number-of-Rare-Events model and compared against general-domain Sinhala
+baselines reduced to the register's size by binomial interpolation rather than
+upward extrapolation (Evert and Baroni, 2007), reporting Baayen's productivity
+index as the primary statistic (Baayen, 1996) and lexical and morphological
+closure alongside, following an account already shown to transfer to a non-Latin
+clinical register (Temnikova et al., 2014). Constructional restriction is measured
+on two recurring constructions the register makes visible, the clause-final
+predicates that close indication clauses and the chains of non-finite step verbs
+that build the preparation prose, each reported against a general-domain baseline
+at matched count so that generic high-frequency endings do not stand in for
+restriction. Semantic-class separation is measured above what the field layout
+imposes. Each estimate carries a resampled interval and is recomputed on a cleaned
+sample to discount recognition error.
+
+
+================================================================================
+BLOCK 5 - REPLACEMENT FOR: List of Deliverables (item 6)
+================================================================================
+OLD TEXT:
+  A structured store of the extracted formulas, produced in support.
+
+NEW TEXT:
+  A structured store of the extracted formulas as a provenance-carrying knowledge
+  graph, linking each formula to its ingredients, indications, dose, and vehicle,
+  with external identifiers attached where resolvable (ICD-11 Traditional Medicine
+  Module 2 for diseases, POWO for plants), produced in support.
+
+
+================================================================================
+NOTES ON THE NUMBERS (all computed from the corpus; for your reference, not for
+the proposal body)
+================================================================================
+  700 formulas (701 if duplicates are kept by name and page), pages 172-443.
+  60,599 running words; 790,095 UTF-8 bytes; about 13 bytes per word.
+  6,978 word types; 56 percent hapax legomena; type-token ratio 0.12.
+  Mean 15.7 ingredient rows per formula; mean 86.6 words per formula.
+  Reference lists: 647 plant, 82 mineral, 42 animal-origin, 43 units, 56 ICD.
+  Constituent concepts 435-563 by matching rule; indication concepts 49 (stable).
+  Sanskrit resolution: 80 percent of ingredient terms, 61 percent of name-words.
+  Preparation prose: mean about 4 step-verbs; 63 percent have three or more;
+    66 percent close in an obligation modal (should be taken / one takes).
+  OCR error: character error rate near 9 percent, word error near 6 percent,
+    measured as Tesseract against Google Cloud Vision on a stratified page sample.
+  Knowledge graph v1 (already built): about 4,089 nodes and 12,754 edges, with
+    CONTAINS, TREATS, DOSED_WITH, HAS_PROPERTY, and SUBSTITUTES_FOR relations.
